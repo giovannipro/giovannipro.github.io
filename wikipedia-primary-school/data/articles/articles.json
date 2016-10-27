@@ -2,7 +2,7 @@
   "articles": [
     {
       "article": "!Kung people",
-      "category":"San hunter-gatherer society in the Later Stone Age",
+      "category": "San hunter-gatherer society in the Later Stone Age",
       "entry_links_mar16": 151,
       "exit_links_mar16": 226,
       "references_mar16": 10,
@@ -33,8 +33,8 @@
       "seeAlso_sep15": 0
     },
     {
-      "article": "2 ft g railways in South Africa",
-      "category":"Transport on land",
+      "article": "2 ft gauge railways in South Africa",
+      "category": "Transport on land",
       "entry_links_mar16": 7,
       "exit_links_mar16": 372,
       "references_mar16": 40,
@@ -66,7 +66,7 @@
     },
     {
       "article": "Acid",
-      "category":"Biological sciences",
+      "category": "Biological sciences",
       "entry_links_mar16": 483,
       "exit_links_mar16": 390,
       "references_mar16": 4,
@@ -98,7 +98,7 @@
     },
     {
       "article": "Africa Day",
-      "category":"",
+      "category": "National events",
       "entry_links_mar16": 165,
       "exit_links_mar16": 131,
       "references_mar16": 3,
@@ -130,7 +130,7 @@
     },
     {
       "article": "Agriculture in South Africa",
-      "category":"",
+      "category": "Crop and stock farming",
       "entry_links_mar16": 199,
       "exit_links_mar16": 256,
       "references_mar16": 17,
@@ -162,7 +162,7 @@
     },
     {
       "article": "AIDS orphan",
-      "category":"",
+      "category": "HIV/AIDS",
       "entry_links_mar16": 221,
       "exit_links_mar16": 171,
       "references_mar16": 5,
@@ -194,7 +194,7 @@
     },
     {
       "article": "Alcohol abuse",
-      "category":"",
+      "category": "Alcoholism",
       "entry_links_mar16": 478,
       "exit_links_mar16": 671,
       "references_mar16": 66,
@@ -226,7 +226,7 @@
     },
     {
       "article": "Alcohol dependence",
-      "category":"",
+      "category": "Alcoholism",
       "entry_links_mar16": 261,
       "exit_links_mar16": 302,
       "references_mar16": 12,
@@ -258,7 +258,7 @@
     },
     {
       "article": "Alcoholism",
-      "category":"",
+      "category": "Alcoholism",
       "entry_links_mar16": 491,
       "exit_links_mar16": 1650,
       "references_mar16": 177,
@@ -290,7 +290,7 @@
     },
     {
       "article": "Aloe",
-      "category":"",
+      "category": "Heritage from each province",
       "entry_links_mar16": 491,
       "exit_links_mar16": 311,
       "references_mar16": 19,
@@ -322,7 +322,7 @@
     },
     {
       "article": "Aloe vera",
-      "category":"",
+      "category": "Heritage from each province",
       "entry_links_mar16": 420,
       "exit_links_mar16": 447,
       "references_mar16": 65,
@@ -354,7 +354,7 @@
     },
     {
       "article": "Animal husbandry",
-      "category":"",
+      "category": "Animal husbandry and wild animal maintenance",
       "entry_links_mar16": 483,
       "exit_links_mar16": 294,
       "references_mar16": 41,
@@ -386,6 +386,7 @@
     },
     {
       "article": "Animal husbandry in South Africa",
+      "category": "Animal husbandry and wild animal maintenance",
       "entry_links_mar16": 7,
       "exit_links_mar16": 64,
       "references_mar16": 4,
@@ -417,6 +418,7 @@
     },
     {
       "article": "Animal-powered transport",
+      "category": "Transport on land",
       "entry_links_mar16": 214,
       "exit_links_mar16": 136,
       "references_mar16": 0,
@@ -448,6 +450,7 @@
     },
     {
       "article": "Apartheid",
+      "category": "Discrimination, stereotypes and bias",
       "entry_links_mar16": 486,
       "exit_links_mar16": 2335,
       "references_mar16": 188,
@@ -479,6 +482,7 @@
     },
     {
       "article": "Atom",
+      "category": "Physics and engineering",
       "entry_links_mar16": 481,
       "exit_links_mar16": 1539,
       "references_mar16": 142,
@@ -510,6 +514,7 @@
     },
     {
       "article": "Base (chemistry)",
+      "category": "Biological sciences",
       "entry_links_mar16": 491,
       "exit_links_mar16": 289,
       "references_mar16": 12,
@@ -541,6 +546,7 @@
     },
     {
       "article": "Bias",
+      "category": "Discrimination, stereotypes and bias",
       "entry_links_mar16": 428,
       "exit_links_mar16": 1218,
       "references_mar16": 148,
@@ -572,6 +578,7 @@
     },
     {
       "article": "Bicycle",
+      "category": "Transport on land",
       "entry_links_mar16": 483,
       "exit_links_mar16": 1135,
       "references_mar16": 127,
@@ -603,6 +610,7 @@
     },
     {
       "article": "Biome",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 486,
       "exit_links_mar16": 306,
       "references_mar16": 10,
@@ -634,6 +642,7 @@
     },
     {
       "article": "Bird nest",
+      "category": "Animal shelters",
       "entry_links_mar16": 495,
       "exit_links_mar16": 988,
       "references_mar16": 107,
@@ -665,6 +674,7 @@
     },
     {
       "article": "Boiling",
+      "category": "Processes to purify water",
       "entry_links_mar16": 492,
       "exit_links_mar16": 195,
       "references_mar16": 8,
@@ -696,6 +706,7 @@
     },
     {
       "article": "Borehole",
+      "category": "How people get access to water",
       "entry_links_mar16": 341,
       "exit_links_mar16": 162,
       "references_mar16": 5,
@@ -727,6 +738,7 @@
     },
     {
       "article": "Bullying",
+      "category": "Bullying",
       "entry_links_mar16": 485,
       "exit_links_mar16": 1001,
       "references_mar16": 93,
@@ -758,6 +770,7 @@
     },
     {
       "article": "Car",
+      "category": "Transport on land",
       "entry_links_mar16": 468,
       "exit_links_mar16": 1490,
       "references_mar16": 79,
@@ -789,6 +802,7 @@
     },
     {
       "article": "Castle of Good Hope",
+      "category": "Heritage from each province",
       "entry_links_mar16": 133,
       "exit_links_mar16": 135,
       "references_mar16": 10,
@@ -820,6 +834,7 @@
     },
     {
       "article": "Cell (biology)",
+      "category": "Biological sciences",
       "entry_links_mar16": 490,
       "exit_links_mar16": 783,
       "references_mar16": 30,
@@ -851,6 +866,7 @@
     },
     {
       "article": "Ceramic",
+      "category": "Solid materials",
       "entry_links_mar16": 494,
       "exit_links_mar16": 238,
       "references_mar16": 12,
@@ -882,6 +898,7 @@
     },
     {
       "article": "Chapter Two of the Constitution of South Africa",
+      "category": "National history",
       "entry_links_mar16": 251,
       "exit_links_mar16": 317,
       "references_mar16": 4,
@@ -913,6 +930,7 @@
     },
     {
       "article": "Child abuse",
+      "category": "Discrimination, stereotypes and bias",
       "entry_links_mar16": 483,
       "exit_links_mar16": 1691,
       "references_mar16": 211,
@@ -944,6 +962,7 @@
     },
     {
       "article": "Children's Act_ 2005",
+      "category": "Discrimination, stereotypes and bias",
       "entry_links_mar16": 18,
       "exit_links_mar16": 27,
       "references_mar16": 0,
@@ -975,6 +994,7 @@
     },
     {
       "article": "Children's Day",
+      "category": "National events",
       "entry_links_mar16": 485,
       "exit_links_mar16": 834,
       "references_mar16": 54,
@@ -1006,6 +1026,7 @@
     },
     {
       "article": "Circuit diagram",
+      "category": "Circuits",
       "entry_links_mar16": 204,
       "exit_links_mar16": 111,
       "references_mar16": 9,
@@ -1037,6 +1058,7 @@
     },
     {
       "article": "Clay",
+      "category": "Solid materials",
       "entry_links_mar16": 496,
       "exit_links_mar16": 298,
       "references_mar16": 10,
@@ -1068,6 +1090,7 @@
     },
     {
       "article": "Climate",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 496,
       "exit_links_mar16": 1120,
       "references_mar16": 56,
@@ -1099,6 +1122,7 @@
     },
     {
       "article": "Coal",
+      "category": "Mineral and coal resources in South Africa",
       "entry_links_mar16": 493,
       "exit_links_mar16": 1305,
       "references_mar16": 155,
@@ -1130,6 +1154,7 @@
     },
     {
       "article": "Coal in South Africa",
+      "category": "Mineral and coal resources in South Africa",
       "entry_links_mar16": 121,
       "exit_links_mar16": 374,
       "references_mar16": 26,
@@ -1161,6 +1186,7 @@
     },
     {
       "article": "Control variable",
+      "category": "Mathematics",
       "entry_links_mar16": 162,
       "exit_links_mar16": 32,
       "references_mar16": 3,
@@ -1192,6 +1218,7 @@
     },
     {
       "article": "Convenience food",
+      "category": "Nutrients in food / Balanced diets",
       "entry_links_mar16": 181,
       "exit_links_mar16": 360,
       "references_mar16": 38,
@@ -1223,6 +1250,7 @@
     },
     {
       "article": "Cooking",
+      "category": "Crop and stock farming",
       "entry_links_mar16": 492,
       "exit_links_mar16": 1226,
       "references_mar16": 44,
@@ -1254,6 +1282,7 @@
     },
     {
       "article": "Cradle of Humankind",
+      "category": "Heritage from each province",
       "entry_links_mar16": 172,
       "exit_links_mar16": 202,
       "references_mar16": 14,
@@ -1285,6 +1314,7 @@
     },
     {
       "article": "Day of Reconciliation",
+      "category": "National events",
       "entry_links_mar16": 39,
       "exit_links_mar16": 47,
       "references_mar16": 2,
@@ -1316,6 +1346,7 @@
     },
     {
       "article": "Decantation",
+      "category": "Processes to purify water",
       "entry_links_mar16": 102,
       "exit_links_mar16": 25,
       "references_mar16": 0,
@@ -1347,6 +1378,7 @@
     },
     {
       "article": "Dependent and independent variables",
+      "category": "Mathematics",
       "entry_links_mar16": 422,
       "exit_links_mar16": 119,
       "references_mar16": 17,
@@ -1409,6 +1441,7 @@
     },
     {
       "article": "Discrimination",
+      "category": "Discrimination, stereotypes and bias",
       "entry_links_mar16": 403,
       "exit_links_mar16": 1444,
       "references_mar16": 144,
@@ -1440,6 +1473,7 @@
     },
     {
       "article": "Domestic violence",
+      "category": "Domestic violence",
       "entry_links_mar16": 482,
       "exit_links_mar16": 3763,
       "references_mar16": 371,
@@ -1471,6 +1505,7 @@
     },
     {
       "article": "Domestic violence in South Africa",
+      "category": "Domestic violence",
       "entry_links_mar16": 81,
       "exit_links_mar16": 199,
       "references_mar16": 22,
@@ -1502,6 +1537,7 @@
     },
     {
       "article": "Drakensberg",
+      "category": "Heritage from each province",
       "entry_links_mar16": 464,
       "exit_links_mar16": 462,
       "references_mar16": 19,
@@ -1533,6 +1569,7 @@
     },
     {
       "article": "Duration (music)",
+      "category": "Vibration and sound",
       "entry_links_mar16": 113,
       "exit_links_mar16": 353,
       "references_mar16": 2,
@@ -1564,6 +1601,7 @@
     },
     {
       "article": "Economy of South Africa",
+      "category": "Economy - political system",
       "entry_links_mar16": 496,
       "exit_links_mar16": 1107,
       "references_mar16": 113,
@@ -1595,6 +1633,7 @@
     },
     {
       "article": "Ecosystem",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 497,
       "exit_links_mar16": 1121,
       "references_mar16": 46,
@@ -1626,6 +1665,7 @@
     },
     {
       "article": "Electrical conductor",
+      "category": "Circuits",
       "entry_links_mar16": 490,
       "exit_links_mar16": 203,
       "references_mar16": 2,
@@ -1657,6 +1697,7 @@
     },
     {
       "article": "Electrical network",
+      "category": "Circuits",
       "entry_links_mar16": 480,
       "exit_links_mar16": 183,
       "references_mar16": 1,
@@ -1688,6 +1729,7 @@
     },
     {
       "article": "Electricity generation",
+      "category": "Circuits",
       "entry_links_mar16": 491,
       "exit_links_mar16": 482,
       "references_mar16": 22,
@@ -1719,6 +1761,7 @@
     },
     {
       "article": "Energy in South Africa",
+      "category": "Stored energy in fuels",
       "entry_links_mar16": 112,
       "exit_links_mar16": 195,
       "references_mar16": 20,
@@ -1750,6 +1793,7 @@
     },
     {
       "article": "Fair trade",
+      "category": "Fair trading",
       "entry_links_mar16": 493,
       "exit_links_mar16": 1558,
       "references_mar16": 178,
@@ -1781,6 +1825,7 @@
     },
     {
       "article": "Farm",
+      "category": "Crop and stock farming",
       "entry_links_mar16": 494,
       "exit_links_mar16": 376,
       "references_mar16": 27,
@@ -1812,6 +1857,7 @@
     },
     {
       "article": "Fiber",
+      "category": "Solid materials",
       "entry_links_mar16": 489,
       "exit_links_mar16": 435,
       "references_mar16": 9,
@@ -1843,6 +1889,7 @@
     },
     {
       "article": "Fire safety",
+      "category": "Stored energy in fuels",
       "entry_links_mar16": 431,
       "exit_links_mar16": 347,
       "references_mar16": 8,
@@ -1874,6 +1921,7 @@
     },
     {
       "article": "Flag of South Africa",
+      "category": "National history",
       "entry_links_mar16": 488,
       "exit_links_mar16": 252,
       "references_mar16": 10,
@@ -1905,6 +1953,7 @@
     },
     {
       "article": "Food",
+      "category": "Nutrients in food / Balanced diets",
       "entry_links_mar16": 262,
       "exit_links_mar16": 1774,
       "references_mar16": 93,
@@ -1936,6 +1985,7 @@
     },
     {
       "article": "Food group",
+      "category": "Nutrients in food / Balanced diets",
       "entry_links_mar16": 69,
       "exit_links_mar16": 142,
       "references_mar16": 10,
@@ -1967,6 +2017,7 @@
     },
     {
       "article": "Food pyramid (nutrition)",
+      "category": "Health and hygiene topics and impacts",
       "entry_links_mar16": 56,
       "exit_links_mar16": 362,
       "references_mar16": 43,
@@ -1998,6 +2049,7 @@
     },
     {
       "article": "Food security",
+      "category": "Human rights",
       "entry_links_mar16": 485,
       "exit_links_mar16": 1272,
       "references_mar16": 143,
@@ -2029,6 +2081,7 @@
     },
     {
       "article": "Food vs. fuel",
+      "category": "Stored energy in fuels",
       "entry_links_mar16": 352,
       "exit_links_mar16": 967,
       "references_mar16": 144,
@@ -2060,6 +2113,7 @@
     },
     {
       "article": "Frances Baard",
+      "category": "Heritage from each province",
       "entry_links_mar16": 18,
       "exit_links_mar16": 102,
       "references_mar16": 7,
@@ -2091,6 +2145,7 @@
     },
     {
       "article": "Free State (province)",
+      "category": "Heritage from each province",
       "entry_links_mar16": 471,
       "exit_links_mar16": 371,
       "references_mar16": 4,
@@ -2122,6 +2177,7 @@
     },
     {
       "article": "Freedom Day (South Africa)",
+      "category": "National events",
       "entry_links_mar16": 52,
       "exit_links_mar16": 40,
       "references_mar16": 3,
@@ -2153,6 +2209,7 @@
     },
     {
       "article": "Gana and Gwi people",
+      "category": "San hunter-gatherer society in the Later Stone Age",
       "entry_links_mar16": 34,
       "exit_links_mar16": 58,
       "references_mar16": 0,
@@ -2184,6 +2241,7 @@
     },
     {
       "article": "Gangster",
+      "category": "Gangster",
       "entry_links_mar16": 487,
       "exit_links_mar16": 622,
       "references_mar16": 53,
@@ -2215,6 +2273,7 @@
     },
     {
       "article": "Gas",
+      "category": "Stored energy in fuels",
       "entry_links_mar16": 488,
       "exit_links_mar16": 524,
       "references_mar16": 20,
@@ -2246,6 +2305,7 @@
     },
     {
       "article": "Gauteng",
+      "category": "Heritage from each province",
       "entry_links_mar16": 492,
       "exit_links_mar16": 761,
       "references_mar16": 75,
@@ -2277,6 +2337,7 @@
     },
     {
       "article": "Gender role",
+      "category": "Gender stereotyping",
       "entry_links_mar16": 462,
       "exit_links_mar16": 1187,
       "references_mar16": 188,
@@ -2308,6 +2369,7 @@
     },
     {
       "article": "Gender stereotypes",
+      "category": "Discrimination, stereotypes and bias",
       "entry_links_mar16": 63,
       "exit_links_mar16": 1187,
       "references_mar16": 188,
@@ -2339,6 +2401,7 @@
     },
     {
       "article": "Glass",
+      "category": "Solid materials",
       "entry_links_mar16": 463,
       "exit_links_mar16": 1048,
       "references_mar16": 58,
@@ -2370,6 +2433,7 @@
     },
     {
       "article": "Griqua people",
+      "category": "Khoikhoi herder society in the Later Stone Age",
       "entry_links_mar16": 278,
       "exit_links_mar16": 214,
       "references_mar16": 8,
@@ -2401,6 +2465,7 @@
     },
     {
       "article": "Hand washing",
+      "category": "Health and hygiene topics and impacts",
       "entry_links_mar16": 357,
       "exit_links_mar16": 717,
       "references_mar16": 58,
@@ -2432,6 +2497,7 @@
     },
     {
       "article": "Health",
+      "category": "Health and hygiene topics and impacts",
       "entry_links_mar16": 432,
       "exit_links_mar16": 490,
       "references_mar16": 49,
@@ -2463,6 +2529,7 @@
     },
     {
       "article": "Healthcare in South Africa",
+      "category": "HIV/AIDS",
       "entry_links_mar16": 32,
       "exit_links_mar16": 339,
       "references_mar16": 12,
@@ -2494,6 +2561,7 @@
     },
     {
       "article": "Herero and Namaqua Genocide",
+      "category": "Khoikhoi herder society in the Later Stone Age",
       "entry_links_mar16": 310,
       "exit_links_mar16": 745,
       "references_mar16": 89,
@@ -2525,6 +2593,7 @@
     },
     {
       "article": "Heritage Day (South Africa)",
+      "category": "National events",
       "entry_links_mar16": 71,
       "exit_links_mar16": 60,
       "references_mar16": 6,
@@ -2556,6 +2625,7 @@
     },
     {
       "article": "History of South Africa",
+      "category": "National history",
       "entry_links_mar16": 480,
       "exit_links_mar16": 1749,
       "references_mar16": 183,
@@ -2587,6 +2657,7 @@
     },
     {
       "article": "History of writing",
+      "category": "History of written communication",
       "entry_links_mar16": 490,
       "exit_links_mar16": 1126,
       "references_mar16": 37,
@@ -2618,6 +2689,7 @@
     },
     {
       "article": "HIV",
+      "category": "HIV/AIDS",
       "entry_links_mar16": 476,
       "exit_links_mar16": 1529,
       "references_mar16": 128,
@@ -2649,6 +2721,7 @@
     },
     {
       "article": "HIV/AIDS",
+      "category": "HIV/AIDS",
       "entry_links_mar16": 496,
       "exit_links_mar16": 2657,
       "references_mar16": 272,
@@ -2680,6 +2753,7 @@
     },
     {
       "article": "Home safety",
+      "category": "Safety measures",
       "entry_links_mar16": 11,
       "exit_links_mar16": 68,
       "references_mar16": 4,
@@ -2711,6 +2785,7 @@
     },
     {
       "article": "Human nutrition",
+      "category": "Nutrients in food / Balanced diets",
       "entry_links_mar16": 437,
       "exit_links_mar16": 1880,
       "references_mar16": 94,
@@ -2742,6 +2817,7 @@
     },
     {
       "article": "Human Rights Day",
+      "category": "National events",
       "entry_links_mar16": 265,
       "exit_links_mar16": 199,
       "references_mar16": 26,
@@ -2773,6 +2849,7 @@
     },
     {
       "article": "Human swimming",
+      "category": "Health and hygiene topics and impacts",
       "entry_links_mar16": 496,
       "exit_links_mar16": 438,
       "references_mar16": 25,
@@ -2804,6 +2881,7 @@
     },
     {
       "article": "Hydraulics",
+      "category": "Physics and engineering",
       "entry_links_mar16": 488,
       "exit_links_mar16": 220,
       "references_mar16": 10,
@@ -2835,6 +2913,7 @@
     },
     {
       "article": "Insulator (electricity)",
+      "category": "Circuits",
       "entry_links_mar16": 432,
       "exit_links_mar16": 331,
       "references_mar16": 9,
@@ -2866,6 +2945,7 @@
     },
     {
       "article": "Kaditshwene",
+      "category": "Heritage from each province",
       "entry_links_mar16": 24,
       "exit_links_mar16": 57,
       "references_mar16": 7,
@@ -2897,6 +2977,7 @@
     },
     {
       "article": "Khoikhoi",
+      "category": "Khoikhoi herder society in the Later Stone Age",
       "entry_links_mar16": 416,
       "exit_links_mar16": 255,
       "references_mar16": 8,
@@ -2928,6 +3009,7 @@
     },
     {
       "article": "Khoisan languages",
+      "category": "San hunter-gatherer society in the Later Stone Age",
       "entry_links_mar16": 234,
       "exit_links_mar16": 231,
       "references_mar16": 5,
@@ -2959,6 +3041,7 @@
     },
     {
       "article": "Kingdom of Mapungubwe",
+      "category": "Heritage from each province",
       "entry_links_mar16": 499,
       "exit_links_mar16": 420,
       "references_mar16": 11,
@@ -2990,6 +3073,7 @@
     },
     {
       "article": "Later Stone Age",
+      "category": "San hunter-gatherer society in the Later Stone Age",
       "entry_links_mar16": 75,
       "exit_links_mar16": 373,
       "references_mar16": 7,
@@ -3021,6 +3105,7 @@
     },
     {
       "article": "Latitude",
+      "category": "Geography",
       "entry_links_mar16": 493,
       "exit_links_mar16": 480,
       "references_mar16": 16,
@@ -3052,6 +3137,7 @@
     },
     {
       "article": "Liquid fuel",
+      "category": "Stored energy in fuels",
       "entry_links_mar16": 73,
       "exit_links_mar16": 153,
       "references_mar16": 3,
@@ -3083,6 +3169,7 @@
     },
     {
       "article": "List of South Africans",
+      "category": "Economy - political system",
       "entry_links_mar16": 163,
       "exit_links_mar16": 1221,
       "references_mar16": 2,
@@ -3114,6 +3201,7 @@
     },
     {
       "article": "Longitude",
+      "category": "Geography",
       "entry_links_mar16": 480,
       "exit_links_mar16": 618,
       "references_mar16": 11,
@@ -3145,6 +3233,7 @@
     },
     {
       "article": "Mahatma Gandhi",
+      "category": "Life stories of leaders",
       "entry_links_mar16": 493,
       "exit_links_mar16": 3421,
       "references_mar16": 278,
@@ -3176,6 +3265,7 @@
     },
     {
       "article": "Makhonjwa Mountains",
+      "category": "Heritage from each province",
       "entry_links_mar16": 13,
       "exit_links_mar16": 46,
       "references_mar16": 5,
@@ -3207,6 +3297,7 @@
     },
     {
       "article": "Malaria",
+      "category": "Health and hygiene topics and impacts",
       "entry_links_mar16": 493,
       "exit_links_mar16": 2104,
       "references_mar16": 201,
@@ -3238,6 +3329,7 @@
     },
     {
       "article": "Mandela Day",
+      "category": "National events",
       "entry_links_mar16": 116,
       "exit_links_mar16": 136,
       "references_mar16": 6,
@@ -3269,6 +3361,7 @@
     },
     {
       "article": "Map",
+      "category": "Geography",
       "entry_links_mar16": 486,
       "exit_links_mar16": 497,
       "references_mar16": 6,
@@ -3300,6 +3393,7 @@
     },
     {
       "article": "Mapungubwe Museum",
+      "category": "Heritage from each province",
       "entry_links_mar16": 53,
       "exit_links_mar16": 77,
       "references_mar16": 1,
@@ -3331,6 +3425,7 @@
     },
     {
       "article": "Mapungubwe National Park",
+      "category": "Heritage from each province",
       "entry_links_mar16": 42,
       "exit_links_mar16": 179,
       "references_mar16": 2,
@@ -3362,6 +3457,7 @@
     },
     {
       "article": "Mind map",
+      "category": "Physics and engineering",
       "entry_links_mar16": 491,
       "exit_links_mar16": 235,
       "references_mar16": 20,
@@ -3393,6 +3489,7 @@
     },
     {
       "article": "Mining industry of South Africa",
+      "category": "Mineral and coal resources in South Africa",
       "entry_links_mar16": 186,
       "exit_links_mar16": 329,
       "references_mar16": 28,
@@ -3424,6 +3521,7 @@
     },
     {
       "article": "Mpumalanga",
+      "category": "Heritage from each province",
       "entry_links_mar16": 494,
       "exit_links_mar16": 346,
       "references_mar16": 9,
@@ -3455,6 +3553,7 @@
     },
     {
       "article": "Music of Africa",
+      "category": "Movement and energy in a system",
       "entry_links_mar16": 497,
       "exit_links_mar16": 637,
       "references_mar16": 19,
@@ -3486,6 +3585,7 @@
     },
     {
       "article": "Music of South Africa",
+      "category": "Movement and energy in a system",
       "entry_links_mar16": 473,
       "exit_links_mar16": 849,
       "references_mar16": 12,
@@ -3517,6 +3617,7 @@
     },
     {
       "article": "National anthem of South Africa",
+      "category": "National history",
       "entry_links_mar16": 165,
       "exit_links_mar16": 155,
       "references_mar16": 6,
@@ -3548,6 +3649,7 @@
     },
     {
       "article": "National symbols of South Africa",
+      "category": "National history",
       "entry_links_mar16": 115,
       "exit_links_mar16": 99,
       "references_mar16": 9,
@@ -3579,6 +3681,7 @@
     },
     {
       "article": "National Women's Day",
+      "category": "National events",
       "entry_links_mar16": 70,
       "exit_links_mar16": 74,
       "references_mar16": 4,
@@ -3610,6 +3713,7 @@
     },
     {
       "article": "Nelson Mandela",
+      "category": "Life stories of leaders",
       "entry_links_mar16": 495,
       "exit_links_mar16": 3271,
       "references_mar16": 423,
@@ -3641,6 +3745,7 @@
     },
     {
       "article": "Nest",
+      "category": "Animal shelters",
       "entry_links_mar16": 491,
       "exit_links_mar16": 323,
       "references_mar16": 15,
@@ -3672,6 +3777,7 @@
     },
     {
       "article": "Noise pollution",
+      "category": "Vibration and sound",
       "entry_links_mar16": 491,
       "exit_links_mar16": 387,
       "references_mar16": 25,
@@ -3703,6 +3809,7 @@
     },
     {
       "article": "Oliver Tambo",
+      "category": "Life stories of leaders",
       "entry_links_mar16": 314,
       "exit_links_mar16": 288,
       "references_mar16": 13,
@@ -3734,6 +3841,7 @@
     },
     {
       "article": "Outer space",
+      "category": "Physics and engineering",
       "entry_links_mar16": 492,
       "exit_links_mar16": 1512,
       "references_mar16": 140,
@@ -3765,6 +3873,7 @@
     },
     {
       "article": "Outline of domestic violence",
+      "category": "Domestic violence",
       "entry_links_mar16": 215,
       "exit_links_mar16": 590,
       "references_mar16": 65,
@@ -3796,6 +3905,7 @@
     },
     {
       "article": "Paper",
+      "category": "Solid materials",
       "entry_links_mar16": 491,
       "exit_links_mar16": 919,
       "references_mar16": 27,
@@ -3827,6 +3937,7 @@
     },
     {
       "article": "People Against Gangsterism and Drugs",
+      "category": "Gangster",
       "entry_links_mar16": 36,
       "exit_links_mar16": 401,
       "references_mar16": 8,
@@ -3858,6 +3969,7 @@
     },
     {
       "article": "Petrol-paraffin engine",
+      "category": "Stored energy in fuels",
       "entry_links_mar16": 18,
       "exit_links_mar16": 107,
       "references_mar16": 8,
@@ -3889,6 +4001,7 @@
     },
     {
       "article": "Pitch (music)",
+      "category": "Vibration and sound",
       "entry_links_mar16": 479,
       "exit_links_mar16": 465,
       "references_mar16": 23,
@@ -3920,6 +4033,7 @@
     },
     {
       "article": "Pneumatics",
+      "category": "Physics and engineering",
       "entry_links_mar16": 477,
       "exit_links_mar16": 147,
       "references_mar16": 1,
@@ -3951,6 +4065,7 @@
     },
     {
       "article": "Politics of South Africa",
+      "category": "Economy - political system",
       "entry_links_mar16": 497,
       "exit_links_mar16": 645,
       "references_mar16": 3,
@@ -3982,6 +4097,7 @@
     },
     {
       "article": "Pollution",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 496,
       "exit_links_mar16": 881,
       "references_mar16": 54,
@@ -4013,6 +4129,7 @@
     },
     {
       "article": "Processed food",
+      "category": "Food processing",
       "entry_links_mar16": 78,
       "exit_links_mar16": 360,
       "references_mar16": 38,
@@ -4044,6 +4161,7 @@
     },
     {
       "article": "Rail transport",
+      "category": "Transport on land",
       "entry_links_mar16": 384,
       "exit_links_mar16": 1131,
       "references_mar16": 63,
@@ -4075,6 +4193,7 @@
     },
     {
       "article": "Rail transport in South Africa",
+      "category": "Transport on land",
       "entry_links_mar16": 477,
       "exit_links_mar16": 263,
       "references_mar16": 14,
@@ -4106,6 +4225,7 @@
     },
     {
       "article": "Reproduction",
+      "category": "Biological sciences",
       "entry_links_mar16": 472,
       "exit_links_mar16": 393,
       "references_mar16": 21,
@@ -4137,6 +4257,7 @@
     },
     {
       "article": "Right to food",
+      "category": "Human rights",
       "entry_links_mar16": 146,
       "exit_links_mar16": 727,
       "references_mar16": 69,
@@ -4168,6 +4289,7 @@
     },
     {
       "article": "Road map",
+      "category": "Geography",
       "entry_links_mar16": 40,
       "exit_links_mar16": 125,
       "references_mar16": 7,
@@ -4199,6 +4321,7 @@
     },
     {
       "article": "Rock (geology)",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 495,
       "exit_links_mar16": 262,
       "references_mar16": 10,
@@ -4230,6 +4353,7 @@
     },
     {
       "article": "Saartjie Baartman",
+      "category": "Khoikhoi herder society in the Later Stone Age",
       "entry_links_mar16": 95,
       "exit_links_mar16": 445,
       "references_mar16": 61,
@@ -4261,6 +4385,7 @@
     },
     {
       "article": "San healing practices",
+      "category": "Health and hygiene topics and impacts",
       "entry_links_mar16": 21,
       "exit_links_mar16": 64,
       "references_mar16": 10,
@@ -4292,6 +4417,7 @@
     },
     {
       "article": "San people",
+      "category": "San hunter-gatherer society in the Later Stone Age",
       "entry_links_mar16": 337,
       "exit_links_mar16": 848,
       "references_mar16": 92,
@@ -4323,6 +4449,7 @@
     },
     {
       "article": "San religion",
+      "category": "San hunter-gatherer society in the Later Stone Age",
       "entry_links_mar16": 444,
       "exit_links_mar16": 324,
       "references_mar16": 28,
@@ -4354,6 +4481,7 @@
     },
     {
       "article": "San rock art",
+      "category": "Heritage from each province",
       "entry_links_mar16": 20,
       "exit_links_mar16": 70,
       "references_mar16": 10,
@@ -4385,6 +4513,7 @@
     },
     {
       "article": "Sand",
+      "category": "Solid materials",
       "entry_links_mar16": 496,
       "exit_links_mar16": 461,
       "references_mar16": 11,
@@ -4416,6 +4545,7 @@
     },
     {
       "article": "Scale (map)",
+      "category": "Geography",
       "entry_links_mar16": 204,
       "exit_links_mar16": 169,
       "references_mar16": 6,
@@ -4447,6 +4577,7 @@
     },
     {
       "article": "Scientific method",
+      "category": "Biological sciences",
       "entry_links_mar16": 448,
       "exit_links_mar16": 1667,
       "references_mar16": 163,
@@ -4478,6 +4609,7 @@
     },
     {
       "article": "Settling",
+      "category": "Processes to purify water",
       "entry_links_mar16": 81,
       "exit_links_mar16": 86,
       "references_mar16": 5,
@@ -4509,6 +4641,7 @@
     },
     {
       "article": "Sexism",
+      "category": "Gender stereotyping",
       "entry_links_mar16": 474,
       "exit_links_mar16": 2686,
       "references_mar16": 326,
@@ -4540,6 +4673,7 @@
     },
     {
       "article": "Sieve",
+      "category": "Processes to purify water",
       "entry_links_mar16": 251,
       "exit_links_mar16": 80,
       "references_mar16": 6,
@@ -4571,6 +4705,7 @@
     },
     {
       "article": "Soil",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 481,
       "exit_links_mar16": 1911,
       "references_mar16": 216,
@@ -4602,6 +4737,7 @@
     },
     {
       "article": "Sound",
+      "category": "Vibration and sound",
       "entry_links_mar16": 481,
       "exit_links_mar16": 417,
       "references_mar16": 24,
@@ -4633,6 +4769,7 @@
     },
     {
       "article": "South Africa",
+      "category": "National history",
       "entry_links_mar16": 491,
       "exit_links_mar16": 2737,
       "references_mar16": 185,
@@ -4664,6 +4801,7 @@
     },
     {
       "article": "South African cuisine",
+      "category": "Crop and stock farming",
       "entry_links_mar16": 499,
       "exit_links_mar16": 775,
       "references_mar16": 0,
@@ -4695,6 +4833,7 @@
     },
     {
       "article": "South African locomotive history",
+      "category": "Transport on land",
       "entry_links_mar16": 375,
       "exit_links_mar16": 2098,
       "references_mar16": 30,
@@ -4726,6 +4865,7 @@
     },
     {
       "article": "Standard Model",
+      "category": "Mathematics",
       "entry_links_mar16": 467,
       "exit_links_mar16": 996,
       "references_mar16": 41,
@@ -4757,6 +4897,7 @@
     },
     {
       "article": "Stereotype",
+      "category": "Discrimination, stereotypes and bias",
       "entry_links_mar16": 479,
       "exit_links_mar16": 1199,
       "references_mar16": 83,
@@ -4788,6 +4929,7 @@
     },
     {
       "article": "Steve Biko",
+      "category": "Life stories of leaders",
       "entry_links_mar16": 491,
       "exit_links_mar16": 683,
       "references_mar16": 42,
@@ -4819,6 +4961,7 @@
     },
     {
       "article": "Tap (valve)",
+      "category": "How people get access to water",
       "entry_links_mar16": 172,
       "exit_links_mar16": 128,
       "references_mar16": 3,
@@ -4850,6 +4993,7 @@
     },
     {
       "article": "Textile",
+      "category": "Solid materials",
       "entry_links_mar16": 492,
       "exit_links_mar16": 853,
       "references_mar16": 22,
@@ -4881,6 +5025,7 @@
     },
     {
       "article": "Trade",
+      "category": "Fair trading",
       "entry_links_mar16": 467,
       "exit_links_mar16": 860,
       "references_mar16": 52,
@@ -4912,6 +5057,7 @@
     },
     {
       "article": "Transport",
+      "category": "Transport on land",
       "entry_links_mar16": 417,
       "exit_links_mar16": 1209,
       "references_mar16": 34,
@@ -4943,6 +5089,7 @@
     },
     {
       "article": "Transport in South Africa",
+      "category": "Transport on land",
       "entry_links_mar16": 193,
       "exit_links_mar16": 406,
       "references_mar16": 9,
@@ -4974,6 +5121,7 @@
     },
     {
       "article": "Vibration",
+      "category": "Vibration and sound",
       "entry_links_mar16": 479,
       "exit_links_mar16": 313,
       "references_mar16": 6,
@@ -5005,6 +5153,7 @@
     },
     {
       "article": "Walter Sisulu",
+      "category": "Life stories of leaders",
       "entry_links_mar16": 496,
       "exit_links_mar16": 595,
       "references_mar16": 10,
@@ -5036,6 +5185,7 @@
     },
     {
       "article": "Water filter",
+      "category": "Processes to purify water",
       "entry_links_mar16": 213,
       "exit_links_mar16": 137,
       "references_mar16": 12,
@@ -5067,6 +5217,7 @@
     },
     {
       "article": "Water pollution",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 488,
       "exit_links_mar16": 852,
       "references_mar16": 39,
@@ -5098,6 +5249,7 @@
     },
     {
       "article": "Water privatisation in South Africa",
+      "category": "How people get access to water",
       "entry_links_mar16": 14,
       "exit_links_mar16": 65,
       "references_mar16": 6,
@@ -5129,6 +5281,7 @@
     },
     {
       "article": "Water supply and sanitation in South Africa",
+      "category": "How people get access to water",
       "entry_links_mar16": 82,
       "exit_links_mar16": 496,
       "references_mar16": 67,
@@ -5160,6 +5313,7 @@
     },
     {
       "article": "Water well",
+      "category": "How people get access to water",
       "entry_links_mar16": 496,
       "exit_links_mar16": 415,
       "references_mar16": 12,
@@ -5191,6 +5345,7 @@
     },
     {
       "article": "Wax",
+      "category": "Stored energy in fuels",
       "entry_links_mar16": 490,
       "exit_links_mar16": 419,
       "references_mar16": 6,
@@ -5222,6 +5377,7 @@
     },
     {
       "article": "Western Cape",
+      "category": "Heritage from each province",
       "entry_links_mar16": 493,
       "exit_links_mar16": 629,
       "references_mar16": 27,
@@ -5253,6 +5409,7 @@
     },
     {
       "article": "Wetland",
+      "category": "Ecosystem, natural resources",
       "entry_links_mar16": 498,
       "exit_links_mar16": 949,
       "references_mar16": 81,
@@ -5284,6 +5441,7 @@
     },
     {
       "article": "Wildlife conservation",
+      "category": "Animal husbandry and wild animal maintenance",
       "entry_links_mar16": 478,
       "exit_links_mar16": 317,
       "references_mar16": 13,
@@ -5315,6 +5473,7 @@
     },
     {
       "article": "Wildlife management",
+      "category": "Animal husbandry and wild animal maintenance",
       "entry_links_mar16": 410,
       "exit_links_mar16": 370,
       "references_mar16": 20,
@@ -5346,6 +5505,7 @@
     },
     {
       "article": "Winnie Madikizela-Mandela",
+      "category": "Life stories of leaders",
       "entry_links_mar16": 495,
       "exit_links_mar16": 555,
       "references_mar16": 43,
@@ -5377,6 +5537,7 @@
     },
     {
       "article": "Wood",
+      "category": "Solid materials",
       "entry_links_mar16": 494,
       "exit_links_mar16": 1296,
       "references_mar16": 27,
@@ -5408,6 +5569,7 @@
     },
     {
       "article": "Wool",
+      "category": "Solid materials",
       "entry_links_mar16": 498,
       "exit_links_mar16": 898,
       "references_mar16": 41,
@@ -5439,6 +5601,7 @@
     },
     {
       "article": "Youth culture",
+      "category": "Youth culture",
       "entry_links_mar16": 173,
       "exit_links_mar16": 145,
       "references_mar16": 31,
