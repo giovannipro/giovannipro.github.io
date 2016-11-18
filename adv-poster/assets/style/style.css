@@ -5,10 +5,15 @@ body{
     font-weight: 0.5em;
     background-color: #1625B8
 }
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
 #water{
     position: absolute;
     bottom: 40px;
     width: 100%;
+    max-width: 900px;
 }
 #save{
 	width: 90%;
@@ -17,11 +22,13 @@ body{
 	border-radius: 15px;
 	color: white;
 	background-color: transparent;
-	margin: 0 5%;
+	margin: 20px 5% 0;
 	cursor: pointer;
 }
-#title {
-	margin: 5%;
-	font-size: 3em;
+header{
+	margin: 20px;
 	color: white;
+}
+#title {
+	font-size: 0.7em;
 }
