@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Tahoma, Sans-serif;
+    font-weight: 0.5em;
+    background-color: #1625B8
+}
+#water{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+#save{
+	width: 90%;
+	height: 30px;
+	border: 1px solid white;
+	border-radius: 15px;
+	color: white;
+	background-color: transparent;
+	margin: 0 5%;
+	cursor: pointer;
+}
+#title {
+	margin: 5%;
+	font-size: 3em;
+	color: white;
+}
