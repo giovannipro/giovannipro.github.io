@@ -1,23 +1,62 @@
 function get_data(){
 
     var cross_origin = 'https://crossorigin.me/'
-    var API = 'http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=d&parameter=pm10&from=2016-11-05&to=2016-11-18&locations=Nabel_LUG'
+    var api = 'http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&parameter=pm10&locations=Nabel_LUG&from='
+
+    var d = new Date();
+    var year = d.getFullYear();
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+    var hour = d.getHours();
+
+    var time = year +''+ month +''+ day + 'T' + hour
+    var date = year+'-'+month+'-'+day+'&'+year+'-'+month+'-'+day
+    var request = api + date;
+
+    console.log(request)
 
     $.ajax({
-        url: cross_origin + API,
+        url: cross_origin + request,
     })
     .done(function(data) {
-        console.log(data)
+        //console.log(data)
 
         pm10_min = 0;
         pm10_max =  75;
-        pm10 =  $(data.locations)[0].data[12].values[0].value;
+        pm10 =  $(data.locations)[0].data[0].values[0].value;
 
-        console.log(pm10,pm10_min,pm10_max)
+        dates = $(data.locations)[0].data;
+        x = $(data.locations)[0].data[0].date; //.data[0].values[0].date;
+        //console.log(dates)
+        //console.log(x)
 
-        water(pm10,pm10_min,pm10_max);
-        save();
-    });
+        jQuery.each( dates, function( a,b ) {
+
+            var date_string = b.date.toString().substring(8,13)
+            var match = day + 'T' + (hour - 2)
+            //console.log(date_string)
+
+            if (date_string == match) {
+                //console.log(b.date + '-' + b.values[0].value)
+                if (b.values[0].value != null) {
+                    console.log(b.date)
+
+                    var pm10 = b.values[0].value
+                    water(pm10,pm10_min,pm10_max);
+                    console.log(pm10,pm10_min,pm10_max)
+
+                    return false;
+                }
+            }
+            else{
+                //console.log('error')
+            }
+        })        
+        save(time);
+    })
+    .fail(function() {
+        water(0,0,100);
+    })
 
 }
 
@@ -28,7 +67,7 @@ main variables
 
 var w = window;
 var width = w.outerWidth,
-height = width - (width / 2);
+height = width - (width / 4);
 
 var margin = {top: 50, right: 50, bottom: 50, left: 50},
 nomargin_w = width - (margin.left + margin.right),
@@ -47,17 +86,18 @@ set plot
 
 function water(index,min,max){
 
-    var value = (500/max) * index // 0 - 500
-    console.log(value)
+    var value = (600/max) * index // 0 - 600
+    //console.log(value)
 
     var svg = d3.select("#svg_container")
         .append("svg")
         .attr("id", "svg")
         .attr("viewBox", '0 0 ' + width + ' ' + (height) )
+        .attr("fill","#1625B8")
 
     var plot = svg.append("g")
-        .attr("id", "d3_plot")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("id", "d3_plot");
+        //.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     /* -----------------------
     get data
@@ -81,7 +121,8 @@ function water(index,min,max){
 
     var xScale = d3.scale.linear()
     	.domain([0,max_x])
-    	.range([0,width - margin.left - margin.right])
+    	//.range([0,width - margin.left - margin.right])
+        .range([0,width])
 
     var yScale = d3.scale.linear()
     	.domain([0,max_y])
@@ -125,12 +166,12 @@ function water(index,min,max){
         .attr('fill', 'none')
 }
 
-function save(){
+function save(time){
     $('#save').click(function () {
-                
+
         var dataviz = $('#svg_container').html();
-        console.log(dataviz);
-        download(dataviz, "water.svg", "text/plain");
+        //console.log(dataviz);
+        download(dataviz, "pm10_lugano_" + time +".svg", "text/plain");
     });   
 }
 

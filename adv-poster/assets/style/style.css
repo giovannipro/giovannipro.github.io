@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: 'Roboto', Tahoma, Sans-serif;
     font-weight: 0.5em;
-    background-color: #1625B8
+    background-color: #1625B8;
 }
 #container {
     max-width: 900px;
@@ -11,19 +11,21 @@ body{
 }
 #water{
     position: absolute;
-    bottom: 40px;
+    bottom: 0px;
     width: 100%;
     max-width: 900px;
 }
 #save{
+	position: absolute;
+	bottom: 30px;
 	width: 90%;
 	height: 30px;
-	border: 1px solid white;
+	border: 1px solid rgba(255, 255, 255, 0.65);
 	border-radius: 15px;
 	color: white;
-	background-color: transparent;
 	margin: 20px 5% 0;
 	cursor: pointer;
+	background-color: #1625B8;
 }
 header{
 	margin: 20px;
@@ -31,4 +33,15 @@ header{
 }
 #title {
 	font-size: 0.7em;
+}
+h2{
+	margin: 30px 0 0px;
+}
+h3{
+	margin: 0px;
+}
+
+h3 > a{
+	font-size: 0.6em;
+	color: white !important;
 }
