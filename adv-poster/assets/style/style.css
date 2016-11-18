@@ -6,14 +6,12 @@ body{
     background-color: #1625B8;
 }
 #container {
-    max-width: 900px;
     margin: 0 auto;
 }
 #water{
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    max-width: 900px;
 }
 #save{
 	position: absolute;
@@ -44,4 +42,13 @@ h3{
 h3 > a{
 	font-size: 0.6em;
 	color: white !important;
+}
+
+@media (min-width: 700px) {
+  	#water {
+    	max-width: 700px;
+  	}
+  	#container {
+	    max-width: 700px;
+	}	
 }

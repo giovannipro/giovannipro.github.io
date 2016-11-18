@@ -67,7 +67,7 @@ main variables
 
 var w = window;
 var width = w.outerWidth,
-height = width - (width / 4);
+height = width - (width / 3);
 
 var margin = {top: 50, right: 50, bottom: 50, left: 50},
 nomargin_w = width - (margin.left + margin.right),
