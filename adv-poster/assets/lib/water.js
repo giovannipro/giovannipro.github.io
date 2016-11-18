@@ -1,8 +1,8 @@
-function get_data(){
+function get_data(param){
 
     var cross_origin = 'https://crossorigin.me/'
-    var api = 'http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&parameter=pm10&locations=Nabel_LUG&from='
-
+    var api = 'http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG'
+    
     var d = new Date();
     var year = d.getFullYear();
     var month = d.getMonth() + 1;
@@ -11,7 +11,7 @@ function get_data(){
 
     var time = year +''+ month +''+ day + 'T' + hour
     var date = year+'-'+month+'-'+day+'&'+year+'-'+month+'-'+day
-    var request = api + date;
+    var request = api + '&parameter=' + param + '&from=' + date;
 
     console.log(request)
 
@@ -21,41 +21,53 @@ function get_data(){
     .done(function(data) {
         //console.log(data)
 
-        pm10_min = 0;
-        pm10_max =  75;
-        pm10 =  $(data.locations)[0].data[0].values[0].value;
+        min = 0;
+
+        if (param == 'pm10'){
+            max =  75;
+        }
+        if (param == '03'){
+            max =  150;
+        }
+        if (param == 'NO2'){
+            max =  100;
+        }
+
+        //value =  $(data.locations)[0].data[0].values[0].value;
 
         dates = $(data.locations)[0].data;
-        x = $(data.locations)[0].data[0].date; //.data[0].values[0].date;
+        x = $(data.locations)[0].data[0].date;
         //console.log(dates)
         //console.log(x)
 
         jQuery.each( dates, function( a,b ) {
 
-            var date_string = b.date.toString().substring(8,13)
-            var match = day + 'T' + (hour - 2)
-            //console.log(date_string)
+            var date_string = b.date.toString().substring(0,13)
+            var match = year+'-'+month+'-'+day + 'T' + (hour - 2)
+            //console.log(date_string + '>' + match)
 
-            if (date_string == match) {
-                //console.log(b.date + '-' + b.values[0].value)
+            if (date_string === match) {  // ==
+                console.log(b.date + '-' + b.values[0].value)
+                
                 if (b.values[0].value != null) {
-                    console.log(b.date)
+                    //console.log(b.date)
 
-                    var pm10 = b.values[0].value
-                    water(pm10,pm10_min,pm10_max);
-                    console.log(pm10,pm10_min,pm10_max)
+                    value = b.values[0].value
+                    wave_maker(value,min,max);
+                    console.log(param + ':' + value + '/' +max)
 
                     return false;
                 }
+                
             }
             else{
-                //console.log('error')
+                //console.log('error' + match)
             }
         })        
         save(time);
     })
     .fail(function() {
-        water(0,0,100);
+        wave_maker(0,0,100);
     })
 
 }
@@ -80,14 +92,25 @@ sea variables
 var waves = 20,
 v_translation = ((height/10) / waves);
 
+function wave_maker(index,min,max){
+    var data = [];
+    for (var i=0; i<waves; i++) { 
+        data.push({
+            x: i ,
+            y: Math.random()
+        })
+    }
+    //console.log(data)
+    var value = (600/max) * index // 0 - 600
+    water(data,value);
+}
+
 /* -----------------------
 set plot
 ------------------------- */
 
-function water(index,min,max){
-
-    var value = (600/max) * index // 0 - 600
-    //console.log(value)
+function water(data,value){
+    //console.log(data)
 
     var svg = d3.select("#svg_container")
         .append("svg")
@@ -98,19 +121,6 @@ function water(index,min,max){
     var plot = svg.append("g")
         .attr("id", "d3_plot");
         //.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    /* -----------------------
-    get data
-    ------------------------- */
-
-    var data = [];
-    for (var i=0; i<waves; i++) { 
-    	data.push({
-    		x: i ,
-    		y: Math.random(0, value)
-    	})
-    }
-    //console.log(data)
 
     /* -----------------------
     scale
@@ -138,7 +148,7 @@ function water(index,min,max){
         	return xScale(d.x)
         })
         .y(function(d){
-        	return (d.y * ( ((Math.random() * value) ) ) ) 
+        	return (d.y * ( ((Math.random() * value ) ) ) ) 
         });
 
     var onde = plot.selectAll('.wave')
@@ -160,7 +170,8 @@ function water(index,min,max){
         	return line(data)
         })
         .attr("class", "line_a")
-        .attr("stroke-dasharray","1, 4")
+        //.attr("stroke-dasharray","1, 4")
+        .attr('opacity','0.6')
         .style("stroke", "white" )
         .attr('stroke-width','2px')
         .attr('fill', 'none')
@@ -175,5 +186,40 @@ function save(time){
     });   
 }
 
-get_data();
+function reload(){
+    setInterval(function(){
+        $('#svg_container').hide()
+        $('#svg_container').empty()
+    },3000);
+        setInterval(function(){
+        wave_maker();
+        $('#svg_container').show()
+    },3000);
+}
+
+$( document ).ready(function() {
+    $('#pm10').click(function () {
+        $('.param').addClass('param_no');
+        $(this).removeClass('param_no');
+        $('#svg_container').empty();
+        get_data('pm10');
+    })
+    $('#no2').click(function () {
+        $('.param').addClass('param_no');
+        $(this).removeClass('param_no');
+        $('#svg_container').empty()
+        get_data('NO2');
+    })
+    $('#03').click(function () {
+        $('.param').addClass('param_no');
+        $(this).removeClass('param_no');
+        $('#svg_container').empty()
+        get_data('O3');
+    })
+
+    $('.param').toggleClass('param_no');
+    $('#pm10').toggleClass('param_no');
+    get_data('pm10');
+    
+});
 

@@ -33,22 +33,30 @@ header{
 	font-size: 0.7em;
 }
 h2{
-	margin: 30px 0 0px;
+	margin: 30px 0 10px;
 }
 h3{
 	margin: 0px;
 }
-
-h3 > a{
+.param{
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+.param_no{
+	opacity: 0.5;
+}
+h2 > a{
 	font-size: 0.6em;
 	color: white !important;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
   	#water {
-    	max-width: 700px;
+    	max-width: 500px;
   	}
   	#container {
-	    max-width: 700px;
+	    max-width: 500px;
 	}	
 }
