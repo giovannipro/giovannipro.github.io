@@ -38,37 +38,54 @@ function get_data(param){
         x = $(data.locations)[0].data[0].date;
 
         if (hour < 10) {
-            hour = "0" + hour;
+            hour = "0" + (hour - 1);
         }
-        console.log(hour);
+        //console.log(hour);
 
         jQuery.each( dates, function( a,b ) {
 
-            var date_string = b.date.toString().substring(0,14),
-                match = year + "-" + month + "-" + day + "T" + hour;
-                console.log(date_string + ">" + match);
+            var date_string = b.date.toString().substring(0,13);
 
-            if (date_string == match) {  // ==
-                console.log(b.date + "-" + b.values[0].value);
-                
-                //if (b.values[0].value != null) {
-                    //console.log(b.date)
-
-                    var value =  b.values[0].value,
-                        percentage = (value * 100) / max;
-                    //wave_maker(value,min,max);
-
-                    console.log(param + ":" + value + "/" + max + " (" + percentage + "%)");
-
-                    return false;
-                /*}
-                else{
-                    wave_maker(25,0,100);
-                }*/
-                
+            if (hour == 0){
+                match = year + "-" + month + "-" + (day-1) + "T23";
+                console.log(match)
             }
             else{
-                console.log("error: " + match)
+                if (hour < 10) {
+                    match = year + "-" + month + "-" + day + "T0" + (hour-1);
+                }
+                else{
+                    match = year + "-" + month + "-" + day + "T" + (hour-1);
+                }
+                //console.log(match)
+            }
+
+            if (date_string == match) {
+                //console.log(date_string + ">" + match);
+                var value =  b.values[0].value;
+
+                if (value !== null) { // b.values[0].value
+                   
+                    var percentage = (value * 100) / max;
+
+                    $('#no_data').empty();
+                    wave_maker(value,min,max);
+
+                    console.log(date_string + ' - ' + param + ":" + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
+
+                    return false; 
+                }
+                else{
+                    $('#no_data').empty();
+                    $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
+                    wave_maker(0,min,max);
+                    //console.log('no data')
+                    return false; 
+                }
+            }
+            
+            else{
+                //console.log("error: " + match)
             }
         }) ;       
         save(time);
@@ -76,7 +93,6 @@ function get_data(param){
     .fail(function() {
         wave_maker(0,0,100);
     });
-
 }
 
 
@@ -108,7 +124,7 @@ function wave_maker(index,min,max){
         });
     }
     //console.log(data)
-    var value = (600/max) * index; // 0 - 600
+    var value = (250/max) * index;
     water(data,value);
 }
 
@@ -163,7 +179,7 @@ function water(data,value){
         .enter()
         .append("g")
         .attr("transform",function(d,i){
-            return "translate(0," +  ( v_translation * (Math.exp(i/3) ) ) + ")"
+            return "translate(0," +  ( v_translation * (Math.exp(i/3))) + ")"
         }) // i/3
         .attr("class",function(d,i){
             return i
@@ -191,17 +207,6 @@ function save(time){
         //console.log(dataviz);
         download(dataviz, "pm10_lugano_" + time +".svg", "text/plain");
     });   
-}
-
-function reload(){
-    setInterval(function(){
-        $("#svg_container").hide()
-        $("#svg_container").empty()
-    },3000);
-        setInterval(function(){
-        wave_maker();
-        $("#svg_container").show()
-    },3000);
 }
 
 $( document ).ready(function() {

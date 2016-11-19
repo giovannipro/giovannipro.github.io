@@ -43,13 +43,25 @@ h3{
 	display: block;
 	float: left;
 	margin-right: 20px;
+	font-size: 1.6em;
 }
 .param_no{
 	opacity: 0.5;
 }
+h3{
+
+}
 h2 > a{
 	font-size: 0.6em;
 	color: white !important;
+}
+#no_data{
+	font-size: 0.9em;
+    clear: both;
+    margin-top: 20px; 
+}
+.clear{
+	clear: both;
 }
 
 @media (min-width: 500px) {
