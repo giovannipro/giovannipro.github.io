@@ -33,8 +33,7 @@ header{
 	font-size: 0.7em;
 }
 h2{
-	margin: 30px 0 0px;
-	font-size: 0.9em;
+	margin: 30px 0 10px;
 }
 h3{
 	margin: 0px;
@@ -44,7 +43,7 @@ h3{
 	display: block;
 	float: left;
 	margin-right: 20px;
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 .param_no{
 	opacity: 0.5;
@@ -53,7 +52,7 @@ h3{
 
 }
 h2 > a{
-	font-size: 0.6em;
+	font-size: 0.8em;
 	color: white !important;
 }
 #no_data{

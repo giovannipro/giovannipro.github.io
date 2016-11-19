@@ -19,7 +19,7 @@ function get_data(param){
         url: cross_origin + request,
     })
     .done(function(data) {
-        //console.log(data)
+        console.log(data)
 
         min = 0;
 
@@ -40,7 +40,6 @@ function get_data(param){
         if (hour < 10) {
             hour = "0" + (hour - 1);
         }
-        //console.log(hour);
 
         jQuery.each( dates, function( a,b ) {
 
@@ -61,9 +60,9 @@ function get_data(param){
             }
 
             if (date_string == match) {
-                //console.log(date_string + ">" + match);
                 var value =  b.values[0].value;
-
+                //console.log(date_string + " > " + match);
+                
                 if (value !== null) { // b.values[0].value
                    
                     var percentage = (value * 100) / max;
@@ -79,7 +78,8 @@ function get_data(param){
                     $('#no_data').empty();
                     $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
                     wave_maker(0,min,max);
-                    //console.log('no data')
+                    
+                    console.log(this)
                     return false; 
                 }
             }
@@ -226,7 +226,7 @@ $( document ).ready(function() {
         $(".param").addClass("param_no");
         $(this).removeClass("param_no");
         $("#svg_container").empty()
-        get_data("O3");
+        get_data("o3");
     })
 
     $(".param").toggleClass("param_no");
