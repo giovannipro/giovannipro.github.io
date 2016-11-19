@@ -35,7 +35,7 @@ function get_data(param){
 
         dates = $(data.locations)[0].data;
         //console.log(dates)
-        x = $(data.locations)[0].data[0].date;
+        //x = $(data.locations)[0].data[0].date;
 
         if (hour < 10) {
             hour = "0" + (hour - 1);
@@ -49,7 +49,7 @@ function get_data(param){
                 match = year + "-" + month + "-" + (day-1) + "T23";
             }
             else{
-                var anticipation = 2
+                var anticipation = 3
                 if (hour < (10 + anticipation) ) {
                     match = year + "-" + month + "-" + day + "T0" + (hour-anticipation);
                 }
@@ -57,12 +57,17 @@ function get_data(param){
                     match = year + "-" + month + "-" + day + "T" + (hour-anticipation);
                 }
             }
-
-            var value = b.values[0].value;
+            
+            /*
+            var values_sort = [];
+            values_sort.push(b);
+            */
             //console.log(date_string + '-' + value)
 
             if (date_string == match) {
-                //console.log(date_string + " - " + match + " - " + value);
+
+                var value = b.values[0].value;
+                console.log(date_string + " - " + match + " - " + value);
 
                 if (value !== null) {
                    
@@ -71,7 +76,7 @@ function get_data(param){
                     $('#no_data').empty();
                     wave_maker(value,min,max);
 
-                    console.log(b.date.toString() + ' - ' + param + ":" + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
+                    console.log(b.date.toString() + ' - ' + param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
 
                     return false; 
                 }
@@ -79,8 +84,8 @@ function get_data(param){
                     $('#no_data').empty();
                     $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
                     wave_maker(0,min,max);
-                    
-                    console.log('no data')
+                    console.log(request);
+                    console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
                     return false; 
                 }
 
@@ -89,6 +94,16 @@ function get_data(param){
             else{
                 //console.log("error: " + match)
             }
+
+            /*
+            values_sort.sort(
+                function(a, b) {
+                    return a.date - b.date
+                }
+            )
+            console.log(values_sort)
+            */
+
         }) ;       
         save(time);
     })
