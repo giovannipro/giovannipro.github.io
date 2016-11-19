@@ -1,4 +1,4 @@
-function get_data(){
+function get_data(param){
 
     var cross_origin = 'https://crossorigin.me/'
     var api = 'http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&parameter=pm10&locations=Nabel_LUG&from='
@@ -6,8 +6,8 @@ function get_data(){
     var d = new Date();
     var year = d.getFullYear();
     var month = d.getMonth() + 1;
-    var day = d.getDate();
-    var hour = d.getHours();
+    var day = 18; //d.getDate();
+    var hour = 18; //d.getHours();
 
     var time = year +''+ month +''+ day + 'T' + hour
     var date = year+'-'+month+'-'+day+'&'+year+'-'+month+'-'+day
@@ -21,9 +21,17 @@ function get_data(){
     .done(function(data) {
         //console.log(data)
 
-        pm10_min = 0;
-        pm10_max =  75;
-        pm10 =  $(data.locations)[0].data[0].values[0].value;
+        min = 0;
+
+        if (param == "pm10"){
+            max =  75;
+        }
+        if (param == "03"){
+            max =  150;
+        }
+        if (param == "NO2"){
+            max =  100;
+        }
 
         dates = $(data.locations)[0].data;
         x = $(data.locations)[0].data[0].date; //.data[0].values[0].date;
@@ -33,7 +41,7 @@ function get_data(){
         jQuery.each( dates, function( a,b ) {
 
             var date_string = b.date.toString().substring(8,13)
-            var match = day + 'T' + (hour - 2)
+            var match = day + 'T' + (hour)
             //console.log(date_string)
 
             if (date_string == match) {
@@ -41,10 +49,11 @@ function get_data(){
                 if (b.values[0].value != null) {
                     console.log(b.date)
 
-                    var pm10 = b.values[0].value
-                    water(pm10,pm10_min,pm10_max);
-                    console.log(pm10,pm10_min,pm10_max)
-
+                    var value =  b.values[0].value,
+                        percentage = (value * 100) / max;
+                    //wave_maker(value,min,max);
+                    console.log(param + ":" + value + "/" + max + " (" + percentage + "%)");
+                    
                     return false;
                 }
             }
@@ -175,5 +184,40 @@ function save(time){
     });   
 }
 
-get_data();
+function reload(){
+    setInterval(function(){
+        $("#svg_container").hide()
+        $("#svg_container").empty()
+    },3000);
+        setInterval(function(){
+        wave_maker();
+        $("#svg_container").show()
+    },3000);
+}
+
+$( document ).ready(function() {
+    $("#pm10").click(function () {
+        $(".param").addClass("param_no");
+        $(this).removeClass("param_no");
+        $("#svg_container").empty();
+        get_data("pm10");
+    })
+    $("#no2").click(function () {
+        $(".param").addClass("param_no");
+        $(this).removeClass("param_no");
+        $("#svg_container").empty()
+        get_data("NO2");
+    })
+    $("#03").click(function () {
+        $(".param").addClass("param_no");
+        $(this).removeClass("param_no");
+        $("#svg_container").empty()
+        get_data("O3");
+    })
+
+    $(".param").toggleClass("param_no");
+    $("#pm10").toggleClass("param_no");
+    get_data("pm10");
+    
+});
 
