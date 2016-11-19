@@ -13,23 +13,23 @@ function get_data(param){
         date = year + "-" + month + "-" + day + "&" + year + "-" + month + "-" + day,
         request = api + "&parameter=" + param + "&from=" + date;
 
-    console.log(request);
+    //console.log(request);
 
     $.ajax({
         url: cross_origin + request,
     })
     .done(function(data) {
-        console.log(data)
+        //console.log(data)
 
         min = 0;
 
         if (param == "pm10"){
-            max =  75;
+            max =  100;
         }
-        if (param == "03"){
+        if (param == "o3"){
             max =  150;
         }
-        if (param == "NO2"){
+        if (param == "no2"){
             max =  100;
         }
 
@@ -47,30 +47,31 @@ function get_data(param){
 
             if (hour == 0){
                 match = year + "-" + month + "-" + (day-1) + "T23";
-                console.log(match)
             }
             else{
-                if (hour < 10) {
-                    match = year + "-" + month + "-" + day + "T0" + (hour-1);
+                var anticipation = 2
+                if (hour < (10 + anticipation) ) {
+                    match = year + "-" + month + "-" + day + "T0" + (hour-anticipation);
                 }
                 else{
-                    match = year + "-" + month + "-" + day + "T" + (hour-1);
+                    match = year + "-" + month + "-" + day + "T" + (hour-anticipation);
                 }
-                //console.log(match)
             }
 
+            var value = b.values[0].value;
+            //console.log(date_string + '-' + value)
+
             if (date_string == match) {
-                var value =  b.values[0].value;
-                //console.log(date_string + " > " + match);
-                
-                if (value !== null) { // b.values[0].value
+                //console.log(date_string + " - " + match + " - " + value);
+
+                if (value !== null) {
                    
                     var percentage = (value * 100) / max;
 
                     $('#no_data').empty();
                     wave_maker(value,min,max);
 
-                    console.log(date_string + ' - ' + param + ":" + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
+                    console.log(b.date.toString() + ' - ' + param + ":" + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
 
                     return false; 
                 }
@@ -79,9 +80,10 @@ function get_data(param){
                     $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
                     wave_maker(0,min,max);
                     
-                    console.log(this)
+                    console.log('no data')
                     return false; 
                 }
+
             }
             
             else{
@@ -124,7 +126,7 @@ function wave_maker(index,min,max){
         });
     }
     //console.log(data)
-    var value = (250/max) * index;
+    var value = (300/max) * index;
     water(data,value);
 }
 
@@ -220,7 +222,7 @@ $( document ).ready(function() {
         $(".param").addClass("param_no");
         $(this).removeClass("param_no");
         $("#svg_container").empty()
-        get_data("NO2");
+        get_data("no2");
     })
     $("#03").click(function () {
         $(".param").addClass("param_no");
