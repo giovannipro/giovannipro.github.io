@@ -1,13 +1,15 @@
 {
   "name": "test",
+  "homepage": "https://giovannipro.github.io/test/",
   "description": "Testing Bower",
   "version": "0.0.0",
-  "author": [
+  "authors": [
     "Giovanni Profeta"
   ],
   "main": "index.html",
   "private": true,
   "dependencies": {
+  	"requirejs": "latest",
     "jquery": "latest",
     "d3": "~3.4.3",
     "bootstrap": "~3.1.1",
