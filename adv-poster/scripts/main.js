@@ -5,12 +5,15 @@ require.config({
         'd3': 'd3.min',
         'water': 'water'    
     },
-    deps: [ // dependencies
-    	"jquery",
-    	"d3"
-    ]   
+    shim : {
+        "water" : {
+            "deps" :['d3'] // dependencies
+        }
+    }
 });
 
 require([
+    "jquery",
+    "d3",
 	"water"
 ])
