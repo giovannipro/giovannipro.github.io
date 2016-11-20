@@ -1,2 +1,5 @@
-*.DS_Store
+.DS_Store
+**/.*
+
+# only if the app run in an external server
 bower_components
