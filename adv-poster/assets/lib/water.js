@@ -1,4 +1,4 @@
-function get_data(param){
+function get_data(param,cache){
 
     var cross_origin = "https://crossorigin.me/",
         api = "http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG";
@@ -12,104 +12,108 @@ function get_data(param){
     var time = year + month + day + "T" + hour,
         date = year + "-" + month + "-" + day + "&" + year + "-" + month + "-" + day,
         request = api + "&parameter=" + param + "&from=" + date;
-
     //console.log(request);
+
+    //cache = true // false: remake the call  
+
+    if (cache == 1){ // 0: cache; 1: no_cache
+        cache = false
+        console.log("no_cache")
+    }
+    else {
+        cache = true
+    }
 
     $.ajax({
         url: cross_origin + request,
-    })
-    .done(function(data) {
-        //console.log(data)
+        cache: cache,
+        beforeSend: function(){
+            $('#no_data').html(
+                '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>'
+            );
+        },
+        success: function(data) {
+            //console.log(data)
 
-        min = 0;
+            min = 0;
 
-        if (param == "pm10"){
-            max =  100;
-        }
-        if (param == "o3"){
-            max =  150;
-        }
-        if (param == "no2"){
-            max =  100;
-        }
-
-        dates = $(data.locations)[0].data;
-        //console.log(dates)
-        //x = $(data.locations)[0].data[0].date;
-
-        if (hour < 10) {
-            hour = "0" + (hour - 1);
-        }
-
-        jQuery.each( dates, function( a,b ) {
-
-            var date_string = b.date.toString().substring(0,13);
-
-            if (hour == 0){
-                match = year + "-" + month + "-" + (day-1) + "T23";
+            if (param == "pm10"){
+                max =  100;
             }
-            else{
-                var anticipation = 3
-                if (hour < (10 + anticipation) ) {
-                    match = year + "-" + month + "-" + day + "T0" + (hour-anticipation);
+            if (param == "o3"){
+                max =  150;
+            }
+            if (param == "no2"){
+                max =  100;
+            }
+
+            dates = $(data.locations)[0].data;
+            //console.log(dates)
+            //x = $(data.locations)[0].data[0].date;
+
+            if (hour < 10) {
+                hour = "0" + (hour - 1);
+            }
+
+            jQuery.each( dates, function( a,b ) {
+
+                var date_string = b.date.toString().substring(0,13);
+
+                if (hour == 0){
+                    match = year + "-" + month + "-" + (day-1) + "T23";
                 }
                 else{
-                    match = year + "-" + month + "-" + day + "T" + (hour-anticipation);
+                    var anticipation = 2
+                    if (hour < (10 + anticipation) ) {
+                        match = year + "-" + month + "-" + day + "T0" + (hour-anticipation);
+                    }
+                    else{
+                        match = year + "-" + month + "-" + day + "T" + (hour-anticipation);
+                    }
                 }
-            }
-            
-            /*
-            var values_sort = [];
-            values_sort.push(b);
-            */
-            //console.log(date_string + '-' + value)
 
-            if (date_string == match) {
+                if (date_string == match) {
 
-                var value = b.values[0].value;
-                console.log(date_string + " - " + match + " - " + value);
+                    var value = b.values[0].value;
+                    //console.log(date_string + " - " + match + " - " + value);
 
-                if (value !== null) {
-                   
-                    var percentage = (value * 100) / max;
+                    if (value !== null) {
+                       
+                        var percentage = (value * 100) / max;
+                        $('#no_data').empty();
+                        wave_maker(value,min,max);
+                        
+                        var load = 0
+                        
+                        console.log(b.date.toString() + ' - ' + param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
+                        return false; 
+                    }
+                    else{
+                        /*
+                        $('#no_data').empty();
+                        $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
+                        wave_maker(0,min,max);
+                        
+                        load++
 
-                    $('#no_data').empty();
-                    wave_maker(value,min,max);
+                        console.log(request);
+                        console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
+                        */
 
-                    console.log(b.date.toString() + ' - ' + param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
-
-                    return false; 
+                        get_data(param,1) // 0: cache; 1: no_cache
+                        return false; 
+                    }
                 }
                 else{
-                    $('#no_data').empty();
-                    $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
-                    wave_maker(0,min,max);
-                    console.log(request);
-                    console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
-                    return false; 
+                    //console.log("error: " + match)
                 }
-
-            }
-            
-            else{
-                //console.log("error: " + match)
-            }
-
-            /*
-            values_sort.sort(
-                function(a, b) {
-                    return a.date - b.date
-                }
-            )
-            console.log(values_sort)
-            */
-
-        }) ;       
-        save(time);
+            }) ;       
+            save(time);
+        },
+        fail: function() {
+            wave_maker(0,0,100);
+        }
     })
-    .fail(function() {
-        wave_maker(0,0,100);
-    });
 }
 
 
@@ -226,29 +230,33 @@ function save(time){
     });   
 }
 
-$( document ).ready(function() {
+function buttons(){
+
     $("#pm10").click(function () {
         $(".param").addClass("param_no");
         $(this).removeClass("param_no");
         $("#svg_container").empty();
+        //location.reload();
         get_data("pm10");
     })
     $("#no2").click(function () {
         $(".param").addClass("param_no");
         $(this).removeClass("param_no");
-        $("#svg_container").empty()
+        $("#svg_container").empty();
         get_data("no2");
     })
     $("#03").click(function () {
         $(".param").addClass("param_no");
         $(this).removeClass("param_no");
-        $("#svg_container").empty()
+        $("#svg_container").empty();
         get_data("o3");
     })
 
     $(".param").toggleClass("param_no");
     $("#pm10").toggleClass("param_no");
-    get_data("pm10");
-    
-});
+}
 
+//$( document ).ready(function() {
+get_data("pm10")
+buttons();
+//});
