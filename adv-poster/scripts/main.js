@@ -1,4 +1,4 @@
-require({
+require.config({
     baseUrl: 'assets/lib',
     paths : {
         'jquery': 'jquery-1.11.1.min',
@@ -8,8 +8,9 @@ require({
     deps: [ // dependencies
     	"jquery",
     	"d3"
-    ]
+    ]   
 });
+
 require([
-    "water"
+	"water"
 ])
