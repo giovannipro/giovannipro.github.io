@@ -18,7 +18,7 @@ function get_data(param,cache){
 
     if (cache == 1){ // 0: cache; 1: no_cache
         cache = false
-        console.log("no_cache")
+        //console.log("no_cache")
     }
     else {
         cache = true
