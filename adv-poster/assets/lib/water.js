@@ -14,8 +14,14 @@ nomargin_h = width - (margin.top + margin.bottom);
 sea variables
 ------------------------- */
 
-var waves = 20,
-v_translation = ((height/10) / waves);
+if (width < 500) {
+    var waves = 10;
+    var v_translation = ((height/3) / waves);  
+}
+else{
+   var waves = 20;  
+   var v_translation = ((height/10) / waves); 
+}
 
 /* -----------------------
 set plot
@@ -142,7 +148,7 @@ function get_data(param,cache){
     */
 
     // match
-    var anticipation = 1;
+    var anticipation = 2;
     if (day < 10){
         day = day;
         if (hour < 10) {
