@@ -333,39 +333,57 @@ function accelerometer(){
             var reduction = 3;
             var scale_x = 1;
 
-            // avanti-indietro
-            if (beta > 4 ) { // || alpha < -3  || alpha > 3 
-
-                $("#svg_container")
-                    .css("-webkit-transform","scale(" + scale_x + "," + (beta/reduction) +")")
-                    .css("-ms-transform","scale(" + scale_x + "," + (beta/reduction) +")")
-                    .css("transform","scale(" + scale_x + "," + (beta/reduction) +")")
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                if (beta < 4 && beta > -4 ) {  // 
+                // smartphone appoggiato - orizzonte alto
+                    var beta = Math.abs(beta);
+                    $("#svg_container")
+                        .css("-webkit-transform","scale(" + scale_x + "," + (scale_x * (5-beta) ) +")")
+                        .css("-ms-transform","scale(" + scale_x + "," + (scale_x * (5-beta) ) +")")
+                        .css("transform","scale(" + scale_x + "," + (scale_x * (5-beta)) +")")
+                    //console.log( alpha + ',' + beta + ',' + gamma);
+                }
+                else { //   if (beta < -1 )  
+                // smartphone alzato - orizzonte basso
+                    $("#svg_container")
+                        .css("-webkit-transform","scale(" + scale_x + ",1)")
+                        .css("-ms-transform","scale(" + scale_x + ",1)")
+                        .css("transform","scale(" + scale_x + ",1)") 
+                    //console.log( alpha + ',' + beta + ',' + gamma);
+                }
                 //console.log( alpha + ',' + beta + ',' + gamma);
-
-                /*
-                $("#svg")
-                    .css("-webkit-transform","rotate(-" + (alpha * (reduction*2) ) +"deg)")
-                    .css("-ms-transform","rotate(-" + (alpha * (reduction*2) ) +"deg)")
-                    .css("transform","rotate(-" + (alpha * (reduction*2) ) +"deg)");
-                */
-            }
-            else {
-                $("#svg_container")
-                    .css("-webkit-transform","scale(" + scale_x + ",1)")
-                    .css("-ms-transform","scale(" + scale_x + ",1)")
-                    .css("transform","scale(" + scale_x + ",1)")
                 
-                /*
-                $("#svg")
-                    .css("-webkit-transform","rotate(0deg)")
-                    .css("-ms-transform","rotate(0deg)")
-                    .css("transform","rotate(0deg)");
-                */    
+            }
+            else{
+                if (beta > 4 ) {
+                // computer abbassato - orizzonte alto
+                    $("#svg_container")
+                        .css("-webkit-transform","scale(" + scale_x + "," + (beta/reduction) +")")
+                        .css("-ms-transform","scale(" + scale_x + "," + (beta/reduction) +")")
+                        .css("transform","scale(" + scale_x + "," + (beta/reduction) +")")
+                    //
+                }
+                // computer alzato - orizzonte basso
+                else if (beta < -1 ) {
+                    var beta = Math.abs(beta);
+                    $("#svg_container")
+                        .css("-webkit-transform","scale(" + scale_x + "," + (scale_x/beta) +")")
+                        .css("-ms-transform","scale(" + scale_x + "," + (scale_x/beta) +")")
+                        .css("transform","scale(" + scale_x + "," + (scale_x/beta) +")")
+                }
+                else {
+                // computer appoggiato - orizzonte medio
+                    $("#svg_container")
+                        .css("-webkit-transform","scale(" + scale_x + ",1)")
+                        .css("-ms-transform","scale(" + scale_x + ",1)")
+                        .css("transform","scale(" + scale_x + ",1)") 
+                }
+                //console.log( alpha + ',' + beta + ',' + gamma);
             }
         }
     };
 
-    setTimeout(check_orientation, 1000);
+    setTimeout(check_orientation, 500);
 }
 
 get_data("pm10")
