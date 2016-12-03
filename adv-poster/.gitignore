@@ -1,0 +1,4 @@
+.DS_Store
+
+# add bower_components only if the app run in an external server
+# bower_components

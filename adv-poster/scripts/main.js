@@ -1,13 +1,13 @@
 require.config({
-    baseUrl: 'assets/lib',
+    baseUrl: "bower_components",
     paths : {
-        'jquery': 'jquery-1.11.1.min',
-        'd3': 'd3.min',
-        'water': 'water'    
+        "jquery": "jquery/dist/jquery.min",
+        "d3": "d3/d3.min",
+        "water": "../assets/lib/water"  
     },
     shim : {
         "water" : {
-            "deps" :['d3'] // dependencies
+            "deps" :["d3"] 
         }
     }
 });

@@ -1,122 +1,3 @@
-function get_data(param,cache){
-
-    var cross_origin = "https://crossorigin.me/",
-        api = "http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG";
-    
-    var d = new Date(),
-        year = d.getFullYear(),
-        month = d.getMonth() + 1,
-        day = d.getDate();
-        hour = d.getHours();
-
-    var time = year + month + day + "T" + hour,
-        date = year + "-" + month + "-" + day + "&" + year + "-" + month + "-" + day,
-        request = api + "&parameter=" + param + "&from=" + date;
-    //console.log(request);
-
-    //cache = true // false: remake the call  
-
-    if (cache == 1){ // 0: cache; 1: no_cache
-        cache = false
-        //console.log("no_cache")
-    }
-    else {
-        cache = true
-    }
-
-    $.ajax({
-        url: cross_origin + request,
-        cache: cache,
-        beforeSend: function(){
-            $('#no_data').html(
-                '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>'
-            );
-        },
-        success: function(data) {
-            //console.log(data)
-
-            min = 0;
-
-            if (param == "pm10"){
-                max =  100;
-            }
-            if (param == "o3"){
-                max =  150;
-            }
-            if (param == "no2"){
-                max =  100;
-            }
-
-            dates = $(data.locations)[0].data;
-            //console.log(dates)
-            //x = $(data.locations)[0].data[0].date;
-
-            if (hour < 10) {
-                hour = "0" + (hour - 1);
-            }
-
-            jQuery.each( dates, function( a,b ) {
-
-                var date_string = b.date.toString().substring(0,13);
-
-                if (hour == 0){
-                    match = year + "-" + month + "-" + (day-1) + "T23";
-                }
-                else{
-                    var anticipation = 2
-                    if (hour < (10 + anticipation) ) {
-                        match = year + "-" + month + "-" + day + "T0" + (hour-anticipation);
-                    }
-                    else{
-                        match = year + "-" + month + "-" + day + "T" + (hour-anticipation);
-                    }
-                }
-
-                if (date_string == match) {
-
-                    var value = b.values[0].value;
-                    //console.log(date_string + " - " + match + " - " + value);
-
-                    if (value !== null) {
-                       
-                        var percentage = (value * 100) / max;
-                        $('#no_data').empty();
-                        wave_maker(value,min,max);
-                        
-                        var load = 0
-                        
-                        console.log(b.date.toString() + ' - ' + param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
-                        return false; 
-                    }
-                    else{
-                        /*
-                        $('#no_data').empty();
-                        $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
-                        wave_maker(0,min,max);
-                        
-                        load++
-
-                        console.log(request);
-                        console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
-                        */
-
-                        get_data(param,1) // 0: cache; 1: no_cache
-                        return false; 
-                    }
-                }
-                else{
-                    //console.log("error: " + match)
-                }
-            }) ;       
-            save(time);
-        },
-        fail: function() {
-            wave_maker(0,0,100);
-        }
-    })
-}
-
-
 /* -----------------------
 main variables
 ------------------------- */
@@ -135,19 +16,6 @@ sea variables
 
 var waves = 20,
 v_translation = ((height/10) / waves);
-
-function wave_maker(index,min,max){
-    var data = [];
-    for (var i=0; i<waves; i++) { 
-        data.push({
-            x: i ,
-            y: Math.random()
-        });
-    }
-    //console.log(data)
-    var value = (300/max) * index;
-    water(data,value);
-}
 
 /* -----------------------
 set plot
@@ -221,6 +89,183 @@ function water(data,value){
         .attr("fill", "none")
 }
 
+function wave_maker(index,min,max){
+    var data = [];
+    for (var i=0; i<waves; i++) { 
+        data.push({
+            x: i ,
+            y: Math.random()
+        });
+    }
+    //console.log(data)
+    var value = (300/max) * index;
+    water(data,value);
+}
+
+function get_data(param,cache){
+
+    var baseurl =  window.location.protocol + "//" + window.location.host + "/" + "giovannipro.github.io/adv-poster/"
+    
+    var oasi_proxy = baseurl + "assets/lib/proxy.php" +  "?url=" ;
+    var cross_origin = "http://crossorigin.me/";
+    var cors = "http://cors.io/?";
+    var cors_api = "https://cors-anywhere.herokuapp.com/"
+
+    var api = "http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG";
+
+    var d = new Date(),
+        year = d.getFullYear(),
+        month = d.getMonth() + 1,
+        day = d.getDate();
+        hour = d.getHours();
+
+    if (day < 10) {
+        day = "0" + d.getDate()
+    }
+    else {
+        d.getDate()
+    }
+
+    var time = year + month + day + "T" + hour,
+        date = year + "-" + month + "-" + day + "&" + year + "-" + month + "-" + day,
+        request =  api + "&parameter=" + param + "&from=" + date;
+        cors_request = cors_api + request;
+    //console.log(request);
+
+    /*
+    if (cache == 1){ // 0: cache; 1: no_cache
+        cache = false
+    }
+    else {
+        cache = true
+    }
+    */
+
+    // match
+    var anticipation = 1;
+    if (day < 10){
+        day = day;
+        if (hour < 10) {
+            if (hour == anticipation || hour < anticipation){
+                day = "0" + (day - 1);
+                hour = "T" + (23 - (anticipation-1) );
+            }
+            else {
+                hour = "T0" + (hour - anticipation);
+            }
+        }
+        else {
+            hour = "T" + hour;   
+        }
+    }
+    else {
+        day = day;
+        if (hour < 10) {
+            if (hour == anticipation || hour < anticipation) {
+                day = (day - 1);
+                hour = "T" + (23 - (anticipation-1) );
+            }
+            else {
+                hour = "T0" + (hour - anticipation);
+            }
+        }
+        else{
+            hour = "T" + hour;
+        }
+    }
+    match = year + "-" + month + "-" + day + hour;
+    //console.log(match);
+    
+    $.ajax({
+        url: cors_request,
+        cache: cache,
+        beforeSend: function(){
+            $('#no_data').html(
+                '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>'
+            );
+            //console.log("loading")
+        },
+        success: function(data) {
+            //console.log(data)
+
+            min = 0;
+
+            if (param == "pm10"){
+                max =  100;
+            }
+            if (param == "o3"){
+                max =  150;
+            }
+            if (param == "no2"){
+                max =  100;
+            }
+
+            var dates = $(data.locations)[0].data;
+            var x = $(data.locations)[0].data[0].date;
+            var y = $(data.locations)[0].data[0].values[0].value;
+            //console.log(y)
+
+            if (hour < 10) {
+                hour = "0" + (hour - 1);
+            }
+
+            jQuery.each( dates, function( a,b ) {
+
+                var interval = 1000;
+                var date_string = b.date.toString().substring(0,13);
+
+                if (date_string == match) {
+
+                    var value = b.values[0].value;
+                    //console.log(value);
+
+                    if (value !== null) {
+                       //console.log(date_string + ' - ' + match + ' - ' + value)
+
+                        var percentage = (value * 100) / max;
+                        $('#no_data').empty();
+                        wave_maker(value,min,max);
+                        
+                        var load = 0
+                        
+                        console.log(b.date.toString() + ' - ' + param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
+                        return false; 
+                    }
+                    else {
+                        
+                        $('#no_data').empty();
+                        $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
+                        wave_maker(0,min,max);
+                        
+                        load++
+
+                        console.log(request);
+                        console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
+                        
+                        //get_data(param,1) // 0: cache; 1: no_cache
+                        //return false; 
+                    }
+                }
+                else{
+                    //console.log("no values error")
+                    //console.log(date_string + ' - ' + match + ' - ' + value)
+
+                    //clearInterval(interval);
+                    //$('#no_data').empty();
+                    //
+                    //wave_maker(0,0,100);
+                    //return false;
+                }
+            }) ;       
+            save(time);
+        },
+        fail: function() {
+            wave_maker(0,0,100);
+            console.log("api error")
+        }
+    })
+}
+
 function save(time){
     $("#save").click(function () {
 
@@ -256,7 +301,5 @@ function buttons(){
     $("#pm10").toggleClass("param_no");
 }
 
-//$( document ).ready(function() {
 get_data("pm10")
 buttons();
-//});
