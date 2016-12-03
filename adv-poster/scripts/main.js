@@ -7,7 +7,7 @@ require.config({
     },
     shim : {
         "water" : {
-            "deps" :["d3"] 
+            "deps":["d3"] 
         }
     }
 });

@@ -93,16 +93,26 @@ function water(data,value){
         .style("stroke", "white" )
         .attr("stroke-width","2px")
         .attr("fill", "none")
+
+    var horizon = plot.append("line")
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", width)
+        .attr("y2", 0)
+        .attr("stroke", "white")
+        .attr("opacity","0.2")
 }
 
 function wave_maker(index,min,max){
     var data = [];
+
     for (var i=0; i<waves; i++) { 
         data.push({
             x: i ,
             y: Math.random()
         });
     }
+    
     //console.log(data)
     var value = (300/max) * index;
     water(data,value);
@@ -161,7 +171,7 @@ function get_data(param,cache){
             }
         }
         else {
-            hour = "T" + hour;   
+            hour = "T" + (hour - anticipation);  
         }
     }
     else {
@@ -176,11 +186,11 @@ function get_data(param,cache){
             }
         }
         else{
-            hour = "T" + hour;
+            hour = "T" + (hour - anticipation);
         }
     }
     match = year + "-" + month + "-" + day + hour;
-    //console.log(match);
+    //console.log(match); 
     
     $.ajax({
         url: cors_request,
@@ -215,7 +225,11 @@ function get_data(param,cache){
                 hour = "0" + (hour - 1);
             }
 
+            var index = 0;
+
             jQuery.each( dates, function( a,b ) {
+
+                index++;
 
                 var interval = 1000;
                 var date_string = b.date.toString().substring(0,13);
@@ -303,9 +317,57 @@ function buttons(){
         get_data("o3");
     })
 
-    $(".param").toggleClass("param_no");
+    //$(".param").toggleClass("param_no");
     $("#pm10").toggleClass("param_no");
+}
+
+function accelerometer(){
+
+    function check_orientation(){
+
+        window.ondevicemotion = function(event) {
+            var alpha = event.accelerationIncludingGravity.x;
+            var beta = event.accelerationIncludingGravity.y;
+            var gamma = event.accelerationIncludingGravity.z;
+
+            var reduction = 3;
+            var scale_x = 1;
+
+            // avanti-indietro
+            if (beta > 4 ) { // || alpha < -3  || alpha > 3 
+
+                $("#svg_container")
+                    .css("-webkit-transform","scale(" + scale_x + "," + (beta/reduction) +")")
+                    .css("-ms-transform","scale(" + scale_x + "," + (beta/reduction) +")")
+                    .css("transform","scale(" + scale_x + "," + (beta/reduction) +")")
+                //console.log( alpha + ',' + beta + ',' + gamma);
+
+                /*
+                $("#svg")
+                    .css("-webkit-transform","rotate(-" + (alpha * (reduction*2) ) +"deg)")
+                    .css("-ms-transform","rotate(-" + (alpha * (reduction*2) ) +"deg)")
+                    .css("transform","rotate(-" + (alpha * (reduction*2) ) +"deg)");
+                */
+            }
+            else {
+                $("#svg_container")
+                    .css("-webkit-transform","scale(" + scale_x + ",1)")
+                    .css("-ms-transform","scale(" + scale_x + ",1)")
+                    .css("transform","scale(" + scale_x + ",1)")
+                
+                /*
+                $("#svg")
+                    .css("-webkit-transform","rotate(0deg)")
+                    .css("-ms-transform","rotate(0deg)")
+                    .css("transform","rotate(0deg)");
+                */    
+            }
+        }
+    };
+
+    setTimeout(check_orientation, 1000);
 }
 
 get_data("pm10")
 buttons();
+accelerometer();
