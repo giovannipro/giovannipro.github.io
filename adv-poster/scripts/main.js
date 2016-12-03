@@ -3,7 +3,7 @@ require.config({
     paths : {
         "jquery": "jquery/dist/jquery.min",
         "d3": "d3/d3.min",
-        "water": "../assets/lib/water"  
+        "water": "../scripts/water"  
     },
     shim : {
         "water" : {
