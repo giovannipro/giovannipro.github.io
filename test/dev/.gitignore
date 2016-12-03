@@ -1,8 +1,0 @@
-.DS_Store
-npm-debug*
-dev
-node_modules
-r
-
-# only if the app run in an external server
-bower_components

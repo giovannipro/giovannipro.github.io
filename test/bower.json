@@ -11,14 +11,13 @@
   "dependencies": {
     "jquery": "#3.1.1",
     "requirejs": "2.3.2",
-    "react": "15.4.0",
-    "requirejs-react-jsx": "latest",
-    "r": "https://github.com/requirejs/r.js.git"
+    "angular": "1.5.9",
+    "angular-ui-router": "latest"
   },
   "keywords": [
     "test"
   ],
-  "license": "MIT",
+  "license": "",
   "ignore": [
     "**/.*",
     "node_modules",

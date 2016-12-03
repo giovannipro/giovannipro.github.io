@@ -4,38 +4,21 @@
 		<title>Test</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
-	<body>
+	<body ng-app="test">
 		<div class="container">
 			<div class="page-header">
 			  	<h1>
-			  		Test /
-			  		<a href="/dev">dev</a> 
+			  		Test
 			  	</h1>
-			  	<h2 id="jsx">Get jsx</h2>
-			</div>
-			<div class="row">
-				<div id="react" class="col-md-12"></div>
+			  	<a ui-sref="home" ng-click="toggle()">Home</a>
+			  	<a ui-sref="note" ng-click="toggle()">Note</a>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<pre>
-						<code>
-							.
-							├── bower_components
-							|	└── bootstrap
-							|	└── canvas-toBlob
-							|	└── d3
-							|	└── jquery
-							|	└── requirejs
-							├── scripts
-							|   ├── functions.js
-							|   └── main.js
-							└── index.html
-						</code>
-					</pre>
+					<div class="container-fluid" ui-view="main" id="main"></div>
 				</div>
 			</div>
 	    </div>
@@ -46,7 +29,15 @@
 			</ul>
 		</footer>
     	
-    	<script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+    	<!--<script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>-->
+    	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    	<script src="app/app.js"></script>
+		<script src="app/routes.js"></script>
+		<script src="app/controllers/main.ctr.js"></script>
+
 
 	</body>
 </html>
