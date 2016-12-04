@@ -1,6 +1,4 @@
 .DS_Store
-npm-debug*
-node_modules
 
-# only if the app run in an external server
-bower_components
+# ignore bower_components only if the app run in an external server
+# bower_components

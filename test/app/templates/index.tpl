@@ -3,7 +3,7 @@
 		<h2>
 			{{d.title}}
 		</h2>
-		<p>
+		<p class="description">
 			{{d.description}}
 		</p>
 	</a>

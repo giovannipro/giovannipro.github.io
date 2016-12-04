@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "Test",
   "homepage": "https://giovannipro.github.io/test/",
-  "description": "Testing Bower",
+  "description": "Test",
   "version": "0.0.0",
   "authors": [
     "Giovanni Profeta"
@@ -19,11 +19,5 @@
     "test"
   ],
   "license": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "ignore": []
 }

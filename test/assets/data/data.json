@@ -24,15 +24,57 @@
     "description": "JavaScript library"
   },
   {
-    "group": "c_frontend",
+    "group": "b_logic",
+    "title": "Handlebars",
+    "link": "http://handlebarsjs.com/",
+    "description": "Semantic template"
+  },
+  {
+    "group": "c_tool",
+    "title": "Moment.js",
+    "link": "http://momentjs.com/",
+    "description": "Dates in javascript"
+  },
+  {
+    "group": "c_tool",
+    "title": "Clipboard.js",
+    "link": "https://clipboardjs.com/",
+    "description": "Copy text to clipboard"
+  },
+  {
+    "group": "d_frontend",
+    "title": "SASS",
+    "link": "http://sass-lang.com/",
+    "description": "CSS extension"
+  },
+  {
+    "group": "d_frontend",
     "title": "Neat",
     "link": "http://neat.bourbon.io/",
     "description": "Javascript framework"
   },
   {
-    "group": "c_frontend",
-    "title": "SASS",
-    "link": "http://sass-lang.com/",
-    "description": "CSS extension"
+    "group": "d_frontend",
+    "title": "Isotope",
+    "link": "http://isotope.metafizzy.co/",
+    "description": "Filter & sort layouts"
+  },
+  {
+    "group": "e_dataviz",
+    "title": "D3.js",
+    "link": "https://d3js.org",
+    "description": "Data visualization"
+  },
+  {
+    "group": "e_dataviz",
+    "title": "Leaflet",
+    "link": "http://leafletjs.com/",
+    "description": "Mobile-friendly interactive maps"
+  },
+  {
+    "group": "e_dataviz",
+    "title": "Sigma.js",
+    "link": "http://sigmajs.org/",
+    "description": "Graph drawing"
   }
 ]

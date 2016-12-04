@@ -5,13 +5,14 @@ $primary-color: #333
 
 $x: 12px
 
-$font_xl: 1.563em
-$font_x: 1.25em
+$font_xl: 1.999em
+$font_x: 1.414em
 $font_m: 1em
-$font_s: 0.8em
+$font_s: 0.707em
+$font_xs: 0.5em
 
 $mobile: new-breakpoint(max-width 500px 4)
-
+$tablet: new-breakpoint(max-width 768px 8)
 
 body
 	font-family: $font-stack
@@ -32,6 +33,9 @@ p
 a
 	text-decoration: none
 	color: $primary-color
+
+ul
+	padding: 0 $x
 
 a:visited
 	color: $primary-color
@@ -56,6 +60,9 @@ a:visited
 
 		@include media($mobile) 
 			@include span-columns(4)
+
+.description
+	font-size: $font_m
 
 footer
 	font-size: $font_s

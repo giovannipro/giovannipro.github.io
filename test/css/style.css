@@ -12,10 +12,10 @@ body {
   padding: 0; }
 
 h1 {
-  font-size: 1.563em; }
+  font-size: 1.999em; }
 
 h2 {
-  font-size: 1.25em; }
+  font-size: 1.414em; }
 
 p {
   font-size: 1em; }
@@ -23,6 +23,9 @@ p {
 a {
   text-decoration: none;
   color: #333; }
+
+ul {
+  padding: 0 12px; }
 
 a:visited {
   color: #333; }
@@ -83,8 +86,11 @@ a:visited {
         #main div:last-child {
           margin-right: 0; } }
 
+.description {
+  font-size: 1em; }
+
 footer {
-  font-size: 0.8em;
+  font-size: 0.707em;
   border-top: 1px solid black;
   padding: 12px 0; }
 
