@@ -1,3 +1,3 @@
-var app = angular.module("test",[
+var app = angular.module("web_design",[
 	"ui.router"
 ]);

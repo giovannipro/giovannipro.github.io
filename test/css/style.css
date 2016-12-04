@@ -1,3 +1,91 @@
-#jsx {
-	cursor: pointer;
-}
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 1em;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 1.563em; }
+
+h2 {
+  font-size: 1.25em; }
+
+p {
+  font-size: 1em; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+a:visited {
+  color: #333; }
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 500px) {
+    .container {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      .container::after {
+        clear: both;
+        content: "";
+        display: block; } }
+
+#main {
+  margin: 24px 0 24px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #main:last-child {
+    margin-right: 0; }
+  #main div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 12px; }
+    #main div:last-child {
+      margin-right: 0; }
+    #main div:nth-child(2n) {
+      margin-right: 0; }
+    #main div:nth-child(2n+1) {
+      clear: left; }
+    @media screen and (max-width: 500px) {
+      #main div {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        #main div:last-child {
+          margin-right: 0; } }
+
+footer {
+  font-size: 0.8em;
+  border-top: 1px solid black;
+  padding: 12px 0; }
+
+/*# sourceMappingURL=style.css.map */

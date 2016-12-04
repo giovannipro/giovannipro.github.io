@@ -1,0 +1,38 @@
+[
+  {
+    "group": "a_modules",
+    "title": "Bower",
+    "link": "https://bower.io/",
+    "description": "Package manager"
+  },
+  {
+    "group": "a_modules",
+    "title": "Require.js",
+    "link": "http://requirejs.org/",
+    "description": "JavaScript module loader"
+  },
+  {
+    "group": "b_logic",
+    "title": "Angular",
+    "link": "https://angularjs.org/",
+    "description": "SASS framework"
+  },
+  {
+    "group": "b_logic",
+    "title": "JQuery",
+    "link": "https://jquery.com/",
+    "description": "JavaScript library"
+  },
+  {
+    "group": "c_frontend",
+    "title": "Neat",
+    "link": "http://neat.bourbon.io/",
+    "description": "Javascript framework"
+  },
+  {
+    "group": "c_frontend",
+    "title": "SASS",
+    "link": "http://sass-lang.com/",
+    "description": "CSS extension"
+  }
+]

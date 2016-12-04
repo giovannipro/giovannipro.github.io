@@ -12,7 +12,8 @@
     "jquery": "#3.1.1",
     "requirejs": "2.3.2",
     "angular": "1.5.9",
-    "angular-ui-router": "latest"
+    "angular-ui-router": "latest",
+    "neat": "latest"
   },
   "keywords": [
     "test"

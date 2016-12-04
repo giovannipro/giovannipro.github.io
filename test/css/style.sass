@@ -1,0 +1,63 @@
+@import "../bower_components/neat/app/assets/stylesheets/_neat.scss"
+
+$font-stack: Arial, sans-serif
+$primary-color: #333
+
+$x: 12px
+
+$font_xl: 1.563em
+$font_x: 1.25em
+$font_m: 1em
+$font_s: 0.8em
+
+$mobile: new-breakpoint(max-width 500px 4)
+
+
+body
+	font-family: $font-stack
+	color: $primary-color
+	font-size: $font_m
+	margin: 0
+	padding: 0
+
+h1
+	font-size: $font_xl
+
+h2
+	font-size: $font_x
+
+p
+	font-size: $font_m
+
+a
+	text-decoration: none
+	color: $primary-color
+
+a:visited
+	color: $primary-color
+
+.container
+	@include outer-container
+	+outer-container(80%)
+
+	@include media($mobile) 
+		+outer-container(90%)
+
+#main
+	margin: ($x * 2) 0 ($x * 2)
+	@include span-columns(12)
+
+	div
+		@include span-columns(6)
+		@include omega(2n)
+		padding: 5px
+		border: 1px solid gray
+		margin-bottom: $x
+
+		@include media($mobile) 
+			@include span-columns(4)
+
+footer
+	font-size: $font_s
+	border-top: 1px solid black
+	padding: $x 0

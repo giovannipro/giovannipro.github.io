@@ -5,7 +5,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 	$stateProvider
 	.state("home",{
  		url : "/",
- 		//abstract: true,
 	    views:  { 
 	      	"main": {
 	      		templateUrl: "app/templates/index.tpl",
@@ -14,43 +13,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 	    }
 	})
 	
-	.state("note",{
- 		url : "/note",
+	.state("notes",{
+ 		url : "/notes",
 	    views:  { 
 	      	"main": {
-	      		templateUrl: "app/templates/index.tpl",
-				controller: "main_controller",
+	      		templateUrl: "app/templates/notes.tpl",
+				controller: "note_controller",
 	      	}
 	    }
 	})
 
-	//$urlRouterProvider.otherwise('/');
 });
-/*
-
-app.config(function ($stateProvider, $urlRouterProvider) {  
-
-	$urlRouterProvider.otherwise('index');
-
-	$stateProvider
-	.state('ricette',{
- 		url : "/index",
-	    views:  { 
-	      	'main': {
-	      		templateUrl: 'app/templates/index.tpl',
-				controller: 'main_controller',
-	      	}
-	    }
-	})
-
-	.state('note',{
- 		url : "/note",
-	    views:  { 
-	      	'main': {
-	      		templateUrl: 'app/templates/notes.tpl',
-				controller: 'notes_controller',
-	      	}
-	    }
-	})
-});
-*/

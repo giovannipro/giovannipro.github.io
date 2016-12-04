@@ -4,29 +4,22 @@
 		<title>Test</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
-	<body ng-app="test">
+	<body ng-app="web_design">
 		<div class="container">
-			<div class="page-header">
+			<header class="page-header">
 			  	<h1>
-			  		Test
+			  		<a ui-sref="home" ng-click="toggle()">Web design</a>
 			  	</h1>
-			  	<a ui-sref="home" ng-click="toggle()">Home</a>
-			  	<a ui-sref="note" ng-click="toggle()">Note</a>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="container-fluid" ui-view="main" id="main"></div>
-				</div>
-			</div>
+			  	<a ui-sref="notes" ng-click="toggle()">Notes</a>
+			</header>
+			<section>
+				<div id="main" ui-view="main"></div>
+			</section>
 	    </div>
-		<hr/>
 		<footer class="container">
-    		<ul>
-        		<li><a href="https://github.com/giovannipro">github.com/giovannipro</a></li>
-			</ul>
+    		<a href="https://github.com/giovannipro">github.com/giovannipro</a></li>
 		</footer>
     	
     	<!--<script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>-->
@@ -37,7 +30,6 @@
     	<script src="app/app.js"></script>
 		<script src="app/routes.js"></script>
 		<script src="app/controllers/main.ctr.js"></script>
-
 
 	</body>
 </html>
