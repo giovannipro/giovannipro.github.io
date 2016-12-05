@@ -255,12 +255,12 @@ function get_data(param,cache){
                         
                         $('#no_data').empty();
                         $('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
-                        wave_maker(0,min,max);
+                        //wave_maker(0,min,max);
                         
                         load++
 
-                        console.log(request);
-                        console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
+                        //console.log(request);
+                        //console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
                         
                         //get_data(param,1) // 0: cache; 1: no_cache
                         //return false; 
@@ -310,7 +310,7 @@ function buttons(){
         $("#svg_container").empty();
         get_data("no2");
     })
-    $("#03").click(function () {
+    $("#o3").click(function () {
         $(".param").addClass("param_no");
         $(this).removeClass("param_no");
         $("#svg_container").empty();
