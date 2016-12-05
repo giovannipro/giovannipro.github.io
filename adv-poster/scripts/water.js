@@ -160,8 +160,8 @@ function get_data(param,cache){
     // match
     var anticipation = 2;
     if (day < 10){
-        day = day;
-        if (hour < 10) {
+        //day = day;
+        if (hour < (10+anticipation) ) {
             if (hour == anticipation || hour < anticipation){
                 day = "0" + (day - 1);
                 hour = "T" + (23 - (anticipation-1) );
@@ -176,7 +176,7 @@ function get_data(param,cache){
     }
     else {
         day = day;
-        if (hour < 10) {
+        if (hour < (10+anticipation) ) {
             if (hour == anticipation || hour < anticipation) {
                 day = (day - 1);
                 hour = "T" + (23 - (anticipation-1) );
@@ -221,9 +221,9 @@ function get_data(param,cache){
             var y = $(data.locations)[0].data[0].values[0].value;
             //console.log(y)
 
-            if (hour < 10) {
+            /*if (hour < 10) {
                 hour = "0" + (hour - 1);
-            }
+            }*/
 
             var index = 0;
 

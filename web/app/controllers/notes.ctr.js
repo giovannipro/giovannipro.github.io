@@ -1,6 +1,5 @@
 app.controller("note_controller", function($scope,$http) {
 
-    // index
     $http.get("assets/data/notes.json")
     .then(function(response) {
         $scope.notes = response.data;

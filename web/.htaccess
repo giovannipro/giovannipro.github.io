@@ -1,4 +1,4 @@
-<Files "main.js|main.ctr.js|data.json">
+<Files "main.js|main.ctr.js|data.json|notes.json">
 	FileETag None
   	<ifModule mod_headers.c>
     	Header unset ETag
