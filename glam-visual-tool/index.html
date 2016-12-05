@@ -3,15 +3,27 @@
 	<head>
 		<title>GLAM visual tool</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="assets/style/style.css"/>
 	</head>
 	<body>
-		<header>GLAM visual tool</header>
-		<nav>
+		<header class="container">
+			<h1>
+				GLAM visual tool
+			</h1>
+		</header>
+		<nav class="container">
             <ul>
                 <li>
                     <a href="tate.html">Tate</a>
                 </li>
             </ul>
         </nav>
+        <main class="container">
+        	<div id="svg_container"></div>
+    	</main>
+    	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    	<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+    	<script type="text/javascript" src="assets/scripts/functions.js"></script>
 	</body>
 </html>
