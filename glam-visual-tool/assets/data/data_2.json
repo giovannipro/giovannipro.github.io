@@ -1,0 +1,27 @@
+[
+  {
+    "size": "<10",
+    "total": 5,
+    "pages": 2.9
+  },
+  {
+    "size": "10-24Mb",
+    "total": 228,
+    "pages": 3.5
+  },
+  {
+    "size": "25-50Mb",
+    "total": 2688,
+    "pages": 2.2
+  },
+  {
+    "size": "51—100Mb",
+    "total": 2775,
+    "pages": 1.4
+  },
+  {
+    "size": ">100 MB",
+    "total": 1,
+    "pages": 1
+  }
+]

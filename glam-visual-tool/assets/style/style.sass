@@ -4,6 +4,8 @@ $font_l: 2em
 $font_m: 1em
 $font_s: 0.8em
 
+$x: 1em
+
 body
 	font-family: Helvetica, Arial, Sans-serif
 
@@ -18,3 +20,23 @@ h2
 
 .note
 	font-size: $font_s
+	list-style: none
+	padding: 0
+
+	li
+		float: left
+		margin-right: $x
+
+nav li
+	float: left
+	margin-right: $x
+
+main > div
+	border-top: 1px solid black
+	margin-top: $x
+
+.small
+	font-size: $font_s
+
+footer
+	margin: ($x * 2) 0  

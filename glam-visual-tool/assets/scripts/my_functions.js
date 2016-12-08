@@ -13,12 +13,13 @@ function sum_range(data){
         
         var img_size = value.img_size
         
-        var a = 50000000; //  bite 60000000 - kilobyte 60000
-        var b = 40000000;
-        var c = 30000000;
-        var d = 20000000;
-        var e = 10000000;
-        var f = 9000000;
+        //  bite 60000000 - kilobyte 60000
+        var a = 100000000; 
+        var b = 50000000;
+        var c = 25000000;
+        var d = 10000000;
+        var e = 5000000;
+        var f = 1000000;
         
         if (img_size > a){
             a_1++
