@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	d3.json("assets/data/data_1.json", dataviz_1);
 	d3.json("assets/data/data_2.json", dataviz_2);
-	//dataviz_3();
+	d3.json("assets/data/data_3.json", dataviz_3);
+	dataviz_4()
 	//console.log("ok")
 })
 
@@ -17,7 +18,6 @@ var margin = {top: 50, right: 50, bottom: 50, left: 50},
 nomargin_w = width - (margin.left + margin.right),
 nomargin_h = height - (margin.top + margin.bottom);
 
-
 /* -----------------------
 get data
 ------------------------- */
@@ -29,7 +29,7 @@ function dataviz_1(d){
 	
 	var svg = d3.select(container)
 		.append("svg")
-		.attr("viewBox", '0 0 ' + width + ' ' + (height) )
+		.attr("viewBox", "0 0 " + width + " " + height)
 
 	var plot = svg.append("g")
 		.attr("id", "d3_plot")
@@ -40,30 +40,45 @@ function dataviz_1(d){
 	d.forEach(function(d) {
 		d.date = parseTime(d.date);
 		d.total = +d.total;
-		//console.log(d.date + '-' + d.total);
+		//console.log(d.date + "-" + d.total);
 	});
 
+	// range
 	var x = d3.scaleTime()
 		.rangeRound([0, nomargin_w]);
 
 	var y = d3.scaleLinear()
 		.rangeRound([nomargin_h, 0]);
 
-	var line = d3.line()
-		.curve(d3.curveStep)
-		.x(function(d) {
-				return x(d.date);
-		})
-		.y(function(d) { 
-				return y(d.total);
-		});
-
+	// domain
 	x.domain(d3.extent(d, function(d) {
 		return d.date; 
 	}));
 	y.domain(d3.extent(d, function(d) { 
 		return d.total; 
 	}));
+
+	/* line generator
+	var line = d3.line()
+		.curve(d3.curveStepBefore) //curveStep
+		.x(function(d) {
+				return x(d.date);
+		})
+		.y(function(d) { 
+				return y(d.total);
+		});
+	*/
+
+	// area generator
+	var area = d3.area()
+		.curve(d3.curveStepBefore)
+		.x(function(d) {
+			return x(d.date);
+		})
+		.y0(nomargin_h)
+		.y1(function(d) { 
+			return y(d.total);
+	});
 
 	plot.append("g")
 		.attr("class", "axis axis-x")
@@ -95,10 +110,10 @@ function dataviz_1(d){
 
 	plot.append("path")
 		.datum(d)
-		.attr("class", "line")
-		.attr("d", line)
-		.attr("stroke","red")
-		.attr("fill","transparent")
+		.attr("class", "area") // area line
+		.attr("d", area) // area line
+		.attr("fill","black")
+		.attr("stroke","transparent")
 		.attr("stroke-width","2px")
 }
 
@@ -106,7 +121,7 @@ function dataviz_2(d){
 	console.log(d);
 	
 	var col_width = width / 8;
-	var h = (height/3) - 10;
+	var h = (height/2.2) - 20;
 	
 	var max_size = d3.max(d, function(d) {
 		return +d.total;
@@ -133,7 +148,7 @@ function dataviz_2(d){
 
 	var svg = d3.select(container)
 		.append("svg")
-		.attr("viewBox", '0 0 ' + width + ' ' + (height) )
+		.attr("viewBox", "0 0 " + width + " " + (height) )
 
 	var plot = svg.append("g")
 		.attr("id", "d3_plot")
@@ -166,6 +181,7 @@ function dataviz_2(d){
 			return y_size(max_size)
 		})
 		.transition()
+		.ease(d3.easeLinear) // easeBounce  easeElastic easeLinear
 		.attr("y", function(d,i){
 			return y_size(max_size - d.total)
 		})
@@ -210,10 +226,137 @@ function dataviz_2(d){
 		.attr("class", "axis axis-y")
 		.attr("transform", "translate(-10," + (h+10) + ")")
 		.call(d3.axisLeft(y_page))
+}
 
+// average page views
+function dataviz_3(d){
+	console.log(d)
+	/*
+	for(var i=0; i<months; i++){
+		month++;
+ 		d.push({
+			time: Number(month * i),
+			value: Math.random() * 1000
+		});
+		
+	};
+	console.log(d)
+	*/
+
+	// set plot
+	container = "#pageviews_container"
+
+	var svg = d3.select(container)
+		.append("svg")
+		.attr("viewBox", "0 0 " + width + " " + height )
+
+	var plot = svg.append("g")
+		.attr("id", "d3_plot")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	// parse data
+	var parseTime = d3.timeParse("%Y/%m/%d")
+
+	d.forEach(function(d) {
+		d.date = parseTime(d.date)
+		d.pageviews = +d.pageviews;
+	});
+
+	var max_pv = d3.max(d, function(d) {
+		return +d.pageviews;
+	});
+	//console.log(max_pv)
+
+	// range (output)
+	var x = d3.scaleTime()
+		.rangeRound([0, nomargin_w]);
+
+	var y = d3.scaleLinear()
+		.rangeRound([nomargin_h, 0]);
+
+	//domain (original data)
+	var max = d3.max(d, function(d) {
+		return +d.pageviews;
+	});
+
+	x.domain(d3.extent(d, function(d) {
+		return d.date; 
+	}));
+	/*y.domain(d3.extent(d, function(d) { 
+		return d.pageviews; 
+	}));*/
+	y.domain([0,max]);
+
+
+	//line generator
+	var line = d3.line()
+		.curve(d3.curveStepBefore) // curveCatmullRom
+		.x(function(d) {
+				return x(d.date);
+		})
+		.y(function(d) { 
+				return y(d.pageviews);
+		});
+
+	// area generator
+	/*var area = d3.area()
+		.curve(d3.curveStepBefore)
+		.x(function(d) {
+			return x(d.date);
+		})
+		.y0(nomargin_h)
+		.y1(function(d) { 
+			return y(d.pageviews);
+	});*/
+	
+	plot.append("path")
+		.data([d]) // datum(d) 
+		.attr("class", "line") // area line
+		.attr("d", line) // area line
+		.attr("stroke","red")
+		.attr("fill","transparent")
+		.attr("stroke-width","1px")
+
+	// axis
+	plot.append("g")
+		//.attr("transform","translate(0,0)")
+		.call(d3.axisLeft(y))
+
+	plot.append("g")
+		//.attr("transform","translate(0,0)")
+		.attr("transform", "translate(0," + (height - 100) + ")")
+		.call(d3.axisBottom(x))
 
 }
 
-function dataviz_3(){
-	console.log("x");
+function dataviz_4(){
+	//console.log("sigma")
+
+	var data_path = "assets/data/category_network.gexf";
+
+	$.ajax({
+		//dataType: "json",
+		url: data_path,
+		success: function(data) {
+			//console.log(data)
+
+			var container = document.getElementById("category_network_container");
+
+			sigma.parsers.gexf(data_path, {
+ 				container: container,
+ 				type: "canvas", // canvas svg
+ 				settings: {
+ 					defaultNodeColor: "black",
+ 					defaultEdgeColor: "#999",
+ 					hideEdgesOnMove: false,
+ 					batchEdgesDrawing: true,
+ 					//zoomMin: 0.8,
+ 					//zoomMax: 5
+ 				}
+			});
+
+		}
+	})
+
+
 }

@@ -6,11 +6,17 @@ $font_s: 0.8em
 
 $x: 1em
 
+$mobile: new-breakpoint(max-width 500px)
+$tablet: new-breakpoint(max-width 768px)
+
 body
 	font-family: Helvetica, Arial, Sans-serif
 
 .container
-	+outer-container(80%)
+	+outer-container(70%)
+
+	div
+		@include span-columns(12)
 
 h1
 	font-size: $font_l
@@ -31,12 +37,28 @@ nav li
 	float: left
 	margin-right: $x
 
-main > div
+main > div, footer
 	border-top: 1px solid black
 	margin-top: $x
 
 .small
 	font-size: $font_s
 
-footer
+footer 
 	margin: ($x * 2) 0  
+
+#category_network > div
+	+outer-container(100%)
+	height: $x * 30
+	position: relative
+
+	#category_network_container
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		overflow: hidden
+		margin: 0 auto
+	
+

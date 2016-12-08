@@ -13,16 +13,29 @@
 			</h1>
 		</header>
 		<nav class="container">
-			<ul style="list-style:none; margin:0; padding: 0;">
+			<!--<ul style="list-style:none; margin:0; padding: 0;">
 				<li>
 					<a href="tate.html" target="_blank">Tate category tree</a>
 				</li>
 				<li>
 					<a href="parsing.html">Parsing</a>
 				</li>
-			</ul>
+			</ul>-->
 		</nav>
 		<main class="container">
+
+			<div id="files_metadata">
+				<h2>
+					Files metadata: amount of files for size range, in the top (timestamp: 06-12-2016), and average of pages where they are inserted, in the bottom (random values)
+				</h2>
+				<p class="small">
+					<a href="https://commons.wikimedia.org/w/index.php?title=Category:Media_contributed_by_the_ETH-Bibliothek" target="_blank">
+						Category: Media contributed by the ETH-Bibliothek
+					</a>
+				</p>
+				<div id="files_metadata_container"></div>	
+			</div>
+
 			<div id="files_upload">
 				<h2>
 					Amount of files available overtime (timestamp: 06-12-2016)
@@ -34,34 +47,60 @@
 				</p>
 				<div id="files_upload_container"></div>
 			</div>
-			<div id="files_metadata">
+
+			<div id="category_network">
 				<h2>
-					Files metadata: amount of files for size range, in the top (timestamp: 06-12-2016), and average of pages where they are inserted, in the bottom (random values)
+					Category network (timpestamp: 23.11.2016)
 				</h2>
-                <p class="small">
-					<a href="https://commons.wikimedia.org/w/index.php?title=Category:Media_contributed_by_the_ETH-Bibliothek" target="_blank">
-						Category: Media contributed by the ETH-Bibliothek
+				<p class="small">
+					<a href="https://commons.wikimedia.org/w/index.php?title=Category:historical_images_of_buildings_in_the_canton_of_Zürich" target="_blank">
+						Category: Historical images of buildings in the canton of Zürich
 					</a>
 				</p>
-				<div id="files_metadata_container"></div>	
+				<div>
+					<div id="category_network_container"></div>   
+				</div>
 			</div>
+
+			<div id="pageviews">
+				<h2>
+					Average of pages views over time
+				</h2>
+				<p class="small">
+					Random values
+				</p>
+				<div id="pageviews_container"></div>   
+			</div>
+
 		</main>
+
 		<footer class="container">
 			<ul class="note">
-                <li>
-                    <a href="https://bl.ocks.org/mbostock/3883245" target="_blank">Example of line chart</a>
+				<li>
+					<a href="https://bl.ocks.org/mbostock/3883245" target="_blank">Example of line chart</a>
 				</li>
-                <li>
-    				<a href="http://christopheviau.com/d3list/gallery.html" target="_blank">
-    					D3 gallery
-    				</a>
-                <li>
-                    <a href="https://iros.github.io/d3-v4-whats-new/#1" target="_blank">D3 v4 tutorial</a>
-                </li>
+				<li>
+					<a href="http://christopheviau.com/d3list/gallery.html" target="_blank">
+						D3 gallery
+					</a>
+				<li>
+					<a href="https://iros.github.io/d3-v4-whats-new/#1" target="_blank">D3 v4 tutorial</a>
+				</li>
+				<li>
+					<a href="https://github.com/jacomyal/sigma.js/wiki/Settings" target="_blank">Sigma.js settings</a>
+				</li>
+				<li>
+					<a href="http://bl.ocks.org/hunzy/9929724" target="_blank">
+						D3 transitions
+					</a>
+				</li>
 			</ul>
 		</footer>
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+		<script type="text/javascript" src="bower_components/sigma.js/sigma.min.js"></script>
+		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.json.min.js"></script>
+		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.gexf.min.js"></script>
 		<script type="text/javascript" src="assets/scripts/functions.js"></script>
 	</body>
 </html>

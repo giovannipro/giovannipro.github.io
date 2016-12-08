@@ -8,13 +8,20 @@ body {
   font-family: Helvetica, Arial, Sans-serif; }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto; }
   .container::after {
     clear: both;
     content: "";
     display: block; }
+  .container div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .container div:last-child {
+      margin-right: 0; }
 
 h1 {
   font-size: 2em; }
@@ -34,7 +41,7 @@ nav li {
   float: left;
   margin-right: 1em; }
 
-main > div {
+main > div, footer {
   border-top: 1px solid black;
   margin-top: 1em; }
 
@@ -43,5 +50,24 @@ main > div {
 
 footer {
   margin: 2em 0; }
+
+#category_network > div {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30em;
+  position: relative; }
+  #category_network > div::after {
+    clear: both;
+    content: "";
+    display: block; }
+  #category_network > div #category_network_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

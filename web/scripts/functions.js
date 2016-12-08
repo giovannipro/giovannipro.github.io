@@ -71,3 +71,22 @@ function get_file() {
         }
     }
 }
+
+function get_random(){
+    var tot = document.getElementById("tot_values").value;
+    var min = document.getElementById("min").value;
+    var max = document.getElementById("max").value;
+
+    console.log(tot)
+    var container = $("#result_random");
+
+    data = [];
+
+    for(var i=0; i<tot; i++){
+        data.push(
+            Math.ceil(Math.random() * (max - min) + min)
+        )
+    };
+    console.log(data)
+    container.append(JSON.stringify(data))
+}

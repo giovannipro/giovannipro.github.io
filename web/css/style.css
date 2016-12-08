@@ -55,6 +55,9 @@ a:visited {
         content: "";
         display: block; } }
 
+.page_header, .tool {
+  border-bottom: 1px solid black; }
+
 #main {
   margin: 24px 0 24px;
   float: left;
@@ -85,36 +88,18 @@ a:visited {
         width: 100%; }
         #main .note:last-child, #main .library:last-child {
           margin-right: 0; } }
-
-.tool {
-  border-top: 1px solid black; }
-  .tool #input_file, .tool #function, .tool #value, .tool #submit {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .tool #input_file:last-child, .tool #function:last-child, .tool #value:last-child, .tool #submit:last-child {
-      margin-right: 0; }
-    .tool #input_file:nth-child(3n), .tool #function:nth-child(3n), .tool #value:nth-child(3n), .tool #submit:nth-child(3n) {
-      margin-right: 0; }
-    .tool #input_file:nth-child(3n+1), .tool #function:nth-child(3n+1), .tool #value:nth-child(3n+1), .tool #submit:nth-child(3n+1) {
-      clear: left; }
-  .tool #result {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
+  #main #input_file, #main #function, #main #value, #main #submit {
+    margin: 0 0 24px; }
+  #main .result {
     width: 100%;
     height: 60px;
     margin-top: 24px; }
-    .tool #result:last-child {
-      margin-right: 0; }
 
 .description {
   font-size: 1em; }
 
 footer {
   font-size: 0.707em;
-  border-top: 1px solid black;
   padding: 12px 0; }
 
 /*# sourceMappingURL=style.css.map */
