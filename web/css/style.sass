@@ -54,26 +54,48 @@ a:visited
 	margin: ($x * 2) 0 ($x * 2)
 	@include span-columns(12)
 
-	.note, .library
-		@include span-columns(6)
-		@include omega(2n)
-		padding: 5px
-		border: 1px solid gray
-		margin-bottom: $x
+	.libraries
+		@include outer-container
+		@include span-columns(12)
+		display: flex
+		flex-direction: row // | row-reverse | column | column-reverse
+		flex-wrap: wrap  // nowrap | wrap | wrap-reverse;
+		justify-content: flex-start // flex-start | flex-end | center | space-between | space-around;
+		align-content: flex-start // flex-start | flex-end | center | space-between | space-around | stretch;
 
-		@include media($mobile) 
-			@include span-columns(4)
+		.library
+			@include span-columns(6)
+			@include omega(2n)
+			padding: 5px
+			border: 1px solid gray
+			margin-bottom: $x
+
+			@include media($mobile)
+				@include span-columns(12)
+				@include omega(1n)
 
 	#input_file, #function, #value, #submit
 		//@include span-columns(4)
 		//@include omega(3n)
-		margin: 0 0 ($x*2)
+		margin: 0 0 $x
 		
 	.result
 		//@include span-columns(12)
 		width: 100%
 		height: $x * 5
-		margin-top: $x * 2
+		margin: $x 0 ($x * 2)
+
+.note
+	@include span-columns(6)
+	@include omega(2n)
+	padding: 5px
+	padding: 5px
+	margin-bottom: $x
+	border: 1px solid gray
+
+	@include media($mobile)
+		@include span-columns(12)
+		@include omega(1n)
 
 .description
 	font-size: $font_m
@@ -82,3 +104,23 @@ footer
 	font-size: $font_s
 	padding: $x 0
 
+#search, #filter
+	margin: 0 $x 0
+	padding: $x 0
+	font-size: $font_s
+
+#search
+	@include span-columns(3)
+	@include omega()
+	margin: $x 0
+	padding: $x 0
+	font-size: $font_s
+
+#filter 
+	@include outer-container
+	@include span-columns(12)
+	@include omega()
+
+	span
+		cursor: pointer
+		padding: 0 $x $x 0

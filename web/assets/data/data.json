@@ -1,80 +1,98 @@
 [
   {
-    "group": "a_modules",
-    "title": "Bower",
+    "group": "loader",
+    "name": "Bower",
     "link": "https://bower.io/",
     "description": "Package manager"
   },
   {
-    "group": "a_modules",
-    "title": "Require.js",
+    "group": "loader",
+    "name": "Require.js",
     "link": "http://requirejs.org/",
     "description": "JavaScript module loader"
   },
   {
-    "group": "b_logic",
-    "title": "Angular",
+    "group": "framework",
+    "name": "Angular",
     "link": "https://angularjs.org/",
     "description": "SASS framework"
   },
   {
-    "group": "b_logic",
-    "title": "JQuery",
+    "group": "framework",
+    "name": "JQuery",
     "link": "https://jquery.com/",
     "description": "JavaScript library"
   },
   {
-    "group": "b_logic",
-    "title": "Handlebars",
+    "group": "templating",
+    "name": "Handlebars",
     "link": "http://handlebarsjs.com/",
     "description": "Semantic template"
   },
   {
-    "group": "c_tool",
-    "title": "Moment.js",
+    "group": "tool",
+    "name": "Moment.js",
     "link": "http://momentjs.com/",
     "description": "Dates in javascript"
   },
   {
-    "group": "c_tool",
-    "title": "Clipboard.js",
+    "group": "tool",
+    "name": "Clipboard.js",
     "link": "https://clipboardjs.com/",
     "description": "Copy text to clipboard"
   },
   {
-    "group": "d_frontend",
-    "title": "SASS",
+    "group": "style",
+    "name": "SASS",
     "link": "http://sass-lang.com/",
     "description": "CSS extension"
   },
   {
-    "group": "d_frontend",
-    "title": "Neat",
+    "group": "style",
+    "name": "Neat",
     "link": "http://neat.bourbon.io/",
     "description": "Javascript framework"
   },
   {
-    "group": "d_frontend",
-    "title": "Isotope",
+    "group": "templating",
+    "name": "Isotope",
     "link": "http://isotope.metafizzy.co/",
     "description": "Filter & sort layouts"
   },
   {
-    "group": "e_dataviz",
-    "title": "D3.js",
+    "group": "dataviz",
+    "name": "D3.js",
     "link": "https://d3js.org",
     "description": "Data visualization"
   },
   {
-    "group": "e_dataviz",
-    "title": "Leaflet",
+    "group": "dataviz",
+    "name": "Leaflet",
     "link": "http://leafletjs.com/",
     "description": "Mobile-friendly interactive maps"
   },
   {
-    "group": "e_dataviz",
-    "title": "Sigma.js",
+    "group": "dataviz",
+    "name": "Sigma.js",
     "link": "http://sigmajs.org/",
     "description": "Graph drawing"
+  },
+  {
+    "group": "templating",
+    "name": "List.js",
+    "link": "http://listjs.com/",
+    "description": "Simple templating (sorting and filtering)"
+  },
+  {
+    "group": "tool",
+    "name": "FileSaver",
+    "link": "https://github.com/eligrey/FileSaver.js/",
+    "description": "Save really large files bigger then the blob's size"
+  },
+  {
+    "group": "tool",
+    "name": "Canvas to Blob",
+    "link": "https://github.com/blueimp/JavaScript-Canvas-to-Blob",
+    "description": "Export image"
   }
 ]
