@@ -51,7 +51,7 @@ a:visited
 	margin: ($x * 2) 0 ($x * 2)
 	@include span-columns(12)
 
-	div
+	.note, .library
 		@include span-columns(6)
 		@include omega(2n)
 		padding: 5px
@@ -61,6 +61,18 @@ a:visited
 		@include media($mobile) 
 			@include span-columns(4)
 
+.tool
+	border-top: 1px solid black
+
+	#input_file, #function, #value, #submit
+		@include span-columns(4)
+		@include omega(3n)
+		
+	#result
+		@include span-columns(12)
+		height: $x * 5
+		margin-top: $x * 2
+
 .description
 	font-size: $font_m
 
@@ -68,3 +80,4 @@ footer
 	font-size: $font_s
 	border-top: 1px solid black
 	padding: $x 0
+

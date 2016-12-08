@@ -23,4 +23,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 	    }
 	})
 
+	.state("tools",{
+ 		url : "/tools",
+	    views:  { 
+	      	"main": {
+	      		templateUrl: "app/templates/tools.tpl",
+				controller: "tools_controller",
+	      	}
+	    }
+	})
+
 });

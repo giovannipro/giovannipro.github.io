@@ -13,6 +13,8 @@
 			  		<a ui-sref="home" ng-click="toggle()">Web</a>
 			  	</h1>
 			  	<a ui-sref="notes" ng-click="toggle()">Notes</a>
+			  	&#183;
+			  	<a ui-sref="tools" ng-click="toggle()">Tools</a>
 			</header>
 			<section>
 				<div id="main" ui-view="main"></div>
@@ -29,8 +31,10 @@
 
     	<script src="app/app.js"></script>
 		<script src="app/routes.js"></script>
+		<script src="scripts/functions.js"></script>
 		<script src="app/controllers/main.ctr.js"></script>
 		<script src="app/controllers/notes.ctr.js"></script>
+		<script src="app/controllers/tools.ctr.js"></script>
 
 	</body>
 </html>

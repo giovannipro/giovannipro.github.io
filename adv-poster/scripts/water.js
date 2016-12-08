@@ -190,7 +190,7 @@ function get_data(param,cache){
         }
     }
     match = year + "-" + month + "-" + day + hour;
-    //console.log(match); 
+    console.log(match); 
     
     $.ajax({
         url: cors_request,
@@ -259,7 +259,7 @@ function get_data(param,cache){
                         
                         load++
 
-                        //console.log(request);
+                        console.log(request);
                         //console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
                         
                         //get_data(param,1) // 0: cache; 1: no_cache
