@@ -13,6 +13,7 @@
 	</div>
 	<textarea id="result" class="result"></textarea>
 </div>
+
 <div class="tool">
 	<h2>
 		Random numbers
@@ -24,4 +25,23 @@
 		<input id="submit" type="submit" onclick="get_random()">
 	</div>
 	<textarea id="result_random" class="result"></textarea>
+</div>
+
+<div>
+	<h2>
+		Color converter
+	</h2>
+	<div>
+		<label>RGB color
+			<input id="rgb_color" type="text" value="rgb(255, 255, 255)">
+		</label>
+		<input id="submit" type="submit" onclick="rgb_to_hex()">
+	</div>
+	<div>
+		<label>Hexadecimal color
+			<input id="hex_color" type="text" value="#ffffff">
+		</label>
+		<input id="submit" type="submit" onclick="hex_to_rgb()">	
+	</div>
+	<textarea id="result_color" class="result"></textarea>
 </div>

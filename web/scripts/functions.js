@@ -90,3 +90,58 @@ function get_random(){
     console.log(data)
     container.append(JSON.stringify(data))
 }
+
+function rgb2hex(rgb){
+    var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(rgb);
+    //console.log(digits)
+
+    var red = parseInt(digits[2]);
+    var green = parseInt(digits[3]);
+    var blue = parseInt(digits[4]);
+
+    var rgb = blue | (green << 8) | (red << 16);
+    var hex =  digits[1] + '#' + rgb.toString(16);
+    //console.log(hex)
+
+    var container = $("#result_color");
+    container.empty()
+    container.append(hex).css("background-color",hex)
+
+}
+
+function hex2rgb(hex){
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        rgba = 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',1)';
+        console.log(rgba)
+
+        var container = $("#result_color");
+        container.empty()
+        container.append(rgba).css("background-color",rgba)
+    }
+}
+
+function rgb_to_hex(){
+    var rgb = document.getElementById("rgb_color").value;
+    //console.log(rgb)
+
+    rgb2hex(rgb);
+}
+
+function hex_to_rgb(){
+    var hex = document.getElementById("hex_color").value;
+    //console.log(hex)
+
+    hex2rgb(hex);
+}
+
+
+
+
+
+
