@@ -122,6 +122,7 @@ function dataviz_2(d){
 	
 	var col_width = width / 8;
 	var h = (height/2.2) - 20;
+	var ticks = 5;
 	
 	var max_size = d3.max(d, function(d) {
 		return +d.total;
@@ -129,13 +130,18 @@ function dataviz_2(d){
 	var max_pages = d3.max(d, function(d) {
 		return +d.pages;
 	});
+	//console.log(max_size)
 
 	// set range
-	var y_size = d3.scaleLinear().range([0, h]); // [min max]
-	var y_page = d3.scaleLinear().range([0, h]);
+	var y_size = d3.scaleLinear().range([0,h]); // h,0  0,h [min max]
+	var y_size_axis = d3.scaleLinear().range([h,0]); 
+	var y_page = d3.scaleLinear().range([0,h]);
 
 	// set domain
 	y_size.domain([0, d3.max(d, function(d) {
+		return d.total;
+	})]);
+	y_size_axis.domain([0, d3.max(d, function(d) {
 		return d.total;
 	})]);
 
@@ -165,9 +171,8 @@ function dataviz_2(d){
 		.append("g")
 		.attr("class","size")
 		.attr("id",function(d,i){
-			return d.size
+			return d.total
 		})
-
 		.attr("transform",function(d,i){
 			return "translate(" + ((col_width+col_width/2) * i) + "," + "0)"
 		})
@@ -176,22 +181,22 @@ function dataviz_2(d){
 		.attr("class","size_bar")
 		.attr("width",col_width)
 		.attr("fill","red")
-		.attr("height",0)
 		.attr("y", function(d,i){
-			return y_size(max_size)
+			return y_size(max_size) // y_size(d.total) //y_size(d.total) // max_size - 
 		})
 		.transition()
 		.ease(d3.easeLinear) // easeBounce  easeElastic easeLinear
-		.attr("y", function(d,i){
-			return y_size(max_size - d.total)
-		})
 		.attr("height",function(d,i){
 			return y_size(d.total)
 		})
+		.attr("y", function(d,i){
+			return y_size(max_size - d.total) // y_size(d.total) //y_size(d.total) // max_size - 
+		})
+
 
 	size.append("text")
 		.text( function (d,i){
-			return d.size
+			return  d.size
 		})
 		.attr("y",-10)
 
@@ -220,12 +225,16 @@ function dataviz_2(d){
 	plot.append("g")
 		.attr("class", "axis axis-y")
 		.attr("transform", "translate(-10,0)")
-		.call(d3.axisLeft(y_size))
+		.call(d3.axisLeft(y_size_axis)
+			.ticks(ticks)
+		)
 
 	plot.append("g")
 		.attr("class", "axis axis-y")
 		.attr("transform", "translate(-10," + (h+10) + ")")
-		.call(d3.axisLeft(y_page))
+		.call(d3.axisLeft(y_page)
+			.ticks(ticks)
+		)
 }
 
 // average page views
@@ -292,10 +301,10 @@ function dataviz_3(d){
 	var line = d3.line()
 		.curve(d3.curveStepBefore) // curveCatmullRom
 		.x(function(d) {
-				return x(d.date);
+			return x(d.date);
 		})
 		.y(function(d) { 
-				return y(d.pageviews);
+			return y(d.pageviews);
 		});
 
 	// area generator
@@ -325,7 +334,9 @@ function dataviz_3(d){
 	plot.append("g")
 		//.attr("transform","translate(0,0)")
 		.attr("transform", "translate(0," + (height - 100) + ")")
-		.call(d3.axisBottom(x))
+		.call(d3.axisBottom(x)
+			//.ticks(d3.timeDay.every(30))
+		)
 
 }
 
@@ -344,7 +355,7 @@ function dataviz_4(){
 
 			sigma.parsers.gexf(data_path, {
  				container: container,
- 				type: "canvas", // canvas svg
+ 				type: "svg", // canvas svg
  				settings: {
  					defaultNodeColor: "black",
  					defaultEdgeColor: "#999",
