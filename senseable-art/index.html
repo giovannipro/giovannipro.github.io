@@ -5,41 +5,35 @@
 	<title>Senseable art</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/style/style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header class="container">
-			<h1 id="title">Senseable art</h1>
-		</header>
-		<main class="container">
-			<div id="img_box">
-				<img src="assets/img/snail_1924.jpg" id="img">
-			</div>
-
+		<h1 id="title">Senseable art</h1>
+	</header>
+	<main class="container">
+		<section>
+			<div id="hidden"></div>
+			<div id="gallery"></div>
+		</section>
+		<!--<section>
+			<canvas id="img_box">
+			</canvas>
+			<img src="assets/img/snail_1924.jpg" id="img">
 			<div id="filters">
-				<div class="Filter">
-					
-					<div class="FilterName">
-				        <p>contrast</p>
-				    </div>
-    				<div class="contrast">
-    					<input type="range" min="-100" max="100" step="1" value="0" data-filter="contrast" id="contrast">
-    					<span id="contrast_value">100</span>
-    				</div>
-
-    				<div class="FilterName">
-				        <p>brightness</p>
-				    </div>
-    				<div class="contrast">
-    					<input type="range" min="-100" max="100" step="1" value="0" data-filter="brightness" id="brightness">
-    					<span id="brightness_value">100</span>
-    				</div>
+				<div class="contrast">
+					<p>contrast</p>
+					<input type="range" min="-100" max="100" step="1" value="0" data-filter="contrast" id="contrast">
+					<span id="contrast_value">0</span>
 				</div>
 			</div>
-		</main>
-	</div>
+		</section>-->
+	</main>
 
-    <script data-main="scripts/main" src="assets/lib/jquery.min.js"></script>
-	<script data-main="scripts/main" src="assets/lib/caman.full.pack.js"></script>
+	<script data-main="scripts/main" src="assets/lib/jquery.min.js"></script>
+	<!--<script data-main="scripts/main" src="assets/lib/caman.full.pack.js"></script>
+	<script data-main="scripts/main" src="assets/lib/grafi.js"></script>-->
+
 	<script data-main="scripts/main" src="assets/scripts/functions.js"></script>
 			
 </body>
