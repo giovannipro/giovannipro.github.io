@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "Media_contributed_by_the_ETH-Bibliothek",
+      "group": 1
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-Spitsbergen_flight_1923",
+      "group": 8
+    },
+    {
+      "id": "c",
+      "group": 8
+    }
+  ],
+  "links": [
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-Spitsbergen_flight_1923",
+      "value": 1
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "c",
+      "value": 1
+    }
+  ]
+}

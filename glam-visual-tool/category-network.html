@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>GLAM visual tool</title>
+		<title>GLAM visual tool | category network</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
 		<link rel="stylesheet" href="assets/style/style.css"/>
 	</head>
 	<body>
@@ -12,6 +11,9 @@
 			<h1>
 				GLAM visual tool
 			</h1>
+			<h2>
+				Category network
+			</h2>
 		</header>
 		<nav class="container">
 			<!--<ul style="list-style:none; margin:0; padding: 0;">
@@ -25,30 +27,6 @@
 		</nav>
 		<main class="container">
 
-			<div id="files_metadata">
-				<h2>
-					Files metadata: amount of files for size range, in the top (timestamp: 06-12-2016), and average of pages where they are inserted, in the bottom (random values)
-				</h2>
-				<p class="small">
-					<a href="https://commons.wikimedia.org/w/index.php?title=Category:Media_contributed_by_the_ETH-Bibliothek" target="_blank">
-						Category: Media contributed by the ETH-Bibliothek
-					</a>
-				</p>
-				<div id="files_metadata_container"></div>	
-			</div>
-
-			<div id="files_upload">
-				<h2>
-					Amount of files available overtime (timestamp: 06-12-2016)
-				</h2>
-				<p class="small">
-					<a href="https://commons.wikimedia.org/w/index.php?title=Category:Media_contributed_by_the_ETH-Bibliothek" target="_blank">
-						Category: Media contributed by the ETH-Bibliothek
-					</a>
-				</p>
-				<div id="files_upload_container"></div>
-			</div>
-
 			<div id="category_network">
 				<h2>
 					Category network (timpestamp: 23.11.2016)
@@ -59,20 +37,8 @@
 					</a>
 				</p>
 				<div>
-					<div id="category_network_container">
-						<!--<svg width="960" height="600" id="network"></svg>-->
-					</div>   
+					<div id="category_network_containera"></div>   
 				</div>
-			</div>
-
-			<div id="pageviews">
-				<h2>
-					Average of pages views over time
-				</h2>
-				<p class="small">
-					Random values
-				</p>
-				<div id="pageviews_container"></div>   
 			</div>
 
 		</main>
@@ -99,32 +65,6 @@
 				</li>
 			</ul>
 		</footer>
-
-		<style>
-
-			.links line {
-			  stroke: #999;
-			  stroke-opacity: 0.6;
-			}
-
-			.nodes circle {
-			  stroke: #fff;
-			  stroke-width: 1.5px;
-			}
-			#category_network_container, svg {
-				overflow: visible !important;
-			}
-			.link {
-			  stroke: #ccc;
-			}
-
-			.node text {
-			  pointer-events: none;
-			  font: 10px sans-serif;
-			}
-
-		</style>
-
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
 		<script type="text/javascript" src="bower_components/sigma.js/sigma.min.js"></script>

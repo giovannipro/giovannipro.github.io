@@ -1,8 +1,11 @@
 $(document).ready(function(){
-	d3.json("assets/data/data_1.json", dataviz_1);
+	/*d3.json("assets/data/data_1.json", dataviz_1);
 	d3.json("assets/data/data_2.json", dataviz_2);
 	d3.json("assets/data/data_3.json", dataviz_3);
-	dataviz_4()
+	dataviz_4();*/
+	dataviz_5();
+	//d3.json("assets/data/category_network.json", dataviz_4);
+	//dataviz_5();
 	//console.log("ok")
 })
 
@@ -23,7 +26,7 @@ get data
 ------------------------- */
 
 function dataviz_1(d){
-	console.log(d);
+	//console.log(d);
 
 	container = "#files_upload_container"
 	
@@ -118,7 +121,7 @@ function dataviz_1(d){
 }
 
 function dataviz_2(d){
-	console.log(d);
+	//console.log(d);
 	
 	var col_width = width / 8;
 	var h = (height/2.2) - 20;
@@ -239,7 +242,7 @@ function dataviz_2(d){
 
 // average page views
 function dataviz_3(d){
-	console.log(d)
+	//console.log(d)
 	/*
 	for(var i=0; i<months; i++){
 		month++;
@@ -344,16 +347,34 @@ function dataviz_4(){
 	//console.log("sigma")
 
 	var data_path = "assets/data/category_network.gexf";
+	var proxy_ext = "http://crossorigin.me/";
+	var proxy = "http://localhost:8000/Dropbox/Public/glam-visual-tool/assets/scripts/proxy.php" + "?url="; 
+	
+	var network = "assets/data/category_network.json";
+
+	//var request = proxy_ext + nodes;
+	var request = data_path;
 
 	$.ajax({
 		//dataType: "json",
-		url: data_path,
+		url: data_path, // data_path nodes
+		//crossOrigin: true,
+		//cache :false,
+		//username: user,
+   	 	//password: pswd,
+		//headers: {Authorization: "'Bearer REDACTED"},
+		//xhrFields: {
+		//	withCredentials: true
+		//},
+		//headers: {
+		//	"Authorization": "Basic " + btoa(user + ":" + pswd)
+  		//},
 		success: function(data) {
 			//console.log(data)
 
 			var container = document.getElementById("category_network_container");
 
-			sigma.parsers.gexf(data_path, {
+			sigma.parsers.gexf(data_path, { // gexf json
  				container: container,
  				type: "svg", // canvas svg
  				settings: {
@@ -365,9 +386,108 @@ function dataviz_4(){
  					//zoomMax: 5
  				}
 			});
-
+		},
+		fail: function(data, errorThrown,status) {
+			console.log("error");
+			console.log(data);
+			console.log(errorThrown);
+			console.log(status);
 		}
+		
 	})
+}
 
+function dataviz_5(){
+
+	var network = "assets/data/category_network.json";
+	var container = "#category_network_container";
+
+// https://bl.ocks.org/mbostock/4062045
+	
+	var width = 1060,
+		height = 1000;
+
+	var svg = d3.select(container).append("svg")
+		width = +svg.attr("width"),
+		height = +svg.attr("height");   
+
+	var plot = svg.append("g")
+		.attr("transform","translate(20,20)")
+
+	var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+	var simulation = d3.forceSimulation()
+		.force("link", d3.forceLink().id(function(d) { return d.id; }))
+		.force("charge", d3.forceManyBody())
+		.force("center", d3.forceCenter(width / 1, height / 1));
+
+	d3.json(network, function(error, graph) {
+		if (error) throw error;
+
+	  	console.log(graph)
+
+		var link = plot.append("g")
+			.attr("class", "links")
+			.selectAll("line")
+			.data(graph.links)
+			.enter()
+			.append("line")
+			.attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+		var node = plot.selectAll(".node")
+			.data(graph.nodes)
+			.enter()
+			.append("g")
+			.attr("class", "nodes")
+			.call(d3.drag()
+				.on("start", dragstarted)
+				.on("drag", dragged)
+				.on("end", dragended));
+
+		var circle = node.append("circle")
+			.attr("r", 5)
+			.attr("fill", function(d) { return color(d.group); })
+		
+		var label = node.append("text") // title
+			.text(function(d) { return d.id; })
+			.attr("x", 12)
+
+		simulation
+			.nodes(graph.nodes)
+			.on("tick", ticked);
+
+		simulation.force("link")
+			.links(graph.links);
+
+		function ticked() {
+			link
+				.attr("x1", function(d) { return d.source.x; })
+				.attr("y1", function(d) { return d.source.y; })
+				.attr("x2", function(d) { return d.target.x; })
+				.attr("y2", function(d) { return d.target.y; });
+
+			node
+				.attr("cx", function(d) { return d.x; })
+				.attr("cy", function(d) { return d.y; });
+	  	}
+		
+		function dragstarted(d) {
+			if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+			d.fx = d.x;
+			d.fy = d.y;
+		}
+
+		function dragged(d) {
+		  	d.fx = d3.event.x;
+		  	d.fy = d3.event.y;
+		}
+
+		function dragended(d) {
+		  	if (!d3.event.active) simulation.alphaTarget(0);
+		  	d.fx = null;
+		  	d.fy = null;
+		}
+
+	});
 
 }
