@@ -2,27 +2,100 @@
   "nodes": [
     {
       "id": "Media_contributed_by_the_ETH-Bibliothek",
-      "group": 1
+      "group": 1,
+      "files": 10
     },
     {
       "id": "ETH-BIB_Mittelholzer-Spitsbergen_flight_1923",
-      "group": 8
+      "group": 2,
+      "files": 30
     },
     {
-      "id": "c",
-      "group": 8
+      "id": "ETH-BIB_Mittelholzer-Persia_flight_1924-1925",
+      "group": 2,
+      "files": 23
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-Kilimanjaro_flight_1929-1930",
+      "group": 2,
+      "files": 28
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-Mediterranean_flight_1928",
+      "group": 2,
+      "files": 15
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-North_Africa_flight_1932",
+      "group": 2,
+      "files": 40
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-Abyssinia_flight_1934",
+      "group": 2,
+      "files": 10
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-Lake_Chad_flight_1930-1931",
+      "group": 2,
+      "files": 10
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-Various_flights_abroad",
+      "group": 2,
+      "files": 10
+    },
+    {
+      "id": "ETH-BIB_Mittelholzer-Inland_flights",
+      "group": 2,
+      "files": 10
+    },
+    {
+      "id": "test",
+      "group": 3,
+      "files": 19
     }
   ],
   "links": [
     {
       "source": "Media_contributed_by_the_ETH-Bibliothek",
-      "target": "ETH-BIB_Mittelholzer-Spitsbergen_flight_1923",
-      "value": 1
+      "target": "ETH-BIB_Mittelholzer-Spitsbergen_flight_1923"
     },
     {
       "source": "Media_contributed_by_the_ETH-Bibliothek",
-      "target": "c",
-      "value": 1
+      "target": "ETH-BIB_Mittelholzer-Persia_flight_1924-1925"
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-Kilimanjaro_flight_1929-1930"
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-Mediterranean_flight_1928"
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-North_Africa_flight_1932"
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-Abyssinia_flight_1934"
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-Lake_Chad_flight_1930-1931"
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-Various_flights_abroad"
+    },
+    {
+      "source": "Media_contributed_by_the_ETH-Bibliothek",
+      "target": "ETH-BIB_Mittelholzer-Inland_flights"
+    },
+    {
+      "source": "ETH-BIB_Mittelholzer-Inland_flights",
+      "target": "test"
     }
   ]
 }

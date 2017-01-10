@@ -12,38 +12,28 @@
 				GLAM visual tool
 			</h1>
 			<h2>
-				Category network
+				Category network 
+				<!--(timpestamp: 23.11.2016 ?) -->
 			</h2>
 		</header>
-		<nav class="container">
-			<!--<ul style="list-style:none; margin:0; padding: 0;">
-				<li>
-					<a href="tate.html" target="_blank">Tate category tree</a>
-				</li>
-				<li>
-					<a href="parsing.html">Parsing</a>
-				</li>
-			</ul>-->
-		</nav>
+		<!--<nav class="container">
+		</nav>-->
 		<main class="container">
 
 			<div id="category_network">
-				<h2>
-					Category network (timpestamp: 23.11.2016)
-				</h2>
 				<p class="small">
 					<a href="https://commons.wikimedia.org/w/index.php?title=Category:historical_images_of_buildings_in_the_canton_of_Zürich" target="_blank">
-						Category: Historical images of buildings in the canton of Zürich
+						Category: Media_contributed_by_the_ETH-Bibliothek
 					</a>
 				</p>
 				<div>
-					<div id="category_network_containera"></div>   
+					<svg width="700" height="500" id="category_network_cont"></svg>
 				</div>
 			</div>
 
 		</main>
 
-		<footer class="container">
+		<!--<footer class="container">
 			<ul class="note">
 				<li>
 					<a href="https://bl.ocks.org/mbostock/3883245" target="_blank">Example of line chart</a>
@@ -64,12 +54,47 @@
 					</a>
 				</li>
 			</ul>
-		</footer>
+		</footer>-->
+
+		<style>
+			.links line {
+				stroke: #999;
+				stroke-opacity: 0.6;
+			}
+			.labels {
+				/*display: none;*/
+				font-size: 0.5em;
+			}
+			.nodes{
+				cursor: pointer;
+			}
+			.nodes:hover :nth-child(1) {
+				display: block;
+			}
+			.nodes:active{
+				cursor: -webkit-grab;
+			}
+			.nodes:active > .labels{
+				font-size: 1em;
+				display: block;
+			}
+			.nodes circle {
+				stroke: #fff;
+				stroke-width: 1.5px;
+			}
+			.labels:hover{
+				font-size: 1em;
+				z-index: 999;
+			}
+			#category_network_cont{
+				width: 100%;
+			}
+		</style>
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
-		<script type="text/javascript" src="bower_components/sigma.js/sigma.min.js"></script>
+		<!--<script type="text/javascript" src="bower_components/sigma.js/sigma.min.js"></script>
 		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.json.min.js"></script>
-		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.gexf.min.js"></script>
+		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.gexf.min.js"></script>-->
 		<script type="text/javascript" src="assets/scripts/functions.js"></script>
 	</body>
 </html>

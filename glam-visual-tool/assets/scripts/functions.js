@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	/*d3.json("assets/data/data_1.json", dataviz_1);
+	d3.json("assets/data/data_1.json", dataviz_1);
 	d3.json("assets/data/data_2.json", dataviz_2);
 	d3.json("assets/data/data_3.json", dataviz_3);
-	dataviz_4();*/
+	//dataviz_4();
 	dataviz_5();
 	//d3.json("assets/data/category_network.json", dataviz_4);
 	//dataviz_5();
@@ -398,59 +398,81 @@ function dataviz_4(){
 }
 
 function dataviz_5(){
+	// https://bl.ocks.org/mbostock/4062045
 
-	var network = "assets/data/category_network.json";
-	var container = "#category_network_container";
-
-// https://bl.ocks.org/mbostock/4062045
+	var network = "assets/data/category_network.json"; // category_network category_network_test
+	var container = "#category_network_cont";
 	
-	var width = 1060,
-		height = 1000;
+	//var width = 1060,
+	//	height = 1000;
 
-	var svg = d3.select(container).append("svg")
+	var svg = d3.select(container) //.append("svg")
 		width = +svg.attr("width"),
 		height = +svg.attr("height");   
 
 	var plot = svg.append("g")
-		.attr("transform","translate(20,20)")
+		//.attr("transform","translate(20,100)")
 
 	var color = d3.scaleOrdinal(d3.schemeCategory20);
-
-	var simulation = d3.forceSimulation()
-		.force("link", d3.forceLink().id(function(d) { return d.id; }))
-		.force("charge", d3.forceManyBody())
-		.force("center", d3.forceCenter(width / 1, height / 1));
 
 	d3.json(network, function(error, graph) {
 		if (error) throw error;
 
+		//var max_files = d3.max(graph.nodes.files)
+
+		console.log(graph.nodes[2])
+
+		var simulation = d3.forceSimulation()
+			.force("link", d3.forceLink().id(function(d) { 
+					return d.id; 
+				})
+				.distance(function(d,i){
+					return 100
+				})
+				.strength(1)
+			)
+			.force("charge", d3.forceManyBody())
+			.force("center", d3.forceCenter(width / 2, height / 2))
+
 	  	console.log(graph)
 
-		var link = plot.append("g")
+		var links = plot.append("g")
 			.attr("class", "links")
 			.selectAll("line")
 			.data(graph.links)
 			.enter()
 			.append("line")
-			.attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-		var node = plot.selectAll(".node")
-			.data(graph.nodes)
-			.enter()
-			.append("g")
-			.attr("class", "nodes")
-			.call(d3.drag()
-				.on("start", dragstarted)
-				.on("drag", dragged)
-				.on("end", dragended));
+		var nodes = plot.append("g")
+      		.attr("class", "nodes")
+    		.selectAll(".node")
+    		.data(graph.nodes)
+    		.enter()
+    		.append("g")  	
+      		.call(d3.drag()
+	          	.on("start", dragstarted)
+	          	.on("drag", dragged)
+	          	.on("end", dragended));
 
-		var circle = node.append("circle")
-			.attr("r", 5)
-			.attr("fill", function(d) { return color(d.group); })
-		
-		var label = node.append("text") // title
-			.text(function(d) { return d.id; })
-			.attr("x", 12)
+      	var node_circle = nodes.append("circle")
+			.attr("r", function(d,i){
+				if (d.files == 0 || d.files == undefined ){
+					return 5
+				}
+				else{
+					return d.files
+				}	
+			})
+			.attr("fill", function(d) { 
+				return  color(d.group); 
+			})
+
+      	var label = nodes.append("text")
+      		.attr("class", "labels")
+      		.text(function(d) { 
+      			return d.id;
+      		})
+      		.attr("text-anchor", "left")
 
 		simulation
 			.nodes(graph.nodes)
@@ -460,15 +482,17 @@ function dataviz_5(){
 			.links(graph.links);
 
 		function ticked() {
-			link
-				.attr("x1", function(d) { return d.source.x; })
-				.attr("y1", function(d) { return d.source.y; })
-				.attr("x2", function(d) { return d.target.x; })
-				.attr("y2", function(d) { return d.target.y; });
+			var x = 1
+			links
+				.attr("x1", function(d) { return d.source.x * x; }) 
+				.attr("y1", function(d) { return d.source.y * x; }) 
+				.attr("x2", function(d) { return d.target.x * x; })
+				.attr("y2", function(d) { return d.target.y * x; });
 
-			node
-				.attr("cx", function(d) { return d.x; })
-				.attr("cy", function(d) { return d.y; });
+			nodes
+				.attr("transform", function(d,i){
+					return "translate(" + (d.x * x) + "," + (d.y* x) + ")"
+				})
 	  	}
 		
 		function dragstarted(d) {
