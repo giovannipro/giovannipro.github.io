@@ -3,7 +3,7 @@
     {
       "id": "Media_contributed_by_the_ETH-Bibliothek",
       "group": 1,
-      "files": 10
+      "files": 40
     },
     {
       "id": "ETH-BIB_Mittelholzer-Spitsbergen_flight_1923",
@@ -56,7 +56,7 @@
       "files": 19
     }
   ],
-  "links": [
+  "edges": [
     {
       "source": "Media_contributed_by_the_ETH-Bibliothek",
       "target": "ETH-BIB_Mittelholzer-Spitsbergen_flight_1923"

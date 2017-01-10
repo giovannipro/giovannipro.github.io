@@ -417,29 +417,34 @@ function dataviz_5(){
 
 	d3.json(network, function(error, graph) {
 		if (error) throw error;
+		console.log(graph)
 
-		//var max_files = d3.max(graph.nodes.files)
-
-		console.log(graph.nodes[2])
+		var files = [];
+  		graph.nodes.forEach(function(node) {
+    		files.push(
+    			node.files
+    		);
+    	})
+  		var max_file = d3.max(files)
+  		console.log(max_file)
 
 		var simulation = d3.forceSimulation()
 			.force("link", d3.forceLink().id(function(d) { 
 					return d.id; 
 				})
 				.distance(function(d,i){
-					return 100
+					return max_file * 3
 				})
 				.strength(1)
 			)
+			//.force("link", d3.forceLink().distance(10).strength(0.5))
 			.force("charge", d3.forceManyBody())
 			.force("center", d3.forceCenter(width / 2, height / 2))
-
-	  	console.log(graph)
-
-		var links = plot.append("g")
+		
+		var edges = plot.append("g")
 			.attr("class", "links")
 			.selectAll("line")
-			.data(graph.links)
+			.data(graph.edges)
 			.enter()
 			.append("line")
 
@@ -452,15 +457,21 @@ function dataviz_5(){
       		.call(d3.drag()
 	          	.on("start", dragstarted)
 	          	.on("drag", dragged)
-	          	.on("end", dragended));
+	          	.on("end", dragended)
+            )
 
       	var node_circle = nodes.append("circle")
 			.attr("r", function(d,i){
 				if (d.files == 0 || d.files == undefined ){
 					return 5
 				}
-				else{
-					return d.files
+				else {
+					if (d.files < 10) {
+						return d.files + 10
+					}
+					else {
+						return d.files
+					}
 				}	
 			})
 			.attr("fill", function(d) { 
@@ -479,11 +490,11 @@ function dataviz_5(){
 			.on("tick", ticked);
 
 		simulation.force("link")
-			.links(graph.links);
+			.links(graph.edges);
 
 		function ticked() {
 			var x = 1
-			links
+			edges
 				.attr("x1", function(d) { return d.source.x * x; }) 
 				.attr("y1", function(d) { return d.source.y * x; }) 
 				.attr("x2", function(d) { return d.target.x * x; })
@@ -493,8 +504,12 @@ function dataviz_5(){
 				.attr("transform", function(d,i){
 					return "translate(" + (d.x * x) + "," + (d.y* x) + ")"
 				})
-	  	}
-		
+
+			var q = d3.quadtree(nodes),
+      			i = 0,
+      			n = nodes.length;
+		}
+
 		function dragstarted(d) {
 			if (!d3.event.active) simulation.alphaTarget(0.3).restart();
 			d.fx = d.x;
