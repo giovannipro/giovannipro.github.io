@@ -433,7 +433,7 @@ function dataviz_5(){
 					return d.id; 
 				})
 				.distance(function(d,i){
-					return max_file * 3
+					return max_file * 3.5
 				})
 				.strength(1)
 			)
@@ -557,25 +557,29 @@ function sidebar() {
 	});
 
 	function highlight(){
-		$(".list").on("click", function(){
+		$(".list").on("click", "li" , function(){
 
+			/*
 			node = $(".nodes").find("g").find("circle")
 			//node.css("transform","scale(1,1)")
 			node.css("stroke","white")
-			$(".list").find(".id").css("color","black");
+			$(".list > li").find(".id").css("color","black");
+			*/
 
-			element = $(this).find(".id").text();
-    		console.log(element);
-    		console.log(4)
+			$(".list > li").removeClass("selected_list_item");
+			$("#category_network_cont .circle").removeClass("selected_circle");
+
+			element = $(this).find(".id").attr("id"); //.text() //.toString();
+    		//console.log(element);
 
     		var scale = 2;
 
-    		//node_selected = $("#category_network_cont").find("." + element).children(".circle")
-    		//node_selected.css("transform","scale(" + scale + "," + scale + ")")
-    		//node_selected.css("stroke","red");
+    		node_selected = $("#category_network_cont").find("." + element).children(".circle")
+    		//console.log(node_selected)
     		
-    		//$(".list").find("." + element).css("color","red");
-    		$(this).find(".id").css("color","red");
+    		//node_selected.css("transform","scale(" + scale + "," + scale + ")")
+    		node_selected.toggleClass("selected_circle");
+    		$(this).toggleClass("selected_list_item");
 
 		});
 	}

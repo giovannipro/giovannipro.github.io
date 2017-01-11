@@ -1,9 +1,7 @@
-<ul style="font-size:0.9em">
+<ul style="font-size:0.9em" class="list">
 {{#each nodes}}
-	<li style="margin-bottom:20px" class="list" style="cursor: pointer;">
-		<span class="id" id="{{id}}">
-			{{id}}
-		</span>
+	<li style="margin-bottom:20px">
+		<span class="id" id="{{id}}">{{id}}</span>
 		<span>
 			<a href="https://commons.wikimedia.org/wiki/Category:{{id}}" title="{{id}}" target="_blank">
 				link
