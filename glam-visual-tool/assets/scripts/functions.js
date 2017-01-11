@@ -426,7 +426,7 @@ function dataviz_5(){
     		);
     	})
   		var max_file = d3.max(files)
-  		console.log(max_file)
+  		//console.log(max_file)
 
 		var simulation = d3.forceSimulation()
 			.force("link", d3.forceLink().id(function(d) { 
@@ -453,7 +453,10 @@ function dataviz_5(){
     		.selectAll(".node")
     		.data(graph.nodes)
     		.enter()
-    		.append("g")  	
+    		.append("g")
+    		.attr("class",function(d,i){
+    			return d.id
+    		})  	
       		.call(d3.drag()
 	          	.on("start", dragstarted)
 	          	.on("drag", dragged)
@@ -477,6 +480,7 @@ function dataviz_5(){
 			.attr("fill", function(d) { 
 				return  color(d.group); 
 			})
+			.attr("class","circle")
 
       	var label = nodes.append("text")
       		.attr("class", "labels")
@@ -530,3 +534,51 @@ function dataviz_5(){
 	});
 
 }
+
+function sidebar() {
+
+	var template_source = 'assets/templates/category-network.tpl';
+	var data_source = 'assets/data/category_network.json';
+	var target = '#sidebar';
+
+	$.get( template_source , function(tpl) {
+		$.getJSON( data_source , function(data) {
+
+			data.nodes.sort( function(a,b) { 
+				return b.files - a.files; 
+			});
+			//console.log(data)
+
+			var template = Handlebars.compile(tpl); 
+			$(target).html(template(data));
+
+			highlight()
+		});
+	});
+
+	function highlight(){
+		$(".list").on("click", function(){
+
+			node = $(".nodes").find("g").find("circle")
+			//node.css("transform","scale(1,1)")
+			node.css("stroke","white")
+			$(".list").find(".id").css("color","black");
+
+			element = $(this).find(".id").text();
+    		console.log(element);
+    		console.log(4)
+
+    		var scale = 2;
+
+    		//node_selected = $("#category_network_cont").find("." + element).children(".circle")
+    		//node_selected.css("transform","scale(" + scale + "," + scale + ")")
+    		//node_selected.css("stroke","red");
+    		
+    		//$(".list").find("." + element).css("color","red");
+    		$(this).find(".id").css("color","red");
+
+		});
+	}
+
+}
+sidebar();
