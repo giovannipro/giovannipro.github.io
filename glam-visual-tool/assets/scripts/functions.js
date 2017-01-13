@@ -7,6 +7,8 @@ $(document).ready(function(){
 	//d3.json("assets/data/category_network.json", dataviz_4);
 	//dataviz_5();
 	//console.log("ok")
+	download_1()
+	sidebar();
 })
 
 /* -----------------------
@@ -455,7 +457,7 @@ function dataviz_5(){
     		.enter()
     		.append("g")
     		.attr("class",function(d,i){
-    			return d.id
+    			return d.id + " node"
     		})  	
       		.call(d3.drag()
 	          	.on("start", dragstarted)
@@ -481,6 +483,7 @@ function dataviz_5(){
 				return  color(d.group); 
 			})
 			.attr("class","circle")
+			.on("click",selection)
 
       	var label = nodes.append("text")
       		.attr("class", "labels")
@@ -531,7 +534,11 @@ function dataviz_5(){
 		  	d.fy = null;
 		}
 
+		function selection(d){
+			//console.log(d)
+		}
 	});
+	
 
 }
 
@@ -557,32 +564,62 @@ function sidebar() {
 	});
 
 	function highlight(){
+
+		// from sidebar to dataviz
 		$(".list").on("click", "li" , function(){
+			element = $(this).find(".id")
+			id = element.attr("id");
+			console.log(element);
+			console.log(id);
 
-			/*
-			node = $(".nodes").find("g").find("circle")
-			//node.css("transform","scale(1,1)")
-			node.css("stroke","white")
-			$(".list > li").find(".id").css("color","black");
-			*/
-
-			$(".list > li").removeClass("selected_list_item");
+			// reset dataviz - sidebar
 			$("#category_network_cont .circle").removeClass("selected_circle");
+			$("#sidebar .list li .id").removeClass("selected_list_item");			
 
-			element = $(this).find(".id").attr("id"); //.text() //.toString();
-    		//console.log(element);
-
-    		var scale = 2;
-
-    		node_selected = $("#category_network_cont").find("." + element).children(".circle")
-    		//console.log(node_selected)
-    		
-    		//node_selected.css("transform","scale(" + scale + "," + scale + ")")
+			// sidebar
+			element.toggleClass("selected_list_item");
+    	
+    		// dataviz
+    		node_selected = $("#category_network_cont").find("." + id).children(".circle")		
     		node_selected.toggleClass("selected_circle");
-    		$(this).toggleClass("selected_list_item");
+   		});
 
-		});
+		// from dataviz to sidebar 
+		$(".node").on("click", function(){
+			node = $(this).attr("class");
+			element = node.split(" ",1).toString();
+
+			// reset dataviz - sidebar
+			$("#category_network_cont .circle").removeClass("selected_circle");
+			$("#sidebar .list li .id").removeClass("selected_list_item");
+
+			// dataviz
+			node_selected = $(this).children(".circle")
+			node_selected.toggleClass("selected_circle");
+			//console.log(element)
+			
+			// sidebar
+			selected = $("#sidebar").find("#" + element)
+			selected.toggleClass("selected_list_item");
+			//console.log(selected)
+		})
 	}
 
 }
-sidebar();
+
+function download_1(){
+	// save svg
+    $("#save").click(function () {
+        var dataviz = $(".dataviz").html();  // #category_network_cont
+        download(dataviz, "dataviz.svg", "text/plain");
+        console.log(dataviz);     
+    });  
+    console.log(2)
+}
+
+function download_2(){
+	// save file
+	var dataviz = $("#category_network_cont").html();
+	//var file = new File(["Hello, world!"], "hello world.txt", {type: "text/plain;charset=utf-8"});
+	saveAs(dataviz);
+}

@@ -51,17 +51,17 @@ main > div, footer {
 footer {
   margin: 2em 0; }
 
-#category_network > div {
+#category_network .dataviz {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 30em;
+  height: 32em;
   position: relative; }
-  #category_network > div::after {
+  #category_network .dataviz::after {
     clear: both;
     content: "";
     display: block; }
-  #category_network > div #category_network_container {
+  #category_network .dataviz #category_network_container {
     position: absolute;
     top: 0;
     bottom: 0;
