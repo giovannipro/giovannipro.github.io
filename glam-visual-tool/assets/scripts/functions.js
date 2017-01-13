@@ -611,15 +611,17 @@ function download_1(){
 	// save svg
     $("#save").click(function () {
         var dataviz = $(".dataviz").html();  // #category_network_cont
-        download(dataviz, "dataviz.svg", "text/plain");
-        console.log(dataviz);     
+        download(dataviz, "category_network.svg", "text/plain");
+        console.log(dataviz);
     });  
     console.log(2)
 }
 
+/*
 function download_2(){
 	// save file
 	var dataviz = $("#category_network_cont").html();
 	//var file = new File(["Hello, world!"], "hello world.txt", {type: "text/plain;charset=utf-8"});
 	saveAs(dataviz);
 }
+*/

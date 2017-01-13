@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GLAM visual tool | category network</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="assets/style/style.css"/>
+	</head>
+	<body>
+		<header class="container">
+			<h1>
+				GLAM visual tool
+			</h1>
+		</header>
+		<!--<nav class="container">
+		</nav>-->
+		<main class="container">
+
+			<div id="files_upload">
+				<h2>
+					Files
+					<!--(timpestamp: 23.11.2016 ?) -->
+				</h2>	
+				<p class="small">
+					<a href="https://commons.wikimedia.org/w/index.php?title=Category:historical_images_of_buildings_in_the_canton_of_Zürich" target="_blank">
+						Category: Media_contributed_by_the_ETH-Bibliothek
+					</a>
+				</p>
+				<div class="dataviz" id="files_upload_container"></div>
+
+				<div style="clear: both;">
+					<input type="submit" value="Save"/ id="save">
+				</div>
+				
+			</div>
+
+			<div id="sidebar" style="padding-top: 20px;"></sidebar>
+
+		</main>
+
+		<style>
+			.links line {
+				stroke: #999;
+				stroke-opacity: 0.6;
+			}
+			.labels {
+				/*display: none;*/
+				font-size: 0.5em;
+			}
+			.nodes{
+				cursor: pointer;
+			}
+			.nodes:active{
+				cursor: -webkit-grab;
+			}
+			.nodes:active > .labels{
+				font-size: 1.5em;
+			}
+			.nodes circle {
+				stroke: #fff;
+				stroke-width: 1.5px;
+			}
+			.labels:hover{
+				font-size: 1em;
+				z-index: 999;
+			}
+			#category_network_cont{
+				width: 100%;
+			}
+			.list li {
+				cursor: pointer;
+			}
+			.selected_list_item {
+				color:red;
+			}
+			.nodes .selected_circle {
+				stroke: red;
+			}
+		</style>
+
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+		<!--<script type="text/javascript" src="bower_components/sigma.js/sigma.min.js"></script>
+		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.json.min.js"></script>
+		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.gexf.min.js"></script>-->
+		<script type="text/javascript" src="assets/scripts/handlebars-v4.0.5.js"></script>
+		<script type="text/javascript" src="assets/scripts/download.js"></script>
+		<script type="text/javascript" src="assets/scripts/FileSaver.js"></script>
+		<!--<script type="text/javascript" src="assets/scripts/functions.js"></script>-->
+		<script type="text/javascript" src="assets/scripts/files.js"></script>
+	</body>
+</html>
