@@ -1,42 +1,42 @@
 [
   {
     "date": "2016/03",
-    "count": 101
+    "count": 1
   },
   {
     "date": "2016/04",
-    "count": 1000
+    "count": 342
   },
   {
     "date": "2016/05",
-    "count": 104
+    "count": 878
   },
   {
     "date": "2016/06",
-    "count": 12
+    "count": 1732
   },
   {
     "date": "2016/07",
-    "count": 345
+    "count": 2847
   },
   {
     "date": "2016/08",
-    "count": 521
+    "count": 3949
   },
   {
     "date": "2016/09",
-    "count": 312
+    "count": 3950
   },
   {
     "date": "2016/10",
-    "count": 35
+    "count": 5690
   },
   {
     "date": "2016/11",
-    "count": 24
+    "count": 5691
   },
   {
     "date": "2016/12",
-    "count": 10
+    "count": 6082
   }
 ]

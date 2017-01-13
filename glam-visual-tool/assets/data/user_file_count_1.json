@@ -1,0 +1,47 @@
+[
+  {
+    "user": "ETH-Bibliothek",
+    "date": "2016/03",
+    "count": 13
+  },
+  {
+    "user": "ETH-Bibliothek",
+    "date": "2016/04",
+    "count": 25
+  },
+  {
+    "user": "ETH-Bibliothek",
+    "date": "2016/05",
+    "count": 24
+  },
+  {
+    "user": "B",
+    "date": "2016/03",
+    "count": 13
+  },
+  {
+    "user": "B",
+    "date": "2016/04",
+    "count": 45
+  },
+  {
+    "user": "B",
+    "date": "2016/05",
+    "count": 42
+  },
+  {
+    "user": "C",
+    "date": "2016/03",
+    "count": 24
+  },
+  {
+    "user": "C",
+    "date": "2016/04",
+    "count": 24
+  },
+  {
+    "user": "C",
+    "date": "2016/05",
+    "count": 13
+  }
+]

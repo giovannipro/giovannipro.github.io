@@ -8,7 +8,7 @@
 			</a>
 		</span>-->
 		<br>
-		<span>{{count}} count</span>
+		<span>{{count}} files</span>
 	</li>
 {{/each}}
 </ul>
