@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	d3.json("assets/data/data_1.json", dataviz_2);
+	d3.json("data/data_1.json", dataviz_1); // data_1 test_files
 	//d3.json("assets/data/user_file_count_1.json", dataviz_3); //  
 	download_1();
 	sidebar();
@@ -22,76 +22,7 @@ nomargin_h = height - (margin.top + margin.bottom);
 dataviz
 ------------------------- */
 
-/*
 function dataviz_1(d){
-	//console.log(d);
-
-	container = "#files_upload_container"
-	
-	var svg = d3.select(container)
-		.append("svg")
-		.attr("viewBox", "0 0 " + width + " " + height)
-		.attr("width",width)
-		.attr("height",height)
-
-	var plot = svg.append("g")
-		.attr("id", "d3_plot")
-		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-	var parseTime = d3.timeParse("%Y/%m/%d")
-	
-	d.forEach(function(d) {
-		d.date = parseTime(d.date);
-		d.total = +d.total;
-		//console.log(d.date + "-" + d.total);
-	});
-
-	// range
-	var x = d3.scaleTime()
-		.rangeRound([0, nomargin_w]);
-
-	var y = d3.scaleLinear()
-		.rangeRound([nomargin_h, 0]);
-
-	// domain
-	x.domain(d3.extent(d, function(d) {
-		return d.date; 
-	}));
-	y.domain(d3.extent(d, function(d) { 
-		return d.total; 
-	}));
-
-	// area generator
-	var area = d3.area()
-		.curve(d3.curveStepBefore)
-		.x(function(d) {
-			return x(d.date);
-		})
-		.y0(nomargin_h)
-		.y1(function(d) { 
-			return y(d.count);
-	});
-
-	plot.append("g")
-		.attr("class", "axis axis-x")
-		.attr("transform", "translate(0," + (height - 100) + ")")
-		.call(d3.axisBottom(x))
-
-	plot.append("g")
-		.attr("class", "axis axis-y")
-		.call(d3.axisLeft(y))
-
-	plot.append("path")
-		.datum(d)
-		.attr("class", "area") // area line
-		.attr("d", area) // area line
-		.attr("fill","black")
-		.attr("stroke","transparent")
-		.attr("stroke-width","2px")
-}
-*/
-
-function dataviz_2(d){
 	console.log(d)
 	container = "#files_upload_container"
 	
@@ -106,17 +37,11 @@ function dataviz_2(d){
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	var parseTime = d3.timeParse("%Y/%m") // /%d
-	
-	/*
-	date = []
-	d.forEach(function(d) {
-		time = d._id//.year
-		date.push(time)//
-	})
-	//console.log(date)
-	*/
 
-	d.forEach(function(d) {
+	d_1 = d.users[0].files //.user
+	console.log(d_1)
+
+	d_1.forEach(function(d) {
 		d.date = parseTime(d.date);
 		d.count = +d.count;
 		//console.log(d.date + "-" + d.total);
@@ -129,11 +54,8 @@ function dataviz_2(d){
 	var y = d3.scaleLinear()
 		.rangeRound([nomargin_h, 0]);
 
-	/*var	y_axis = d3.scaleLinear()
-		.rangeRound([nomargin_h, 0]); //*/
-
 	// domain
-	x.domain(d3.extent(d, function(d) {
+	x.domain(d3.extent(d_1, function(d) {
 		return d.date; 
 	}));
 
@@ -142,7 +64,7 @@ function dataviz_2(d){
 		return d.count; 
 	}));*/
 	// da 0 a max
-	y.domain([0, d3.max(d, function(d) {
+	y.domain([0, d3.max(d_1, function(d) {
 		return d.count; 
 	})]);
 
@@ -159,7 +81,7 @@ function dataviz_2(d){
 		.attr("class", "axis axis-y")
 		.call(d3.axisLeft(y))
 
-	var max = d3.max(d, function(d) {
+	var max = d3.max(d_1, function(d) {
 		return +d.count;
 	});
 	//console.log(max)
@@ -170,7 +92,7 @@ function dataviz_2(d){
 		.attr("x",0)
 
 		.selectAll(".bars")
-		.data(d)
+		.data(d_1)
 		.enter()
 		.append("rect")
 		.attr("y", function(d) { 
@@ -186,7 +108,7 @@ function dataviz_2(d){
 		.attr("class", function(d,i){
 			return d.date + " " + d.count
 		})
-		.attr("width", nomargin_w / d.length)
+		.attr("width", nomargin_w / d_1.length)
 		.style("fill", "steelblue")
 
 	d3.selectAll(".tick > text")
@@ -351,11 +273,10 @@ function download_1(){
 
 function sidebar() {
 
-	
 	// overall
-	var template_source = 'assets/templates/files.tpl';
-	var data_source = 'assets/data/data_1.json';
-	var target = '#sidebar';
+	var template_source = "tpl/files.tpl";
+	var data_source = "data/data_1.json";
+	var target = "#sidebar";
 
 	$.get( template_source , function(tpl) {
 		$.getJSON( data_source , function(data) {
@@ -394,13 +315,13 @@ function sidebar() {
 function buttons(){
 	$("#overall").click(function () {
 		$("#files_upload_container").empty();
-		d3.json("assets/data/data_1.json", dataviz_2);
+		d3.json("data/data_1.json", dataviz_2);
 		//console.log("overall")
 	})
-	$("#users").click(function () {
+	/*$("#users").click(function () {
 		$("#files_upload_container").empty();
-		d3.json("assets/data/users_file_count.json", dataviz_3);
-	})
+		d3.json("data/users_file_count.json", dataviz_3);
+	})*/
 }
 
 

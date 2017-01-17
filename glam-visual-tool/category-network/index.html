@@ -4,7 +4,7 @@
 		<title>GLAM visual tool | category network</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="assets/style/style.css"/>
+		<link rel="stylesheet" href="../assets/style/style.css"/>
 	</head>
 	<body>
 		<header class="container">
@@ -27,7 +27,7 @@
 					</a>
 				</p>
 				<div class="dataviz">
-					<svg width="700" height="500" id="category_network_cont"></svg>
+					<svg width="700" height="500" id="category_network_container"></svg>
 				</div>
 
 				<div style="clear: both;">
@@ -36,7 +36,7 @@
 				
 			</div>
 
-			<div id="sidebar" style="padding-top: 20px;"></sidebar>
+			<div id="sidebar" style="padding-top: 20px;"></div>
 
 		</main>
 
@@ -78,16 +78,34 @@
 			.nodes .selected_circle {
 				stroke: red;
 			}
+			.links line {
+			  	stroke: #999;
+			  	stroke-opacity: 0.6;
+			}
+			.nodes circle {
+			  	stroke: #fff;
+			  	stroke-width: 1.5px;
+			}
+			#category_network_container, svg {
+				overflow: visible !important;
+			}
+			.link {
+			  	stroke: #ccc;
+			}
+			.node text {
+				pointer-events: none;
+				font: 10px sans-serif;
+			}
 		</style>
 
-		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
-		<!--<script type="text/javascript" src="bower_components/sigma.js/sigma.min.js"></script>
-		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.json.min.js"></script>
-		<script type="text/javascript" src="bower_components/sigma.js/plugins/sigma.parsers.gexf.min.js"></script>-->
-		<script type="text/javascript" src="assets/scripts/handlebars-v4.0.5.js"></script>
-		<script type="text/javascript" src="assets/scripts/download.js"></script>
-		<script type="text/javascript" src="assets/scripts/FileSaver.js"></script>
-		<script type="text/javascript" src="assets/scripts/functions.js"></script>
+		<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../bower_components/d3/d3.min.js"></script>
+		<!--<script type="text/javascript" src="../bower_components/sigma.js/sigma.min.js"></script>
+		<script type="text/javascript" src="../bower_components/sigma.js/plugins/sigma.parsers.json.min.js"></script>
+		<script type="text/javascript" src="../bower_components/sigma.js/plugins/sigma.parsers.gexf.min.js"></script>-->
+		<script type="text/javascript" src="../assets/scripts/handlebars-v4.0.5.js"></script>
+		<script type="text/javascript" src="../assets/scripts/download.js"></script>
+		<!--<script type="text/javascript" src="../assets/scripts/FileSaver.js"></script>-->
+		<script type="text/javascript" src="category.js"></script>
 	</body>
 </html>
