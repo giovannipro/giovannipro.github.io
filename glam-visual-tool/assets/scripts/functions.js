@@ -278,11 +278,12 @@ function dataviz_3(d){
 		d.date = parseTime(d.date)
 		d.count = +d.count;
 	});
+	console.log(d_1)
 
 	var max_pv = d3.max(d_1, function(d) {
 		return +d.count;
 	});
-	//console.log(max_pv)
+	console.log(max_pv)
 
 	// range (output)
 	var x = d3.scaleTime()
@@ -292,14 +293,15 @@ function dataviz_3(d){
 		.rangeRound([nomargin_h, 0]);
 
 	//domain (original data)
-	var max = d3.max(d_1, function(d) {
+	var max = d3.max(d_1, function(d) { //
 		return +d.count;
 	});
 
 	x.domain(d3.extent(d_1, function(d) {
 		return d.date; 
 	}));
-	/*y.domain(d3.extent(d, function(d) { 
+	
+	/*y.domain(d3.extent(d_1, function(d) { 
 		return d.pageviews; 
 	}));*/
 	y.domain([0,max]);
