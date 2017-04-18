@@ -94,5 +94,11 @@
     "name": "Canvas to Blob",
     "link": "https://github.com/blueimp/JavaScript-Canvas-to-Blob",
     "description": "Export image"
+  },
+   {
+    "group": "tool",
+    "name": "Dom to image",
+    "link": "https://github.com/tsayen/dom-to-image",
+    "description": "Generate an image from a DOM node"
   }
 ]
