@@ -23,7 +23,7 @@ if (width < 500) {
 }
 else {
 	var waves = 20,
-		v_translation = ((height/5) / waves),
+		v_translation = ((height/3) / waves),
 		height = h;
 }
 
