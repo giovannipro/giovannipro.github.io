@@ -4,23 +4,27 @@ main variables
 
 var w = window;
 var width = w.outerWidth,
-height = width - (width / 3);
+	h = w.outerHeight,
+	height = h;
+	// console.log(height);
 
 var margin = {top: 50, right: 50, bottom: 50, left: 50},
-nomargin_w = width - (margin.left + margin.right),
-nomargin_h = width - (margin.top + margin.bottom);
+	nomargin_w = width - (margin.left + margin.right),
+	nomargin_h = width - (margin.top + margin.bottom);
 
 /* -----------------------
 sea variables
 ------------------------- */
 
 if (width < 500) {
-	var waves = 10;
-	var v_translation = ((height/3) / waves);  
+	var waves = 10,
+		height = h/3,
+		v_translation = ((height/1) / waves);
 }
-else{
-   var waves = 20;  
-   var v_translation = ((height/10) / waves); 
+else {
+	var waves = 20,
+		v_translation = ((height/5) / waves),
+		height = h;
 }
 
 /* -----------------------
@@ -122,10 +126,12 @@ function get_data(param,cache){
 
 	var baseurl =  window.location.protocol + "//" + window.location.host + "/" + "giovannipro.github.io/adv-poster/"
 	
-	var oasi_proxy = baseurl + "assets/lib/proxy.php" +  "?url=" ;
-	var cross_origin = "http://crossorigin.me/";
-	var cors = "http://cors.io/?";
-	var cors_api = "https://cors-anywhere.herokuapp.com/"
+	var oasi_proxy = baseurl + "assets/lib/proxy.php" +  "?url=" ,
+		cross_origin = "http://crossorigin.me/",
+		cors = "http://cors.io/?",
+		cors_api = "https://cors-anywhere.herokuapp.com/",
+		benalman_proxy = "http://benalman.com/code/projects/php-simple-proxy/ba-simple-proxy.php?url=",
+		my_proxy = "http://www.gprofeta.it/utilities/proxy.php" + "?url=";
 
 	var api = "http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG";
 
@@ -152,47 +158,53 @@ function get_data(param,cache){
 	var time = year + month + day + "T" + hour,
 		date = year + "-" + month + "-" + day + "&" + year + "-" + month + "-" + day,
 		request =  api + "&parameter=" + param + "&from=" + date;
-        cors_request = cors_api + request;
-	   //console.log(request);
+		cors_request = cors_api + request; // cors_api
+	   console.log(request);
 
 	// match
-	var anticipation = 2;
-	if (day < 10){
-		//day = day;
-		if (hour < (10+anticipation) ) {
-			if (hour == anticipation || hour < anticipation){
-				day = "0" + (day - 1);
-				hour = "T" + (23 - (anticipation-1) );
-			}
-			else {
-				hour = "T0" + (hour - anticipation);
-			}
-		}
-		else {
-			hour = "T" + (hour - anticipation);  
-		}
-	}
-	else {
-		day = day;
-		if (hour < (10+anticipation) ) {
-			if (hour == anticipation || hour < anticipation) {
-				day = (day - 1);
-				hour = "T" + (23 - (anticipation-1) );
-			}
-			else {
-				hour = "T0" + (hour - anticipation);
-			}
-		}
-		else{
-			hour = "T" + (hour - anticipation);
-		}
-	}
-	match = year + "-" + month + "-" + day + hour;
-	console.log(match); 
+	// var anticipation = 2;
+	// if (day < 10){
+	// 	//day = day;
+	// 	if (hour < (10+anticipation) ) {
+	// 		if (hour == anticipation || hour < anticipation){
+	// 			day = "0" + (day - 1);
+	// 			hour = "T" + (23 - (anticipation-1) );
+	// 		}
+	// 		else {
+	// 			hour = "T0" + (hour - anticipation);
+	// 		}
+	// 	}
+	// 	else {
+	// 		hour = "T" + (hour - anticipation);  
+	// 	}
+	// }
+	// else {
+	// 	day = day;
+	// 	if (hour < (10+anticipation) ) {
+	// 		if (hour == anticipation || hour < anticipation) {
+	// 			day = (day - 1);
+	// 			hour = "T" + (23 - (anticipation-1) );
+	// 		}
+	// 		else {
+	// 			hour = "T0" + (hour - anticipation);
+	// 		}
+	// 	}
+	// 	else{
+	// 		hour = "T" + (hour - anticipation);
+	// 	}
+	// }
+	// match = year + "-" + month + "-" + day + hour;
+	// console.log(match); 
 	
+
+
 	$.ajax({
 		url: cors_request,
 		cache: cache,
+		headers: {
+			"Accept": "application/json",
+			"Content-Type": "application/json",
+  		},
 		beforeSend: function(){
 			$('#no_data').html(
 				'<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>'
@@ -200,7 +212,21 @@ function get_data(param,cache){
 			//console.log("loading")
 		},
 		success: function(data) {
-			//console.log(data)
+			// console.log(request)
+			// console.log(data)
+
+			var values = data.locations[0].data;
+
+			var found = (function search () { 
+				for (var i = values.length - 1; i >= 0; i--) {
+					if(values[i].values[0].value !== null) {
+						return values[i];
+					}
+				}
+			})();
+
+			var time = found.date,
+				value = found.values[0].value;
 
 			min = 0;
 
@@ -208,11 +234,12 @@ function get_data(param,cache){
 				max =  100;
 			}
 			if (param == "o3"){
-				max =  150;
+				max =  300;
 			}
 			if (param == "no2"){
 				max =  100;
 			}
+			console.log(time, value + "/" + max);
 
 			var dates = $(data.locations)[0].data;
 			var x = $(data.locations)[0].data[0].date;
@@ -221,55 +248,58 @@ function get_data(param,cache){
 
 			var index = 0;
 
-			jQuery.each( dates, function( a,b ) {
+			wave_maker(value,min,max);
+			$('#no_data').empty();
 
-				index++;
+			// jQuery.each( dates, function( a,b ) {
 
-				var interval = 1000;
-				var date_string = b.date.toString().substring(0,13);
+			// 	index++;
 
-				if (date_string == match) {
+			// 	var interval = 1000;
+			// 	var date_string = b.date.toString().substring(0,13);
 
-					var value = b.values[0].value;
-					//console.log(value);
+			// 	if (date_string == match) {
 
-					if (value !== null) {
-					   //console.log(date_string + ' - ' + match + ' - ' + value)
+			// 		var value = b.values[0].value;
+			// 		//console.log(value);
 
-						var percentage = (value * 100) / max;
-						$('#no_data').empty();
-						wave_maker(value,min,max);
+			// 		if (value !== null) {
+			// 		   //console.log(date_string + ' - ' + match + ' - ' + value)
+
+			// 			var percentage = (value * 100) / max;
+			// 			$('#no_data').empty();
+			// 			wave_maker(value,min,max);
 						
-						var load = 0
+			// 			var load = 0
 						
-						console.log(/*b.date.toString() + ' - ' + */ param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
-						return false; 
-					}
-					else {
+			// 			console.log(/*b.date.toString() + ' - ' + */ param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
+			// 			return false; 
+			// 		}
+			// 		else {
 						
-						$('#no_data').empty();
-						$('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
-						//wave_maker(0,min,max);
+			// 			$('#no_data').empty();
+			// 			$('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
+			// 			//wave_maker(0,min,max);
 						
-						load++
+			// 			load++
 
-						console.log(request);
-						//console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
-						//get_data(param,1) // 0: cache; 1: no_cache
-						//return false; 
-					}
-				}
-				else{
-					//console.log("no values error")
-					//console.log(date_string + ' - ' + match + ' - ' + value)
-                    //clearInterval(interval);
-					//$('#no_data').empty();
-					//
-					//wave_maker(0,0,100);
-					//return false;
-				}
-			});
-			save(time);
+			// 			console.log(request);
+			// 			//console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
+			// 			//get_data(param,1) // 0: cache; 1: no_cache
+			// 			//return false; 
+			// 		}
+			// 	}
+			// 	else{
+			// 		//console.log("no values error")
+			// 		//console.log(date_string + ' - ' + match + ' - ' + value)
+   			//	  //clearInterval(interval);
+			// 		//$('#no_data').empty();
+			// 		//
+			// 		//wave_maker(0,0,100);
+			// 		//return false;
+			// 	}
+			// });
+			//save(time);
 		},
 		fail: function() {
 			wave_maker(0,0,100);
@@ -326,7 +356,8 @@ function accelerometer(){
 			var scale_x = 1;
 
 			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-				if (beta < 4 && beta > -4 ) {  // 
+				if (width < 500) {
+					if (beta < 4 && beta > -4 ) {  // 
 				// smartphone appoggiato - orizzonte alto
 					var beta = Math.abs(beta);
 					$("#svg_container")
@@ -344,19 +375,19 @@ function accelerometer(){
 					//console.log( alpha + ',' + beta + ',' + gamma);
 				}
 				//console.log( alpha + ',' + beta + ',' + gamma);
-				
+				}
 			}
 			else{
-                if (beta > 4 ) {
-                    // computer abbassato - orizzonte alto
-				    $("#svg_container")
+				if (beta > 4 ) {
+					// computer abbassato - orizzonte alto
+					$("#svg_container")
 						.css("-webkit-transform","scale(" + scale_x + "," + (beta/reduction) +")")
 						.css("-ms-transform","scale(" + scale_x + "," + (beta/reduction) +")")
 						.css("transform","scale(" + scale_x + "," + (beta/reduction) +")")
 					//
 				}
 				else if (beta < -1 ) {
-                    // computer alzato - orizzonte basso
+					// computer alzato - orizzonte basso
 					var beta = Math.abs(beta);
 					$("#svg_container")
 						.css("-webkit-transform","scale(" + scale_x + "," + (scale_x/beta) +")")
@@ -364,7 +395,7 @@ function accelerometer(){
 						.css("transform","scale(" + scale_x + "," + (scale_x/beta) +")")
 				}
 				else {
-				    // computer appoggiato - orizzonte medio
+					// computer appoggiato - orizzonte medio
 					$("#svg_container")
 						.css("-webkit-transform","scale(" + scale_x + ",1)")
 						.css("-ms-transform","scale(" + scale_x + ",1)")
