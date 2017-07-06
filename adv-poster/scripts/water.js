@@ -18,7 +18,7 @@ sea variables
 
 if (width < 500) {
 	var waves = 10,
-		height = h/3,
+		height = h/2,
 		v_translation = ((height/1) / waves);
 }
 else {
