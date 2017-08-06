@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>Articles</title>
-		<link rel="stylesheet" type="text/css" href="assets/lib/css/view.css">
-		<link rel="stylesheet" type="text/css" href="assets/lib/css/sidr.css">
-		<link rel="stylesheet" type="text/css" href="assets/lib/css/sidr_light.css">
+		<link rel="stylesheet" type="text/css" href="lib/css/view.css">
+		<link rel="stylesheet" type="text/css" href="lib/css/sidr.css">
+		<link rel="stylesheet" type="text/css" href="lib/css/sidr_light.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -17,23 +17,22 @@
 						<a id="simple-menu" href="#sidr"  style="padding-left:0"><i class="fa fa-bars fa-lg"></i></a>
 						<a href="index.html" style="font-weight:bold; padding-left:0;">Wikipedia Primary School</a>
 					</div>
-					<a href="index.html"  class="here first_menu">Articles</a>
+					<!--<a href="index.html"  class="here first_menu">Articles</a>-->
 					<a href="datasets.html" class="first_menu">Datasets</a>
-					<a href="protocols.html" class="first_menu">Protocols</a>
+					<!--<a href="updates.html" class="first_menu">Updates</a>-->
 				</main>
 			</div>
 		</div>
 
 		<div id="sidr">
 		  	<ul>
-				<li><a href="index.html" class="here">Articles</a></li>
+				<!--<li><a href="articles_list.html" class="here">Articles</a></li>-->
 				<li><a href="datasets.html">Datasets</a></li>
-				<li><a href="protocols.html">Protocols</a></li>
+				<!--<li><a href="updates.html">Updates</a></li>-->
 		 	 </ul>
 		</div>
 
-		<div class="container">
-		
+		<div class="container">		
 			<header class="row" id="header">
 				<div class="col-md-12">
 					<h1>Articles</h1>
@@ -47,13 +46,10 @@
 					</h5>
 				</div>
 			</header>
-			
 			<hr class="line">
-
-			<div id="articles"></div><!--  class="row" -->
-			
+			<div id="articles"></div>
 		</div>
-		
+
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -63,12 +59,14 @@
 				</div>
 			</div>
 		</footer>
+			
+		
 
 		<script>
 			function articles() {
 
-				var template_source = 'assets/template/articles.tpl';
-				var data_source = 'assets/data/articles/articles.json';
+				var template_source = 'template/articles.tpl';
+				var data_source = 'data/articles/articles.json';
 				var target = '#articles';
 
 
@@ -178,10 +176,10 @@
 
 		</script>
 
-		<script src="assets/lib/js/jquery-1.11.1.min.js"></script><!-- defer -->
-		<script src="assets/lib/js/handlebars-v4.0.2.js"></script><!-- defer -->
+		<script src="lib/js/jquery-1.11.1.min.js"></script><!-- defer -->
+		<script src="lib/js/handlebars-v4.0.2.js"></script><!-- defer -->
 		<!-- mobile menu -->
-	 	<script src="assets/lib/js/jquery.sidr.js"></script>
+	 	<script src="lib/js/jquery.sidr.js"></script>
 		
 		<script type="text/javascript">
 			
