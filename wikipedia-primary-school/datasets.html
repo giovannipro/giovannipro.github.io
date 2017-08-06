@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>Datasets</title>
-		<link rel="stylesheet" type="text/css" href="lib/css/view.css">
-		<link rel="stylesheet" type="text/css" href="lib/css/sidr.css">
-		<link rel="stylesheet" type="text/css" href="lib/css/sidr_light.css">
+		<link rel="stylesheet" type="text/css" href="assets/lib/css/view.css">
+		<link rel="stylesheet" type="text/css" href="assets/lib/css/sidr.css">
+		<link rel="stylesheet" type="text/css" href="assets/lib/css/sidr_light.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -17,22 +17,22 @@
 						<a id="simple-menu" href="#sidr"  style="padding-left:0"><i class="fa fa-bars fa-lg"></i></a>
 						<a href="index.html" style="font-weight:bold; padding-left:0;">Wikipedia Primary School</a>
 					</div>
-					<!--<a href="index.html"  class="first_menu">Articles</a>-->
+					<a href="index.html"  class="first_menu">Articles</a>
 					<a href="datasets.html" class="here first_menu">Datasets</a>
-					<!--<a href="updates.html" class="first_menu">Updates</a>-->
+					<a href="protocols.html" class="first_menu">Protocols</a>
 				</main>
 			</div>
 		</div>
 
 		<div id="sidr">
 		  	<ul>
-				<!--<li><a href="articles_list.html">Articles</a></li>-->
+				<li><a href="index.html">Articles</a></li>
 				<li><a href="datasets.html" class="here">Datasets</a></li>
-				<!--<li><a href="updates.html">Updates</a></li>-->
+				<li><a href="protocols.html">Protocols</a></li>
 			</ul>
 		</div>
 
-		<div class="container">
+		<div class="container">		
 			<!--<main>-->
 				<header class="row" id="header">
 					<div class="col-md-12">
@@ -62,14 +62,14 @@
 			</div>
 		</footer>
 
-		<script src="lib/js/jquery-1.11.1.min.js"></script>
-		<script src="lib/js/handlebars-v4.0.2.js"></script>
+		<script src="assets/lib/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/lib/js/handlebars-v4.0.2.js"></script>
 
 		<script>
 			function datasets() {
 
-				var template_source = 'template/datasets.tpl';
-				var data_source = 'data/articles/datasets.json';
+				var template_source = 'assets/template/datasets.tpl';
+				var data_source = 'assets/data/articles/datasets.json';
 				var target = '#datasets';
 
 
@@ -86,7 +86,7 @@
 			}
 		</script>	
 	 	
-	 	<script src="lib/js/jquery.sidr.js"></script><!-- mobile menu -->		
+	 	<script src="assets/lib/js/jquery.sidr.js"></script><!-- mobile menu -->		
 		<script type="text/javascript">
 			
 			$(document).ready(function() {
