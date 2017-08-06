@@ -1,6 +1,6 @@
 html, body {
-	margin: 0;
-	padding: 0; 
+    margin: 0;
+    padding: 0; 
     font-family: 'Open Sans', Tahoma, sans-serif;
     font-size: 15px;
 }
@@ -43,30 +43,22 @@ main{
     right: 0;
     vertical-align: middle;
 }
-.art{
-    border-bottom: #eee 1px solid; 
-    padding: 5px 0;
-}
-.review{
-    font-weight: normal;
-    color: gray;
-}
-.cat{
-    font-weight: normal;
-}
 #header{
     margin-top: 80px; 
 }
 header h2{
-  /*position: fixed;
-  width: 100%;*/
-  /*text-align: center;
-  font-size: 72px;
-  line-height: 108px;
-  height: 108px;
-  background: #335C7D;
-  color: #fff;
-  font-family: 'PT Sans', sans-serif;*/
+    /*position: fixed;
+    width: 100%;*/
+    /*text-align: center;
+    font-size: 72px;
+    line-height: 108px;
+    height: 108px;
+    background: #335C7D;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;*/
+}
+ol li, ul li {
+    line-height: 2em;
 }
 .sticky {
   font-size: 24px;
@@ -77,11 +69,9 @@ header h2{
   padding-left: 20px;
   transition: all 0.4s ease;
 }
-#articles{
-    margin-bottom: 100px;
-    /*border-top: 3px solid black;
-    margin: 0 0 30px; 
-    padding: 20px 0 0; */
+.art {
+    border-bottom: #eee 1px solid;
+    padding: 5px 0;
 }
 .box_100 {
     width: 100%;
@@ -190,12 +180,22 @@ h2{
 main #simple-menu{
     display: none;
 }
+.i_link{
+    color: #FF847C;
+    font-weight: bold;
+}
+.protocol{
+    border-bottom: #eee 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
 footer{
     background-color: #f3f3f3;
     bottom: 0;
     width: 100%;
     padding: 20px 0;
     font-size: 0.8em;
+    margin: 50px 0 0 0;
 }
 @media (max-width: 1200px) {
     #labels{
@@ -217,7 +217,7 @@ footer{
     }
     .box_11:last-child {
         height: 50px; 
-    }
+        }
 }
 @media (max-width: 700px) {
 
