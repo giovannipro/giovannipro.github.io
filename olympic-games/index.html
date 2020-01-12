@@ -1,0 +1,673 @@
+<html>
+    <head>
+        <script src="library/d3.min.js" charset="utf-8"></script>
+        <title>Test D3.js</title>
+    </head>
+    <body>
+        
+        <style>
+            .text {
+                font-family: tahoma,sans-serif;
+                /*fill:red;*/
+            }
+        </style>
+        
+        <svg width="100%" height="900"></svg>
+        <script>
+            d3.csv('library/olympics_2012.csv',loaded);
+            
+            function loaded (data){
+                
+                var _data = []
+                data.forEach(function(d){
+                    if(d.medal != ""){
+                        _data.push(d);
+                    }
+                })
+                
+                var zod = d3.nest()
+                                .key(function(d){
+                                    //return d.medal;
+                                    var mydata2 = d.medal;
+                                    if(mydata2 == 'Gold'){
+                                        return '01_Gold';  
+                                    }
+                                    if(mydata2 == 'Silver'){
+                                        return '02_bSilver';  
+                                    }
+                                    if(mydata2 == 'Bronze'){
+                                        return '03_Bronze';  
+                                    }
+                                })
+                                .sortKeys(d3.ascending)
+                                .key(function(d){
+                                    var mydata = d.birth.split('-');
+                                    mydata = mydata[1] + '' + mydata[2];
+                                    if(mydata > '0120' && mydata < '0220'){
+                                        return 'a11_acquario'; //Acquario - segno di Leo   
+                                    }
+                                    if(mydata > '0219' && mydata < '0321'){
+                                        return 'a12_pesci';
+                                    }
+                                    if(mydata > '0320' && mydata < '0421'){
+                                        return 'a01_ariete'; 
+                                    }
+                                    if(mydata > '0420' && mydata < '0521'){
+                                        return 'a02_toro'; 
+                                    }
+                                    if(mydata > '0520' && mydata < '0622'){
+                                        return 'a03_gemelli'; 
+                                    }
+                                    if(mydata > '0621' && mydata < '0723'){
+                                        return 'a04_cancro'; //Cancro - segno di Lorenzo
+                                    }
+                                    if(mydata > '0722' && mydata < '0824'){
+                                        return 'a05_leone';
+                                    }
+                                    if(mydata > '0823' && mydata < '0923'){
+                                        return 'a06_vergine';
+                                    }
+                                    if(mydata > '0922' && mydata < '1023'){
+                                        return 'a07_bilancia';//Bilancia - segno di Marta
+                                    }
+                                    if(mydata > '1022' && mydata < '1123'){
+                                        return 'a08_scorpione';
+                                    }
+                                    if(mydata > '1122' && mydata < '1222'){
+                                        return 'a09_sagittario'; //Sagittario - segno di Giovanni 
+                                    }
+                                    //if(mydata > '1221' && mydata < '0119'){
+                                    //    return 'capricorno';
+                                    //}
+                                    else {
+                                        return 'a10_capricorno';
+                                    }
+                                })
+                                .sortKeys(d3.ascending)
+                                .entries(_data);
+                
+                zod.sort(function(a,b) {
+                    return d3.ascending(b.values.length, a.values.length)
+                })
+                
+                var element = d3.nest()
+                                .key(function(d){
+                                    //return d.medal;
+                                    var mydata2bis = d.medal;
+                                    if(mydata2bis == 'Gold'){
+                                        return 'aGold';  
+                                    }
+                                    if(mydata2bis == 'Silver'){
+                                        return 'bSilver';  
+                                    }
+                                    if(mydata2bis == 'Bronze'){
+                                        return 'cBronze';  
+                                    }
+                                })
+                                .sortKeys(d3.ascending)
+                                .key(function(d){
+                                    var mysign = d.birth.split('-');
+                                    mysign = mysign[1] + '' + mysign[2];
+                                    if(mysign > '0420' && mysign < '0521' ||        //ariete
+                                        mysign > '0722' && mysign < '0824'||        //leone
+                                        mysign > '1122' && mysign < '1222')         //sagittario
+                                       {       
+                                        return 'a3fuoco';  
+                                    }
+                                    if(mysign > '0520' && mysign < '0622' ||        //gemelli
+                                        mysign > '0922' && mysign < '1023'||        //bilancia
+                                        mysign > '0120' && mysign < '0220')         //acquario
+                                       {       
+                                        return 'a4aria';  
+                                    }
+                                    if(mysign > '0621' && mysign < '0723' ||        //cancro
+                                        mysign > '1022' && mysign < '1123'||        //scorpione
+                                        mysign > '0219' && mysign < '0321')         //pesci
+                                       {       
+                                        return 'a2acqua';  
+                                    }
+                                    /*if(mysign > '0420' && mysign < '0521' ||      //toro
+                                        mysign > '0823' && mysign < '0923'||        //vergine
+                                        mysign > '1221' && mysign < '0119')         //capricorno
+                                       {       
+                                        return 'terra';  
+                                    }*/
+                                    else {
+                                        return 'a1terra';
+                                    }
+                                })
+                                .sortKeys(d3.ascending)
+                                .entries(_data);
+                 /*
+                .sortKeys(d3.ascending)
+                                .entries(_data);*/
+                
+                element.sort(function(a,b) {
+                    return d3.ascending(b.values.length, a.values.length)
+                })
+                
+                // console.log(zod);
+                // console.log(element);
+                
+                var ang = Math.PI*2 / 12;
+                
+                var ang_small = Math.PI*2 / 4;
+                
+                var pathMedal = d3.svg.line()
+                    .x(function(d, i){
+                        return (Math.cos(ang*i) * d.values.length) * 1.8;
+                    })
+                    .y(function(d, i){
+                        return (Math.sin(ang*i) * d.values.length) * 1.8;
+                    })
+                    .interpolate('cardinal-closed')
+                
+                var pathMedal_small = d3.svg.line()
+                    .x(function(d, i){
+                        return (Math.cos(ang*i) * d.values.length) * 0.01;
+                    })
+                    .y(function(d, i){
+                        return (Math.sin(ang*i) * d.values.length) * 0.01;
+                    })
+                    .interpolate('cardinal-closed')
+                    
+                var pathForElement = d3.svg.line()
+                    .x(function(d, i){
+                        return (Math.cos(ang_small*i) * d.values.length) / 1.8;
+                    })
+                    .y(function(d, i){
+                        return (Math.sin(ang_small*i) * d.values.length) / 1.8;
+                    })
+                    .interpolate('cardinal-closed')
+                
+                var pathForElement_small = d3.svg.line()
+                    .x(function(d, i){
+                        return (Math.cos(ang_small*i) * d.values.length) * 0.01;
+                    })
+                    .y(function(d, i){
+                        return (Math.sin(ang_small*i) * d.values.length) * 0.01;
+                    })
+                    .interpolate('cardinal-closed')
+                
+                var color = d3.scale.linear()
+                    .domain([0,1,2])
+                    .range(["#ffd700", "#c0c0c0", "#cd7f32"]);
+                
+                var order = d3.scale.ordinal()
+                    .domain([0,1,2])
+                    .range(["gold", "silver", "bronze"]);
+                
+                var elements = d3.scale.ordinal()
+                    .domain([0,1,2,3])
+                    .range(["acqua", "aria", "fuoco", "terra"]);
+
+                //////////////////////////////////////////////////////////////////
+                // Segni zodiacali
+                //////////////////////////////////////////////////////////////////
+                var groups = d3.select('svg')
+                    .selectAll('g')
+                    .data(zod)
+                    .enter()
+                    .append('g')
+                    .attr('transform', function(d, i){
+                        return  'translate(' + (i+0.8)*450 + ',200)'  // (traslazione x) , (traslazione y)  
+                                // + 'rotate(-60)'
+                    })
+                
+                groups.append('path')
+                    .attr('d',function(d,i){
+                        return pathMedal_small(d.values) 
+                    })
+                    .style("fill", function (d,i) {
+                        return  color(i)
+                    })
+                    .transition()
+                    .delay(function (d,i) {
+                        return i*300
+                    })
+                    .duration(400)
+                    .attr('d', function(d, i){
+                        return pathMedal(d.values)   
+                    })
+                    
+                var group_sign = groups.append('g')
+                    .attr('opacity', 0)
+                    .attr('class', function (d,i) {
+                            return order(i);
+                        })
+                
+                group_sign.transition()
+                    .duration(200)
+                    .delay(function(d, i){
+                        return i*200 + 300;
+                    })
+                    .attr('opacity', 1)
+                
+                //inserisco l'icona identificativa del segno
+                group_sign.selectAll('.gr_sign')
+                    .data(function(d){
+                        return d.values;   
+                    })
+                    .enter()
+                    .append('g')
+                    .attr('transform', function(d, i){
+                        return 'rotate('+360/12*i+'),translate(140,10)' //(distanza dal centro),(rotazione) 
+                    })
+                    .attr('class', 'gr_sign')
+                    .append('svg:image')
+                    //.attr('xlink:href', 'library/zodiac_signs.svg')
+                    .attr('xlink:href', function(d){
+                        return 'library/images/' + d.key + '.svg';
+                    })
+                    .attr('x', 0)
+                    .attr('y',-20)
+                    .attr('width', 25)
+                    .attr('height',25)
+                    .attr('class', function (d,i) {
+                        return d.key
+                    })
+
+                // inserisco cerchi
+                groups.append("circle")
+                    .attr("x",0)
+                    .attr("y",0)
+                    .attr("r",143)
+                    .attr("stroke","black")
+                    .attr("fill","none")
+
+                // inserisco linee
+                set = [1,2,3,4,5,6,7,8,9,10,11,12]
+                var ang = Math.PI*2 / 12;
+
+                groups.selectAll("line")
+                    .data(set)
+                    .enter()
+                    .append("line")
+                    .attr("x1",0)
+                    .attr("y1",0)
+                    .attr("x2", function (d,i) {
+                        return (Math.cos(ang*i) * 12) * 11.9;
+                    })
+                    .attr("y2", function (d,i) {
+                        return (Math.sin(ang*i) * 12) * 11.9;
+                    })
+                    .attr("stroke","white")
+                    
+                //ingrandisco le icone se faccio il mousehover
+                d3.selectAll('image')
+                    .on('mouseover', function(){
+                        d3.select(this)
+                            .transition()
+                            .duration(100)
+                            .attr('width',60)
+                            .attr('height',60)
+                            //.attr('x', 10)
+                            //.attr('y', 0)
+                    })
+                    .on('mouseout', function() {
+                        d3.select(this)
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            //.attr('x', 0)
+                            //.attr('y', -20)
+                      })
+                
+                //////////////////////////////////////////////////////////////////
+                //elementi
+                //////////////////////////////////////////////////////////////////
+                var groups_b = d3.select('svg')
+                    .selectAll('.elem')
+                    .data(element)
+                    .enter()
+                    .append('g')
+                    .attr('class', 'elem')   
+                    .attr('transform', function(d, i){
+                        return 'translate(' + (i+0.8)*450 + ',600)' // (traslazione x) , (traslazione y) 
+                    })
+                
+                groups_b.append('path')
+                    .attr('d',function(d,i){
+                        return pathForElement_small(d.values) 
+                    })
+                    .style("fill", function (d,i) {
+                        return  color(i)
+                    })
+                    .transition()
+                    .delay(function (d,i) {
+                        return i*200 + 300
+                    })
+                    .duration(400)
+                    .attr('d', function(d, i){
+                        return pathForElement(d.values)   
+                    })
+                    
+                var groups_b_sign = groups_b.append('g')
+                    .attr('opacity', 0)
+                
+                groups_b_sign.transition()
+                    .duration(200)
+                    .delay(function(d, i){
+                        return i*300 + 300;
+                    })
+                    .attr('opacity', 1)
+                
+                //inserisco l'icona identificativa dell'elemento
+                groups_b_sign.selectAll('.gr_sign')
+                    .data(function(d){
+                        return d.values;   
+                    })
+                    .enter()
+                    .append('g')
+                    .attr('transform', function(d, i){
+                        return 'rotate('+360/4*i+'),translate(145,0)' //(distanza dal centro),(rotazione) 
+                    })
+                    .attr('class', 'gr_sign')
+                    .append('svg:image')
+                    //.attr('xlink:href', 'library/zodiac_signs.svg')
+                    .attr('xlink:href', function(d){
+                        return 'library/images/' + d.key + '.svg';
+                    })
+                    .attr('x', 0)
+                    .attr('y',-15)
+                    .attr('width', 25)
+                    .attr('height',25)
+                    .attr('class', function (d,i) {
+                        var dt = d3.select(this.parentNode.parentNode).data();
+                        //console.log(dt);
+                        return d.key + '_' + dt[0].key
+                    })
+
+                // inserisco cerchi
+                groups_b.append("circle")
+                    .attr("x",0)
+                    .attr("y",0)
+                    .attr("r",143)
+                    .attr("stroke","black")
+                    .attr("fill","none")
+
+                // inserisco linee
+                set = [1,2,3,4,5,6,7,8,9,10,11,12]
+                var ang = Math.PI*2 / 12;
+
+                groups_b.selectAll("line")
+                    .data(set)
+                    .enter()
+                    .append("line")
+                    .attr("x1",0)
+                    .attr("y1",0)
+                    .attr("x2", function (d,i) {
+                        return (Math.cos(ang*i) * 12) * 11.9;
+                    })
+                    .attr("y2", function (d,i) {
+                        return (Math.sin(ang*i) * 12) * 11.9;
+                    })
+                    .attr("stroke","white")
+                
+                //con il mousehover su un elemento evidenzio 3 segni zodiacali
+                //////acqua////////////////////////////////////////////////////////////////
+                d3.selectAll('.a2acqua_aGold')
+                    .on('mouseover', function(){
+                        d3.select('.gold')
+                        .selectAll('.a04_cancro,.a08_scorpione,.a12_pesci')
+                            .transition()
+                            .duration(300)
+                            //.attr('fill','red')
+                            .attr('width',80)
+                            .attr('height',80)
+                            //.attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a04_cancro,.a08_scorpione,.a12_pesci')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20)
+                      })
+                d3.selectAll('.a2acqua_bSilver')
+                    .on('mouseover', function(){
+                        d3.select('.silver')
+                        .selectAll('.a04_cancro,.a08_scorpione,.a12_pesci')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a04_cancro,.a08_scorpione,.a12_pesci')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                d3.selectAll('.a2acqua_cBronze')
+                    .on('mouseover', function(){
+                        d3.select('.bronze')
+                        .selectAll('.a04_cancro,.a08_scorpione,.a12_pesci')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a04_cancro,.a08_scorpione,.a12_pesci')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                
+                //////fuoco////////////////////////////////////////////////////////////////
+                d3.selectAll('.a3fuoco_aGold')
+                    .on('mouseover', function(){
+                        d3.select('.gold')
+                        .selectAll('.a01_ariete,.a05_leone,.a09_sagittario')
+                            .transition()
+                            .duration(300)
+                            //.attr('fill','red')
+                            .attr('width',80)
+                            .attr('height',80)
+                            //.attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a01_ariete,.a05_leone,.a09_sagittario')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20)
+                      })
+                d3.selectAll('.a3fuoco_bSilver')
+                    .on('mouseover', function(){
+                        d3.select('.silver')
+                        .selectAll('.a01_ariete,.a05_leone,.a09_sagittario')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a01_ariete,.a05_leone,.a09_sagittario')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                d3.selectAll('.a3fuoco_cBronze')
+                    .on('mouseover', function(){
+                        d3.select('.bronze')
+                        .selectAll('.a01_ariete,.a05_leone,.a09_sagittario')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a01_ariete,.a05_leone,.a09_sagittario')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                
+                //////aria////////////////////////////////////////////////////////////////
+                d3.selectAll('.a4aria_aGold')
+                    .on('mouseover', function(){
+                        d3.select('.gold')
+                        .selectAll('.a03_gemelli,.a07_bilancia,.a10_capricorno')
+                            .transition()
+                            .duration(300)
+                            //.attr('fill','red')
+                            .attr('width',80)
+                            .attr('height',80)
+                            //.attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a03_gemelli ,.a07_bilancia,.a10_capricorno')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20)
+                      })
+                d3.selectAll('.a4aria_bSilver')
+                    .on('mouseover', function(){
+                        d3.select('.silver')
+                        .selectAll('.a03_gemelli,.a07_bilancia,.a10_capricorno')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a03_gemelli,.a07_bilancia,.a10_capricorno')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                d3.selectAll('.a4aria_cBronze')
+                    .on('mouseover', function(){
+                        d3.select('.bronze')
+                        .selectAll('.a03_gemelli,.a07_bilancia,.a10_capricorno')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a03_gemelli,.a07_bilancia,.a10_capricorno')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                
+                //////terra////////////////////////////////////////////////////////////////
+                d3.selectAll('.a1terra_aGold')
+                    .on('mouseover', function(){
+                        d3.select('.gold')
+                        .selectAll('.a02_toro,.a06_vergine,.a11_acquario')
+                            .transition()
+                            .duration(300)
+                            //.attr('fill','red')
+                            .attr('width',80)
+                            .attr('height',80)
+                            //.attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a02_toro,.a06_vergine,.a11_acquario')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20)
+                      })
+                d3.selectAll('.a1terra_bSilver')
+                    .on('mouseover', function(){
+                        d3.select('.silver')
+                        .selectAll('.a02_toro,.a06_vergine,.a11_acquario')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a02_toro,.a06_vergine,.a11_acquario')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                d3.selectAll('.a1terra_cBronze')
+                    .on('mouseover', function(){
+                        d3.select('.bronze')
+                        .selectAll('.a02_toro,.a06_vergine,.a11_acquario')
+                            .transition()
+                            .duration(300)
+                            .attr('width',80)
+                            .attr('height',80)
+                            .attr('x', 0)
+                            .attr('y', -50)
+                    })
+                    .on('mouseout', function() {
+                        d3.selectAll('.a02_toro,.a06_vergine,.a11_acquario')
+                            .transition()
+                            .duration(100)
+                            .attr('width',25)
+                            .attr('height',25)
+                            .attr('y', -20) 
+                      })
+                
+                
+                
+                
+                //////////////////////////////////////////////////////////////////
+                //legenda
+                //////////////////////////////////////////////////////////////////
+                var labels = ['Gold', 'Silver', 'Bronze']
+                
+                groups_b.append('text')
+                    .attr('class','text')
+                    .attr('opacity', 0)
+                    .transition()
+                    .duration(1000)
+                    .delay(600)
+                    .attr('opacity', 1)
+                    .text(function(d,i){
+                        return labels[i]  
+                    })
+                    .attr('y',200)
+                    .attr('x', -20)
+                
+            }
+        </script>
+    </body>
+</html>
