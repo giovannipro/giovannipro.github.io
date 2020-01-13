@@ -16,7 +16,6 @@
             }
             #container {
                 width: 100%;
-                /*overflow: hidden;*/
             }
             .container {
                 width: 90%;
@@ -24,6 +23,9 @@
             }
             h1 {
                 margin: 20px 0 20px;
+            }
+            #dataviz_container{
+                overflow-x: scroll;
             }
         </style>
         
@@ -33,17 +35,17 @@
         </header>
         <main>
             <section id="dataviz_container">
-                <svg width="100%" height="1000"></svg>
+                <svg width="1300" height="900"></svg> 
             </section>
         </main>
 
         <script>
             d3.csv('library/olympics_2012.csv',loaded);
 
-            var width = document.getElementById("dataviz_container").offsetWidth,
-                height = document.getElementById("dataviz_container").offsetWidth;
+            var width = 1300; //document.getElementById("dataviz_container").offsetWidth,
+                height = 900; //document.getElementById("dataviz_container").offsetWidth;
                 margin = 30;
-                distance = 165;
+                distance = 0; //(width-360*3)/3;
             // console.log(width,height);
             
             function loaded (data){
@@ -233,8 +235,9 @@
                 // Segni zodiacali
                 //////////////////////////////////////////////////////////////////
                 var groups = d3.select('svg')
+                    // .attr('viewBox','0 0 ' + width + ' ' + height)
                     .append('g')
-                    .attr('transform','translate(' + margin + ',' + margin + ')')
+                    .attr('transform','translate(' + (margin*8) + ',' + margin + ')')
                     .attr('class','sign_container')
                     .selectAll('g')
                     .data(zod)
@@ -350,7 +353,7 @@
                 //////////////////////////////////////////////////////////////////
                 var groups_b = d3.select('svg')
                     .append('g')
-                    .attr('transform','translate(' + margin + ',' + margin + ')')
+                    .attr('transform','translate(' + (margin*8) + ',' + margin + ')')
                     .attr('class','elem_container')
                     .selectAll('.elem')
                     .data(element)
