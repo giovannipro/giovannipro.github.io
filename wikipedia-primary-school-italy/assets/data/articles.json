@@ -1,0 +1,394 @@
+[
+  {
+    "article": "Numero_naturale",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Numeri",
+    "year": "sup_1",
+    "average_daily_visit": 336
+  },
+  {
+    "article": "Numero_intero",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Numeri",
+    "year": "sup_1",
+    "average_daily_visit": 215
+  },
+  {
+    "article": "Numero_razionale",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Numeri",
+    "year": "sup_1",
+    "average_daily_visit": 375
+  },
+  {
+    "article": "Numero_reale",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Numeri",
+    "year": "sup_1",
+    "average_daily_visit": 318
+  },
+  {
+    "article": "Insieme",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Insiemi",
+    "year": "sup_1",
+    "average_daily_visit": 204
+  },
+  {
+    "article": "Unione_(insiemistica)",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Insiemi",
+    "year": "sup_1",
+    "average_daily_visit": 53
+  },
+  {
+    "article": "Intersezione_(insiemistica)",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Insiemi",
+    "year": "sup_1",
+    "average_daily_visit": 61
+  },
+  {
+    "article": "Insieme_complemento",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Insiemi",
+    "year": "sup_1",
+    "average_daily_visit": 30
+  },
+  {
+    "article": "Inclusione",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Insiemi",
+    "year": "sup_1",
+    "average_daily_visit": 123
+  },
+  {
+    "article": "Disgiunzione",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Insiemi",
+    "year": "sup_1",
+    "average_daily_visit": 14
+  },
+  {
+    "article": "Insieme_vuoto",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Insiemi",
+    "year": "sup_1",
+    "average_daily_visit": 43
+  },
+  {
+    "article": "Relazione_(matematica)",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Relazioni",
+    "year": "sup_1",
+    "average_daily_visit": 44
+  },
+  {
+    "article": "Relazione_binaria",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Relazioni",
+    "year": "sup_1",
+    "average_daily_visit": 23
+  },
+  {
+    "article": "Relazione_di_equivalenza",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Relazioni",
+    "year": "sup_1",
+    "average_daily_visit": 71
+  },
+  {
+    "article": "Relazione_d%27ordine",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Relazioni",
+    "year": "sup_1",
+    "average_daily_visit": ""
+  },
+  {
+    "article": "Funzione_(matematica)",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Relazioni",
+    "year": "sup_1",
+    "average_daily_visit": 396
+  },
+  {
+    "article": "Funzione_algebrica",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Relazioni",
+    "year": "sup_1",
+    "average_daily_visit": 11
+  },
+  {
+    "article": "Dominio_e_codominio",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Relazioni",
+    "year": "sup_1",
+    "average_daily_visit": 100
+  },
+  {
+    "article": "Monomio",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Monomi",
+    "year": "sup_1",
+    "average_daily_visit": 142
+  },
+  {
+    "article": "Minimo_comune_multiplo",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Monomi",
+    "year": "sup_1",
+    "average_daily_visit": 313
+  },
+  {
+    "article": "Massimo_comun_divisore",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Monomi",
+    "year": "sup_1",
+    "average_daily_visit": 232
+  },
+  {
+    "article": "Polinomio",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Polinomi",
+    "year": "sup_1",
+    "average_daily_visit": 147
+  },
+  {
+    "article": "Scomposizione_dei_polinomi",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Polinomi",
+    "year": "sup_1",
+    "average_daily_visit": 118
+  },
+  {
+    "article": "Prodotto_notevole",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Polinomi",
+    "year": "sup_1",
+    "average_daily_visit": 129
+  },
+  {
+    "article": "Triangolo_di_Tartaglia",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Polinomi",
+    "year": "sup_1",
+    "average_daily_visit": 151
+  },
+  {
+    "article": "Regola_di_Ruffini",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Polinomi",
+    "year": "sup_1",
+    "average_daily_visit": 187
+  },
+  {
+    "article": "Divisione_dei_polinomi",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Polinomi",
+    "year": "sup_1",
+    "average_daily_visit": 31
+  },
+  {
+    "article": "Frazione_algebrica",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Polinomi",
+    "year": "sup_1",
+    "average_daily_visit": 16
+  },
+  {
+    "article": "Equazione_lineare",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Equazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 63
+  },
+  {
+    "article": "Identità_(matematica)",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Equazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 18
+  },
+  {
+    "article": "Equazione_numerica",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Equazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 2
+  },
+  {
+    "article": "Equazione_fratta",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Equazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 14
+  },
+  {
+    "article": "Equazione_algebrica",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Equazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 20
+  },
+  {
+    "article": "Disuguaglianza",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Disequazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 35
+  },
+  {
+    "article": "Disequazione",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Disequazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 59
+  },
+  {
+    "article": "Disequazione_intera",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Disequazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 5
+  },
+  {
+    "article": "Disequazione_fratta",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Disequazioni lineari",
+    "year": "sup_1",
+    "average_daily_visit": 23
+  },
+  {
+    "article": "Geometria_piana",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Geometria piana",
+    "year": "sup_1",
+    "average_daily_visit": 16
+  },
+  {
+    "article": "Postulati di Euclide",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Geometria piana",
+    "year": "sup_1",
+    "average_daily_visit": 4
+  },
+  {
+    "article": "Triangolo",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Triangoli",
+    "year": "sup_1",
+    "average_daily_visit": 251
+  },
+  {
+    "article": "Criteri_di_congruenza_dei_triangoli",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Triangoli",
+    "year": "sup_1",
+    "average_daily_visit": 161
+  },
+  {
+    "article": "Primo_teorema_sull'angolo_esterno",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Triangoli",
+    "year": "sup_1",
+    "average_daily_visit": 8
+  },
+  {
+    "article": "Secondo_teorema_dell'angolo_esterno",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Triangoli",
+    "year": "sup_1",
+    "average_daily_visit": 30
+  },
+  {
+    "article": "Disuguaglianza_triangolare",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Triangoli",
+    "year": "sup_1",
+    "average_daily_visit": 80
+  },
+  {
+    "article": "Retta",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Rette",
+    "year": "sup_1",
+    "average_daily_visit": 178
+  },
+  {
+    "article": "Perpendicolarità",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Rette",
+    "year": "sup_1",
+    "average_daily_visit": 86
+  },
+  {
+    "article": "Parallelismo_(geometria)",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Rette",
+    "year": "sup_1",
+    "average_daily_visit": 27
+  },
+  {
+    "article": "Teorema_delle_rette_parallele",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Rette",
+    "year": "sup_1",
+    "average_daily_visit": 25
+  },
+  {
+    "article": "Fascio_di_rette",
+    "typology": "S",
+    "subject": "Matematica",
+    "argument": "Rette",
+    "year": "sup_1",
+    "average_daily_visit": 35
+  }
+]
