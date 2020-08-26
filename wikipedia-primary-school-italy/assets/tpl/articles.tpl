@@ -1,23 +1,60 @@
-<ul>
+{{!-- 
+
+{
+    "article": "article",
+    "typology": "typology",
+    "subject": "subject",
+    "year": "year",
+    "argument": "argument",
+    "average_daily_visit": "daily_visit",
+    "size": "size",
+    "incipit_size": "incipit_size",
+    "issues": "issues",
+    "notes": "notes",
+    "images": "images"
+}
+
+--}}
+
+
+<table>
 {{#each this}}
-	<li>
-		<span>
+	<tr>
+		<th class="id">
+			{{@index}}
+		</th>
+		<th class="article_title">
 			<a href="https://it.wikipedia.org/wiki/{{article}}" target="_blank">
 				{{article}}
 			</a>
-		</span>
-		<span>
+		</th>
+		<th>
 			{{subject}}
-		</span>
-		<span>
+		</th>
+		<th class="year">
 			{{year}}
-		</span>
-		<span>
+		</th>
+		<th>
 			{{argument}}
-		</span>
-		<span>
+		</th>
+		<th class="number">
 			{{average_daily_visit}}
-		</span>
-	</li>
+		</th>
+		<th class="number">
+			{{size}}
+		</th>
+		<th class="number">
+			{{incipit_size}}
+		</th>
+		<th class="number">
+			{{issues}}
+		</th>
+		<th class="number">
+			{{notes}}
+		</th>
+		<th class="number">
+			{{images}}
+		</th>
+	</tr>
 {{/each}}
-</ul>
+</table>
