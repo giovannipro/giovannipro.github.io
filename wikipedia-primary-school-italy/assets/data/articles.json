@@ -22,8 +22,8 @@
     "size": 15.267,
     "incipit_size": 784,
     "issues": 5,
-    "notes": 3,
-    "images": 784
+    "notes": 2,
+    "images": 3
   },
   {
     "article": "Numero_intero",
@@ -36,7 +36,7 @@
     "incipit_size": 1.019,
     "issues": 2,
     "notes": 0,
-    "images": 1.019
+    "images": 0
   },
   {
     "article": "Numero_razionale",
@@ -48,8 +48,8 @@
     "size": 21.603,
     "incipit_size": 2.034,
     "issues": 2,
-    "notes": 2,
-    "images": 2.034
+    "notes": 6,
+    "images": 2
   },
   {
     "article": "Numero_reale",
@@ -61,8 +61,8 @@
     "size": 37.521,
     "incipit_size": 2.048,
     "issues": 5,
-    "notes": 4,
-    "images": 2.048
+    "notes": 1,
+    "images": 4
   },
   {
     "article": "Insieme",
@@ -74,8 +74,8 @@
     "size": 11.561,
     "incipit_size": 2.447,
     "issues": 4,
-    "notes": 6,
-    "images": 2.447
+    "notes": 0,
+    "images": 6
   },
   {
     "article": "Unione_(insiemistica)",
@@ -87,8 +87,8 @@
     "size": 3.637,
     "incipit_size": 567,
     "issues": 2,
-    "notes": 2,
-    "images": 567
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Intersezione_(insiemistica)",
@@ -100,8 +100,8 @@
     "size": 4.306,
     "incipit_size": 488,
     "issues": 1,
-    "notes": 2,
-    "images": 488
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Insieme_complemento",
@@ -113,8 +113,8 @@
     "size": 4.694,
     "incipit_size": 212,
     "issues": 2,
-    "notes": 3,
-    "images": 212
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Inclusione",
@@ -126,8 +126,8 @@
     "size": 4.943,
     "incipit_size": 2.138,
     "issues": 1,
-    "notes": 2,
-    "images": 2.138
+    "notes": 1,
+    "images": 2
   },
   {
     "article": "Disgiunzione",
@@ -140,7 +140,7 @@
     "incipit_size": 348,
     "issues": 2,
     "notes": 0,
-    "images": 348
+    "images": 0
   },
   {
     "article": "Insieme_vuoto",
@@ -152,8 +152,8 @@
     "size": 12.789,
     "incipit_size": 607,
     "issues": 1,
-    "notes": 0,
-    "images": 607
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Relazione_(matematica)",
@@ -166,7 +166,7 @@
     "incipit_size": 106,
     "issues": 2,
     "notes": 0,
-    "images": 106
+    "images": 0
   },
   {
     "article": "Relazione_binaria",
@@ -178,8 +178,8 @@
     "size": 3.959,
     "incipit_size": 337,
     "issues": 4,
-    "notes": 0,
-    "images": 337
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Relazione_di_equivalenza",
@@ -191,8 +191,8 @@
     "size": 16.859,
     "incipit_size": 172,
     "issues": 5,
-    "notes": 1,
-    "images": 172
+    "notes": 5,
+    "images": 1
   },
   {
     "article": "Relazione_d%27ordine",
@@ -204,8 +204,8 @@
     "size": 15.486,
     "incipit_size": 794,
     "issues": 6,
-    "notes": 1,
-    "images": 794
+    "notes": 4,
+    "images": 1
   },
   {
     "article": "Funzione_(matematica)",
@@ -217,8 +217,8 @@
     "size": 19.196,
     "incipit_size": 644,
     "issues": 8,
-    "notes": 1,
-    "images": 644
+    "notes": 5,
+    "images": 1
   },
   {
     "article": "Funzione_algebrica",
@@ -231,7 +231,7 @@
     "incipit_size": 2.206,
     "issues": 2,
     "notes": 0,
-    "images": 2.206
+    "images": 0
   },
   {
     "article": "Dominio_e_codominio",
@@ -243,8 +243,8 @@
     "size": 4.77,
     "incipit_size": 226,
     "issues": 0,
-    "notes": 1,
-    "images": 226
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Monomio",
@@ -256,8 +256,8 @@
     "size": 12.121,
     "incipit_size": 1.123,
     "issues": 13,
-    "notes": 0,
-    "images": 1.123
+    "notes": 11,
+    "images": 0
   },
   {
     "article": "Minimo_comune_multiplo",
@@ -269,8 +269,8 @@
     "size": 7.381,
     "incipit_size": 804,
     "issues": 6,
-    "notes": 0,
-    "images": 804
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Massimo_comun_divisore",
@@ -282,8 +282,8 @@
     "size": 10.417,
     "incipit_size": 1.196,
     "issues": 8,
-    "notes": 0,
-    "images": 1.196
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Polinomio",
@@ -295,8 +295,8 @@
     "size": 20.69,
     "incipit_size": 1.47,
     "issues": 4,
-    "notes": 4,
-    "images": 1.47
+    "notes": 3,
+    "images": 4
   },
   {
     "article": "Scomposizione_dei_polinomi",
@@ -309,7 +309,7 @@
     "incipit_size": 477,
     "issues": 0,
     "notes": 0,
-    "images": 477
+    "images": 0
   },
   {
     "article": "Prodotto_notevole",
@@ -321,8 +321,8 @@
     "size": 12.226,
     "incipit_size": 663,
     "issues": 9,
-    "notes": 2,
-    "images": 663
+    "notes": 6,
+    "images": 2
   },
   {
     "article": "Triangolo_di_Tartaglia",
@@ -334,8 +334,8 @@
     "size": 21.169,
     "incipit_size": 583,
     "issues": 3,
-    "notes": 3,
-    "images": 583
+    "notes": 6,
+    "images": 3
   },
   {
     "article": "Regola_di_Ruffini",
@@ -347,8 +347,8 @@
     "size": 12.632,
     "incipit_size": 432,
     "issues": 5,
-    "notes": 0,
-    "images": 432
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Divisione_dei_polinomi",
@@ -360,8 +360,8 @@
     "size": 18.656,
     "incipit_size": 1.118,
     "issues": 5,
-    "notes": 0,
-    "images": 1.118
+    "notes": 3,
+    "images": 0
   },
   {
     "article": "Frazione_algebrica",
@@ -374,7 +374,7 @@
     "incipit_size": 1.572,
     "issues": 1,
     "notes": 0,
-    "images": 1.572
+    "images": 0
   },
   {
     "article": "Equazione_lineare",
@@ -387,7 +387,7 @@
     "incipit_size": 165,
     "issues": 3,
     "notes": 0,
-    "images": 165
+    "images": 0
   },
   {
     "article": "Identità_(matematica)",
@@ -400,7 +400,7 @@
     "incipit_size": 574,
     "issues": 2,
     "notes": 0,
-    "images": 574
+    "images": 0
   },
   {
     "article": "Equazione_numerica",
@@ -413,7 +413,7 @@
     "incipit_size": 401,
     "issues": 1,
     "notes": 0,
-    "images": 401
+    "images": 0
   },
   {
     "article": "Equazione_fratta",
@@ -425,8 +425,8 @@
     "size": 3.26,
     "incipit_size": 402,
     "issues": 3,
-    "notes": 0,
-    "images": 402
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Equazione_algebrica",
@@ -439,7 +439,7 @@
     "incipit_size": 278,
     "issues": 3,
     "notes": 0,
-    "images": 278
+    "images": 0
   },
   {
     "article": "Disuguaglianza",
@@ -452,7 +452,7 @@
     "incipit_size": 635,
     "issues": 4,
     "notes": 0,
-    "images": 635
+    "images": 0
   },
   {
     "article": "Disequazione",
@@ -464,8 +464,8 @@
     "size": 6.057,
     "incipit_size": 904,
     "issues": 7,
-    "notes": 0,
-    "images": 904
+    "notes": 4,
+    "images": 0
   },
   {
     "article": "Disequazione_intera",
@@ -477,8 +477,8 @@
     "size": 7.927,
     "incipit_size": 730,
     "issues": 0,
-    "notes": 6,
-    "images": 730
+    "notes": 0,
+    "images": 6
   },
   {
     "article": "Disequazione_fratta",
@@ -490,8 +490,8 @@
     "size": 6.485,
     "incipit_size": 449,
     "issues": 4,
-    "notes": 0,
-    "images": 449
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Geometria_piana",
@@ -504,7 +504,7 @@
     "incipit_size": 121,
     "issues": 3,
     "notes": 0,
-    "images": 121
+    "images": 0
   },
   {
     "article": "Postulati di Euclide",
@@ -517,7 +517,7 @@
     "incipit_size": 29,
     "issues": 0,
     "notes": 0,
-    "images": 29
+    "images": 0
   },
   {
     "article": "Triangolo",
@@ -529,8 +529,8 @@
     "size": 16.815,
     "incipit_size": 62,
     "issues": 4,
-    "notes": 8,
-    "images": 62
+    "notes": 0,
+    "images": 8
   },
   {
     "article": "Criteri_di_congruenza_dei_triangoli",
@@ -542,8 +542,8 @@
     "size": 8.753,
     "incipit_size": 404,
     "issues": 5,
-    "notes": 1,
-    "images": 404
+    "notes": 3,
+    "images": 1
   },
   {
     "article": "Primo_teorema_sull'angolo_esterno",
@@ -555,8 +555,8 @@
     "size": 1.746,
     "incipit_size": 100,
     "issues": 1,
-    "notes": 1,
-    "images": 100
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Secondo_teorema_dell'angolo_esterno",
@@ -568,8 +568,8 @@
     "size": 1.22,
     "incipit_size": 341,
     "issues": 2,
-    "notes": 2,
-    "images": 341
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Disuguaglianza_triangolare",
@@ -581,8 +581,8 @@
     "size": 8.865,
     "incipit_size": 1.106,
     "issues": 10,
-    "notes": 4,
-    "images": 1.106
+    "notes": 7,
+    "images": 4
   },
   {
     "article": "Retta",
@@ -594,8 +594,8 @@
     "size": 10.915,
     "incipit_size": 723,
     "issues": 2,
-    "notes": 3,
-    "images": 723
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Perpendicolarità",
@@ -607,8 +607,8 @@
     "size": 4.312,
     "incipit_size": 495,
     "issues": 1,
-    "notes": 1,
-    "images": 495
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Parallelismo_(geometria)",
@@ -621,7 +621,7 @@
     "incipit_size": 607,
     "issues": 1,
     "notes": 0,
-    "images": 607
+    "images": 0
   },
   {
     "article": "Teorema_delle_rette_parallele",
@@ -634,7 +634,7 @@
     "incipit_size": 171,
     "issues": 1,
     "notes": 0,
-    "images": 171
+    "images": 0
   },
   {
     "article": "Fascio_di_rette",
@@ -646,8 +646,8 @@
     "size": 3.318,
     "incipit_size": 229,
     "issues": 1,
-    "notes": 2,
-    "images": 229
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Sistema_di_equazioni_lineari",
@@ -659,8 +659,8 @@
     "size": 12.152,
     "incipit_size": 504,
     "issues": 11,
-    "notes": 0,
-    "images": 504
+    "notes": 7,
+    "images": 0
   },
   {
     "article": "Strumenti_per_la_risoluzione",
@@ -685,8 +685,8 @@
     "size": 17.237,
     "incipit_size": 543,
     "issues": 8,
-    "notes": 1,
-    "images": 543
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Radicale_(matematica)",
@@ -698,8 +698,8 @@
     "size": 16.591,
     "incipit_size": 830,
     "issues": 3,
-    "notes": 0,
-    "images": 830
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Radice_quadrata",
@@ -711,8 +711,8 @@
     "size": 14.159,
     "incipit_size": 942,
     "issues": 0,
-    "notes": 1,
-    "images": 942
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Sistema_di_riferimento_cartesiano",
@@ -724,8 +724,8 @@
     "size": 15.535,
     "incipit_size": 1.729,
     "issues": 12,
-    "notes": 3,
-    "images": 1.729
+    "notes": 4,
+    "images": 3
   },
   {
     "article": "Retta_nel_piano_cartesiano",
@@ -737,8 +737,8 @@
     "size": 21.193,
     "incipit_size": 157,
     "issues": 1,
-    "notes": 8,
-    "images": 157
+    "notes": 0,
+    "images": 8
   },
   {
     "article": "Punto_medio",
@@ -750,8 +750,8 @@
     "size": 1.717,
     "incipit_size": 495,
     "issues": 1,
-    "notes": 1,
-    "images": 495
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Coefficiente_angolare",
@@ -763,8 +763,8 @@
     "size": 3.273,
     "incipit_size": 2.654,
     "issues": 2,
-    "notes": 1,
-    "images": 2.654
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Equazione_di_secondo_grado",
@@ -776,8 +776,8 @@
     "size": 24.935,
     "incipit_size": 1.273,
     "issues": 4,
-    "notes": 2,
-    "images": 1.273
+    "notes": 4,
+    "images": 2
   },
   {
     "article": "Parabola_(geometria)",
@@ -789,8 +789,8 @@
     "size": 28.227,
     "incipit_size": 686,
     "issues": 9,
-    "notes": 10,
-    "images": 686
+    "notes": 1,
+    "images": 10
   },
   {
     "article": "Criterio_di_Cartesio",
@@ -802,8 +802,8 @@
     "size": 2.719,
     "incipit_size": 248,
     "issues": 1,
-    "notes": 0,
-    "images": 248
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Sistema_di_equazioni_di_secondo_grado",
@@ -816,7 +816,7 @@
     "incipit_size": 3.083,
     "issues": 1,
     "notes": 0,
-    "images": 3.083
+    "images": 0
   },
   {
     "article": "Disequazione_di II grado",
@@ -842,7 +842,7 @@
     "incipit_size": 765,
     "issues": 1,
     "notes": 0,
-    "images": 765
+    "images": 0
   },
   {
     "article": "Circonferenza",
@@ -854,8 +854,8 @@
     "size": 15.091,
     "incipit_size": 3.068,
     "issues": 3,
-    "notes": 3,
-    "images": 3.068
+    "notes": 2,
+    "images": 3
   },
   {
     "article": "Arco_(geometria)",
@@ -867,8 +867,8 @@
     "size": 1.822,
     "incipit_size": 1.484,
     "issues": 1,
-    "notes": 1,
-    "images": 1.484
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Corda_(geometria)",
@@ -880,8 +880,8 @@
     "size": 984,
     "incipit_size": 747,
     "issues": 1,
-    "notes": 1,
-    "images": 747
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Teorema_sugli_archi_congruenti",
@@ -894,7 +894,7 @@
     "incipit_size": 179,
     "issues": 2,
     "notes": 0,
-    "images": 179
+    "images": 0
   },
   {
     "article": "Superficie",
@@ -906,8 +906,8 @@
     "size": 18.633,
     "incipit_size": 1.39,
     "issues": 2,
-    "notes": 39,
-    "images": 1.39
+    "notes": 2,
+    "images": 39
   },
   {
     "article": "Equiestensione",
@@ -920,7 +920,7 @@
     "incipit_size": 684,
     "issues": 1,
     "notes": 0,
-    "images": 684
+    "images": 0
   },
   {
     "article": "Relazione_di_equivalenza",
@@ -932,8 +932,8 @@
     "size": 16.859,
     "incipit_size": 172,
     "issues": 5,
-    "notes": 1,
-    "images": 172
+    "notes": 5,
+    "images": 1
   },
   {
     "article": "Funzione_(matematica)",
@@ -945,8 +945,8 @@
     "size": 19.196,
     "incipit_size": 644,
     "issues": 8,
-    "notes": 1,
-    "images": 644
+    "notes": 5,
+    "images": 1
   },
   {
     "article": "Funzione_suriettiva",
@@ -958,8 +958,8 @@
     "size": "",
     "incipit_size": 432,
     "issues": 2,
-    "notes": 1,
-    "images": 432
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Funzione_iniettiva",
@@ -971,8 +971,8 @@
     "size": "",
     "incipit_size": 731,
     "issues": 12,
-    "notes": 4,
-    "images": 731
+    "notes": 7,
+    "images": 4
   },
   {
     "article": "Corrispondenza_biunivoca",
@@ -997,8 +997,8 @@
     "size": "",
     "incipit_size": 939,
     "issues": 2,
-    "notes": 6,
-    "images": 939
+    "notes": 0,
+    "images": 6
   },
   {
     "article": "Funzione_composta",
@@ -1011,7 +1011,7 @@
     "incipit_size": 35,
     "issues": 0,
     "notes": 0,
-    "images": 35
+    "images": 0
   },
   {
     "article": "Funzione_monotona",
@@ -1023,8 +1023,8 @@
     "size": "",
     "incipit_size": 679,
     "issues": 1,
-    "notes": 2,
-    "images": 679
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Isometria_del_piano",
@@ -1036,8 +1036,8 @@
     "size": "",
     "incipit_size": 768,
     "issues": 1,
-    "notes": 12,
-    "images": 768
+    "notes": 0,
+    "images": 12
   },
   {
     "article": "Trasformazione_geometrica_piana",
@@ -1049,8 +1049,8 @@
     "size": "",
     "incipit_size": 1.384,
     "issues": 1,
-    "notes": 2,
-    "images": 1.384
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Traslazione_(geometria)",
@@ -1062,8 +1062,8 @@
     "size": "",
     "incipit_size": 1.34,
     "issues": 2,
-    "notes": 2,
-    "images": 1.34
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Riflessione_(geometria)",
@@ -1075,8 +1075,8 @@
     "size": "",
     "incipit_size": 407,
     "issues": 2,
-    "notes": 2,
-    "images": 407
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Simmetria_centrale",
@@ -1089,7 +1089,7 @@
     "incipit_size": 569,
     "issues": 2,
     "notes": 0,
-    "images": 569
+    "images": 0
   },
   {
     "article": "Omotetia",
@@ -1101,8 +1101,8 @@
     "size": "",
     "incipit_size": 495,
     "issues": 2,
-    "notes": 2,
-    "images": 495
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Successione_(matematica)",
@@ -1115,7 +1115,7 @@
     "incipit_size": 1.592,
     "issues": 8,
     "notes": 0,
-    "images": 1.592
+    "images": 0
   },
   {
     "article": "Progressione_aritmetica",
@@ -1128,7 +1128,7 @@
     "incipit_size": 376,
     "issues": 2,
     "notes": 0,
-    "images": 376
+    "images": 0
   },
   {
     "article": "Progressione_geometrica",
@@ -1140,8 +1140,8 @@
     "size": "",
     "incipit_size": 711,
     "issues": 2,
-    "notes": 1,
-    "images": 711
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Equazione_di_secondo_grado",
@@ -1153,8 +1153,8 @@
     "size": 24.935,
     "incipit_size": 1.273,
     "issues": 4,
-    "notes": 2,
-    "images": 1.273
+    "notes": 4,
+    "images": 2
   },
   {
     "article": "Funzione_quadratica",
@@ -1166,8 +1166,8 @@
     "size": "",
     "incipit_size": 1.874,
     "issues": 4,
-    "notes": 6,
-    "images": 1.874
+    "notes": 3,
+    "images": 6
   },
   {
     "article": "Parabola_(geometria)",
@@ -1179,8 +1179,8 @@
     "size": 28.227,
     "incipit_size": 686,
     "issues": 9,
-    "notes": 10,
-    "images": 686
+    "notes": 1,
+    "images": 10
   },
   {
     "article": "Circonferenza",
@@ -1192,8 +1192,8 @@
     "size": 15.091,
     "incipit_size": 3.068,
     "issues": 3,
-    "notes": 3,
-    "images": 3.068
+    "notes": 2,
+    "images": 3
   },
   {
     "article": "Fascio_di_circonferenze",
@@ -1205,8 +1205,8 @@
     "size": "",
     "incipit_size": 615,
     "issues": 2,
-    "notes": 1,
-    "images": 615
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Ellisse",
@@ -1218,8 +1218,8 @@
     "size": "",
     "incipit_size": 2.208,
     "issues": 6,
-    "notes": 12,
-    "images": 2.208
+    "notes": 5,
+    "images": 12
   },
   {
     "article": "Iperbole_(geometria)",
@@ -1231,8 +1231,8 @@
     "size": "",
     "incipit_size": 265,
     "issues": 2,
-    "notes": 2,
-    "images": 265
+    "notes": 1,
+    "images": 2
   },
   {
     "article": "Sezione_conica",
@@ -1244,8 +1244,8 @@
     "size": "",
     "incipit_size": 919,
     "issues": 3,
-    "notes": 4,
-    "images": 919
+    "notes": 0,
+    "images": 4
   },
   {
     "article": "Trigonometria",
@@ -1257,8 +1257,8 @@
     "size": 33.688,
     "incipit_size": 1.412,
     "issues": 2,
-    "notes": 10,
-    "images": 1.412
+    "notes": 1,
+    "images": 10
   },
   {
     "article": "Funzione_trigonometrica",
@@ -1270,8 +1270,8 @@
     "size": 39.505,
     "incipit_size": 3.165,
     "issues": 3,
-    "notes": 11,
-    "images": 3.165
+    "notes": 3,
+    "images": 11
   },
   {
     "article": "Seno_(trigonometria)",
@@ -1284,7 +1284,7 @@
     "incipit_size": 28,
     "issues": 0,
     "notes": 0,
-    "images": 28
+    "images": 0
   },
   {
     "article": "Coseno",
@@ -1296,8 +1296,8 @@
     "size": 16.399,
     "incipit_size": 1.409,
     "issues": 15,
-    "notes": 5,
-    "images": 1.409
+    "notes": 15,
+    "images": 5
   },
   {
     "article": "Tangente_(matematica)",
@@ -1309,8 +1309,8 @@
     "size": 9.545,
     "incipit_size": 718,
     "issues": 16,
-    "notes": 3,
-    "images": 718
+    "notes": 11,
+    "images": 3
   },
   {
     "article": "Trigonometria#Formule_di_addizione",
@@ -1322,8 +1322,8 @@
     "size": 33.688,
     "incipit_size": 1.412,
     "issues": 2,
-    "notes": 10,
-    "images": 1.412
+    "notes": 1,
+    "images": 10
   },
   {
     "article": "Formule_di_duplicazione",
@@ -1336,7 +1336,7 @@
     "incipit_size": 435,
     "issues": 1,
     "notes": 0,
-    "images": 435
+    "images": 0
   },
   {
     "article": "Formule_di_bisezione",
@@ -1349,7 +1349,7 @@
     "incipit_size": 54,
     "issues": 0,
     "notes": 0,
-    "images": 54
+    "images": 0
   },
   {
     "article": "Formule_di_prostaferesi",
@@ -1361,8 +1361,8 @@
     "size": 8.839,
     "incipit_size": 970,
     "issues": 2,
-    "notes": 0,
-    "images": 970
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Formule_di_Werner",
@@ -1374,8 +1374,8 @@
     "size": 4.808,
     "incipit_size": 1.441,
     "issues": 2,
-    "notes": 0,
-    "images": 1.441
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Teorema_dei_seni",
@@ -1387,8 +1387,8 @@
     "size": 4.723,
     "incipit_size": 1.196,
     "issues": 2,
-    "notes": 4,
-    "images": 1.196
+    "notes": 0,
+    "images": 4
   },
   {
     "article": "Teorema_del_coseno",
@@ -1400,8 +1400,8 @@
     "size": 3.717,
     "incipit_size": 563,
     "issues": 4,
-    "notes": 1,
-    "images": 563
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Teorema_di_Pitagora#Generalizzazioni",
@@ -1413,8 +1413,8 @@
     "size": 25.727,
     "incipit_size": 491,
     "issues": 8,
-    "notes": 15,
-    "images": 491
+    "notes": 10,
+    "images": 15
   },
   {
     "article": "Equazione_trigonometrica",
@@ -1427,7 +1427,7 @@
     "incipit_size": 1.474,
     "issues": 1,
     "notes": 0,
-    "images": 1.474
+    "images": 0
   },
   {
     "article": "Disequazione_trigonometrica",
@@ -1440,7 +1440,7 @@
     "incipit_size": 590,
     "issues": 1,
     "notes": 0,
-    "images": 590
+    "images": 0
   },
   {
     "article": "Unità_immaginaria",
@@ -1453,7 +1453,7 @@
     "incipit_size": 1.37,
     "issues": 1,
     "notes": 0,
-    "images": 1.37
+    "images": 0
   },
   {
     "article": "Numero_complesso",
@@ -1466,7 +1466,7 @@
     "incipit_size": 1.083,
     "issues": 5,
     "notes": 2,
-    "images": 1.083
+    "images": 2
   },
   {
     "article": "Rappresentazione_dei_numeri_complessi",
@@ -1479,7 +1479,7 @@
     "incipit_size": 512,
     "issues": 1,
     "notes": 1,
-    "images": 512
+    "images": 1
   },
   {
     "article": "Numero di Eulero",
@@ -1492,7 +1492,7 @@
     "incipit_size": 1.054,
     "issues": 0,
     "notes": 0,
-    "images": 1.054
+    "images": 0
   },
   {
     "article": "Funzione_esponenziale",
@@ -1504,8 +1504,8 @@
     "size": 23.512,
     "incipit_size": 1.104,
     "issues": 11,
-    "notes": 4,
-    "images": 1.104
+    "notes": 9,
+    "images": 4
   },
   {
     "article": "Equazione_esponenziale",
@@ -1517,8 +1517,8 @@
     "size": 3.695,
     "incipit_size": 216,
     "issues": 1,
-    "notes": 1,
-    "images": 216
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Disequazione_esponenziale",
@@ -1530,8 +1530,8 @@
     "size": 3.123,
     "incipit_size": 2.14,
     "issues": 4,
-    "notes": 2,
-    "images": 2.14
+    "notes": 3,
+    "images": 2
   },
   {
     "article": "Crescita_esponenziale",
@@ -1543,8 +1543,8 @@
     "size": 17.031,
     "incipit_size": 667,
     "issues": 1,
-    "notes": 1,
-    "images": 667
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Logaritmo",
@@ -1556,8 +1556,8 @@
     "size": 20.016,
     "incipit_size": 1.478,
     "issues": 3,
-    "notes": 3,
-    "images": 1.478
+    "notes": 1,
+    "images": 3
   },
   {
     "article": "Logaritmo_naturale",
@@ -1569,8 +1569,8 @@
     "size": 11.063,
     "incipit_size": 365,
     "issues": 17,
-    "notes": 1,
-    "images": 365
+    "notes": 11,
+    "images": 1
   },
   {
     "article": "Equazione_logaritmica",
@@ -1582,8 +1582,8 @@
     "size": 3.32,
     "incipit_size": 435,
     "issues": 5,
-    "notes": 0,
-    "images": 435
+    "notes": 3,
+    "images": 0
   },
   {
     "article": "Disequazione_logaritmica",
@@ -1595,8 +1595,8 @@
     "size": 2.207,
     "incipit_size": 455,
     "issues": 3,
-    "notes": 0,
-    "images": 455
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Scala_logaritmica",
@@ -1608,8 +1608,8 @@
     "size": 3.967,
     "incipit_size": 113,
     "issues": 1,
-    "notes": 3,
-    "images": 113
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Calcolo_combinatorio",
@@ -1622,7 +1622,7 @@
     "incipit_size": 1.007,
     "issues": 3,
     "notes": 0,
-    "images": 1.007
+    "images": 0
   },
   {
     "article": "Permutazione",
@@ -1635,7 +1635,7 @@
     "incipit_size": 322,
     "issues": 6,
     "notes": 0,
-    "images": 322
+    "images": 0
   },
   {
     "article": "Fattoriale!",
@@ -1647,8 +1647,8 @@
     "size": 8.774,
     "incipit_size": 751,
     "issues": 7,
-    "notes": 0,
-    "images": 751
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Disposizione",
@@ -1660,8 +1660,8 @@
     "size": 19.301,
     "incipit_size": 944,
     "issues": 3,
-    "notes": 5,
-    "images": 944
+    "notes": 0,
+    "images": 5
   },
   {
     "article": "Combinazione",
@@ -1674,7 +1674,7 @@
     "incipit_size": 1.061,
     "issues": 4,
     "notes": 0,
-    "images": 1.061
+    "images": 0
   },
   {
     "article": "Limite_(matematica)",
@@ -1686,8 +1686,8 @@
     "size": 8.452,
     "incipit_size": 656,
     "issues": 2,
-    "notes": 0,
-    "images": 656
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Limite_di_una_funzione",
@@ -1699,8 +1699,8 @@
     "size": 23.306,
     "incipit_size": 1.599,
     "issues": 3,
-    "notes": 2,
-    "images": 1.599
+    "notes": 3,
+    "images": 2
   },
   {
     "article": "Teorema_di_unicità_del_limite",
@@ -1712,8 +1712,8 @@
     "size": 6.154,
     "incipit_size": 352,
     "issues": 4,
-    "notes": 0,
-    "images": 352
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Teorema_della_permanenza_del_segno",
@@ -1725,8 +1725,8 @@
     "size": 8.149,
     "incipit_size": 408,
     "issues": 1,
-    "notes": 1,
-    "images": 408
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Teorema_del_confronto",
@@ -1738,8 +1738,8 @@
     "size": 6.815,
     "incipit_size": 907,
     "issues": 0,
-    "notes": 1,
-    "images": 907
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Forma_indeterminata",
@@ -1751,8 +1751,8 @@
     "size": 7.99,
     "incipit_size": 3.378,
     "issues": 2,
-    "notes": 0,
-    "images": 3.378
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Limite_notevole",
@@ -1765,7 +1765,7 @@
     "incipit_size": 383,
     "issues": 1,
     "notes": 0,
-    "images": 383
+    "images": 0
   },
   {
     "article": "Infinitesimo",
@@ -1778,7 +1778,7 @@
     "incipit_size": 1.239,
     "issues": 0,
     "notes": 0,
-    "images": 1.239
+    "images": 0
   },
   {
     "article": "Infinito_(matematica)",
@@ -1790,8 +1790,8 @@
     "size": 5.316,
     "incipit_size": 294,
     "issues": 3,
-    "notes": 1,
-    "images": 294
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Limite_di_una_successione",
@@ -1803,8 +1803,8 @@
     "size": 13.804,
     "incipit_size": 1.216,
     "issues": 1,
-    "notes": 0,
-    "images": 1.216
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Funzione_continua",
@@ -1817,7 +1817,7 @@
     "incipit_size": 1.305,
     "issues": 16,
     "notes": 9,
-    "images": 1.305
+    "images": 9
   },
   {
     "article": "Punto_di_discontinuità",
@@ -1829,8 +1829,8 @@
     "size": 8.211,
     "incipit_size": 1.763,
     "issues": 6,
-    "notes": 3,
-    "images": 1.763
+    "notes": 4,
+    "images": 3
   },
   {
     "article": "Asintoto",
@@ -1842,8 +1842,8 @@
     "size": 7.182,
     "incipit_size": 780,
     "issues": 9,
-    "notes": 2,
-    "images": 780
+    "notes": 5,
+    "images": 2
   },
   {
     "article": "Derivata",
@@ -1855,8 +1855,8 @@
     "size": 31.438,
     "incipit_size": 1.323,
     "issues": 11,
-    "notes": 6,
-    "images": 1.323
+    "notes": 7,
+    "images": 6
   },
   {
     "article": "Regole_di_derivazione",
@@ -1869,7 +1869,7 @@
     "incipit_size": 327,
     "issues": 1,
     "notes": 0,
-    "images": 327
+    "images": 0
   },
   {
     "article": "Teorema_di_Rolle",
@@ -1881,8 +1881,8 @@
     "size": 11.6,
     "incipit_size": 569,
     "issues": 9,
-    "notes": 3,
-    "images": 569
+    "notes": 4,
+    "images": 3
   },
   {
     "article": "Teorema_di_Cauchy_(analisi_matematica)",
@@ -1895,7 +1895,7 @@
     "incipit_size": 176,
     "issues": 2,
     "notes": 1,
-    "images": 176
+    "images": 1
   },
   {
     "article": "Teorema_di_Lagrange",
@@ -1907,8 +1907,8 @@
     "size": 14.442,
     "incipit_size": 673,
     "issues": 4,
-    "notes": 1,
-    "images": 673
+    "notes": 3,
+    "images": 1
   },
   {
     "article": "Regola_di_de_l'Hôpital",
@@ -1920,8 +1920,8 @@
     "size": 12.636,
     "incipit_size": 1.319,
     "issues": 1,
-    "notes": 0,
-    "images": 1.319
+    "notes": 2,
+    "images": 0
   },
   {
     "article": "Massimo_e_minimo_di_una_funzione",
@@ -1933,8 +1933,8 @@
     "size": 9.883,
     "incipit_size": 1.641,
     "issues": 2,
-    "notes": 1,
-    "images": 1.641
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Punto_di_flesso",
@@ -1946,8 +1946,8 @@
     "size": 6.951,
     "incipit_size": 438,
     "issues": 1,
-    "notes": 3,
-    "images": 438
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Cuspide_(matematica)",
@@ -1959,8 +1959,8 @@
     "size": 1.228,
     "incipit_size": 795,
     "issues": 1,
-    "notes": 1,
-    "images": 795
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Integrale",
@@ -1972,8 +1972,8 @@
     "size": 49.181,
     "incipit_size": 1.052,
     "issues": 21,
-    "notes": 3,
-    "images": 1.052
+    "notes": 12,
+    "images": 3
   },
   {
     "article": "Primitiva_(matematica)",
@@ -1985,8 +1985,8 @@
     "size": 5.327,
     "incipit_size": 722,
     "issues": 4,
-    "notes": 1,
-    "images": 722
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Metodi_di_integrazione",
@@ -1999,7 +1999,7 @@
     "incipit_size": 622,
     "issues": 0,
     "notes": 0,
-    "images": 622
+    "images": 0
   },
   {
     "article": "Integrazione_per_sostituzione",
@@ -2012,7 +2012,7 @@
     "incipit_size": 309,
     "issues": 1,
     "notes": 0,
-    "images": 309
+    "images": 0
   },
   {
     "article": "Integrazione_per_parti",
@@ -2024,8 +2024,8 @@
     "size": 7.727,
     "incipit_size": 384,
     "issues": 9,
-    "notes": 0,
-    "images": 384
+    "notes": 4,
+    "images": 0
   },
   {
     "article": "Teorema_fondamentale_del_calcolo_integrale",
@@ -2037,8 +2037,8 @@
     "size": 19.006,
     "incipit_size": 1.94,
     "issues": 4,
-    "notes": 1,
-    "images": 1.94
+    "notes": 4,
+    "images": 1
   },
   {
     "article": "Tavola_degli_integrali_più_comuni",
@@ -2051,7 +2051,7 @@
     "incipit_size": 664,
     "issues": 1,
     "notes": 0,
-    "images": 664
+    "images": 0
   },
   {
     "article": "Tavola_degli_integrali_definiti",
@@ -2064,7 +2064,7 @@
     "incipit_size": 806,
     "issues": 0,
     "notes": 0,
-    "images": 806
+    "images": 0
   },
   {
     "article": "Tavola_degli_integrali_indefiniti_di_funzioni_razionali",
@@ -2077,7 +2077,7 @@
     "incipit_size": 5.236,
     "issues": 1,
     "notes": 0,
-    "images": 5.236
+    "images": 0
   },
   {
     "article": "Tavola_degli_integrali_indefiniti_di_funzioni_trigonometriche",
@@ -2090,7 +2090,7 @@
     "incipit_size": 276,
     "issues": 1,
     "notes": 0,
-    "images": 276
+    "images": 0
   },
   {
     "article": "Tavola_degli_integrali_indefiniti_di_funzioni_iperboliche",
@@ -2103,7 +2103,7 @@
     "incipit_size": 5.074,
     "issues": 1,
     "notes": 0,
-    "images": 5.074
+    "images": 0
   },
   {
     "article": "Tavola_degli_integrali_indefiniti_di_funzioni_esponenziali",
@@ -2116,7 +2116,7 @@
     "incipit_size": 1.738,
     "issues": 1,
     "notes": 0,
-    "images": 1.738
+    "images": 0
   },
   {
     "article": "Tavola_degli_integrali_indefiniti_di_funzioni_logaritmiche",
@@ -2129,7 +2129,7 @@
     "incipit_size": 2.458,
     "issues": 1,
     "notes": 0,
-    "images": 2.458
+    "images": 0
   },
   {
     "article": "Equazione_differenziale",
@@ -2141,8 +2141,8 @@
     "size": 29.858,
     "incipit_size": 449,
     "issues": 18,
-    "notes": 2,
-    "images": 449
+    "notes": 17,
+    "images": 2
   },
   {
     "article": "Potenza_(matematica)",
@@ -2154,8 +2154,8 @@
     "size": 10.244,
     "incipit_size": 1.001,
     "issues": 2,
-    "notes": 1,
-    "images": 1.001
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Potenza_di_due",
@@ -2168,7 +2168,7 @@
     "incipit_size": 449,
     "issues": 1,
     "notes": 0,
-    "images": 449
+    "images": 0
   },
   {
     "article": "Sistema_numerico_decimale",
@@ -2181,7 +2181,7 @@
     "incipit_size": 1.854,
     "issues": 4,
     "notes": 0,
-    "images": 1.854
+    "images": 0
   },
   {
     "article": "Numero_razionale",
@@ -2193,8 +2193,8 @@
     "size": 21.603,
     "incipit_size": 2.034,
     "issues": 2,
-    "notes": 2,
-    "images": 2.034
+    "notes": 6,
+    "images": 2
   },
   {
     "article": "Frazione_(matematica)",
@@ -2206,8 +2206,8 @@
     "size": 20.007,
     "incipit_size": 746,
     "issues": 7,
-    "notes": 3,
-    "images": 746
+    "notes": 4,
+    "images": 3
   },
   {
     "article": "Criteri_di_divisibilità",
@@ -2220,7 +2220,7 @@
     "incipit_size": 2.433,
     "issues": 1,
     "notes": 0,
-    "images": 2.433
+    "images": 0
   },
   {
     "article": "Divisore",
@@ -2233,7 +2233,7 @@
     "incipit_size": 914,
     "issues": 6,
     "notes": 0,
-    "images": 914
+    "images": 0
   },
   {
     "article": "Numero_primo",
@@ -2245,8 +2245,8 @@
     "size": 88.734,
     "incipit_size": 2.126,
     "issues": 109,
-    "notes": 17,
-    "images": 2.126
+    "notes": 98,
+    "images": 17
   },
   {
     "article": "Fattorizzazione",
@@ -2258,8 +2258,8 @@
     "size": 5.196,
     "incipit_size": 734,
     "issues": 3,
-    "notes": 1,
-    "images": 734
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Massimo_comun_divisore",
@@ -2271,8 +2271,8 @@
     "size": 10.417,
     "incipit_size": 1.196,
     "issues": 8,
-    "notes": 0,
-    "images": 1.196
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Minimo_comune_multiplo",
@@ -2284,8 +2284,8 @@
     "size": 7.381,
     "incipit_size": 804,
     "issues": 6,
-    "notes": 0,
-    "images": 804
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Ente_geometrico_fondamentale",
@@ -2298,7 +2298,7 @@
     "incipit_size": 433,
     "issues": 1,
     "notes": 0,
-    "images": 433
+    "images": 0
   },
   {
     "article": "Punto_(geometria)",
@@ -2311,7 +2311,7 @@
     "incipit_size": 406,
     "issues": 2,
     "notes": 0,
-    "images": 406
+    "images": 0
   },
   {
     "article": "Retta",
@@ -2323,8 +2323,8 @@
     "size": 10.915,
     "incipit_size": 723,
     "issues": 2,
-    "notes": 3,
-    "images": 723
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Piano_(geometria)",
@@ -2336,8 +2336,8 @@
     "size": 4.637,
     "incipit_size": 1.499,
     "issues": 3,
-    "notes": 2,
-    "images": 1.499
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Semiretta",
@@ -2349,8 +2349,8 @@
     "size": 2.122,
     "incipit_size": 1.217,
     "issues": 2,
-    "notes": 2,
-    "images": 1.217
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Segmento",
@@ -2362,8 +2362,8 @@
     "size": 2.647,
     "incipit_size": 815,
     "issues": 2,
-    "notes": 4,
-    "images": 815
+    "notes": 0,
+    "images": 4
   },
   {
     "article": "Punto_medio di un segmento",
@@ -2388,8 +2388,8 @@
     "size": 30.574,
     "incipit_size": 2.14,
     "issues": 7,
-    "notes": 8,
-    "images": 2.14
+    "notes": 1,
+    "images": 8
   },
   {
     "article": "Angolo_ottuso",
@@ -2401,8 +2401,8 @@
     "size": 1.1,
     "incipit_size": 509,
     "issues": 1,
-    "notes": 1,
-    "images": 509
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Angolo_acuto",
@@ -2414,8 +2414,8 @@
     "size": 1.511,
     "incipit_size": 569,
     "issues": 2,
-    "notes": 1,
-    "images": 569
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Angolo_retto",
@@ -2427,8 +2427,8 @@
     "size": 2.354,
     "incipit_size": 751,
     "issues": 3,
-    "notes": 1,
-    "images": 751
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Angolo_piatto",
@@ -2441,7 +2441,7 @@
     "incipit_size": 1.14,
     "issues": 2,
     "notes": 2,
-    "images": 1.14
+    "images": 2
   },
   {
     "article": "Angolo_giro",
@@ -2453,8 +2453,8 @@
     "size": 1.411,
     "incipit_size": 549,
     "issues": 1,
-    "notes": 1,
-    "images": 549
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Bisettrice",
@@ -2467,7 +2467,7 @@
     "incipit_size": 293,
     "issues": 1,
     "notes": 8,
-    "images": 293
+    "images": 8
   },
   {
     "article": "Piano_cartesiano",
@@ -2480,7 +2480,7 @@
     "incipit_size": 61,
     "issues": 0,
     "notes": 0,
-    "images": 61
+    "images": 0
   },
   {
     "article": "Quadrante_(geometria_analitica)",
@@ -2492,8 +2492,8 @@
     "size": 1.481,
     "incipit_size": 841,
     "issues": 2,
-    "notes": 1,
-    "images": 841
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Radice_quadrata",
@@ -2505,8 +2505,8 @@
     "size": 14.159,
     "incipit_size": 942,
     "issues": 0,
-    "notes": 1,
-    "images": 942
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Radice_quadrata_di_2",
@@ -2518,8 +2518,8 @@
     "size": 12.785,
     "incipit_size": 1.292,
     "issues": 4,
-    "notes": 2,
-    "images": 1.292
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Metodi_per_il_calcolo_della_radice_quadrata",
@@ -2532,7 +2532,7 @@
     "incipit_size": 223,
     "issues": 1,
     "notes": 0,
-    "images": 223
+    "images": 0
   },
   {
     "article": "Numero_negativo",
@@ -2544,8 +2544,8 @@
     "size": 5.648,
     "incipit_size": 720,
     "issues": 5,
-    "notes": 4,
-    "images": 720
+    "notes": 0,
+    "images": 4
   },
   {
     "article": "Moltiplicazione#Numeri_negativi_e_regola_dei_segni",
@@ -2557,8 +2557,8 @@
     "size": 9.905,
     "incipit_size": 538,
     "issues": 3,
-    "notes": 1,
-    "images": 538
+    "notes": 3,
+    "images": 1
   },
   {
     "article": "Monomio",
@@ -2570,8 +2570,8 @@
     "size": 12.121,
     "incipit_size": 1.123,
     "issues": 13,
-    "notes": 0,
-    "images": 1.123
+    "notes": 11,
+    "images": 0
   },
   {
     "article": "Binomio",
@@ -2583,8 +2583,8 @@
     "size": 2.692,
     "incipit_size": 296,
     "issues": 6,
-    "notes": 1,
-    "images": 296
+    "notes": 4,
+    "images": 1
   },
   {
     "article": "Polinomio",
@@ -2596,8 +2596,8 @@
     "size": 20.69,
     "incipit_size": 1.47,
     "issues": 4,
-    "notes": 4,
-    "images": 1.47
+    "notes": 3,
+    "images": 4
   },
   {
     "article": "Equazione",
@@ -2609,8 +2609,8 @@
     "size": 12.111,
     "incipit_size": 652,
     "issues": 4,
-    "notes": 1,
-    "images": 652
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Equazione_algebrica",
@@ -2623,7 +2623,7 @@
     "incipit_size": 278,
     "issues": 3,
     "notes": 0,
-    "images": 278
+    "images": 0
   },
   {
     "article": "Variabile_(aka incognita)",
@@ -2636,7 +2636,7 @@
     "incipit_size": 606,
     "issues": 0,
     "notes": 0,
-    "images": 606
+    "images": 0
   },
   {
     "article": "Teorema_di_Pitagora",
@@ -2648,8 +2648,8 @@
     "size": 25.727,
     "incipit_size": 491,
     "issues": 8,
-    "notes": 15,
-    "images": 491
+    "notes": 10,
+    "images": 15
   },
   {
     "article": "Insieme",
@@ -2661,8 +2661,8 @@
     "size": 11.561,
     "incipit_size": 2.447,
     "issues": 4,
-    "notes": 6,
-    "images": 2.447
+    "notes": 0,
+    "images": 6
   },
   {
     "article": "Numero_naturale",
@@ -2674,8 +2674,8 @@
     "size": 15.267,
     "incipit_size": 784,
     "issues": 5,
-    "notes": 3,
-    "images": 784
+    "notes": 2,
+    "images": 3
   },
   {
     "article": "Numero_intero",
@@ -2688,7 +2688,7 @@
     "incipit_size": 1.019,
     "issues": 2,
     "notes": 0,
-    "images": 1.019
+    "images": 0
   },
   {
     "article": "Numero_razionale",
@@ -2700,8 +2700,8 @@
     "size": 21.603,
     "incipit_size": 2.034,
     "issues": 2,
-    "notes": 2,
-    "images": 2.034
+    "notes": 6,
+    "images": 2
   },
   {
     "article": "Numero_reale",
@@ -2713,8 +2713,8 @@
     "size": 37.521,
     "incipit_size": 2.048,
     "issues": 5,
-    "notes": 4,
-    "images": 2.048
+    "notes": 1,
+    "images": 4
   },
   {
     "article": "Prodotto_notevole",
@@ -2726,8 +2726,8 @@
     "size": 12.226,
     "incipit_size": 663,
     "issues": 9,
-    "notes": 2,
-    "images": 663
+    "notes": 6,
+    "images": 2
   },
   {
     "article": "Espressione_matematica",
@@ -2740,7 +2740,7 @@
     "incipit_size": 160,
     "issues": 2,
     "notes": 0,
-    "images": 160
+    "images": 0
   },
   {
     "article": "Ordine_delle_operazioni",
@@ -2753,7 +2753,7 @@
     "incipit_size": 2.369,
     "issues": 1,
     "notes": 0,
-    "images": 2.369
+    "images": 0
   },
   {
     "article": "Sistema_di_equazioni",
@@ -2765,8 +2765,8 @@
     "size": 9.313,
     "incipit_size": 440,
     "issues": 3,
-    "notes": 1,
-    "images": 440
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Geometria_solida",
@@ -2778,8 +2778,8 @@
     "size": 4.607,
     "incipit_size": 829,
     "issues": 3,
-    "notes": 1,
-    "images": 829
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Faccia_(geometria)",
@@ -2791,8 +2791,8 @@
     "size": 1.705,
     "incipit_size": 582,
     "issues": 1,
-    "notes": 1,
-    "images": 582
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Spigolo",
@@ -2804,8 +2804,8 @@
     "size": 1.156,
     "incipit_size": 760,
     "issues": 1,
-    "notes": 1,
-    "images": 760
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Vertice_(geometria)",
@@ -2817,8 +2817,8 @@
     "size": 1.066,
     "incipit_size": 738,
     "issues": 2,
-    "notes": 2,
-    "images": 738
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Volume",
@@ -2830,8 +2830,8 @@
     "size": 7.35,
     "incipit_size": 962,
     "issues": 0,
-    "notes": 8,
-    "images": 962
+    "notes": 1,
+    "images": 8
   },
   {
     "article": "Cubo",
@@ -2843,8 +2843,8 @@
     "size": 7.689,
     "incipit_size": 929,
     "issues": 2,
-    "notes": 7,
-    "images": 929
+    "notes": 0,
+    "images": 7
   },
   {
     "article": "Parallelepipedo",
@@ -2856,8 +2856,8 @@
     "size": 3.975,
     "incipit_size": 372,
     "issues": 0,
-    "notes": 3,
-    "images": 372
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Prisma",
@@ -2869,8 +2869,8 @@
     "size": 3.553,
     "incipit_size": 245,
     "issues": 3,
-    "notes": 4,
-    "images": 245
+    "notes": 0,
+    "images": 4
   },
   {
     "article": "Piramide_(geometria)",
@@ -2882,8 +2882,8 @@
     "size": 6.38,
     "incipit_size": 595,
     "issues": 2,
-    "notes": 3,
-    "images": 595
+    "notes": 1,
+    "images": 3
   },
   {
     "article": "Solido_di_rotazione",
@@ -2895,8 +2895,8 @@
     "size": 3.346,
     "incipit_size": 408,
     "issues": 1,
-    "notes": 2,
-    "images": 408
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Cono",
@@ -2908,8 +2908,8 @@
     "size": 4.804,
     "incipit_size": 1.024,
     "issues": 1,
-    "notes": 3,
-    "images": 1.024
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Sfera",
@@ -2922,7 +2922,7 @@
     "incipit_size": 699,
     "issues": 3,
     "notes": 3,
-    "images": 699
+    "images": 3
   },
   {
     "article": "Addizione",
@@ -2934,8 +2934,8 @@
     "size": 13.619,
     "incipit_size": 1.849,
     "issues": 24,
-    "notes": 7,
-    "images": 1.849
+    "notes": 16,
+    "images": 7
   },
   {
     "article": "Più",
@@ -2947,8 +2947,8 @@
     "size": 2.697,
     "incipit_size": 417,
     "issues": 1,
-    "notes": 2,
-    "images": 417
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Commutatività",
@@ -2961,7 +2961,7 @@
     "incipit_size": 591,
     "issues": 1,
     "notes": 0,
-    "images": 591
+    "images": 0
   },
   {
     "article": "Sottrazione",
@@ -2973,8 +2973,8 @@
     "size": 5.527,
     "incipit_size": 1.611,
     "issues": 7,
-    "notes": 2,
-    "images": 1.611
+    "notes": 1,
+    "images": 2
   },
   {
     "article": "Meno_(matematica)",
@@ -2986,8 +2986,8 @@
     "size": 2.908,
     "incipit_size": 350,
     "issues": 1,
-    "notes": 2,
-    "images": 350
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Moltiplicazione",
@@ -2999,8 +2999,8 @@
     "size": 9.905,
     "incipit_size": 538,
     "issues": 3,
-    "notes": 1,
-    "images": 538
+    "notes": 3,
+    "images": 1
   },
   {
     "article": "Commutatività",
@@ -3013,7 +3013,7 @@
     "incipit_size": 591,
     "issues": 1,
     "notes": 0,
-    "images": 591
+    "images": 0
   },
   {
     "article": "Per_(matematica)",
@@ -3025,8 +3025,8 @@
     "size": 2.717,
     "incipit_size": 1.481,
     "issues": 1,
-    "notes": 1,
-    "images": 1.481
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Divisione_(matematica)",
@@ -3039,7 +3039,7 @@
     "incipit_size": 77,
     "issues": 3,
     "notes": 0,
-    "images": 77
+    "images": 0
   },
   {
     "article": "Dividendo_(algebra)",
@@ -3052,7 +3052,7 @@
     "incipit_size": 832,
     "issues": 1,
     "notes": 0,
-    "images": 832
+    "images": 0
   },
   {
     "article": "Divisore",
@@ -3065,7 +3065,7 @@
     "incipit_size": 914,
     "issues": 6,
     "notes": 0,
-    "images": 914
+    "images": 0
   },
   {
     "article": "Quoziente",
@@ -3078,7 +3078,7 @@
     "incipit_size": 661,
     "issues": 3,
     "notes": 0,
-    "images": 661
+    "images": 0
   },
   {
     "article": "Resto",
@@ -3091,7 +3091,7 @@
     "incipit_size": 1.26,
     "issues": 2,
     "notes": 0,
-    "images": 1.26
+    "images": 0
   },
   {
     "article": "Tavola_pitagorica",
@@ -3103,8 +3103,8 @@
     "size": 4.52,
     "incipit_size": 1.41,
     "issues": 6,
-    "notes": 1,
-    "images": 1.41
+    "notes": 7,
+    "images": 1
   },
   {
     "article": "Unità_di_misura",
@@ -3117,7 +3117,7 @@
     "incipit_size": 1.066,
     "issues": 6,
     "notes": 1,
-    "images": 1.066
+    "images": 1
   },
   {
     "article": "Sistema_internazionale_di_unità_di_misura",
@@ -3129,8 +3129,8 @@
     "size": 34.199,
     "incipit_size": 1.85,
     "issues": 18,
-    "notes": 3,
-    "images": 1.85
+    "notes": 23,
+    "images": 3
   },
   {
     "article": "Lunghezza",
@@ -3142,8 +3142,8 @@
     "size": 2.928,
     "incipit_size": 1.493,
     "issues": 0,
-    "notes": 0,
-    "images": 1.493
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Metro",
@@ -3155,8 +3155,8 @@
     "size": 12.243,
     "incipit_size": 1.449,
     "issues": 10,
-    "notes": 4,
-    "images": 1.449
+    "notes": 8,
+    "images": 4
   },
   {
     "article": "Multipli e sottomultipli",
@@ -3182,7 +3182,7 @@
     "incipit_size": 39,
     "issues": 0,
     "notes": 0,
-    "images": 39
+    "images": 0
   },
   {
     "article": "Chilometro",
@@ -3194,8 +3194,8 @@
     "size": 2.799,
     "incipit_size": 955,
     "issues": 2,
-    "notes": 2,
-    "images": 955
+    "notes": 0,
+    "images": 2
   },
   {
     "article": "Massa_(fisica)",
@@ -3207,8 +3207,8 @@
     "size": 61.764,
     "incipit_size": 4.67,
     "issues": 32,
-    "notes": 9,
-    "images": 4.67
+    "notes": 34,
+    "images": 9
   },
   {
     "article": "Grammo",
@@ -3221,7 +3221,7 @@
     "incipit_size": 589,
     "issues": 2,
     "notes": 1,
-    "images": 589
+    "images": 1
   },
   {
     "article": "Multipli e sottomultipli",
@@ -3246,8 +3246,8 @@
     "size": 20.622,
     "incipit_size": 2.213,
     "issues": 27,
-    "notes": 2,
-    "images": 2.213
+    "notes": 20,
+    "images": 2
   },
   {
     "article": "Litro",
@@ -3259,8 +3259,8 @@
     "size": 7.277,
     "incipit_size": 928,
     "issues": 4,
-    "notes": 1,
-    "images": 928
+    "notes": 4,
+    "images": 1
   },
   {
     "article": "Secondo",
@@ -3272,8 +3272,8 @@
     "size": 7.088,
     "incipit_size": 859,
     "issues": 4,
-    "notes": 1,
-    "images": 859
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Minuto",
@@ -3286,7 +3286,7 @@
     "incipit_size": 156,
     "issues": 3,
     "notes": 1,
-    "images": 156
+    "images": 1
   },
   {
     "article": "Ora",
@@ -3298,8 +3298,8 @@
     "size": 3.307,
     "incipit_size": 476,
     "issues": 3,
-    "notes": 1,
-    "images": 476
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Giorno",
@@ -3311,8 +3311,8 @@
     "size": 10.23,
     "incipit_size": 360,
     "issues": 5,
-    "notes": 1,
-    "images": 360
+    "notes": 3,
+    "images": 1
   },
   {
     "article": "Settimana",
@@ -3324,8 +3324,8 @@
     "size": 10.72,
     "incipit_size": 1.159,
     "issues": 2,
-    "notes": 1,
-    "images": 1.159
+    "notes": 2,
+    "images": 1
   },
   {
     "article": "Mese",
@@ -3337,8 +3337,8 @@
     "size": 5.115,
     "incipit_size": 964,
     "issues": 3,
-    "notes": 2,
-    "images": 964
+    "notes": 4,
+    "images": 2
   },
   {
     "article": "Anno",
@@ -3350,8 +3350,8 @@
     "size": 10.613,
     "incipit_size": 1.558,
     "issues": 3,
-    "notes": 2,
-    "images": 1.558
+    "notes": 5,
+    "images": 2
   },
   {
     "article": "Milione",
@@ -3363,8 +3363,8 @@
     "size": 2.742,
     "incipit_size": 1.184,
     "issues": 2,
-    "notes": 0,
-    "images": 1.184
+    "notes": 1,
+    "images": 0
   },
   {
     "article": "Miliardo",
@@ -3377,7 +3377,7 @@
     "incipit_size": 929,
     "issues": 0,
     "notes": 0,
-    "images": 929
+    "images": 0
   },
   {
     "article": "Sistema_di_numerazione_romano",
@@ -3389,8 +3389,8 @@
     "size": 24.299,
     "incipit_size": 376,
     "issues": 12,
-    "notes": 3,
-    "images": 376
+    "notes": 7,
+    "images": 3
   },
   {
     "article": "Percentuale",
@@ -3402,8 +3402,8 @@
     "size": 5.519,
     "incipit_size": 1.187,
     "issues": 3,
-    "notes": 1,
-    "images": 1.187
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Simbolo_di_percentuale",
@@ -3415,8 +3415,8 @@
     "size": 15.943,
     "incipit_size": 299,
     "issues": 23,
-    "notes": 6,
-    "images": 299
+    "notes": 23,
+    "images": 6
   },
   {
     "article": "Poligono",
@@ -3428,8 +3428,8 @@
     "size": 6.897,
     "incipit_size": 579,
     "issues": 2,
-    "notes": 3,
-    "images": 579
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Poligono_regolare",
@@ -3441,8 +3441,8 @@
     "size": 15.463,
     "incipit_size": 1.606,
     "issues": 3,
-    "notes": 48,
-    "images": 1.606
+    "notes": 1,
+    "images": 48
   },
   {
     "article": "Triangolo",
@@ -3454,8 +3454,8 @@
     "size": 16.815,
     "incipit_size": 62,
     "issues": 4,
-    "notes": 8,
-    "images": 62
+    "notes": 0,
+    "images": 8
   },
   {
     "article": "Triangolo_equilatero",
@@ -3467,8 +3467,8 @@
     "size": 4.192,
     "incipit_size": 1.63,
     "issues": 1,
-    "notes": 2,
-    "images": 1.63
+    "notes": 1,
+    "images": 2
   },
   {
     "article": "Triangolo_isoscele",
@@ -3480,8 +3480,8 @@
     "size": 6.624,
     "incipit_size": 902,
     "issues": 1,
-    "notes": 1,
-    "images": 902
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Triangolo_scaleno",
@@ -3493,8 +3493,8 @@
     "size": 5.179,
     "incipit_size": 588,
     "issues": 1,
-    "notes": 1,
-    "images": 588
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Triangolo_acutangolo",
@@ -3507,7 +3507,7 @@
     "incipit_size": 335,
     "issues": 0,
     "notes": 1,
-    "images": 335
+    "images": 1
   },
   {
     "article": "Triangolo_ottusangolo",
@@ -3519,8 +3519,8 @@
     "size": 1.063,
     "incipit_size": 550,
     "issues": 1,
-    "notes": 1,
-    "images": 550
+    "notes": 0,
+    "images": 1
   },
   {
     "article": "Triangolo_rettangolo",
@@ -3532,8 +3532,8 @@
     "size": 6.278,
     "incipit_size": 1.136,
     "issues": 4,
-    "notes": 7,
-    "images": 1.136
+    "notes": 2,
+    "images": 7
   },
   {
     "article": "Quadrilatero",
@@ -3545,8 +3545,8 @@
     "size": 4.723,
     "incipit_size": 860,
     "issues": 2,
-    "notes": 4,
-    "images": 860
+    "notes": 0,
+    "images": 4
   },
   {
     "article": "Rettangolo",
@@ -3558,8 +3558,8 @@
     "size": 5.001,
     "incipit_size": 1.625,
     "issues": 3,
-    "notes": 2,
-    "images": 1.625
+    "notes": 3,
+    "images": 2
   },
   {
     "article": "Quadrato",
@@ -3571,8 +3571,8 @@
     "size": 5.569,
     "incipit_size": 470,
     "issues": 3,
-    "notes": 3,
-    "images": 470
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Rombo_(geometria)",
@@ -3584,8 +3584,8 @@
     "size": 5.751,
     "incipit_size": 485,
     "issues": 2,
-    "notes": 2,
-    "images": 485
+    "notes": 4,
+    "images": 2
   },
   {
     "article": "Trapezio",
@@ -3597,8 +3597,8 @@
     "size": 5.589,
     "incipit_size": 149,
     "issues": 3,
-    "notes": 8,
-    "images": 149
+    "notes": 1,
+    "images": 8
   },
   {
     "article": "Cerchio",
@@ -3610,8 +3610,8 @@
     "size": 15.518,
     "incipit_size": 2.542,
     "issues": 3,
-    "notes": 3,
-    "images": 2.542
+    "notes": 2,
+    "images": 3
   },
   {
     "article": "Raggio_(geometria)",
@@ -3623,8 +3623,8 @@
     "size": 5.482,
     "incipit_size": 1.117,
     "issues": 3,
-    "notes": 3,
-    "images": 1.117
+    "notes": 0,
+    "images": 3
   },
   {
     "article": "Diametro",
@@ -3637,7 +3637,7 @@
     "incipit_size": 1.069,
     "issues": 2,
     "notes": 1,
-    "images": 1.069
+    "images": 1
   },
   {
     "article": "Circonferenza",
@@ -3649,8 +3649,8 @@
     "size": 15.091,
     "incipit_size": 3.068,
     "issues": 3,
-    "notes": 3,
-    "images": 3.068
+    "notes": 2,
+    "images": 3
   },
   {
     "article": "Pi_greco",
@@ -3662,7 +3662,7 @@
     "size": 56.801,
     "incipit_size": 1.459,
     "issues": 25,
-    "notes": 6,
-    "images": 1.459
+    "notes": 37,
+    "images": 6
   }
 ]
