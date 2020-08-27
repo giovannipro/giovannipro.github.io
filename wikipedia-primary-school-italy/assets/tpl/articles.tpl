@@ -6,12 +6,14 @@
     "subject": "subject",
     "year": "year",
     "argument": "argument",
+    "topic": "topic",
     "average_daily_visit": "daily_visit",
     "size": "size",
     "incipit_size": "incipit_size",
     "issues": "issues",
     "notes": "notes",
-    "images": "images"
+    "images": "images",
+    "incipit_on_size": "incipit/size"
 }
 
 --}}
@@ -44,7 +46,7 @@
 			{{size}}
 		</th>
 		<th class="number">
-			{{incipit_size}}
+			{{incipit_on_size}}
 		</th>
 		<th class="number">
 			{{issues}}
