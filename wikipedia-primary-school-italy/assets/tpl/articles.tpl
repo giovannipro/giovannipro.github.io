@@ -2,6 +2,7 @@
 
 {
     "article": "article",
+    "link": "link",
     "typology": "typology",
     "subject": "subject",
     "year": "year",
@@ -17,7 +18,6 @@
 }
 
 --}}
-
 
 <table>
 {{#each this}}
