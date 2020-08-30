@@ -1,24 +1,3 @@
-{{!-- 
-
-{
-    "article": "article",
-    "link": "link",
-    "typology": "typology",
-    "subject": "subject",
-    "year": "year",
-    "argument": "argument",
-    "topic": "topic",
-    "average_daily_visit": "daily_visit",
-    "size": "size",
-    "incipit_size": "incipit_size",
-    "issues": "issues",
-    "notes": "notes",
-    "images": "images",
-    "incipit_on_size": "incipit/size"
-}
-
---}}
-
 <table>
 {{#each this}}
 	<tr>

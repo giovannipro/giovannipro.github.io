@@ -42,3 +42,11 @@ tr {
 tr:hover, tr:hover a {
 	color: red;
 }
+
+.green {
+	color: green;
+}
+
+.blue {
+	color: blue;
+}

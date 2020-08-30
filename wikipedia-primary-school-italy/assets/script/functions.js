@@ -5,79 +5,57 @@ function articles() {
 	let target = '#articles';
 
 	let head = {
-	    "article": "article",
-	    "link": "link",
-	    "typology": "typology",
-	    "subject": "subject",
-	    "year": "year",
-	    "argument": "argument",
-	    "topic": "topic",
-	    "average_daily_visit": "average_daily_visit",
-	    "size": "size",
-	    "incipit_size": "incipit/size",
-	    "issues": "issues",
-	    "notes": "notes",
-	    "images": "images"
+		"article": "article",
+		"link": "link",
+		"typology": "typology",
+		"subject": "subject",
+		"year": "year",
+		"argument": "argument",
+		"topic": "topic",
+		"average_daily_visit": "average_daily_visit",
+		"size": "size",
+		"incipit_on_size": "incipit/size",
+		"issues": "issues",
+		"notes": "notes",
+		"images": "images"
 	};
 
 	$.get(template_source, function(tpl) {
 		$.getJSON(data_source, function(data) {
 			// console.log(data)
 
-			// var dataArray = [];
-			// for (item in data) {
-			//     var size = data[size];
-			//     dataArray.push({size: parseInt(size)});
-			// }
+			let filtered = [];
+			let index = 0;
+			let find = "#N/A"
 
-			// data.sort(function(a, b) {
-			//     var x = a.size, y = b.size;
-			//     return x < y ? -1 : x > y ? 1 : 0;
-			// });
+			$.each(data, function(a,b) {
+				if (1 == 1){ 
+				// if (b.average_daily_visit == find ) {
+			        filtered.push(b);
+			        index += 1
+			    }
+			})
+			console.log(index)
 
-			// var objSorted = {}
-			// sortable.forEach(function(item){
-			//     objSorted[item[0]]=item[1]
-			// })
+			function compareStrings(a, b) {
+				a = a.toLowerCase();
+				b = b.toLowerCase();
+				return (a < b) ? -1 : (a > b) ? 1 : 0;
+			}
 
-			// let sort = [];
+			function compareValues(a, b) {
+				return b - a 
+			}
 
-			// for (var item in data) {
-			//     sort.push([item, data[size]]);
-			// }
+			filtered.sort(function(a, b) {
+				// return compareStrings(a.subject, b.subject);
+				return compareValues(a.size, b.size);
+			})
 
-			// sort.sort(function(a, b) {
-			//     return a[1] - b[1];
-			// });
-
-
-
-			// data.sort(function(a, b){
-			// });
-			    // return data.subject - data.subject;
-
-			// let sorted = data.sort(function (a, b) {
-			// 	let subject_order = a.subject - b.subject
-			// // 	// let article_order = a.article - b.article 
-			// // 	// let size_order = b.size - a.size 
-			// // 	// let visit_order = b.average_daily_visit - a.average_daily_visit  
-			//     return  subject_order //|| article_order // || b.size - a.size  // || || b.article - a.article
-			//     // return  b.subject - a.subject
-			// });
-			// // console.log(sorted)
-
-			// console.log(sort);
-
-			// let filter = sorted.filter(function (entry) {
-			//     return entry.subject == "Storia";
-			// });
-
-			// let the_data = filter.unshift(head);
-			data.unshift(head);
-			// console.log(the_data)
+			filtered.unshift(head);
 
 			let template = Handlebars.compile(tpl); 
-			$(target).html(template(data));
+			$(target).html(template(filtered));
 		});
 	});
 }
