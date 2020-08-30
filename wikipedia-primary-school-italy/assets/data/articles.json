@@ -15729,7 +15729,7 @@
   },
   {
     "article": "ndrangheta",
-    "link": "ndrangheta",
+    "link": "Ndrangheta",
     "typology": "H",
     "subject": "Storia",
     "year": "-",
@@ -16455,13 +16455,13 @@
     "year": 2.3,
     "argument": "1_XIII secolo",
     "topic": "Guittone d'Arezzo",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": "",
+    "size": "",
+    "incipit_size": "",
+    "issues": "",
+    "notes": "",
+    "images": "",
+    "incipit_on_size": ""
   },
   {
     "article": "Tutt'or_ch'eo_dirò_gioi,_gioiva_cosa",
@@ -17287,13 +17287,13 @@
     "year": 2.3,
     "argument": "3_Secolo XIV",
     "topic": "Boccaccio",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": "",
+    "size": "",
+    "incipit_size": "",
+    "issues": "",
+    "notes": "",
+    "images": "",
+    "incipit_on_size": ""
   },
   {
     "article": "Opere_della_giovinezza_di_Giovanni_Boccaccio",
@@ -17623,13 +17623,13 @@
     "year": 2.3,
     "argument": "4_XV Secolo",
     "topic": "Lorenzo de' Medici",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": "",
+    "size": "",
+    "incipit_size": "",
+    "issues": "",
+    "notes": "",
+    "images": "",
+    "incipit_on_size": ""
   },
   {
     "article": "Il_trionfo_di_Bacco_e_Arianna",
@@ -17735,13 +17735,13 @@
     "year": 2.3,
     "argument": "4_XV Secolo",
     "topic": "Poliziano",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": "",
+    "size": "",
+    "incipit_size": "",
+    "issues": "",
+    "notes": "",
+    "images": "",
+    "incipit_on_size": ""
   },
   {
     "article": "Rime",
@@ -17767,13 +17767,13 @@
     "year": 2.3,
     "argument": "4_XV Secolo",
     "topic": "Machiavelli",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 760,
+    "size": 85600,
+    "incipit_size": 1904,
+    "issues": 0,
+    "notes": 45,
+    "images": 16,
+    "incipit_on_size": 2.22
   },
   {
     "article": "Machiavellismo",
@@ -18365,7 +18365,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "La follia di Orlando",
@@ -18381,7 +18381,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Ritrovamento del senno di Orlando",
@@ -18397,7 +18397,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Duello di Rodomonte e Ruggero",
@@ -18413,7 +18413,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Torquato_Tasso",
@@ -18461,7 +18461,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Olindo e Sofronia",
@@ -18477,7 +18477,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Tancredi vs. Clorinda",
@@ -18487,13 +18487,13 @@
     "year": 2.3,
     "argument": "5_XVI Secolo",
     "topic": "Torquato Tasso",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": "",
+    "size": "",
+    "incipit_size": "",
+    "issues": "",
+    "notes": "",
+    "images": "",
+    "incipit_on_size": ""
   },
   {
     "article": "Aminta",
@@ -18903,13 +18903,13 @@
     "year": 2.4,
     "argument": "7_XVIII Secolo",
     "topic": "Autori minori",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": "",
+    "size": "",
+    "incipit_size": "",
+    "issues": "",
+    "notes": "",
+    "images": "",
+    "incipit_on_size": ""
   },
   {
     "article": "Lorenzo_Da_Ponte",
@@ -19616,20 +19616,20 @@
     "incipit_on_size": 0
   },
   {
-    "article": "Pensiero_e_poetica",
+    "article": "Alessandro_Manzoni",
     "link": "Pensiero_e_poetica",
     "typology": "H",
     "subject": "Letteratura italiana",
     "year": 2.4,
     "argument": "9_Primo Ottocento",
     "topic": "Alessandro Manzoni",
-    "average_daily_visit": "",
-    "size": 0,
-    "incipit_size": 0,
-    "issues": 0,
-    "notes": 0,
+    "average_daily_visit": 121,
+    "size": 8543,
+    "incipit_size": 942,
+    "issues": 7,
+    "notes": 2,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": 11.03
   },
   {
     "article": "Opere_di_Alessandro_Manzoni",
@@ -19776,20 +19776,20 @@
     "incipit_on_size": 11.03
   },
   {
-    "article": "Pensiero_e_poetica",
+    "article": "Giacomo_Leopardi",
     "link": "Pensiero_e_poetica",
     "typology": "H",
     "subject": "Letteratura italiana",
     "year": 2.4,
     "argument": "9_Primo Ottocento",
     "topic": "Giacomo Leopardi",
-    "average_daily_visit": "",
-    "size": 0,
-    "incipit_size": 0,
-    "issues": 0,
-    "notes": 0,
+    "average_daily_visit": 121,
+    "size": 8543,
+    "incipit_size": 942,
+    "issues": 7,
+    "notes": 2,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": 11.03
   },
   {
     "article": "Opere_di_Giacomo_Leopardi",
@@ -20896,20 +20896,20 @@
     "incipit_on_size": 3.47
   },
   {
-    "article": "Gabriele _'Annunzio",
+    "article": "Gabriele_D'Annunzio",
     "link": "Biografia",
     "typology": "H",
     "subject": "Letteratura italiana",
     "year": 2.5,
     "argument": "11_Primo novecento",
     "topic": "Gabriele D'Annunzio",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 121,
+    "size": 8543,
+    "incipit_size": 942,
+    "issues": 7,
+    "notes": 2,
+    "images": 0,
+    "incipit_on_size": 11.03
   },
   {
     "article": "Dannunzianesimo",
@@ -22375,13 +22375,13 @@
     "year": 2.5,
     "argument": "13_Dopoguerra",
     "topic": "Primo Levi",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 121,
+    "size": 8543,
+    "incipit_size": 942,
+    "issues": 7,
+    "notes": 2,
+    "images": 0,
+    "incipit_on_size": 11.03
   },
   {
     "article": "Se_questo_è un_uomo",
@@ -24081,7 +24081,7 @@
   },
   {
     "article": "Arte greca arcaica",
-    "link": "Arte greca arcaica",
+    "link": "Arte_greca_arcaica",
     "typology": "H",
     "subject": "Storia dell'arte",
     "year": "-",
@@ -24096,8 +24096,8 @@
     "incipit_on_size": 2.32
   },
   {
-    "article": "Scultura greca arcaica",
-    "link": "Scultura greca arcaica",
+    "article": "Scultura_greca_arcaica",
+    "link": "Scultura_greca_arcaica",
     "typology": "H",
     "subject": "Storia dell'arte",
     "year": "-",
@@ -24112,8 +24112,8 @@
     "incipit_on_size": 3.52
   },
   {
-    "article": "Architettura greca arcaica",
-    "link": "Architettura greca arcaica",
+    "article": "Architettura_greca_arcaica",
+    "link": "Architettura_greca_arcaica",
     "typology": "H",
     "subject": "Storia dell'arte",
     "year": "-",
@@ -24121,7 +24121,7 @@
     "topic": "",
     "average_daily_visit": 19,
     "size": 18978,
-    "incipit_size": 1905,
+    "incipit_size": "1,905",
     "issues": 0,
     "notes": 2,
     "images": 5,
@@ -24272,20 +24272,20 @@
     "incipit_on_size": 7.19
   },
   {
-    "article": "Scultura greca classica",
-    "link": "Scultura greca classica",
+    "article": "Scultura_greca_classica",
+    "link": "Scultura_greca_classica",
     "typology": "H",
     "subject": "Storia dell'arte",
     "year": "-",
     "argument": "3_Arte greca",
     "topic": "",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 71,
+    "size": 17097,
+    "incipit_size": 583,
+    "issues": 0,
+    "notes": 11,
+    "images": 14,
+    "incipit_on_size": 3.41
   },
   {
     "article": "Architettura greca classica",
@@ -29111,13 +29111,13 @@
     "year": 2.3,
     "argument": "0_III - II sec. a.Ch.n.",
     "topic": "contesto",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 23,
+    "size": 84010,
+    "incipit_size": 408,
+    "issues": 55,
+    "notes": 94,
+    "images": 37,
+    "incipit_on_size": 0.49
   },
   {
     "article": "Livio_Andronico",
@@ -29232,20 +29232,20 @@
     "incipit_on_size": 16.81
   },
   {
-    "article": "Biografia",
-    "link": "Biografia",
+    "article": "Tito_Maccio_Plauto",
+    "link": "Tito_Maccio_Plaut0",
     "typology": "H",
     "subject": "Letteratura italiana",
     "year": 2.3,
     "argument": "0_III - II sec. a.Ch.n.",
     "topic": "Plauto",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 121,
+    "size": 8543,
+    "incipit_size": 942,
+    "issues": 7,
+    "notes": 2,
+    "images": 0,
+    "incipit_on_size": 11.03
   },
   {
     "article": "Aulularia",
@@ -29399,13 +29399,13 @@
     "year": 2.3,
     "argument": "0_III - II sec. a.Ch.n.",
     "topic": "Catone",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 121,
+    "size": 8543,
+    "incipit_size": 942,
+    "issues": 7,
+    "notes": 2,
+    "images": 0,
+    "incipit_on_size": 11.03
   },
   {
     "article": "Origines",
@@ -29495,13 +29495,13 @@
     "year": 2.3,
     "argument": "1_I sec. a.Ch.n.",
     "topic": "Lucrezio",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 121,
+    "size": 8543,
+    "incipit_size": 942,
+    "issues": 7,
+    "notes": 2,
+    "images": 0,
+    "incipit_on_size": 11.03
   },
   {
     "article": "Epicureismo",
@@ -39152,22 +39152,6 @@
     "incipit_on_size": 19.55
   },
   {
-    "article": "Morte presunata",
-    "link": "Morte presunata",
-    "typology": "H",
-    "subject": "Diritto",
-    "year": 2.1,
-    "argument": "Soggetti del diritto",
-    "topic": "",
-    "average_daily_visit": 56,
-    "size": 0,
-    "incipit_size": 0,
-    "issues": 0,
-    "notes": 0,
-    "images": 0,
-    "incipit_on_size": "#DIV/0!"
-  },
-  {
     "article": "Società (diritto)",
     "link": "Società (diritto)",
     "typology": "H",
@@ -40669,7 +40653,7 @@
     "issues": "",
     "notes": "",
     "images": "",
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Famiglia (operatore economico)",
@@ -40685,7 +40669,7 @@
     "issues": "",
     "notes": "",
     "images": "",
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Consumo",
@@ -40845,7 +40829,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Spesa pubblica",
@@ -41261,7 +41245,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Disoccupazione",
@@ -41693,7 +41677,7 @@
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "incipit_on_size": ""
   },
   {
     "article": "Globalizzazione",
@@ -43214,22 +43198,6 @@
     "notes": 5,
     "images": 8,
     "incipit_on_size": 1.1
-  },
-  {
-    "article": "Niccolò Machiavelli",
-    "link": "Niccolò Machiavelli",
-    "typology": "H",
-    "subject": "Filosofia",
-    "year": "",
-    "argument": "Umanesimo, rinascimento e rifoma",
-    "topic": "",
-    "average_daily_visit": 760,
-    "size": 85600,
-    "incipit_size": 1904,
-    "issues": 0,
-    "notes": 45,
-    "images": 16,
-    "incipit_on_size": 2.22
   },
   {
     "article": "Jean Bodin",
@@ -45856,36 +45824,36 @@
     "incipit_on_size": 82.76
   },
   {
-    "article": "Web 2.0",
-    "link": "Web 2.0",
+    "article": "Web_2.0",
+    "link": "Web_2.0",
     "typology": "S",
     "subject": "Informatica",
     "year": 2,
     "argument": "Reti e internet",
     "topic": "",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 174,
+    "size": 11914,
+    "incipit_size": 277,
+    "issues": 1,
+    "notes": 3,
+    "images": 0,
+    "incipit_on_size": 2.32
   },
   {
-    "article": "Web 3.0",
-    "link": "Web 3.0",
+    "article": "Web_3.0",
+    "link": "Web_3.0",
     "typology": "S",
     "subject": "Informatica",
     "year": 2,
     "argument": "Reti e internet",
     "topic": "",
-    "average_daily_visit": "#N/A",
-    "size": "#N/A",
-    "incipit_size": "#N/A",
-    "issues": "#N/A",
-    "notes": "#N/A",
-    "images": "#N/A",
-    "incipit_on_size": "#N/A"
+    "average_daily_visit": 60,
+    "size": 8888,
+    "incipit_size": 560,
+    "issues": 0,
+    "notes": 2,
+    "images": 0,
+    "incipit_on_size": 6.3
   },
   {
     "article": "Applicazione web",

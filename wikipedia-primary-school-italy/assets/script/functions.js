@@ -26,11 +26,11 @@ function articles() {
 
 			let filtered = [];
 			let index = 0;
-			let find = "#N/A"
+			let find = ""
 
 			$.each(data, function(a,b) {
-				if (1 == 1){ 
-				// if (b.average_daily_visit == find ) {
+				// if (1 == 1){ 
+				if (b.size == find ) {
 			        filtered.push(b);
 			        index += 1
 			    }
@@ -48,8 +48,8 @@ function articles() {
 			}
 
 			filtered.sort(function(a, b) {
-				// return compareStrings(a.subject, b.subject);
-				return compareValues(a.size, b.size);
+				return compareStrings(a.subject, b.subject);
+				// return compareValues(a.size, b.size);
 			})
 
 			filtered.unshift(head);
