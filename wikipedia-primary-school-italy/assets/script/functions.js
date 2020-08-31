@@ -20,44 +20,66 @@ function articles() {
 		"images": "images"
 	};
 
-	$.get(template_source, function(tpl) {
-		$.getJSON(data_source, function(data) {
-			// console.log(data)
+	$("#all_data").click(function(){
+		load_data("",false,"size");
+		$("#all_data").toggleClass("underline");
+		$("#missing_data").toggleClass("underline");
+	})
 
-			let filtered = [];
-			let index = 0;
-			let find = ""
+	$("#missing_data").click(function(){
+		load_data(0,true,"size");
+		$("#missing_data").toggleClass("underline");
+		$("#all_data").toggleClass("underline");
+	})
 
-			$.each(data, function(a,b) {
-				// if (1 == 1){ 
-				if (b.size == find ) {
-			        filtered.push(b);
-			        index += 1
-			    }
-			})
-			console.log(index)
+	function load_data(filter,activation,sort) {
+		$.get(template_source, function(tpl) {
+			$.getJSON(data_source, function(data) {
+				// console.log(data)
 
-			function compareStrings(a, b) {
-				a = a.toLowerCase();
-				b = b.toLowerCase();
-				return (a < b) ? -1 : (a > b) ? 1 : 0;
-			}
+				let filtered = [];
+				let index = 0;
 
-			function compareValues(a, b) {
-				return b - a 
-			}
+				$.each(data, function(a,b) {
+					if (activation == true) {
+						if (b.size == filter) {
+					        filtered.push(b);
+					        index += 1
+					    }
+					}
+					else {
+						if (1 == 1) {
+					        filtered.push(b);
+					        index += 1
+					    }
+					}
+				})
+				// console.log(index)
 
-			filtered.sort(function(a, b) {
-				return compareStrings(a.subject, b.subject);
-				// return compareValues(a.size, b.size);
-			})
+				function compareStrings(a, b) {
+					a = a.toLowerCase();
+					b = b.toLowerCase();
+					return (a < b) ? -1 : (a > b) ? 1 : 0;
+				}
 
-			filtered.unshift(head);
+				function compareValues(a, b) {
+					return b - a 
+				}
 
-			let template = Handlebars.compile(tpl); 
-			$(target).html(template(filtered));
+				filtered.sort(function(a, b) { 
+					// return compareValues(a.average_daily_visit, b.average_daily_visit);
+					return compareStrings(a.subject, b.subject);
+					// return compareValues(a[sort], b[sort]);
+				})
+
+				filtered.unshift(head);
+
+				let template = Handlebars.compile(tpl); 
+				$(target).html(template(filtered));
+			});
 		});
-	});
+	}
+	load_data("",false);
 }
 
 

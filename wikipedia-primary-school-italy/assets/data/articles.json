@@ -3032,12 +3032,12 @@
     "argument": "Tipi di funzione",
     "topic": "",
     "average_daily_visit": 135,
-    "size": "Funzione_suriettiva",
+    "size": "",
     "incipit_size": 432,
     "issues": 2,
     "notes": 0,
     "images": 1,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Funzione_iniettiva",
@@ -3048,12 +3048,12 @@
     "argument": "Tipi di funzione",
     "topic": "",
     "average_daily_visit": 172,
-    "size": "Funzione_iniettiva",
+    "size": "",
     "incipit_size": 731,
     "issues": 12,
     "notes": 7,
     "images": 4,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Corrispondenza_biunivoca",
@@ -3080,12 +3080,12 @@
     "argument": "Tipi di funzione",
     "topic": "",
     "average_daily_visit": 68,
-    "size": "Funzione_inversa",
+    "size": "",
     "incipit_size": 939,
     "issues": 2,
     "notes": 0,
     "images": 6,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Funzione_composta",
@@ -3096,12 +3096,12 @@
     "argument": "Tipi di funzione",
     "topic": "",
     "average_daily_visit": 3,
-    "size": "Funzione_composta",
+    "size": "",
     "incipit_size": 35,
     "issues": 0,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Funzione_monotona",
@@ -3112,12 +3112,12 @@
     "argument": "Tipi di funzione",
     "topic": "",
     "average_daily_visit": 96,
-    "size": "Funzione_monotona",
+    "size": "",
     "incipit_size": 679,
     "issues": 1,
     "notes": 0,
     "images": 2,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Isometria_del_piano",
@@ -3128,12 +3128,12 @@
     "argument": "Trasformazioni",
     "topic": "",
     "average_daily_visit": 16,
-    "size": "Isometria_del_piano",
+    "size": "",
     "incipit_size": 768,
     "issues": 1,
     "notes": 0,
     "images": 12,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Trasformazione_geometrica_piana",
@@ -3144,12 +3144,12 @@
     "argument": "Trasformazioni",
     "topic": "",
     "average_daily_visit": 13,
-    "size": "Trasformazione_geometrica_piana",
+    "size": "",
     "incipit_size": 1384,
     "issues": 1,
     "notes": 0,
     "images": 2,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Traslazione_(geometria)",
@@ -3160,12 +3160,12 @@
     "argument": "Trasformazioni",
     "topic": "",
     "average_daily_visit": 79,
-    "size": "Traslazione_(geometria)",
+    "size": "",
     "incipit_size": 1340,
     "issues": 2,
     "notes": 0,
     "images": 2,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Riflessione_(geometria)",
@@ -3176,12 +3176,12 @@
     "argument": "Trasformazioni",
     "topic": "",
     "average_daily_visit": 17,
-    "size": "Riflessione_(geometria)",
+    "size": "",
     "incipit_size": 407,
     "issues": 2,
     "notes": 0,
     "images": 2,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Simmetria_centrale",
@@ -3192,12 +3192,12 @@
     "argument": "Trasformazioni",
     "topic": "",
     "average_daily_visit": 20,
-    "size": "Simmetria_centrale",
+    "size": "",
     "incipit_size": 569,
     "issues": 2,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Omotetia",
@@ -3208,12 +3208,12 @@
     "argument": "Trasformazioni",
     "topic": "",
     "average_daily_visit": 76,
-    "size": "Omotetia",
+    "size": "",
     "incipit_size": 495,
     "issues": 2,
     "notes": 0,
     "images": 2,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Successione_(matematica)",
@@ -3224,12 +3224,12 @@
     "argument": "Successioni",
     "topic": "",
     "average_daily_visit": 87,
-    "size": "Successione_(matematica)",
+    "size": "",
     "incipit_size": 1592,
     "issues": 8,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Progressione_aritmetica",
@@ -3240,12 +3240,12 @@
     "argument": "Successioni",
     "topic": "",
     "average_daily_visit": 72,
-    "size": "Progressione_aritmetica",
+    "size": "",
     "incipit_size": 376,
     "issues": 2,
     "notes": 0,
     "images": 0,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Progressione_geometrica",
@@ -3256,12 +3256,12 @@
     "argument": "Successioni",
     "topic": "",
     "average_daily_visit": 83,
-    "size": "Progressione_geometrica",
+    "size": "",
     "incipit_size": 711,
     "issues": 2,
     "notes": 0,
     "images": 1,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Equazione_di_secondo_grado",
@@ -3288,12 +3288,12 @@
     "argument": "Funzioni quadratiche",
     "topic": "",
     "average_daily_visit": 13,
-    "size": "Funzione_quadratica",
+    "size": "",
     "incipit_size": 1874,
     "issues": 4,
     "notes": 3,
     "images": 6,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Parabola_(geometria)",
@@ -3320,12 +3320,12 @@
     "argument": "Funzioni quadratiche",
     "topic": "",
     "average_daily_visit": 21,
-    "size": "Fascio_di_circonferenze",
+    "size": "",
     "incipit_size": 615,
     "issues": 2,
     "notes": 2,
     "images": 1,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Ellisse",
@@ -3352,12 +3352,12 @@
     "argument": "Funzioni quadratiche",
     "topic": "",
     "average_daily_visit": 175,
-    "size": "Iperbole_(geometria)",
+    "size": "",
     "incipit_size": 265,
     "issues": 2,
     "notes": 1,
     "images": 2,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Sezione_conica",
@@ -3368,12 +3368,12 @@
     "argument": "Funzioni quadratiche",
     "topic": "",
     "average_daily_visit": 74,
-    "size": "Sezione_conica",
+    "size": "",
     "incipit_size": 919,
     "issues": 3,
     "notes": 0,
     "images": 4,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Funzione_trigonometrica",
@@ -43408,22 +43408,6 @@
     "incipit_on_size": 0.76
   },
   {
-    "article": "Galielo Galilei",
-    "link": "Galielo Galilei",
-    "typology": "H",
-    "subject": "Filosofia",
-    "year": "",
-    "argument": "Tra cinquecente e seicento",
-    "topic": "",
-    "average_daily_visit": 1633,
-    "size": 0,
-    "incipit_size": 0,
-    "issues": 0,
-    "notes": 0,
-    "images": 0,
-    "incipit_on_size": "#DIV/0!"
-  },
-  {
     "article": "Cartesio",
     "link": "Cartesio",
     "typology": "H",
@@ -53648,7 +53632,7 @@
     "incipit_on_size": 8.25
   },
   {
-    "article": "Pressione atomosferica",
+    "article": "Pressione atmosferica",
     "link": "Pressione atomosferica",
     "typology": "S",
     "subject": "Scienze",
@@ -53656,12 +53640,12 @@
     "argument": "Forze",
     "topic": "",
     "average_daily_visit": 599,
-    "size": 0,
-    "incipit_size": 0,
-    "issues": 0,
-    "notes": 0,
-    "images": 0,
-    "incipit_on_size": "#DIV/0!"
+    "size": 11700,
+    "incipit_size": 518,
+    "issues": 1,
+    "notes": 9,
+    "images": 4,
+    "incipit_on_size": 4.43
   },
   {
     "article": "Principio di Archimede",
