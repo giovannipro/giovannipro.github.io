@@ -1440,14 +1440,14 @@
     "incipit_on_size": 5.38
   },
   {
-    "article": "Moltiplicazione#Numeri_negativi_e_regola_dei_segni",
+    "article": "Moltiplicazione",
     "link": "Moltiplicazione#Numeri_negativi_e_regola_dei_segni",
     "typology": "S",
     "subject": "Matematica",
     "year": 1.2,
     "argument": "Numeri negativi",
     "topic": "",
-    "average_daily_visit": "",
+    "average_daily_visit": 98,
     "size": 9905,
     "incipit_size": 538,
     "issues": 3,
@@ -3336,12 +3336,12 @@
     "argument": "Funzioni quadratiche",
     "topic": "",
     "average_daily_visit": 238,
-    "size": "Ellisse",
+    "size": "",
     "incipit_size": 2208,
     "issues": 6,
     "notes": 5,
     "images": 12,
-    "incipit_on_size": "#VALUE!"
+    "incipit_on_size": "#DIV/0!"
   },
   {
     "article": "Iperbole_(geometria)",
@@ -17408,22 +17408,6 @@
     "incipit_on_size": 2.79
   },
   {
-    "article": "Rinascimento",
-    "link": "Rinascimento",
-    "typology": "H",
-    "subject": "Letteratura italiana",
-    "year": 2.3,
-    "argument": "4_XV Secolo",
-    "topic": "Coordinate generali",
-    "average_daily_visit": 1131,
-    "size": 57433,
-    "incipit_size": 1597,
-    "issues": 5,
-    "notes": 32,
-    "images": 22,
-    "incipit_on_size": 2.78
-  },
-  {
     "article": "Stampa_a_caratteri_mobili",
     "link": "Stampa_a_caratteri_mobili",
     "typology": "H",
@@ -18528,7 +18512,7 @@
     "incipit_on_size": 1.12
   },
   {
-    "article": "Poesia_lirica#In_età_moderna",
+    "article": "Poesia_lirica",
     "link": "Poesia_lirica#In_età_moderna",
     "typology": "H",
     "subject": "Letteratura italiana",
@@ -29520,17 +29504,17 @@
     "incipit_on_size": 14.64
   },
   {
-    "article": "Atomismo#L'atomismo_di_Lucrezio",
+    "article": "Atomismo",
     "link": "Atomismo#L'atomismo_di_Lucrezio",
     "typology": "H",
     "subject": "Letteratura italiana",
     "year": 2.3,
     "argument": "1_I sec. a.Ch.n.",
     "topic": "Lucrezio",
-    "average_daily_visit": "",
+    "average_daily_visit": 62,
     "size": 43059,
     "incipit_size": 317,
-    "issues": 23,
+    "issues": 0,
     "notes": 17,
     "images": 0,
     "incipit_on_size": 0.74

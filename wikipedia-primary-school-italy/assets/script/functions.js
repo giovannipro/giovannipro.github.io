@@ -84,7 +84,52 @@ function articles() {
 	load_data("",false);
 }
 
+function subjects() {
+
+	let template_source = 'assets/tpl/subjects.tpl';
+	let data_source = 'assets/data/subjects.json';
+	let target = '#subjects';
+
+	let head =   {
+	    "subject": "subject",
+	    "articles": "articles",
+	    "average_daily_visit": "average_daily_visit",
+	    "size": "size",
+	    "incipit_on_size": "incipit_on_size",
+	    "notes": "notes"
+	};
+
+	function load_data() {
+		$.get(template_source, function(tpl) {
+			$.getJSON(data_source, function(data) {
+				// console.log(data);
+
+				function compareStrings(a, b) {
+					a = a.toLowerCase();
+					b = b.toLowerCase();
+					return (a < b) ? -1 : (a > b) ? 1 : 0;
+				}
+
+				function compareValues(a, b) {
+					return b - a 
+				}
+
+				data.sort(function(a, b) { 
+					return compareValues(a.average_daily_visit, b.average_daily_visit);
+					// return compareStrings(a.subject, b.subject);
+				})
+
+				data.unshift(head);
+
+				let template = Handlebars.compile(tpl); 
+				$(target).html(template(data));
+			});
+		});
+	}
+	load_data();
+}
 
 $(document).ready(function() {
 	articles();
+	subjects();
 });

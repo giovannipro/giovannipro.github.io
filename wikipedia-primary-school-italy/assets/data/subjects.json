@@ -1,0 +1,146 @@
+[
+  {
+    "subject": "Grammatica italiana",
+    "articles": 52,
+    "average_daily_visit": 67,
+    "size": 2549,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 0.75
+  },
+  {
+    "subject": "Grammatica latina",
+    "articles": 60,
+    "average_daily_visit": 82,
+    "size": 10774,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 1.963636364
+  },
+  {
+    "subject": "Matematica",
+    "articles": 280,
+    "average_daily_visit": 133,
+    "size": 10513,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 2.503597122
+  },
+  {
+    "subject": "Tecnologia",
+    "articles": 33,
+    "average_daily_visit": 145,
+    "size": 21204,
+    "incipit_on_size": 9,
+    "notes": 7.515151515
+  },
+  {
+    "subject": "Informatica",
+    "articles": 220,
+    "average_daily_visit": 163,
+    "size": 20025,
+    "incipit_on_size": 11,
+    "notes": 9.918181818
+  },
+  {
+    "subject": "Letteratura italiana",
+    "articles": 477,
+    "average_daily_visit": 165,
+    "size": 20673,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 12.38611714
+  },
+  {
+    "subject": "Economia",
+    "articles": 89,
+    "average_daily_visit": 166,
+    "size": 23510,
+    "incipit_on_size": 11,
+    "notes": 13.29885057
+  },
+  {
+    "subject": "Chimica",
+    "articles": 188,
+    "average_daily_visit": 172,
+    "size": 13899,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 7.187165775
+  },
+  {
+    "subject": "Fisica",
+    "articles": 127,
+    "average_daily_visit": 177,
+    "size": 13655,
+    "incipit_on_size": 16,
+    "notes": 4.858267717
+  },
+  {
+    "subject": "Scienze della terra",
+    "articles": 115,
+    "average_daily_visit": 191,
+    "size": 22402,
+    "incipit_on_size": 18,
+    "notes": 15.09565217
+  },
+  {
+    "subject": "Filosofia",
+    "articles": 180,
+    "average_daily_visit": 196,
+    "size": 39298,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 31.85
+  },
+  {
+    "subject": "Diritto",
+    "articles": 115,
+    "average_daily_visit": 215,
+    "size": 18809,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 10.2
+  },
+  {
+    "subject": "Biologia",
+    "articles": 201,
+    "average_daily_visit": 227,
+    "size": 21894,
+    "incipit_on_size": 17,
+    "notes": 14.99502488
+  },
+  {
+    "subject": "Storia dell'arte",
+    "articles": 208,
+    "average_daily_visit": 247,
+    "size": 34147,
+    "incipit_on_size": 8,
+    "notes": 22.32692308
+  },
+  {
+    "subject": "Scienze",
+    "articles": 189,
+    "average_daily_visit": 265,
+    "size": 25993,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 18.16402116
+  },
+  {
+    "subject": "Storia",
+    "articles": 722,
+    "average_daily_visit": 277,
+    "size": 49280,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 45.99246988
+  },
+  {
+    "subject": "Educazione civica",
+    "articles": 172,
+    "average_daily_visit": 292,
+    "size": 32257,
+    "incipit_on_size": "#DIV/0!",
+    "notes": 24.84883721
+  },
+  {
+    "subject": "Geografia",
+    "articles": 261,
+    "average_daily_visit": 581,
+    "size": 55774,
+    "incipit_on_size": 9,
+    "notes": 39.58237548
+  }
+]

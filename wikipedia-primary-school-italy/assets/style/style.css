@@ -20,6 +20,10 @@ ul {
 	margin: 0;
 }
 
+#articles, #subjects {
+	margin-bottom: 30px; 
+}
+
 table {
 	margin: 0;
 	padding: 0;
