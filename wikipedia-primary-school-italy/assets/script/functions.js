@@ -21,18 +21,18 @@ function articles() {
 	};
 
 	$("#all_data").click(function(){
-		load_data("",false,"size");
+		load_data("",false,);
 		$("#all_data").toggleClass("underline");
 		$("#missing_data").toggleClass("underline");
 	})
 
 	$("#missing_data").click(function(){
-		load_data(0,true,"size");
+		load_data(0,true);
 		$("#missing_data").toggleClass("underline");
 		$("#all_data").toggleClass("underline");
 	})
 
-	function load_data(filter,activation,sort) {
+	function load_data(filter,activation) {
 		$.get(template_source, function(tpl) {
 			$.getJSON(data_source, function(data) {
 				// console.log(data)
@@ -43,6 +43,8 @@ function articles() {
 				$.each(data, function(a,b) {
 					if (activation == true) {
 						if (b.size == filter) {
+						// if (b.subject == filter) {
+						// if (b.typology == filter) {	
 					        filtered.push(b);
 					        index += 1
 					    }
@@ -67,8 +69,8 @@ function articles() {
 				}
 
 				filtered.sort(function(a, b) { 
-					// return compareValues(a.average_daily_visit, b.average_daily_visit);
-					return compareStrings(a.subject, b.subject);
+					return compareValues(a.average_daily_visit, b.average_daily_visit);
+					// return compareStrings(a.subject, b.subject);
 					// return compareValues(a[sort], b[sort]);
 				})
 

@@ -12,11 +12,17 @@
 		<th>
 			{{subject}}
 		</th>
+		<th>
+			{{typology}}
+		</th>
 		<th class="year">
 			{{year}}
 		</th>
 		<th>
 			{{argument}}
+		</th>
+		<th>
+			{{topic}}
 		</th>
 		<th class="number">
 			{{average_daily_visit}}
