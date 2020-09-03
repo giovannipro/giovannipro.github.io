@@ -27,11 +27,17 @@
 		<th class="number">
 			{{average_daily_visit}}
 		</th>
+		<th>
+			{{first_edit}}
+		</th>
 		<th class="number">
 			{{size}}
 		</th>
 		<th class="number">
 			{{incipit_on_size}}
+		</th>
+		<th class="number">
+			{{discussion_size}}
 		</th>
 		<th class="number">
 			{{issues}}

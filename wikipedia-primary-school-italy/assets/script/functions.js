@@ -13,8 +13,10 @@ function articles() {
 		"argument": "argument",
 		"topic": "topic",
 		"average_daily_visit": "average_daily_visit",
+		"first_edit": "first_edit",
 		"size": "size",
 		"incipit_on_size": "incipit/size",
+		"discussion_size": "discussion_size",
 		"issues": "issues",
 		"notes": "notes",
 		"images": "images"
