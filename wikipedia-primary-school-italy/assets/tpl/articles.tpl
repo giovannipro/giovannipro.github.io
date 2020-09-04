@@ -12,9 +12,9 @@
 		<th>
 			{{subject}}
 		</th>
-		<th>
+		{{!--<th>
 			{{typology}}
-		</th>
+		</th>--}}
 		<th class="year">
 			{{year}}
 		</th>
@@ -27,9 +27,9 @@
 		<th class="number">
 			{{average_daily_visit}}
 		</th>
-		<th>
+		{{!--<th>
 			{{first_edit}}
-		</th>
+		</th>--}}
 		<th class="number">
 			{{size}}
 		</th>

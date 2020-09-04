@@ -23,13 +23,13 @@ function articles() {
 	};
 
 	$("#all_data").click(function(){
-		load_data("",false,);
+		load_data(0,false);
 		$("#all_data").toggleClass("underline");
 		$("#missing_data").toggleClass("underline");
 	})
 
 	$("#missing_data").click(function(){
-		load_data(0,true);
+		load_data(0,true); // 0
 		$("#missing_data").toggleClass("underline");
 		$("#all_data").toggleClass("underline");
 	})
@@ -44,6 +44,7 @@ function articles() {
 
 				$.each(data, function(a,b) {
 					if (activation == true) {
+						// if (b.first_edit == filter) {
 						if (b.size == filter) {
 						// if (b.subject == filter) {
 						// if (b.typology == filter) {	
@@ -71,8 +72,8 @@ function articles() {
 				}
 
 				filtered.sort(function(a, b) { 
-					return compareValues(a.average_daily_visit, b.average_daily_visit);
-					// return compareStrings(a.subject, b.subject);
+					// return compareValues(a.average_daily_visit, b.average_daily_visit);
+					return compareStrings(a.subject, b.subject);
 					// return compareValues(a[sort], b[sort]);
 				})
 
