@@ -1,9 +1,9 @@
 function dv1() {
 	let container = "#dv1",
-		window_w = 1500; //$(container).outerWidth(),
-		window_h = 1500;
+		window_w = $(container).outerWidth() * 1, // 4000; //
+		window_h = window.innerHeight * 1 //2000;
 
-	let margin = {top: 5, right: 0, bottom: 30, right: 0},
+	let margin = {top: 20, right: 20, bottom: 20, right: 20},
 		width = window_w - (margin.right + margin.right),
 		height = window_h - (margin.top + margin.bottom);
 
@@ -21,37 +21,106 @@ function dv1() {
 			.attr("id", "d3_plot")
 			.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
 
+		// function apply_color(item){
+		// 	var color = "";
+
+		// 	if (item == "Geografia"){
+		// 		color = "red";
+		// 	}
+		// 	else if (item == "Storia"){
+		// 		color = "green";
+		// 	}
+		// 	else if (item == "Letteratura italiana"){
+		// 		color =  "violet";
+		// 	}
+		// 	else if (item == "Matematica"){
+		// 		color =  "orange";
+		// 	}
+		// 	else if (item == "Cittadinanza e costituzione"){
+		// 		color =  "blue";
+		// 	}
+		// 	else if (item == "Storia dell'arte"){
+		// 		color =  "yellow";
+		// 	}
+		// 	else {
+		// 		color = "gray";
+		// 	}
+		// 	return color;
+		// }
+
 		d3.tsv("../assets/data/articles.tsv", function (error, data) {
 			if (error) throw error;
-			// console.log(data)
 
 			let tab = "&#09;";
 			let br = ""
-			let head = "article" + "," + "average_daily_visit" + "," + "year" + "," + "size" + "<br/>"; 
+			let head = "article,subject,average_daily_visit,incipit_size,size" + "<br/>"; 
 			let dataset = [];
 			dataset.push(head)
 
-			let filter = 1000; // 2000;
+			let filter = 1001; // 2000;
 			let total = 0;
 			let filtered_data = [];
+			let subjects = [];
+			let art = []
+			let duplicates = [];
 			data.forEach(function (d) {
 				if (d.average_daily_visit > filter){
 					d.average_daily_visit = +d.average_daily_visit
-					d.year = +d.year
+					d.incipit_size = +d.incipit_size
+					d.incipit_on_size = +d.incipit_on_size
 					d.size = +d.size
+					d.year = +d.year
+					d.subject = d.subject
 
 					total += 1
 					filtered_data.push(d)
 
-					let output = d.article + "," + d.average_daily_visit + "," + d.year + "," + d.size + "<br/>"; 
+					if (subjects.includes(d.subject)) {}
+					else {subjects.push(d.subject)}
+
+					if (art.includes(d.article)) {
+						duplicates.push(d.article)
+					}
+					else {
+						art.push(d.article)
+					}
+
+					let output = d.article + "," + d.subject + "," + d.average_daily_visit + "," + d.incipit_size + "," + d.size + "," + d.year + "<br/>"; 
 					dataset.push(output)
 				}
 			})
 
-			filtered_data.sort(function(a, b) { 
-				return compareStrings(a.article, b.article);
-			})
-			console.log(filtered_data)
+			let test_a = {article:'A_9000',subject:'Biologia', average_daily_visit:9000, incipit_size:50000, size:25000, year:2}; // JSON.stringify(
+			let test_b = {article:'B_0',subject:'Biologia', average_daily_visit:0, incipit_size:70000, size:35000, year:0}; // JSON.stringify(
+			filtered_data.push(test_a);
+			filtered_data.push(test_b);
+
+			filtered_data.sort(function (a, b) { 
+	            var af = a.subject; 
+	            var bf = b.subject; 
+	            var as = a.article; 
+	            var bs = b.article; 
+	              
+	            if(af == bf) { 
+	                return (as < bs) ? -1 : (as > bs) ? 1 : 0; 
+	            } else { 
+	                return (af < bf) ? -1 : 1; 
+	            } 
+	        }); 
+
+			// console.log(filtered_data)
+			console.log("article: " + total)
+			console.log(subjects)
+			// console.log(filtered_data[118])
+			// console.log(filtered_data[117])
+
+			if (duplicates === undefined || duplicates.length > 0) {
+    			console.log(duplicates + " duplicates")
+			}
+			else {
+				console.log("no duplicates")
+			}
+
 
 			$("#dv1_dataset").append(dataset)
 
@@ -63,16 +132,18 @@ function dv1() {
 				return d.average_daily_visit
 			})
 			let r_max = d3.max(filtered_data, function(d) { 
-				return d.size
+				return Math.sqrt(d.size/3.14)
 			})
 
+			let color = d3.scaleOrdinal(d3.schemeCategory10);
+
 			let y = d3.scaleLinear()
-				.range([height-300,0])
-				.domain([y_min,y_max])
+				.domain([0,y_max]) 
+				.range([height,0])
 
 			let x = d3.scaleLinear()
-				.range([0,width])
 				.domain([0,total])
+				.range([0,width])
 
 			let r = d3.scaleLinear()
 				.range([0, 20])
@@ -96,20 +167,37 @@ function dv1() {
 				.attr("cx",0)
 				.attr("cy",0)
 				.attr("r", function(d,i){
-					return r(d.size)
+					return r(Math.sqrt(d.size/3.14)) 
 				})
-				.attr("fill","blue")
+				.attr("fill", function(d,i){
+					return color(d.subject)
+				})
+				.attr("opacity",0.5)
+
+			let incipit = articles.append("circle")
+				.attr("cx",0)
+				
+				.attr("r", function(d,i){
+					return r(Math.sqrt(d.incipit_size/3.14))
+				})
+				.attr("fill", function(d,i){
+					return color(d.subject)
+				})
 				.attr("opacity",0.5)
 
 			let label = articles.append("text")
 				.text(function(d,i){
-					return d.article + " " + d.average_daily_visit
+					return no_underscore(d.article) // + " " + d.year //+ " " + d.average_daily_visit
 				})
 				.attr("x",0)
-				.attr("y",-10)
+				.attr("y",-5)
 				.attr("text-anchor","middle")
-				.attr("fill","red")
-				.attr("font-size","0.7em")
+				.attr("fill","black")
+				.attr("font-size","0.6em")
+
+			// let yAxis = plot.append("g")
+			// 	.attr("transform", "translate(0,0)")
+			// 	.call(d3.axisLeft(y));
 		})
 	}
 	render();

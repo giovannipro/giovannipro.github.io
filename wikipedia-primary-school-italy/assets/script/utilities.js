@@ -7,3 +7,8 @@ function compareStrings(a, b) {
 function compareValues(a, b) {
 	return b - a 
 }
+
+function no_underscore(item){
+	let new_item = item.replaceAll("_"," ")
+	return new_item
+}

@@ -404,10 +404,8 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 403	Cittadinanza e costituzione	Medie	2.4	Secondo anno		1	Provincia (Italia)	507730	283	232	74979	78	6	1739	2.32	0	0	0	2005-09-05	69606
 404	Cittadinanza e costituzione	Medie		Secondo anno		1	Regione (Italia)	1262220	702	568	67799	31	3	1482	2.19	0	0	0	2006-05-12	74120
 405	Cittadinanza e costituzione	Medie	1	Secondo anno		1	Consiglio comunale giovani	11853	7	10	4909	5	0	2428	49.46	0	0	0	2007-09-27	1945
-406	Cittadinanza e costituzione	Medie	-	Secondo anno		1	Costituzione della Repubblica Italiana	3450430	1920	2088	147522	135	25	1402	0.95	0	0	0	2003-04-22	93022
 407	Cittadinanza e costituzione	Medie	-	Secondo anno		1	Integrazione europea	49071	27	37	7057	6	1	333	4.72	1	0	0	2012-10-31	1120
 408	Cittadinanza e costituzione	Medie	-	Secondo anno		1	Costituzione europea	241415	134	139	65133	51	38	1162	1.78	0	0	0	2004-10-29	15431
-409	Cittadinanza e costituzione	Medie	2	Secondo anno		1	Istituzioni dell'Unione europea	13694	8	4	39986	51	10	620	1.55	0	0	0	2020-02-24	890
 410	Cittadinanza e costituzione	Medie	2	Secondo anno		1	Euro	1709962	952	955	67466	98	40	4326	6.41	1	0	0	2003-06-28	97056
 411	Cittadinanza e costituzione	Medie		Secondo anno		1	Unione economica e monetaria dell'Unione europea	168294	94	95	2630	1	0	385	14.64	1	0	0	2003-01-21	7022
 412	Cittadinanza e costituzione	Medie	2	Secondo anno		1	Salute	274507	153	156	15010	13	2	617	4.11	0	0	0	2003-03-11	5367
@@ -418,14 +416,11 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 417	Cittadinanza e costituzione	Medie		Terzo anno		1	Separazione dei poteri	470604	262	252	30595	12	6	963	3.15	0	0	0	2005-07-11	8285
 418	Cittadinanza e costituzione	Medie	1	Terzo anno		1	Parlamento della Repubblica Italiana	1446253	805	973	53530	29	8	1396	2.61	1	0	0	2004-03-18	20594
 419	Cittadinanza e costituzione	Medie	-	Terzo anno		1	Consiglio dei ministri della Repubblica Italiana	315193	175	285	17327	3	60	419	2.42	0	0	0	2005-12-30	2198
-420	Cittadinanza e costituzione	Medie	1	Terzo anno		1	Presidente del Consiglio dei ministri della Repubblica Italiana	2071502	1153	974	14757	9	4	2702	18.31	1	0	0	2004-04-16	3255
-421	Cittadinanza e costituzione	Medie	1	Terzo anno		1	Presidente della Repubblica Italiana	2567566	1429	1496	40053	22	19	1427	3.56	0	0	0	2005-04-24	23181
 422	Cittadinanza e costituzione	Medie	-	Terzo anno		1	Corte costituzionale (Italia)	4809	3	0	89763	53	3	1567	1.75	1	0	0	2008-02-05	30789
 423	Cittadinanza e costituzione	Medie	-	Terzo anno		1	Diritto del lavoro in Italia	74589	42	43	12345	1	0	114	0.92	0	0	0	2014-12-20	134
 424	Cittadinanza e costituzione	Medie	2	Terzo anno		1	Diritto sindacale	42500	24	19	8601	0	0	271	3.15	0	0	0	2005-03-11	99
 425	Cittadinanza e costituzione	Medie		Terzo anno		1	Pace	204710	114	107	64230	20	20	3313	5.16	3	11	4	2003-03-19	22000
 426	Cittadinanza e costituzione	Medie	2	Terzo anno		1	Organizzazione internazionale	241472	134	147	21202	2	4	576	2.72	0	0	0	2003-08-21	203
-427	Cittadinanza e costituzione	Medie	2	Terzo anno		1	Organizzazione delle Nazioni Unite	2452581	1365	1437	133511	202	24	5345	4.00	0	0	0	2003-11-05	18086
 428	Cittadinanza e costituzione	Medie	2.1	Terzo anno		1	Organizzazione delle Nazioni Unite per l'educazione, la scienza e la cultura	903988	503	499	13779	14	4	1007	7.31	1	0	0		13397
 429	Cittadinanza e costituzione	Medie	2	Terzo anno		1	Corte internazionale di giustizia	195805	109	127	10267	2	2	615	5.99	0	0	0	2004-12-19	1053
 430	Cittadinanza e costituzione	Medie	2.1	Terzo anno		1	Organizzazione del Trattato dell'Atlantico del Nord	1515165	843	795	42413	18	13	2006	4.73	1	0	0	2004-01-26	11024
@@ -476,7 +471,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 475	Cittadinanza e costituzione	Superiori	2	Storia della Costituzione Italiana		1	Nascita della Repubblica Italiana	1346830	749	793	85754	74	22	3473	4.05	1	0	0	2005-06-02	125360
 476	Cittadinanza e costituzione	Superiori	#N/A	Storia della Costituzione Italiana		1	Assemblea Costituente (Italia)	737291	410	409	31232	35	6	768	2.46	0	0	0	2020-07-20	2260
 477	Cittadinanza e costituzione	Superiori	2	Storia della Costituzione Italiana		1	Nascita della Repubblica Italiana	1346830	749	793	85754	74	22	3473	4.05	1	0	0	2005-06-02	125360
-478	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Costituzione della Repubblica Italiana	3450430	1920	2088	147522	135	25	1402	0.95	0	0	0	2003-04-22	93022
 479	Cittadinanza e costituzione	Superiori		La Costituzione e l'ordinamento italiano		1	Sistema politico della Repubblica Italiana	1073979	598	772	48771	10	107	744	1.53	1	0	0	2006-11-07	15015
 480	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Diritti inviolabili	92754	52	94	10146	1	0	838	8.26	1	0	0	2011-11-04	2270
 481	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Doveri inderogabili	30603	17	20	999	4	0	686	68.67	1	0	0	2011-01-22	57
@@ -492,9 +486,7 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 491	Cittadinanza e costituzione	Superiori	1	La Costituzione e l'ordinamento italiano		1	Parlamento della Repubblica Italiana	1446253	805	973	53530	29	8	1396	2.61	1	0	0	2004-03-18	20594
 492	Cittadinanza e costituzione	Superiori	2	La Costituzione e l'ordinamento italiano		0	Procedimento legislativo (Italia)	0	0	0	0	0	0	0	#DIV/0!	0	0	0	2007-06-27	0
 493	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Corte costituzionale della Repubblica Italiana	922000	513	549	41	0	0	38	92.68	0	0	0	2020-05-24	0
-494	Cittadinanza e costituzione	Superiori	2	La Costituzione e l'ordinamento italiano		1	Presidente della Repubblica Italiana	2567566	1429	1496	40053	22	19	1427	3.56	0	0	0	2005-04-24	23181
 495	Cittadinanza e costituzione	Superiori	2.4	La Costituzione e l'ordinamento italiano		1	Governo della Repubblica Italiana	1053323	586	779	18747	1	2	892	4.76	0	0	0	2005-05-19	9829
-496	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Presidente del Consiglio dei ministri della Repubblica Italiana	2071502	1153	974	14757	9	4	2702	18.31	1	0	0	2004-04-16	3255
 497	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Ordinamento giudiziario in Italia	118862	66	61	42867	9	0	448	1.05	0	0	0	2005-09-19	3988
 498	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Magistratura italiana	388347	216	218	43895	30	3	432	0.98	0	0	0	2005-10-26	32352
 499	Cittadinanza e costituzione	Superiori		La Costituzione e l'ordinamento italiano		1	Pubblica amministrazione italiana	316711	176	194	74301	62	0	251	0.34	0	1	1	2005-12-20	4947
@@ -519,7 +511,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 518	Cittadinanza e costituzione	Superiori	0.4	Lavoro nella costituzione		1	Offerta di lavoro	47816	27	29	5354	0	3	378	7.06	0	0	0	2007-09-07	107
 519	Cittadinanza e costituzione	Superiori	0.4	Lavoro nella costituzione		1	Mercato del lavoro	90178	50	50	8144	0	0	296	3.63	0	0	0	2006-07-01	1284
 520	Cittadinanza e costituzione	Superiori	2	Comunità internazionale		1	Storia dell'integrazione europea	85439	48	40	70439	2	8	159	0.23	1	0	0	2005-07-15	10253
-521	Cittadinanza e costituzione	Superiori		Comunità internazionale		1	Unione Europea	27852	15	16	72	0	0	65	90.28	0	0	0	2008-12-15	0
 522	Cittadinanza e costituzione	Superiori	2	Comunità internazionale		1	Istituzioni dell'Unione europea	13694	8	4	39986	51	10	620	1.55	0	0	0	2020-02-24	890
 523	Cittadinanza e costituzione	Superiori	2	Comunità internazionale		1	Parlamento europeo	1330588	740	1165	110233	127	12	4513	4.09	0	1	1	2004-04-20	8662
 524	Cittadinanza e costituzione	Superiori	-	Comunità internazionale		1	Commissione europea	722037	402	548	33514	23	33	1031	3.08	0	0	0	2004-04-20	5120
@@ -530,7 +521,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 529	Cittadinanza e costituzione	Superiori		Comunità internazionale		1	Unione economica e monetaria dell'Unione europea	168294	94	95	24782	21	0	967	3.90	1	0	0	2003-01-21	7022
 530	Cittadinanza e costituzione	Superiori	-	Comunità internazionale		1	Cittadinanza dell'Unione europea	85360	48	50	3712	0	1	622	16.76	0	0	0	2006-04-18	1369
 531	Cittadinanza e costituzione	Superiori	-	Comunità internazionale		1	Diritto d'asilo nell'Unione europea	15958	9	9	8166	9	0	1181	14.46	0	0	0	2010-12-19	2374
-532	Cittadinanza e costituzione	Superiori	2	Organizzazioni internazionali		1	Organizzazione delle Nazioni Unite	2452581	1365	1437	133511	202	24	5345	4.00	0	0	0	2003-11-05	18086
 533	Cittadinanza e costituzione	Superiori	#N/A	Organizzazioni internazionali		1	Assemblea generale delle Nazioni Unite	170562	95	122	32143	0	2	737	2.29	0	0	0	2004-12-06	1428
 534	Cittadinanza e costituzione	Superiori	-	Organizzazioni internazionali		1	Consiglio di sicurezza delle Nazioni Unite	368913	205	179	16145	3	1	2872	17.79	1	2	0	2004-12-08	5371
 535	Cittadinanza e costituzione	Superiori	1	Organizzazioni internazionali		1	Segretariato delle Nazioni Unite	20867	12	12	2090	0	0	1326	63.44	1	0	0	2005-09-08	57
@@ -663,14 +653,11 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 663	Diritto e Economia	Superiori		Le istituzioni locali, europee e internazionali		1	Regionalismo (Italia)	44670	25	32	43475	30	1	1235	2.84	0	0	0	2005-12-21	3672
 664	Diritto e Economia	Superiori	-	Le istituzioni locali, europee e internazionali		1	Ente territoriale	140653	78	76	6008	0	0	696	11.58	1	0	0	2007-12-17	49
 665	Diritto e Economia	Superiori		Le istituzioni locali, europee e internazionali		1	Integrazione europea	49071	27	37	7057	6	1	333	4.72	1	0	0	2012-10-31	1120
-666	Diritto e Economia	Superiori		Le istituzioni locali, europee e internazionali		1	Unione europea	5322487	2962	4176	247369	339	112	4019	1.62	0	1	1	2003-09-05	90642
 667	Diritto e Economia	Superiori	2.3	Le istituzioni locali, europee e internazionali		1	Costituzione europea	241415	134	139	65133	51	38	1162	1.78	0	0	0	2004-10-29	15431
 668	Diritto e Economia	Superiori	-	Le istituzioni locali, europee e internazionali		1	Fonti del diritto dell'Unione europea	110127	61	99	29341	0	0	366	1.25	0	0	0	2006-12-21	49
 669	Diritto e Economia	Superiori		Le istituzioni locali, europee e internazionali		1	Simboli europei	48180	27	23	10281	4	1	1128	10.97	0	0	0	2004-04-10	2223
 670	Diritto e Economia	Superiori	-	Le istituzioni locali, europee e internazionali		1	Carta dei diritti fondamentali dell'Unione europea	416309	232	291	10569	9	0	1272	12.04	0	0	0	2006-11-08	7227
-671	Diritto e Economia	Superiori		Le istituzioni locali, europee e internazionali		1	Unione europea	5322487	2962	4176	247369	339	112	4019	1.62	0	1	1	2003-09-05	90642
 672	Diritto e Economia	Superiori	-	Le istituzioni locali, europee e internazionali		1	Diritto internazionale	283627	158	147	39830	8	1	1581	3.97	1	0	0	2003-08-19	16402
-673	Diritto e Economia	Superiori	-	Le istituzioni locali, europee e internazionali		1	Organizzazione delle Nazioni Unite	2452581	1365	1437	133511	202	24	5345	4.00	0	0	0	2003-11-05	18086
 674	Diritto e Economia	Superiori	2.5	Le istituzioni locali, europee e internazionali		1	Diritto internazionale	283627	158	147	39830	8	1	1581	3.97	1	0	0	2003-08-19	16402
 675	Diritto e Economia	Superiori	2	Le istituzioni locali, europee e internazionali		1	Organizzazione internazionale	241472	134	147	21202	2	4	576	2.72	0	0	0	2003-08-21	203
 676	Diritto e Economia	Superiori	-	Le istituzioni locali, europee e internazionali		1	NATO	289528	161	156	63	0	0	60	95.24	0	0	0	2011-12-12	0
@@ -865,7 +852,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 865	Filosofia	Superiori		Tra cinquecente e seicento		1	Giordano Bruno	1583393	881	795	130766	98	31	565	0.43	0	0	0	2004-03-11	48922
 866	Filosofia	Superiori		Tra cinquecente e seicento		1	Tommaso Campanella	289297	161	152	49028	26	8	2	0.00	0	0	0	2005-03-01	9148
 867	Filosofia	Superiori	-	Tra cinquecente e seicento		1	Francesco Bacone	395015	220	209	30162	14	6	228	0.76	0	0	0	2004-04-04	10495
-868	Filosofia	Superiori	2.3	Tra cinquecente e seicento		1	Galileo Galilei	2933840	1633	1497	181138	211	37	8196	4.52	0	0	0	matching	290667
 869	Filosofia	Superiori	-	Tra cinquecente e seicento		1	Cartesio	944031	525	489	94389	105	17	394	0.42	0	0	0	2004-03-29	15416
 870	Filosofia	Superiori	2	Tra cinquecente e seicento		1	Res cogitans e res extensa	132342	74	77	3091	2	0	607	19.64	0	0	0	2006-01-19	1358
 871	Filosofia	Superiori	2	Tra cinquecente e seicento		1	Rivoluzione copernicana	141896	79	76	3887	1	0	544	14.00	0	0	0	2007-01-19	120
@@ -1073,272 +1059,270 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1073	Fisica	Superiori	2.3	Grandezze e caratteristiche di un fluido		1	Equazione di Bernoulli	719226	400	360	11781	5	3	632	5.36	1	0	0	2004-11-17	1729
 1074	Fisica	Superiori		Grandezze e caratteristiche di un fluido		1	Viscosità	780859	435	435	38022	14	8	2247	5.91	0	0	0	2005-05-14	9114
 1075	Fisica	Superiori	1	Grandezze e caratteristiche di un fluido		1	Tensione superficiale	352963	196	181	13536	1	6	1616	11.94	0	0	0	2005-07-15	2913
-1076	Gegrafia		-	Geografia fisica	Cartografia	1	Cartografia	209783	117	97	22273	5	8	1210	5.43	3	0	0	2003-07-27	2382
-1077	Gegrafia		2.1	Geografia fisica	Mappa	1	Mappa	105269	59	53	3383	0	1	654	19.33	1	0	0	2006-03-09	0
-1078	Gegrafia		-	Geografia fisica	Pianta	1	Pianta_(architettura)	60151	33	35	1967	0	1	1617	82.21	1	0	0	2006-11-24	0
-1079	Gegrafia		#N/A	Geografia fisica	Carte geografiche	1	Carta_geografica	526427	293	319	9155	3	4	1012	11.05	0	0	0	2004-07-18	705
-1080	Gegrafia		1	Geografia fisica	Punti cardinali	1	Punto_cardinale	472853	263	237	5721	0	0	331	5.79	1	1	0	2006-08-16	108
-1081	Gegrafia		2.4	Geografia fisica	Coordinate	1	Coordinate_geografiche	1041502	580	560	5326	0	1	451	8.47	0	0	0	2003-05-17	486
-1082	Gegrafia		1	Geografia fisica	Reticolo geografico	0	Reticolo geografico				0	0	0	0	#DIV/0!	0	0	0	2006-06-07	0
-1083	Gegrafia		1	Geografia fisica	Riduzione in scala	1	Scala_di_riduzione	104940	58	128	4370	0	0	423	9.68	0	0	0	2006-06-07	2009-07-16
-1084	Gegrafia		1	Geografia fisica	Terra	1	Terra	1925643	1072	1176	123271	92	17	3915	3.18	0	0	0	2004-07-29	2003-05-12
-1085	Gegrafia		2.5	Geografia fisica	Continente	1	Continente	1054379	587	542	33801	20	9	249	0.74	4	0	0	2004-11-18	2003-09-06
-1086	Gegrafia		1	Geografia fisica	Placche terrestri	1	Tettonica_delle_placche	780786	434	346	31047	0	16	343	1.10	1	0	0	2006-12-17	2005-02-19
-1087	Gegrafia		1	Geografia fisica	Terremoto	1	Terremoto	1296369	721	495	43019	23	12	3023	7.03	0	0	0	2006-12-17	2004-02-25
-1088	Gegrafia		2.4	Geografia fisica	Clima	1	Clima	447525	249	235	27344	1	13	1805	6.60	0	0	0	2003-02-24	2005-06-11
-1089	Gegrafia		1.3	Geografia fisica	regioni climatiche	1	Fascia_climatica	104775	58	57	3899	0	2	575	14.75	0	0	0	2004-02-12	2008-03-27
-1090	Gegrafia		2.1	Geografia fisica	fasce polari	1	Regioni_polari	68449	38	36	2130	0	1	471	22.11	0	0	0	2014-02-06	2006-10-30
-1091	Gegrafia			Geografia fisica	fasce temperate	1	Zona_temperata	278256	155	145	11947	1	2	1154	9.66	1	0	0	2004-07-29	2005-05-29
-1092	Gegrafia			Geografia fisica	fascia intertropicale	1	Zona_di_convergenza_intertropicale	28108	16	17	7340	3	1	2181	29.71	0	0	0	2004-07-29	2008-12-10
-1093	Gegrafia			Geografia fisica	venti	1	Vento	509928	284	265	67357	96	21	836	1.24	2	0	0	2004-07-29	2005-08-24
-1094	Gegrafia			Geografia fisica	precipitazioni	1	Precipitazione_(meteorologia)	130597	73	63	13863	3	3	530	3.82	0	0	0	2003-02-16	2006-09-08
-1095	Gegrafia		#N/A	Geografia fisica	Biomi	1	Bioma	306763	171	171	20945	17	5	1618	7.72	0	0	0	2007-11-07	2004-10-16
-1096	Gegrafia			Geografia fisica	Tundra	1	Tundra	575232	320	299	6446	2	5	966	14.99	0	0	0	2004-07-29	2004-11-09
-1097	Gegrafia			Geografia fisica	Taiga	1	Taiga	440938	245	231	11222	4	4	1148	10.23	1	0	0	2006-06-07	2004-10-22
-1098	Gegrafia			Geografia fisica	Prateria	1	Prateria	164858	92	85	5057	0	1	948	18.75	0	0	0	2004-06-02	2006-12-22
-1099	Gegrafia		1	Geografia fisica	Steppa	1	Steppa	286226	159	139	3749	0	2	552	14.72	0	0	0	2006-06-07	2006-11-28
-1100	Gegrafia		2.3	Geografia fisica	Macchia mediterranea	1	Macchia_mediterranea	621866	346	340	11432	0	34	376	3.29	0	0	0	2004-07-30	2005-12-14
-1101	Gegrafia		2.5	Geografia fisica	Foresta mediterranea	1	Foresta_mediterranea_sempreverde	53100	30	25	14287	0	28	257	1.80	0	1	0	2007-05-02	2006-08-31
-1102	Gegrafia		2.1	Geografia fisica	Foresta mediterranea	1	Foresta_mediterranea_decidua	14140	8	7	5259	0	17	532	10.12	0	0	0	2005-08-24	2006-09-11
-1103	Gegrafia		2.3	Geografia fisica	Brughiera	1	Brughiera	237233	132	115	6832	0	3	757	11.08	1	0	0	2007-02-09	2007-02-09
-1104	Gegrafia		0	Geografia fisica	Latifoglie	1	Latifoglie	170818	95	89	1202	0	1	925	76.96	1	0	0	2004-07-30	2007-10-28
-1105	Gegrafia		2.5	Geografia fisica	Spazio naturale	1	Ambiente_(biologia)	212607	118	146	46408	21	22	1931	4.16	0	0	0	2007-11-07	2007-11-07
-1106	Gegrafia		1	Geografia fisica	Paesaggio	1	Paesaggio	162193	90	70	34296	3	11	1204	3.51	3	0	0	2004-06-02	2005-04-19
-1107	Gegrafia		1	Geografia fisica	Montagna	1	Montagna	530484	295	275	25327	13	10	3283	12.96	6	0	0	2004-07-30	2004-04-04
-1108	Gegrafia			Geografia fisica	Collina	1	Collina	417489	232	213	13583	5	7	1308	9.63	1	0	0	2005-07-03	2005-07-03
-1109	Gegrafia		1	Geografia fisica	Pianura	1	Pianura	215727	120	105	3060	3	2	631	20.62	1	0	0	2006-01-03	2006-01-03
-1110	Gegrafia			Geografia fisica	Oceano	1	Oceano	517644	288	236	27138	9	0	303	1.12	1	0	1	2007-03-12	2004-11-15
-1111	Gegrafia		2.1	Geografia fisica	Mare	1	Mare	525211	292	243	8753	1	7	668	7.63	0	0	0	2007-03-12	2004-07-30
-1112	Gegrafia		2.3	Geografia fisica	Fiume	1	Fiume	627076	349	288	11839	2	8	677	5.72	2	0	0	2004-03-06	2006-11-21
-1113	Gegrafia		1.1	Geografia fisica	Lago	1	Lago	409706	228	209	13427	4	8	936	6.97	1	0	0	2004-11-09	2004-07-14
-1114	Gegrafia		2	Geografia fisica	Palude	1	Palude	135829	76	77	3039	0	2	278	9.15	0	0	0	2005-10-31	2009-06-13
-1115	Gegrafia			Geografia fisica	Vulcano	1	Vulcano	1117306	622	590	38274	7	10	2117	5.53	0	1	0	2006-03-23	2003-05-25
-1116	Gegrafia		2.1	Geografia fisica	Flora	1	Flora	147124	82	68	2523	0	1	1573	62.35	0	0	0	2006-11-22	2005-11-23
-1117	Gegrafia		2.1	Geografia fisica	Fauna	1	Fauna	152537	85	72	3183	0	1	271	8.51	0	0	0	2006-11-22	2003-09-17
-1118	Gegrafia		2.1	Geografia fisica	Spazio antropico	1	Geografia_antropica	91524	51	43	4008	0	0	915	22.83	1	0	0	2006-11-22	2006-09-19
-1119	Gegrafia		2.4	Geografia fisica	Città	1	Città	575805	320	339	74600	5	32	823	1.10	0	0	0	2003-12-04	2004-10-19
-1120	Gegrafia			Geografia fisica	Evoluzione della città	1	Storia_dell'urbanistica	59457	33	24	32666	19	25	579	1.77	0	0	0	2006-06-07	2011-01-29
-1121	Gegrafia		2.4	Geografia fisica	Conurbazioni	1	Conurbazione	142306	79	68	7558	9	0	741	9.80	0	0	0	2005-07-03	2006-01-29
-1122	Gegrafia		1	Geografia fisica	Megalopoli	1	Megalopoli	229109	127	115	6548	1	0	532	8.12	1	1	0	2003-10-30	2006-02-02
-1123	Gegrafia		2	Geografia fisica	Fusi orari	1	Fuso_orario	1411245	785	731	23549	7	3	1496	6.35	0	0	0	2007-01-14	2004-02-15
-1124	Gegrafia			Geografia politica ed economica	Stato	1	Stato	849127	473	475	17723	14	0	284	1.60	1	2	0	2014-02-06	2004-09-09
-1125	Gegrafia			Geografia politica ed economica	Nazione	1	Nazione	313857	175	172	27197	7	0	2552	9.38	0	2	0	2004-05-25	2004-09-09
-1126	Gegrafia		2	Geografia politica ed economica	Popolo	1	Popolo	114414	64	64	7418	12	1	1121	15.11	0	0	0	2014-02-06	2005-01-29
-1127	Gegrafia			Geografia politica ed economica	Territorio	1	Territorio_(diritto)	38672	22	22	1817	0	0	1419	78.10	3	0	0	2018-12-30	2013-01-06
-1128	Gegrafia		2	Geografia politica ed economica	Sovranità	1	Sovranità	233431	130	141	14753	14	6	846	5.73	0	0	0	2004-07-30	2009-05-23
-1129	Gegrafia		2	Geografia politica ed economica	Stati del mondo	1	Stati_del_mondo	1448856	806	738	30929	7	3	539	1.74	0	0	0	2004-07-30	2003-09-22
-1130	Gegrafia			Geografia politica ed economica	Organizzazione delle Nazioni Unite	1	Organizzazione_delle_Nazioni_Unite	2452581	1365	1437	133511	202	24	5345	4.00	0	0	0	2017-11-06	2003-11-05
-1131	Gegrafia			Geografia politica ed economica	Popolamento	1	Popolazione	528123	294	277	26651	0	3	624	2.34	0	0	0	2005-12-21	2004-03-10
-1132	Gegrafia			Geografia politica ed economica	Popolamento	1	Sovrappopolazione	59291	33	34	4940	2	0	267	5.40	0	0	0	2004-07-30	2006-03-15
-1133	Gegrafia		#N/A	Geografia politica ed economica	Acqua potabile	1	Acqua_potabile	175823	98	79	21049	15	3	588	2.79	1	0	0	2007-08-30	2007-08-30
-1134	Gegrafia		2	Geografia politica ed economica	PIL pro capite	1	Reddito_pro_capite	492405	274	265	4200	0	1	303	7.21	0	0	0	2006-01-22	2007-01-20
-1135	Gegrafia		2	Geografia politica ed economica	speranza di vita	1	Speranza_di_vita	195039	109	99	1958	0	0	211	10.78	1	0	0	2004-07-30	2005-12-26
-1136	Gegrafia		#N/A	Geografia politica ed economica	analfabetismo	1	Analfabetismo	197430	110	95	18057	20	1	1156	6.40	0	0	0	2006-03-21	2005-11-14
-1137	Gegrafia		2	Geografia politica ed economica	Indice sviluppo umano	1	Indice_di_sviluppo_umano	605139	337	320	11124	4	2	2136	19.20	0	0	0	2008-04-09	2004-10-28
-1138	Gegrafia		0	Geografia politica ed economica	Globalizzazione	1	Globalizzazione	1402697	781	747	96322	103	5	2199	2.28	0	0	0	2004-09-02	2004-07-10
-1139	Gegrafia		0	Geografia politica ed economica	Squilibri nello sviluppo	1	Disuguaglianza_economica	122725	68	73	57173	52	4	1222	2.14	0	4	0	2003-12-04	2012-07-07
-1140	Gegrafia		2.1	Geografia politica ed economica	inquinamento	1	Inquinamento	890429	496	645	51693	20	3	426	0.82	0	0	0	2008-01-20	2005-03-21
-1141	Gegrafia		#N/A	Geografia politica ed economica	Cambiamento climatico	1	Cambiamento_climatico	582991	324	743	43188	16	14	661	1.53	1	3	0	2007-01-02	2005-10-27
-1142	Gegrafia			Geografia politica ed economica	Settore primario	1	Settore_primario	350738	195	158	2020	2	1	975	48.27	1	0	0	2002-07-20	2007-01-29
-1143	Gegrafia		#N/A	Geografia politica ed economica	Agricoltura	1	Agricoltura	378615	211	180	29150	6	9	1393	4.78	0	0	0	2002-08-07	2002-08-07
-1144	Gegrafia		#N/A	Geografia politica ed economica	Allevamento	1	Allevamento	162568	90	86	4716	0	1	493	10.45	1	0	0	2004-07-01	2004-07-01
-1145	Gegrafia		0	Geografia politica ed economica	Pesca	1	Pesca_(attività)	104643	58	47	2450	0	4	608	24.82	1	1	0	2007-10-15	2006-09-28
-1146	Gegrafia			Geografia politica ed economica	Saline	1	Salina	128486	72	72	7128	1	6	556	7.80	0	0	0	2003-02-23	2006-03-01
-1147	Gegrafia			Geografia politica ed economica	sfruttamento del bosco	1	Selvicoltura	206182	115	86	21535	1	5	805	3.74	1	0	0	2003-11-14	2005-03-19
-1148	Gegrafia		2.1	Geografia politica ed economica	attività estrattive	1	Industria_mineraria	63076	35	37	8354	1	0	1075	12.87	1	0	0	2007-01-17	2005-11-20
-1149	Gegrafia			Geografia politica ed economica	Settore secondario	1	Settore_secondario	325433	181	160	3290	0	1	679	20.64	1	0	0	2005-09-12	2007-01-29
-1150	Gegrafia		2	Geografia politica ed economica	industria	1	Industria	203044	113	98	14551	11	3	655	4.50	0	0	0	2007-01-17	2004-01-15
-1151	Gegrafia		-	Geografia politica ed economica	edilizia	1	Edilizia	195783	109	97	14717	0	1	195	1.32	0	0	0	2012-07-07	2006-01-28
-1152	Gegrafia		2.4	Geografia politica ed economica	artigianato	1	Artigianato	138339	77	65	21009	1	5	1516	7.22	0	0	0	2004-07-01	2006-06-25
-1153	Gegrafia		2	Geografia politica ed economica	Settore terziario	1	Settore_terziario	686475	382	351	5325	1	1	728	13.67	0	0	0	2002-07-20	2006-04-25
-1154	Gegrafia		2.3	Geografia politica ed economica	Commercio	1	Commercio	137910	77	64	5745	0	2	852	14.83	0	0	0	2005-05-24	2004-07-19
-1155	Gegrafia			Geografia politica ed economica	trasporti	1	Trasporto	125066	70	84	30149	1	13	459	1.52	1	0	0	2004-07-29	2002-09-29
-1156	Gegrafia			Geografia politica ed economica	telecomunicazioni	1	Telecomunicazione	194927	108	108	58648	31	12	2272	3.87	0	1	0	2004-07-29	2002-12-28
-1157	Gegrafia			Geografia politica ed economica	turismo	1	Turismo	417554	232	223	38137	14	13	814	2.13	2	0	0	2004-07-29	2002-03-18
-1158	Gegrafia			Geografia politica ed economica	servizi per cittadini e imprese	1	Servizio	139932	78	62	3100	1	0	611	19.71	0	0	0	2006-06-07	2005-09-15
-1159	Gegrafia		2.5	Penisola italiana	Italia	1	Italia	14359579	7991	7890	199878	273	77	4609	2.31	0	0	0	2009-01-11	2003-10-05
-1160	Gegrafia		2.1	Penisola italiana	Geografia	1	Geografia_dell'Italia	601879	335	271	35655	29	20	1345	3.77	0	0	0	2004-04-05	2005-11-05
-1161	Gegrafia		2.4	Penisola italiana	Le Alpi	1	Alpi	849977	473	498	59880	36	41	6333	10.58	3	0	0	2003-04-28	2003-04-28
-1162	Gegrafia		#N/A	Penisola italiana	Gli Appennini	1	Appennini	679394	378	344	65180	32	23	6239	9.57	0	0	0	2004-05-09	2004-05-09
-1163	Gegrafia			Penisola italiana	La Pianura padana	1	Pianura_Padana	600458	334	369	47406	51	20	1050	2.21	0	0	0	2003-09-06	2005-07-12
-1164	Gegrafia			Penisola italiana	I mari italiani	0	Mari italiani				0	0	0	0	#DIV/0!	0	0	0	2004-04-24	0
-1165	Gegrafia			Penisola italiana	le isole	1	Isole_dell'Italia	394346	219	217	21848	8	46	1148	5.25	0	0	0	2003-08-27	4740
-1166	Gegrafia		2	Penisola italiana	Economia	1	Economia_d'Italia	501844	279	271	110836	93	8	1821	1.64	2	7	0	2006-07-25	87754
-1167	Gegrafia			Penisola italiana	Patrimoni UNESCO in Italia	1	Patrimoni_dell'umanità_d'Italia	117790	66	149	65999	24	130	531	0.80	0	0	0	2014-01-03	6672
-1168	Gegrafia			Penisola italiana	Le regioni italiane	1	Regioni_d'Italia	1932123	1075	1326	33223	8	158	1145	3.45	0	0	0	2015-06-08	1237
-1169	Gegrafia		2.4	Penisola italiana	Abruzzo	1	Abruzzo	1593942	887	892	229871	119	203	3028	1.32	1	0	0	2003-02-27	144656
-1170	Gegrafia		-	Penisola italiana	Basilicata	1	Basilicata	1600012	890	945	91533	54	56	2059	2.25	0	1	0	2003-02-25	71690
-1171	Gegrafia		-	Penisola italiana	Calabria	1	Calabria	1817124	1011	944	113356	50	128	3354	2.96	1	1	0	2003-02-26	45919
-1172	Gegrafia		-	Penisola italiana	Campania	1	Campania	1793651	998	971	214435	135	220	5127	2.39	0	0	0	2003-02-24	74275
-1173	Gegrafia		2	Penisola italiana	Emilia-Romagna	1	Emilia-Romagna	2079916	1157	1166	95047	53	73	3310	3.48	0	1	0	2003-02-26	57496
-1174	Gegrafia		2	Penisola italiana	Friuli-Venezia Giulia	1	Friuli-Venezia_Giulia	1812806	1009	957	121229	56	112	6054	4.99	2	1	0	2003-02-27	170638
-1175	Gegrafia		0.4	Penisola italiana	Lazio	1	Lazio	1664111	926	859	116931	33	114	2650	2.27	1	2	1	2002-11-18	34193
-1176	Gegrafia		0.4	Penisola italiana	Liguria	1	Liguria	1363685	759	696	148650	78	159	5103	3.43	1	3	1	2003-02-24	66178
-1177	Gegrafia		0.4	Penisola italiana	Lombardia	1	Lombardia	2969928	1653	1479	233776	285	200	2722	1.16	0	0	0	2003-02-23	73208
-1178	Gegrafia		-	Penisola italiana	Marche	1	Marche	1585474	882	792	141725	131	100	9930	7.01	1	0	0	2003-02-27	43992
-1179	Gegrafia		-	Penisola italiana	Molise	1	Molise	1532181	853	734	126117	44	73	3010	2.39	1	5	1	2003-02-27	32551
-1180	Gegrafia			Penisola italiana	Piemonte	1	Piemonte	1985147	1105	1058	100927	57	108	3675	3.64	0	2	1	2003-02-24	47027
-1181	Gegrafia			Penisola italiana	Puglia	1	Puglia	1904401	1060	1032	183859	102	131	3676	2.00	0	3	0	2003-02-23	67372
-1182	Gegrafia		0	Penisola italiana	Sardegna	1	Sardegna	2808217	1563	1568	229813	249	74	4211	1.83	0	0	0	2003-05-19	187260
-1183	Gegrafia			Penisola italiana	Sicilia	1	Sicilia	2902977	1615	1596	241806	112	177	7340	3.04	2	7	1	2003-04-16	184064
-1184	Gegrafia			Penisola italiana	Toscana	1	Toscana	1958779	1090	1087	151998	37	103	4403	2.90	0	0	0	2003-02-26	39931
-1185	Gegrafia			Penisola italiana	Trentino-Alto Adige	1	Trentino-Alto_Adige	1859152	1035	993	114748	69	69	4818	4.20	0	0	0	2003-10-07	134135
-1186	Gegrafia			Penisola italiana	Umbria	1	Umbria	1218114	678	709	44239	16	60	4136	9.35	1	1	0	2003-08-16	86781
-1187	Gegrafia			Penisola italiana	Valle d'Aosta	1	Valle_d'Aosta	1594873	888	872	60742	37	43	5129	8.44	0	0	0	2003-02-27	40136
-1188	Gegrafia			Penisola italiana	Veneto	1	Veneto	2072520	1153	1089	183209	67	169	2576	1.41	2	2	0	2003-02-25	16383
-1189	Gegrafia		2.1	Penisola italiana	Comune	1	Comune_(Italia)	798435	444	513	37233	26	3	844	2.27	1	0	0	2003-10-04	14749
-1190	Gegrafia		1	Penisola italiana	Provincia	1	Provincia_(Italia)	507730	283	232	74979	78	6	1739	2.32	0	0	0	2005-09-05	69606
-1191	Gegrafia		1	Penisola italiana	Regione	1	Regione_(Italia)	1262220	702	568	67799	31	3	1482	2.19	0	0	0	2007-06-24	74120
-1192	Gegrafia		1	Penisola italiana	Regione a statuto speciale	1	Regione_italiana_a_statuto_speciale	1075784	599	553	14657	11	1	656	4.48	0	0	0	2006-06-07	929
-1193	Gegrafia		1	Penisola italiana	San Marino	1	San_Marino	3007400	1674	1750	90965	41	33	3421	3.76	1	0	0	2006-06-07	48284
-1194	Gegrafia		#N/A	Penisola italiana	Città del Vaticano	1	Città_del_Vaticano	1724468	960	979	103524	99	28	5559	5.37	1	0	0	#N/A	121803
-1195	Gegrafia		0	Europa	Europa	1	Europa	3332554	1855	1908	103229	82	26	821	0.80	0	1	0	2004-10-13	46217
-1196	Gegrafia		1	Europa	Geografia fisica d’Europa	1	Geografia_dell'Europa	356407	198	190	6372	3	3	511	8.02	1	0	0	2005-11-22	2086
-1197	Gegrafia		2	Europa	Climi d’Europa	1	Climi in Europa	2383	0	1	2383	0	1	2298	96.43	0	0	0	#N/A	0
-1198	Gegrafia			Europa	Stati d’Europa	1	Stati_dell'Europa	1663733	926	839	31666	3	72	302	0.95	0	0	0	2006-06-07	291
-1199	Gegrafia			Europa	Unione europea	1	Unione_europea	5322487	2962	4176	247369	339	112	4019	1.62	0	1	1	2004-07-29	90642
-1200	Gegrafia		2.5	Europa	Istituzioni UE	1	Istituzioni_dell'Unione_europea	13694	8	4	39986	51	10	620	1.55	0	0	0	2005-11-18	890
-1201	Gegrafia		2.4	Europa	Euro	1	Euro	1709962	952	955	67466	98	40	4326	6.41	1	0	0	2003-04-24	97056
-1202	Gegrafia		2.1	Europa	Convenzione di Schengen	1	Convenzione_di_Schengen	478847	266	195	17725	26	1	975	5.50	0	0	0	2010-12-19	5584
-1203	Gegrafia			Europa	Politiche europee	0	Politiche dell'Unione europea	0	0	0	0	0	0	0	#DIV/0!	0	0	0	2014-02-06	0
-1204	Gegrafia		2.4	Europa	Cittadinanza europea	1	Cittadinanza_dell'Unione_europea	85360	48	50	3712	0	1	622	16.76	0	0	0	#N/A	1369
-1205	Gegrafia		2.1	Europa	Scandinavia e Baltico	1	Paesi_nordici	236813	132	85	6853	0	2	511	7.46	1	1	0	2005-04-12	0
-1206	Gegrafia			Europa	Scandinavia e Baltico	1	Paesi_baltici	87545	49	135	36076	52	42	1794	4.97	0	0	0	2005-04-12	22446
-1207	Gegrafia		2	Europa	Islanda	1	Islanda	2832360	1576	1059	121381	122	35	1454	1.20	0	2	0	2005-07-17	41995
-1208	Gegrafia		0	Europa	Norvegia	1	Norvegia	2150795	1197	1166	51949	21	43	4649	8.95	0	0	0	2005-08-20	10408
-1209	Gegrafia		2.1	Europa	Svezia	1	Svezia	2073783	1154	1024	93716	59	47	5740	6.12	0	0	0	2006-06-07	17506
-1210	Gegrafia		2	Europa	Finlandia	1	Finlandia	1538475	856	888	80318	26	17	5556	6.92	0	0	0	2007-12-03	17696
-1211	Gegrafia		2	Europa	Danimarca	1	Danimarca	1848292	1029	966	66065	29	18	3973	6.01	2	2	2	2004-08-20	10006
-1212	Gegrafia		2.1	Europa	Estonia	1	Estonia	832310	463	436	89557	77	33	4603	5.14	4	2	3	2003-08-16	31205
-1213	Gegrafia		2	Europa	Lettonia	1	Lettonia	798397	444	426	47251	28	14	2149	4.55	0	0	0	2003-08-19	6681
-1214	Gegrafia			Europa	Lituania	1	Lituania	1025689	571	544	74485	50	9	3845	5.16	3	1	0	2009-01-11	10440
-1215	Gegrafia			Europa	Isole britanniche	1	Isole_britanniche	98799	55	95	14698	19	4	907	6.17	0	0	0	2007-04-09	4435
-1216	Gegrafia		2.1	Europa	Regno Unito	1	Regno_Unito	3603163	2005	1792	160216	203	25	7108	4.44	0	1	0	2006-06-07	36472
-1217	Gegrafia		2.4	Europa	Commonwealth	1	Commonwealth_delle_nazioni	922836	514	432	15364	5	4	780	5.08	0	0	0	2005-04-02	1431
-1218	Gegrafia		2	Europa	Irlanda	1	Irlanda	2107393	1173	1068	75255	25	26	4335	5.76	1	0	0	2012-10-31	14103
-1219	Gegrafia		2	Europa	Penisola iberica	1	Penisola_iberica	397612	221	255	23870	3	11	1394	5.84	0	0	0	2007-04-27	5063
-1220	Gegrafia		2.1	Europa	Spagna	1	Spagna	3482546	1938	1742	100389	67	52	5954	5.93	0	0	1	2006-06-07	17572
-1221	Gegrafia		2.4	Europa	Andorra	1	Andorra	938523	522	517	28691	13	13	2564	8.94	0	0	0	2004-04-03	2375
-1222	Gegrafia		2	Europa	Portogallo	1	Portogallo	1897743	1056	1023	64023	16	25	2392	3.74	1	0	0	2004-07-30	8196
-1223	Gegrafia		2	Europa	Gibilterra	1	Gibilterra	931516	518	462	31616	14	14	2032	6.43	0	1	0	2005-09-20	4742
-1224	Gegrafia		2.4	Europa	Francia+Benelux	1	Benelux	218918	122	112	12371	1	10	1472	11.90	0	0	0	2004-04-25	932
-1225	Gegrafia		2.5	Europa	Francia	1	Francia	3846359	2140	2038	157209	94	43	7384	4.70	0	0	0	2009-01-11	32718
-1226	Gegrafia			Europa	Monaco	1	Principato_di_Monaco	1680265	935	1046	77019	26	42	3165	4.11	0	0	0	2007-02-08	33758
-1227	Gegrafia		2.5	Europa	Belgio	1	Belgio	2009435	1118	963	95868	15	40	3480	3.63	1	4	1	2002-12-15	13515
-1228	Gegrafia		-	Europa	Lussemburgo	1	Lussemburgo	1480827	824	799	44345	35	9	3266	7.36	2	1	0	2007-03-14	9075
-1229	Gegrafia		1.2	Europa	Paesi Bassi	1	Paesi_Bassi	2478521	1379	1296	75781	30	17	5086	6.71	0	0	0	2007-04-27	43313
-1230	Gegrafia		2	Europa	Germania	1	Germania	3738171	2080	1970	141869	96	51	5441	3.84	0	0	0	2004-08-13	17224
-1231	Gegrafia		2.3	Europa	Austria	1	Austria	1746498	972	907	57460	28	11	3246	5.65	0	1	0	2003-07-12	10154
-1232	Gegrafia			Europa	Svizzera	1	Svizzera	3430710	1909	1726	248012	188	117	8980	3.62	0	0	0	2005-05-26	77980
-1233	Gegrafia		2.5	Europa	Liechtenstein	1	Liechtenstein	1672394	931	1363	39348	34	8	2506	6.37	0	1	0	2009-03-05	6822
-1234	Gegrafia		-	Europa	Regione centro-orientale	1	Europa_centro-orientale	86308	48	44	1982	2	1	1373	69.27	1	0	0	2003-10-04	118
-1235	Gegrafia		2.1	Europa	Polonia	1	Polonia	1780650	991	1004	86772	32	86	4550	5.24	0	0	0	2005-05-29	70510
-1236	Gegrafia		1	Europa	Rep Ceca	1	Repubblica_Ceca	1330869	741	710	58168	18	18	2818	4.84	1	2	2	2007-05-02	36688
-1237	Gegrafia		1	Europa	Slovacchia	1	Slovacchia	965138	537	532	40596	24	11	4315	10.63	0	2	0	2003-12-03	26992
-1238	Gegrafia			Europa	Ungheria	1	Ungheria	1516449	844	763	48410	12	24	1943	4.01	1	0	0	2003-12-03	17898
-1239	Gegrafia			Europa	Romania	1	Romania	2120601	1180	1120	94566	54	55	1884	1.99	0	1	0	2011-08-11	27665
-1240	Gegrafia		1	Europa	Fiume Reno	1	Reno	867259	483	492	9865	0	3	837	8.48	0	0	0	2004-04-15	4239
-1241	Gegrafia		2	Europa	Regione orientale	1	Europa_orientale	331849	185	210	3923	5	2	628	16.01	0	0	0	2004-11-18	0
-1242	Gegrafia			Europa	Russia	1	Russia	3349084	1864	1674	188896	218	54	7255	3.84	0	0	0	2007-05-02	66876
-1243	Gegrafia		-	Europa	Bielorussia	1	Bielorussia	934633	520	511	45438	19	22	4760	10.48	0	0	0	2004-06-13	20261
-1244	Gegrafia			Europa	Ucraina	1	Ucraina	1551959	864	873	72052	34	44	5418	7.52	0	0	0	2004-07-29	17941
-1245	Gegrafia			Europa	Moldova	1	Moldavia	1374627	765	756	51406	27	15	3653	7.11	1	0	0	2006-06-07	54036
-1246	Gegrafia		-	Europa	Regione mediterranea+balcanica	1	Bacino_del_Mediterraneo	109560	61	57	3099	0	1	358	11.55	1	0	0	2006-06-07	380
-1247	Gegrafia		2	Europa	Regione mediterranea+balcanica	1	Penisola_balcanica	752702	419	454	13406	15	7	792	5.91	0	0	0	2006-06-07	2597
-1248	Gegrafia			Europa	Slovenia	1	Slovenia	1436309	799	768	42312	19	12	2894	6.84	1	0	0	2005-12-31	9770
-1249	Gegrafia		2	Europa	Croazia	1	Croazia	2111496	1175	1000	110722	64	27	2898	2.62	0	0	0	2005-08-27	50540
-1250	Gegrafia		-	Europa	Bosnia Erzegovina	1	Bosnia_ed_Erzegovina	1017660	566	540	50953	13	19	3717	7.29	1	0	0	2005-05-24	32127
-1251	Gegrafia			Europa	Serbia	1	Serbia	1228603	684	649	74434	47	49	2811	3.78	2	1	0	2005-09-05	20529
-1252	Gegrafia		2.5	Europa	Kosovo	1	Kosovo	1510542	841	801	81396	90	27	7867	9.67	0	2	0	2005-03-11	85563
-1253	Gegrafia		2	Europa	Montenegro	1	Montenegro	1272662	708	648	39427	18	10	3831	9.72	0	1	0	2004-03-29	16678
-1254	Gegrafia			Europa	Macedonia del Nord	1	Macedonia_del_Nord	389908	217	779	47032	43	18	6747	14.35	1	3	0	2002-12-01	58540
-1255	Gegrafia		2	Europa	Albania	1	Albania	2085133	1160	1133	124596	95	49	6844	5.49	0	6	0	2003-07-08	18566
-1256	Gegrafia		-	Europa	Bulgaria	1	Bulgaria	1124350	626	588	107583	70	27	4961	4.61	0	0	0	2004-02-16	15149
-1257	Gegrafia		-	Europa	Grecia	1	Grecia	2069058	1151	1054	180304	183	61	4605	2.55	1	0	0		82807
-1258	Gegrafia		-	Europa	Malta	1	Malta	3438637	1914	1803	71116	72	25	3804	5.35	1	1	0	2004-03-29	19437
-1259	Gegrafia		2.4	Europa	Cipro	1	Cipro	1480669	824	865	47899	13	21	3412	7.12	0	0	0	2004-01-24	20219
-1260	Gegrafia			Europa	Turchia	1	Turchia	2163179	1204	1147	85287	71	40	5338	6.26	0	1	0	2005-04-10	46981
-1261	Gegrafia		#N/A	Africa	Africa	1	Africa	1877135	1045	1071	61292	34	19	1163	1.90	0	0	0	ML PUBLIC	10950
-1262	Gegrafia		1	Africa	Geografia fisica	1	Geografia_dell'Africa	277770	155	116	93335	51	37	4213	4.51	0	0	0	2005-07-29	1170
-1263	Gegrafia			Africa	Geografia politica	1	Stati_dell'Africa	629111	350	324	20518	0	73	10820	52.73	0	0	0	2003-06-05	3037
-1264	Gegrafia		-	Africa	Africa mediterranea	1	Nordafrica	206731	115	112	7092	0	7	433	6.11	1	0	0	2005-07-08	0
-1265	Gegrafia		2	Africa	Egitto	1	Egitto	1630841	908	906	71630	26	17	5423	7.57	0	0	1	2006-08-26	24025
-1266	Gegrafia		2	Africa	Marocco	1	Marocco	1788426	995	972	79132	54	40	4958	6.27	0	0	0	2009-01-11	43075
-1267	Gegrafia		#N/A	Africa	Algeria	1	Algeria	819991	456	450	37152	16	18	3484	9.38	0	0	0	2003-08-02	24086
-1268	Gegrafia			Africa	Tunisia	1	Tunisia	841526	468	497	45510	23	14	2836	6.23	0	0	0	2003-06-05	5389
-1269	Gegrafia		-	Africa	Libia	1	Libia	1179866	657	682	63695	42	28	1581	2.48	1	1	1	2003-07-23	45894
-1270	Gegrafia		2	Africa	Sahara	1	Deserto_del_Sahara	583359	325	312	27206	24	10	762	2.80	0	0	0	2006-11-22	8938
-1271	Gegrafia			Africa	Africa del Sahel	1	Sahel	188319	105	100	24533	32	3	789	3.22	0	0	2	2005-02-04	5676
-1272	Gegrafia			Africa	Sudan	1	Sudan	558646	311	364	59968	17	19	5589	9.32	0	0	0	2006-06-07	1813
-1273	Gegrafia			Africa	Sudan del Sud	1	Sudan_del_Sud	336584	187	207	31306	37	9	4061	12.97	0	0	0	2006-06-07	19230
-1274	Gegrafia		2	Africa	Niger	1	Niger	397777	221	207	37012	34	10	2231	6.03	0	0	1	2012-12-13	6134
-1275	Gegrafia		2.1	Africa	Savana africana	1	Savana	391484	218	217	7692	5	2	1008	13.10	0	0	0	2008-01-30	8140
-1276	Gegrafia		#N/A	Africa	Africa occidentale	1	Africa_occidentale	110343	61	58	25724	1	6	985	3.83	2	0	0	2003-08-02	743
-1277	Gegrafia			Africa	Nigeria	1	Nigeria	1250023	696	665	46731	29	9	2999	6.42	0	1	0	2006-12-04	11176
-1278	Gegrafia			Africa	Senegal	1	Senegal	818237	455	423	48743	22	12	5539	11.36	0	0	0	2005-11-13	5004
-1279	Gegrafia		#N/A	Africa	Africa equatoriale	1	Africa_centrale	101303	56	54	36175	30	11	755	2.09	0	0	0	2003-08-02	2920
-1280	Gegrafia			Africa	Repubblica Democratica del Congo	1	Repubblica_Democratica_del_Congo	945848	526	577	48002	26	20	3359	7.00	0	1	0	2005-06-28	5191
-1281	Gegrafia		-	Africa	Foresta pluviale bacino del Congo	1	Foresta_del_Congo	26828	15	25	11422	8	3	1138	9.96	0	0	0	2013-12-23	0
-1282	Gegrafia		#N/A	Africa	Africa orientale	1	Africa_orientale	90139	50	55	28599	31	5	232	0.81	1	0	0	2003-08-02	686
-1283	Gegrafia			Africa	Somalia	1	Somalia	730983	407	379	81086	72	35	5695	7.02	0	0	0	2006-06-07	25481
-1284	Gegrafia			Africa	Kenya	1	Kenya	780367	434	433	27606	14	9	2393	8.67	1	2	0	2004-08-13	4052
-1285	Gegrafia		2.1	Africa	Etiopia	1	Etiopia	1237828	689	660	145757	231	58	3005	2.06	2	0	1	2004-05-04	83872
-1286	Gegrafia			Africa	Tanzania	1	Tanzania	811882	452	439	36722	22	10	3649	9.94	0	3	0	2006-08-18	4368
-1287	Gegrafia		#N/A	Africa	Africa australe	1	Africa_meridionale	29447	16	34	4239	1	3	463	10.92	1	0	0	2003-08-02	0
-1288	Gegrafia			Africa	Sudafrica	1	Sudafrica	1876764	1044	1015	100052	46	41	4422	4.42	1	1	0	2006-06-07	15379
-1289	Gegrafia		0	Africa	Madagascar	1	Madagascar	1242777	692	648	60004	31	20	3015	5.02	0	2	0	2005-09-09	9271
-1290	Gegrafia		#N/A	Asia	Asia	1	Asia	1156828	644	681	17263	4	3	661	3.83	1	0	0	2005-05-24	2654
-1291	Gegrafia		2.5	Asia	Geografia fisica	1	Geografia_dell'Asia	196498	109	101	19820	5	3	291	1.47	0	0	0	2008-01-30	1028
-1292	Gegrafia			Asia	Geografia politica	1	Stati_dell'Asia	395724	220	196	22374	15	115	424	1.90	0	0	0	2006-01-01	1175
-1293	Gegrafia		2	Asia	Medio oriente	1	Medio_Oriente	604141	336	303	14156	3	2	636	4.49	1	0	0	2005-02-05	833
-1294	Gegrafia			Asia	Israele	1	Israele	2704378	1505	1336	149516	163	21	7508	5.02	2	5	0	2006-03-24	72079
-1295	Gegrafia			Asia	ANP	1	Stato_di_Palestina	986873	549	608	142722	175	29	4233	2.97	0	0	0	2006-06-07	30490
-1296	Gegrafia		#N/A	Asia	Arabia Saudita	1	Arabia_Saudita	1343963	748	700	48796	35	14	4040	8.28	0	0	0	2005-05-24	7423
-1297	Gegrafia		0	Asia	Iran	1	Iran	1837105	1022	805	178202	134	70	5531	3.10	0	2	0	2007-03-09	67925
-1298	Gegrafia		1	Asia	Iraq	1	Iraq	892447	497	442	68448	62	6	3704	5.41	0	0	0	2004-12-19	9635
-1299	Gegrafia		2	Asia	Caucaso e Asia centrale	1	Caucaso	508544	283	291	10538	6	19	1917	18.19	1	0	0	2003-11-28	0
-1300	Gegrafia			Asia	Steppa	1	Steppa_eurasiatica	25377	14	27	22749	6	12	574	2.52	0	0	0	2006-06-07	1032
-1301	Gegrafia		#N/A	Asia	Afghanistan	1	Afghanistan	1046341	582	530	56845	25	16	3408	6.00	0	0	0	2004-09-17	10843
-1302	Gegrafia		0	Asia	Kazakhstan	1	Kazakistan	1204871	670	595	55051	20	11	4746	8.62	0	5	0	2007-03-14	37921
-1303	Gegrafia			Asia	Regione indiana	1	Subcontinente_indiano	104342	58	56	7897	0	6	1437	18.20	1	0	0	2006-06-07	0
-1304	Gegrafia		-	Asia	India	1	India	2558187	1424	1350	139273	145	56	6146	4.41	0	0	0	2005-11-18	25402
-1305	Gegrafia		2	Asia	Pakistan	1	Pakistan	1286269	716	732	144786	197	42	7341	5.07	0	1	0	2009-01-11	14877
-1306	Gegrafia			Asia	Sud-est asiatico	1	Sud-est_asiatico	247114	138	138	23941	28	16	773	3.23	1	0	0	2006-06-07	33631
-1307	Gegrafia		2	Asia	Indonesia	1	Indonesia	1227479	683	616	63358	72	30	6493	10.25	0	1	0	2003-07-02	8556
-1308	Gegrafia		2	Asia	Filippine	1	Filippine	1098720	611	560	81483	86	15	6441	7.90	0	1	0	2004-09-04	16794
-1309	Gegrafia		-	Asia	giungla	1	Giungla	58900	33	69	24165	41	20	3304	13.67	0	0	0	2003-10-30	233
-1310	Gegrafia		-	Asia	Estremo oriente	1	Estremo_Oriente	143532	80	74	2997	1	2	827	27.59	2	0	0	2004-07-19	627
-1311	Gegrafia		2.5	Asia	Cina	1	Cina	3548885	1975	1880	206006	242	57	8854	4.30	7	0	1	2011-08-19	103226
-1312	Gegrafia		#N/A	Asia	Corea del Sud	1	Corea_del_Sud	1341328	746	563	60957	51	18	4753	7.80	0	0	1	2007-04-03	14097
-1313	Gegrafia		-	Asia	Corea del Nord	1	Corea_del_Nord	2539362	1413	647	116928	192	24	4207	3.60	2	1	0	2007-04-03	40140
-1314	Gegrafia		1	Asia	Giappone	1	Giappone	3202843	1782	1715	197852	218	57	3839	1.94	0	0	0	2007-02-08	56023
-1315	Gegrafia		2.5	Americhe	Americhe	1	America	1076301	599	510	27236	8	5	7973	29.27	0	0	0	2005-05-24	7934
-1316	Gegrafia			Americhe	Geografia politica	1	Stati_del_Nord_America	162266	90	85	11836	0	46	565	4.77	1	0	0	2006-06-07	0
-1317	Gegrafia			Americhe		1	Stati_dell'America_meridionale	93992	52	68	5649	0	16	267	4.73	1	0	0	2006-06-07	0
-1318	Gegrafia		2.5	Americhe	America settentrionale	1	America_del_Nord	399013	222	229	43007	13	24	3312	7.70	0	0	0	2003-08-02	9934
-1319	Gegrafia		1	Americhe	grandi praterie	1	Grandi_Pianure	93919	52	57	9147	0	2	363	3.97	0	0	0	2008-04-09	0
-1320	Gegrafia		#N/A	Americhe	Canada	1	Canada	2926820	1629	1448	112952	94	48	8341	7.38	0	0	0	2003-02-15	15729
-1321	Gegrafia			Americhe	USA	1	Stati_Uniti_d'America	7579567	4218	3854	194744	149	52	7455	3.83	0	2	0	2006-06-07	136477
-1322	Gegrafia		2.5	Americhe	America centrale	1	America_centrale	346135	193	227	21625	9	20	1007	4.66	2	0	0	2003-01-10	683
-1323	Gegrafia		1	Americhe	Messico	1	Messico	1765804	983	889	91205	46	58	5705	6.26	2	1	0	2005-05-29	31264
-1324	Gegrafia		2.5	Americhe	Cuba	1	Cuba	1731927	964	782	94685	56	30	2200	2.32	2	3	0	2003-11-12	35852
-1325	Gegrafia		#N/A	Americhe	America meridionale	1	America_meridionale	513656	286	417	37076	11	14	3502	9.45	0	0	0	2003-12-17	2908
-1326	Gegrafia		#N/A	Americhe	Foresta amazzonica	1	Amazzonia	614830	342	640	40668	40	41	611	1.50	0	0	0	2005-05-24	16543
-1327	Gegrafia		2	Americhe	Pampa argentina	1	Pampa	105022	58	58	58650	73	10	3183	5.43	0	0	0	2004-03-15	1226
-1328	Gegrafia		#N/A	Americhe	Cordigliera delle Ande	1	Ande	345516	192	177	25914	5	19	2044	7.89	1	0	0	2005-05-24	4387
-1329	Gegrafia		2	Americhe	Ecuador	1	Ecuador	836675	466	426	112869	108	77	4632	4.10	0	0	0	2002-12-01	38617
-1330	Gegrafia		2.1	Americhe	Perù	1	Perù	1031773	574	525	84586	75	46	4820	5.70	1	0	0	2005-12-17	35264
-1331	Gegrafia		-	Americhe	Brasile	1	Brasile	2235543	1244	1145	122165	101	89	6074	4.97	2	0	2	2005-05-24	98733
-1332	Gegrafia		#N/A	Americhe	Argentina	1	Argentina	1834496	1021	903	142437	99	77	4849	3.40	1	0	0	2004-01-20	39629
-1333	Gegrafia			Oceania e poli	Oceania	1	Oceania	984180	548	538	17717	3	6	1123	6.34	1	1	0	2005-10-04	1514
-1334	Gegrafia			Oceania e poli	Geografia politica	1	Stati_dell'Oceania	263965	147	88	12472	1	42	533	4.27	0	0	0	2005-12-26	0
-1335	Gegrafia		-	Oceania e poli	Australia	1	Australia	2953774	1644	1460	116491	56	44	2067	1.77	0	1	0	2005-08-29	63315
-1336	Gegrafia		2.1	Oceania e poli	Nuova Zelanda	1	Nuova_Zelanda	1844463	1026	1062	55367	24	12	3460	6.25	1	0	0	2005-11-13	21944
-1337	Gegrafia		2.1	Oceania e poli	Micronesia	1	Micronesia	172737	96	73	3441	1	3	694	20.17	0	0	0	2005-11-13	953
-1338	Gegrafia		2	Oceania e poli	Melanesia	1	Melanesia	141714	79	81	2653	0	4	442	16.66	0	1	0	2011-08-11	482
-1339	Gegrafia		2	Oceania e poli	Polinesia	1	Polinesia	734725	409	442	7728	0	8	1547	20.02	1	0	0	2011-08-11	5166
-1340	Gegrafia		2.5	Oceania e poli	Artide	1	Artide	476935	265	270	20321	21	9	1034	5.09	0	1	0	2005-09-18	6971
-1341	Gegrafia		#N/A	Oceania e poli	Antartide	1	Antartide	1324223	737	668	43665	36	23	1336	3.06	0	0	1	2003-08-02	11517
+1076	Geografia		-	Geografia fisica	Cartografia	1	Cartografia	209783	117	97	22273	5	8	1210	5.43	3	0	0	2003-07-27	2382
+1077	Geografia		2.1	Geografia fisica	Mappa	1	Mappa	105269	59	53	3383	0	1	654	19.33	1	0	0	2006-03-09	0
+1078	Geografia		-	Geografia fisica	Pianta	1	Pianta_(architettura)	60151	33	35	1967	0	1	1617	82.21	1	0	0	2006-11-24	0
+1079	Geografia		#N/A	Geografia fisica	Carte geografiche	1	Carta_geografica	526427	293	319	9155	3	4	1012	11.05	0	0	0	2004-07-18	705
+1080	Geografia		1	Geografia fisica	Punti cardinali	1	Punto_cardinale	472853	263	237	5721	0	0	331	5.79	1	1	0	2006-08-16	108
+1081	Geografia		2.4	Geografia fisica	Coordinate	1	Coordinate_geografiche	1041502	580	560	5326	0	1	451	8.47	0	0	0	2003-05-17	486
+1082	Geografia		1	Geografia fisica	Reticolo geografico	0	Reticolo geografico				0	0	0	0	#DIV/0!	0	0	0	2006-06-07	0
+1083	Geografia		1	Geografia fisica	Riduzione in scala	1	Scala_di_riduzione	104940	58	128	4370	0	0	423	9.68	0	0	0	2006-06-07	2009-07-16
+1085	Geografia		2.5	Geografia fisica	Continente	1	Continente	1054379	587	542	33801	20	9	249	0.74	4	0	0	2004-11-18	2003-09-06
+1086	Geografia		1	Geografia fisica	Placche terrestri	1	Tettonica_delle_placche	780786	434	346	31047	0	16	343	1.10	1	0	0	2006-12-17	2005-02-19
+1087	Geografia		1	Geografia fisica	Terremoto	1	Terremoto	1296369	721	495	43019	23	12	3023	7.03	0	0	0	2006-12-17	2004-02-25
+1088	Geografia		2.4	Geografia fisica	Clima	1	Clima	447525	249	235	27344	1	13	1805	6.60	0	0	0	2003-02-24	2005-06-11
+1089	Geografia		1.3	Geografia fisica	regioni climatiche	1	Fascia_climatica	104775	58	57	3899	0	2	575	14.75	0	0	0	2004-02-12	2008-03-27
+1090	Geografia		2.1	Geografia fisica	fasce polari	1	Regioni_polari	68449	38	36	2130	0	1	471	22.11	0	0	0	2014-02-06	2006-10-30
+1091	Geografia			Geografia fisica	fasce temperate	1	Zona_temperata	278256	155	145	11947	1	2	1154	9.66	1	0	0	2004-07-29	2005-05-29
+1092	Geografia			Geografia fisica	fascia intertropicale	1	Zona_di_convergenza_intertropicale	28108	16	17	7340	3	1	2181	29.71	0	0	0	2004-07-29	2008-12-10
+1093	Geografia			Geografia fisica	venti	1	Vento	509928	284	265	67357	96	21	836	1.24	2	0	0	2004-07-29	2005-08-24
+1094	Geografia			Geografia fisica	precipitazioni	1	Precipitazione_(meteorologia)	130597	73	63	13863	3	3	530	3.82	0	0	0	2003-02-16	2006-09-08
+1095	Geografia		#N/A	Geografia fisica	Biomi	1	Bioma	306763	171	171	20945	17	5	1618	7.72	0	0	0	2007-11-07	2004-10-16
+1096	Geografia			Geografia fisica	Tundra	1	Tundra	575232	320	299	6446	2	5	966	14.99	0	0	0	2004-07-29	2004-11-09
+1097	Geografia			Geografia fisica	Taiga	1	Taiga	440938	245	231	11222	4	4	1148	10.23	1	0	0	2006-06-07	2004-10-22
+1098	Geografia			Geografia fisica	Prateria	1	Prateria	164858	92	85	5057	0	1	948	18.75	0	0	0	2004-06-02	2006-12-22
+1099	Geografia		1	Geografia fisica	Steppa	1	Steppa	286226	159	139	3749	0	2	552	14.72	0	0	0	2006-06-07	2006-11-28
+1100	Geografia		2.3	Geografia fisica	Macchia mediterranea	1	Macchia_mediterranea	621866	346	340	11432	0	34	376	3.29	0	0	0	2004-07-30	2005-12-14
+1101	Geografia		2.5	Geografia fisica	Foresta mediterranea	1	Foresta_mediterranea_sempreverde	53100	30	25	14287	0	28	257	1.80	0	1	0	2007-05-02	2006-08-31
+1102	Geografia		2.1	Geografia fisica	Foresta mediterranea	1	Foresta_mediterranea_decidua	14140	8	7	5259	0	17	532	10.12	0	0	0	2005-08-24	2006-09-11
+1103	Geografia		2.3	Geografia fisica	Brughiera	1	Brughiera	237233	132	115	6832	0	3	757	11.08	1	0	0	2007-02-09	2007-02-09
+1104	Geografia		0	Geografia fisica	Latifoglie	1	Latifoglie	170818	95	89	1202	0	1	925	76.96	1	0	0	2004-07-30	2007-10-28
+1105	Geografia		2.5	Geografia fisica	Spazio naturale	1	Ambiente_(biologia)	212607	118	146	46408	21	22	1931	4.16	0	0	0	2007-11-07	2007-11-07
+1106	Geografia		1	Geografia fisica	Paesaggio	1	Paesaggio	162193	90	70	34296	3	11	1204	3.51	3	0	0	2004-06-02	2005-04-19
+1107	Geografia		1	Geografia fisica	Montagna	1	Montagna	530484	295	275	25327	13	10	3283	12.96	6	0	0	2004-07-30	2004-04-04
+1108	Geografia			Geografia fisica	Collina	1	Collina	417489	232	213	13583	5	7	1308	9.63	1	0	0	2005-07-03	2005-07-03
+1109	Geografia		1	Geografia fisica	Pianura	1	Pianura	215727	120	105	3060	3	2	631	20.62	1	0	0	2006-01-03	2006-01-03
+1110	Geografia			Geografia fisica	Oceano	1	Oceano	517644	288	236	27138	9	0	303	1.12	1	0	1	2007-03-12	2004-11-15
+1111	Geografia		2.1	Geografia fisica	Mare	1	Mare	525211	292	243	8753	1	7	668	7.63	0	0	0	2007-03-12	2004-07-30
+1112	Geografia		2.3	Geografia fisica	Fiume	1	Fiume	627076	349	288	11839	2	8	677	5.72	2	0	0	2004-03-06	2006-11-21
+1113	Geografia		1.1	Geografia fisica	Lago	1	Lago	409706	228	209	13427	4	8	936	6.97	1	0	0	2004-11-09	2004-07-14
+1114	Geografia		2	Geografia fisica	Palude	1	Palude	135829	76	77	3039	0	2	278	9.15	0	0	0	2005-10-31	2009-06-13
+1115	Geografia			Geografia fisica	Vulcano	1	Vulcano	1117306	622	590	38274	7	10	2117	5.53	0	1	0	2006-03-23	2003-05-25
+1116	Geografia		2.1	Geografia fisica	Flora	1	Flora	147124	82	68	2523	0	1	1573	62.35	0	0	0	2006-11-22	2005-11-23
+1117	Geografia		2.1	Geografia fisica	Fauna	1	Fauna	152537	85	72	3183	0	1	271	8.51	0	0	0	2006-11-22	2003-09-17
+1118	Geografia		2.1	Geografia fisica	Spazio antropico	1	Geografia_antropica	91524	51	43	4008	0	0	915	22.83	1	0	0	2006-11-22	2006-09-19
+1119	Geografia		2.4	Geografia fisica	Città	1	Città	575805	320	339	74600	5	32	823	1.10	0	0	0	2003-12-04	2004-10-19
+1120	Geografia			Geografia fisica	Evoluzione della città	1	Storia_dell'urbanistica	59457	33	24	32666	19	25	579	1.77	0	0	0	2006-06-07	2011-01-29
+1121	Geografia		2.4	Geografia fisica	Conurbazioni	1	Conurbazione	142306	79	68	7558	9	0	741	9.80	0	0	0	2005-07-03	2006-01-29
+1122	Geografia		1	Geografia fisica	Megalopoli	1	Megalopoli	229109	127	115	6548	1	0	532	8.12	1	1	0	2003-10-30	2006-02-02
+1123	Geografia		2	Geografia fisica	Fusi orari	1	Fuso_orario	1411245	785	731	23549	7	3	1496	6.35	0	0	0	2007-01-14	2004-02-15
+1124	Geografia			Geografia politica ed economica	Stato	1	Stato	849127	473	475	17723	14	0	284	1.60	1	2	0	2014-02-06	2004-09-09
+1125	Geografia			Geografia politica ed economica	Nazione	1	Nazione	313857	175	172	27197	7	0	2552	9.38	0	2	0	2004-05-25	2004-09-09
+1126	Geografia		2	Geografia politica ed economica	Popolo	1	Popolo	114414	64	64	7418	12	1	1121	15.11	0	0	0	2014-02-06	2005-01-29
+1127	Geografia			Geografia politica ed economica	Territorio	1	Territorio_(diritto)	38672	22	22	1817	0	0	1419	78.10	3	0	0	2018-12-30	2013-01-06
+1128	Geografia		2	Geografia politica ed economica	Sovranità	1	Sovranità	233431	130	141	14753	14	6	846	5.73	0	0	0	2004-07-30	2009-05-23
+1129	Geografia		2	Geografia politica ed economica	Stati del mondo	1	Stati_del_mondo	1448856	806	738	30929	7	3	539	1.74	0	0	0	2004-07-30	2003-09-22
+1131	Geografia			Geografia politica ed economica	Popolamento	1	Popolazione	528123	294	277	26651	0	3	624	2.34	0	0	0	2005-12-21	2004-03-10
+1132	Geografia			Geografia politica ed economica	Popolamento	1	Sovrappopolazione	59291	33	34	4940	2	0	267	5.40	0	0	0	2004-07-30	2006-03-15
+1133	Geografia		#N/A	Geografia politica ed economica	Acqua potabile	1	Acqua_potabile	175823	98	79	21049	15	3	588	2.79	1	0	0	2007-08-30	2007-08-30
+1134	Geografia		2	Geografia politica ed economica	PIL pro capite	1	Reddito_pro_capite	492405	274	265	4200	0	1	303	7.21	0	0	0	2006-01-22	2007-01-20
+1135	Geografia		2	Geografia politica ed economica	speranza di vita	1	Speranza_di_vita	195039	109	99	1958	0	0	211	10.78	1	0	0	2004-07-30	2005-12-26
+1136	Geografia		#N/A	Geografia politica ed economica	analfabetismo	1	Analfabetismo	197430	110	95	18057	20	1	1156	6.40	0	0	0	2006-03-21	2005-11-14
+1137	Geografia		2	Geografia politica ed economica	Indice sviluppo umano	1	Indice_di_sviluppo_umano	605139	337	320	11124	4	2	2136	19.20	0	0	0	2008-04-09	2004-10-28
+1138	Geografia		0	Geografia politica ed economica	Globalizzazione	1	Globalizzazione	1402697	781	747	96322	103	5	2199	2.28	0	0	0	2004-09-02	2004-07-10
+1139	Geografia		0	Geografia politica ed economica	Squilibri nello sviluppo	1	Disuguaglianza_economica	122725	68	73	57173	52	4	1222	2.14	0	4	0	2003-12-04	2012-07-07
+1140	Geografia		2.1	Geografia politica ed economica	inquinamento	1	Inquinamento	890429	496	645	51693	20	3	426	0.82	0	0	0	2008-01-20	2005-03-21
+1141	Geografia		#N/A	Geografia politica ed economica	Cambiamento climatico	1	Cambiamento_climatico	582991	324	743	43188	16	14	661	1.53	1	3	0	2007-01-02	2005-10-27
+1142	Geografia			Geografia politica ed economica	Settore primario	1	Settore_primario	350738	195	158	2020	2	1	975	48.27	1	0	0	2002-07-20	2007-01-29
+1143	Geografia		#N/A	Geografia politica ed economica	Agricoltura	1	Agricoltura	378615	211	180	29150	6	9	1393	4.78	0	0	0	2002-08-07	2002-08-07
+1144	Geografia		#N/A	Geografia politica ed economica	Allevamento	1	Allevamento	162568	90	86	4716	0	1	493	10.45	1	0	0	2004-07-01	2004-07-01
+1145	Geografia		0	Geografia politica ed economica	Pesca	1	Pesca_(attività)	104643	58	47	2450	0	4	608	24.82	1	1	0	2007-10-15	2006-09-28
+1146	Geografia			Geografia politica ed economica	Saline	1	Salina	128486	72	72	7128	1	6	556	7.80	0	0	0	2003-02-23	2006-03-01
+1147	Geografia			Geografia politica ed economica	sfruttamento del bosco	1	Selvicoltura	206182	115	86	21535	1	5	805	3.74	1	0	0	2003-11-14	2005-03-19
+1148	Geografia		2.1	Geografia politica ed economica	attività estrattive	1	Industria_mineraria	63076	35	37	8354	1	0	1075	12.87	1	0	0	2007-01-17	2005-11-20
+1149	Geografia			Geografia politica ed economica	Settore secondario	1	Settore_secondario	325433	181	160	3290	0	1	679	20.64	1	0	0	2005-09-12	2007-01-29
+1150	Geografia		2	Geografia politica ed economica	industria	1	Industria	203044	113	98	14551	11	3	655	4.50	0	0	0	2007-01-17	2004-01-15
+1151	Geografia		-	Geografia politica ed economica	edilizia	1	Edilizia	195783	109	97	14717	0	1	195	1.32	0	0	0	2012-07-07	2006-01-28
+1152	Geografia		2.4	Geografia politica ed economica	artigianato	1	Artigianato	138339	77	65	21009	1	5	1516	7.22	0	0	0	2004-07-01	2006-06-25
+1153	Geografia		2	Geografia politica ed economica	Settore terziario	1	Settore_terziario	686475	382	351	5325	1	1	728	13.67	0	0	0	2002-07-20	2006-04-25
+1154	Geografia		2.3	Geografia politica ed economica	Commercio	1	Commercio	137910	77	64	5745	0	2	852	14.83	0	0	0	2005-05-24	2004-07-19
+1155	Geografia			Geografia politica ed economica	trasporti	1	Trasporto	125066	70	84	30149	1	13	459	1.52	1	0	0	2004-07-29	2002-09-29
+1156	Geografia			Geografia politica ed economica	telecomunicazioni	1	Telecomunicazione	194927	108	108	58648	31	12	2272	3.87	0	1	0	2004-07-29	2002-12-28
+1157	Geografia			Geografia politica ed economica	turismo	1	Turismo	417554	232	223	38137	14	13	814	2.13	2	0	0	2004-07-29	2002-03-18
+1158	Geografia			Geografia politica ed economica	servizi per cittadini e imprese	1	Servizio	139932	78	62	3100	1	0	611	19.71	0	0	0	2006-06-07	2005-09-15
+1159	Geografia		2.5	Penisola italiana	Italia	1	Italia	14359579	7991	7890	199878	273	77	4609	2.31	0	0	0	2009-01-11	2003-10-05
+1160	Geografia		2.1	Penisola italiana	Geografia	1	Geografia_dell'Italia	601879	335	271	35655	29	20	1345	3.77	0	0	0	2004-04-05	2005-11-05
+1161	Geografia		2.4	Penisola italiana	Le Alpi	1	Alpi	849977	473	498	59880	36	41	6333	10.58	3	0	0	2003-04-28	2003-04-28
+1162	Geografia		#N/A	Penisola italiana	Gli Appennini	1	Appennini	679394	378	344	65180	32	23	6239	9.57	0	0	0	2004-05-09	2004-05-09
+1163	Geografia			Penisola italiana	La Pianura padana	1	Pianura_Padana	600458	334	369	47406	51	20	1050	2.21	0	0	0	2003-09-06	2005-07-12
+1164	Geografia			Penisola italiana	I mari italiani	0	Mari italiani				0	0	0	0	#DIV/0!	0	0	0	2004-04-24	0
+1165	Geografia			Penisola italiana	le isole	1	Isole_dell'Italia	394346	219	217	21848	8	46	1148	5.25	0	0	0	2003-08-27	4740
+1166	Geografia		2	Penisola italiana	Economia	1	Economia_d'Italia	501844	279	271	110836	93	8	1821	1.64	2	7	0	2006-07-25	87754
+1167	Geografia			Penisola italiana	Patrimoni UNESCO in Italia	1	Patrimoni_dell'umanità_d'Italia	117790	66	149	65999	24	130	531	0.80	0	0	0	2014-01-03	6672
+1168	Geografia			Penisola italiana	Le regioni italiane	1	Regioni_d'Italia	1932123	1075	1326	33223	8	158	1145	3.45	0	0	0	2015-06-08	1237
+1169	Geografia		2.4	Penisola italiana	Abruzzo	1	Abruzzo	1593942	887	892	229871	119	203	3028	1.32	1	0	0	2003-02-27	144656
+1170	Geografia		-	Penisola italiana	Basilicata	1	Basilicata	1600012	890	945	91533	54	56	2059	2.25	0	1	0	2003-02-25	71690
+1171	Geografia		-	Penisola italiana	Calabria	1	Calabria	1817124	1011	944	113356	50	128	3354	2.96	1	1	0	2003-02-26	45919
+1172	Geografia		-	Penisola italiana	Campania	1	Campania	1793651	998	971	214435	135	220	5127	2.39	0	0	0	2003-02-24	74275
+1173	Geografia		2	Penisola italiana	Emilia-Romagna	1	Emilia-Romagna	2079916	1157	1166	95047	53	73	3310	3.48	0	1	0	2003-02-26	57496
+1174	Geografia		2	Penisola italiana	Friuli-Venezia Giulia	1	Friuli-Venezia_Giulia	1812806	1009	957	121229	56	112	6054	4.99	2	1	0	2003-02-27	170638
+1175	Geografia		0.4	Penisola italiana	Lazio	1	Lazio	1664111	926	859	116931	33	114	2650	2.27	1	2	1	2002-11-18	34193
+1176	Geografia		0.4	Penisola italiana	Liguria	1	Liguria	1363685	759	696	148650	78	159	5103	3.43	1	3	1	2003-02-24	66178
+1177	Geografia		0.4	Penisola italiana	Lombardia	1	Lombardia	2969928	1653	1479	233776	285	200	2722	1.16	0	0	0	2003-02-23	73208
+1178	Geografia		-	Penisola italiana	Marche	1	Marche	1585474	882	792	141725	131	100	9930	7.01	1	0	0	2003-02-27	43992
+1179	Geografia		-	Penisola italiana	Molise	1	Molise	1532181	853	734	126117	44	73	3010	2.39	1	5	1	2003-02-27	32551
+1180	Geografia			Penisola italiana	Piemonte	1	Piemonte	1985147	1105	1058	100927	57	108	3675	3.64	0	2	1	2003-02-24	47027
+1181	Geografia			Penisola italiana	Puglia	1	Puglia	1904401	1060	1032	183859	102	131	3676	2.00	0	3	0	2003-02-23	67372
+1182	Geografia		0	Penisola italiana	Sardegna	1	Sardegna	2808217	1563	1568	229813	249	74	4211	1.83	0	0	0	2003-05-19	187260
+1183	Geografia			Penisola italiana	Sicilia	1	Sicilia	2902977	1615	1596	241806	112	177	7340	3.04	2	7	1	2003-04-16	184064
+1184	Geografia			Penisola italiana	Toscana	1	Toscana	1958779	1090	1087	151998	37	103	4403	2.90	0	0	0	2003-02-26	39931
+1185	Geografia			Penisola italiana	Trentino-Alto Adige	1	Trentino-Alto_Adige	1859152	1035	993	114748	69	69	4818	4.20	0	0	0	2003-10-07	134135
+1186	Geografia			Penisola italiana	Umbria	1	Umbria	1218114	678	709	44239	16	60	4136	9.35	1	1	0	2003-08-16	86781
+1187	Geografia			Penisola italiana	Valle d'Aosta	1	Valle_d'Aosta	1594873	888	872	60742	37	43	5129	8.44	0	0	0	2003-02-27	40136
+1188	Geografia			Penisola italiana	Veneto	1	Veneto	2072520	1153	1089	183209	67	169	2576	1.41	2	2	0	2003-02-25	16383
+1189	Geografia		2.1	Penisola italiana	Comune	1	Comune_(Italia)	798435	444	513	37233	26	3	844	2.27	1	0	0	2003-10-04	14749
+1190	Geografia		1	Penisola italiana	Provincia	1	Provincia_(Italia)	507730	283	232	74979	78	6	1739	2.32	0	0	0	2005-09-05	69606
+1191	Geografia		1	Penisola italiana	Regione	1	Regione_(Italia)	1262220	702	568	67799	31	3	1482	2.19	0	0	0	2007-06-24	74120
+1192	Geografia		1	Penisola italiana	Regione a statuto speciale	1	Regione_italiana_a_statuto_speciale	1075784	599	553	14657	11	1	656	4.48	0	0	0	2006-06-07	929
+1193	Geografia		1	Penisola italiana	San Marino	1	San_Marino	3007400	1674	1750	90965	41	33	3421	3.76	1	0	0	2006-06-07	48284
+1194	Geografia		#N/A	Penisola italiana	Città del Vaticano	1	Città_del_Vaticano	1724468	960	979	103524	99	28	5559	5.37	1	0	0	#N/A	121803
+1195	Geografia		0	Europa	Europa	1	Europa	3332554	1855	1908	103229	82	26	821	0.80	0	1	0	2004-10-13	46217
+1196	Geografia		1	Europa	Geografia fisica d’Europa	1	Geografia_dell'Europa	356407	198	190	6372	3	3	511	8.02	1	0	0	2005-11-22	2086
+1197	Geografia		2	Europa	Climi d’Europa	1	Climi in Europa	2383	0	1	2383	0	1	2298	96.43	0	0	0	#N/A	0
+1198	Geografia			Europa	Stati d’Europa	1	Stati_dell'Europa	1663733	926	839	31666	3	72	302	0.95	0	0	0	2006-06-07	291
+1199	Geografia			Europa	Unione europea	1	Unione_europea	5322487	2962	4176	247369	339	112	4019	1.62	0	1	1	2004-07-29	90642
+1200	Geografia		2.5	Europa	Istituzioni UE	1	Istituzioni_dell'Unione_europea	13694	8	4	39986	51	10	620	1.55	0	0	0	2005-11-18	890
+1201	Geografia		2.4	Europa	Euro	1	Euro	1709962	952	955	67466	98	40	4326	6.41	1	0	0	2003-04-24	97056
+1202	Geografia		2.1	Europa	Convenzione di Schengen	1	Convenzione_di_Schengen	478847	266	195	17725	26	1	975	5.50	0	0	0	2010-12-19	5584
+1203	Geografia			Europa	Politiche europee	0	Politiche dell'Unione europea	0	0	0	0	0	0	0	#DIV/0!	0	0	0	2014-02-06	0
+1204	Geografia		2.4	Europa	Cittadinanza europea	1	Cittadinanza_dell'Unione_europea	85360	48	50	3712	0	1	622	16.76	0	0	0	#N/A	1369
+1205	Geografia		2.1	Europa	Scandinavia e Baltico	1	Paesi_nordici	236813	132	85	6853	0	2	511	7.46	1	1	0	2005-04-12	0
+1206	Geografia			Europa	Scandinavia e Baltico	1	Paesi_baltici	87545	49	135	36076	52	42	1794	4.97	0	0	0	2005-04-12	22446
+1207	Geografia		2	Europa	Islanda	1	Islanda	2832360	1576	1059	121381	122	35	1454	1.20	0	2	0	2005-07-17	41995
+1208	Geografia		0	Europa	Norvegia	1	Norvegia	2150795	1197	1166	51949	21	43	4649	8.95	0	0	0	2005-08-20	10408
+1209	Geografia		2.1	Europa	Svezia	1	Svezia	2073783	1154	1024	93716	59	47	5740	6.12	0	0	0	2006-06-07	17506
+1210	Geografia		2	Europa	Finlandia	1	Finlandia	1538475	856	888	80318	26	17	5556	6.92	0	0	0	2007-12-03	17696
+1211	Geografia		2	Europa	Danimarca	1	Danimarca	1848292	1029	966	66065	29	18	3973	6.01	2	2	2	2004-08-20	10006
+1212	Geografia		2.1	Europa	Estonia	1	Estonia	832310	463	436	89557	77	33	4603	5.14	4	2	3	2003-08-16	31205
+1213	Geografia		2	Europa	Lettonia	1	Lettonia	798397	444	426	47251	28	14	2149	4.55	0	0	0	2003-08-19	6681
+1214	Geografia			Europa	Lituania	1	Lituania	1025689	571	544	74485	50	9	3845	5.16	3	1	0	2009-01-11	10440
+1215	Geografia			Europa	Isole britanniche	1	Isole_britanniche	98799	55	95	14698	19	4	907	6.17	0	0	0	2007-04-09	4435
+1216	Geografia		2.1	Europa	Regno Unito	1	Regno_Unito	3603163	2005	1792	160216	203	25	7108	4.44	0	1	0	2006-06-07	36472
+1217	Geografia		2.4	Europa	Commonwealth	1	Commonwealth_delle_nazioni	922836	514	432	15364	5	4	780	5.08	0	0	0	2005-04-02	1431
+1218	Geografia		2	Europa	Irlanda	1	Irlanda	2107393	1173	1068	75255	25	26	4335	5.76	1	0	0	2012-10-31	14103
+1219	Geografia		2	Europa	Penisola iberica	1	Penisola_iberica	397612	221	255	23870	3	11	1394	5.84	0	0	0	2007-04-27	5063
+1220	Geografia		2.1	Europa	Spagna	1	Spagna	3482546	1938	1742	100389	67	52	5954	5.93	0	0	1	2006-06-07	17572
+1221	Geografia		2.4	Europa	Andorra	1	Andorra	938523	522	517	28691	13	13	2564	8.94	0	0	0	2004-04-03	2375
+1222	Geografia		2	Europa	Portogallo	1	Portogallo	1897743	1056	1023	64023	16	25	2392	3.74	1	0	0	2004-07-30	8196
+1223	Geografia		2	Europa	Gibilterra	1	Gibilterra	931516	518	462	31616	14	14	2032	6.43	0	1	0	2005-09-20	4742
+1224	Geografia		2.4	Europa	Francia+Benelux	1	Benelux	218918	122	112	12371	1	10	1472	11.90	0	0	0	2004-04-25	932
+1225	Geografia		2.5	Europa	Francia	1	Francia	3846359	2140	2038	157209	94	43	7384	4.70	0	0	0	2009-01-11	32718
+1226	Geografia			Europa	Monaco	1	Principato_di_Monaco	1680265	935	1046	77019	26	42	3165	4.11	0	0	0	2007-02-08	33758
+1227	Geografia		2.5	Europa	Belgio	1	Belgio	2009435	1118	963	95868	15	40	3480	3.63	1	4	1	2002-12-15	13515
+1228	Geografia		-	Europa	Lussemburgo	1	Lussemburgo	1480827	824	799	44345	35	9	3266	7.36	2	1	0	2007-03-14	9075
+1229	Geografia		1.2	Europa	Paesi Bassi	1	Paesi_Bassi	2478521	1379	1296	75781	30	17	5086	6.71	0	0	0	2007-04-27	43313
+1230	Geografia		2	Europa	Germania	1	Germania	3738171	2080	1970	141869	96	51	5441	3.84	0	0	0	2004-08-13	17224
+1231	Geografia		2.3	Europa	Austria	1	Austria	1746498	972	907	57460	28	11	3246	5.65	0	1	0	2003-07-12	10154
+1232	Geografia			Europa	Svizzera	1	Svizzera	3430710	1909	1726	248012	188	117	8980	3.62	0	0	0	2005-05-26	77980
+1233	Geografia		2.5	Europa	Liechtenstein	1	Liechtenstein	1672394	931	1363	39348	34	8	2506	6.37	0	1	0	2009-03-05	6822
+1234	Geografia		-	Europa	Regione centro-orientale	1	Europa_centro-orientale	86308	48	44	1982	2	1	1373	69.27	1	0	0	2003-10-04	118
+1235	Geografia		2.1	Europa	Polonia	1	Polonia	1780650	991	1004	86772	32	86	4550	5.24	0	0	0	2005-05-29	70510
+1236	Geografia		1	Europa	Rep Ceca	1	Repubblica_Ceca	1330869	741	710	58168	18	18	2818	4.84	1	2	2	2007-05-02	36688
+1237	Geografia		1	Europa	Slovacchia	1	Slovacchia	965138	537	532	40596	24	11	4315	10.63	0	2	0	2003-12-03	26992
+1238	Geografia			Europa	Ungheria	1	Ungheria	1516449	844	763	48410	12	24	1943	4.01	1	0	0	2003-12-03	17898
+1239	Geografia			Europa	Romania	1	Romania	2120601	1180	1120	94566	54	55	1884	1.99	0	1	0	2011-08-11	27665
+1240	Geografia		1	Europa	Fiume Reno	1	Reno	867259	483	492	9865	0	3	837	8.48	0	0	0	2004-04-15	4239
+1241	Geografia		2	Europa	Regione orientale	1	Europa_orientale	331849	185	210	3923	5	2	628	16.01	0	0	0	2004-11-18	0
+1242	Geografia			Europa	Russia	1	Russia	3349084	1864	1674	188896	218	54	7255	3.84	0	0	0	2007-05-02	66876
+1243	Geografia		-	Europa	Bielorussia	1	Bielorussia	934633	520	511	45438	19	22	4760	10.48	0	0	0	2004-06-13	20261
+1244	Geografia			Europa	Ucraina	1	Ucraina	1551959	864	873	72052	34	44	5418	7.52	0	0	0	2004-07-29	17941
+1245	Geografia			Europa	Moldova	1	Moldavia	1374627	765	756	51406	27	15	3653	7.11	1	0	0	2006-06-07	54036
+1246	Geografia		-	Europa	Regione mediterranea+balcanica	1	Bacino_del_Mediterraneo	109560	61	57	3099	0	1	358	11.55	1	0	0	2006-06-07	380
+1247	Geografia		2	Europa	Regione mediterranea+balcanica	1	Penisola_balcanica	752702	419	454	13406	15	7	792	5.91	0	0	0	2006-06-07	2597
+1248	Geografia			Europa	Slovenia	1	Slovenia	1436309	799	768	42312	19	12	2894	6.84	1	0	0	2005-12-31	9770
+1249	Geografia		2	Europa	Croazia	1	Croazia	2111496	1175	1000	110722	64	27	2898	2.62	0	0	0	2005-08-27	50540
+1250	Geografia		-	Europa	Bosnia Erzegovina	1	Bosnia_ed_Erzegovina	1017660	566	540	50953	13	19	3717	7.29	1	0	0	2005-05-24	32127
+1251	Geografia			Europa	Serbia	1	Serbia	1228603	684	649	74434	47	49	2811	3.78	2	1	0	2005-09-05	20529
+1252	Geografia		2.5	Europa	Kosovo	1	Kosovo	1510542	841	801	81396	90	27	7867	9.67	0	2	0	2005-03-11	85563
+1253	Geografia		2	Europa	Montenegro	1	Montenegro	1272662	708	648	39427	18	10	3831	9.72	0	1	0	2004-03-29	16678
+1254	Geografia			Europa	Macedonia del Nord	1	Macedonia_del_Nord	389908	217	779	47032	43	18	6747	14.35	1	3	0	2002-12-01	58540
+1255	Geografia		2	Europa	Albania	1	Albania	2085133	1160	1133	124596	95	49	6844	5.49	0	6	0	2003-07-08	18566
+1256	Geografia		-	Europa	Bulgaria	1	Bulgaria	1124350	626	588	107583	70	27	4961	4.61	0	0	0	2004-02-16	15149
+1257	Geografia		-	Europa	Grecia	1	Grecia	2069058	1151	1054	180304	183	61	4605	2.55	1	0	0		82807
+1258	Geografia		-	Europa	Malta	1	Malta	3438637	1914	1803	71116	72	25	3804	5.35	1	1	0	2004-03-29	19437
+1259	Geografia		2.4	Europa	Cipro	1	Cipro	1480669	824	865	47899	13	21	3412	7.12	0	0	0	2004-01-24	20219
+1260	Geografia			Europa	Turchia	1	Turchia	2163179	1204	1147	85287	71	40	5338	6.26	0	1	0	2005-04-10	46981
+1261	Geografia		#N/A	Africa	Africa	1	Africa	1877135	1045	1071	61292	34	19	1163	1.90	0	0	0	ML PUBLIC	10950
+1262	Geografia		1	Africa	Geografia fisica	1	Geografia_dell'Africa	277770	155	116	93335	51	37	4213	4.51	0	0	0	2005-07-29	1170
+1263	Geografia			Africa	Geografia politica	1	Stati_dell'Africa	629111	350	324	20518	0	73	10820	52.73	0	0	0	2003-06-05	3037
+1264	Geografia		-	Africa	Africa mediterranea	1	Nordafrica	206731	115	112	7092	0	7	433	6.11	1	0	0	2005-07-08	0
+1265	Geografia		2	Africa	Egitto	1	Egitto	1630841	908	906	71630	26	17	5423	7.57	0	0	1	2006-08-26	24025
+1266	Geografia		2	Africa	Marocco	1	Marocco	1788426	995	972	79132	54	40	4958	6.27	0	0	0	2009-01-11	43075
+1267	Geografia		#N/A	Africa	Algeria	1	Algeria	819991	456	450	37152	16	18	3484	9.38	0	0	0	2003-08-02	24086
+1268	Geografia			Africa	Tunisia	1	Tunisia	841526	468	497	45510	23	14	2836	6.23	0	0	0	2003-06-05	5389
+1269	Geografia		-	Africa	Libia	1	Libia	1179866	657	682	63695	42	28	1581	2.48	1	1	1	2003-07-23	45894
+1270	Geografia		2	Africa	Sahara	1	Deserto_del_Sahara	583359	325	312	27206	24	10	762	2.80	0	0	0	2006-11-22	8938
+1271	Geografia			Africa	Africa del Sahel	1	Sahel	188319	105	100	24533	32	3	789	3.22	0	0	2	2005-02-04	5676
+1272	Geografia			Africa	Sudan	1	Sudan	558646	311	364	59968	17	19	5589	9.32	0	0	0	2006-06-07	1813
+1273	Geografia			Africa	Sudan del Sud	1	Sudan_del_Sud	336584	187	207	31306	37	9	4061	12.97	0	0	0	2006-06-07	19230
+1274	Geografia		2	Africa	Niger	1	Niger	397777	221	207	37012	34	10	2231	6.03	0	0	1	2012-12-13	6134
+1275	Geografia		2.1	Africa	Savana africana	1	Savana	391484	218	217	7692	5	2	1008	13.10	0	0	0	2008-01-30	8140
+1276	Geografia		#N/A	Africa	Africa occidentale	1	Africa_occidentale	110343	61	58	25724	1	6	985	3.83	2	0	0	2003-08-02	743
+1277	Geografia			Africa	Nigeria	1	Nigeria	1250023	696	665	46731	29	9	2999	6.42	0	1	0	2006-12-04	11176
+1278	Geografia			Africa	Senegal	1	Senegal	818237	455	423	48743	22	12	5539	11.36	0	0	0	2005-11-13	5004
+1279	Geografia		#N/A	Africa	Africa equatoriale	1	Africa_centrale	101303	56	54	36175	30	11	755	2.09	0	0	0	2003-08-02	2920
+1280	Geografia			Africa	Repubblica Democratica del Congo	1	Repubblica_Democratica_del_Congo	945848	526	577	48002	26	20	3359	7.00	0	1	0	2005-06-28	5191
+1281	Geografia		-	Africa	Foresta pluviale bacino del Congo	1	Foresta_del_Congo	26828	15	25	11422	8	3	1138	9.96	0	0	0	2013-12-23	0
+1282	Geografia		#N/A	Africa	Africa orientale	1	Africa_orientale	90139	50	55	28599	31	5	232	0.81	1	0	0	2003-08-02	686
+1283	Geografia			Africa	Somalia	1	Somalia	730983	407	379	81086	72	35	5695	7.02	0	0	0	2006-06-07	25481
+1284	Geografia			Africa	Kenya	1	Kenya	780367	434	433	27606	14	9	2393	8.67	1	2	0	2004-08-13	4052
+1285	Geografia		2.1	Africa	Etiopia	1	Etiopia	1237828	689	660	145757	231	58	3005	2.06	2	0	1	2004-05-04	83872
+1286	Geografia			Africa	Tanzania	1	Tanzania	811882	452	439	36722	22	10	3649	9.94	0	3	0	2006-08-18	4368
+1287	Geografia		#N/A	Africa	Africa australe	1	Africa_meridionale	29447	16	34	4239	1	3	463	10.92	1	0	0	2003-08-02	0
+1288	Geografia			Africa	Sudafrica	1	Sudafrica	1876764	1044	1015	100052	46	41	4422	4.42	1	1	0	2006-06-07	15379
+1289	Geografia		0	Africa	Madagascar	1	Madagascar	1242777	692	648	60004	31	20	3015	5.02	0	2	0	2005-09-09	9271
+1290	Geografia		#N/A	Asia	Asia	1	Asia	1156828	644	681	17263	4	3	661	3.83	1	0	0	2005-05-24	2654
+1291	Geografia		2.5	Asia	Geografia fisica	1	Geografia_dell'Asia	196498	109	101	19820	5	3	291	1.47	0	0	0	2008-01-30	1028
+1292	Geografia			Asia	Geografia politica	1	Stati_dell'Asia	395724	220	196	22374	15	115	424	1.90	0	0	0	2006-01-01	1175
+1293	Geografia		2	Asia	Medio oriente	1	Medio_Oriente	604141	336	303	14156	3	2	636	4.49	1	0	0	2005-02-05	833
+1294	Geografia			Asia	Israele	1	Israele	2704378	1505	1336	149516	163	21	7508	5.02	2	5	0	2006-03-24	72079
+1295	Geografia			Asia	ANP	1	Stato_di_Palestina	986873	549	608	142722	175	29	4233	2.97	0	0	0	2006-06-07	30490
+1296	Geografia		#N/A	Asia	Arabia Saudita	1	Arabia_Saudita	1343963	748	700	48796	35	14	4040	8.28	0	0	0	2005-05-24	7423
+1297	Geografia		0	Asia	Iran	1	Iran	1837105	1022	805	178202	134	70	5531	3.10	0	2	0	2007-03-09	67925
+1298	Geografia		1	Asia	Iraq	1	Iraq	892447	497	442	68448	62	6	3704	5.41	0	0	0	2004-12-19	9635
+1299	Geografia		2	Asia	Caucaso e Asia centrale	1	Caucaso	508544	283	291	10538	6	19	1917	18.19	1	0	0	2003-11-28	0
+1300	Geografia			Asia	Steppa	1	Steppa_eurasiatica	25377	14	27	22749	6	12	574	2.52	0	0	0	2006-06-07	1032
+1301	Geografia		#N/A	Asia	Afghanistan	1	Afghanistan	1046341	582	530	56845	25	16	3408	6.00	0	0	0	2004-09-17	10843
+1302	Geografia		0	Asia	Kazakhstan	1	Kazakistan	1204871	670	595	55051	20	11	4746	8.62	0	5	0	2007-03-14	37921
+1303	Geografia			Asia	Regione indiana	1	Subcontinente_indiano	104342	58	56	7897	0	6	1437	18.20	1	0	0	2006-06-07	0
+1304	Geografia		-	Asia	India	1	India	2558187	1424	1350	139273	145	56	6146	4.41	0	0	0	2005-11-18	25402
+1305	Geografia		2	Asia	Pakistan	1	Pakistan	1286269	716	732	144786	197	42	7341	5.07	0	1	0	2009-01-11	14877
+1306	Geografia			Asia	Sud-est asiatico	1	Sud-est_asiatico	247114	138	138	23941	28	16	773	3.23	1	0	0	2006-06-07	33631
+1307	Geografia		2	Asia	Indonesia	1	Indonesia	1227479	683	616	63358	72	30	6493	10.25	0	1	0	2003-07-02	8556
+1308	Geografia		2	Asia	Filippine	1	Filippine	1098720	611	560	81483	86	15	6441	7.90	0	1	0	2004-09-04	16794
+1309	Geografia		-	Asia	giungla	1	Giungla	58900	33	69	24165	41	20	3304	13.67	0	0	0	2003-10-30	233
+1310	Geografia		-	Asia	Estremo oriente	1	Estremo_Oriente	143532	80	74	2997	1	2	827	27.59	2	0	0	2004-07-19	627
+1311	Geografia		2.5	Asia	Cina	1	Cina	3548885	1975	1880	206006	242	57	8854	4.30	7	0	1	2011-08-19	103226
+1312	Geografia		#N/A	Asia	Corea del Sud	1	Corea_del_Sud	1341328	746	563	60957	51	18	4753	7.80	0	0	1	2007-04-03	14097
+1313	Geografia		-	Asia	Corea del Nord	1	Corea_del_Nord	2539362	1413	647	116928	192	24	4207	3.60	2	1	0	2007-04-03	40140
+1314	Geografia		1	Asia	Giappone	1	Giappone	3202843	1782	1715	197852	218	57	3839	1.94	0	0	0	2007-02-08	56023
+1315	Geografia		2.5	Americhe	Americhe	1	America	1076301	599	510	27236	8	5	7973	29.27	0	0	0	2005-05-24	7934
+1316	Geografia			Americhe	Geografia politica	1	Stati_del_Nord_America	162266	90	85	11836	0	46	565	4.77	1	0	0	2006-06-07	0
+1317	Geografia			Americhe		1	Stati_dell'America_meridionale	93992	52	68	5649	0	16	267	4.73	1	0	0	2006-06-07	0
+1318	Geografia		2.5	Americhe	America settentrionale	1	America_del_Nord	399013	222	229	43007	13	24	3312	7.70	0	0	0	2003-08-02	9934
+1319	Geografia		1	Americhe	grandi praterie	1	Grandi_Pianure	93919	52	57	9147	0	2	363	3.97	0	0	0	2008-04-09	0
+1320	Geografia		#N/A	Americhe	Canada	1	Canada	2926820	1629	1448	112952	94	48	8341	7.38	0	0	0	2003-02-15	15729
+1321	Geografia			Americhe	USA	1	Stati_Uniti_d'America	7579567	4218	3854	194744	149	52	7455	3.83	0	2	0	2006-06-07	136477
+1322	Geografia		2.5	Americhe	America centrale	1	America_centrale	346135	193	227	21625	9	20	1007	4.66	2	0	0	2003-01-10	683
+1323	Geografia		1	Americhe	Messico	1	Messico	1765804	983	889	91205	46	58	5705	6.26	2	1	0	2005-05-29	31264
+1324	Geografia		2.5	Americhe	Cuba	1	Cuba	1731927	964	782	94685	56	30	2200	2.32	2	3	0	2003-11-12	35852
+1325	Geografia		#N/A	Americhe	America meridionale	1	America_meridionale	513656	286	417	37076	11	14	3502	9.45	0	0	0	2003-12-17	2908
+1326	Geografia		#N/A	Americhe	Foresta amazzonica	1	Amazzonia	614830	342	640	40668	40	41	611	1.50	0	0	0	2005-05-24	16543
+1327	Geografia		2	Americhe	Pampa argentina	1	Pampa	105022	58	58	58650	73	10	3183	5.43	0	0	0	2004-03-15	1226
+1328	Geografia		#N/A	Americhe	Cordigliera delle Ande	1	Ande	345516	192	177	25914	5	19	2044	7.89	1	0	0	2005-05-24	4387
+1329	Geografia		2	Americhe	Ecuador	1	Ecuador	836675	466	426	112869	108	77	4632	4.10	0	0	0	2002-12-01	38617
+1330	Geografia		2.1	Americhe	Perù	1	Perù	1031773	574	525	84586	75	46	4820	5.70	1	0	0	2005-12-17	35264
+1331	Geografia		-	Americhe	Brasile	1	Brasile	2235543	1244	1145	122165	101	89	6074	4.97	2	0	2	2005-05-24	98733
+1332	Geografia		#N/A	Americhe	Argentina	1	Argentina	1834496	1021	903	142437	99	77	4849	3.40	1	0	0	2004-01-20	39629
+1333	Geografia			Oceania e poli	Oceania	1	Oceania	984180	548	538	17717	3	6	1123	6.34	1	1	0	2005-10-04	1514
+1334	Geografia			Oceania e poli	Geografia politica	1	Stati_dell'Oceania	263965	147	88	12472	1	42	533	4.27	0	0	0	2005-12-26	0
+1335	Geografia		-	Oceania e poli	Australia	1	Australia	2953774	1644	1460	116491	56	44	2067	1.77	0	1	0	2005-08-29	63315
+1336	Geografia		2.1	Oceania e poli	Nuova Zelanda	1	Nuova_Zelanda	1844463	1026	1062	55367	24	12	3460	6.25	1	0	0	2005-11-13	21944
+1337	Geografia		2.1	Oceania e poli	Micronesia	1	Micronesia	172737	96	73	3441	1	3	694	20.17	0	0	0	2005-11-13	953
+1338	Geografia		2	Oceania e poli	Melanesia	1	Melanesia	141714	79	81	2653	0	4	442	16.66	0	1	0	2011-08-11	482
+1339	Geografia		2	Oceania e poli	Polinesia	1	Polinesia	734725	409	442	7728	0	8	1547	20.02	1	0	0	2011-08-11	5166
+1340	Geografia		2.5	Oceania e poli	Artide	1	Artide	476935	265	270	20321	21	9	1034	5.09	0	1	0	2005-09-18	6971
+1341	Geografia		#N/A	Oceania e poli	Antartide	1	Antartide	1324223	737	668	43665	36	23	1336	3.06	0	0	1	2003-08-02	11517
 1342	Grammatica italiana		#N/A	Fonologia, ortografia	L'alfabeto	1	Alfabeto italiano	792896	441	386	40646	32	1	1450	3.57	1	1	0	2003-08-02	53004
 1343	Grammatica italiana		2	Fonologia, ortografia	L'alfabeto	1	Ordine alfabetico	846741	471	505	3194	0	0	223	6.98	2	0	0	2009-01-11	1634
 1344	Grammatica italiana		2	Fonologia, ortografia	Errori ortografici	1	Ortografia_della_lingua_italiana	82673	46	30	83865	40	0	438	0.52	2	0	0	2009-01-11	22257
@@ -1889,7 +1873,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1889	Letteratura italiana	Superiori	2	Secolo XIV	Boccaccio	1	Decameron	1151359	641	530	51893	12	10	2059	3.97	0	0	0	#N/A	25013
 1890	Letteratura italiana	Superiori		Secolo XIV	Boccaccio	1	Struttura_del_Decameron	321352	179	169	56989	2	1	1764	3.10	0	0	0	2005-08-14	50
 1891	Letteratura italiana	Superiori	0	Secolo XIV	Boccaccio	1	Il_Corbaccio	40069	22	24	3478	1	1	97	2.79	1	0	0	2007-04-01	50
-1892	Letteratura italiana	Superiori		XV Secolo	Coordinate generali	1	Rinascimento	2031654	1131	1088	57466	32	22	1597	2.78	0	0	0	2006-12-11	48753
 1893	Letteratura italiana	Superiori		XV Secolo	Coordinate generali	1	Stampa_a_caratteri_mobili	386241	215	192	21666	28	5	306	1.41	0	0	0	2005-08-14	9750
 1894	Letteratura italiana	Superiori		XV Secolo	Coordinate generali	1	Umanesimo	729081	406	299	114726	143	36	2876	2.51	0	0	0	2004-07-29	18676
 1895	Letteratura italiana	Superiori		XV Secolo	Coordinate generali	1	Umanesimo_volgare	1920	1	4	10327	13	3	523	5.06	0	0	0	2004-07-29	50
@@ -1898,7 +1881,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1898	Letteratura italiana	Superiori	2	XV Secolo	Autori Minori	1	Giusto_de'_Conti	5236	3	3	4931	2	1	127	2.58	0	0	0	2008-04-06	1186
 1899	Letteratura italiana	Superiori	2	XV Secolo	Autori Minori	1	Leon_Battista_Alberti	508822	283	267	55924	16	14	1593	2.85	0	0	0	2005-08-23	6609
 1900	Letteratura italiana	Superiori	2	XV Secolo	Autori Minori	1	Leonardo_Bruni	56194	31	28	7545	2	4	1	0.01	0	0	0	2005-10-04	212
-1901	Letteratura italiana	Superiori	2	XV Secolo	Autori Minori	1	Leonardo_da_Vinci	4696130	2613	3861	223349	200	62	1282	0.57	0	0	0	2005-10-04	36848
 1902	Letteratura italiana	Superiori	0.4	XV Secolo	Autori Minori	1	Giovanni_Pontano	33840	19	18	6050	1	2	310	5.12	0	0	0	2004-04-11	1048
 1903	Letteratura italiana	Superiori	0.4	XV Secolo	Autori Minori	1	Masuccio_Salernitano	24348	14	12	4320	0	1	2	0.05	1	0	0	2012-12-12	854
 1904	Letteratura italiana	Superiori	0.4	XV Secolo	Autori Minori	1	Jacopo_Sannazaro	74922	42	43	15101	4	4	397	2.63	0	0	0	2005-07-20	2520
@@ -1936,7 +1918,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1936	Letteratura italiana	Superiori		XVI Secolo	Autori minori	1	Pietro_Aretino	194492	108	107	18310	13	5	746	4.07	1	0	0	2007-05-02	7689
 1937	Letteratura italiana	Superiori	#N/A	XVI Secolo	Autori minori	1	Battista_Guarini	16731	9	9	22135	13	5	1	0.00	0	0	0	2006-02-23	50
 1938	Letteratura italiana	Superiori	2	XVI Secolo	Autori minori	1	Benvenuto_Cellini	258234	144	136	33450	32	9	2	0.01	0	0	0	2004-06-15	2596
-1939	Letteratura italiana	Superiori	2.1	XVI Secolo	Autori minori	1	Michelangelo_Buonarroti	2217248	1234	1294	158258	97	55	1395	0.88	0	1	0	2009-01-11	17446
 1940	Letteratura italiana	Superiori		XVI Secolo	Autori minori	1	Vittoria_Colonna	147150	82	79	12355	2	6	231	1.87	0	0	0	2004-07-29	1246
 1941	Letteratura italiana	Superiori	2	XVI Secolo	Autori minori	1	Celio_Magno	2014	1	1	1948	0	0	1	0.05	0	0	0	2004-06-15	50
 1942	Letteratura italiana	Superiori		XVI Secolo	Autori minori	1	Ruzante	96339	54	49	12846	1	3	750	5.84	0	1	0	2007-06-24	2819
@@ -1969,7 +1950,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1969	Letteratura italiana	Superiori	2	XVII Secolo	Autori minori	1	Giacomo_Lubrano	8008	4	8	25550	0	0	808	3.16	0	0	0		50
 1970	Letteratura italiana	Superiori	2.1	XVII Secolo	Giambattista Basile	1	Giambattista Basile	222766	124	90	11107	10	1	481	4.33	0	0	0	2003-09-08	3544
 1971	Letteratura italiana	Superiori	2.1	XVII Secolo	Giambattista Basile	1	Lo_cunto_de_li_cunti	274118	153	109	12573	4	1	936	7.44	0	0	0	2003-02-24	821
-1972	Letteratura italiana	Superiori	2	XVII Secolo	Galileo Galilei	1	Galileo Galilei	2933840	1633	1497	181138	211	37	8196	4.52	0	0	0	2006-04-18	290667
 1973	Letteratura italiana	Superiori	2	XVII Secolo	Galileo Galilei	1	Sidereus_Nuncius	113414	63	68	17119	13	3	214	1.25	0	1	0	2005-07-15	5180
 1974	Letteratura italiana	Superiori	2	XVII Secolo	Galileo Galilei	1	Il Saggiatore (trattato)	103131	57	66	6632	2	2	581	8.76	0	0	0	2005-10-23	50
 1975	Letteratura italiana	Superiori	#N/A	XVII Secolo	Galileo Galilei	1	Dialogo_sopra_i_due_massimi_sistemi_del_mondo	334419	186	186	40080	21	2	1721	4.29	0	0	0	matching	37660
@@ -1999,7 +1979,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1999	Letteratura italiana	Superiori	2	XVIII Secolo	Giuseppe Parini	1	Odi (Parini)	73987	41	39	3585	0	0	295	8.23	1	0	0	2006-03-11	1118
 2000	Letteratura italiana	Superiori		XVIII Secolo	Vittorio Alfieri	1	Vittorio_Alfieri	738408	411	369	121116	108	32	3799	3.14	0	0	0	2004-07-29	30786
 2001	Letteratura italiana	Superiori	2.1	XVIII Secolo	Vittorio Alfieri	1	Saul	183322	102	93	9663	10	2	446	4.62	0	0	0	2006-03-11	414
-2002	Letteratura italiana	Superiori	2	Fra XVIII e XIX sec.	Coordinate generali	1	Rivoluzione_industriale	1848823	1029	1021	36075	6	2	2637	7.31	1	0	0	2006-03-11	27085
 2003	Letteratura italiana	Superiori	0	Fra XVIII e XIX sec.	Coordinate generali	1	Moti_del_1820-1821	324477	181	161	24419	7	8	2186	8.95	0	0	0	2007-07-13	1410
 2004	Letteratura italiana	Superiori	2.1	Fra XVIII e XIX sec.	Coordinate generali	1	Neoclassicismo	809348	450	419	19399	5	12	975	5.03	0	2	0	2007-05-07	5434
 2005	Letteratura italiana	Superiori		Fra XVIII e XIX sec.	Autori minori	1	Vincenzo_Monti	200305	111	110	72647	83	19	393	0.54	0	0	0	2004-07-29	2347
@@ -2401,7 +2380,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2401	Scienze	Medie	2	Composizione di tutte le cose		1	Liquido	117557	65	58	3590	1	1	112	3.12	0	0	0	2007-07-29	539
 2402	Scienze	Medie	2	Composizione di tutte le cose		1	Solido	122595	68	57	6862	5	5	685	9.98	0	0	0	2006-06-07	1875
 2403	Scienze	Medie	2	Composizione di tutte le cose		1	Miscela	177315	99	87	6556	1	0	644	9.82	0	0	0	2005-02-10	1029
-2404	Scienze	Medie		Sistema Terra		1	Terra	1925643	1072	1176	123271	92	17	3915	3.18	0	0	0	2004-07-29	33915
 2405	Scienze	Medie	#N/A	Sistema Terra		1	Acqua	1469962	818	760	115563	137	36	3460	2.99	0	0	0	#N/A	42146
 2406	Scienze	Medie	#N/A	Sistema Terra		1	Acqua di mare	193368	108	95	4866	0	1	403	8.28	1	0	0	#N/A	1595
 2407	Scienze	Medie	#N/A	Sistema Terra		1	Acqua dolce	132230	74	75	14964	6	3	777	5.19	0	0	0	#N/A	3042
@@ -2533,7 +2511,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2533	Scienze	Medie	2.1	Aspetti chimici della materia		1	Atomo	1041589	580	477	30456	25	8	1146	3.76	0	0	0	2005-02-15	1102
 2534	Scienze	Medie		Aspetti chimici della materia		1	Molecola	358460	199	176	52309	38	18	1574	3.01	0	0	0	2010-02-15	16150
 2535	Scienze	Medie	2.1	Aspetti chimici della materia		1	Elettrone	711636	396	354	131274	191	22	2290	1.74	0	0	0	2008-04-10	12290
-2536	Scienze	Medie		Aspetti chimici della materia		1	Tavola periodica degli elementi	3005588	1673	2005	64403	92	19	1081	1.68	0	0	0	2005-08-22	21802
 2537	Scienze	Medie	2.1	Aspetti chimici della materia		1	Conduttore elettrico	287894	160	148	6950	1	1	842	12.12	0	0	0	2005-08-08	1098
 2538	Scienze	Medie		Aspetti chimici della materia		1	Isolante elettrico	175950	98	94	10227	1	1	1258	12.30	0	0	0	2007-01-25	2717
 2539	Scienze	Medie	#N/A	Aspetti chimici della materia		1	Carica elettrica	350165	195	178	11285	8	3	1253	11.10	0	0	0	#N/A	8990
@@ -2574,7 +2551,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2574	Scienze	Medie	1	Corpi celesti		1	Storia dell'universo	248328	138	133	21317	4	5	1729	8.11	0	0	0	2006-06-07	19454
 2575	Scienze	Medie	2.1	Corpi celesti		1	Big Bang	941131	524	478	106325	97	9	2295	2.16	1	1	0	#N/A	47180
 2576	Scienze	Medie	1	Corpi celesti		1	Espansione metrica dello spazio	47504	26	26	28696	13	5	1278	4.45	0	0	0	2004-09-09	4803
-2577	Scienze	Medie	1	Corpi celesti		1	Sistema solare	2279871	1269	1145	76093	95	26	2374	3.12	0	0	0	2006-06-07	58037
 2578	Scienze	Medie	1	Corpi celesti		1	Sole	1730757	963	904	157617	169	36	4953	3.14	0	0	0	2006-06-07	65665
 2579	Scienze	Medie	0.4	Corpi celesti		1	Meccanica celeste	33236	18	17	14513	11	7	1004	6.92	0	0	0	2007-04-01	37
 2580	Scienze	Medie	1	Corpi celesti		1	Leggi di Keplero	739783	412	364	11159	1	5	700	6.27	0	0	0	2004-02-18	7822
@@ -2951,7 +2927,7 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2951	Storia	Superiori	2.1	XVI-XVII secolo	le navi negriere	1	Nave_negriera	26900	15	25	9013	29	6	1214	13.47	0	0	0	2007-11-13	1100
 2952	Storia	Superiori	2	XVI-XVII secolo	il commercio triangolare	0	Commercio triangolare	0	0	0	69	0	0	66	95.65	0	0	0	2006-06-20	0
 2953	Storia	Superiori	#N/A	XVI-XVII secolo	borghesia e periferie	1	Borghesia	390436	217	216	9576	11	0	623	6.51	0	0	0	2006-06-20	3438
-2954	Storia	Superiori		XVI-XVII secolo	Galileo Galilei	1	Galileo_Galilei	2933840	1633	1497	181138	211	37	8196	4.52	0	0	0	2005-01-13	290667
+2954	Fisica	Superiori		XVI-XVII secolo	Galileo Galilei	1	Galileo_Galilei	2933840	1633	1497	181138	211	37	8196	4.52	0	0	0	2005-01-13	290667
 2955	Storia	Superiori		XVI-XVII secolo		1	Disputa_tra_Galileo_Galilei_e_la_Chiesa	3268	2	2	32044	32	9	1	0.00	0	0	0	2006-03-04	105
 2956	Storia	Superiori		XVI-XVII secolo		1	Processo_a_Galileo_Galilei	262685	146	154	91684	23	18	580	0.63	0	1	0	2009-06-23	77498
 2957	Storia	Superiori		XVI-XVII secolo	il crollo della Spagna	1	Spagna_degli_Asburgo	61807	34	38	62511	0	24	2763	4.42	1	0	0	2006-06-07	36
@@ -3164,7 +3140,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3164	Storia	Superiori		XX-XXI secolo	Stato totalitario	1	Totalitarismo	654716	364	365	27813	24	2	1660	5.97	0	0	0	2005-03-06	9160
 3165	Storia	Superiori		XX-XXI secolo	Il fascismo	1	Fascismo	2487411	1384	1474	145587	129	11	8115	5.57	0	4	0	2007-06-05	63492
 3166	Storia	Superiori	2.1	XX-XXI secolo	Questione fiumana	1	Impresa_di_Fiume	595339	331	533	48222	31	6	1047	2.17	0	2	0	2006-01-20	69683
-3167	Storia	Superiori	2.1	XX-XXI secolo	D'Annunzio	1	Gabriele_D'Annunzio	3288787	1830	1974	214339	130	96	2765	1.29	0	1	0	2005-08-23	8174
 3168	Storia	Superiori	2.1	XX-XXI secolo	Biennio rosso	1	Biennio_rosso_in_Italia	450200	251	261	90314	171	8	2194	2.43	0	0	0	2006-04-18	28691
 3169	Storia	Superiori	2.1	XX-XXI secolo		1	Biennio_rosso_in_Europa	57862	32	36	17676	17	1	730	4.13	0	0	0	2005-09-09	1081
 3170	Storia	Superiori		XX-XXI secolo	Partito comunista italiano	1	Partito_Comunista_Italiano	1273401	709	852	154561	100	35	4847	3.14	2	0	0	2004-10-18	153449
@@ -3268,7 +3243,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3268	Storia	Superiori	1	XX-XXI secolo	Civiltà araba	0	Civiltà araba	0	0	0	0	0	0	0	#DIV/0!	0	0	0	2004-05-23	0
 3269	Storia	Superiori		XX-XXI secolo	Fondamentalismo	1	Fondamentalismo_islamico	206548	115	84	12992	3	1	1123	8.64	1	0	0	2004-05-04	65591
 3270	Storia	Superiori		XX-XXI secolo	Olocausto	1	Olocausto	2298254	1279	1271	190100	236	36	4687	2.47	0	1	2	2004-09-12	131072
-3271	Storia	Superiori	1	XX-XXI secolo	fondazione di Israele	1	Israele	2704378	1505	1336	149516	163	21	7508	5.02	2	5	0	2008-07-05	72079
 3272	Storia	Superiori	1	XX-XXI secolo	Guerre arabo-israeliane	1	Conflitto_arabo-israeliano	730475	406	513	113560	92	34	4780	4.21	0	3	0	2004-05-23	50205
 3273	Storia	Superiori		XX-XXI secolo	Terrorismo palestinese	1	Terrorismo_palestinese	24280	14	13	7592	4	0	1395	18.37	2	0	0	2004-07-29	9311
 3274	Storia	Superiori	1	XX-XXI secolo	provocazioni israeliane	1	Insediamenti_israeliani	43259	24	21	10562	5	2	1024	9.70	0	0	1	2003-08-08	5917
@@ -3411,7 +3385,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3411	Storia dell'arte	Superiori		Il Gotico		1	Giotto	1274948	709	659	70072	14	28	78	0.11	0	0	0	2005-02-04	6501
 3412	Storia dell'arte	Superiori		Il Gotico		1	Cimabue	330551	184	214	30640	8	11	1912	6.24	0	0	0	2007-06-27	2752
 3413	Storia dell'arte	Superiori		Il Gotico		1	Simone Martini	181663	101	82	47231	5	41	237	0.50	0	0	0	2006-12-11	5493
-3414	Storia dell'arte	Superiori		Il Quattrocento		1	Rinascimento	2031654	1131	1088	57466	32	22	1597	2.78	0	0	0	2004-09-09	48753
 3415	Storia dell'arte	Superiori	#N/A	Il Quattrocento		1	Arte del Rinascimento	527224	293	243	88455	55	36	368	0.42	0	0	1	2005-08-14	1416
 3416	Storia dell'arte	Superiori		Il Quattrocento		1	Rinascimento italiano	383806	214	177	24648	19	7	2633	10.68	0	0	0	2004-09-09	3966
 3417	Storia dell'arte	Superiori		Il Quattrocento		1	Filippo Brunelleschi	763961	425	398	93951	65	45	2663	2.83	0	0	0	2004-08-13	6776
