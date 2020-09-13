@@ -31,6 +31,10 @@ table {
 	border-spacing: 20px 0;
 }
 
+svg {
+	overflow: visible;
+}
+
 th {
 	font-weight: normal;
 	padding: 10px 0 10px; 
@@ -61,6 +65,11 @@ tr:hover, tr:hover a {
 	color: blue;
 }
 
+#dv1 {
+	width: 100%;
+	/*overflow: scroll; */
+}
+
 #filter {
 	display: flex;
 }
@@ -72,4 +81,9 @@ tr:hover, tr:hover a {
 
 .underline {
 	text-decoration: underline;
+}
+
+.dataset {
+	column-count: 6;
+	font-size: 0.7em;
 }

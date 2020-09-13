@@ -61,19 +61,9 @@ function articles() {
 				})
 				// console.log(index)
 
-				function compareStrings(a, b) {
-					a = a.toLowerCase();
-					b = b.toLowerCase();
-					return (a < b) ? -1 : (a > b) ? 1 : 0;
-				}
-
-				function compareValues(a, b) {
-					return b - a 
-				}
-
 				filtered.sort(function(a, b) { 
-					// return compareValues(a.average_daily_visit, b.average_daily_visit);
-					return compareStrings(a.subject, b.subject);
+					return compareValues(a.average_daily_visit, b.average_daily_visit);
+					// return compareStrings(a.subject, b.subject);
 					// return compareValues(a[sort], b[sort]);
 				})
 
