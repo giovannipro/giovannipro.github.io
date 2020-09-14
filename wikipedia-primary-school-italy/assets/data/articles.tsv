@@ -2,7 +2,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1	Biologia	Superiori	0	Introduzione		1	Scienza	556340	310	283	45268	55	8	4222	9.33	0	1	0	2003-06-22	68115
 2	Biologia	Superiori	0.2	Introduzione		1	Biologia	518187	288	229	62849	69	32	2948	4.69	0	0	0	2003-10-23	9005
 3	Biologia	Superiori	2	Introduzione		1	Metodo scientifico	887603	494	474	62157	27	10	3181	5.12	0	1	0	2004-02-16	133068
-4	Biologia	Superiori	0.2	Chimica della vita		1	Atomo	1041589	580	477	30456	25	8	1146	3.76	0	0	0	2003-04-10	1102
 5	Biologia	Superiori	-	Chimica della vita		1	Ione	346853	193	168	4873	2	0	549	11.27	0	0	0	2003-12-30	426
 6	Biologia	Superiori	0.2	Chimica della vita		1	Elemento chimico	456276	254	203	30916	8	0	1392	4.50	0	0	0	2003-08-22	22592
 7	Biologia	Superiori	-	Chimica della vita		1	Molecola	358460	199	176	52309	38	18	1574	3.01	0	0	0	2003-07-21	16150
@@ -200,12 +199,10 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 199	Biologia	Superiori	2	Ecologia		1	Riscaldamento globale	972159	541	992	118989	138	28	1882	1.58	0	0	1	2005-08-23	178
 200	Biologia	Superiori	#N/A	Ecologia		1	Cambiamento climatico	582991	324	743	43188	16	14	661	1.53	1	3	0	2005-10-27	19850
 201	Biologia	Superiori		Ecologia		1	Sviluppo sostenibile	608337	339	429	52859	9	3	1375	2.60	0	0	0	2005-06-17	13454
-202	Chimica	Superiori	1	Misure e grandezze		1	Sistema internazionale di unità di misura	1339589	745	640	34199	23	3	1850	5.41	0	0	0	2003-12-16	56033
 203	Chimica	Superiori	2.1	Misure e grandezze		1	Misurazione	44163	25	24	7961	0	1	786	9.87	1	0	0	2006-06-28	2144
 204	Chimica	Superiori		Misure e grandezze		1	Unità di misura	596032	332	261	10993	1	1	1066	9.70	0	0	0	2003-12-16	4833
 205	Chimica	Superiori	2.4	Misure e grandezze		1	Grandezza fisica	348588	194	170	20647	12	0	590	2.86	0	0	0	2004-04-15	4716
 206	Chimica	Superiori	1	Misure e grandezze		1	Proprietà intensive ed estensive	194454	108	108	2911	2	0	2121	72.86	1	0	0	2007-10-11	3841
-207	Chimica	Superiori	2	Misure e grandezze		1	Energia	946410	527	491	26574	18	5	2087	7.85	0	0	0	2003-08-17	113975
 208	Chimica	Superiori	2.1	Misure e grandezze		1	Lavoro (fisica)	666183	371	307	17687	3	2	1475	8.34	0	0	0	2003-12-22	20199
 209	Chimica	Superiori		Misure e grandezze		1	Temperatura	618888	344	276	52386	16	5	1016	1.94	0	2	0	2003-12-21	18757
 210	Chimica	Superiori	#N/A	Misure e grandezze		1	Calore	404333	225	191	13247	4	0	491	3.71	1	0	0	2004-04-14	30249
@@ -230,7 +227,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 229	Chimica	Superiori		Teoria atomica		1	Protone	450341	251	198	16646	15	1	1828	10.98	0	0	0	2003-07-13	4872
 230	Chimica	Superiori	0	Teoria atomica		1	Neutrone	228610	127	123	13595	4	2	1255	9.23	1	0	0	2003-12-17	1196
 231	Chimica	Superiori	2	Teoria atomica		1	Elettrone	711636	396	354	131274	191	22	2290	1.74	0	0	0	2003-10-03	12290
-232	Chimica	Superiori	#N/A	Teoria atomica		1	Atomo	1041589	580	477	30456	25	8	1146	3.76	0	0	0	2003-04-10	1102
 233	Chimica	Superiori	0	Teoria atomica		1	Molecola	358460	199	176	52309	38	18	1574	3.01	0	0	0	2003-07-21	16150
 234	Chimica	Superiori	2.5	Teoria atomica		1	Ione	346853	193	168	4873	2	0	549	11.27	0	0	0	2003-12-30	426
 235	Chimica	Superiori	-	Teoria atomica		1	Elemento chimico	456276	254	203	30916	8	0	1392	4.50	0	0	0	2003-08-22	22592
@@ -257,7 +253,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 256	Chimica	Superiori	-	Leggi dei gas		1	Gas	248749	138	134	16173	12	1	1262	7.80	0	0	0	2005-04-24	2424
 257	Chimica	Superiori	2.3	Leggi dei gas		1	Gas ideale	240703	134	136	6687	9	1	1429	21.37	0	0	0	2004-07-21	10348
 258	Chimica	Superiori		Leggi dei gas		1	Teoria cinetica dei gas	219014	122	123	13415	8	3	1304	9.72	0	0	0	2005-07-30	1067
-259	Chimica	Superiori		Leggi dei gas		1	Pressione	915049	509	384	8935	5	1	737	8.25	0	0	0	2004-01-07	3232
 260	Chimica	Superiori	-	Leggi dei gas		1	Pressione di vapore	403276	224	205	10679	2	1	1878	17.59	1	0	1	2004-07-17	13863
 261	Chimica	Superiori	-	Leggi dei gas		1	Legge di Boyle-Mariotte	229708	128	110	7355	4	4	1115	15.16	0	0	0	2004-12-14	3286
 262	Chimica	Superiori	-	Leggi dei gas		1	Equazione di stato dei gas perfetti	502985	280	288	7426	3	1	901	12.13	0	0	0	2005-06-13	29373
@@ -414,7 +409,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 415	Cittadinanza e costituzione	Medie		Secondo anno		1	Promozione della salute	64449	36	33	9283	0	0	327	3.52	0	0	0	2005-07-24	4384
 416	Cittadinanza e costituzione	Medie	-	Secondo anno		1	Codice della strada (Italia)	45641	25	39	32846	12	6	185	0.56	0	0	0	2015-06-02	3264
 417	Cittadinanza e costituzione	Medie		Terzo anno		1	Separazione dei poteri	470604	262	252	30595	12	6	963	3.15	0	0	0	2005-07-11	8285
-418	Cittadinanza e costituzione	Medie	1	Terzo anno		1	Parlamento della Repubblica Italiana	1446253	805	973	53530	29	8	1396	2.61	1	0	0	2004-03-18	20594
 419	Cittadinanza e costituzione	Medie	-	Terzo anno		1	Consiglio dei ministri della Repubblica Italiana	315193	175	285	17327	3	60	419	2.42	0	0	0	2005-12-30	2198
 422	Cittadinanza e costituzione	Medie	-	Terzo anno		1	Corte costituzionale (Italia)	4809	3	0	89763	53	3	1567	1.75	1	0	0	2008-02-05	30789
 423	Cittadinanza e costituzione	Medie	-	Terzo anno		1	Diritto del lavoro in Italia	74589	42	43	12345	1	0	114	0.92	0	0	0	2014-12-20	134
@@ -470,7 +464,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 474	Cittadinanza e costituzione	Superiori		Storia della Costituzione Italiana		1	Storia del fascismo italiano	553174	308	500	149415	95	18	749	0.50	3	15	3	2004-08-19	98077
 475	Cittadinanza e costituzione	Superiori	2	Storia della Costituzione Italiana		1	Nascita della Repubblica Italiana	1346830	749	793	85754	74	22	3473	4.05	1	0	0	2005-06-02	125360
 476	Cittadinanza e costituzione	Superiori	#N/A	Storia della Costituzione Italiana		1	Assemblea Costituente (Italia)	737291	410	409	31232	35	6	768	2.46	0	0	0	2020-07-20	2260
-477	Cittadinanza e costituzione	Superiori	2	Storia della Costituzione Italiana		1	Nascita della Repubblica Italiana	1346830	749	793	85754	74	22	3473	4.05	1	0	0	2005-06-02	125360
 479	Cittadinanza e costituzione	Superiori		La Costituzione e l'ordinamento italiano		1	Sistema politico della Repubblica Italiana	1073979	598	772	48771	10	107	744	1.53	1	0	0	2006-11-07	15015
 480	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Diritti inviolabili	92754	52	94	10146	1	0	838	8.26	1	0	0	2011-11-04	2270
 481	Cittadinanza e costituzione	Superiori	-	La Costituzione e l'ordinamento italiano		1	Doveri inderogabili	30603	17	20	999	4	0	686	68.67	1	0	0	2011-01-22	57
@@ -480,7 +473,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 485	Cittadinanza e costituzione	Superiori	2.5	La Costituzione e l'ordinamento italiano		1	Diritto di voto	196076	109	140	11645	9	0	345	2.96	1	0	0	2007-01-19	1367
 486	Cittadinanza e costituzione	Superiori	1	La Costituzione e l'ordinamento italiano		1	Sistema elettorale italiano	432196	241	283	55619	93	13	2336	4.20	0	0	0	2013-04-29	3995
 487	Cittadinanza e costituzione	Superiori	1	La Costituzione e l'ordinamento italiano		1	Partiti politici italiani	1093967	609	696	40875	25	0	272	0.67	1	0	1	2005-10-05	15381
-488	Cittadinanza e costituzione	Superiori	1	La Costituzione e l'ordinamento italiano		1	Patti Lateranensi	1141872	635	713	35554	29	5	658	1.85	1	0	0	2004-08-10	17235
 489	Cittadinanza e costituzione	Superiori	1	La Costituzione e l'ordinamento italiano		1	Separazione dei poteri	470604	262	252	30595	12	6	963	3.15	0	0	0	2005-07-11	8285
 490	Cittadinanza e costituzione	Superiori	1	La Costituzione e l'ordinamento italiano		1	Organi costituzionali italiani	239545	133	130	17565	23	0	147	0.84	0	0	0	2008-06-20	4083
 491	Cittadinanza e costituzione	Superiori	1	La Costituzione e l'ordinamento italiano		1	Parlamento della Repubblica Italiana	1446253	805	973	53530	29	8	1396	2.61	1	0	0	2004-03-18	20594
@@ -527,7 +519,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 536	Cittadinanza e costituzione	Superiori	-	Organizzazioni internazionali		1	Consiglio Economico e Sociale delle Nazioni Unite	3718	2	2	63	0	0	60	95.24	0	0	0	2008-02-26	0
 537	Cittadinanza e costituzione	Superiori	-	Organizzazioni internazionali		1	Diritti umani	777958	433	503	38756	11	1	792	2.04	2	1	0	2003-12-13	7537
 538	Cittadinanza e costituzione	Superiori	2	Organizzazioni internazionali		1	Dichiarazione universale dei diritti umani	847544	472	546	9948	8	3	716	7.20	0	0	0	2007-12-03	876
-539	Cittadinanza e costituzione	Superiori	1.2	Organizzazioni internazionali		1	Organizzazione del Trattato dell'Atlantico del Nord	1515165	843	795	42413	18	13	2006	4.73	1	0	0	2004-01-26	11024
 540	Cittadinanza e costituzione	Superiori	2	Organizzazioni internazionali		1	Fondo Monetario Internazionale	327862	182	290	35364	17	15	804	2.27	0	1	0	2004-12-22	27577
 541	Cittadinanza e costituzione	Superiori	#N/A	Organizzazioni internazionali		1	Banca Mondiale	246163	137	137	11171	9	3	598	5.35	0	0	0	2005-07-28	2732
 542	Cittadinanza e costituzione	Superiori		Organizzazioni internazionali		1	Organizzazione per la cooperazione e lo sviluppo economico	628731	350	385	14210	8	3	2011	14.15	1	0	0	2005-07-27	2502
@@ -621,7 +612,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 631	Diritto e Economia	Superiori	2	Costituzione e cittadinanza: libertà, diritti e doveri		1	Sistema elettorale italiano	432196	241	283	55619	93	13	2336	4.20	0	0	0	2013-04-29	3995
 632	Diritto e Economia	Superiori	2	Organizzazione dello stato italiano		1	Sistema politico della Repubblica Italiana	1073979	598	772	48771	10	107	744	1.53	1	0	0	2006-11-07	15015
 633	Diritto e Economia	Superiori	2.4	Organizzazione dello stato italiano		1	Costituzione della Repubblica Italiana	3450430	1920	2088	147522	135	25	1402	0.95	0	0	0	2003-04-22	93022
-634	Diritto e Economia	Superiori	-	Organizzazione dello stato italiano		1	Parlamento della Repubblica Italiana	1446253	805	973	53530	29	8	1396	2.61	1	0	0	2004-03-18	20594
 635	Diritto e Economia	Superiori		Organizzazione dello stato italiano		1	Senato della Repubblica	1393853	776	821	34058	26	7	3624	10.64	2	0	0	2005-07-10	10410
 636	Diritto e Economia	Superiori	-	Organizzazione dello stato italiano		1	Camera dei deputati (Italia)	232396	129	333	35650	14	6	2312	6.49	0	0	0	2005-07-06	8555
 637	Diritto e Economia	Superiori		Organizzazione dello stato italiano		0	Procedimento legislativo (Italia)	0	0	0	0	0	0	0	#DIV/0!	0	0	0	2005-11-29	0
@@ -641,9 +631,7 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 651	Diritto e Economia	Superiori	-	Organizzazione dello stato italiano		1	Decreto-legge	825825	460	463	18635	20	0	1127	6.05	0	0	0	2020-05-21	3247
 652	Diritto e Economia	Superiori		Organizzazione dello stato italiano		1	Uguaglianza sociale	107930	60	65	10180	6	0	518	5.09	2	0	0	2006-04-26	2157
 653	Diritto e Economia	Superiori		Organizzazione dello stato italiano		1	Referendum	584143	325	212	17568	13	2	494	2.81	0	0	0	2004-03-16	13008
-654	Diritto e Economia	Superiori	2	Organizzazione dello stato italiano		1	Patti Lateranensi	1141872	635	713	35554	29	5	658	1.85	1	0	0	2004-08-10	17235
 655	Diritto e Economia	Superiori	#N/A	Organizzazione dello stato italiano		1	Bandiera d'Italia	171130	306	108	171130	306	108	4435	2.59	0	0	0	2009-09-23	75680
-656	Diritto e Economia	Superiori	2.3	Organizzazione dello stato italiano		1	Il Canto degli Italiani	1503737	837	703	97229	155	23	1941	2.00	0	0	0	2017-12-15	152574
 657	Diritto e Economia	Superiori	-	Organizzazione dello stato italiano		1	Diritto di famiglia	129893	72	77	8346	1	0	159	1.91	0	0	0	2006-03-03	2093
 658	Diritto e Economia	Superiori	0	Organizzazione dello stato italiano		1	Matrimonio (ordinamento civile italiano)	71668	40	35	16900	10	3	180	1.07	0	0	0	matching	0
 659	Diritto e Economia	Superiori	2.5	Organizzazione dello stato italiano		1	Divorzio (ordinamento civile italiano)	240596	134	152	30100	21	6	40	0.13	1	1	0	matching	36
@@ -672,7 +660,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 685	Diritto e Economia	Superiori	-	Economia e il sistema economico		1	Corporativismo	229499	128	123	36438	56	2	895	2.46	0	0	0	2005-11-28	7555
 686	Diritto e Economia	Superiori		Economia e il sistema economico		1	Protezionismo	263110	146	144	76761	72	6	295	0.38	0	0	0	2006-12-09	2369
 687	Diritto e Economia	Superiori	#N/A	Economia e il sistema economico		1	Adam Smith	467404	260	247	32015	3	7	2400	7.50	0	0	0	2003-04-30	3816
-688	Diritto e Economia	Superiori	2.1	Economia e il sistema economico		1	Karl Marx	1556713	866	789	173009	130	35	4760	2.75	0	0	0	2004-01-17	12815
 689	Diritto e Economia	Superiori	2.1	Economia e il sistema economico		1	John Maynard Keynes	623230	347	429	39318	17	16	1387	3.53	0	0	0	2003-04-17	3102
 690	Diritto e Economia	Superiori	-	Economia e il sistema economico		1	Ciclo economico	143522	80	85	34434	15	1	251	0.73	0	0	0	2007-05-10	1581
 691	Diritto e Economia	Superiori	2	Economia e il sistema economico		1	Sviluppo economico	65217	36	40	4370	0	0	532	12.17	1	0	0	2006-08-14	49
@@ -724,7 +711,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 737	Diritto e Economia	Superiori		Mercato del lavoro		1	Statuto dei lavoratori	301088	168	164	28679	23	7	682	2.38	1	0	0	2005-10-11	9138
 738	Diritto e Economia	Superiori	-	Mercato della moneta		1	Moneta	478239	266	214	47485	4	3	1942	4.09	1	2	0	2003-08-20	30935
 739	Diritto e Economia	Superiori	2.3	Mercato della moneta		1	Inflazione	1047359	583	686	51961	20	2	1671	3.22	3	1	0	2004-02-19	42465
-740	Diritto e Economia	Superiori	2.1	Mercato della moneta		1	Euro	1709962	952	955	67466	98	40	4326	6.41	1	0	0	2003-06-28	97056
 741	Diritto e Economia	Superiori		Mercato della moneta		1	Unione economica e monetaria dell'Unione europea	168294	94	95	24782	21	0	967	3.90	1	0	0	2003-01-21	7022
 742	Diritto e Economia	Superiori	-	Mercato della moneta		1	Credito	131041	73	57	6469	0	0	747	11.55	1	0	0	2005-12-14	1337
 743	Diritto e Economia	Superiori	0.4	Mercato della moneta		1	Microcredito	124019	69	63	30903	20	5	3357	10.86	3	0	0	2005-10-17	3941
@@ -742,7 +728,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 755	Diritto e Economia	Superiori		Relazioni economiche itnernazionali		1	Protezionismo	263110	146	144	76761	72	6	295	0.38	0	0	0	2006-12-09	2369
 756	Diritto e Economia	Superiori	2.1	Relazioni economiche itnernazionali		1	Liberalismo	1010738	562	700	91523	77	19	3746	4.09	0	0	0	2004-11-27	37365
 757	Diritto e Economia	Superiori	-	Relazioni economiche itnernazionali		1	Integrazione internazionale	55762	31	33	0	0	0	0	#DIV/0!	0	0	0	matching	0
-758	Diritto e Economia	Superiori	2.1	Relazioni economiche itnernazionali		1	Globalizzazione	1402697	781	747	96322	103	5	2199	2.28	0	0	0	2004-07-10	28447
 759	Diritto e Economia	Superiori	2	Relazioni economiche itnernazionali		1	Bilancia commerciale	130163	72	63	2299	0	1	421	18.31	2	0	0	2005-12-23	1029
 760	Diritto e Economia	Superiori		Relazioni economiche itnernazionali		1	Tasso di cambio	259356	144	115	14009	0	0	396	2.83	1	0	0	2005-07-07	1298
 761	Diritto e Economia	Superiori	2	Relazioni economiche itnernazionali		1	Organizzazione mondiale del commercio	310829	173	185	35455	15	3	1450	4.09	0	0	0	2005-08-29	13360
@@ -1069,7 +1054,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1083	Geografia		1	Geografia fisica	Riduzione in scala	1	Scala_di_riduzione	104940	58	128	4370	0	0	423	9.68	0	0	0	2006-06-07	2009-07-16
 1085	Geografia		2.5	Geografia fisica	Continente	1	Continente	1054379	587	542	33801	20	9	249	0.74	4	0	0	2004-11-18	2003-09-06
 1086	Geografia		1	Geografia fisica	Placche terrestri	1	Tettonica_delle_placche	780786	434	346	31047	0	16	343	1.10	1	0	0	2006-12-17	2005-02-19
-1087	Geografia		1	Geografia fisica	Terremoto	1	Terremoto	1296369	721	495	43019	23	12	3023	7.03	0	0	0	2006-12-17	2004-02-25
 1088	Geografia		2.4	Geografia fisica	Clima	1	Clima	447525	249	235	27344	1	13	1805	6.60	0	0	0	2003-02-24	2005-06-11
 1089	Geografia		1.3	Geografia fisica	regioni climatiche	1	Fascia_climatica	104775	58	57	3899	0	2	575	14.75	0	0	0	2004-02-12	2008-03-27
 1090	Geografia		2.1	Geografia fisica	fasce polari	1	Regioni_polari	68449	38	36	2130	0	1	471	22.11	0	0	0	2014-02-06	2006-10-30
@@ -1097,7 +1081,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1112	Geografia		2.3	Geografia fisica	Fiume	1	Fiume	627076	349	288	11839	2	8	677	5.72	2	0	0	2004-03-06	2006-11-21
 1113	Geografia		1.1	Geografia fisica	Lago	1	Lago	409706	228	209	13427	4	8	936	6.97	1	0	0	2004-11-09	2004-07-14
 1114	Geografia		2	Geografia fisica	Palude	1	Palude	135829	76	77	3039	0	2	278	9.15	0	0	0	2005-10-31	2009-06-13
-1115	Geografia			Geografia fisica	Vulcano	1	Vulcano	1117306	622	590	38274	7	10	2117	5.53	0	1	0	2006-03-23	2003-05-25
 1116	Geografia		2.1	Geografia fisica	Flora	1	Flora	147124	82	68	2523	0	1	1573	62.35	0	0	0	2006-11-22	2005-11-23
 1117	Geografia		2.1	Geografia fisica	Fauna	1	Fauna	152537	85	72	3183	0	1	271	8.51	0	0	0	2006-11-22	2003-09-17
 1118	Geografia		2.1	Geografia fisica	Spazio antropico	1	Geografia_antropica	91524	51	43	4008	0	0	915	22.83	1	0	0	2006-11-22	2006-09-19
@@ -1119,7 +1102,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1135	Geografia		2	Geografia politica ed economica	speranza di vita	1	Speranza_di_vita	195039	109	99	1958	0	0	211	10.78	1	0	0	2004-07-30	2005-12-26
 1136	Geografia		#N/A	Geografia politica ed economica	analfabetismo	1	Analfabetismo	197430	110	95	18057	20	1	1156	6.40	0	0	0	2006-03-21	2005-11-14
 1137	Geografia		2	Geografia politica ed economica	Indice sviluppo umano	1	Indice_di_sviluppo_umano	605139	337	320	11124	4	2	2136	19.20	0	0	0	2008-04-09	2004-10-28
-1138	Geografia		0	Geografia politica ed economica	Globalizzazione	1	Globalizzazione	1402697	781	747	96322	103	5	2199	2.28	0	0	0	2004-09-02	2004-07-10
 1139	Geografia		0	Geografia politica ed economica	Squilibri nello sviluppo	1	Disuguaglianza_economica	122725	68	73	57173	52	4	1222	2.14	0	4	0	2003-12-04	2012-07-07
 1140	Geografia		2.1	Geografia politica ed economica	inquinamento	1	Inquinamento	890429	496	645	51693	20	3	426	0.82	0	0	0	2008-01-20	2005-03-21
 1141	Geografia		#N/A	Geografia politica ed economica	Cambiamento climatico	1	Cambiamento_climatico	582991	324	743	43188	16	14	661	1.53	1	3	0	2007-01-02	2005-10-27
@@ -1139,8 +1121,8 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1155	Geografia			Geografia politica ed economica	trasporti	1	Trasporto	125066	70	84	30149	1	13	459	1.52	1	0	0	2004-07-29	2002-09-29
 1156	Geografia			Geografia politica ed economica	telecomunicazioni	1	Telecomunicazione	194927	108	108	58648	31	12	2272	3.87	0	1	0	2004-07-29	2002-12-28
 1157	Geografia			Geografia politica ed economica	turismo	1	Turismo	417554	232	223	38137	14	13	814	2.13	2	0	0	2004-07-29	2002-03-18
-1158	Geografia			Geografia politica ed economica	servizi per cittadini e imprese	1	Servizio	139932	78	62	3100	1	0	611	19.71	0	0	0	2006-06-07	2005-09-15
-1159	Geografia		2.5	Penisola italiana	Italia	1	Italia	14359579	7991	7890	199878	273	77	4609	2.31	0	0	0	2009-01-11	2003-10-05
+1158	Geografia			Geografia politica ed economica	servizi per cittadini e imprese	1	Servizio	139932	78	62	3100	1	0	611	19.71	0	0	0	2006-06-07	2002-03-19
+1159	Geografia		2.5	Penisola italiana	Italia	1	Italia	14359579	7991	7890	199878	273	77	4609	2.31	0	0	0	2009-01-11	14769
 1160	Geografia		2.1	Penisola italiana	Geografia	1	Geografia_dell'Italia	601879	335	271	35655	29	20	1345	3.77	0	0	0	2004-04-05	2005-11-05
 1161	Geografia		2.4	Penisola italiana	Le Alpi	1	Alpi	849977	473	498	59880	36	41	6333	10.58	3	0	0	2003-04-28	2003-04-28
 1162	Geografia		#N/A	Penisola italiana	Gli Appennini	1	Appennini	679394	378	344	65180	32	23	6239	9.57	0	0	0	2004-05-09	2004-05-09
@@ -1182,7 +1164,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1198	Geografia			Europa	Stati d’Europa	1	Stati_dell'Europa	1663733	926	839	31666	3	72	302	0.95	0	0	0	2006-06-07	291
 1199	Geografia			Europa	Unione europea	1	Unione_europea	5322487	2962	4176	247369	339	112	4019	1.62	0	1	1	2004-07-29	90642
 1200	Geografia		2.5	Europa	Istituzioni UE	1	Istituzioni_dell'Unione_europea	13694	8	4	39986	51	10	620	1.55	0	0	0	2005-11-18	890
-1201	Geografia		2.4	Europa	Euro	1	Euro	1709962	952	955	67466	98	40	4326	6.41	1	0	0	2003-04-24	97056
 1202	Geografia		2.1	Europa	Convenzione di Schengen	1	Convenzione_di_Schengen	478847	266	195	17725	26	1	975	5.50	0	0	0	2010-12-19	5584
 1203	Geografia			Europa	Politiche europee	0	Politiche dell'Unione europea	0	0	0	0	0	0	0	#DIV/0!	0	0	0	2014-02-06	0
 1204	Geografia		2.4	Europa	Cittadinanza europea	1	Cittadinanza_dell'Unione_europea	85360	48	50	3712	0	1	622	16.76	0	0	0	#N/A	1369
@@ -1647,13 +1628,11 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1663	Informatica	Superiori	-	Hardware		1	Bus (informatica)	316742	176	171	13361	0	1	531	3.97	1	1	0	2005-10-24	2029
 1664	Informatica	Superiori		Hardware		1	Scheda elettronica	71247	40	36	9452	1	8	498	5.27	1	0	0	2005-08-31	41
 1665	Informatica	Superiori	-	Hardware		1	CPU	844001	470	440	27761	3	4	1649	5.94	1	0	0	2016-07-12	12509
-1666	Informatica	Superiori	2	Hardware		1	RAM	832079	463	436	13001	0	5	556	4.28	1	0	0	2004-09-02	1910
 1667	Informatica	Superiori	2	Hardware		1	Read Only Memory	332524	185	179	16293	3	3	1098	6.74	1	0	0	2004-09-02	1161
 1668	Informatica	Superiori	2	Hardware		1	Memoria di massa	282122	157	139	8027	1	1	600	7.47	1	0	0	2005-09-11	67
 1669	Informatica	Superiori	2	Hardware		1	Disco rigido	601986	335	317	36710	9	11	2125	5.79	1	0	0	2006-12-09	9777
 1670	Informatica	Superiori		Hardware		1	Firmware	394634	220	156	4271	1	0	408	9.55	1	0	0	2005-02-20	521
-1671	Informatica	Superiori		Sistema operativo e software		1	Software	804928	448	513	24300	15	4	1941	7.99	0	0	0	2007-01-25	2061
-1672	Informatica	Superiori		Sistema operativo e software		1	Sistema operativo	773814	431	407	36487	2	22	886	2.43	0	0	0	2007-01-25	54655
+v	Informatica	Superiori		Sistema operativo e software		1	Sistema operativo	773814	431	407	36487	2	22	886	2.43	0	0	0	2007-01-25	54655
 1673	Informatica	Superiori	2.1	Sistema operativo e software		1	Kernel	364872	203	189	21248	3	6	651	3.06	0	0	0	2002-12-01	3614
 1674	Informatica	Superiori	2	Sistema operativo e software		1	File system	277314	154	144	13471	1	3	564	4.19	1	0	0	2005-12-10	1140
 1675	Informatica	Superiori	2	Sistema operativo e software		1	Directory	129525	72	74	7893	5	1	395	5.00	0	0	0	2009-06-26	3817
@@ -1670,7 +1649,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1686	Informatica	Superiori		Dispositivi mobili		1	Tablet PC	96743	54	23	13153	11	5	1443	10.97	1	0	0	2005-08-31	38319
 1687	Informatica	Superiori		Dispositivi mobili		1	Smartphone	590992	329	338	35945	46	11	1586	4.41	0	0	0	2005-08-31	11033
 1688	Informatica	Superiori		Dispositivi mobili		1	Sistema operativo per dispositivi mobili	69672	39	42	16379	13	5	223	1.36	0	0	0	2005-08-31	4758
-1689	Informatica	Superiori	#N/A	Dispositivi mobili		1	Android	1114565	620	479	266255	376	16	2097	0.79	1	3	0	2004-02-12	29122
 1690	Informatica	Superiori		Dispositivi mobili		1	Windows 10 Mobile	62943	35	31	7174	6	0	456	6.36	0	0	0	2004-07-29	1162
 1691	Informatica	Superiori		Dispositivi mobili		1	iOS	371050	206	222	128156	200	5	3143	2.45	0	2	0	2003-09-26	14667
 1692	Informatica	Superiori	#N/A	Dispositivi mobili		1	Applicazione mobile	147932	82	76	9800	7	1	625	6.38	0	0	0		3416
@@ -1694,7 +1672,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1710	Informatica	Superiori	2	Reti e internet		1	Forum (Internet)	137279	76	63	13828	1	0	1391	10.06	1	0	0	2002-12-01	3544
 1711	Informatica	Superiori	2.1	Reti e internet		1	Servizio di rete sociale	175562	98	70	15507	5	1	1119	7.22	0	0	0	2005-08-31	5667
 1712	Informatica	Superiori	2	Reti e internet		1	Cloud computing	718479	400	381	15901	12	3	2718	17.09	0	0	0	2004-12-31	6523
-1713	Informatica	Superiori	0	Reti e internet		1	Internet	1375244	765	758	53766	27	15	2743	5.10	0	1	0	2005-02-10	25913
 1714	Informatica	Superiori	1	Reti e internet		1	Sito web	666268	371	443	19378	6	1	537	2.77	1	0	0	2005-08-31	2101
 1715	Informatica	Superiori	-	Reti e internet		1	HTML	587571	327	308	21792	11	1	1512	6.94	0	0	0	2003-07-12	12402
 1716	Informatica	Superiori	2	Reti e internet		1	CSS	224535	125	118	26658	6	1	828	3.11	1	2	0	2006-02-02	5939
@@ -1715,7 +1692,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 1731	Informatica	Superiori	1	Programmazione		1	Linguaggio di programmazione ad alto livello	78951	44	46	11613	1	0	283	2.44	1	0	0	2007-01-17	4174
 1732	Informatica	Superiori	2	Programmazione		1	Codice sorgente	162432	90	94	9495	1	4	1380	14.53	1	0	0	2003-12-04	67
 1733	Informatica	Superiori	2.1	Programmazione		1	Linguaggio di markup	125485	70	64	4077	0	0	466	11.43	1	0	0	2003-11-09	41
-1734	Informatica	Superiori	#N/A	Programmazione		1	Algoritmo	1015772	565	514	28946	4	3	1583	5.47	0	0	0	2005-07-20	22131
 1735	Informatica	Superiori	2	Programmazione		1	Diagramma di flusso	332268	185	182	5735	0	7	1175	20.49	1	0	0	2004-08-28	4376
 1736	Informatica	Superiori		Programmazione		1	Teorema di Böhm-Jacopini	72862	41	38	5733	2	0	671	11.70	1	0	0	2005-08-31	41
 1737	Informatica	Superiori	1	Programmazione		1	Scratch (informatica)	226021	126	134	9523	5	2	669	7.03	0	0	0	2005-08-31	1612
@@ -2097,7 +2073,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2118	Letteratura italiana	Superiori	2	Primo novecento	Crepuscolarismo	1	Guido_Gozzano	340736	190	176	37116	26	10	1486	4.00	0	0	0	2005-04-02	8191
 2119	Letteratura italiana	Superiori	2	Primo novecento	Crepuscolarismo	1	Sergio_Corazzini	54239	30	29	9097	0	1	3	0.03	0	0	0	2006-06-07	4165
 2120	Letteratura italiana	Superiori		Primo novecento	Crepuscolarismo	1	Marino_Moretti	88973	50	55	36868	11	2	1	0.00	0	1	0	2005-05-29	50
-2121	Letteratura italiana	Superiori	0	Primo novecento	Futurismo	1	Futurismo	1514560	843	738	65230	20	14	773	1.19	1	1	0	2004-07-19	49256
 2122	Letteratura italiana	Superiori		Primo novecento	Futurismo	1	Letteratura_futurista	159298	89	76	6556	2	2	340	5.19	0	0	0	2005-05-29	295
 2123	Letteratura italiana	Superiori	1	Primo novecento	Futurismo	1	Filippo_Tommaso_Marinetti	730966	407	538	47512	13	24	142	0.30	0	0	0	2004-07-19	21869
 2124	Letteratura italiana	Superiori		Primo novecento	Futurismo	1	Manifesto_del_Futurismo	326168	182	268	15680	6	2	402	2.56	0	0	1	2007-07-28	3754
@@ -2216,7 +2191,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2237	Letteratura italiana	Superiori	0.4	Anni 60-50	Italo Calvino	1	Le_città_invisibili	428552	238	243	11564	3	0	191	1.65	0	0	0	2004-08-13	1574
 2238	Letteratura italiana	Superiori	1	Anni 60-49	Italo Calvino	1	Se_una_notte_d'inverno_un_viaggiatore	289833	161	146	17540	1	0	837	4.77	0	0	0	2005-10-22	883
 2239	Letteratura italiana	Superiori	1	Dagli anni 80 in poi	Coordinate generali	1	Postmodernismo	277142	154	149	99739	151	7	2451	2.46	0	0	0	2002-07-20	5091
-2240	Letteratura italiana	Superiori	2.1	Dagli anni 80 in poi	Coordinate generali	1	Globalizzazione	1402697	781	747	96322	103	5	2199	2.28	0	0	0	2004-04-26	28447
 2241	Letteratura italiana	Superiori	#N/A	Dagli anni 80 in poi	Autori vari	1	Alda_Merini	1650047	918	909	68830	52	11	225	0.33	0	0	0	2007-03-14	11926
 2242	Letteratura italiana	Superiori	1	Dagli anni 80 in poi	Autori vari	1	Patrizia_Valduga	53769	30	36	16956	13	1	1	0.01	0	0	0	2007-07-30	5095
 2243	Letteratura italiana	Superiori		Dagli anni 80 in poi	Autori vari	1	Valerio_Magrelli	63243	35	36	13831	22	2	1	0.01	0	0	0	2009-06-02	1072
@@ -2301,7 +2275,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2322	Scienze della Terra	Superiori		Atmosfera e clima		1	Umidità	333839	186	168	13336	5	7	186	1.39	0	0	0	2004-07-29	5267
 2323	Scienze della Terra	Superiori		Atmosfera e clima		1	Nuvola	449322	250	236	22436	5	17	1158	5.16	0	0	0	2004-01-17	2603
 2324	Scienze della Terra	Superiori	1	Atmosfera e clima		1	Precipitazione (meteorologia)	130597	73	63	13863	3	3	530	3.82	0	0	0	2008-11-21	1124
-2325	Scienze della Terra	Superiori	1	Atmosfera e clima		1	Pressione atmosferica	1076875	599	585	11700	9	4	518	4.43	1	0	0	2008-11-21	5817
 2326	Scienze della Terra	Superiori		Atmosfera e clima		1	Vento	509928	284	265	67357	96	21	836	1.24	2	0	0	2004-07-29	5852
 2327	Scienze della Terra	Superiori		Atmosfera e clima		1	Clima	447525	249	235	27344	1	13	1805	6.60	0	0	0	2002-12-01	1948
 2328	Scienze della Terra	Superiori	2	Atmosfera e clima		1	Meteorologia	265582	148	156	15569	4	12	1872	12.02	1	0	0	2006-03-23	7545
@@ -2426,7 +2399,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2448	Scienze	Medie		Temperatura, calore e i loro effetti		1	Temperatura	618888	344	276	52386	16	5	1016	1.94	0	2	0	2009-03-22	18757
 2449	Scienze	Medie		Temperatura, calore e i loro effetti		1	Termometro	321426	179	165	7298	6	4	376	5.15	0	1	0	2009-03-22	6522
 2450	Scienze	Medie	2.1	Temperatura, calore e i loro effetti		1	Calore	404333	225	191	13247	4	0	491	3.71	1	0	0	2003-12-04	30249
-2451	Scienze	Medie	#N/A	Temperatura, calore e i loro effetti		1	Calore specifico	860166	479	414	19214	12	1	898	4.67	0	0	0	#N/A	3348
 2452	Scienze	Medie		Temperatura, calore e i loro effetti		1	Trasmissione del calore	259918	145	117	8812	4	1	591	6.71	0	0	0	2004-07-29	2777
 2453	Scienze	Medie	#N/A	Temperatura, calore e i loro effetti		1	Dilatazione termica	363280	202	171	7908	1	4	1079	13.64	0	0	0	2005-02-15	37
 2454	Scienze	Medie		Temperatura, calore e i loro effetti		1	Transizione di fase	118081	66	58	26024	2	3	1883	7.24	0	0	0	2004-07-29	2742
@@ -2443,7 +2415,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2465	Scienze	Medie	2.1	Chimica della materia		1	Composto organico	258713	144	135	3666	2	0	1271	34.67	0	0	0		6736
 2466	Scienze	Medie	2	Chimica della materia		1	Glucidi	956316	532	471	21862	3	6	707	3.23	1	0	0	2004-12-26	3548
 2467	Scienze	Medie	2	Chimica della materia		1	Lipidi	889136	495	458	22557	2	1	1520	6.74	1	0	0	2006-11-10	2434
-2468	Scienze	Medie		Chimica della materia		1	Proteine	1010429	562	610	95302	74	15	5964	6.26	0	0	0	2006-06-07	16341
 2469	Scienze	Medie	#N/A	Corpo umano		1	Apparato locomotore	349319	194	197	4924	4	0	1281	26.02	0	0	0	#N/A	2530
 2470	Scienze	Medie	#N/A	Corpo umano		1	Apparato digerente	559316	311	406	14814	1	2	1631	11.01	1	0	0	#N/A	860
 2471	Scienze	Medie	#N/A	Corpo umano		1	Alimentazione	383641	213	184	10937	15	1	1262	11.54	0	0	0		10285
@@ -2472,7 +2443,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2494	Scienze	Medie		Corpo umano		1	Sistema uditivo	177066	99	87	23870	19	3	438	1.83	0	0	0	2018-12-30	1702
 2495	Scienze	Medie		Corpo umano		1	Tatto	112686	63	62	3013	0	2	848	28.14	1	0	0	2011-02-23	37
 2496	Scienze	Medie		Corpo umano		1	Sistema immunitario	506735	282	224	104152	119	12	3372	3.24	0	0	0	2006-06-07	9485
-2497	Scienze	Medie		Corpo umano		1	Virus (biologia)	1670695	930	468	143726	230	15	4460	3.10	1	1	0	2004-07-29	49598
 2498	Scienze	Medie	2	Corpo umano		1	Bacteria	674575	375	295	29741	2	2	1250	4.20	1	0	0	2003-09-03	2545
 2499	Scienze	Medie	2	Corpo umano		1	Linfocita	620197	345	374	13903	0	2	476	3.42	1	0	0	2005-01-29	1748
 2500	Scienze	Medie		Corpo umano		1	Fattore Rh	550025	306	309	6056	3	0	726	11.99	1	0	0	2011-08-11	92
@@ -2485,9 +2455,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2507	Scienze	Medie	1	Forze		1	Lavoro (fisica)	666183	371	307	17687	3	2	1475	8.34	0	0	0	2002-12-01	20199
 2508	Scienze	Medie	1	Forze		1	Potenza (fisica)	701626	390	296	11783	2	1	1452	12.32	1	0	0	2014-02-06	1688
 2509	Scienze	Medie	2	Forze		1	Leva (fisica)	604726	337	245	9116	2	6	388	4.26	0	0	0	2006-04-03	13246
-2510	Scienze	Medie		Forze		1	Pressione	915049	509	384	8935	5	1	737	8.25	0	0	0	2007-02-08	3232
-2511	Scienze	Medie		Forze		1	Pressione atmosferica	1076875	599	585	11700	9	4	518	4.43	1	0	0	2005-09-09	5817
-2512	Scienze	Medie		Forze		1	Principio di Archimede	898720	500	449	19472	6	4	358	1.84	1	0	0	2002-12-01	8560
 2513	Scienze	Medie		Struttura della Terra		1	Struttura interna della Terra	458989	255	204	19257	13	4	1094	5.68	0	0	0	2005-09-05	2587
 2514	Scienze	Medie	2	Struttura della Terra		1	Nucleo terrestre	217722	121	103	7924	8	1	425	5.36	0	0	0	2005-03-24	2194
 2515	Scienze	Medie	2	Struttura della Terra		1	Mantello terrestre	202880	113	107	34349	23	4	1593	4.64	0	0	0	2007-01-25	5390
@@ -2498,9 +2465,7 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2520	Scienze	Medie		Struttura della Terra		1	Roccia magmatica	273436	152	130	15974	1	13	645	4.04	1	0	0	2006-06-07	4123
 2521	Scienze	Medie		Struttura della Terra		1	Deriva dei continenti	352073	196	163	10219	4	6	469	4.59	0	0	0	2002-12-01	8288
 2522	Scienze	Medie		Struttura della Terra		1	Tettonica delle placche	780786	434	346	31047	0	16	343	1.10	1	0	0	2004-07-29	39428
-2523	Scienze	Medie		Struttura della Terra		1	Vulcano	1117306	622	590	38274	7	10	2117	5.53	0	1	0	2004-07-29	25954
 2524	Scienze	Medie	2.1	Struttura della Terra		1	Eruzione vulcanica	310624	173	153	13523	0	3	735	5.44	0	0	0	2003-09-26	226
-2525	Scienze	Medie		Struttura della Terra		1	Terremoto	1296369	721	495	43019	23	12	3023	7.03	0	0	0	2004-07-29	15350
 2526	Scienze	Medie		Forze e movimento		1	Moto (fisica)	157048	87	76	3697	1	3	660	17.85	0	0	0	2004-06-29	478
 2527	Scienze	Medie	2	Forze e movimento		1	Moto rettilineo	295171	164	122	15268	6	1	1930	12.64	0	0	0	2004-06-29	4146
 2528	Scienze	Medie	2	Forze e movimento		1	Attrito	629651	350	292	22693	8	3	687	3.03	0	0	0	2006-06-20	6446
@@ -2529,7 +2494,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2552	Scienze	Medie	2.1	Energia		1	Energia geotermica	521495	290	255	40663	32	6	3133	7.70	1	0	0	2004-09-24	10578
 2553	Scienze	Medie	2.1	Energia		1	Energie non rinnovabili	264794	147	131	3524	1	0	658	18.67	2	0	0	2004-01-18	789
 2554	Scienze	Medie		Riproduzione		1	Nucleo cellulare	304587	169	144	14499	0	4	1174	8.10	1	0	0	2005-12-11	1207
-2555	Scienze	Medie	2.1	Riproduzione		1	Cromosoma	966346	538	533	17377	2	6	1789	10.30	1	0	0	2006-11-17	2780
 2556	Scienze	Medie	2.1	Riproduzione		1	Cromosomi	47794	27	23	23	0	0	20	86.96	0	0	0	2003-06-14	0
 2557	Scienze	Medie		Riproduzione		1	Mitosi	895712	498	440	10349	0	11	964	9.31	0	0	0	2007-07-28	10923
 2558	Scienze	Medie		Riproduzione		1	Meiosi	864963	481	474	10311	1	1	1378	13.36	0	0	0	2004-06-29	4003
@@ -2549,17 +2513,12 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 2572	Scienze	Medie		Corpi celesti		1	Stella	806059	449	426	171485	173	38	4227	2.46	0	0	0	2006-06-07	27731
 2573	Scienze	Medie	1	Corpi celesti		1	Galassia	581729	324	314	98713	110	36	4213	4.27	0	0	0	2007-09-08	12623
 2574	Scienze	Medie	1	Corpi celesti		1	Storia dell'universo	248328	138	133	21317	4	5	1729	8.11	0	0	0	2006-06-07	19454
-2575	Scienze	Medie	2.1	Corpi celesti		1	Big Bang	941131	524	478	106325	97	9	2295	2.16	1	1	0	#N/A	47180
-2576	Scienze	Medie	1	Corpi celesti		1	Espansione metrica dello spazio	47504	26	26	28696	13	5	1278	4.45	0	0	0	2004-09-09	4803
-2578	Scienze	Medie	1	Corpi celesti		1	Sole	1730757	963	904	157617	169	36	4953	3.14	0	0	0	2006-06-07	65665
 2579	Scienze	Medie	0.4	Corpi celesti		1	Meccanica celeste	33236	18	17	14513	11	7	1004	6.92	0	0	0	2007-04-01	37
 2580	Scienze	Medie	1	Corpi celesti		1	Leggi di Keplero	739783	412	364	11159	1	5	700	6.27	0	0	0	2004-02-18	7822
 2581	Scienze	Medie	#N/A	Corpi celesti		1	Cometa	344703	192	177	54041	44	11	1644	3.04	2	0	0	#N/A	9760
 2582	Scienze	Medie		Corpi celesti		1	Asteroide	331762	185	198	23468	8	5	1486	6.33	0	0	0	2004-06-06	3459
 2583	Scienze	Medie		Corpi celesti		1	Meteorite	254165	141	140	25189	20	12	1006	3.99	0	1	0	2002-12-01	14634
 2584	Scienze	Medie	2.1	Corpi celesti		1	Cometa	344703	192	177	54041	44	11	1644	3.04	2	0	0	2005-02-15	9760
-2585	Scienze	Medie		Corpi celesti		1	Luna	1780561	991	1044	130030	163	28	3008	2.31	0	0	0	2003-03-31	44315
-2586	Scienze	Medie	1	Corpi celesti		1	Fasi lunari	940784	524	495	8646	3	4	597	6.90	0	0	0	2012-06-20	4443
 2587	Scienze	Medie	1	Corpi celesti		1	Eclissi lunare	552203	307	268	16901	4	17	1215	7.19	1	0	0	2004-06-01	2894
 2588	Scienze	Medie	1	Corpi celesti		1	Maree	525211	292	243	18	0	0	15	83.33	0	0	0	2010-02-15	0
 2589	Storia	Elementari	1	Prima elementare	Le parti della giornata	1	Giorno	235677	131	105	10230	3	1	360	3.52	0	0	0	2002-12-01	4642
@@ -3301,7 +3260,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3327	Storia	Superiori	1	XX-XXI secolo	Atto Unico del 1987	1	Atto_unico_europeo	106902	59	64	8810	3	0	551	6.25	0	0	0	2004-04-26	1003
 3328	Storia	Superiori	#N/A	XX-XXI secolo	Gli allargamenti della CEE/UE	1	Allargamento_dell'Unione_europea	369150	205	208	46057	80	13	1269	2.76	0	0	0	2003-08-02	13570
 3329	Storia	Superiori	1	XX-XXI secolo	L'euro (2002)	1	Euro	1709962	952	955	67466	98	40	4326	6.41	1	0	0	2005-05-05	97056
-3330	Storia	Superiori	1	XX-XXI secolo	la Globalizzazione	1	Globalizzazione	1402697	781	747	96322	103	5	2199	2.28	0	0	0	2005-11-18	28447
 3331	Storia dell'arte	Superiori	#N/A	La Preistoria		1	Arte preistorica	251382	140	128	8347	0	8	694	8.31	0	0	0	2005-09-18	2392
 3332	Storia dell'arte	Superiori	#N/A	La Preistoria		1	Arte preistorica in Italia	8816	5	4	11362	3	9	1025	9.02	1	0	0	2005-09-18	236
 3333	Storia dell'arte	Superiori		La Preistoria		1	Pittura rupestre	213483	119	119	2901	1	2	2430	83.76	1	0	0	2007-12-11	46
@@ -3556,7 +3514,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3583	Matematica	Elementari		Le quattro operazioni	Divisione	1	Resto	35261	20	18	1469	0	0	1260	85.77	1	0	0	2005-09-09	40
 3584	Matematica	Elementari		Tabelline	Tabelline	1	Tavola_pitagorica	124044	69	95	4520	7	1	1410	31.19	0	0	0	2005-09-09	2329
 3585	Matematica	Elementari		Unità di misura	Unità di misura	1	Unità_di_misura	596032	332	261	10993	1	1	1066	9.70	0	0	0	2004-07-29	4833
-3586	Matematica	Elementari		Unità di misura	Unità di misura	1	Sistema_internazionale_di_unità_di_misura	1339589	745	640	34199	23	3	1850	5.41	0	0	0	2005-09-09	56033
 3587	Matematica	Elementari		Unità di misura	Lungezza	1	Lunghezza	131268	73	71	2928	1	0	1493	50.99	0	0	0	2003-03-31	2075
 3588	Matematica	Elementari		Unità di misura	Lungezza	1	Metro	1083834	603	591	12618	8	4	1449	11.48	0	0	0	2005-05-29	5110
 3589	Matematica	Elementari	#N/A	Unità di misura	Lungezza	1	Centimetro	81174	45	28	42	0	0	39	92.86	0	0	0	2005-09-18	40
@@ -3717,14 +3674,11 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3744	Matematica	Superiori	#N/A	Aritmetica	Equazioni di II grado	1	Sistema_di_equazioni_di_secondo_grado	12637	7	8	5363	0	0	3083	57.49	1	0	0	2007-11-13	1200
 3745	Matematica	Superiori	#N/A	Aritmetica	Disequazioni di II grado	1	Disequazione quadratica	21849	12	12	18037	0	6	458	2.54	0	0	0	2010-11-30	1271
 3746	Matematica	Superiori	#N/A	Aritmetica	Disequazioni di II grado	1	Sistema_di_disequazioni	39601	22	26	3123	0	0	765	24.50	1	0	0	2005-08-22	384
-3747	Matematica	Superiori	#N/A	Geometria	Circonferenza	1	Circonferenza	701237	390	339	15109	2	3	735	4.86	1	0	0	2003-12-18	2876
-3748	Matematica	Superiori	#N/A	Geometria	Circonferenza	1	Arco_(geometria)	98617	55	39	1822	0	1	1484	81.45	1	0	0	2004-04-26	40
 3749	Matematica	Superiori	#N/A	Geometria	Circonferenza	1	Corda_(geometria)	72101	40	22	984	0	1	747	75.91	1	0	0	2004-05-23	40
 3750	Matematica	Superiori	#N/A	Geometria	Circonferenza	1	Teorema_sugli_archi_congruenti	6141	3	3	1537	0	0	179	11.65	2	0	0	2004-09-09	133
 3751	Matematica	Superiori	#N/A	Geometria	Superfici equivalenti	1	Superficie	139875	78	71	18633	2	39	1390	7.46	0	0	0	2004-09-09	4156
 3752	Matematica	Superiori	#N/A	Geometria	Superfici equivalenti	1	Equiestensione	41233	23	20	863	0	0	684	79.26	1	0	0	2007-02-20	40
 3753	Matematica	Superiori	#N/A	Geometria	Superfici equivalenti	1	Relazione_di_equivalenza	128183	71	74	16859	5	1	172	1.02	0	0	0	2004-09-09	1877
-3754	Matematica	Superiori	#N/A	Funzioni	Tipi di funzione	1	Funzione_(matematica)	710826	396	347	19196	5	1	644	3.35	0	0	0	2010-01-09	16356
 3755	Matematica	Superiori	#N/A	Funzioni	Tipi di funzione	1	Funzione_suriettiva	241955	135	137	5201	0	1	432	8.31	1	0	0	2005-01-13	2954
 3756	Matematica	Superiori	#N/A	Funzioni	Tipi di funzione	1	Funzione_iniettiva	308429	172	165	10886	7	4	731	6.72	0	0	0	2006-04-18	7639
 3757	Matematica	Superiori	#N/A	Funzioni	Tipi di funzione	1	Corrispondenza biunivoca	179351	100	92	3466	2	1	956	27.58	1	0	0	2006-04-18	40
@@ -3743,7 +3697,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3770	Matematica	Superiori	-	Funzioni	Funzioni quadratiche	1	Equazione_di_secondo_grado	559277	311	172	24935	4	2	1273	5.11	1	0	0	2004-09-02	5133
 3771	Matematica	Superiori	1.2	Funzioni	Funzioni quadratiche	1	Funzione_quadratica	24147	13	22	12828	3	6	1874	14.61	0	0	0	2010-01-09	4053
 3772	Matematica	Superiori	1.3	Funzioni	Funzioni quadratiche	1	Parabola_(geometria)	417394	232	159	28227	1	10	686	2.43	0	0	0	2005-05-22	6049
-3773	Matematica	Superiori	0.5	Funzioni	Funzioni quadratiche	1	Circonferenza	701237	390	339	15109	2	3	735	4.86	1	0	0	2004-05-23	2876
 3774	Matematica	Superiori	-	Funzioni	Funzioni quadratiche	1	Fascio_di_circonferenze	36944	21	19	6562	2	1	615	9.37	0	0	0	2005-05-29	40
 3775	Matematica	Superiori	2.1	Funzioni	Funzioni quadratiche	1	Ellisse	427836	238	204	30389	5	12	2206	7.26	1	0	0	2005-05-29	9609
 3776	Matematica	Superiori	2.1	Funzioni	Funzioni quadratiche	1	Iperbole_(geometria)	314275	175	136	10382	1	2	265	2.55	0	0	0	2005-05-29	40
@@ -3760,7 +3713,6 @@ id	subject	school	year	theme	argument	exhisting	article	Visite da 1/7/2015 al 31
 3787	Matematica	Superiori	-	Trigonometria	Formule trigonometriche	1	Formule_di_Werner	95804	53	38	4808	1	0	1441	29.97	0	0	0	2002-06-18	40
 3788	Matematica	Superiori		Trigonometria	Formule trigonometriche	1	Teorema_dei_seni	128490	72	44	4723	0	4	1196	25.32	0	0	0	2005-08-31	339
 3789	Matematica	Superiori		Trigonometria	Formule trigonometriche	1	Teorema_del_coseno	394079	219	101	3717	0	1	563	15.15	1	0	0	2005-08-31	40
-3790	Matematica	Superiori		Trigonometria	Formule trigonometriche	1	Teorema di Pitagora	1659298	923	937	25727	10	15	491	1.91	0	0	0	2005-08-31	9869
 3791	Matematica	Superiori	2	Trigonometria	Equazioni trigonometriche	1	Equazione_trigonometrica	23762	13	9	16161	0	0	1474	9.12	0	0	0	2003-12-18	3058
 3792	Matematica	Superiori	2	Trigonometria	Equazioni trigonometriche	1	Disequazione_trigonometrica	4600	3	5	2618	0	0	590	22.54	1	0	0	2010-01-09	40
 3793	Matematica	Superiori		Numeri complessi	Numeri complessi	1	Unità_immaginaria	147801	82	83	11209	0	0	1370	12.22	0	0	0	2004-07-29	1869
