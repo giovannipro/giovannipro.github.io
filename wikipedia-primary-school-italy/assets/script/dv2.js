@@ -197,19 +197,19 @@ function dv2() {
 				.attr("stroke-width",0.5)
 				.attr("opacity",0.9)
 
-			let issues = articles.append("g")
-				// .style("transform","rotate(-45deg)")
-				.append("rect")
-				.attr("x",0)
-				.attr("y",0)
-				.attr("height",3)
-				.attr("width", function(d,i){
-					return d.issues*20
-				})
-				.attr("fill", function(d,i){
-					return color(d.subject)
-				})
-				.attr("opacity",0.9)
+			// let issues = articles.append("g")
+			// 	// .style("transform","rotate(-45deg)")
+			// 	.append("rect")
+			// 	.attr("x",0)
+			// 	.attr("y",0)
+			// 	.attr("height",3)
+			// 	.attr("width", function(d,i){
+			// 		return d.issues*20
+			// 	})
+			// 	.attr("fill", function(d,i){
+			// 		return color(d.subject)
+			// 	})
+			// 	.attr("opacity",0.9)
 
 			let label = articles.append("text")
 				.text(function(d,i){

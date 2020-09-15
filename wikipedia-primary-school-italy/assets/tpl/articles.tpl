@@ -27,6 +27,9 @@
 		<th class="number">
 			{{average_daily_visit}}
 		</th>
+		<th class="">
+			{{first_edit}}
+		</th>
 		{{!--<th>
 			{{first_edit}}
 		</th>--}}
@@ -34,7 +37,7 @@
 			{{size}}
 		</th>
 		<th class="number">
-			{{incipit_on_size}}
+			{{incipit_size}}
 		</th>
 		<th class="number">
 			{{discussion_size}}
@@ -47,6 +50,9 @@
 		</th>
 		<th class="number">
 			{{images}}
+		</th>
+		<th class="number">
+			{{references}}
 		</th>
 	</tr>
 {{/each}}

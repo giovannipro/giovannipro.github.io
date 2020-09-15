@@ -15,11 +15,12 @@ function articles() {
 		"average_daily_visit": "average_daily_visit",
 		"first_edit": "first_edit",
 		"size": "size",
-		"incipit_on_size": "incipit/size",
+		"incipit_size": "incipit_size",
 		"discussion_size": "discussion_size",
 		"issues": "issues",
 		"notes": "notes",
-		"images": "images"
+		"images": "images",
+		"references": "references",
 	};
 
 	$("#all_data").click(function(){
@@ -42,10 +43,14 @@ function articles() {
 				let filtered = [];
 				let index = 0;
 
+				let art = []
+				let duplicates = [];
+				let duplicates_count = 0;
+
 				$.each(data, function(a,b) {
 					if (activation == true) {
-						// if (b.first_edit == filter) {
 						if (b.size == filter) {
+						// if (b.first_edit == filter) {
 						// if (b.subject == filter) {
 						// if (b.typology == filter) {	
 					        filtered.push(b);
@@ -56,18 +61,38 @@ function articles() {
 						if (1 == 1) {
 					        filtered.push(b);
 					        index += 1
+
+					        // duplicates
+							if (art.includes(no_underscore(b.article))) {
+								duplicates.push(b) //b.id + "_" + no_underscore(b.article) + "_" + b.size)
+								duplicates_count += 1;
+							}
+							else {
+								art.push(no_underscore(b.article))
+							}
 					    }
 					}
 				})
-				// console.log(index)
+				console.log("duplicates: " + duplicates_count)
 
 				filtered.sort(function(a, b) { 
-					return compareValues(a.average_daily_visit, b.average_daily_visit);
-					// return compareStrings(a.subject, b.subject);
+					// return compareValues(a.average_daily_visit, b.average_daily_visit);
+					return compareStrings(a.subject, b.subject);
 					// return compareValues(a[sort], b[sort]);
 				})
 
 				filtered.unshift(head);
+
+
+				if (duplicates === undefined || duplicates.length > 0) {
+					duplicates.forEach(function (d,i) {
+	    				console.log(d.article)
+	    				// $(target).append(d.id)
+					})
+				}
+				else {
+					console.log("no duplicates")
+				}
 
 				let template = Handlebars.compile(tpl); 
 				$(target).html(template(filtered));
@@ -108,8 +133,8 @@ function subjects() {
 				}
 
 				data.sort(function(a, b) { 
-					return compareValues(a.average_daily_visit, b.average_daily_visit);
-					// return compareStrings(a.subject, b.subject);
+					// return compareValues(a.average_daily_visit, b.average_daily_visit);
+					return compareStrings(a.subject, b.subject);
 				})
 
 				data.unshift(head);
@@ -122,7 +147,56 @@ function subjects() {
 	load_data();
 }
 
+function merge_data() {
+	$.getJSON('assets/data/a_1.json', function(data_a) {
+		$.getJSON('assets/data/b_1.json', function(data_b) {
+
+			data_a.sort(function(a, b) { 
+				return compareValues(a.article, b.article);
+			})
+
+			data_b.sort(function(a, b) { 
+				return compareValues(a.article, b.article);
+			})
+
+
+			$.each(data_a, function(a,b) {
+
+				let id = b.id
+				let article = b.article
+				let year = ""
+
+				$.each(data_b, function(c,d) {
+					// console.log(d)
+
+					if (no_underscore(article) == no_underscore(d.article)) {
+						year = d.year
+
+						// let output = id + "," + no_underscore(d.article) + "," + d.first_edit + "<br/>"
+
+						// console.log(output);
+
+						// return false; // true: continue; false: break
+					}
+					else {
+
+						if (year.length < 3) {
+							year = "???"
+						}
+						// $("#articles").append(output)
+						// return false; // 
+					}
+				})
+				let output = id + "," + no_underscore(article) + "," + year + "<br/>"
+				$("#articles").append(output)
+			})
+			console.log("finished")
+		})
+	})
+}
+
 $(document).ready(function() {
 	articles();
-	subjects();
+	// subjects();
+	// merge_data();
 });
