@@ -47,7 +47,7 @@ function dv1() {
 					d.discussion_size = +d.discussion_size
 
 					// if (d.discussion_size == "NaN") {
-					console.log(d.discussion_size + " " + d.article)
+					console.log(d.average_daily_visit + " " + d.article)
 					// }
 
 					total += 1
