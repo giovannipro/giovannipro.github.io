@@ -78,7 +78,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2250	Letteratura italiana	Superiori	Dagli anni 80 in poi	Autori vari	1	Aldo_Busi	153	274158	144	30224	26	2	28	0.09	0	0	0	4754	2.5	5	2004-04-11	5895
 2126	Letteratura italiana	Superiori	Primo novecento	Futurismo	1	Aldo_Palazzeschi	149	266884	142	43289	35	9	243	0.56	0	0	0	1720	2.5	1	2004-04-06	5900
 2029	Letteratura italiana	Superiori	Primo Ottocento	Alessandro Manzoni	1	Alessandro Manzoni	1581	2841940	1263	149246	282	41	2739	1.84	0	0	0	59196	2.4	66	???	#VALUE!
-2692	Storia	Superiori	Grecia e Italia preromana	Alessandro Magno	1	Alessandro_Magno	1372	2465680	1274	156638	249	28	4546	2.90	1	2	0	37145	???	69	???	#VALUE!
+2692	Storia	Superiori	Grecia e Italia preromana	Alessandro Magno	1	Alessandro_Magno	1372	2465680	1274	156638	249	28	4546	2.90	1	2	0	37145	???	69	2004-12-25	5637
 1965	Letteratura italiana	Superiori	XVII Secolo	Autori minori	1	Alessandro_Tassoni	38	67537	39	46205	34	4	1	0.00	0	0	0	4915	2.4	67	2006-12-09	4923
 1991	Letteratura italiana	Superiori	XVIII Secolo	Illuminismo italiano	1	Alessandro_Verri	28	50223	22	11757	6	2	2	0.02	0	0	0	4714	2.4	22	2006-02-02	5233
 917	Filosofia	Superiori	Tra settecento e ottocento		1	Alexis de Tocqueville	98	176214	97	33554	26	5	389	1.16	0	0	0	3054	???	3	2006-03-21	5186
@@ -152,7 +152,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2602	Storia	Elementari	Prima elementare		1	Anno_bisestile	648	1164857	468	7210	4	1	1113	15.44	0	0	0	7214	0.1	0	???	#VALUE!
 829	Filosofia	Superiori	Filosofia nell'età medievale		1	Anselmo d'Aosta	83	149782	75	115562	139	15	2160	1.87	0	0	0	32118	???	23	2005-08-27	5392
 1341	Geografia		Oceania e poli	Antartide	1	Antartide	737	1324223	668	43665	36	23	1336	3.06	0	0	1	11517	???	4	2003-09-28	6091
-2653	Storia	Superiori	Antichità	Gli egizi	1	Antico_Egitto	716	1286038	695	164778	120	52	3917	2.38	1	0	1	50766	???	43	???	#VALUE!
+2653	Storia	Superiori	Antichità	Gli egizi	1	Antico_Egitto	716	1286038	695	164778	120	52	3917	2.38	1	0	1	50766	???	43	2004-12-04	5658
 2655	Storia	Superiori	Antichità	Antico regno	1	Antico_Regno_(Egitto)	17	31087	43	5592	6	0	437	7.81	0	0	0	170	???	4	???	#VALUE!
 135	Biologia	Superiori	Corpo umano	Sistema immunitario	1	Anticorpo	355	637147	312	43424	13	10	1716	3.95	0	0	0	6426	2	1	2006-11-26	4936
 3183	Storia	Superiori	XX-XXI secolo	Antifascismo	1	Antifascismo	91	163234	106	33443	13	5	561	1.68	0	0	0	85661	???	52	???	#VALUE!
@@ -169,7 +169,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 197	Biologia	Superiori	Ecologia		1	Antropizzazione	105	188347	105	23133	5	9	811	3.51	2	0	0	16155	2	3	2006-09-28	4995
 2866	Storia	Superiori	Basso medioevo	Antropocentrismo	1	Antropocentrismo	66	118252	58	7801	0	0	627	8.04	1	0	0	438	???	10	???	#VALUE!
 63	Biologia	Superiori	Evoluzione		1	Antropologia culturale	152	274025	157	16749	3	0	747	4.46	1	0	0	5576	2	15	2005-02-26	5574
-3256	Storia	Superiori	XX-XXI secolo	Sudafrica e apartheid	1	Apartheid	609	1095262	591	14838	9	3	781	5.26	1	0	0	40222	???	4	???	#VALUE!
+3256	Storia	Superiori	XX-XXI secolo	Sudafrica e apartheid	1	Apartheid	609	1095262	591	14838	9	3	781	5.26	1	0	0	40222	???	4	2005-05-16	5495
 1359	Grammatica italiana		Fonologia, ortografia	Troncamento	1	Apocope	108	194750	87	18508	13	0	1143	6.18	1	0	0	36475	???	1	2004-07-11	5804
 824	Filosofia	Superiori	Patristica		1	Apologetica	68	122515	64	20406	1	2	664	3.25	2	0	0	5967	???	4	2006-08-24	5030
 1358	Grammatica italiana		Fonologia, ortografia	Elisione (apostrofo)	1	Apostrofo	103	185930	122	6553	2	1	709	10.82	0	0	0	18194	???	0	2005-01-29	5602
@@ -215,7 +215,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2408	Scienze	Medie	Sistema Terra		1	Aria	457	821319	396	20782	12	5	1480	7.12	0	0	0	11829	1	2	2005-02-10	5590
 792	Filosofia	Superiori	Filosofia nella Grecia classica		1	Aristotele	728	1308462	697	96098	87	9	717	0.75	0	0	0	98568	???	22	2004-06-02	5843
 2930	Storia	Superiori	XVI-XVII secolo	Cardinale Richelieu	1	Armand-Jean_du_Plessis_de_Richelieu	182	326664	174	37702	19	26	1797	4.77	0	0	0	4805	???	11	???	#VALUE!
-3221	Storia	Superiori	XX-XXI secolo	‘8 settembre 1943	1	Armistizio_di_Cassibile	392	703657	390	44024	22	6	1387	3.15	1	2	0	8074	???	7	???	#VALUE!
+3221	Storia	Superiori	XX-XXI secolo	‘8 settembre 1943	1	Armistizio_di_Cassibile	392	703657	390	44024	22	6	1387	3.15	1	2	0	8074	???	7	2007-05-17	4764
 3047	Storia	Superiori	XVIII-XIX secolo	Armistizio di Villafranca	1	Armistizio_di_Villafranca	75	134154	79	32143	33	11	1437	4.47	0	0	0	29079	???	6	???	#VALUE!
 873	Filosofia	Superiori	Tra cinquecente e seicento		1	Arnold Geulincx	2	3861	2	2401	0	0	1767	73.59	0	0	0	208	???	2	2005-06-07	5473
 1747	Informatica	Superiori	Programmazione in C ed a oggetti		1	Array	132	236328	93	13152	3	1	946	7.19	1	0	0	1004	2	0	2004-11-13	5679
@@ -343,7 +343,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1847	Letteratura italiana	Superiori	XIII secolo - Scuola toscana	Dante Alighieri	1	Beatrice Portinari	2	9525	4	9525	2	4	213	2.24	0	0	0	954	???	3	???	#VALUE!
 1841	Letteratura italiana	Superiori	XIII secolo - Scuola toscana	Cecco Angiolieri	1	Becchin'amor!_-_Che_vuo',_falso_tradito?	4	8032	4	2139	0	0	106	4.96	0	0	0	50	falso tradito?	2	falso tradito?	#VALUE!
 1227	Geografia		Europa	Belgio	1	Belgio	1118	2009435	963	95868	15	40	3480	3.63	1	4	1	13515	???	0	2002-12-15	6378
-3099	Storia	Superiori	XX-XXI secolo	Belle Époque	1	Belle_Époque	609	1093516	600	11697	3	4	1102	9.42	1	0	0	1882	???	0	???	#VALUE!
+3099	Storia	Superiori	XX-XXI secolo	Belle Époque	1	Belle_Époque	609	1093516	600	11697	3	4	1102	9.42	1	0	0	1882	???	0	2007-01-25	4876
 595	Diritto e Economia	Superiori	Soggetti del diritto		1	Bene (diritto)	65	115980	58	7283	1	0	129	1.77	1	1	1	794	2.1	3	2005-09-20	5368
 680	Diritto e Economia	Superiori	Economia e il sistema economico		1	Bene (economia)	84	151284	70	4290	0	0	336	7.83	1	0	0	281	2.1	0	2006-05-03	5143
 1224	Geografia		Europa	Francia+Benelux	1	Benelux	122	218918	112	12371	1	10	1472	11.90	0	0	0	932	???	0	2004-04-25	5881
@@ -378,7 +378,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3235	Storia	Superiori	XX-XXI secolo	URSS come superpotenza	1	Blocco_orientale	62	111546	68	6212	0	3	1108	17.84	1	0	0	1960	???	0	???	#VALUE!
 1709	Informatica	Superiori	Reti e internet		1	Blog	461	829127	846	29912	26	0	441	1.47	2	3	0	19942	2	7	2003-11-23	6035
 1885	Letteratura italiana	Superiori	Secolo XIV	Boccaccio	1	Boccaccio	26	47503	17	32	0	0	29	90.63	0	0	0	0	???	0	???	#VALUE!
-3216	Storia	Superiori	XX-XXI secolo	Le bombe atomiche	1	Bombardamenti_atomici_di_Hiroshima_e_Nagasaki	1003	1802347	994	101108	74	26	1295	1.28	1	2	0	19084	???	29	???	#VALUE!
+3216	Storia	Superiori	XX-XXI secolo	Le bombe atomiche	1	Bombardamenti_atomici_di_Hiroshima_e_Nagasaki	1003	1802347	994	101108	74	26	1295	1.28	1	2	0	19084	2006-05-16	29	???	#VALUE!
 834	Filosofia	Superiori	Filosofia nell'età medievale		1	Bonaventura da Bagnoregio	85	152151	80	31885	5	9	1221	3.83	0	1	0	4315	???	23	2006-01-21	5245
 2820	Storia	Superiori	Basso medioevo	Borghesia	1	Borghesia	217	390436	216	9576	11	0	623	6.51	0	0	0	3438	???	0	???	#VALUE!
 750	Diritto e Economia	Superiori	Mercato della moneta		1	Borsa valori	233	419138	191	16101	11	7	812	5.04	0	1	1	2243	2.1	7	2006-01-05	5261

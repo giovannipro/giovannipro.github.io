@@ -73,7 +73,7 @@ function articles() {
 					    }
 					}
 				})
-				console.log("duplicates: " + duplicates_count)
+				// console.log("duplicates: " + duplicates_count)
 
 				filtered.sort(function(a, b) { 
 					// return compareValues(a.average_daily_visit, b.average_daily_visit);

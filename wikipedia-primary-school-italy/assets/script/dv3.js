@@ -57,7 +57,7 @@ function dv3() {
 						}
 						filtered_data.push(d)
 
-						let output = d.article + "," + d.issues + "," + d.average_daily_visit + "," + d.references + "," + d.notes + "," + d.days + "<br/>"; 
+						let output = d.article + "," + d.issues + "," + d.average_daily_visit + "," + d.references + "," + d.notes + "," + d.images  + "," + d.days + "<br/>"; 
 						dataset.push(output)
 					}
 				}
@@ -66,14 +66,18 @@ function dv3() {
 			console.log("min visit: " + filter_visit)
 			console.log(filtered_data.length)
 
+			let test_a = {article:'A_test > issues: 10, features 450', issues:10, average_daily_visit:400, references:150, notes:150, images: 150, days: 7091};
+			filtered_data.push(test_a);
+
 			sortByKey(filtered_data, "issues") 
 
+			$("#dv3_dataset").append(head)
 			$("#dv3_dataset").append(dataset)
 
 			let max_features = d3.max(filtered_data, function(d) {
 				return +d.features
 			})
-			// console.log(max_features)
+			console.log(max_features)
 
 			let y = d3.scaleLinear()
 				.domain([0,filtered_data.length]) 
@@ -110,6 +114,12 @@ function dv3() {
 			// parameters
 			let size = 5;
 			let separator = 10;
+			let c_issues = '#EC4C4E',
+				c_reference = '#49A0D8',
+				c_note = '#A8D2A2',
+				c_image = '#F5A3BD',
+				c_days = '#9e9e9e',
+				c_line = '#9E9E9E';
 
 			let article = plot.append("g")	
 				.attr("class","articles")
@@ -126,17 +136,25 @@ function dv3() {
 				})
 
 			// days
-			let days = article.append("rect")
+			let days_box = article.append("g")
+			
+			let days = days_box.append("rect")
 				.attr("x",0)
-				.attr("y",0)
+				.attr("y",size/4)
 				.attr("width", function(d,i){
 					return x_days(d.days) 
 				})
-				.attr("height",size)
-				.attr("fill","gray")
+				.attr("height",size/2)
+				.attr("fill",c_days)
 				.attr("class", function(d,i){
 					return d.days 
 				})
+
+			let days_now = days_box.append("circle")
+				.attr("cx",0)
+				.attr("cy",size/2)
+				.attr("r",size/2)
+				.attr("fill",c_days)
 
 			// size
 			// let article_size = article.append("circle")
@@ -176,15 +194,14 @@ function dv3() {
 
 			let references = feat.append("rect")
 				.attr("x",function(d,i){
-					// return d.references / max_features
 					return x_features(max_features - d.references)
 				})
 				.attr("y",0)
 				.attr("width", function(d,i){
-					return x_features(d.references) //x_features(d.references) 
+					return x_features(d.references)
 				})
 				.attr("height",size)
-				.attr("fill","blue")
+				.attr("fill",c_reference)
 				.attr("class", function(d,i){
 					return "ref_" + d.references 
 				})
@@ -198,7 +215,7 @@ function dv3() {
 					return x_features(d.notes) 
 				})
 				.attr("height",size)
-				.attr("fill","green")
+				.attr("fill",c_note)
 				.attr("class", function(d,i){
 					return "not_" + d.notes 
 				})
@@ -212,7 +229,7 @@ function dv3() {
 					return x_features(d.images) 
 				})
 				.attr("height",size)
-				.attr("fill","orange")
+				.attr("fill",c_image)
 				.attr("class", function(d,i){
 					return "img_" + d.images 
 				})
@@ -225,7 +242,7 @@ function dv3() {
 					return x_issues(d.issues) 
 				})
 				.attr("height",size)
-				.attr("fill","red")
+				.attr("fill",c_issues)
 				.attr("class", function(d,i){
 					return "iss_" + d.issues 
 				})
@@ -251,7 +268,7 @@ function dv3() {
 						.attr('y1', y(i) - 3) // ((height - margin.top - margin.bottom) / (filtered_data.length) ))
 						.attr('x2', width - margin.top - margin.bottom)
 						.attr('y2', y(i)- 3 ) //i * ((height - margin.top - margin.bottom) / (filtered_data.length) )) 
-						.attr('stroke',"gray")
+						.attr('stroke',c_line)
 						.attr('stroke-width',1)
 		    	}
 			}

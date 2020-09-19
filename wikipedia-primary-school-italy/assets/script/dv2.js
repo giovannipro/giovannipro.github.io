@@ -90,7 +90,7 @@ function dv2() {
 					}
 				})
 			}
-			console.log(total);
+			console.log("articles: " + total);
 
 			$("#dv2_dataset").append(dataset)
 
