@@ -46,13 +46,13 @@
 			{{issues}}
 		</th>
 		<th class="number">
+			{{references}}
+		</th>
+		<th class="number">
 			{{notes}}
 		</th>
 		<th class="number">
 			{{images}}
-		</th>
-		<th class="number">
-			{{references}}
 		</th>
 	</tr>
 {{/each}}

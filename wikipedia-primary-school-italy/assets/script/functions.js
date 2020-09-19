@@ -18,9 +18,9 @@ function articles() {
 		"incipit_size": "incipit_size",
 		"discussion_size": "discussion_size",
 		"issues": "issues",
+		"references": "references",
 		"notes": "notes",
 		"images": "images",
-		"references": "references",
 	};
 
 	$("#all_data").click(function(){

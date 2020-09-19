@@ -74,26 +74,10 @@ function dv1() {
 			filtered_data.push(test_a);
 			filtered_data.push(test_b);
 
-			// filtered_data.sort(function (a, b) { 
-	  //           var af = a.subject; 
-	  //           var bf = b.subject; 
-	  //           var as = a.article; 
-	  //           var bs = b.article; 
-	              
-	  //           if(af == bf) { 
-	  //               return (as < bs) ? -1 : (as > bs) ? 1 : 0; 
-	  //           } else { 
-	  //               return (af < bf) ? -1 : 1; 
-	  //           } 
-	  //       });
+	    	sortByKey(filtered_data, "article") 
 
-	       sortByKey(filtered_data, "article") 
-
-			// console.log(filtered_data)
 			console.log("article: " + total)
 			console.log(subjects)
-			// console.log(filtered_data[118])
-			// console.log(filtered_data[117])
 
 			if (duplicates === undefined || duplicates.length > 0) {
     			console.log(duplicates + " duplicates")
