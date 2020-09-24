@@ -61,9 +61,45 @@ function groupByKey(array, key) {
      }, {})
 }
 
-function sortByKey(array, key) {
+function sortByKey(array, key, order) {
+	let I = 0;
+	let II = 0;
+
+	if (order == "desc") {
+		I = 1
+		II = -1
+	} 
+	else if (order == "asc") {
+		I = -1
+		II = 1
+	}
+	else {
+		I = 1
+		II = -1
+	}
+
     return array.sort(function(a, b) {
         var x = a[key]; var y = b[key];
-        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        return ((x < y) ? I : ((x > y) ? II : 0));
     });
+}
+
+function randomPosNeg(min,max){
+	var num = Math.floor(Math.random()*max) + min;
+	num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
+	return num
+}
+
+function cropText(text){
+	let newText;
+	let t = text.split(" ")
+	const limit = 2;
+
+	if (t.length > Math.floor(limit + (limit/4)) ) {
+		newText = t[0] + " " + t[1] + " " + t[2] + " " + t[3] + " ...";
+	}
+	else {
+		newText = text;
+	}
+	return newText;
 }

@@ -1,8 +1,8 @@
 function dv2() {
 	let multiply = 1;
 	let container = "#dv2",
-		window_w = $(container).outerWidth() * (multiply*2),
-		window_h = window.innerHeight * multiply;
+		window_w = $(container).outerWidth() * (multiply*2.5),
+		window_h = window.innerHeight * (multiply*1.5);
 
 	let margin = {top: 20, right: 20, bottom: 20, right: 20},
 		width = window_w - (margin.right + margin.right),
@@ -31,7 +31,7 @@ function dv2() {
 			let dataset = [];
 			dataset.push(head)
 
-			let filter = 10;
+			let filter = 15;
 			let total = 0;
 			let filtered_data = [];
 			let subjects = [];
@@ -163,8 +163,12 @@ function dv2() {
 				.data(filtered_data)
 				.enter()
 				.append("g")
-				.attr("class", function(d,i){
-					return i + " " + d.article
+				// .attr("class", function(d,i){
+				// 	return i + " " + d.article
+				// })
+				.attr("class","article")
+				.attr("id", function(d,i){
+					return i
 				})
 				.attr("transform", function(d,i){
 					return "translate(" + x(i) + "," + y(d.average_daily_visit) + ")"
@@ -221,13 +225,18 @@ function dv2() {
 
 			let label = articles.append("text")
 				.text(function(d,i){
-					return no_underscore(d.article) // + " " + d.year //+ " " + d.discussion_size // + " " + d.year //+ " " + d.average_daily_visit
+					return cropText(no_underscore(d.article)) // + " " + d.year //+ " " + d.discussion_size // + " " + d.year //+ " " + d.average_daily_visit
 				})
 				.attr("x",0)
 				.attr("y",-5)
 				.attr("text-anchor","middle")
 				.attr("fill","black")
 				.attr("font-size","0.6em")
+				.attr("class","text")
+				// .transition()
+				// .duration(1000)
+				// .attr("x", Math.floor(Math.random() * 0) + 1)
+				// .attr("y", Math.floor(Math.random() * 5) + 1)
 
 			let yAxis = plot.append("g")
 				.attr("transform", "translate(0,0)")
@@ -268,6 +277,62 @@ function dv2() {
 					return "translate(" + ((width/1.05)/the_subjects.length*i) + "," + (height+10) + ")"
 				})
 
+			function prevent_overlap(){
+				let coordinates = [];
+				let count = 0;
+
+				let elem = document.getElementById("dv2").querySelectorAll(".article")
+
+				$.each(elem, function(index, item) {
+					let id = item.id
+					let top = Math.floor(item.querySelectorAll('.text')[0].getBoundingClientRect().top)
+					let position;
+					let shift = 0;
+				    
+				    if (coordinates.includes(top) ){
+				    	// console.log(item.getElementsByClassName("text"))
+				    	// console.log(id)
+				    	let label = item.querySelectorAll('.text')[0];
+				    	// let random = randomPosNeg(-5,5);
+
+
+				    	for (i = 1 ; i < 10; i++) {
+				    		// shift = i*2
+
+				    		if (coordinates.includes(top + i)) {
+
+				    		}
+				    		else {
+						    	if (index % 2 == 0) {
+						    		shift = i*2
+						    	}
+						    	else {
+						    		shift = -(i)
+						    	}
+				    			console.log(id + " " + shift)
+				    			break
+				    		}
+				    	}
+
+				    	label.setAttribute("transform","translate(0," +  shift + ")")
+				    	// console.log(id + " " + top + " " + shift)
+				    }
+				    
+				    for (i = 0; i <= 10; i++) {
+						coordinates.push(top+i);
+						// coordinates.splice(0+i,0+i);
+						// console.log(i, top+i)
+				    }
+					// console.log(coordinates)
+				})
+
+				count += 1;
+				if (count = 10) {
+					count = 0;
+					coordinates.splice(0,2)
+				}
+			}
+			setTimeout(prevent_overlap,500)
 		})
 	}
 	render();

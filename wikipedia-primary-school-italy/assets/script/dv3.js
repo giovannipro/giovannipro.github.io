@@ -69,7 +69,7 @@ function dv3() {
 			// let test_a = {article:'A_test > issues: 10, features 450', issues:10, average_daily_visit:400, references:150, notes:150, images: 150, days: 7091};
 			// filtered_data.push(test_a);
 
-			sortByKey(filtered_data, "issues") 
+			sortByKey(filtered_data, "issues", "desc") 
 
 			// $("#dv3_dataset").append(head)
 			// $("#dv3_dataset").append(dataset)
