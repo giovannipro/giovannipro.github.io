@@ -63,21 +63,31 @@ function dv3() {
 				}
 			})
 			// console.log(filtered_data)
-			console.log("min visit: " + filter_visit)
-			console.log(filtered_data.length)
+			// console.log("min visit: " + filter_visit)
+			// console.log(filtered_data.length)
 
-			let test_a = {article:'A_test > issues: 10, features 450', issues:10, average_daily_visit:400, references:150, notes:150, images: 150, days: 7091};
-			filtered_data.push(test_a);
+			// let test_a = {article:'A_test > issues: 10, features 450', issues:10, average_daily_visit:400, references:150, notes:150, images: 150, days: 7091};
+			// filtered_data.push(test_a);
 
 			sortByKey(filtered_data, "issues") 
 
-			$("#dv3_dataset").append(head)
-			$("#dv3_dataset").append(dataset)
+			// $("#dv3_dataset").append(head)
+			// $("#dv3_dataset").append(dataset)
+
+			function the_dataset(){
+				$("#dv3_dataset").append(dataset)
+			}
+			function legend(){
+				const legend = "<img src='../assets/img/dv3_legend.svg' width='" + 250 + "'>"; // <span>Articoli con più di 1000 visite medie al giorno</span>
+				$("#dv3_legend").append(legend)
+			}
+			the_dataset();
+			legend();
 
 			let max_features = d3.max(filtered_data, function(d) {
 				return +d.features
 			})
-			console.log(max_features)
+			// console.log("max_features: " + max_features)
 
 			let y = d3.scaleLinear()
 				.domain([0,filtered_data.length]) 
@@ -99,9 +109,16 @@ function dv3() {
 				.domain([0,x_issues_max]) 
 				.range([0,width/12*2])
 
+			// features
+			let my_max_features = max_features;
+
 			let x_features = d3.scaleLinear()
-				.domain([0,max_features]) 
+				.domain([0,my_max_features]) 
 				.range([0,width/12*5])
+
+			let x_features_axis = d3.scaleLinear()
+				.domain([0,my_max_features]) 
+				.range([width/12*5,0])
 
 			let x_days = d3.scaleLinear()
 				.domain([0,x_days_max]) 
@@ -286,7 +303,25 @@ function dv3() {
 			// 		.attr('stroke-width',2)
 			// }
 
+			let axis_days = plot.append("g")
+				.attr("transform", "translate(" + 0 + "," + height + ")")
+				.call(d3.axisBottom(x_days)
+					.ticks(5)
+					.tickFormat(d3.format(".0s"))
+				)
+				.attr("class","axis_days")
 
+			let axis_features = plot.append("g")
+				.attr("transform", "translate(" + ((separator*1) + (width/12*2)) + "," + height + ")")
+				.call(d3.axisBottom(x_features_axis)
+					.ticks(5)
+				)
+				.attr("class","axis_features")
+
+			let axis_axis = plot.append("g")
+				.attr("transform", "translate(" + ((separator*2) + (width/12*7)) + "," + height + ")")
+				.call(d3.axisBottom(x_issues))
+				.attr("class","axis_issue")
 		})
 	}
 	render();

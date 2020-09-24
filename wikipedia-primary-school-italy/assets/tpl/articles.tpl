@@ -19,10 +19,10 @@
 			{{year}}
 		</th>
 		<th>
-			{{argument}}
+			{{theme}}
 		</th>
 		<th>
-			{{topic}}
+			{{argument}}
 		</th>
 		<th class="number">
 			{{average_daily_visit}}

@@ -1,7 +1,7 @@
 function dv2() {
 	let multiply = 1;
 	let container = "#dv2",
-		window_w = $(container).outerWidth() * multiply,
+		window_w = $(container).outerWidth() * (multiply*2),
 		window_h = window.innerHeight * multiply;
 
 	let margin = {top: 20, right: 20, bottom: 20, right: 20},
@@ -77,22 +77,30 @@ function dv2() {
 							art.push(no_underscore(d.article))
 						}
 
-						if (d.discussion_size == 0 || d.discussion_size == NaN) {
-							// console.log("size: " + d.discussion_size + " " + no_underscore(d.article))
-						}
+						// if (d.discussion_size == 0 || d.discussion_size == NaN) {
+						// 	// console.log("size: " + d.discussion_size + " " + no_underscore(d.article))
+						// }
 
 						// if (d.issues > 0) {
 						// 	console.log(d.issues + " " + no_underscore(d.article))
 						// }
 
-						let output = d.article + "," + d.subject + "," + d.average_daily_visit + "," + d.incipit_size + "," + d.size + "," + d.year + "<br/>"; 
+						let output = no_underscore(d.article) + "," + d.subject + "," + d.average_daily_visit + "," + d.incipit_size + "," + d.size + "<br/>"; 
 						dataset.push(output)
 					}
 				})
 			}
 			console.log("articles: " + total);
 
-			$("#dv2_dataset").append(dataset)
+			function the_dataset(){
+				$("#dv2_dataset").append(dataset)
+			}
+			function legend(){
+				const legend = "<img src='../assets/img/dv2_legend.svg' width='" + 250 + "'>"; // <span>Articoli con più di 1000 visite medie al giorno</span>
+				$("#dv2_legend").append(legend)
+			}
+			the_dataset();
+			legend();
 
 			filtered_data.sort(function (a, b) { 
 	            var af = a.subject; 
@@ -107,10 +115,10 @@ function dv2() {
 	            } 
 	        }); 
 
-			let test_a = {article:'A_9000',subject:'Biologia', average_daily_visit:9000, incipit_size:50000, size:25000, year:2, discussion_size:100000};
-			let test_b = {article:'B_0',subject:'Biologia', average_daily_visit:0, incipit_size:70000, size:35000, year:0, discussion_size:100000};
-			filtered_data.push(test_a);
-			filtered_data.push(test_b);
+			// let test_a = {article:'A_9000',subject:'Biologia', average_daily_visit:9000, incipit_size:50000, size:25000, year:2, discussion_size:100000};
+			// let test_b = {article:'B_0',subject:'Biologia', average_daily_visit:0, incipit_size:70000, size:35000, year:0, discussion_size:100000};
+			// filtered_data.push(test_a);
+			// filtered_data.push(test_b);
 
 			if (duplicates === undefined || duplicates.length > 0) {
 				duplicates.forEach(function (d,i) {
@@ -142,7 +150,7 @@ function dv2() {
 
 			let x = d3.scaleLinear()
 				.domain([0,total])
-				.range([0,width])
+				.range([0,width/1.05]) 
 
 			let r = d3.scaleLinear()
 				.range([0, 20])
@@ -150,7 +158,7 @@ function dv2() {
 
 			let articles = plot.append("g")	
 				.attr("class","articles")
-				.attr("transform","translate(0,200)")
+				.attr("transform","translate(0,0)")
 				.selectAll("g")
 				.data(filtered_data)
 				.enter()
@@ -220,6 +228,46 @@ function dv2() {
 				.attr("text-anchor","middle")
 				.attr("fill","black")
 				.attr("font-size","0.6em")
+
+			let yAxis = plot.append("g")
+				.attr("transform", "translate(0,0)")
+				.call(d3.axisLeft(y));
+
+			let the_subjects = [
+				"Biologia", 
+				"Chimica", 
+				"Cittadinanza e costituzione",
+				"Diritto e Economia", 
+				"Filosofia", 
+				"Fisica", 
+				"Geografia", 
+				"Grammatica italiana",
+				"Grammatica latina",
+				"Informatica",
+				"Letteratura italiana", 
+				"Letteratura latina",
+				"Matematica",
+				"Scienze",
+				"Scienze della Terra", 
+				"Storia",
+				"Storia dell'arte", 
+				"Tecnologia"
+			]
+			console.log("subjects: " + the_subjects.length);
+
+			let subjects_ = plot.append("g")	
+				.attr("class", "subjects")
+				.selectAll("text")
+				.data(the_subjects)
+				.enter()
+				.append("text")
+				.text(function(d,i){
+					return d
+				})
+				.attr("transform", function(d,i){
+					return "translate(" + ((width/1.05)/the_subjects.length*i) + "," + (height+10) + ")"
+				})
+
 		})
 	}
 	render();

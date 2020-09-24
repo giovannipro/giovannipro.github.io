@@ -1,9 +1,9 @@
 function dv1() {
 	let container = "#dv1",
-		window_w = $(container).outerWidth() * 1, // 4000; //
+		window_w = $(container).outerWidth() * 1.5, // 4000; //
 		window_h = window.innerHeight * 1 //2000;
 
-	let margin = {top: 20, right: 20, bottom: 20, right: 20},
+	let margin = {top: 20, right: 0, bottom: 20, right: 20},
 		width = window_w - (margin.right + margin.right),
 		height = window_h - (margin.top + margin.bottom);
 
@@ -47,7 +47,7 @@ function dv1() {
 					d.discussion_size = +d.discussion_size
 
 					// if (d.discussion_size == "NaN") {
-					console.log(d.average_daily_visit + " " + d.article)
+					// console.log(d.average_daily_visit + " " + d.article)
 					// }
 
 					total += 1
@@ -64,15 +64,15 @@ function dv1() {
 						art.push(d.article)
 					}
 
-					let output = d.article + "," + d.subject + "," + d.average_daily_visit + "," + d.incipit_size + "," + d.size + "," + d.year + "<br/>"; 
+					let output = no_underscore(d.article) + "," + d.subject + "," + d.average_daily_visit + "," + d.incipit_size + "," + d.size + "<br/>"; 
 					dataset.push(output)
 				}
 			})
 
-			let test_a = {article:'A_9000',subject:'Biologia', average_daily_visit:9000, incipit_size:50000, size:25000, year:2, discussion_size:100000};
-			let test_b = {article:'A_0',subject:'Biologia', average_daily_visit:0, incipit_size:70000, size:35000, year:0, discussion_size:100000};
-			filtered_data.push(test_a);
-			filtered_data.push(test_b);
+			// let test_a = {article:'A_9000',subject:'Biologia', average_daily_visit:9000, incipit_size:50000, size:25000, year:2, discussion_size:100000};
+			// let test_b = {article:'A_0',subject:'Biologia', average_daily_visit:0, incipit_size:70000, size:35000, year:0, discussion_size:100000};
+			// filtered_data.push(test_a);
+			// filtered_data.push(test_b);
 
 	    	sortByKey(filtered_data, "article") 
 
@@ -86,8 +86,15 @@ function dv1() {
 				console.log("no duplicates")
 			}
 
-
-			$("#dv1_dataset").append(dataset)
+			function the_dataset(){
+				$("#dv1_dataset").append(dataset)
+			}
+			function legend(){
+				const legend = "<img src='../assets/img/dv1_legend.svg' width='" + 800 + "'>"; // <span>Articoli con più di 1000 visite medie al giorno</span>
+				$("#dv1_legend").append(legend)
+			}
+			the_dataset();
+			legend();
 
 			// scale
 			let y_min = d3.min(filtered_data, function(d) { 
@@ -108,7 +115,7 @@ function dv1() {
 
 			let x = d3.scaleLinear()
 				.domain([0,total])
-				.range([0,width])
+				.range([0, width/1.05])
 
 			let r = d3.scaleLinear()
 				.range([0, 20])
@@ -116,7 +123,7 @@ function dv1() {
 
 			let articles = plot.append("g")	
 				.attr("class","articles")
-				.attr("transform","translate(0,200)")
+				.attr("transform","translate(0,0)")
 				.selectAll("g")
 				.data(filtered_data)
 				.enter()
@@ -176,9 +183,9 @@ function dv1() {
 				.attr("fill","black")
 				.attr("font-size","0.6em")
 
-			// let yAxis = plot.append("g")
-			// 	.attr("transform", "translate(0,0)")
-			// 	.call(d3.axisLeft(y));
+			let yAxis = plot.append("g")
+				.attr("transform", "translate(0,0)")
+				.call(d3.axisLeft(y));
 		})
 	}
 	render();

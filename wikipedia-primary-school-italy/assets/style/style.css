@@ -86,7 +86,10 @@ tr:hover, tr:hover a {
 .dataset {
 	column-count: 4;
 	font-size: 0.7em;
-	margin-top: 200px; 
+}
+
+.legend span {
+	display: block;
 }
 
 .dataviz {

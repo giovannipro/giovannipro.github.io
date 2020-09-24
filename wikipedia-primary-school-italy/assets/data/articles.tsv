@@ -377,8 +377,8 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3234	Storia	Superiori	XX-XXI secolo	Gli USA come superpotenza	1	Blocco_occidentale	28	49460	27	3309	1	3	337	10.18	0	0	0	36	???	0	???	#VALUE!
 3235	Storia	Superiori	XX-XXI secolo	URSS come superpotenza	1	Blocco_orientale	62	111546	68	6212	0	3	1108	17.84	1	0	0	1960	???	0	???	#VALUE!
 1709	Informatica	Superiori	Reti e internet		1	Blog	461	829127	846	29912	26	0	441	1.47	2	3	0	19942	2	7	2003-11-23	6035
-1885	Letteratura italiana	Superiori	Secolo XIV	Boccaccio	1	Boccaccio	26	47503	17	32	0	0	29	90.63	0	0	0	0	???	0	???	#VALUE!
-3216	Storia	Superiori	XX-XXI secolo	Le bombe atomiche	1	Bombardamenti_atomici_di_Hiroshima_e_Nagasaki	1003	1802347	994	101108	74	26	1295	1.28	1	2	0	19084	2006-05-16	29	???	#VALUE!
+1885	Letteratura italiana	Superiori	Secolo XIV	Boccaccio	1	Boccaccio	26	47503	17	32	0	0	29	90.63	0	0	0	0	???	0	2006-05-16	5130
+3216	Storia	Superiori	XX-XXI secolo	Le bombe atomiche	1	Bombardamenti_atomici_di_Hiroshima_e_Nagasaki	1003	1802347	994	101108	74	26	1295	1.28	1	2	0	19084	???	29	2006-05-16	5130
 834	Filosofia	Superiori	Filosofia nell'età medievale		1	Bonaventura da Bagnoregio	85	152151	80	31885	5	9	1221	3.83	0	1	0	4315	???	23	2006-01-21	5245
 2820	Storia	Superiori	Basso medioevo	Borghesia	1	Borghesia	217	390436	216	9576	11	0	623	6.51	0	0	0	3438	???	0	???	#VALUE!
 750	Diritto e Economia	Superiori	Mercato della moneta		1	Borsa valori	233	419138	191	16101	11	7	812	5.04	0	1	1	2243	2.1	7	2006-01-05	5261
@@ -412,7 +412,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 636	Diritto e Economia	Superiori	Organizzazione dello stato italiano		1	Camera dei deputati (Italia)	129	232396	333	35650	14	6	2312	6.49	0	0	0	8555	2.1	22	2005-07-06	5444
 3023	Storia	Superiori	XVIII-XIX secolo	Cavour	1	Camillo_Benso,_conte_di_Cavour	600	1078607	614	99112	117	58	1790	1.81	0	0	0	66157	conte di Cavour	15	conte di Cavour	#VALUE!
 2131	Letteratura italiana	Superiori	Primo novecento	Espressionismo	1	Camillo_Sbarbaro	59	106881	55	20188	7	3	2	0.01	0	0	0	3465	2.5	1	2004-03-17	5920
-3311	Storia	Superiori	XX-XXI secolo	Camorra	1	Camorra	580	1042893	579	141619	154	3	1149	0.81	9	1	0	130024	???	64	???	#VALUE!
+3311	Storia	Superiori	XX-XXI secolo	Camorra	1	Camorra	580	1042893	579	141619	154	3	1149	0.81	9	1	0	130024	???	64	2005-04-12	5529
 3004	Storia	Superiori	XVIII-XIX secolo	Campagna d'Egitto	1	Campagna_d'Egitto	80	144224	79	22288	12	16	2352	10.55	0	1	0	65	???	1	???	#VALUE!
 3003	Storia	Superiori	XVIII-XIX secolo	Campagna d'Italia	1	Campagna_d'Italia_(1796-1797)	141	254208	138	83084	100	22	3255	3.92	0	0	0	40744	???	6	???	#VALUE!
 3218	Storia	Superiori	XX-XXI secolo	Fronte balcanico	1	Campagna_dei_Balcani	22	39002	22	27269	22	11	823	3.02	0	0	0	565	???	8	???	#VALUE!
@@ -436,7 +436,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 579	Diritto e Economia	Superiori	Soggetti del diritto		1	Capacità di agire	106	190230	98	20855	15	0	223	1.07	0	0	0	3578	2.1	5	2005-09-08	5380
 1059	Fisica	Superiori	La termologia		1	Capacità termica	215	386707	209	7303	9	0	735	10.06	0	0	0	2828	???	0	2005-04-07	5534
 2988	Storia	Superiori	XVIII-XIX secolo	formazione del capitale	1	Capitale_(economia)	118	212227	106	10825	2	0	1350	12.47	1	0	0	36	???	2	???	#VALUE!
-2989	Storia	Superiori	XVIII-XIX secolo	capitalismo	1	Capitalismo	439	788946	455	36899	6	0	1167	3.16	1	0	0	30931	???	16	???	#VALUE!
+2989	Storia	Superiori	XVIII-XIX secolo	capitalismo	1	Capitalismo	439	788946	455	36899	6	0	1167	3.16	1	0	0	30931	???	16	2007-07-15	4705
 2783	Storia	Superiori	Alto medioevo	Capitolare di Kiersy	1	Capitolare_di_Quierzy	100	180170	102	7869	0	0	1828	23.23	0	0	0	36	???	5	???	#VALUE!
 3452	Storia dell'arte	Superiori	Il Seicento		1	Caravaggio	1135	2039801	1170	87477	90	29	883	1.01	0	0	0	103032	???	58	2006-11-26	4936
 3453	Storia dell'arte	Superiori	Il Seicento		1	Caravaggismo	43	77516	43	10806	8	5	680	6.29	0	0	0	8714	???	18	2008-10-02	4260
@@ -445,7 +445,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2539	Scienze	Medie	Aspetti chimici della materia		1	Carica elettrica	195	350165	178	11285	8	3	1253	11.10	0	0	0	8990	1	6	2004-03-10	5927
 74	Biologia	Superiori	Genetica		1	Cariotipo	163	292184	138	17839	7	2	717	4.02	0	0	0	38	2	5	2005-05-20	5491
 2167	Letteratura italiana	Superiori	Il secolo breve	Carlo Emilio Gadda	1	Carlo Emilio Gadda	212	381237	201	39548	17	2	1	0.00	0	0	0	12876	2.5	9	???	#VALUE!
-1994	Letteratura italiana	Superiori	XVIII Secolo	Carlo Goldoni	1	Carlo Goldoni	476	856131	455	85740	16	9	128	0.15	2	1	0	40887	2.4	26	???	#VALUE!
+1994	Letteratura italiana	Superiori	XVIII Secolo	Carlo Goldoni	1	Carlo Goldoni	476	856131	455	85740	16	9	128	0.15	2	1	0	40887	2.4	26	2007-03-28	4814
 2161	Letteratura italiana	Superiori	Il secolo breve	Autori minori	1	Carlo_Betocchi	15	27547	15	10042	2	1	496	4.94	0	0	0	347	2.5	26	2005-07-17	5433
 3022	Storia	Superiori	XVIII-XIX secolo	Cattaneo	1	Carlo_Cattaneo	129	232358	150	27476	20	5	258	0.94	0	0	0	14036	???	70	???	#VALUE!
 2090	Letteratura italiana	Superiori	Secondo Ottocento	Letteratura per ragazzi	1	Carlo_Collodi	408	732423	539	21764	18	4	129	0.59	0	0	0	8369	2.4	67	2003-09-26	6093
@@ -497,8 +497,8 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1880	Letteratura italiana	Superiori	Secolo XIV	Petrarca	1	Chiare,_fresche_et_dolci_acque	97	175026	102	6659	4	2	473	7.10	0	0	0	4965	fresche et dolci acque	0	fresche et dolci acque	#VALUE!
 1780	Informatica	Superiori	Base di dati		1	Chiave primaria	44	78411	43	2054	0	0	528	25.71	2	0	0	1681	2	0	2008-01-26	4510
 2915	Storia	Superiori	XVI-XVII secolo	la Chiesa anglicana	1	Chiesa_anglicana	221	397914	214	7904	0	3	2834	35.86	1	0	0	4295	???	1	???	#VALUE!
-3069	Storia	Superiori	XVIII-XIX secolo		1	Chiesa_cattolica_alla_fine_del_XIX_secolo	6	11024	6	9679	2	3	181	1.87	0	0	0	36	???	3	???	#VALUE!
-2808	Storia	Superiori	Alto medioevo		1	Chiesa_ortodossa	736	1322418	751	88443	72	20	3469	3.92	2	2	0	22955	???	3	???	#VALUE!
+3069	Storia	Superiori	XVIII-XIX secolo		1	Chiesa_cattolica_alla_fine_del_XIX_secolo	6	11024	6	9679	2	3	181	1.87	0	0	0	36	???	3	2006-01-30	5236
+2808	Storia	Superiori	Alto medioevo		1	Chiesa_ortodossa	736	1322418	751	88443	72	20	3469	3.92	2	2	0	22955	???	3	2006-01-30	5236
 3593	Matematica	Elementari	Unità di misura	Peso	1	Chilogrammo	272	487916	242	20622	20	2	2213	10.73	0	0	0	6718	0.2	1	2003-12-18	6010
 3590	Matematica	Elementari	Unità di misura	Lungezza	1	Chilometro	78	139447	77	2799	0	2	955	34.12	1	0	0	2583	0.2	0	2003-12-19	6009
 1819	Letteratura italiana	Superiori	XI-XII Secolo	Origini delle letterature europee	1	Chrétien_de_Troyes	73	130492	73	7960	4	2	1	0.01	0	0	0	50	2.3	4	2005-01-22	5609
@@ -567,7 +567,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 416	Cittadinanza e costituzione	Medie	Secondo anno		1	Codice della strada (Italia)	25	45641	39	32846	12	6	185	0.56	0	0	0	3264	1.2	0	2015-06-02	1826
 3555	Tecnologia	Elementari	Tecnologia	QR code	1	Codice QR	309	555636	300	18447	30	5	1310	7.10	0	0	0	9715	0	1	2007-07-28	4692
 1632	Informatica	Medie	Coding e pensiero computazionale		1	Codice sorgente	90	162432	94	9495	1	4	1380	14.53	1	0	0	67	2	4	2004-03-23	5914
-2649	Storia	Superiori	Antichità	Codice di Hammurabi	1	Codice_di_Hammurabi	381	683829	409	10950	3	2	193	1.76	1	0	0	8698	???	2	???	#VALUE!
+2649	Storia	Superiori	Antichità	Codice di Hammurabi	1	Codice_di_Hammurabi	381	683829	409	10950	3	2	193	1.76	1	0	0	8698	???	2	2006-01-24	5242
 3008	Storia	Superiori	XVIII-XIX secolo	Codice civile francese	1	Codice_napoleonico	41	74469	56	8651	1	3	873	10.09	0	0	0	6631	???	0	???	#VALUE!
 3740	Matematica	Superiori	Aritmetica	Piano cartesiano	1	Coefficiente_angolare	170	305194	118	3273	0	1	2654	81.09	1	0	0	1028	2.2	0	2004-12-21	5641
 3241	Storia	Superiori	XX-XXI secolo	Coesistenza pacifica	1	Coesistenza_pacifica	6	11559	9	10291	14	1	984	9.56	0	0	0	36	???	5	???	#VALUE!
@@ -633,8 +633,8 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1589	Informatica	Medie	Introduzione		1	Computer desktop	46	82216	41	8076	7	3	1637	20.27	1	0	0	4928	1	0	2004-10-19	5704
 1591	Informatica	Medie	Introduzione		1	Computer portatile	126	226742	113	31106	22	8	610	1.96	0	0	0	6440	1	1	2005-12-02	5295
 402	Cittadinanza e costituzione	Medie	Secondo anno		1	Comune (Italia)	444	798435	513	37233	26	3	844	2.27	1	0	0	14749	0	2	2003-10-04	6085
-3058	Storia	Superiori	XVIII-XIX secolo	Comune di Parigi	1	Comune_di_Parigi_(1871)	191	342378	219	155558	240	46	1830	1.18	0	0	0	13132	???	67	???	#VALUE!
-3151	Storia	Superiori	XX-XXI secolo	Il comunismo	1	Comunismo	950	1706327	1188	81918	33	13	2372	2.90	2	1	0	15356	???	19	???	#VALUE!
+3058	Storia	Superiori	XVIII-XIX secolo	Comune di Parigi	1	Comune_di_Parigi_(1871)	191	342378	219	155558	240	46	1830	1.18	0	0	0	13132	???	67	2004-12-04	5658
+3151	Storia	Superiori	XX-XXI secolo	Il comunismo	1	Comunismo	950	1706327	1188	81918	33	13	2372	2.90	2	1	0	15356	???	19	2004-12-10	5652
 3324	Storia	Superiori	XX-XXI secolo	Cee	1	Comunità_economica_europea	231	414801	355	14006	0	0	1104	7.88	0	0	0	2681	???	0	???	#VALUE!
 3323	Storia	Superiori	XX-XXI secolo	Comunità del carbone e dell'acciaio	1	Comunità_europea_del_carbone_e_dell'acciaio	179	321698	203	12052	1	3	1942	16.11	0	0	0	882	???	1	???	#VALUE!
 226	Chimica	Superiori	Sistemi, miscele, sostanze		1	Concentrazione (chimica)	16	27938	27	7933	4	1	1335	16.83	0	0	0	3641	2	2	2004-08-27	5757
@@ -768,7 +768,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3677	Matematica	Medie	Geometria	I solidi	1	Cubo	100	179644	79	7689	0	7	929	12.08	0	0	0	15242	1.3	0	2005-03-11	5561
 2699	Storia	Superiori	Grecia e Italia preromana	Villanoviani	1	Cultura_villanoviana	22	39997	22	21379	16	8	590	2.76	0	0	0	36	???	11	???	#VALUE!
 1581	Grammatica latina	Superiori	Sintassi	Costruzioni sintattiche	1	Cum_narrativo	72	129177	70	8737	0	0	651	7.45	1	0	0	47	2.1	3	2007-04-25	4786
-2089	Letteratura italiana	Superiori	Secondo Ottocento	Letteratura per ragazzi	1	Cuore (romanzo)	369	663050	290	39157	23	4	695	1.77	2	2	1	8258	???	4	???	#VALUE!
+2089	Letteratura italiana	Superiori	Secondo Ottocento	Letteratura per ragazzi	1	Cuore (romanzo)	369	663050	290	39157	23	4	695	1.77	2	2	1	8258	???	4	2008-03-09	4467
 113	Biologia	Superiori	Corpo umano	Apparato respiratorio e circolatorio	1	Cuore umano	448	804823	379	92296	124	45	2624	2.84	0	0	0	43752	2	25	2006-11-22	4940
 3418	Storia dell'arte	Superiori	Il Quattrocento		1	Cupola del Brunelleschi	624	1121944	544	44321	16	16	840	1.90	0	1	0	17018	???	25	2006-04-01	5175
 3389	Storia dell'arte	Superiori	Arte romana		1	Cupole romane	9	15803	6	27821	30	2	1372	4.93	0	0	0	2092	???	8	2009-06-02	4017
@@ -1053,8 +1053,8 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 887	Filosofia	Superiori	Illuminismo		1	Étienne Bonnot de Condillac	21	37146	17	15931	0	1	222	1.39	1	1	0	39	???	6	2006-09-10	5013
 1285	Geografia		Africa	Etiopia	1	Etiopia	689	1237828	660	145757	231	58	3005	2.06	2	0	1	83872	???	50	2004-03-19	5918
 185	Biologia	Superiori	Ecologia		1	Etologia	219	394169	159	51782	33	16	710	1.37	0	0	0	1886	2	36	2003-08-28	6122
-2700	Storia	Superiori	Grecia e Italia preromana	Etruschi	1	Etruschi	693	1244621	638	143495	59	18	1305	0.91	1	0	0	46592	???	24	???	#VALUE!
-2170	Letteratura italiana	Superiori	Il secolo breve	Eugenio Montale	1	Eugenio Montale	787	1414634	824	51990	29	10	2	0.00	1	0	0	25409	2.5	58	???	#VALUE!
+2700	Storia	Superiori	Grecia e Italia preromana	Etruschi	1	Etruschi	693	1244621	638	143495	59	18	1305	0.91	1	0	0	46592	???	24	2005-04-30	5511
+2170	Letteratura italiana	Superiori	Il secolo breve	Eugenio Montale	1	Eugenio Montale	787	1414634	824	51990	29	10	2	0.00	1	0	0	25409	2.5	58	2007-04-29	4782
 410	Cittadinanza e costituzione	Medie	Secondo anno		1	Euro	952	1709962	955	67466	98	40	4326	6.41	1	0	0	97056	???	3	2003-06-28	6183
 1234	Geografia		Europa	Regione centro-orientale	1	Europa_centro-orientale	48	86308	44	1982	2	1	1373	69.27	1	0	0	118	???	0	2009-03-05	4106
 1241	Geografia		Europa	Regione orientale	1	Europa_orientale	185	331849	210	3923	5	2	628	16.01	0	0	0	0	???	0	2006-07-07	5078
@@ -1092,9 +1092,9 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2839	Storia	Superiori	Basso medioevo	Federico II	1	Federico_II_di_Svevia	1218	2188652	1253	141061	102	38	2890	2.05	0	1	0	64909	???	28	???	#VALUE!
 108	Biologia	Superiori	Corpo umano	Apparato digerente e digestione	1	Fegato	662	1189738	626	52827	7	15	822	1.56	0	0	0	2060	2	8	2006-11-21	4941
 1381	Grammatica italiana		Sostantivo	Genere dei sostantivi	1	Femminile	9	16654	9	973	0	0	594	61.05	1	0	0	1264	???	0	2007-09-15	4643
-3107	Storia	Superiori	XX-XXI secolo	Rivoluzione femminile	1	Femminismo	405	727387	404	143015	115	36	1782	1.25	2	0	1	147668	???	60	???	#VALUE!
-3300	Storia	Superiori	XX-XXI secolo	Movimento per la liberazione della donna	1	Femminismo_in_Italia	19	33294	30	23642	25	11	1317	5.57	0	0	0	3526	???	10	???	#VALUE!
-2667	Storia	Superiori	Antichità	I fenici	1	Fenici	489	879020	477	55217	10	16	2340	4.24	1	0	0	15229	???	11	???	#VALUE!
+3107	Storia	Superiori	XX-XXI secolo	Rivoluzione femminile	1	Femminismo	405	727387	404	143015	115	36	1782	1.25	2	0	1	147668	???	60	2005-11-20	5307
+3300	Storia	Superiori	XX-XXI secolo	Movimento per la liberazione della donna	1	Femminismo_in_Italia	19	33294	30	23642	25	11	1317	5.57	0	0	0	3526	???	10	2007-02-17	4853
+2667	Storia	Superiori	Antichità	I fenici	1	Fenici	489	879020	477	55217	10	16	2340	4.24	1	0	0	15229	???	11	2007-02-17	4853
 380	Chimica	Superiori	Dai gruppi funzionali ai polimeri		1	Fenoli	117	211056	122	13620	2	16	1608	11.81	0	0	0	464	2	3	2005-05-06	5505
 935	Filosofia	Superiori	Novecento		1	Fenomenologia	155	279175	146	26482	12	2	1019	3.85	0	0	0	4477	???	27	2004-03-29	5908
 68	Biologia	Superiori	Genetica		1	Fenotipo	189	339355	164	14850	0	4	922	6.21	1	0	0	2666	2	12	2005-07-11	5439
@@ -1102,7 +1102,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2888	Storia	Superiori	XVI-XVII secolo	Ferdinando Magellano	1	Ferdinando_Magellano	317	570036	333	15004	2	6	746	4.97	1	0	0	5077	???	5	???	#VALUE!
 37	Biologia	Superiori	Cellula		1	Fermentazione	267	480352	232	19292	1	1	1520	7.88	1	0	1	1946	2	0	2004-05-18	5858
 2566	Scienze	Medie	Riproduzione		1	Feto	60	107917	69	27762	37	4	497	1.79	0	0	0	11932	1	19	2006-11-22	4940
-2776	Storia	Superiori	Alto medioevo	La nascita del feudalesimo	1	Feudalesimo	432	777123	419	34287	17	2	1251	3.65	1	0	0	55895	???	8	???	#VALUE!
+2776	Storia	Superiori	Alto medioevo	La nascita del feudalesimo	1	Feudalesimo	432	777123	419	34287	17	2	1251	3.65	1	0	0	55895	???	8	2008-02-21	4484
 2778	Storia	Superiori	Alto medioevo	La nascita del feudo	1	Feudo	101	182041	93	14523	5	0	602	4.15	1	0	0	36	???	9	???	#VALUE!
 3371	Storia dell'arte	Superiori	Arte greca		1	Fidia	147	263722	155	11600	16	2	1357	11.70	0	0	0	2540	???	4	2004-08-13	5771
 2300	Scienze della Terra	Superiori	La Terra e la sua Luna		1	Figura della Terra	41	73581	43	20039	5	1	2748	13.71	0	0	0	1101	2	4	2012-08-03	2859
@@ -1263,7 +1263,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 570	Diritto e Economia	Superiori	La società e ordinamento giuridico		1	Gerarchia delle fonti	263	471720	305	8025	3	0	610	7.60	1	0	0	131	2.1	5	2008-09-06	4286
 2744	Storia	Superiori	Roma	I germani	1	Germani	225	404482	210	137737	178	41	2501	1.82	0	3	0	12069	???	35	???	#VALUE!
 1230	Geografia		Europa	Germania	1	Germania	2080	3738171	1970	141869	96	51	5441	3.84	0	0	0	17224	???	7	2002-12-15	6378
-3194	Storia	Superiori	XX-XXI secolo	Regime nazista	1	Germania_nazista	748	1343452	744	188376	137	36	9046	4.80	1	1	1	18640	???	73	???	#VALUE!
+3194	Storia	Superiori	XX-XXI secolo	Regime nazista	1	Germania_nazista	748	1343452	744	188376	137	36	9046	4.80	1	1	1	18640	???	73	2005-09-07	5381
 1425	Grammatica italiana		Verbo	Modi verbali	1	Gerundio	123	220973	98	18010	2	0	893	4.96	0	0	0	0	???	6	2006-12-16	4916
 1557	Grammatica latina	Superiori	Verbi	Participi verbali	1	Gerundivo	49	87206	45	5455	0	0	535	9.81	0	0	0	47	2.1	0	2008-10-06	4256
 1957	Letteratura italiana	Superiori	XVI Secolo	Torquato Tasso	1	Gerusalemme_liberata	306	549527	286	72219	21	17	2368	3.28	0	0	0	953	2.3	4	2006-12-04	4928
@@ -1273,7 +1273,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2039	Letteratura italiana	Superiori	Primo Ottocento	Giacomo Leopardi	1	Giacomo Leopardi	2366	4252030	2115	157448	245	36	3436	2.18	0	0	0	79900	2.4	6	???	#VALUE!
 1826	Letteratura italiana	Superiori	XIII secolo - Scuola siciliana	Scuola siciliana	1	Giacomo_da_Lentini	113	203056	114	10127	9	2	223	2.20	0	0	0	7274	2.3	6	2006-12-08	4924
 1969	Letteratura italiana	Superiori	XVII Secolo	Autori minori	1	Giacomo_Lubrano	4	8008	8	25550	0	0	808	3.16	0	0	0	50	2.4	1	2006-07-15	5070
-3178	Storia	Superiori	XX-XXI secolo	Assassinio di Matteotti	1	Giacomo_Matteotti	566	1016683	666	100721	120	22	1483	1.47	1	0	0	119199	???	45	???	#VALUE!
+3178	Storia	Superiori	XX-XXI secolo	Assassinio di Matteotti	1	Giacomo_Matteotti	566	1016683	666	100721	120	22	1483	1.47	1	0	0	119199	???	45	2006-10-19	4974
 2159	Letteratura italiana	Superiori	Il secolo breve	Autori minori	1	Giacomo_Noventa	9	16630	12	13777	6	1	0	0.00	0	0	0	50	2.5	22	2006-04-24	5152
 1970	Letteratura italiana	Superiori	XVII Secolo	Giambattista Basile	1	Giambattista Basile	124	222766	90	11107	10	1	481	4.33	0	0	0	3544	2.4	8	???	#VALUE!
 3464	Storia dell'arte	Superiori	Il Settecento		1	Giambattista Tiepolo	151	270950	140	55306	27	17	697	1.26	0	0	0	7550	???	18	2005-09-06	5382
@@ -1283,7 +1283,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1314	Geografia		Asia	Giappone	1	Giappone	1782	3202843	1715	197852	218	57	3839	1.94	0	0	0	56023	???	16	2006-11-24	4938
 3339	Storia dell'arte	Superiori	Le civiltà fluviali		1	Giardini pensili di Babilonia	262	471576	281	8426	1	2	502	5.96	0	0	0	171	???	0	2004-03-21	5916
 943	Filosofia	Superiori	Novecento		1	Gilles Deleuze	107	192769	114	24849	10	0	1614	6.50	0	0	0	1379	???	0	2005-11-06	5321
-2681	Storia	Superiori	Grecia e Italia preromana	Olimpiadi antiche	1	Giochi_olimpici_antichi	411	739319	311	16735	18	1	559	3.34	1	0	0	8020	???	4	???	#VALUE!
+2681	Storia	Superiori	Grecia e Italia preromana	Olimpiadi antiche	1	Giochi_olimpici_antichi	411	739319	311	16735	18	1	559	3.34	1	0	0	8020	???	4	2008-03-02	4474
 865	Filosofia	Superiori	Tra cinquecente e seicento		1	Giordano Bruno	881	1583393	795	130766	98	31	565	0.43	0	0	0	48922	???	13	2004-03-11	5926
 2188	Letteratura italiana	Superiori	Dopoguerra	Autori minori	1	Giorgio_Caproni	410	737294	117	38440	27	2	1	0.00	0	0	0	4581	2.5	36	2007-09-24	4634
 3438	Storia dell'arte	Superiori	Il Cinquecento		1	Giorgione	202	362158	168	44001	34	15	1282	2.91	0	0	0	2692	???	14	2004-04-30	5876
@@ -1346,7 +1346,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3592	Matematica	Elementari	Unità di misura	Peso	1	Grammo	110	198497	81	3151	1	1	589	18.69	0	0	0	436	0.2	0	2004-08-02	5782
 2478	Scienze	Medie	Corpo umano		1	Grande circolazione	109	196563	112	2948	0	0	259	8.79	0	0	0	37	1	7	2007-05-15	4766
 2842	Storia	Superiori	Basso medioevo	la carestia	1	Grande_carestia_del_1315-1317	18	32958	16	12357	4	1	1104	8.93	1	0	0	1346	???	0	???	#VALUE!
-3193	Storia	Superiori	XX-XXI secolo		1	Grande_depressione	615	1105747	619	41152	22	7	1728	4.20	1	1	0	7727	???	4	???	#VALUE!
+3193	Storia	Superiori	XX-XXI secolo		1	Grande_depressione	615	1105747	619	41152	22	7	1728	4.20	1	1	0	7727	???	4	2006-09-14	5009
 2807	Storia	Superiori	Alto medioevo	La religione cristiana ortodossa	1	Grande_Scisma	317	568789	326	30522	5	5	4960	16.25	1	2	0	5227	???	16	???	#VALUE!
 949	Fisica	Superiori	Le grandezze fisiche		1	Grandezza fisica	194	348588	170	20647	12	0	590	2.86	0	0	0	4716	???	0	2004-04-15	5891
 980	Fisica	Superiori	Vettori e forze		1	Grandezza scalare	97	174756	87	3577	5	0	719	20.10	0	0	0	2140	???	8	2004-04-15	5891
@@ -1359,7 +1359,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1257	Geografia		Europa	Grecia	1	Grecia	1151	2069058	1054	180304	183	61	4605	2.55	1	0	0	82807	???	6	2006-11-26	4936
 378	Chimica	Superiori	Dai gruppi funzionali ai polimeri		1	Gruppo funzionale	224	402672	198	6954	9	0	861	12.38	0	0	0	285	2	2	2004-10-02	5721
 395	Cittadinanza e costituzione	Medie	Primo anno		1	Gruppo sociale	114	205721	109	13924	2	0	1150	8.26	1	0	1	750	1.1	0	2005-05-06	5505
-2822	Storia	Superiori	Basso medioevo	Guelfi e ghibellini	1	Guelfi_e_ghibellini	535	961909	568	81088	63	46	2172	2.68	2	0	0	11504	???	4	???	#VALUE!
+2822	Storia	Superiori	Basso medioevo	Guelfi e ghibellini	1	Guelfi_e_ghibellini	535	961909	568	81088	63	46	2172	2.68	2	0	0	11504	???	4	2008-03-13	4463
 3509	Storia dell'arte	Superiori	Il primo Novecento		1	Guernica (Picasso)	875	1573100	876	15657	13	1	582	3.72	0	0	0	8208	???	4	2004-02-29	5937
 455	Cittadinanza e costituzione	Superiori	Definizioni		1	Guerra	194	348310	195	43066	26	2	1755	4.08	0	1	0	11850	0	10	2003-03-25	6278
 3277	Storia	Superiori	XX-XXI secolo	Crociata contro il terrorismo	1	Guerra_al_terrorismo	60	108048	54	94206	110	15	2111	2.24	0	0	0	19060	???	7	???	#VALUE!
@@ -1376,12 +1376,12 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3200	Storia	Superiori	XX-XXI secolo	Guerra civile spagnola	1	Guerra_civile_spagnola	623	1119565	570	149260	173	52	9218	6.18	0	0	0	54809	???	14	???	#VALUE!
 3254	Storia	Superiori	XX-XXI secolo	Guerra d'Algeria	1	Guerra_d'Algeria	153	274154	158	59674	17	11	6173	10.34	0	0	0	5891	???	53	???	#VALUE!
 3184	Storia	Superiori	XX-XXI secolo	Guerra italo-etiopica	1	Guerra_d'Etiopia	388	697592	391	183590	239	41	4423	2.41	0	0	0	49157	???	22	???	#VALUE!
-2974	Storia	Superiori	XVIII-XIX secolo	Guerra di indipendenza USA	1	Guerra_d'indipendenza_americana	597	1072858	574	192106	154	138	8389	4.37	1	0	0	24585	???	3	???	#VALUE!
+2974	Storia	Superiori	XVIII-XIX secolo	Guerra di indipendenza USA	1	Guerra_d'indipendenza_americana	597	1072858	574	192106	154	138	8389	4.37	1	0	0	24585	???	3	2007-02-01	4869
 3017	Storia	Superiori	XVIII-XIX secolo	Indipendenza della Grecia	1	Guerra_d'indipendenza_greca	61	110252	63	11427	2	3	1555	13.61	0	0	0	36	???	1	???	#VALUE!
 3252	Storia	Superiori	XX-XXI secolo	Guerra di indipendenza in Indocina	1	Guerra_d'Indocina	98	176984	103	16924	5	22	2407	14.22	0	0	0	148	???	0	???	#VALUE!
 2849	Storia	Superiori	Basso medioevo	La guerra dei Cento anni	1	Guerra_dei_cent'anni	556	998945	573	114998	160	51	3208	2.79	0	3	2	19821	???	40	???	#VALUE!
 2931	Storia	Superiori	XVI-XVII secolo	Guerra dei Trent'anni	1	Guerra_dei_trent'anni	611	1098856	654	125785	85	141	14181	11.27	0	0	0	22579	???	40	???	#VALUE!
-2687	Storia	Superiori	Grecia e Italia preromana	Guerra del Peloponneso	1	Guerra_del_Peloponneso	412	739570	448	89813	175	15	2488	2.77	1	0	0	6827	???	16	???	#VALUE!
+2687	Storia	Superiori	Grecia e Italia preromana	Guerra del Peloponneso	1	Guerra_del_Peloponneso	412	739570	448	89813	175	15	2488	2.77	1	0	0	6827	???	16	2006-06-20	5095
 3253	Storia	Superiori	XX-XXI secolo	Guerra del Vietnam	1	Guerra_del_Vietnam	1520	2731005	1631	143522	263	55	6467	4.51	0	0	0	66352	???	16	???	#VALUE!
 3228	Storia	Superiori	XX-XXI secolo	Occupazione nazista	1	Guerra_di_liberazione_italiana	180	323368	168	118251	94	28	4065	3.44	0	0	2	139272	???	12	???	#VALUE!
 3075	Storia	Superiori	XVIII-XIX secolo	Guerra di secessione	1	Guerra_di_secessione_americana	888	1595544	855	86990	79	20	4924	5.66	0	4	0	120384	???	28	???	#VALUE!
@@ -1507,7 +1507,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2871	Storia	Superiori	Basso medioevo	L'impero mongolo di Genghis Khan	1	Impero_mongolo	203	364760	201	33818	7	10	4029	11.91	0	0	0	416	???	3	???	#VALUE!
 2873	Storia	Superiori	Basso medioevo	Impero turco	1	Impero_ottomano	742	1333538	775	153814	182	79	8490	5.52	0	0	0	35153	???	29	???	#VALUE!
 2889	Storia	Superiori	XVI-XVII secolo	Impero coloniale portoghese	1	Impero_portoghese	115	207054	121	38574	10	14	2361	6.12	0	1	0	3496	???	6	???	#VALUE!
-2727	Storia	Superiori	Roma		1	Impero_romano	1185	2128916	1157	109871	62	26	8551	7.78	2	0	1	69876	???	4	???	#VALUE!
+2727	Storia	Superiori	Roma		1	Impero_romano	1185	2128916	1157	109871	62	26	8551	7.78	2	0	1	69876	???	4	2006-12-17	4915
 2753	Storia	Superiori	Roma		1	Impero_romano_d'Occidente	282	507466	263	178678	192	46	3101	1.74	0	0	0	46437	???	139	???	#VALUE!
 2834	Storia	Superiori	Basso medioevo	la minaccia dei Turchi	1	Impero_selgiuchide	31	56396	35	24875	1	10	1863	7.49	0	0	0	36	???	1	???	#VALUE!
 2890	Storia	Superiori	XVI-XVII secolo	Impero coloniale spagnolo	1	Impero_spagnolo	150	269408	147	39243	6	24	4970	12.66	1	0	0	22979	???	2	???	#VALUE!
@@ -1723,12 +1723,12 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3044	Storia	Superiori	XVIII-XIX secolo		1	Leggi_Siccardi	49	88451	52	10666	2	1	907	8.50	0	1	0	2371	???	0	???	#VALUE!
 3543	Tecnologia	Elementari	Tecnologia	Legno	1	Legname	26	46490	23	19632	6	1	1522	7.75	2	0	0	2413	0	0	2004-12-19	5643
 3542	Tecnologia	Elementari	Tecnologia	Legno	1	Legno	272	487959	220	34787	4	11	154	0.44	1	0	0	6574	0	0	2005-04-04	5537
-3153	Storia	Superiori	XX-XXI secolo	Vladimir Lenin	1	Lenin	712	1278868	699	122943	129	35	4502	3.66	2	0	0	31742	???	44	???	#VALUE!
+3153	Storia	Superiori	XX-XXI secolo	Vladimir Lenin	1	Lenin	712	1278868	699	122943	129	35	4502	3.66	2	0	0	31742	???	44	2005-04-04	5537
 973	Fisica	Superiori	La luce		1	Lente	96	172998	80	14698	4	9	438	2.98	0	0	0	2177	???	0	2005-05-18	5493
 3419	Storia dell'arte	Superiori	Il Quattrocento		1	Leon Battista Alberti	283	508822	267	55924	16	14	1593	2.85	0	0	0	6609	2.3	62	2004-10-16	5707
 848	Filosofia	Superiori	Umanesimo, rinascimento e rifoma		1	Leonardo Bruni	31	56194	28	7545	2	4	1	0.01	0	0	0	212	2.3	4	2006-01-15	5251
 3433	Storia dell'arte	Superiori	Il Cinquecento		1	Leonardo da Vinci	2613	4696130	3861	223349	200	62	1282	0.57	0	0	0	36848	2.3	61	2004-01-17	5980
-2229	Letteratura italiana	Superiori	Anni 60-58	Leonardo Sciascia	1	Leonardo Sciascia	476	855272	556	94416	53	13	1215	1.29	1	1	0	11980	2.5	67	???	#VALUE!
+2229	Letteratura italiana	Superiori	Anni 60-58	Leonardo Sciascia	1	Leonardo Sciascia	476	855272	556	94416	53	13	1215	1.29	1	1	0	11980	2.5	67	2006-02-13	5222
 2254	Letteratura latina	Superiori	Generalità		1	Letteratura Latina	57	101807	65	31	0	0	28	90.32	0	0	0	0	???	21	???	#VALUE!
 1964	Letteratura italiana	Superiori	XVII Secolo	Coordinate generali	1	Letteratura_barocca	102	183699	88	15691	6	1	422	2.69	0	0	0	4813	2.4	1	2006-12-12	4920
 1824	Letteratura italiana	Superiori	XIII secolo	Coordinate generali	1	Letteratura_cavalleresca	91	162752	88	14248	2	2	587	4.12	1	0	0	2993	2.3	0	2005-10-22	5336
@@ -1823,7 +1823,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1681	Informatica	Superiori	Sistema operativo e software		1	macOS	331	595426	413	59541	36	3	1861	3.13	0	0	0	9554	2	0	2004-05-02	5874
 1289	Geografia		Africa	Madagascar	1	Madagascar	692	1242777	648	60004	31	20	3015	5.02	0	2	0	9271	???	1	2005-02-26	5574
 1866	Letteratura italiana	Superiori	Secolo XIV	Forme letterarie	1	Madrigale	150	268746	156	12753	0	1	1016	7.97	0	0	0	12150	2.3	5	2005-10-05	5353
-3310	Storia	Superiori	XX-XXI secolo	Mafia	1	Mafia	830	1490823	846	44000	50	3	3212	7.30	1	0	1	79721	???	10	???	#VALUE!
+3310	Storia	Superiori	XX-XXI secolo	Mafia	1	Mafia	830	1490823	846	44000	50	3	3212	7.30	1	0	1	79721	???	10	2004-12-15	5647
 3313	Storia	Superiori	XX-XXI secolo	Legami fra mafie e politica	1	Mafia_in_Italia	336	603968	422	33256	38	3	1036	3.12	0	1	0	4679	???	13	???	#VALUE!
 2802	Storia	Superiori	Alto medioevo	Magiari/Ungari	1	Magiari	138	247094	134	18897	17	9	2259	11.95	0	1	0	6867	???	3	???	#VALUE!
 498	Cittadinanza e costituzione	Superiori	La Costituzione e l'ordinamento italiano		1	Magistratura italiana	216	388347	218	43895	30	3	432	0.98	0	0	0	32352	0	26	2005-10-26	5332
@@ -1839,7 +1839,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2216	Letteratura italiana	Superiori	Dopoguerra	Pier Paolo Pasolini	1	Mamma_Roma	119	214019	96	11487	6	2	407	3.54	1	0	0	282	2.5	3	2005-08-23	5396
 2434	Scienze	Medie	Essere vivente		1	Mammalia	357	641883	365	63058	5	23	1434	2.27	0	0	0	3137	1	6	2003-08-29	6121
 59	Biologia	Superiori	Evoluzione		1	Mammiferi	59	106274	52	22	0	0	19	86.36	0	0	0	0	2	0	2005-05-29	5482
-3308	Storia	Superiori	XX-XXI secolo	Tangentopoli	1	Mani_pulite	683	1226934	849	148499	102	10	1905	1.28	1	3	1	112024	???	26	???	#VALUE!
+3308	Storia	Superiori	XX-XXI secolo	Tangentopoli	1	Mani_pulite	683	1226934	849	148499	102	10	1905	1.28	1	3	1	112024	???	26	2005-10-25	5333
 1925	Letteratura italiana	Superiori	XVI Secolo	Coordinate generali	1	Manierismo	406	729498	384	29756	10	11	639	2.15	0	0	0	19457	???	20	2004-11-07	5685
 906	Filosofia	Superiori	Tra settecento e ottocento		1	Manifesto del Partito Comunista	166	297569	164	18579	11	3	525	2.83	0	0	0	1981	???	1	2004-07-13	5802
 2124	Letteratura italiana	Superiori	Primo novecento	Futurismo	1	Manifesto_del_Futurismo	182	326168	268	15680	6	2	402	2.56	0	0	1	3754	2.5	10	2004-02-29	5937
@@ -2031,7 +2031,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2951	Storia	Superiori	XVI-XVII secolo	le navi negriere	1	Nave_negriera	15	26900	25	9013	29	6	1214	13.47	0	0	0	1100	???	3	???	#VALUE!
 2669	Storia	Superiori	Antichità	le navi fenicie	0	Navi fenicie	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	0	???	#VALUE!
 3116	Storia	Superiori	XX-XXI secolo	Nazionalismo	1	Nazionalismo	303	544004	310	23780	12	3	831	3.49	0	0	0	8571	???	9	???	#VALUE!
-3186	Storia	Superiori	XX-XXI secolo	Il nazismo	1	Nazionalsocialismo	477	857635	507	85259	54	7	4335	5.08	1	2	0	70485	???	47	???	#VALUE!
+3186	Storia	Superiori	XX-XXI secolo	Il nazismo	1	Nazionalsocialismo	477	857635	507	85259	54	7	4335	5.08	1	2	0	70485	???	47	2005-11-13	5314
 1125	Geografia		Geografia politica ed economica	Nazione	1	Nazione	175	313857	172	27197	7	0	2552	9.38	0	2	0	2004-09-09	???	9	2004-09-09	5744
 3312	Storia	Superiori	XX-XXI secolo	Ndrangheta	1	ndrangheta	269	482907	600	23	0	0	20	86.96	0	0	0	0	???	0	???	#VALUE!
 2703	Storia	Superiori	Grecia e Italia preromana	Necropoli di Cerveteri	1	Necropoli_della_Banditaccia	59	105137	58	8640	10	11	694	8.03	0	0	0	314	???	1	???	#VALUE!
@@ -2165,7 +2165,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2410	Scienze	Medie	Essere vivente		1	Organismo vivente	173	310580	152	27840	29	8	1033	3.71	0	0	0	33949	1	9	2003-08-03	6147
 711	Diritto e Economia	Superiori	I soggetti economici		1	Organizzazione aziendale	245	440574	205	31529	0	0	183	0.58	1	0	0	2109	2.1	8	2006-06-26	5089
 430	Cittadinanza e costituzione	Medie	Terzo anno		1	Organizzazione del Trattato dell'Atlantico del Nord	843	1515165	795	42413	18	13	2006	4.73	1	0	0	11024	0	1	2004-01-26	5971
-428	Cittadinanza e costituzione	Medie	Terzo anno		1	Organizzazione delle Nazioni Unite per l'educazione, la scienza e la cultura	503	903988	499	13779	14	4	1007	7.31	1	0	0	13397	la scienza e la cultura	19	la scienza e la cultura	#VALUE!
+428	Cittadinanza e costituzione	Medie	Terzo anno		1	Organizzazione delle Nazioni Unite per l'educazione, la scienza e la cultura	503	903988	499	13779	14	4	1007	7.31	1	0	0	13397	la scienza e la cultura	19	2006-05-29	5117
 426	Cittadinanza e costituzione	Medie	Terzo anno		1	Organizzazione internazionale	134	241472	147	21202	2	4	576	2.72	0	0	0	203	1.3	0	2003-08-21	6129
 761	Diritto e Economia	Superiori	Relazioni economiche itnernazionali		1	Organizzazione mondiale del commercio	173	310829	185	35455	15	3	1450	4.09	0	0	0	13360	2.1	0	2005-08-29	5390
 591	Diritto e Economia	Superiori	Soggetti del diritto		1	Organizzazione non a scopo di lucro	202	363314	194	36221	6	0	245	0.68	2	0	0	10121	2.1	22	2005-11-01	5326
@@ -2239,7 +2239,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 487	Cittadinanza e costituzione	Superiori	La Costituzione e l'ordinamento italiano		1	Partiti politici italiani	609	1093967	696	40875	25	0	272	0.67	1	0	1	15381	0	0	2005-10-05	5353
 628	Diritto e Economia	Superiori	Costituzione e cittadinanza: libertà, diritti e doveri		1	Partito politico	139	249144	149	33964	6	1	642	1.89	2	2	0	4814	2.1	32	2005-02-13	5587
 3158	Storia	Superiori	XX-XXI secolo	partito comunista unione sovietica	1	Partito_Comunista_dell'Unione_Sovietica	166	297580	191	171705	357	35	3872	2.26	0	0	0	28425	???	25	???	#VALUE!
-3170	Storia	Superiori	XX-XXI secolo	Partito comunista italiano	1	Partito_Comunista_Italiano	709	1273401	852	154561	100	35	4847	3.14	2	0	0	153449	???	0	???	#VALUE!
+3170	Storia	Superiori	XX-XXI secolo	Partito comunista italiano	1	Partito_Comunista_Italiano	709	1273401	852	154561	100	35	4847	3.14	2	0	0	153449	???	0	2005-07-14	5436
 3105	Storia	Superiori	XX-XXI secolo	partiti di massa	1	Partito_di_massa	36	64693	39	3522	0	0	471	13.37	0	0	0	36	???	2	???	#VALUE!
 3171	Storia	Superiori	XX-XXI secolo	Partito popolare cattolico	1	Partito_Popolare_Italiano_(1919)	131	235765	168	20396	11	3	1406	6.89	0	0	0	1709	???	14	???	#VALUE!
 3251	Storia	Superiori	XX-XXI secolo	Partition of India 1947	0	Partizione dell'India del 1947	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	0	???	#VALUE!
@@ -2406,7 +2406,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1453	Grammatica italiana		Verbo	Funzioni dei verbi	1	Predicato_nominale	187	336852	220	2373	2	0	264	11.13	0	0	0	306	???	1	2007-01-16	4885
 1468	Grammatica italiana		Preposizioni	Preposizioni	1	Preposizione	182	327096	154	6024	2	0	762	12.65	0	0	0	0	???	0	2006-07-03	5082
 1547	Grammatica latina	Superiori	Parti invariabili del discorso	Preposizioni	0	Preposizioni latine	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	0	???	#VALUE!
-3059	Storia	Superiori	XVIII-XIX secolo	Conquista di Roma	1	Presa_di_Roma	473	850404	495	57518	47	13	972	1.69	1	1	0	30564	???	11	???	#VALUE!
+3059	Storia	Superiori	XVIII-XIX secolo	Conquista di Roma	1	Presa_di_Roma	473	850404	495	57518	47	13	972	1.69	1	1	0	30564	???	11	2007-03-10	4832
 1613	Informatica	Medie	Competenze digitali con il PC		1	Presentazione	22	39234	19	2476	0	3	974	39.34	0	0	0	66	0	0	2008-02-24	4481
 2606	Storia	Elementari	Seconda elementare		1	Presente	17	30748	20	3009	6	0	105	3.49	0	0	0	6541	0.2	1	???	#VALUE!
 1428	Grammatica italiana		Verbo	Tempi verbali	1	Presente_indicativo	46	83544	35	19561	9	0	654	3.34	0	0	0	0	???	4	2006-12-12	4920
@@ -2527,7 +2527,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1927	Letteratura italiana	Superiori	XVI Secolo	Pietro Bembo	1	Prose_della_volgar_lingua	5	8200	3	62	0	0	59	95.16	0	0	0	0	2.3	0	2007-02-08	4862
 785	Filosofia	Superiori	Filosofia nella Grecia classica		1	Protagora	118	212585	127	16521	11	1	2	0.01	0	0	0	2310	???	15	2004-04-01	5905
 15	Biologia	Superiori	Chimica della vita		1	Proteine	562	1010429	610	95302	74	15	5964	6.26	0	0	0	16341	2	12	2003-08-13	6137
-2912	Storia	Superiori	XVI-XVII secolo		1	Protestantesimo	515	925453	505	50929	57	9	5950	11.68	1	0	0	39053	???	15	???	#VALUE!
+2912	Storia	Superiori	XVI-XVII secolo		1	Protestantesimo	515	925453	505	50929	57	9	5950	11.68	1	0	0	39053	???	15	2005-12-11	5286
 717	Diritto e Economia	Superiori	Le regole del mercato e le sue forme		1	Protezionismo	146	263110	144	76761	72	6	295	0.38	0	0	0	2369	2.1	8	2006-12-09	4923
 93	Biologia	Superiori	Microrganismi		1	Protista	219	393537	216	5657	0	1	953	16.85	1	0	0	803	2	0	2004-05-04	5872
 765	Diritto e Economia	Superiori	Relazioni economiche itnernazionali		1	Protocollo di Kyoto	458	822855	616	17984	11	4	1047	5.82	0	0	0	19995	2.1	1	2006-11-28	4934
@@ -2657,7 +2657,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3006	Storia	Superiori	XVIII-XIX secolo	Rivoluzione partenopea	1	Repubblica_Napoletana_(1799)	136	244760	145	33644	13	15	2192	6.52	0	1	0	629	???	22	???	#VALUE!
 2706	Storia	Superiori	Roma	La repubblica	1	Repubblica_romana	490	879738	477	171397	221	59	3067	1.79	0	0	0	34969	???	73	???	#VALUE!
 3036	Storia	Superiori	XVIII-XIX secolo	Repubblica romana	1	Repubblica_Romana_(1849)	177	317242	199	88553	17	28	2538	2.87	0	1	0	37671	???	15	???	#VALUE!
-3223	Storia	Superiori	XX-XXI secolo	Repubblica di Salò	1	Repubblica_Sociale_Italiana	592	1064700	591	142407	115	53	12201	8.57	1	5	0	238131	???	51	???	#VALUE!
+3223	Storia	Superiori	XX-XXI secolo	Repubblica di Salò	1	Repubblica_Sociale_Italiana	592	1064700	591	142407	115	53	12201	8.57	1	5	0	238131	???	51	2005-07-18	5432
 2811	Storia	Superiori	Basso medioevo	le repubbliche marinare	1	Repubbliche_marinare	843	1514737	874	155485	211	100	5667	3.64	0	0	0	154264	???	99	???	#VALUE!
 870	Filosofia	Superiori	Tra cinquecente e seicento		1	Res cogitans e res extensa	74	132342	77	3091	2	0	607	19.64	0	0	0	1358	???	0	2006-01-19	5247
 333	Chimica	Superiori	Reazioni chimiche		1	Resa (chimica)	51	92237	55	6380	7	1	291	4.56	0	0	0	37	2	3	2007-06-05	4745
@@ -2665,7 +2665,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3231	Storia	Superiori	XX-XXI secolo		1	Resa_di_Caserta	38	68746	40	13743	1	4	1467	10.67	1	1	0	4766	???	1	???	#VALUE!
 585	Diritto e Economia	Superiori	Soggetti del diritto		1	Residenza (diritto)	145	261249	131	15860	18	0	1182	7.45	1	0	0	4371	2.1	0	2007-01-31	4870
 2542	Scienze	Medie	Aspetti chimici della materia		1	Resistenza elettrica	345	620343	301	20686	3	1	428	2.07	0	0	0	1003	1	2	2004-09-21	5732
-3224	Storia	Superiori	XX-XXI secolo	Partigiani e resistenza	1	Resistenza_italiana	685	1231622	699	209440	275	54	3473	1.66	1	1	0	139385	???	21	???	#VALUE!
+3224	Storia	Superiori	XX-XXI secolo	Partigiani e resistenza	1	Resistenza_italiana	685	1231622	699	209440	275	54	3473	1.66	1	1	0	139385	???	21	2005-05-01	5510
 109	Biologia	Superiori	Corpo umano	Apparato respiratorio e circolatorio	1	Respirazione	135	242884	117	9327	1	3	1286	13.79	0	0	0	5056	2	0	2004-02-17	5949
 29	Biologia	Superiori	Cellula		1	Respirazione cellulare	366	657947	314	17314	7	3	1279	7.39	0	0	0	1486	2	4	2006-08-21	5033
 3013	Storia	Superiori	XVIII-XIX secolo	La Restaurazione	1	Restaurazione	273	491359	273	26881	10	8	1348	5.01	0	0	0	6566	???	0	2005-08-24	5395
@@ -2713,13 +2713,13 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 871	Filosofia	Superiori	Tra cinquecente e seicento		1	Rivoluzione copernicana	79	141896	76	3887	1	0	544	14.00	0	0	0	120	???	4	2007-01-19	4882
 3237	Storia	Superiori	XX-XXI secolo	Rivoluzione comunista in Cina	1	Rivoluzione_comunista_cinese	7	13040	16	8765	7	13	1608	18.35	0	0	0	111	???	0	???	#VALUE!
 3155	Storia	Superiori	XX-XXI secolo	rivoluzione di ottobre	1	Rivoluzione_d'ottobre	304	545856	266	22070	54	15	2287	10.36	0	0	0	17089	???	15	???	#VALUE!
-2990	Storia	Superiori	XVIII-XIX secolo	Rivoluzione francese	1	Rivoluzione_francese	1376	2472582	1290	151134	170	36	1723	1.14	1	0	0	11581	???	37	???	#VALUE!
+2990	Storia	Superiori	XVIII-XIX secolo	Rivoluzione francese	1	Rivoluzione_francese	1376	2472582	1290	151134	170	36	1723	1.14	1	0	0	11581	???	37	2007-02-28	4842
 3028	Storia	Superiori	XVIII-XIX secolo	Ribellione a Parigi	1	Rivoluzione_francese_del_1848	116	208918	116	41943	10	15	1366	3.26	0	0	0	204	???	7	???	#VALUE!
 2976	Storia	Superiori	XVIII-XIX secolo	Rivoluzione industriale	1	Rivoluzione_industriale	1029	1848823	1021	36075	6	2	2637	7.31	1	0	0	27085	???	7	2006-12-06	4926
 2977	Storia	Superiori	XVIII-XIX secolo	Inghilterra durante il XVII secolo	1	Rivoluzione_industriale_in_Inghilterra	287	515895	230	22875	0	1	774	3.38	1	0	0	3577	???	1	???	#VALUE!
 3275	Storia	Superiori	XX-XXI secolo	Rivoluzione iraniana del 1979	1	Rivoluzione_iraniana	150	269138	152	17044	5	25	1408	8.26	0	0	0	3411	???	5	???	#VALUE!
 2640	Storia	Superiori	Antichità	Rivoluzione del neolitico	1	Rivoluzione_neolitica	65	116911	56	94601	101	27	4034	4.26	0	0	0	2111	???	34	???	#VALUE!
-3142	Storia	Superiori	XX-XXI secolo	Rivoluzioni russe del 1917	1	Rivoluzione_russa	565	1015190	510	61265	18	31	2971	4.85	1	0	0	3459	???	0	???	#VALUE!
+3142	Storia	Superiori	XX-XXI secolo	Rivoluzioni russe del 1917	1	Rivoluzione_russa	565	1015190	510	61265	18	31	2971	4.85	1	0	0	3459	???	0	2005-10-02	5356
 3127	Storia	Superiori	XX-XXI secolo	Rivoluzione russa del 1905	1	Rivoluzione_russa_del_1905	101	182209	100	122187	216	43	1040	0.85	0	0	0	1853	???	43	???	#VALUE!
 3152	Storia	Superiori	XX-XXI secolo	Rivoluzione febbraio	1	Rivoluzione_russa_di_febbraio	85	152399	82	38170	56	11	558	1.46	0	0	0	9220	???	11	???	#VALUE!
 1962	Letteratura italiana	Superiori	XVII Secolo	Coordinate generali	1	Rivoluzione_scientifica	133	239886	146	66063	67	20	740	1.12	0	0	0	8362	2.4	20	2006-08-08	5046
@@ -2760,7 +2760,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1271	Geografia		Africa	Africa del Sahel	1	Sahel	105	188319	100	24533	32	3	789	3.22	0	0	2	5676	???	3	2006-11-29	4933
 1146	Geografia		Geografia politica ed economica	Saline	1	Salina	72	128486	72	7128	1	6	556	7.80	0	0	0	2006-03-01	???	0	2006-03-01	5206
 412	Cittadinanza e costituzione	Medie	Secondo anno		1	Salute	153	274507	156	15010	13	2	617	4.11	0	0	0	5367	1.2	0	2003-03-11	6292
-2150	Letteratura italiana	Superiori	Il secolo breve	Salvatore Quasimodo	1	Salvatore Quasimodo	525	943903	585	34158	26	7	113	0.33	2	0	0	21550	2.5	0	???	#VALUE!
+2150	Letteratura italiana	Superiori	Il secolo breve	Salvatore Quasimodo	1	Salvatore Quasimodo	525	943903	585	34158	26	7	113	0.33	2	0	0	21550	2.5	0	2007-03-09	4833
 2093	Letteratura italiana	Superiori	Secondo Ottocento	Autori minori	1	Salvatore_Di_Giacomo	73	131218	67	12561	13	3	361	2.87	0	0	0	932	2.4	9	2004-12-09	5653
 1193	Geografia		Penisola italiana	San Marino	1	San_Marino	1674	3007400	1750	90965	41	33	3421	3.76	1	0	0	48284	???	8	2003-04-27	6245
 2143	Letteratura italiana	Superiori	Il secolo breve	Giuseppe Ungaretti	1	San_Martino_del_Carso	37	66200	31	3637	2	1	290	7.97	1	0	0	1992	2.5	0	2008-06-23	4361
@@ -2966,11 +2966,11 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1220	Geografia		Europa	Spagna	1	Spagna	1938	3482546	1742	100389	67	52	5954	5.93	0	0	1	17572	???	3	2003-05-10	6232
 2769	Storia	Superiori	Alto medioevo		1	Spagna_bizantina	9	15503	6	20688	12	4	259	1.25	0	0	1	2130	???	7	???	#VALUE!
 2957	Storia	Superiori	XVI-XVII secolo	il crollo della Spagna	1	Spagna_degli_Asburgo	34	61807	38	62511	0	24	2763	4.42	1	0	0	36	???	0	???	#VALUE!
-2674	Storia	Superiori	Grecia e Italia preromana	Sparta	1	Sparta	568	1021581	533	54274	44	9	802	1.48	1	1	0	1853	???	9	???	#VALUE!
+2674	Storia	Superiori	Grecia e Italia preromana	Sparta	1	Sparta	568	1021581	533	54274	44	9	802	1.48	1	1	0	1853	???	9	2014-03-24	2261
 2289	Scienze della Terra	Superiori	L'universo		1	Spazio intergalattico	22	39851	23	3642	6	0	1008	27.68	0	0	0	1099	2	0	2008-06-02	4382
 1373	Grammatica italiana		Punteggiatura	Spazio	1	Spazio_(punteggiatura)	17	30348	15	15304	3	0	415	2.71	0	0	0	1643	???	0	2007-03-31	4811
 46	Biologia	Superiori	Evoluzione		1	Specie	243	436368	255	19904	10	3	1047	5.26	0	0	0	6963	2	4	2003-07-02	6179
-3048	Storia	Superiori	XVIII-XIX secolo	Spedizione dei Mille	1	Spedizione_dei_Mille	512	920244	533	234512	222	59	1057	0.45	1	0	0	159105	???	124	???	#VALUE!
+3048	Storia	Superiori	XVIII-XIX secolo	Spedizione dei Mille	1	Spedizione_dei_Mille	512	920244	533	234512	222	59	1057	0.45	1	0	0	159105	???	124	2005-09-15	5373
 1135	Geografia		Geografia politica ed economica	speranza di vita	1	Speranza_di_vita	109	195039	99	1958	0	0	211	10.78	1	0	0	2005-12-26	???	0	2005-12-26	5271
 705	Diritto e Economia	Superiori	I soggetti economici		1	Spesa pubblica	122	218785	118	24625	5	0	785	3.19	1	0	0	2344	2.1	0	2006-09-23	5000
 2175	Letteratura italiana	Superiori	Il secolo breve	Eugenio Montale	1	Spesso_il_male_di_vivere_ho_incontrato	82	147892	88	6385	8	0	159	2.49	0	0	0	2934	2.5	2	2008-05-09	4406
@@ -2979,7 +2979,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2980	Storia	Superiori	XVIII-XIX secolo	Le nuove macchine tessili	1	Spoletta_volante	38	68246	37	2728	0	2	2303	84.42	1	0	0	36	???	0	???	#VALUE!
 3435	Storia dell'arte	Superiori	Il Cinquecento		1	Sposalizio della Vergine (Raffaello)	155	279359	146	12328	8	5	542	4.40	0	0	0	3935	???	7	2007-07-10	4710
 1017	Fisica	Superiori	I moti nel piano		1	Spostamento (cinematica)	3	4511	4	3496	0	3	2759	78.92	1	0	0	36	???	0	2005-01-09	5622
-2600	Storia	Elementari	Prima elementare	Stagioni	1	Stagione	417	750021	427	11368	2	2	2138	18.81	1	0	0	4363	0.1	0	???	#VALUE!
+2600	Storia	Elementari	Prima elementare	Stagioni	1	Stagione	417	750021	427	11368	2	2	2138	18.81	1	0	0	4363	0.1	0	2008-04-24	4421
 1609	Informatica	Medie	Introduzione		1	Stampa 3D	156	280713	128	49176	50	5	469	0.95	2	1	0	8123	1	8	2010-05-25	3660
 2867	Storia	Superiori	Basso medioevo	La stampa	1	Stampa_a_caratteri_mobili	215	386241	192	21666	28	5	306	1.41	0	0	0	9750	???	9	2006-10-23	4970
 710	Diritto e Economia	Superiori	I soggetti economici		1	Startup (economia)	518	930365	419	19274	19	0	1618	8.39	2	0	0	2613	2.1	0	2006-10-07	4986
@@ -3008,7 +3008,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 3063	Storia	Superiori	XVIII-XIX secolo	Stato centralizzato	1	Stato_unitario	61	108890	65	5698	6	3	972	17.06	1	0	0	1061	???	0	???	#VALUE!
 473	Cittadinanza e costituzione	Superiori	Storia della Costituzione Italiana		1	Statuto albertino	22	39104	17	29	0	0	26	89.66	0	0	0	0	???	0	2012-01-10	3065
 510	Cittadinanza e costituzione	Superiori	Lavoro nella costituzione		1	Statuto dei lavoratori	168	301088	164	28679	23	7	682	2.38	1	0	0	9138	0	1	2005-10-11	5347
-3038	Storia	Superiori	XVIII-XIX secolo	Statuto Albertino	1	Statuto_Albertino	473	849568	554	21722	11	5	1150	5.29	1	0	0	1443	???	5	???	#VALUE!
+3038	Storia	Superiori	XVIII-XIX secolo	Statuto Albertino	1	Statuto_Albertino	473	849568	554	21722	11	5	1150	5.29	1	0	0	1443	???	5	2007-04-05	4806
 3550	Tecnologia	Elementari	Tecnologia	(La stazione meteorologica)	1	Stazione meteorologica	40	71820	37	14544	1	6	777	5.34	0	0	0	40	0	0	2005-07-12	5438
 321	Chimica	Superiori	Reazioni chimiche		1	Stechiometria	118	212660	100	9287	4	0	1172	12.62	0	0	0	7564	2	0	2004-07-05	5810
 2287	Scienze della Terra	Superiori	L'universo		1	Stella	449	806059	426	171485	173	38	4227	2.46	0	0	0	27731	2	29	2003-08-31	6119
@@ -3059,7 +3059,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1288	Geografia		Africa	Sudafrica	1	Sudafrica	1044	1876764	1015	100052	46	41	4422	4.42	1	1	0	15379	???	7	2007-12-18	4549
 1272	Geografia		Africa	Sudan	1	Sudan	311	558646	364	59968	17	19	5589	9.32	0	0	0	1813	???	5	2005-01-11	5620
 1273	Geografia		Africa	Sudan del Sud	1	Sudan_del_Sud	187	336584	207	31306	37	9	4061	12.97	0	0	0	19230	???	3	2010-03-20	3726
-3106	Storia	Superiori	XX-XXI secolo	suffragio universale	1	Suffragio_universale	582	1045840	643	14209	8	2	651	4.58	1	1	0	4029	???	1	???	#VALUE!
+3106	Storia	Superiori	XX-XXI secolo	suffragio universale	1	Suffragio_universale	582	1045840	643	14209	8	2	651	4.58	1	1	0	4029	???	1	2006-12-06	4926
 1720	Informatica	Superiori	Reti e internet		1	Suite di protocolli Internet	143	257469	141	13379	11	5	746	5.58	0	0	0	728	2	2	2005-02-15	5585
 2037	Letteratura italiana	Superiori	Primo Ottocento	Alessandro Manzoni	1	Sul_romanticismo	5	9266	4	6847	5	0	419	6.12	0	0	0	50	2.4	2	2009-11-02	3864
 2642	Storia	Superiori	Antichità	I sumeri	1	Sumeri	576	1034190	594	82959	62	17	848	1.02	0	7	0	5254	???	8	???	#VALUE!
@@ -3192,7 +3192,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2950	Storia	Superiori	XVI-XVII secolo	la tratta degli schiavi	1	Tratta_atlantica_degli_schiavi_africani	203	364208	203	28573	37	4	1835	6.42	0	0	0	3771	???	10	???	#VALUE!
 3156	Storia	Superiori	XX-XXI secolo	Pace di Brest Litovsk	1	Trattato_di_Brest-Litovsk	136	245250	144	15224	3	4	906	5.95	0	0	0	421	???	1	???	#VALUE!
 2782	Storia	Superiori	Alto medioevo	Trattato di Verdun	1	Trattato_di_Verdun	67	120990	71	2814	0	2	344	12.22	0	0	0	36	???	0	???	#VALUE!
-3147	Storia	Superiori	XX-XXI secolo	il Trattato di Versailles	1	Trattato_di_Versailles_(1919)	429	770203	450	28855	11	7	1996	6.92	1	0	0	5681	???	8	???	#VALUE!
+3147	Storia	Superiori	XX-XXI secolo	il Trattato di Versailles	1	Trattato_di_Versailles_(1919)	429	770203	450	28855	11	7	1996	6.92	1	0	0	5681	???	8	2006-10-24	4969
 1370	Grammatica italiana		Punteggiatura	Trattino	1	Tratto_d'unione	24	43940	35	3991	0	1	319	7.99	1	0	0	1805	???	0	2008-02-15	4490
 2970	Storia	Superiori	XVIII-XIX secolo	le 13 colonie	1	Tredici_colonie	214	385423	208	6603	1	7	840	12.72	0	0	0	254	???	5	???	#VALUE!
 2689	Storia	Superiori	Grecia e Italia preromana		1	Trenta_tiranni	59	106472	59	12183	29	0	469	3.85	0	0	0	57	???	8	???	#VALUE!
@@ -3214,7 +3214,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1782	Informatica	Superiori	Base di dati		1	Tupla	42	76325	45	1608	0	0	1215	75.56	3	0	0	41	2	0	2005-07-27	5423
 1260	Geografia		Europa	Turchia	1	Turchia	1204	2163179	1147	85287	71	40	5338	6.26	0	1	0	46981	???	15	2004-03-19	5918
 1157	Geografia		Geografia politica ed economica	turismo	1	Turismo	232	417554	223	38137	14	13	814	2.13	2	0	0	2002-03-18	???	10	2002-03-18	6650
-1832	Letteratura italiana	Superiori	XIII secolo - Scuola toscana	Guittone d'Arezzo	1	Tutt'or ch'eo dirò "gioi", gioiva cosa	0	2261	0	2261	0	0	104	4.60	0	0	0	50	gioiva cosa	1	gioiva cosa	#VALUE!
+1832	Letteratura italiana	Superiori	XIII secolo - Scuola toscana	Guittone d'Arezzo	1	Tutt'or ch'eo dirò "gioi", gioiva cosa	0	2261	0	2261	0	0	104	4.60	0	0	0	50	???	1	???	#VALUE!
 58	Biologia	Superiori	Evoluzione		1	Uccelli	57	101914	69	18	0	0	15	83.33	0	0	0	0	2	0	2005-05-29	5482
 1244	Geografia		Europa	Ucraina	1	Ucraina	864	1551959	873	72052	34	44	5418	7.52	0	0	0	17941	???	11	2004-07-09	5806
 2007	Letteratura italiana	Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	1	Ugo Foscolo	1010	1815770	930	102848	167	17	2292	2.23	0	0	0	46395	2.4	30	???	#VALUE!
@@ -3247,7 +3247,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2284	Scienze della Terra	Superiori	L'universo		1	Universo	425	763031	431	97513	96	12	2442	2.50	0	2	0	48432	2	16	2004-04-24	5882
 1683	Informatica	Superiori	Sistema operativo e software		1	Unix-like	39	70093	37	5306	5	1	812	15.30	1	0	0	237	2	1	2004-10-17	5706
 2759	Storia	Superiori	Alto medioevo	Gli unni	1	Unni	327	587758	324	41487	24	7	606	1.46	0	2	0	10348	???	9	???	#VALUE!
-2134	Letteratura italiana	Superiori	Primo novecento	Luigi Pirandello	1	Uno,_nessuno_e_centomila	540	969512	523	13024	2	1	2376	18.24	1	0	0	1107	nessuno e centomila	0	nessuno e centomila	#VALUE!
+2134	Letteratura italiana	Superiori	Primo novecento	Luigi Pirandello	1	Uno,_nessuno_e_centomila	540	969512	523	13024	2	1	2376	18.24	1	0	0	1107	???	0	2007-10-07	4621
 2154	Letteratura italiana	Superiori	Il secolo breve	Salvatore Quasimodo	1	Uomo_del_mio_tempo	88	158525	55	8808	0	0	566	6.43	0	0	0	2968	2.5	0	2008-05-24	4391
 3382	Storia dell'arte	Superiori	Arte romana		1	Urbanistica romana	62	112298	60	6493	1	3	365	5.62	0	0	0	1073	???	3	2008-09-04	4288
 907	Filosofia	Superiori	Tra settecento e ottocento		1	Utilitarismo	117	209527	112	47098	5	5	291	0.62	1	0	0	812	???	48	2006-03-06	5201
