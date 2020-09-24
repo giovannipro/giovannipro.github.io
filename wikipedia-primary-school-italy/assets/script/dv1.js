@@ -74,7 +74,7 @@ function dv1() {
 			// filtered_data.push(test_a);
 			// filtered_data.push(test_b);
 
-	    	sortByKey(filtered_data, "article") 
+	    	sortByKey(filtered_data, "article","asc") 
 
 			console.log("article: " + total)
 			console.log(subjects)

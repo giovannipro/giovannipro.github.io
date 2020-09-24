@@ -309,7 +309,7 @@ function dv2() {
 						    	else {
 						    		shift = -(i)
 						    	}
-				    			console.log(id + " " + shift)
+				    			// console.log(id + " " + shift)
 				    			break
 				    		}
 				    	}
