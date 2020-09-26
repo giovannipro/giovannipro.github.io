@@ -95,11 +95,11 @@ function cropText(text){
 	let t = text.split(" ")
 	const limit = 2;
 
-	if (t.length > Math.floor(limit + (limit/4)) ) {
-		newText = t[0] + " " + t[1] + " " + t[2] + " " + t[3] + " ...";
+	if (t.length > Math.floor(limit) ) {
+		newText = t[0] + " " + t[1] + " " + t[2] + " ...";
 	}
 	else {
 		newText = text;
 	}
-	return newText;
+	return text;
 }

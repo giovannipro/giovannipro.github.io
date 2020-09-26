@@ -280,57 +280,47 @@ function dv2() {
 			function prevent_overlap(){
 				let coordinates = [];
 				let count = 0;
-
 				let elem = document.getElementById("dv2").querySelectorAll(".article")
+
+				function setShift(array,value) {
+					let shift = 0;
+					if (array.includes(value)) {
+						shift = 3
+					}
+					return shift
+				}
 
 				$.each(elem, function(index, item) {
 					let id = item.id
 					let top = Math.floor(item.querySelectorAll('.text')[0].getBoundingClientRect().top)
 					let position;
-					let shift = 0;
-				    
-				    if (coordinates.includes(top) ){
-				    	// console.log(item.getElementsByClassName("text"))
-				    	// console.log(id)
-				    	let label = item.querySelectorAll('.text')[0];
-				    	// let random = randomPosNeg(-5,5);
+					let the_shift = 0;
+					let label = item.querySelectorAll('.text')[0];
 
+					if (index % 2 == 0) {
+			    		the_shift = setShift(coordinates,top)
+			    	}
+			    	else {
+			    		the_shift = -setShift(coordinates,top)
+			    	}
 
-				    	for (i = 1 ; i < 10; i++) {
-				    		// shift = i*2
+					label.setAttribute("transform","translate(0," + the_shift  + ")")
 
-				    		if (coordinates.includes(top + i)) {
+					if (the_shift !== 0) {
+						console.log(id,the_shift)
+					}
 
-				    		}
-				    		else {
-						    	if (index % 2 == 0) {
-						    		shift = i*2
-						    	}
-						    	else {
-						    		shift = -(i)
-						    	}
-				    			// console.log(id + " " + shift)
-				    			break
-				    		}
-				    	}
-
-				    	label.setAttribute("transform","translate(0," +  shift + ")")
-				    	// console.log(id + " " + top + " " + shift)
-				    }
-				    
 				    for (i = 0; i <= 10; i++) {
-						coordinates.push(top+i);
-						// coordinates.splice(0+i,0+i);
-						// console.log(i, top+i)
+						coordinates.push(top + the_shift + i);
 				    }
-					// console.log(coordinates)
 				})
 
 				count += 1;
-				if (count = 10) {
+				if (count = 15) {
 					count = 0;
-					coordinates.splice(0,2)
+					coordinates.empty() //splice(0,2)
 				}
+				console.log(coordinates)
 			}
 			setTimeout(prevent_overlap,500)
 		})
