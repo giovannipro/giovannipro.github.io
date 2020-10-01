@@ -1,8 +1,8 @@
 function dv3() {
 	let multiply = 1;
 	let container = "#dv3",
-		window_w = $(container).outerWidth() * multiply,
-		window_h = window.innerHeight * (multiply * 1.8);
+		window_w = 780 * 2 // $(container).outerWidth() * multiply,
+		window_h = 1450 * 2 // window.innerHeight * (multiply * 1.8);
 
 	let margin = {top: 20, right: 20, bottom: 20, right: 20},
 		width = window_w - (margin.right + margin.right),
@@ -24,9 +24,11 @@ function dv3() {
 		d3.tsv("../assets/data/articles.tsv", function (error, data) {
 			if (error) throw error;
 
-			let filter_issue = 0;
-			let max_visit = 8000;
-			let filter_visit = 350;
+			const filter_issue = 0;
+			const max_visit = 8000;
+			const filter_visit = 350;
+			const font_size = 12;
+
 			let filtered_data = [];
 			let tot_average_daily_visit = 0;
 			let features_ = 0
@@ -272,6 +274,7 @@ function dv3() {
 				.attr("transform", function(d,i){
 					return "translate(" + ((separator*3) + (width/12*9)) + "," + size + ")"
 				})
+				.attr("font-size",font_size)
 
 			// grid
 			var grid = plot.append('g')

@@ -1,8 +1,8 @@
 function dv2() {
 	let multiply = 1;
 	let container = "#dv2",
-		window_w = $(container).outerWidth() * (multiply*2.5),
-		window_h = window.innerHeight * (multiply*1.5);
+		window_w = 1700 * 2 // $(container).outerWidth() * (multiply*2.5),
+		window_h = 1600 * 2 //  window.innerHeight * (multiply*1.5);
 
 	let margin = {top: 20, right: 20, bottom: 20, right: 20},
 		width = window_w - (margin.right + margin.right),
@@ -31,7 +31,9 @@ function dv2() {
 			let dataset = [];
 			dataset.push(head)
 
-			let filter = 15;
+			const filter = 15;
+			const font_size = 12;
+
 			let total = 0;
 			let filtered_data = [];
 			let subjects = [];
@@ -231,7 +233,7 @@ function dv2() {
 				.attr("y",-5)
 				.attr("text-anchor","middle")
 				.attr("fill","black")
-				.attr("font-size","0.6em")
+				.attr("font-size",font_size)
 				.attr("class","text")
 				// .transition()
 				// .duration(1000)
@@ -322,7 +324,7 @@ function dv2() {
 				}
 				console.log(coordinates)
 			}
-			setTimeout(prevent_overlap,500)
+			// setTimeout(prevent_overlap,500)
 		})
 	}
 	render();

@@ -1,7 +1,7 @@
 function dv1() {
 	let container = "#dv1",
-		window_w = $(container).outerWidth() * 1.5, // 4000; //
-		window_h = window.innerHeight * 1 //2000;
+		window_w = 1700 * 2 // $(container).outerWidth() * 1.5,
+		window_h = 1600 * 2 // window.innerHeight * 1 //2000;
 
 	let margin = {top: 20, right: 0, bottom: 20, right: 20},
 		width = window_w - (margin.right + margin.right),
@@ -30,7 +30,9 @@ function dv1() {
 			let dataset = [];
 			dataset.push(head)
 
-			let filter = 1001; // 2000;
+			const filter = 1001; // 2000;
+			const font_size = 12;
+
 			let total = 0;
 			let filtered_data = [];
 			let subjects = [];
@@ -181,7 +183,7 @@ function dv1() {
 				.attr("y",-5)
 				.attr("text-anchor","middle")
 				.attr("fill","black")
-				.attr("font-size","0.6em")
+				.attr("font-size",font_size)
 
 			let yAxis = plot.append("g")
 				.attr("transform", "translate(0,0)")
