@@ -31,7 +31,7 @@ function dv2() {
 			let dataset = [];
 			dataset.push(head)
 
-			const filter = 15;
+			const filter = 10; // 15;
 			const font_size = 12;
 
 			let total = 0;
@@ -67,7 +67,7 @@ function dv2() {
 			
 			for (const [d,c] of Object.entries(grouped_data)) {
 				c.forEach(function (d,i) {
-					if (i <= filter){
+					if (i <= filter-1){
 						filtered_data.push(d)
 						total += 1
 

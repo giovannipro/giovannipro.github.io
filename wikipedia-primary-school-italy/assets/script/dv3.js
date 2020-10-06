@@ -2,7 +2,7 @@ function dv3() {
 	let multiply = 1;
 	let container = "#dv3",
 		window_w = 780 * 2 // $(container).outerWidth() * multiply,
-		window_h = 1450 * 2 // window.innerHeight * (multiply * 1.8);
+		window_h = 1450 * 2.25 // window.innerHeight * (multiply * 1.8);
 
 	let margin = {top: 20, right: 20, bottom: 20, right: 20},
 		width = window_w - (margin.right + margin.right),
@@ -131,7 +131,7 @@ function dv3() {
 				.domain([0,r_max])
 
 			// parameters
-			let size = 5;
+			let size =  12; //5;
 			let separator = 10;
 			let c_issues = '#EC4C4E',
 				c_reference = '#49A0D8',
