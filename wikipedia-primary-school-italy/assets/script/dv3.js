@@ -266,8 +266,16 @@ function dv3() {
 					return "iss_" + d.issues 
 				})
 
-			// title
-			let title = article.append("text")
+			// title			
+			let title = article.append("a")
+				.attr("xlink:href", function(d,i){
+					return "https://it.wikipedia.org/wiki/" + d.article
+				})
+				.attr("target","_blank")
+				.attr("title", function(d,i){
+					return d.article + " su Wikipedia"
+				})
+				.append("text")
 				.text(function(d,i){
 					return no_underscore(d.article)
 				})
@@ -278,7 +286,6 @@ function dv3() {
 
 			// grid
 			var grid = plot.append('g')
-				.attr('class','grid')
 				.attr('transform','translate(0,' + '0' + ')' )  
 
 			for (var i=0; i<filtered_data.length; i++) { 

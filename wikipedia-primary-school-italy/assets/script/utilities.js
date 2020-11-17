@@ -29,27 +29,6 @@ function apply_color(item){
 		color = "gray";
 	}
 	
-	// if (item == "Geografia"){
-	// 	color = "red";
-	// }
-	// else if (item == "Storia"){
-	// 	color = "green";
-	// }
-	// else if (item == "Letteratura italiana"){
-	// 	color =  "violet";
-	// }
-	// else if (item == "Matematica"){
-	// 	color =  "orange";
-	// }
-	// else if (item == "Cittadinanza e costituzione"){
-	// 	color =  "blue";
-	// }
-	// else if (item == "Storia dell'arte"){
-	// 	color =  "yellow";
-	// }
-	// else {
-	// 	color = "gray";
-	// }
 	return color;
 }
 
