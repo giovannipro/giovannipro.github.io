@@ -19,5 +19,9 @@ a, a:visited {
 }
 
 svg {
-	overflow: visible;
+	/*overflow: visible;*/
+}
+
+.article {
+	cursor: pointer;
 }
