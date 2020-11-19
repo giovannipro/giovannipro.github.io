@@ -25,3 +25,11 @@ svg {
 .article {
 	cursor: pointer;
 }
+
+#yAxis .domain, #yAxis .tick line, #grid .domain {
+	display: none;
+}
+
+#grid .tick line {
+	stroke: #e9e4e4;
+}

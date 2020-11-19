@@ -26,12 +26,13 @@ const subjects = [
 const container = "#dv1";
 const font_size = 12;
 const filter_item = 100;
+const shiftx_article = 30;
 
 let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight(); //  window.innerHeight * (multiply*1.5);
 
-let margin = {top: 20, left: 20, bottom: 20, right: 20},
+let margin = {top: 20, left: 40, bottom: 20, right: 40},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -40,10 +41,6 @@ let svg = d3.select(container)
 	.attr("width", width + (margin.right + margin.right))
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
-
-let plot = svg.append("g")
-	.attr("id", "d3_plot")
-	.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
 
 function dv1(the_subject) {
 	d3.tsv("../assets/data/articles.tsv").then(loaded)
@@ -84,13 +81,10 @@ function dv1(the_subject) {
 			d.id = +d.id
 			d.discussion_size = +d.discussion_size
 			d.average_daily_visit = +d.average_daily_visit
-			d.article = d.article.replace("_"," ")
+			d.article = d.article.replace(/_/g," ")
 		})
 		
 		// scale
-		// let y_min = d3.min(filtered_data, function(d) { 
-		// 	return d.average_daily_visit;
-		// })
 		let y_max = d3.max(filtered_data, function(d) { 
 			return d.average_daily_visit;
 		})
@@ -111,15 +105,46 @@ function dv1(the_subject) {
 			.range([0, 20])
 			.domain([0,r_max])
 
+
+		// axis and grid
+		let grid = svg.append("g")
+			.attr("id","grid")
+			.attr("transform", "translate(-1," + margin.top*2 + ")")
+			.call(make_y_gridlines()
+          		.tickSize(-width-margin.left-margin.right)
+          		.tickFormat("")
+          	)
+
+		let plot = svg.append("g")
+			.attr("id", "d3_plot")
+			.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
+
+		function make_y_gridlines() {		
+		    return d3.axisLeft(y)
+		}
+
+		let yAxis = plot.append("g")
+			.attr("id","yAxis")
+			.attr("transform", "translate(" + (margin.left) + "," + (margin.top) +")")
+			.call(d3.axisLeft(y))
+			.selectAll("text")
+			.attr("y", -10)
+
+		let yaxis_label = plot.append("g")
+			.attr("transform","translate(40," + (height) + ")")
+			.append("text")
+			.text("pagine viste")
+			.attr("y",-6)
+
 		// plot data
 		let articles = plot.append("g")	
 			.attr("id","articles")
+			.attr("transform","translate(" + shiftx_article + ",0)")	
 
 		let article = articles.selectAll("g")
 			.data(filtered_data)
 			.enter()
 			.append("g")
-			.attr("transform","translate(0,0)")	
 			.attr("class","article")
 			.attr("id", function(d,i){
 				return i
@@ -202,7 +227,7 @@ function dv1(the_subject) {
 
 		let label = article_text.append("text")
 			.text(function(d,i){
-				return d.article // cropText(no_underscore()) // + " " + d.year //+ " " + d.discussion_size // + " " + d.year //+ " " + d.average_daily_visit
+				return d.article 
 			})
 			.attr("x",0)
 			.attr("y",-height)
@@ -211,7 +236,7 @@ function dv1(the_subject) {
 			.attr("font-size",font_size)
 			.attr("class","text")
 			.attr("opacity",0)
-			
+
 		function handleMouseOver(d, i) { 
 			d3.selectAll(".article")
 				.attr("opacity",0.2)
@@ -219,26 +244,19 @@ function dv1(the_subject) {
 			d3.select(this.parentNode)
 				.attr("opacity",1)
 
-			d3.select(this.parentNode).select("text") // .select(".article_text")
+			d3.select(this.parentNode).select("text")
 				.attr("opacity",1)
 				.attr("y",-20)
-
-			// console.log(d3.select(this.parentNode).select("text") )
 		}
 
 		function handleMouseOut(d, i) { 
 			d3.selectAll(".article")
 				.attr("opacity",1)
 
-			d3.select(this.parentNode).select("text") // .select(".article_text")
+			d3.select(this.parentNode).select("text")
 				.attr("opacity",0)
 				.attr("y",-height)	
 		}
-
-		let yAxis = plot.append("g")
-			.attr("id","yAxis")
-			.attr("transform", "translate(" + (margin.left) + "," + (margin.top) +")")
-			.call(d3.axisLeft(y));
 
 		$( "#subjects" ).change(function() {
 			let subject = this.value;
@@ -247,6 +265,8 @@ function dv1(the_subject) {
 
 		function update(the_subject){
 			// console.log(the_subject)
+
+			d3.select("#articles").remove();
 
 			d3.selectAll("circle")
 				.transition()
@@ -287,9 +307,8 @@ function dv1(the_subject) {
 				d.id = +d.id
 				d.discussion_size = +d.discussion_size
 				d.average_daily_visit = +d.average_daily_visit
-				d.article = d.article.replace("_"," ")
+				d.article = d.article.replace(/_/g," ")
 			})
-			// console.log(total)
 
 			// scale
 			let y_max = d3.max(filtered_data, function(d) { 
@@ -304,13 +323,31 @@ function dv1(the_subject) {
 				.domain([0,y_max+(y_max/100*10)]) 
 				.range([height-margin.top,0])
 
+			function make_y_gridlines() {		
+		    	return d3.axisLeft(y)
+			}
+
 			svg.select("#yAxis")
 				.transition()
-				.call(d3.axisLeft(y));
+				.call(d3.axisLeft(y))
+				.selectAll("text")
+				.attr("y", -10)
+
+			svg.select("#grid")
+				.transition()
+				.call(make_y_gridlines()
+	          		.tickSize(-width-margin.left-margin.right)
+	          		.tickFormat("")
+	          	)
 
 			// plot data
+			// let plot = svg.append("g")
+			// 	.attr("id", "d3_plot")
+			// 	.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
+
 			let articles = plot.append("g")	
 				.attr("id","articles")
+				.attr("transform","translate(" + shiftx_article + ",0)")	
 
 			let article = articles.selectAll("g")
 				.data(filtered_data)
@@ -337,7 +374,6 @@ function dv1(the_subject) {
 				
 			let article_text = article.append("g")
 				.attr("class","article_text")
-				// .attr("opacity",0)
 
 			let circles = article_circles.append("circle")
 				.transition()
