@@ -15,27 +15,36 @@
 			</header>
 		</div>
 		<main>
-			<section class="container">
-				<select name="subjects" id="subjects">
-					<option value="Biologia">Biologia</option>
-					<option value="Chimica">Chimica</option>
-					<option value="Cittadinanza e costituzione">Cittadinanza e costituzione</option>
-					<option value="Diritto e Economia">Diritto e Economia</option>
-					<option value="Filosofia">Filosofia</option>
-					<option value="Fisica">Fisica</option>
-					<option value="Geografia">Geografia</option>
-					<option value="Grammatica italiana">Grammatica italiana</option>
-					<option value="Grammatica latina">Grammatica latina</option>
-					<option value="Informatica">Informatica</option>
-					<option value="Letteratura italiana">Letteratura italiana</option>
-					<option value="Letteratura latina">Letteratura latina</option>
-					<option value="Matematica">Matematica</option>
-					<option value="Scienze della Terra">Scienze della Terra</option>
-					<option value="Scienze">Scienze</option>
-					<option value="Storia">Storia</option>
-					<option value="Tecnologia">Tecnologia</option>
-				</select>
-			</section>
+			<div id="select_box" class="container">
+				<section id="select_subject">
+					<select name="subjects" id="subjects">
+						<option value="Biologia">Biologia</option>
+						<option value="Chimica">Chimica</option>
+						<option value="Cittadinanza e costituzione">Cittadinanza e costituzione</option>
+						<option value="Diritto e Economia">Diritto e Economia</option>
+						<option value="Filosofia">Filosofia</option>
+						<option value="Fisica">Fisica</option>
+						<option value="Geografia">Geografia</option>
+						<option value="Grammatica italiana">Grammatica italiana</option>
+						<option value="Grammatica latina">Grammatica latina</option>
+						<option value="Informatica">Informatica</option>
+						<option value="Letteratura italiana">Letteratura italiana</option>
+						<option value="Letteratura latina">Letteratura latina</option>
+						<option value="Matematica">Matematica</option>
+						<option value="Scienze della Terra">Scienze della Terra</option>
+						<option value="Scienze">Scienze</option>
+						<option value="Storia">Storia</option>
+						<option value="Tecnologia">Tecnologia</option>
+					</select>
+				</section>
+				<section id="select_sort">
+					<select name="sort" id="sort">
+						<option value="article">Ordine alfabetico</option>
+						<option value="discussion">Ordine per pagina di discussione</option>
+						<option value="incipit">Ordine per incipit</option>
+					</select>
+				</section>
+			</div>
 			<div id="dv1_legend" class="legend"></div>
 			<div id="dv1" class="dataviz"></div>
 		</main>

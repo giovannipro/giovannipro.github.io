@@ -30,7 +30,7 @@ const shiftx_article = 30;
 
 let multiply = 1;
 let window_w = $(container).outerWidth();
-	window_h = $(container).outerHeight(); //  window.innerHeight * (multiply*1.5);
+	window_h = $(container).outerHeight();
 
 let margin = {top: 20, left: 40, bottom: 20, right: 40},
 	width = window_w - (margin.right + margin.right),
@@ -45,11 +45,12 @@ let svg = d3.select(container)
 function dv1(the_subject) {
 	d3.tsv("../assets/data/articles.tsv").then(loaded)
 
+
 	function loaded(data) {
 
 		// load data
 		let total = 0;
-
+		
 		let subject_articles;
 		let visit_sort;
 		let filter_data;
@@ -74,6 +75,7 @@ function dv1(the_subject) {
 
 		filtered_data = filter_data.sort(function(a, b){
 			return d3.ascending(a.article, b.article);
+			// return d3.ascending(+a.discussion_size, +b.discussion_size);
 		})
 	
 		filtered_data.forEach(function (d,i) {
@@ -82,15 +84,16 @@ function dv1(the_subject) {
 			d.discussion_size = +d.discussion_size
 			d.average_daily_visit = +d.average_daily_visit
 			d.article = d.article.replace(/_/g," ")
+			d.size = +d.size
 		})
 		
 		// scale
 		let y_max = d3.max(filtered_data, function(d) { 
-			return d.average_daily_visit;
+			return +d.average_daily_visit;
 		})
 
 		let r_max = d3.max(filtered_data, function(d) { 
-			return Math.sqrt(d.size/3.14);
+			return Math.sqrt(+d.size/3.14);
 		})
 
 		let y = d3.scaleLinear()
@@ -100,11 +103,11 @@ function dv1(the_subject) {
 		let x = d3.scaleLinear()
 			.domain([0,total])
 			.range([0,width-margin.right-margin.left-20]) 
+		console.log(0,total)
 
 		let r = d3.scaleLinear()
 			.range([0, 20])
 			.domain([0,r_max])
-
 
 		// axis and grid
 		let grid = svg.append("g")
@@ -133,13 +136,13 @@ function dv1(the_subject) {
 		let yaxis_label = plot.append("g")
 			.attr("transform","translate(40," + (height) + ")")
 			.append("text")
-			.text("pagine viste")
+			.text("visite giornaliere (media)")
 			.attr("y",-6)
 
 		// plot data
 		let articles = plot.append("g")	
 			.attr("id","articles")
-			.attr("transform","translate(" + shiftx_article + ",0)")	
+			.attr("transform","translate(" + shiftx_article + "," + (margin.top) + ")")	
 
 		let article = articles.selectAll("g")
 			.data(filtered_data)
@@ -150,7 +153,7 @@ function dv1(the_subject) {
 				return i
 			})
 			.attr("transform", function(d,i){
-				return "translate(" + (x(i)+50) + "," + y(d.average_daily_visit) + ")"
+				return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
 			})
 
 		let article_circles = article.append("g")
@@ -227,15 +230,18 @@ function dv1(the_subject) {
 
 		let label = article_text.append("text")
 			.text(function(d,i){
-				return d.article 
-			})
+				return d.article // + " " + (+d.discussion_size)
+			}) 
 			.attr("x",0)
-			.attr("y",-height)
+			.attr("y",-height-50)
 			.attr("text-anchor","middle")
 			.attr("fill","black")
 			.attr("font-size",font_size)
 			.attr("class","text")
 			.attr("opacity",0)
+			.attr("data-radius",function(d,i){
+				return r(Math.sqrt(d.size/3.14))
+			})
 
 		function handleMouseOver(d, i) { 
 			d3.selectAll(".article")
@@ -244,9 +250,11 @@ function dv1(the_subject) {
 			d3.select(this.parentNode)
 				.attr("opacity",1)
 
+			let radius = d3.select(this.parentNode).select("text").attr("data-radius")
+
 			d3.select(this.parentNode).select("text")
 				.attr("opacity",1)
-				.attr("y",-20)
+				.attr("y", -radius-10)
 		}
 
 		function handleMouseOut(d, i) { 
@@ -258,13 +266,40 @@ function dv1(the_subject) {
 				.attr("y",-height)	
 		}
 
-		$( "#subjects" ).change(function() {
+		$("#subjects").change(function() {
 			let subject = this.value;
-			update(subject);
+			update_subject(subject);
 		});
 
-		function update(the_subject){
+		$("#sort").change(function() {
+			// let subject = $("#subjects").value;
+			let sort = this.value;
+
+			update_sort(sort);
+		});
+
+		// $(window).resize(function() {
+		// 	let subject = $("#subjects :selected").text()
+		// 	console.log(subject);
+
+		// 	let window_w = $(container).outerWidth();
+		// 		window_h = $(container).outerHeight();
+
+		// 	let width = window_w - (margin.right + margin.right),
+		// 		height = window_h - (margin.top + margin.bottom);
+			
+		// 	d3.select("#svg")
+		// 		.transition()
+		// 		.attr("width", width + (margin.right + margin.right))
+		// 		.attr("height",height + (margin.top + margin.bottom))
+
+		// 	update(subject);
+		// });
+
+		function update_subject(the_subject){
 			// console.log(the_subject)
+
+			document.getElementById("sort").selectedIndex = 0;
 
 			d3.select("#articles").remove();
 
@@ -274,7 +309,7 @@ function dv1(the_subject) {
 				.attr("r",0)
 
 			// load data
-			let total = 0;
+			total = 0;
 
 			let subject_articles;
 			let visit_sort;
@@ -289,6 +324,7 @@ function dv1(the_subject) {
 					subject_articles = c.values;
 				}
 			}
+			// console.log(subject_articles);
 			
 			visit_sort = subject_articles.sort(function(x, y){
 				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
@@ -308,18 +344,20 @@ function dv1(the_subject) {
 				d.discussion_size = +d.discussion_size
 				d.average_daily_visit = +d.average_daily_visit
 				d.article = d.article.replace(/_/g," ")
+				d.size = +d.size
 			})
 
 			// scale
-			let y_max = d3.max(filtered_data, function(d) { 
-				return d.average_daily_visit;
+			y_max = d3.max(filtered_data, function(d) { 
+				return +d.average_daily_visit;
 			})
 
-			let x = d3.scaleLinear()
+			x = d3.scaleLinear()
 				.domain([0,total])
 				.range([0,width-margin.right-margin.left-20]) 
+			console.log(0,total)
 
-			let y = d3.scaleLinear()
+			y = d3.scaleLinear()
 				.domain([0,y_max+(y_max/100*10)]) 
 				.range([height-margin.top,0])
 
@@ -340,26 +378,21 @@ function dv1(the_subject) {
 	          		.tickFormat("")
 	          	)
 
-			// plot data
-			// let plot = svg.append("g")
-			// 	.attr("id", "d3_plot")
-			// 	.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
-
 			let articles = plot.append("g")	
 				.attr("id","articles")
-				.attr("transform","translate(" + shiftx_article + ",0)")	
+				.attr("transform","translate(" + shiftx_article + "," + (margin.top) + ")")		
 
 			let article = articles.selectAll("g")
 				.data(filtered_data)
 				.enter()
 				.append("g")
-				.attr("transform","translate(0,0)")	
+				// .attr("transform","translate(0,0)")	
 				.attr("class","article")
 				.attr("id", function(d,i){
 					return i
 				})
 				.attr("transform", function(d,i){
-					return "translate(" + (x(i)+50) + "," + y(d.average_daily_visit) + ")"
+					return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
 				})
 
 			let article_circles = article.append("g")
@@ -436,26 +469,73 @@ function dv1(the_subject) {
 
 			let label = article_text.append("text")
 				.text(function(d,i){
-					return d.article // cropText(no_underscore()) // + " " + d.year //+ " " + d.discussion_size // + " " + d.year //+ " " + d.average_daily_visit
+					return d.article // + " " + (+d.discussion_size)
 				})
 				.attr("x",0)
-				.attr("y",-height)
+				.attr("y",-height-50)
 				.attr("text-anchor","middle")
 				.attr("fill","black")
 				.attr("font-size",font_size)
 				.attr("class","text")
+				.attr("data-radius",function(d,i){
+					return r(Math.sqrt(d.size/3.14))
+				})
+		}
+
+		function update_sort(the_sort){
+			// console.log(the_sort)
+			
+			let max = 0;
+			let min = 0;
+			if(the_sort == "article") {
+				max = total	
+				min = 0
+			}
+			else if (the_sort == "incipit"){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.incipit_size;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.incipit_size;
+				// })
+			}
+			else {
+				max = d3.max(filtered_data, function(d) { 
+					return +d.discussion_size;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.discussion_size;
+				// })
+			}
+			console.log(min,max)
+			
+			x = d3.scaleLinear()
+				.domain([min,max])
+				.range([0,width-margin.right-margin.left-20]) 
+			
+			svg.selectAll(".article")
+				.transition()
+				.attr("transform", function(d,i){
+					if(the_sort == "article") {
+						return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else if (the_sort == "incipit"){
+						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else {
+						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+				})
 		}
 	}
 }
 
 
 $(document).ready(function() {
-	let random_subject = (Math.floor(Math.random() * 17) + 0) + 1
-	// console.log(random_subject, subjects[random_subject]);
-
+	const random_subject = (Math.floor(Math.random() * 17) + 0) + 1
 	document.getElementById("subjects").selectedIndex = random_subject;
-	// const select = $("#subjects");
-    // select.selectedIndex = random_subject;
 
 	dv1(subjects[random_subject]);
 });
