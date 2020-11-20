@@ -102,7 +102,7 @@ function dv1(the_subject) {
 
 		let x = d3.scaleLinear()
 			.domain([0,total])
-			.range([0,width-margin.right-margin.left-20]) 
+			.range([0,width-100]) //width-margin.right-margin.left]) 
 		console.log(0,total)
 
 		let r = d3.scaleLinear()
@@ -354,7 +354,7 @@ function dv1(the_subject) {
 
 			x = d3.scaleLinear()
 				.domain([0,total])
-				.range([0,width-margin.right-margin.left-20]) 
+				.range([0,width-100]) // -margin.right-margin.left-20]) 
 			console.log(0,total)
 
 			y = d3.scaleLinear()
@@ -500,6 +500,15 @@ function dv1(the_subject) {
 				// 	return +d.incipit_size;
 				// })
 			}
+			else if (the_sort == "size"){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.size;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
 			else {
 				max = d3.max(filtered_data, function(d) { 
 					return +d.discussion_size;
@@ -513,7 +522,7 @@ function dv1(the_subject) {
 			
 			x = d3.scaleLinear()
 				.domain([min,max])
-				.range([0,width-margin.right-margin.left-20]) 
+				.range([0,width-100]) // margin.right-margin.left-20]) 
 			
 			svg.selectAll(".article")
 				.transition()
@@ -523,6 +532,9 @@ function dv1(the_subject) {
 					}
 					else if (the_sort == "incipit"){
 						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else if (the_sort == "size"){
+						return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
 					else {
 						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
