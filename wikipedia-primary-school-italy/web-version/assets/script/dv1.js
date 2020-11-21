@@ -545,10 +545,9 @@ function dv1(the_subject) {
 				max = d3.max(filtered_data, function(d) { 
 					return +d.days;
 				})
-				min = 0
-				// min = d3.min(filtered_data, function(d) { 
-				// 	return +d.size;
-				// })
+				min = d3.min(filtered_data, function(d) { 
+					return +d.days;
+				})
 			}
 			else {
 				max = d3.max(filtered_data, function(d) { 
