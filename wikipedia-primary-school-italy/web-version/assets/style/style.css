@@ -38,3 +38,13 @@ svg {
 	display: flex;
 	justify-content: space-between;
 }
+
+.tooltip{
+	line-height: 1;
+	padding: 6px;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: black;
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 12px;
+}

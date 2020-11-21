@@ -17,6 +17,7 @@
 		<main>
 			<div id="select_box" class="container">
 				<section id="select_subject">
+					<p>Materia</p>
 					<select name="subjects" id="subjects">
 						<option value="Biologia">Biologia</option>
 						<option value="Chimica">Chimica</option>
@@ -38,11 +39,15 @@
 					</select>
 				</section>
 				<section id="select_sort">
+					<p>Ordina per</p>
 					<select name="sort" id="sort">
-						<option value="article">Ordine alfabetico</option>
-						<option value="discussion">Ordine per pagina di discussione</option>
-						<option value="size">Ordine per dimensione</option>
-						<option value="incipit">Ordine per incipit</option>
+						<option value="article">titolo</option>
+						<option value="pubblicazione">data di pubblicazione</option>
+						<option value="discussion">dimensione pagina di discussione</option>
+						<option value="size">dimensione articolo</option>
+						<option value="incipit">dimensione incipit</option>
+						<option value="issue">numero di avvisi</option>
+						<option value="images">numero di immagini</option>
 					</select>
 				</section>
 			</div>
@@ -52,6 +57,7 @@
 
 		<script src="assets/lib/jquery-3.5.1.min.js"></script>
 		<script src="assets/lib/5.16.0.min.js"></script>
+		<script src="assets/script/d3-tip.js"></script>
 		<script src="assets/script/dv1.js"></script>
 	</body>
 </html>

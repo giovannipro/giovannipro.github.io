@@ -25,14 +25,14 @@ const subjects = [
 
 const container = "#dv1";
 const font_size = 12;
-const filter_item = 100;
+const filter_item = 120;
 const shiftx_article = 30;
 
 let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 40, bottom: 20, right: 40},
+let margin = {top: 20, left: 40, bottom: 20, right: 60},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -44,7 +44,6 @@ let svg = d3.select(container)
 
 function dv1(the_subject) {
 	d3.tsv("../assets/data/articles.tsv").then(loaded)
-
 
 	function loaded(data) {
 
@@ -75,7 +74,6 @@ function dv1(the_subject) {
 
 		filtered_data = filter_data.sort(function(a, b){
 			return d3.ascending(a.article, b.article);
-			// return d3.ascending(+a.discussion_size, +b.discussion_size);
 		})
 	
 		filtered_data.forEach(function (d,i) {
@@ -114,8 +112,8 @@ function dv1(the_subject) {
 			.attr("id","grid")
 			.attr("transform", "translate(-1," + margin.top*2 + ")")
 			.call(make_y_gridlines()
-          		.tickSize(-width-margin.left-margin.right)
-          		.tickFormat("")
+          		.tickSize(-width-margin.left-margin.right-60)
+          		// .tickFormat("")
           	)
 
 		let plot = svg.append("g")
@@ -128,16 +126,37 @@ function dv1(the_subject) {
 
 		let yAxis = plot.append("g")
 			.attr("id","yAxis")
-			.attr("transform", "translate(" + (margin.left) + "," + (margin.top) +")")
+			.attr("transform", "translate(" + 10 + "," + (margin.top) +")")
 			.call(d3.axisLeft(y))
 			.selectAll("text")
 			.attr("y", -10)
 
-		let yaxis_label = plot.append("g")
-			.attr("transform","translate(40," + (height) + ")")
-			.append("text")
+		// let yaxis_label_box = d3.selectAll(".tick:nth-child(1)").select("text")
+		// 	.attr("fill","red")
+
+		let yaxis_label_box = plot.append("g")
+			.attr("class","yaxis_label")
+			.attr("transform","translate(7," + height + ")")
+
+		let yaxis_label = yaxis_label_box.append("text")
 			.text("visite giornaliere (media)")
 			.attr("y",-6)
+
+		let tooltip = d3.tip()
+			.attr('class', 'tooltip')
+			.attr('id', 'tooltip')
+			.direction('n')
+			.offset([-10,0])
+			.html(function(d) {
+                let content = "<span>" + d.article + "</span><br><span>" + d.first_edit + "</span>"; 
+                // content +=`
+                //     <table style="margin-top: 2.5px;">
+                //             <tr><td>visite: </td><td style="text-align: right">` + d.average_daily_visit + `</td></tr>
+                //     </table>
+                //     `;
+                return content;
+            });
+       	plot.call(tooltip);
 
 		// plot data
 		let articles = plot.append("g")	
@@ -155,10 +174,12 @@ function dv1(the_subject) {
 			.attr("transform", function(d,i){
 				return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
 			})
+			.on("mouseover", tooltip.show) 
+			.on("mouseout", tooltip.hide)
 
 		let article_circles = article.append("g")
 			.attr("class","article_circles")
-			.on("mouseover", handleMouseOver)
+			.on("mouseover", handleMouseOver) 
 			.on("mouseout", handleMouseOut)
 			.append("a")
 			.attr("xlink:href", function(d,i){
@@ -228,43 +249,33 @@ function dv1(the_subject) {
 				return r(Math.sqrt(d.discussion_size/3.14))
 			})
 
-		let label = article_text.append("text")
-			.text(function(d,i){
-				return d.article // + " " + (+d.discussion_size)
-			}) 
-			.attr("x",0)
-			.attr("y",-height-50)
-			.attr("text-anchor","middle")
-			.attr("fill","black")
-			.attr("font-size",font_size)
-			.attr("class","text")
-			.attr("opacity",0)
-			.attr("data-radius",function(d,i){
-				return r(Math.sqrt(d.size/3.14))
-			})
+		// let label = article_text.append("text")
+		// 	.text(function(d,i){
+		// 		return d.article // + " " + (+d.discussion_size)
+		// 	}) 
+		// 	.attr("x",0)
+		// 	.attr("y",-height-50)
+		// 	.attr("text-anchor","middle")
+		// 	.attr("fill","black")
+		// 	.attr("font-size",font_size)
+		// 	.attr("class","text")
+		// 	.attr("opacity",0)
+		// 	.attr("data-radius",function(d,i){
+		// 		return r(Math.sqrt(d.size/3.14))
+		// 	})
 
-		function handleMouseOver(d, i) { 
-			d3.selectAll(".article")
+	    function handleMouseOver(){
+			d3.selectAll(".article_circles")
 				.attr("opacity",0.2)
 
-			d3.select(this.parentNode)
+			d3.select(this)
 				.attr("opacity",1)
-
-			let radius = d3.select(this.parentNode).select("text").attr("data-radius")
-
-			d3.select(this.parentNode).select("text")
-				.attr("opacity",1)
-				.attr("y", -radius-10)
 		}
 
-		function handleMouseOut(d, i) { 
-			d3.selectAll(".article")
+	    function handleMouseOut(){
+			d3.selectAll(".article_circles")
 				.attr("opacity",1)
-
-			d3.select(this.parentNode).select("text")
-				.attr("opacity",0)
-				.attr("y",-height)	
-		}
+	    }
 
 		$("#subjects").change(function() {
 			let subject = this.value;
@@ -375,8 +386,10 @@ function dv1(the_subject) {
 				.transition()
 				.call(make_y_gridlines()
 	          		.tickSize(-width-margin.left-margin.right)
-	          		.tickFormat("")
 	          	)
+
+	        let yaxis_label_box = d3.selectAll(".tick:nth-child(1)").select("text")
+				.attr("fill","red")
 
 			let articles = plot.append("g")	
 				.attr("id","articles")
@@ -386,7 +399,6 @@ function dv1(the_subject) {
 				.data(filtered_data)
 				.enter()
 				.append("g")
-				// .attr("transform","translate(0,0)")	
 				.attr("class","article")
 				.attr("id", function(d,i){
 					return i
@@ -394,6 +406,8 @@ function dv1(the_subject) {
 				.attr("transform", function(d,i){
 					return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
 				})
+				.on("mouseover", tooltip.show)
+				.on("mouseout", tooltip.hide)
 
 			let article_circles = article.append("g")
 				.attr("class","article_circles")
@@ -467,19 +481,19 @@ function dv1(the_subject) {
 					return r(Math.sqrt(d.discussion_size/3.14))
 				})
 
-			let label = article_text.append("text")
-				.text(function(d,i){
-					return d.article // + " " + (+d.discussion_size)
-				})
-				.attr("x",0)
-				.attr("y",-height-50)
-				.attr("text-anchor","middle")
-				.attr("fill","black")
-				.attr("font-size",font_size)
-				.attr("class","text")
-				.attr("data-radius",function(d,i){
-					return r(Math.sqrt(d.size/3.14))
-				})
+			// let label = article_text.append("text")
+			// 	.text(function(d,i){
+			// 		return d.article // + " " + (+d.discussion_size)
+			// 	})
+			// 	.attr("x",0)
+			// 	.attr("y",-height-50)
+			// 	.attr("text-anchor","middle")
+			// 	.attr("fill","black")
+			// 	.attr("font-size",font_size)
+			// 	.attr("class","text")
+			// 	.attr("data-radius",function(d,i){
+			// 		return r(Math.sqrt(d.size/3.14))
+			// 	})
 		}
 
 		function update_sort(the_sort){
@@ -509,6 +523,33 @@ function dv1(the_subject) {
 				// 	return +d.size;
 				// })
 			}
+			else if (the_sort == "issue"){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.issues;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
+			else if (the_sort == "images"){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.images;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
+			else if (the_sort == "pubblicazione"){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.days;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
 			else {
 				max = d3.max(filtered_data, function(d) { 
 					return +d.discussion_size;
@@ -520,9 +561,44 @@ function dv1(the_subject) {
 			}
 			console.log(min,max)
 			
+			// d3.select("#tooltip").select("");
+
+			// let tooltip = d3.tip()
+			// 	.attr('class', 'tooltip')
+			// 	.attr('id', 'tooltip')
+			// 	.direction('n')
+			// 	.offset([-10,0])
+			// 	.html(function(d) {
+	  //               let content = "<span>" + d.article + "</span>"; // <br><span>(" + d.average_daily_visit + ")</span>"
+	  //               content +=`
+	  //                   <table style="margin-top: 2.5px;">
+	  //                           <tr><td>visite: </td><td style="text-align: right">` + d.average_daily_visit + `</td></tr>
+	  //                   </table>
+	  //                   `;
+	  //               return content;
+	  //           });
+   //     		plot.call(tooltip);
+
+				// .html(function(d) {
+	   //              let content = "<span>" + d.article + "</span>"; // <br><span>(" + d.average_daily_visit + ")</span>"
+	   //              content +=`
+	   //                  <table style="margin-top: 2.5px;">
+	   //                          <tr><td>visite: </td><td style="text-align: right">` + d.average_daily_visit + `</td></tr>
+	   //                  </table>
+	   //                  `;
+	   //              return content;
+	   //          });
+	       	// plot.call(tooltip);
+
 			x = d3.scaleLinear()
 				.domain([min,max])
 				.range([0,width-100]) // margin.right-margin.left-20]) 
+	       	
+	       	if (the_sort == "pubblicazione"){
+	       		x = d3.scaleLinear()
+					.domain([max,min])
+					.range([0,width-100])
+	       	}
 			
 			svg.selectAll(".article")
 				.transition()
@@ -536,10 +612,20 @@ function dv1(the_subject) {
 					else if (the_sort == "size"){
 						return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
+					else if (the_sort == "issue"){
+						return "translate(" + (x(+d.issues)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else if (the_sort == "images"){
+						return "translate(" + (x(+d.images)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else if (the_sort == "pubblicazione"){
+						return "translate(" + (x(+d.days)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
 					else {
 						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
 				})
+
 		}
 	}
 }
