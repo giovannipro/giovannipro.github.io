@@ -2,29 +2,79 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open San', sans-serif;
-	font-size: 0.8em;
 }
+
+/* ------- typography ------- */
 
 a, a:visited {
 	color: black;
 }
 
+h1 {
+	font-size: 1.5em;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* ------- layout ------- */
+
 .container {
 	width: 90%;
-	margin: 20px auto;
+	margin: 20px auto 0;
+}
+
+#header {
+	border-bottom: 1px solid gray;
+	width: 100%;
+}
+
+#menu {
+	margin-bottom: 20px;
+}
+
+#menu ul {
+	list-style: none;
+	display: flex;
+/*	padding: 20px auto;*/
+}
+
+#menu ul li {
+	padding-right: 20px;
 }
 
 #dv1 {
-	height: 80vh;
+	height: 75vh;
 }
 
-svg {
-	/*overflow: visible;*/
+#dv_infobox {
+	display: flex;
+	justify-content: space-between;
+}
+
+#dv_infobox div {
+	width: 45%;
 }
 
 .article {
 	cursor: pointer;
 }
+
+footer {
+	border-top: 1px solid gray;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	padding-bottom: 20px; 
+}
+
+/* ------- dataviz ------- */
 
 #yAxis .domain, #yAxis .tick line, #grid .domain {
 	display: none;

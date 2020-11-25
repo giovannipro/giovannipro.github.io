@@ -24,7 +24,7 @@ const subjects = [
 ]
 
 const container = "#dv1";
-const font_size = 12;
+const font_size = 10;
 const filter_item = 120;
 const shiftx_article = 30;
 
@@ -141,6 +141,7 @@ function dv1(the_subject) {
 		let yaxis_label = yaxis_label_box.append("text")
 			.text("visite giornaliere (media)")
 			.attr("y",-6)
+			.attr("font-size",font_size)
 
 		let tooltip = d3.tip()
 			.attr('class', 'tooltip')
