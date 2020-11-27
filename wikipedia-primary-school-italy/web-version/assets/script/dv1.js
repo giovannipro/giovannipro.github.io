@@ -49,7 +49,6 @@ function dv1(the_subject) {
 
 		// load data
 		let total = 0;
-		
 		let subject_articles;
 		let visit_sort;
 		let filter_data;
@@ -89,6 +88,7 @@ function dv1(the_subject) {
 		let y_max = d3.max(filtered_data, function(d) { 
 			return +d.average_daily_visit;
 		})
+		// console.log(y_max)
 
 		let r_max = d3.max(filtered_data, function(d) { 
 			return Math.sqrt(+d.size/3.14);
@@ -101,7 +101,7 @@ function dv1(the_subject) {
 		let x = d3.scaleLinear()
 			.domain([0,total])
 			.range([0,width-100]) //width-margin.right-margin.left]) 
-		console.log(0,total)
+		// console.log(0,total)
 
 		let r = d3.scaleLinear()
 			.range([0, 20])
@@ -143,21 +143,59 @@ function dv1(the_subject) {
 			.attr("y",-6)
 			.attr("font-size",font_size)
 
+		let the_sort;
 		let tooltip = d3.tip()
 			.attr('class', 'tooltip')
 			.attr('id', 'tooltip')
-			.direction('n')
+			.direction(function (d,i) {
+				return 'n'
+				// if (y(+d.average_daily_visit) > height/2) {
+				// 	return 'n'
+				// }
+				// else {
+				// 	return 's'
+				// }
+			})
 			.offset([-10,0])
 			.html(function(d) {
-                let content = "<span>" + d.article + "</span><br><span>" + d.first_edit + "</span>"; 
-                // content +=`
-                //     <table style="margin-top: 2.5px;">
-                //             <tr><td>visite: </td><td style="text-align: right">` + d.average_daily_visit + `</td></tr>
-                //     </table>
-                //     `;
+                let content = "<p style='font-weight: bold; margin: 0 0 5px 3px;'>" + d.article + "<p><table>";
+
+                content += "<tr><th>pubblicazione</th><th>" + d.first_edit + "</th></tr>"
+                content += "<tr><th>dimensione</th><th>" + d.size.toLocaleString() + " byte</th></tr>"
+                content += "<tr><th>discussione</th><th>" + d.discussion_size.toLocaleString() + " byte</th></tr>"
+                content += "<tr><th>incipit</th><th>" + d.incipit_size.toLocaleString() + " byte</th></tr>"
+                content += "<tr><th>avvisi</th><th>" + d.issues.toLocaleString() + "</th></tr>"
+                content += "<tr><th>immagini</th><th>" + d.images.toLocaleString() + "</th></tr>"
+
+
+	            content += "</table>"
                 return content;
+
+   
+				// if (the_sort == 2){ // publication
+    //            		content += "<br><span class='metadata'>" + d.first_edit + "</span>";
+				// }
+    //             else if (the_sort == 3){ // size
+    //            		content += "<br><span class='metadata'>" + d.size.toLocaleString() + " byte</span>";
+				// }
+				// else if (the_sort == 4){ // discussion
+    //            		content += "<br><span class='metadata'>pagina di discussione: " + d.discussion_size.toLocaleString() + " byte</span>";
+				// }
+                // else if (the_sort == 5) { // incipit
+               	// 	content += "<br><span class='metadata'>incipit: " + d.incipit_size.toLocaleString() + " byte</span>";
+                // }
+				// else if (the_sort == 6){ // issue
+    //            		content += "<br><span class='metadata'>avvisi: " + d.issues.toLocaleString() + "</span>";
+				// }
+				// else if (the_sort == 7){ // images
+    //            		content += "<br><span class='metadata'>immagini: " + d.images.toLocaleString() + "</span>";
+				// }
+    //             else {
+    //             	content += "" // "<span class='metadata'>" + "no metadata" + "</span>";
+    //             }
             });
        	plot.call(tooltip);
+		// console.log(the_sort);
 
 		// plot data
 		let articles = plot.append("g")	
@@ -278,16 +316,21 @@ function dv1(the_subject) {
 				.attr("opacity",1)
 	    }
 
+	    let new_sort;
 		$("#subjects").change(function() {
 			let subject = this.value;
-			update_subject(subject);
+			new_sort =  $("#sort option:selected").val();
+
+			update_subject(subject,new_sort);
+			// console.log(subject,new_sort);
 		});
 
 		$("#sort").change(function() {
-			// let subject = $("#subjects").value;
-			let sort = this.value;
+			new_sort = parseInt(this.value);
+			let subject = $("#subjects option:selected").val();
 
-			update_sort(sort);
+			update_sort(subject,new_sort);
+			// console.log(subject,new_sort);
 		});
 
 		// $(window).resize(function() {
@@ -308,10 +351,13 @@ function dv1(the_subject) {
 		// 	update(subject);
 		// });
 
-		function update_subject(the_subject){
-			// console.log(the_subject)
+		function update_subject(the_subject,the_sort){
+			console.log(the_subject,the_sort);
 
-			document.getElementById("sort").selectedIndex = 0;
+			// the_sort = 1
+
+			// $("#sort").val(the_sort);
+			// document.getElementById("sort").selectedIndex = the_sort;
 
 			d3.select("#articles").remove();
 
@@ -363,15 +409,80 @@ function dv1(the_subject) {
 			y_max = d3.max(filtered_data, function(d) { 
 				return +d.average_daily_visit;
 			})
-
-			x = d3.scaleLinear()
-				.domain([0,total])
-				.range([0,width-100]) // -margin.right-margin.left-20]) 
-			console.log(0,total)
+			// console.log(y_max);
 
 			y = d3.scaleLinear()
 				.domain([0,y_max+(y_max/100*10)]) 
 				.range([height-margin.top,0])
+
+			if (the_sort == 1) {
+				max = total	
+				min = 0
+			}
+			else if (the_sort == 2){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.days;
+				})
+				min = d3.min(filtered_data, function(d) { 
+					return +d.days;
+				})
+			}
+			else if (the_sort == 3){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.size;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
+			else if (the_sort == 4){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.discussion_size;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.discussion_size;
+				// })
+			}
+			else if (the_sort == 5){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.incipit_size;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.incipit_size;
+				// })
+			}
+			else if (the_sort == 6){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.issues;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
+			else if (the_sort == 7){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.images;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
+			// console.log(min,max)
+
+			x = d3.scaleLinear()
+				.domain([min,max])
+				.range([0,width-100]) // margin.right-margin.left-20]) 
+	       	
+	       	if (the_sort == 2){ 
+	       		x = d3.scaleLinear()
+					.domain([max,min])
+					.range([0,width-100])
+	       	}
 
 			function make_y_gridlines() {		
 		    	return d3.axisLeft(y)
@@ -405,7 +516,28 @@ function dv1(the_subject) {
 					return i
 				})
 				.attr("transform", function(d,i){
-					return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
+					if (the_sort == 1) { // "article"
+							return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
+						}
+						else if (the_sort == 2){ // "publication"
+							return "translate(" + (x(+d.days)+50) + "," + y(+d.average_daily_visit) + ")"
+						}
+						else if (the_sort == 3){ // "size"
+							return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
+						}
+						else if (the_sort == 4) { // "discussion"
+							return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
+						}
+						else if (the_sort == 5){
+							return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
+						}
+						else if (the_sort == 6){ // "issue"
+							return "translate(" + (x(+d.issues)+50) + "," + y(+d.average_daily_visit) + ")"
+						}
+						else if (the_sort == 7){ // "images"
+							return "translate(" + (x(+d.images)+50) + "," + y(+d.average_daily_visit) + ")"
+						}
+					// return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
 				})
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
@@ -481,41 +613,75 @@ function dv1(the_subject) {
 				.attr("r", function(d,i){
 					return r(Math.sqrt(d.discussion_size/3.14))
 				})
-
-			// let label = article_text.append("text")
-			// 	.text(function(d,i){
-			// 		return d.article // + " " + (+d.discussion_size)
-			// 	})
-			// 	.attr("x",0)
-			// 	.attr("y",-height-50)
-			// 	.attr("text-anchor","middle")
-			// 	.attr("fill","black")
-			// 	.attr("font-size",font_size)
-			// 	.attr("class","text")
-			// 	.attr("data-radius",function(d,i){
-			// 		return r(Math.sqrt(d.size/3.14))
-			// 	})
 		}
 
-		function update_sort(the_sort){
-			// console.log(the_sort)
+		function update_sort(the_subject,the_sort){
+			// console.log(the_subject,the_sort);
+
+			//load data
+			total = 0;
+
+			let subject_articles;
+			let visit_sort;
+			let filter_data;
+
+			let subject_group = d3.nest()
+				.key(d => d.subject)
+				.entries(data)
+		
+			for (const [d,c] of Object.entries(subject_group)) {
+				if (c.key == the_subject){
+					subject_articles = c.values;
+				}
+			}
+			// console.log(subject_articles);
+			
+			visit_sort = subject_articles.sort(function(x, y){
+				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
+			})
+
+			filter_data = visit_sort.filter(function(x,y){ 
+				return y < filter_item 
+			})
+
+			filtered_data = filter_data.sort(function(a, b){
+				return d3.ascending(a.article, b.article);
+			})
+		
+			filtered_data.forEach(function (d,i) {
+				total += 1
+				d.id = +d.id
+				d.discussion_size = +d.discussion_size
+				d.average_daily_visit = +d.average_daily_visit
+				d.article = d.article.replace(/_/g," ")
+				d.size = +d.size
+			})
 			
 			let max = 0;
 			let min = 0;
-			if(the_sort == "article") {
+			let sort = [
+				"article",		// 1
+				"publication",	// 2
+				"size",			// 3
+				"discussion",	// 4
+				"incipit",		// 5
+				"issue",		// 6
+				"images"		// 7
+			]
+
+			if (the_sort == 1) {
 				max = total	
 				min = 0
 			}
-			else if (the_sort == "incipit"){
+			else if (the_sort == 2){
 				max = d3.max(filtered_data, function(d) { 
-					return +d.incipit_size;
+					return +d.days;
 				})
-				min = 0
-				// min = d3.min(filtered_data, function(d) { 
-				// 	return +d.incipit_size;
-				// })
+				min = d3.min(filtered_data, function(d) { 
+					return +d.days;
+				})
 			}
-			else if (the_sort == "size"){
+			else if (the_sort == 3){
 				max = d3.max(filtered_data, function(d) { 
 					return +d.size;
 				})
@@ -524,33 +690,7 @@ function dv1(the_subject) {
 				// 	return +d.size;
 				// })
 			}
-			else if (the_sort == "issue"){
-				max = d3.max(filtered_data, function(d) { 
-					return +d.issues;
-				})
-				min = 0
-				// min = d3.min(filtered_data, function(d) { 
-				// 	return +d.size;
-				// })
-			}
-			else if (the_sort == "images"){
-				max = d3.max(filtered_data, function(d) { 
-					return +d.images;
-				})
-				min = 0
-				// min = d3.min(filtered_data, function(d) { 
-				// 	return +d.size;
-				// })
-			}
-			else if (the_sort == "pubblicazione"){
-				max = d3.max(filtered_data, function(d) { 
-					return +d.days;
-				})
-				min = d3.min(filtered_data, function(d) { 
-					return +d.days;
-				})
-			}
-			else {
+			else if (the_sort == 4){
 				max = d3.max(filtered_data, function(d) { 
 					return +d.discussion_size;
 				})
@@ -559,73 +699,75 @@ function dv1(the_subject) {
 				// 	return +d.discussion_size;
 				// })
 			}
-			console.log(min,max)
-			
-			// d3.select("#tooltip").select("");
-
-			// let tooltip = d3.tip()
-			// 	.attr('class', 'tooltip')
-			// 	.attr('id', 'tooltip')
-			// 	.direction('n')
-			// 	.offset([-10,0])
-			// 	.html(function(d) {
-	  //               let content = "<span>" + d.article + "</span>"; // <br><span>(" + d.average_daily_visit + ")</span>"
-	  //               content +=`
-	  //                   <table style="margin-top: 2.5px;">
-	  //                           <tr><td>visite: </td><td style="text-align: right">` + d.average_daily_visit + `</td></tr>
-	  //                   </table>
-	  //                   `;
-	  //               return content;
-	  //           });
-   //     		plot.call(tooltip);
-
-				// .html(function(d) {
-	   //              let content = "<span>" + d.article + "</span>"; // <br><span>(" + d.average_daily_visit + ")</span>"
-	   //              content +=`
-	   //                  <table style="margin-top: 2.5px;">
-	   //                          <tr><td>visite: </td><td style="text-align: right">` + d.average_daily_visit + `</td></tr>
-	   //                  </table>
-	   //                  `;
-	   //              return content;
-	   //          });
-	       	// plot.call(tooltip);
+			else if (the_sort == 5){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.incipit_size;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.incipit_size;
+				// })
+			}
+			else if (the_sort == 6){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.issues;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
+			else if (the_sort == 7){
+				max = d3.max(filtered_data, function(d) { 
+					return +d.images;
+				})
+				min = 0
+				// min = d3.min(filtered_data, function(d) { 
+				// 	return +d.size;
+				// })
+			}
+			// console.log(min,max)
 
 			x = d3.scaleLinear()
 				.domain([min,max])
 				.range([0,width-100]) // margin.right-margin.left-20]) 
 	       	
-	       	if (the_sort == "pubblicazione"){
+	       	if (the_sort == 2){ 
 	       		x = d3.scaleLinear()
 					.domain([max,min])
 					.range([0,width-100])
 	       	}
-			
+
+	       	svg.selectAll(".article")
+	       		.data(filtered_data)
+	       		.enter()
+	       		.append("div")
+
 			svg.selectAll(".article")
 				.transition()
 				.attr("transform", function(d,i){
-					if(the_sort == "article") {
+					if (the_sort == 1) { // "article"
 						return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
-					else if (the_sort == "incipit"){
-						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
-					}
-					else if (the_sort == "size"){
-						return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
-					}
-					else if (the_sort == "issue"){
-						return "translate(" + (x(+d.issues)+50) + "," + y(+d.average_daily_visit) + ")"
-					}
-					else if (the_sort == "images"){
-						return "translate(" + (x(+d.images)+50) + "," + y(+d.average_daily_visit) + ")"
-					}
-					else if (the_sort == "pubblicazione"){
+					else if (the_sort == 2){ // "publication"
 						return "translate(" + (x(+d.days)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
-					else {
+					else if (the_sort == 3){ // "size"
+						return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else if (the_sort == 4) { // "discussion"
 						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
+					else if (the_sort == 5){
+						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else if (the_sort == 6){ // "issue"
+						return "translate(" + (x(+d.issues)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
+					else if (the_sort == 7){ // "images"
+						return "translate(" + (x(+d.images)+50) + "," + y(+d.average_daily_visit) + ")"
+					}
 				})
-
 		}
 	}
 }

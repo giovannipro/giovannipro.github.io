@@ -24,43 +24,43 @@
 			</nav>
 		</header>
 		<main>
-			<section id="select_box" class="container">
-				<div id="select_subject">
-					<p>Materia</p>
-					<select name="subjects" id="subjects">
-						<option value="Biologia">Biologia</option>
-						<option value="Chimica">Chimica</option>
-						<option value="Cittadinanza e costituzione">Cittadinanza e costituzione</option>
-						<option value="Diritto e Economia">Diritto e Economia</option>
-						<option value="Filosofia">Filosofia</option>
-						<option value="Fisica">Fisica</option>
-						<option value="Geografia">Geografia</option>
-						<option value="Grammatica italiana">Grammatica italiana</option>
-						<option value="Grammatica latina">Grammatica latina</option>
-						<option value="Informatica">Informatica</option>
-						<option value="Letteratura italiana">Letteratura italiana</option>
-						<option value="Letteratura latina">Letteratura latina</option>
-						<option value="Matematica">Matematica</option>
-						<option value="Scienze della Terra">Scienze della Terra</option>
-						<option value="Scienze">Scienze</option>
-						<option value="Storia">Storia</option>
-						<option value="Tecnologia">Tecnologia</option>
-					</select>
-				</div>
-				<div id="select_sort">
-					<p>Ordina per</p>
-					<select name="sort" id="sort">
-						<option value="article">titolo</option>
-						<option value="pubblicazione">data di pubblicazione</option>
-						<option value="discussion">dimensione pagina di discussione</option>
-						<option value="size">dimensione articolo</option>
-						<option value="incipit">dimensione incipit</option>
-						<option value="issue">numero di avvisi</option>
-						<option value="images">numero di immagini</option>
-					</select>
-				</div>
-			</section>
 			<section>
+				<div id="select_box" class="container">
+					<div id="select_subject">
+						<p style="margin: 0 0 20px;">Materia</p>
+						<select name="subjects" id="subjects">
+							<option value="Biologia">Biologia</option>
+							<option value="Chimica">Chimica</option>
+							<option value="Cittadinanza e costituzione">Cittadinanza e costituzione</option>
+							<option value="Diritto e Economia">Diritto e Economia</option>
+							<option value="Filosofia">Filosofia</option>
+							<option value="Fisica">Fisica</option>
+							<option value="Geografia">Geografia</option>
+							<option value="Grammatica italiana">Grammatica italiana</option>
+							<option value="Grammatica latina">Grammatica latina</option>
+							<option value="Informatica">Informatica</option>
+							<option value="Letteratura italiana">Letteratura italiana</option>
+							<option value="Letteratura latina">Letteratura latina</option>
+							<option value="Matematica">Matematica</option>
+							<option value="Scienze della Terra">Scienze della Terra</option>
+							<option value="Scienze">Scienze</option>
+							<option value="Storia">Storia</option>
+							<option value="Tecnologia">Tecnologia</option>
+						</select>
+					</div>
+					<div id="select_sort">
+						<p style="margin: 0 0 20px;">Ordina per</p>
+						<select name="sort" id="sort">
+							<option name="article" value="1">titolo</option>
+							<option name="publication" value="2">data di pubblicazione</option>
+							<option name="size" value="3">dimensione articolo</option>
+							<option name="discussion" value="4">dimensione pagina di discussione</option>
+							<option name="incipit" value="5">dimensione incipit</option>
+							<option name="issue" value="6">numero di avvisi</option>
+							<option name="images" value="7">numero di immagini</option>
+						</select>
+					</div>
+				</div>
 				<div id="dv1" class="dataviz"></div>
 			</section>
 			<section>
@@ -74,6 +74,9 @@
 					<div id="dv1_legend" class="">
 						<p>legenda ...</p>
 					</div>
+				</div>
+				<div class="container">
+					<p>scaricamento dati ...</p>
 				</div>
 			</section>
 			<footer>
