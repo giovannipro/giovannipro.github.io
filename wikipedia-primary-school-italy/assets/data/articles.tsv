@@ -698,7 +698,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 1848	Letteratura italiana	Superiori	XIII secolo - Scuola toscana	Dante Alighieri	1	Convivio	150	270049	145	10271	3	1	350	3.41	1	0	0	3367	2.3	5	2005-11-08	5319
 1081	Geografia		Geografia fisica	Coordinate	1	Coordinate_geografiche	580	1041502	560	5326	0	1	451	8.47	0	0	0	486	2	0	2003-05-17	6225
 1608	Informatica	Medie	Introduzione		1	Copia e incolla	92	165577	46	10343	0	1	2034	19.67	0	0	0	1848	1	0	2004-05-15	5861
-1451	Grammatica italiana		Verbo	Funzioni dei verbi	1	Copula (linguistica)	85	153054	66	3731	1	0	600	16.08	0	0	1	0	0	1	0	0
+1451	Grammatica italiana		Verbo	Funzioni dei verbi	1	Copula (linguistica)	85	153054	66	3731	1	0	600	16.08	0	0	1	0	0	1	2009-11-19	3847
 2787	Storia	Superiori	Alto medioevo	Il Corano	1	Corano	463	832601	322	65492	48	6	2904	4.43	0	0	0	27190	0	64	0	0
 3749	Matematica	Superiori	Geometria	Circonferenza	1	Corda_(geometria)	40	72101	22	984	0	1	747	75.91	1	0	0	40	2.2	0	2005-08-22	5397
 1313	Geografia		Asia	Corea del Nord	1	Corea_del_Nord	1413	2539362	647	116928	192	24	4207	3.60	2	1	0	40140	0	15	2004-08-22	5762
@@ -1232,7 +1232,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2724	Storia	Superiori	Roma	Giulio Cesare	1	Gaio_Giulio_Cesare	1443	2592174	1386	165607	233	57	4197	2.53	0	0	0	48336	0	60	0	0
 2278	Letteratura latina	Superiori	III - II sec. a.Ch.n.	La satira latina	1	Gaio_Lucilio	44	79608	43	8520	9	1	135	1.58	0	0	2	2118	2.3	2	2006-03-25	5182
 2288	Scienze della Terra	Superiori	L'universo		1	Galassia	324	581729	314	98713	110	36	4213	4.27	0	0	0	12623	2	18	2003-11-05	6053
-2954	Fisica	Superiori	XVI-XVII secolo	Galileo Galilei	1	Galileo_Galilei	1633	2933840	1497	181138	211	37	8196	4.52	0	0	0	290667	0	13	0	0
+2954	Fisica	Superiori	XVI-XVII secolo	Galileo Galilei	1	Galileo_Galilei	1633	2933840	1497	181138	211	37	8196	4.52	0	0	0	290667	0	13	2003-11-06	6052
 1001	Fisica	Superiori	Equilibrio dei fluidi		1	Galleggiante (fisica)	4	7464	6	986	0	0	788	79.92	1	0	0	36	0	0	2008-03-06	4470
 256	Chimica	Superiori	Leggi dei gas		1	Gas	138	248749	134	16173	12	1	1262	7.80	0	0	0	2424	0	14	2005-04-24	5517
 287	Chimica	Superiori	I legami chimici		1	Gas nobili	185	332857	186	27774	22	30	1524	5.49	0	0	0	260	2	21	2003-12-14	6014
@@ -1538,7 +1538,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 114	Biologia	Superiori	Corpo umano	Apparato respiratorio e circolatorio	1	Infarto miocardico acuto	328	589501	297	103372	152	17	2437	2.36	0	0	0	29172	2	14	2006-11-23	4939
 131	Biologia	Superiori	Corpo umano	Sistema immunitario	1	Infezione	123	221351	116	12250	2	5	265	2.16	1	0	0	3079	2	4	2005-02-13	5587
 3818	Matematica	Superiori	Studio di funzioni	Limiti	1	Infinitesimo	21	38272	20	5799	0	0	1239	21.37	0	0	0	862	2.5	4	2006-01-18	5248
-1426	Grammatica italiana		Verbo	Modi verbali	1	Infinito (modo)	16	28430	10	1141	0	0	0	0.00	0	0	0	1593	0	0	0	0
+1426	Grammatica italiana		Verbo	Modi verbali	1	Infinito (modo)	16	28430	10	1141	0	0	0	0.00	0	0	0	1593	0	0	2006-12-01	4931
 3819	Matematica	Superiori	Studio di funzioni	Limiti	1	Infinito_(matematica)	143	256626	104	5316	0	1	294	5.53	1	0	0	408	2.5	0	2007-06-11	4739
 739	Diritto e Economia	Superiori	Mercato della moneta		1	Inflazione	583	1047359	686	51961	20	2	1671	3.22	3	1	0	42465	2.1	4	2004-02-19	5947
 1859	Letteratura italiana	Superiori	XIII secolo - Scuola toscana	Dante Alighieri	1	Influenza_culturale_di_Dante_Alighieri	31	54902	28	105791	130	19	2353	2.22	0	0	0	12199	2.3	54	2015-06-12	1816
@@ -1596,7 +1596,7 @@ id	subject	school	theme	argument	exhisting	article	average_daily_visit	Visite da
 2024	Letteratura italiana	Superiori	Primo Ottocento	Ippolito Nievo	1	Ippolito Nievo	131	234831	140	34814	17	4	1	0.00	0	0	0	3606	2.4	46	0	0
 1297	Geografia		Asia	Iran	1	Iran	1022	1837105	805	178202	134	70	5531	3.10	0	2	0	67925	0	57	2003-12-27	6001
 1298	Geografia		Asia	Iraq	1	Iraq	497	892447	442	68448	62	6	3704	5.41	0	0	0	9635	0	0	2003-03-28	6275
-819	Filosofia	Superiori	Patristica		1	Ireneo di Lione	44	79551	50	9362	0	3	380	4.06	0	0	0	765	0	2	0	0
+819	Filosofia	Superiori	Patristica		1	Ireneo di Lione	44	79551	50	9362	0	3	380	4.06	0	0	0	765	0	2	2005-07-11	5439
 1218	Geografia		Europa	Irlanda	1	Irlanda	1173	2107393	1068	75255	25	26	4335	5.76	1	0	0	14103	0	0	2003-01-28	6334
 3128	Storia	Superiori	XX-XXI secolo	Irredentismo	1	Irredentismo	201	361665	214	30805	19	7	1069	3.47	0	1	0	36207	0	6	2004-10-05	5718
 1811	Letteratura italiana	Superiori	XI-XII Secolo	Origini della letteratura italiana	1	Iscrizione_della_catacomba_di_Commodilla	16	28155	21	4831	0	0	442	9.15	0	0	0	50	2.3	3	2009-06-08	4011

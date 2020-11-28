@@ -23,6 +23,19 @@ const subjects = [
 	"Tecnologia"
 ]
 
+function format_date(date){
+	if (date != 0) {
+		const year = date.substring(0,4);
+		const month = date.substring(5,7);
+		const day = date.substring(8,10);
+		return day + "-" + month + "-" + year
+	}
+	else {
+		return "-"
+	}
+}
+// console.log(format_date("2020-11-28"));
+
 const container = "#dv1";
 const font_size = 10;
 const filter_item = 120;
@@ -160,7 +173,7 @@ function dv1(the_subject) {
 			.html(function(d) {
                 let content = "<p style='font-weight: bold; margin: 0 0 5px 3px;'>" + d.article + "<p><table>";
 
-                content += "<tr><th>pubblicazione</th><th>" + d.first_edit + "</th></tr>"
+                content += "<tr><th>pubblicazione</th><th>" + format_date(d.first_edit) + "</th></tr>"
                 content += "<tr><th>dimensione</th><th>" + d.size.toLocaleString() + " byte</th></tr>"
                 content += "<tr><th>discussione</th><th>" + d.discussion_size.toLocaleString() + " byte</th></tr>"
                 content += "<tr><th>incipit</th><th>" + d.incipit_size.toLocaleString() + " byte</th></tr>"
@@ -352,7 +365,7 @@ function dv1(the_subject) {
 		// });
 
 		function update_subject(the_subject,the_sort){
-			console.log(the_subject,the_sort);
+			// console.log(the_subject,the_sort);
 
 			// the_sort = 1
 
