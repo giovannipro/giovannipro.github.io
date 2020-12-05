@@ -1,48 +1,320 @@
-id	author	pubb_w	pubbl_it	pubbl_la	source	school
-1	Plauto	-	-	Aulularia	la	terzo liceo
-2	Plauto	-	-	Miles_gloriosus	la	terzo liceo
-3	Plauto	-	-	Amphitruo_(Leo)	la	terzo liceo
-4	Publio_Terenzio_Afro	-	Andria	Andria	la	terzo liceo
-5	Publio_Terenzio_Afro	-	-	Heautontimorumenos	la	terzo liceo
-6	Catone	Origines	-	-	la	terzo liceo
-7	Catone	De_agri_cultura	-	De_agri_cultura	la	terzo liceo
-8	Catone	Carthago_delenda_est	-	-	la	terzo liceo
-9	Lucrezio	L'atomismo_di_Lucrezio	-	-	la	terzo liceo
-10	Lucrezio	Epicureismo	-	-	la	terzo liceo
-11	Lucrezio	De_rerum_natura	La_Natura	De_rerum_natura_(Titus_Lucretius_Carus)	la	terzo liceo
-12	Gaio Valerio Catullo	Liber Catullianus	Le_poesie_di_Catullo	Carmina_(Catullus)	la	terzo liceo
-13	Marco_Terenzio_Varrone	De Lingua Latina	-	De_Lingua_Latina	la	terzo liceo
-14	Marco_Terenzio_Varrone	De Re Rustica	-	Rerum_rusticarum	la	terzo liceo
-15	Marco_Terenzio_Varrone	Saturae Menippaee	-	-	la	terzo liceo
-16	Cornelio Nepote	De_viris_illustribus	Vite_degli_eccellenti_comandanti	De_viris_illustribus	la	terzo liceo
-17	Tito_Pomponio_Attico	-	-	-	la	terzo liceo
-18	Cesare	De_bello_Gallico	-	Commentarii_de_bello_Gallico	la	terzo liceo
-19	Cesare	De bello civili	-	Commentarii_de_bello_civili	la	terzo liceo
-20	Sallustio	De_Catilinae_coniuratione	Della_congiura_di_Catilina	De_Catilinae_coniuratione	la	terzo liceo
-21	Sallustio	Bellum_Iugurthinum	Il_Giugurtino	Bellum_Iugurthinum	la	terzo liceo
-22	Marco_Tullio_Cicerone	Pensiero_politico_di_Cicerone	-	-	la	terzo liceo
-23	Marco_Tullio_Cicerone	Laelius_de_amicitia	-	Laelius_de_Amicitia	la	terzo liceo
-24	Marco_Tullio_Cicerone	Tusculanae_disputationes	-	Tusculanae_Disputationes	la	terzo liceo
-25	Marco_Tullio_Cicerone	De_officiis	Degli_uffici	De_officiis	la	terzo liceo
-26	Marco_Tullio_Cicerone	In_Verrem	-	In_Verrem	la	terzo liceo
-27	Marco_Tullio_Cicerone	Catilinarie	-	In_L._Catilinam_orationes	la	terzo liceo
-28	Marco_Tullio_Cicerone	Filippiche	-	In_M._Antonium_Philippicae	la	terzo liceo
-29	Marco_Tullio_Cicerone	Pro_Milone	-	Pro_Milone	la	terzo liceo
-30	Marco_Tullio_Cicerone	Brutus	-	Brutus	la	terzo liceo
-31	Marco_Tullio_Cicerone	Epistulae_ad_Atticum	-	Epistulae_ad_Atticum	la	terzo liceo
-32	Marco_Tullio_Cicerone	Epistulae_ad_familiares	-	Epistulae_ad_Familiares	la	terzo liceo
-33	Virgilio	Bucoliche	-	Eclogae_vel_bucolica	la	quarto liceo
-34	Virgilio	Georgiche	Georgiche	Georgica	la	quarto liceo
-35	Virgilio	Eneide	Eneide_(Caro)	Aeneis	la	quarto liceo
-36	Virgilio	Omnia_vincit_amor	-	-	la	quarto liceo
-37	Virgilio	Timeo_Danaos_et_dona_ferentes	-	-	la	quarto liceo
-38	Orazio	Carpe_diem	-	-	la	quarto liceo
-39	Orazio	Epodi	-	Epodi	la	quarto liceo
-40	Orazio	Odi_(Orazio)	Le_odi_di_Orazio	Carmina_(Horatius)	la	quarto liceo
-41	Orazio	Satire_(Orazio)	Satire_(Orazio)	Sermones_(Horatius)	la	quarto liceo
-42	Orazio	Ars poetica	-	Ars_poetica	la	quarto liceo
-43	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	-	la	quarto liceo
-44	Albio_Tibullo	Albio_Tibullo	Albio_Tibullo	Albius_Tibullus	la	quarto liceo
-45	Albio_Tibullo	Corpus_Tibullianum	-	Opera_omnia_(Tibullus)	la	quarto liceo
-46	Sesto_Properzio	Sesto_Properzio	Sesto_Properzio	Sextus_Aurelius_Propertius	la	quarto liceo
-47	Sesto_Properzio	Elegie_(Properzio)	-	Elegiae_(Propertius)	la	quarto liceo
+id	author	pubb_w	pubbl_it	pubbl_la	period	source	school
+1	Plauto	-	-	Aulularia	III - II sec. a.C.	la	terzo liceo
+2	Plauto	-	-	Miles_gloriosus	III - II sec. a.C.	la	terzo liceo
+3	Plauto	-	-	Amphitruo_(Leo)	III - II sec. a.C.	la	terzo liceo
+4	Publio_Terenzio_Afro	-	Andria	Andria	III - II sec. a.C.	la	terzo liceo
+5	Publio_Terenzio_Afro	-	-	Heautontimorumenos	III - II sec. a.C.	la	terzo liceo
+6	Catone	Origines	-	-	III - II sec. a.C.	la	terzo liceo
+7	Catone	De_agri_cultura	-	De_agri_cultura	III - II sec. a.C.	la	terzo liceo
+8	Catone	Carthago_delenda_est	-	-	III - II sec. a.C.	la	terzo liceo
+9	Lucrezio	L'atomismo_di_Lucrezio	-	-	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+10	Lucrezio	Epicureismo	-	-	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+11	Lucrezio	De_rerum_natura	La_Natura	De_rerum_natura_(Titus_Lucretius_Carus)	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+12	Gaio Valerio Catullo	Liber Catullianus	Le_poesie_di_Catullo	Carmina_(Catullus)	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+13	Marco_Terenzio_Varrone	De Lingua Latina	-	De_Lingua_Latina	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+14	Marco_Terenzio_Varrone	De Re Rustica	-	Rerum_rusticarum	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+15	Marco_Terenzio_Varrone	Saturae Menippaee	-	-	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+16	Cornelio Nepote	De_viris_illustribus	Vite_degli_eccellenti_comandanti	De_viris_illustribus	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+17	Cesare	De_bello_Gallico	-	Commentarii_de_bello_Gallico	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+18	Cesare	De bello civili	-	Commentarii_de_bello_civili	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+19	Sallustio	De_Catilinae_coniuratione	Della_congiura_di_Catilina	De_Catilinae_coniuratione	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+20	Sallustio	Bellum_Iugurthinum	Il_Giugurtino	Bellum_Iugurthinum	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+21	Marco_Tullio_Cicerone	Pensiero_politico_di_Cicerone	-	-	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+22	Marco_Tullio_Cicerone	Laelius_de_amicitia	-	Laelius_de_Amicitia	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+23	Marco_Tullio_Cicerone	Tusculanae_disputationes	-	Tusculanae_Disputationes	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+24	Marco_Tullio_Cicerone	De_officiis	Degli_uffici	De_officiis	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+25	Marco_Tullio_Cicerone	In_Verrem	-	In_Verrem	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+26	Marco_Tullio_Cicerone	Catilinarie	-	In_L._Catilinam_orationes	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+27	Marco_Tullio_Cicerone	Filippiche	-	In_M._Antonium_Philippicae	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+28	Marco_Tullio_Cicerone	Pro_Milone	-	Pro_Milone	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+29	Marco_Tullio_Cicerone	Brutus	-	Brutus	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+30	Marco_Tullio_Cicerone	Epistulae_ad_Atticum	-	Epistulae_ad_Atticum	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+31	Marco_Tullio_Cicerone	Epistulae_ad_familiares	-	Epistulae_ad_Familiares	I sec. a.C. - Età Cesarea/Ciceroniana	la	terzo liceo
+32	Virgilio	Bucoliche	-	Eclogae_vel_bucolica	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+33	Virgilio	Georgiche	Georgiche	Georgica	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+34	Virgilio	Eneide	Eneide_(Caro)	Aeneis	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+35	Virgilio	Omnia_vincit_amor	-	-	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+36	Virgilio	Timeo_Danaos_et_dona_ferentes	-	-	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+37	Orazio	Carpe_diem	-	-	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+38	Orazio	Epodi	-	Epodi	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+39	Orazio	Odi_(Orazio)	Le_odi_di_Orazio	Carmina_(Horatius)	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+40	Orazio	Satire_(Orazio)	Satire_(Orazio)	Sermones_(Horatius)	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+41	Orazio	Ars poetica	-	Ars_poetica	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+42	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	-	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+43	Albio_Tibullo	Albio_Tibullo	Albio_Tibullo	Albius_Tibullus	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+44	Albio_Tibullo	Corpus_Tibullianum	-	Opera_omnia_(Tibullus)	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+45	Sesto_Properzio	Sesto_Properzio	Sesto_Properzio	Sextus_Aurelius_Propertius	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+46	Sesto_Properzio	Elegie_(Properzio)	-	Elegiae_(Propertius)	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+47	Ovidio	Amores	-	Amores	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+48	Ovidio	Ars_amatoria	I_tre_libri_dell'arte_amatoria_ed_il_libro_de'_rimedj_d'amore	Ars_amatoria	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+49	Ovidio	Eroidi	-	Heroides	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+50	Ovidio	Le_metamorfosi	Le_Metamorfosi	Metamorphoses_(Ovidius)	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+51	Ovidio	Tristia	-	Tristia	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+52	Ovidio	Epistulae_ex_Ponto	-	Epistulae_ex_Ponto	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+53	Livio	Storiografia_romana (approfondimento)	-	-	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+54	Livio	Ab_Urbe_condita_libri	-	Ab_Urbe_Condita	Età Augustea, 31 a.C.-14 d.C.	la	quarto liceo
+55	Seneca	Posizione_politica_di_Seneca (approfondimento)	-	-	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quarto liceo
+56	Seneca	De_beneficiis	-	De_Beneficiis	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quarto liceo
+57	Seneca	De_brevitate_vitae	-	De_brevitate_vitae	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quarto liceo
+58	Seneca	De_vita_beata	-	De_vita_beata	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quarto liceo
+59	Seneca	Epistulae_morales_ad_Lucilium	-	Epistulae_morales_ad_Lucilium	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quarto liceo
+60	Seneca	Medea_(Seneca)	Medea	Medea	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quarto liceo
+61	Seneca	Naturales quaestiones (deest)	-	Quaestiones_Naturales	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quarto liceo
+62	Petronio	Satyricon	Satire_di_Tito_Petronio_Arbitro	Satyricon	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quinto liceo
+63	Patercolo	Historiae_romanae	deest	Historiae_Romanae	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quinto liceo
+64	Valerio Massimo	Memorabilia	deest	Factorum_et_dictorum_memorabilium_libri_IX	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quinto liceo
+65	Plinio il Vecchio	Naturalis_historia	deest	Naturalis_Historia	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quinto liceo
+66	Fedro	Fabulae_(Fedro)	Favole_(Fedro)	Fabulae_(Phaedrus)	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quinto liceo
+67	Lucano	Pharsalia	Farsaglia	Pharsalia	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quinto liceo
+68	Persio	Satire (deest)	Satire_(Persio)	Saturae_(Persius,_Monti)	Età Imperiale Giulio-Claudia, 14-68 d.C.	la	quinto liceo
+69	Silio Italico	Punica	deest	Punica	Età dei  Flavi, 69-117	la	quinto liceo
+70	Stazio	Tebaide	La_Tebaide	Thebais	Età dei  Flavi, 69-118	la	quinto liceo
+71	Flacco	Argonautica	L'Argonautica	Argonautica_(Valerius_Flaccus)	Età dei  Flavi, 69-119	la	quinto liceo
+72	Quintiliano	Institutio_oratoria	deest	De_Institutione_Oratoria	Età dei  Flavi, 69-120	la	quinto liceo
+73	Marziale	Epigrammi	deest	Epigrammaton_libri_XII	Età dei  Flavi, 69-121	la	quinto liceo
+74	Giovenale	Satire_(Giovenale)	Satire_(Giovenale)	Saturae_(Iuvenalis,_Bucheler)	Età dei  Flavi, 69-122	la	quinto liceo
+75	Plinio il Giovane	Lettere_di_Plinio	deest	Epistularum_Libri_Decem_(Gaius_Plinius_Caecilius_Secundus)	Età dei  Flavi, 69-123	la	quinto liceo
+76	Plinio il Giovane	Panegirico_di_Traiano	deest	Panegyricus_(Plinius)	Età dei  Flavi, 69-124	la	quinto liceo
+77	Tacito	Historiae_(Tacito)	Storie_(Tacito)	Historiae_(Tacitus)	Età dei  Flavi, 69-125	la	quinto liceo
+78	Tacito	Annales_(Tacito)	Annali_(Tacito)	Ab_excessu_divi_Augusti_(Annales)	Età dei  Flavi, 69-126	la	quinto liceo
+79	Tacito	Agricola	deest	De_vita_et_moribus_Iulii_Agricolae	Età dei  Flavi, 69-127	la	quinto liceo
+80	Tacito	Germania	deest	De_origine_et_situ_Germanorum_(Germania)	Età dei  Flavi, 69-128	la	quinto liceo
+81	Svetonio	Vite_dei_Cesari	deest	De_vita_Caesarum_libri_VIII	Età Antonina, 117-192	la	quinto liceo
+82	Svetonio	De_viris_illustribus_(Svetonio)	deest	De_viris_illustribus_(Suetonius)	Età Antonina, 117-193	la	quinto liceo
+83	Svetonio	Le_metamorfosi_(Apuleio)	L'asino_d'oro	Metamorphoses_(Apuleius)	Età Antonina, 117-194	la	quinto liceo
+84	Svetonio	Amore_e_Psiche (approfondimento)	/	Psyche_et_Cupido	Età Antonina, 117-195	la	quinto liceo
+85	Svetonio	Apologia_(Apuleio)	deest	Apologia_sive_pro_se_de_magia	Età Antonina, 117-196	la	quinto liceo
+86	Apuleio	Le_metamorfosi_(Apuleio)	L'asino_d'oro	Metamorphoses_(Apuleius)	Età Antonina, 117-197	la	quinto liceo
+87	Apuleio	Amore_e_Psiche (approfondimento)	/	Psyche_et_Cupido	Età Antonina, 117-198	la	quinto liceo
+88	Apuleio	Apologia_(Apuleio)	deest	Apologia_sive_pro_se_de_magia	Età Antonina, 117-199	la	quinto liceo
+89	Gellio	Noctes_Atticae	deest	Noctes_Atticae	Età Antonina, 117-200	la	quinto liceo
+90	Ammiano Marcellino	Storie_(Ammiano_Marcellino)	deest	Res_Gestae_Libri_XXXI	Età della decadenza, III-IV secolo	la	quinto liceo
+91	Ausonio	Mosella_(poema)	-	Mosella	Età della decadenza, III-IV secolo	la	quinto liceo
+92	Simmaco	Epistolario (deest)	deest	Libri_Decem_Epistolarum	Età della decadenza, III-IV secolo	la	quinto liceo
+93	Claudiano	De raptu Proserpinae (deest)	deest	De_raptu_Proserpinae	V secolo e post	la	quinto liceo
+94	Namaziano	De_reditu_suo	deest	De_reditu_suo	V secolo e post	la	quinto liceo
+95	Namaziano	Querolus_sive_Aulularia	deest	deest	V secolo e post	la	quinto liceo
+96	Sidonio Apollinare	Carmina_(Sidonio_Apollinare)	deest	Carmina_(Sidonius_Apollinaris)	V secolo e post	la	quinto liceo
+97	Agostino	Pensiero_di_Agostino_d'Ippona	/	/	V secolo e post	la	quinto liceo
+98	Agostino	Confessioni	deest	Confessiones	V secolo e post	la	quinto liceo
+99	Agostino	La_città_di_Dio	deest	De_civitate_Dei	V secolo e post	la	quinto liceo
+100	Boezio	De_consolatione_philosophiae	Della_consolazione_della_filosofia	De_philosophiae_consolatione	V secolo e post	la	quinto liceo
+101	Cassiodoro	Variae (deest)	deest	Variarum_libri_XII	V secolo e post	la	quinto liceo
+102	Guittone d'Arezzo	Tutt'or_ch'eo_dirò_gioi,_gioiva_cosa	Tutt'or_ch'eo_dirò_gioi,_gioiva_cosa	-	XIII secolo - Scuola toscana	it	-
+103	Guido Guinizelli	Al_cor_gentil_rempaira_sempre_amore	Al_cor_gentil_rempaira_sempre_amore	-	XIII secolo - Scuola toscana	it	-
+104	Guido Guinizelli	Io_voglio_del_ver_la_mia_donna_laudare	Io_voglio_del_ver_la_mia_donna_laudare	-	XIII secolo - Scuola toscana	it	-
+105	Guido Cavalcanti	Rime	Chi_è_questa_che_ven,_ch'ogn'om_la_mira	-	XIII secolo - Scuola toscana	it	-
+106	Guido Cavalcanti	-	Perch'i'_non_spero_di_tornar_giammai	-	XIII secolo - Scuola toscana	it	-
+107	Guido Cavalcanti	-	Voi_che_per_li_occhi_mi_passaste_'l_core	-	XIII secolo - Scuola toscana	it	-
+108	Cino da Pistoia	-	Io fu 'n su alto e 'n_sul_beato_monte	-	XIII secolo - Scuola toscana	it	-
+109	Cecco Angiolieri	S'i_fosse_foco	S'i'_fosse_foco,_arderei_%27l_mondo	-	XIII secolo - Scuola toscana	it	-
+110	Cecco Angiolieri	Becchin'amor!_-_Che_vuo',_falso_tradito?	Becchin'amor!_Che_vuo',_falso_tradito	-	XIII secolo - Scuola toscana	it	-
+111	Iacopone da Todi	Donna_de_Paradiso	Donna_de_Paradiso	-	XIII secolo - Scuola toscana	it	-
+112	Iacopone da Todi	O papa Bonifazio...	Laude/83	-	XIII secolo - Scuola toscana	it	-
+113	Dante Alighieri	Vita_nuova	Vita_nuova	-	XIII secolo - Scuola toscana	it	-
+114	Dante Alighieri	Beatrice_Portinari (approfondimento)		-	XIII secolo - Scuola toscana	it	-
+115	Dante Alighieri	Convivio	Convivio	-	XIII secolo - Scuola toscana	it	-
+116	Dante Alighieri	Le_Rime	Rime_(Dante)	-	XIII secolo - Scuola toscana	it	-
+117	Dante Alighieri	Guido,_i'_vorrei_che_tu_e_Lapo_ed_io	Guido,_i'_vorrei_che_tu_e_Lapo_ed_io	-	XIII secolo - Scuola toscana	it	-
+118	Dante Alighieri	Tanto_gentile_e_tanto_onesta_pare	Tanto_gentile_e_tanto_onesta_pare	-	XIII secolo - Scuola toscana	it	-
+119	Dante Alighieri	De_vulgari_eloquentia	De la volgare eloquenza	-	XIII secolo - Scuola toscana	it	-
+120	Dante Alighieri	Divina_Commedia	Opera:Divina_Commedia	-	XIII secolo - Scuola toscana	it	-
+121	Dante Alighieri	Monarchia_(Dante)	Monarchia	-	XIII secolo - Scuola toscana	it	-
+122	Dante Alighieri	Epistole_(Dante_Alighieri)	Epistole_(Dante)	-	XIII secolo - Scuola toscana	it	-
+123	Dante Alighieri	Epistola_XIII_a_Cangrande_della_Scala		-	XIII secolo - Scuola toscana	it	-
+124	Dante Alighieri	Egloghe	Egloghe	-	XIII secolo - Scuola toscana	it	-
+125	Dante Alighieri	Quaestio_de_aqua_et_terra		-	XIII secolo - Scuola toscana	it	-
+126	Dante Alighieri	Influenza_culturale_di_Dante_Alighieri		-	XIII secolo - Scuola toscana	it	-
+127	Marco Polo	Il_Milione	Milione	-	Secolo XIII - prosa narrativa	it	-
+128	Franco Sacchetti	Il_Trecentonovelle	Il_Trecentonovelle	-	Secolo XIV	it	-
+129	Petrarca	Laura_de_Noves	-	-	Secolo XIV	it	-
+130	Petrarca	Epistole	Epistolae_familiares	-	Secolo XIV	it	-
+131	Petrarca	Secretum	Il_mio_segreto	-	Secolo XIV	it	-
+132	Petrarca	Canzoniere	Canzoniere	-	Secolo XIV	it	-
+133	Petrarca	Voi ch'ascoltate in rime sparse il suono	Voi ch'ascoltate in rime sparse il suono	-	Secolo XIV	it	-
+134	Petrarca	Chiare,_fresche_et_dolci_acque	Chiare,_fresche_et_dolci_acque	-	Secolo XIV	it	-
+135	Petrarca	Erano_i_capei_d'oro_a_l'aura_sparsi	Erano_i_capei_d'oro_a_l'aura_sparsi	-	Secolo XIV	it	-
+136	Petrarca	Italia_mia,_benché_'l_parlar_sia_indarno	Italia_mia,_benché_'l_parlar_sia_indarno	-	Secolo XIV	it	-
+137	Petrarca	Solo_et_pensoso_i_più_deserti_campi	Solo_et_pensoso_i_più_deserti_campi	-	Secolo XIV	it	-
+138	Petrarca	I_Trionfi	Trionfi	-	Secolo XIV	it	-
+139	Boccaccio	Opere_della_giovinezza_di_Giovanni_Boccaccio		-	Secolo XIV	it	-
+140	Boccaccio	Filostrato	Il Filostrato	-	Secolo XIV	it	-
+141	Boccaccio	Comedia_delle_ninfe_fiorentine	Canto_di_Ameto	-	Secolo XIV	it	-
+142	Boccaccio	Decameron	Decameron	-	Secolo XIV	it	-
+143	Boccaccio	Categoria:Personaggi_del_Decameron		-	Secolo XIV	it	-
+144	Boccaccio	Struttura_del_Decameron		-	Secolo XIV	it	-
+145	Boccaccio	Il_Corbaccio	Il_Corbaccio	-	Secolo XIV	it	-
+146	Lorenzo de' Medici	Il_trionfo_di_Bacco_e_Arianna	Canzona di Bacco	-	XV Secolo	it	-
+147	Luigi Pulci	Morgante_(poema)	Morgante_maggiore	-	XV Secolo	it	-
+148	Matteo Maria Boiardo	Amorum_libri_tres	--	-	XV Secolo	it	-
+149	Matteo Maria Boiardo	Orlando_innamorato	Orlando_innamorato	-	XV Secolo	it	-
+150	Poliziano	Rime	Ben_venga_maggio	-	XV Secolo	it	-
+151	Machiavelli	Machiavellismo		-	XV Secolo	it	-
+152	Machiavelli	Il_principe	Il_Principe	-	XV Secolo	it	-
+153	Machiavelli	Cesare_Borgia (approfondimento al Principe)		-	XV Secolo	it	-
+154	Machiavelli	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	-	XV Secolo	it	-
+155	Machiavelli	Epistolario	Lettere_(Machiavelli)	-	XV Secolo	it	-
+156	Machiavelli	La Mandragola	La_mandragola	-	XV Secolo	it	-
+157	Pietro Bembo	Prose_della_volgar_lingua	Prose_della_volgar_lingua	-	XVI Secolo	it	-
+158	Baldassarre Castiglione	Il_Cortegiano	Il_libro_del_Cortegiano	-	XVI Secolo	it	-
+159	Francesco Guicciardini	Storia_d'Italia	Storia_d'Italia	-	XVI Secolo	it	-
+160	Francesco Guicciardini	Storie_fiorentine	Storie_fiorentine_dal_1378_al_1509	-	XVI Secolo	it	-
+161	Francesco Guicciardini	Ricordi_politici_e_civili	Ricordi	-	XVI Secolo	it	-
+162	Francesco Guicciardini	Considerazioni_sui_Discorsi_del_Machiavelli	Considerazioni_intorno_ai_Discorsi_del_Machiavelli_sopra_la_prima_Deca_di_Tito_Livio	-	XVI Secolo	it	-
+163	Ludovico Ariosto	Satire	Satire_(Ariosto)	-	XVI Secolo	it	-
+164	Ludovico Ariosto	Orlando_furioso	Orlando_furioso_(ed. 1928)	-	XVI Secolo	it	-
+165	Ludovico Ariosto	Proemio dell'Orlando	Canto_1	-	XVI Secolo	it	-
+166	Ludovico Ariosto	La follia di Orlando	Canto_23	-	XVI Secolo	it	-
+167	Ludovico Ariosto	Ritrovamento del senno di Orlando	Canto_34	-	XVI Secolo	it	-
+168	Ludovico Ariosto	Duello di Rodomonte e Ruggero	Canto_46	-	XVI Secolo	it	-
+169	Torquato Tasso	Rime	-	-	XVI Secolo	it	-
+170	Torquato Tasso	Gerusalemme_liberata	Gerusalemme_liberata	-	XVI Secolo	it	-
+171	Torquato Tasso	Proemio della Gerusalemme	Canto_primo	-	XVI Secolo	it	-
+172	Torquato Tasso	Olindo e Sofronia	Canto_secondo	-	XVI Secolo	it	-
+173	Torquato Tasso	Tancredi vs. Clorinda	Canto_dodicesimo	-	XVI Secolo	it	-
+174	Torquato Tasso	Aminta	Aminta	-	XVI Secolo	it	-
+175	Giambattista Basile	Lo_cunto_de_li_cunti	Lo_cunto_de_li_cunti	-	XVII Secolo	it	-
+176	Galileo Galilei	Sidereus_Nuncius	Sidereus_nuncius (la)	-	XVII Secolo	it	-
+177	Galileo Galilei	Il_Saggiatore	Il_Saggiatore	-	XVII Secolo	it	-
+178	Galileo Galilei	Dialogo_sopra_i_due_massimi_sistemi_del_mondo	Dialogo_sopra_i_due_massimi_sistemi_del_mondo	-	XVII Secolo	it	-
+179	Giovan Battista Marino	L'Adone	Adone	-	XVII Secolo	it	-
+180	Carlo Goldoni	La_locandiera	La_locandiera	-	XVIII Secolo	it	-
+181	Carlo Goldoni	Il_servitore_di_due_padroni	Il_servitore_di_due_padroni	-	XVIII Secolo	it	-
+182	Giuseppe Parini	Il_giorno	Il_Giorno	-	XVIII Secolo	it	-
+183	Giuseppe Parini	Odi	Odi	-	XVIII Secolo	it	-
+184	Vittorio Alfieri	Saul	Saul	-	XVIII Secolo	it	-
+185	Vincenzo_Monti	Vincenzo_Monti	Traduzioni_di_Vincenzo_Monti	-	Fra XVIII e XIX sec.	it	-
+186	Ugo Foscolo	Opere_di_Ugo_Foscolo	vedi sopra	-	Fra XVIII e XIX sec.	it	-
+187	Ugo Foscolo	Ultime_lettere_di_Jacopo_Ortis	Ultime_lettere_di_Jacopo_Ortis	-	Fra XVIII e XIX sec.	it	-
+188	Ugo Foscolo	A_Zacinto	A_Zacinto	-	Fra XVIII e XIX sec.	it	-
+189	Ugo Foscolo	Alla_sera	Alla_sera	-	Fra XVIII e XIX sec.	it	-
+190	Ugo Foscolo	In_morte_del_fratello_Giovanni	In_morte_del_fratello_Giovanni	-	Fra XVIII e XIX sec.	it	-
+191	Ugo Foscolo	Dei_sepolcri	Dei_Sepolcri	-	Fra XVIII e XIX sec.	it	-
+192	Ugo Foscolo	Le_Grazie_(Foscolo)	Le_Grazie	-	Fra XVIII e XIX sec.	it	-
+193	Ippolito Nievo	Le_confessioni_d'un_italiano	Le_confessioni_di_un_ottuagenario	-	Primo Ottocento	it	-
+194	Giuseppe Verdi	La_traviata	La_Traviata	-	Primo Ottocento	it	-
+195	Giuseppe Verdi	Va,_pensiero	Va,_pensiero	-	Primo Ottocento	it	-
+196	Alessandro Manzoni	Pensiero_e_poetica		-	Primo Ottocento	it	-
+197	Alessandro Manzoni	Opere_di_Alessandro_Manzoni		-	Primo Ottocento	it	-
+198	Alessandro Manzoni	Inni_sacri	Inni_sacri	-	Primo Ottocento	it	-
+199	Alessandro Manzoni	Il_cinque_maggio	Il_cinque_maggio	-	Primo Ottocento	it	-
+200	Alessandro Manzoni	Adelchi	Adelchi	-	Primo Ottocento	it	-
+201	Alessandro Manzoni	Il_Conte_di_Carmagnola	Il_Conte_di_Carmagnola	-	Primo Ottocento	it	-
+202	Alessandro Manzoni	Lettera al signor Chauvet	Testo francese	-	Primo Ottocento	it	-
+203	Alessandro Manzoni	Sul_romanticismo	Lettera_sul_romanticismo_a_d'Azeglio	-	Primo Ottocento	it	-
+204	Alessandro Manzoni	I_promessi_sposi	I_promessi_sposi	-	Primo Ottocento	it	-
+205	Giacomo Leopardi	Pensiero_e_poetica	-	-	Primo Ottocento	it	-
+206	Giacomo Leopardi	Opere_di_Giacomo_Leopardi		-	Primo Ottocento	it	-
+207	Giacomo Leopardi	Discorso di un italiano intorno alla poesia romantica	Discorso_di_un_italiano_intorno_alla_poesia_romantica	-	Primo Ottocento	it	-
+208	Giacomo Leopardi	Zibaldone	Zibaldone	-	Primo Ottocento	it	-
+209	Giacomo Leopardi	Canti	Canti	-	Primo Ottocento	it	-
+210	Giacomo Leopardi	Il_passero_solitario	Il_passero_solitario	-	Primo Ottocento	it	-
+211	Giacomo Leopardi	L'infinito	L'infinito	-	Primo Ottocento	it	-
+212	Giacomo Leopardi	Alla_luna	Alla_luna	-	Primo Ottocento	it	-
+213	Giacomo Leopardi	La_sera_del_dì_di_festa	La_sera_del_dì_di_festa	-	Primo Ottocento	it	-
+214	Giacomo Leopardi	Ad Angelo Mai	Ad Angelo Mai	-	Primo Ottocento	it	-
+215	Giacomo Leopardi	Ultimo_canto_di_Saffo	Ultimo_canto_di_Saffo	-	Primo Ottocento	it	-
+216	Giacomo Leopardi	A_Silvia	A_Silvia	-	Primo Ottocento	it	-
+217	Giacomo Leopardi	La_quiete_dopo_la_tempesta	La_quiete_dopo_la_tempesta	-	Primo Ottocento	it	-
+218	Giacomo Leopardi	Il_sabato_del_villaggio	Il_sabato_del_villaggio	-	Primo Ottocento	it	-
+219	Giacomo Leopardi	Canto_notturno_di_un_pastore_errante_dell'Asia	Canto_notturno_di_un_pastore_errante_dell'Asia	-	Primo Ottocento	it	-
+220	Giacomo Leopardi	A_se_stesso	A_se_stesso	-	Primo Ottocento	it	-
+221	Giacomo Leopardi	La_ginestra	La_ginestra	-	Primo Ottocento	it	-
+222	Giacomo Leopardi	Operette_morali	Operette_morali	-	Primo Ottocento	it	-
+223	Giacomo Leopardi	Analisi_delle_Operette_morali		-	Primo Ottocento	it	-
+224	Giacomo Leopardi	Appendice_alle_Operette_morali		-	Primo Ottocento	it	-
+225	Giacomo Leopardi	Paralipomeni_della_Batracomiomachia	Paralipomeni_della_Batracomiomachia	-	Primo Ottocento	it	-
+226	Giovanni Verga	Tecnica_narrativa_di_Giovanni_Verga		-	Secondo Ottocento	it	-
+227	Giovanni Verga	Opere_e_poetica_di_Giovanni_Verga		-	Secondo Ottocento	it	-
+228	Giovanni Verga	Vita_dei_campi (Novelle)	Vita_dei_campi	-	Secondo Ottocento	it	-
+229	Giovanni Verga	Rosso_Malpelo	Rosso_Malpelo	-	Secondo Ottocento	it	-
+230	Giovanni Verga	Novelle rusticane	Novelle_rusticane	-	Secondo Ottocento	it	-
+231	Giovanni Verga	La_roba	La_roba	-	Secondo Ottocento	it	-
+232	Giovanni Verga	Ciclo_dei_Vinti	-	-	Secondo Ottocento	it	-
+233	Giovanni Verga	I_Malavoglia	I_Malavoglia	-	Secondo Ottocento	it	-
+234	Giovanni Verga	Mastro-don_Gesualdo	Mastro-don_Gesualdo	-	Secondo Ottocento	it	-
+235	Antonio Fogazzaro	Piccolo_mondo_antico	Piccolo_mondo_antico	-	Secondo Ottocento	it	-
+236	Antonio Fogazzaro	Piccolo_mondo_moderno	Piccolo_mondo_moderno	-	Secondo Ottocento	it	-
+237	Edmondo_De_Amicis	Cuore	Cuore_(1889)	-	Secondo Ottocento	it	-
+238	Carlo_Collodi	Pinocchio	Le_avventure_di_Pinocchio	-	Secondo Ottocento	it	-
+239	Giosuè Carducci	Odi_barbare	Odi_barbare	-	Secondo Ottocento	it	-
+240	Giosuè Carducci	Rime_nuove	Rime_nuove	-	Secondo Ottocento	it	-
+241	Giosuè Carducci	Pianto_antico	Pianto_antico	-	Secondo Ottocento	it	-
+242	Giovanni Pascoli	Myricae	Myricae	-	Secondo Ottocento	it	-
+243	Giovanni Pascoli	Il_fanciullino	Il_fanciullino	-	Secondo Ottocento	it	-
+244	Giovanni Pascoli	Canti_di_Castelvecchio	Canti_di_Castelvecchio	-	Secondo Ottocento	it	-
+245	Giovanni Pascoli	La_cavalla_storna	La_cavalla_storna	-	Secondo Ottocento	it	-
+246	Giovanni Pascoli	Primi_poemetti	Primi_poemetti	-	Secondo Ottocento	it	-
+247	Giovanni Pascoli	Pascoli latinista	Opera_quae_Iohannes_Pascoli_scripsit	-	Secondo Ottocento	it	-
+248	Giovanni Pascoli	Dannunzianesimo	-	-	Primo novecento	it	-
+249	Giovanni Pascoli	Poeta_vate	-	-	Primo novecento	it	-
+250	Giovanni Pascoli	Motti_dannunziani	-	-	Primo novecento	it	-
+251	Giovanni Pascoli	Opere_di_D'Annunzio	-	-	Primo novecento	it	-
+252	Giovanni Pascoli	Alcyone	Alcyone	-	Primo novecento	it	-
+253	Giovanni Pascoli	La_pioggia_nel_pineto	La_pioggia_nel_pineto	-	Primo novecento	it	-
+254	Giovanni Pascoli	Il_piacere	Il_piacere	-	Primo novecento	it	-
+255	Filippo_Tommaso_Marinetti	Manifesto_del_Futurismo	Manifesto_del_futurismo	-	Primo novecento	it	-
+256	Filippo_Tommaso_Marinetti	Zang_Tumb_Tumb	boh, non c'è	-	Primo novecento	it	-
+257	Luigi Pirandello	Il_fu_Mattia_Pascal	Il_fu_Mattia_Pascal	-	Primo novecento	it	-
+258	Luigi Pirandello	Uno,_nessuno_e_centomila	Uno,_nessuno_e_centomila	-	Primo novecento	it	-
+259	Luigi Pirandello	Novelle_per_un_anno	-	-	Primo novecento	it	-
+260	Luigi Pirandello	Sei_personaggi_in_cerca_d'autore	Sei_personaggi_in_cerca_d%27autore	-	Primo novecento	it	-
+261	Luigi Pirandello	Enrico_IV	Enrico_IV	-	Primo novecento	it	-
+262	Giuseppe Ungaretti	L'allegria		-	Il secolo breve	it	-
+263	Giuseppe Ungaretti	San_Martino_del_Carso		-	Il secolo breve	it	-
+264	Giuseppe Ungaretti	Sentimento_del_tempo		-	Il secolo breve	it	-
+265	Antonio Gramsci	Quaderni_del_carcere	Quaderni_del_carcere	-	Il secolo breve	it	-
+266	Umberto Saba	Canzoniere		-	Il secolo breve	it	-
+267	Umberto Saba	Ernesto			Il secolo breve	it	-
+268	Salvatore Quasimodo	Ermetismo			Il secolo breve	it	-
+269	Salvatore Quasimodo	Oboe_sommerso			Il secolo breve	it	-
+270	Salvatore Quasimodo	Ed_è_subito_sera			Il secolo breve	it	-
+271	Salvatore Quasimodo	Uomo_del_mio_tempo			Il secolo breve	it	-
+272	Salvatore Quasimodo	Alle_fronde_dei_salici			Il secolo breve	it	-
+273	Alberto Moravia	Gli_indifferenti			Il secolo breve	it	-
+274	Alberto Moravia	Agostino			Il secolo breve	it	-
+275	Italo Svevo	Una_vita	Una_vita		Il secolo breve	it	-
+276	Italo Svevo	Senilità	Senilità		Il secolo breve	it	-
+277	Italo Svevo	La_coscienza_di_Zeno	La_coscienza_di_Zeno		Il secolo breve	it	-
+278	Carlo Emilio Gadda	Quer_pasticciaccio_brutto_de_via_Merulana			Il secolo breve	it	-
+279	Carlo Emilio Gadda	La_cognizione_del_dolore			Il secolo breve	it	-
+280	Eugenio Montale	Ossi_di_seppia			Il secolo breve	it	-
+281	Eugenio Montale	I_limoni			Il secolo breve	it	-
+282	Eugenio Montale	Non_chiederci_la_parola_che_squadri_da_ogni_lato			Il secolo breve	it	-
+283	Eugenio Montale	Meriggiare_pallido_e_assorto			Il secolo breve	it	-
+284	Eugenio Montale	Spesso_il_male_di_vivere_ho_incontrato			Il secolo breve	it	-
+285	Eugenio Montale	Cigola_la_carrucola_del_pozzo			Il secolo breve	it	-
+286	Eugenio Montale	Le_occasioni			Il secolo breve	it	-
+287	Eugenio Montale	La_bufera_e_altro			Il secolo breve	it	-
+288	Eugenio Montale	Satura_(Montale)			Il secolo breve	it	-
+289	Dino Buzzati	Sessanta_racconti			Dopoguerra	it	-
+290	Dino Buzzati	Il_deserto_dei_Tartari			Dopoguerra	it	-
+291	Cesare Pavese	La_casa_in_collina			Dopoguerra	it	-
+292	Cesare Pavese	La_luna_e_i_falò			Dopoguerra	it	-
+293	Cesare Pavese	Lavorare_stanca			Dopoguerra	it	-
+294	Cesare Pavese	Verrà_la_morte_e_avrà_i_tuoi_occhi			Dopoguerra	it	-
+295	Elsa Morante	Menzogna_e_sortilegio			Dopoguerra	it	-
+296	Elsa Morante	L'isola_di_Arturo			Dopoguerra	it	-
+297	Elsa Morante	La_storia			Dopoguerra	it	-
+298	Giuseppe_Tomasi_di_Lampedusa	Il_Gattopardo			Dopoguerra	it	-
+299	Primo Levi	Se_questo_è un_uomo			Dopoguerra	it	-
+300	Primo Levi	La_tregua			Dopoguerra	it	-
+301	Primo Levi	I_sommersi_e_i_salvati			Dopoguerra	it	-
+302	Primo Levi	Il_sistema_periodico			Dopoguerra	it	-
+303	Beppe Fenoglio	I_ventitre_giorni_della_città_di_Alba			Dopoguerra	it	-
+304	Beppe Fenoglio	La_malora			Dopoguerra	it	-
+305	Beppe Fenoglio	Una_questione_privata			Dopoguerra	it	-
+306	Beppe Fenoglio	Il_partigiano_Johnny			Dopoguerra	it	-
+307	PPP	La_meglio_gioventù			Dopoguerra	it	-
+308	PPP	Le_ceneri_di_Gramsci			Dopoguerra	it	-
+309	PPP	Ragazzi_di_vita			Dopoguerra	it	-
+310	PPP	Petrolio			Dopoguerra	it	-
+311	PPP	Mamma_Roma			Dopoguerra	it	-
+312	Leonardo Sciascia	Il_giorno_della_civetta			Anni 60-70	it	-
+313	Leonardo Sciascia	A_ciascuno_il_suo			Anni 60-70	it	-
+314	Italo Calvino	Il_sentiero_dei_nidi_di_ragno			Anni 60-70	it	-
+315	Italo Calvino	Il_visconte_dimezzato			Anni 60-70	it	-
+316	Italo Calvino	Il_barone_rampante			Anni 60-70	it	-
+317	Italo Calvino	Il_cavaliere_inesistente			Anni 60-70	it	-
+318	Italo Calvino	Le_città_invisibili			Anni 60-70	it	-
+319	Italo Calvino	Se_una_notte_d'inverno_un_viaggiatore			Anni 60-70	it	-

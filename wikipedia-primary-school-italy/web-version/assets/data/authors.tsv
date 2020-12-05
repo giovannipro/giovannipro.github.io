@@ -23,3 +23,188 @@ id	author	author_w	author_ws_it	author_ws_la
 22	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	-
 23	Albio_Tibullo	Albio_Tibullo	Albio_Tibullo	Albius_Tibullus
 24	Sesto_Properzio	Sesto_Properzio	Sesto_Properzio	Sextus_Aurelius_Propertius
+25	Ovidio	Ovidio	Publio_Ovidio_Nasone	Publius_Ovidius_Naso
+26	Livio	Livio	Tito_Livio	Titus_Livius
+27	Seneca	Seneca	Lucio_Anneo_Seneca	Lucius_Annaeus_Seneca
+28	Petronio	Petronio	Petronio_Arbitro	Petronius_Arbiter
+29	Patercolo	Velleio_Patercolo	Velleio_Patercolo	Velleius_Paterculus
+30	Valerio Massimo	Valerio_Massimo	Valerio_Massimo	Valerius_Maximus
+31	Quinto_Curzio_Rufo	Quinto_Curzio_Rufo	Quinto_Curzio_Rufo	Quintus_Curtius_Rufus
+32	Lucio_Giunio_Moderato_Columella	Lucio_Giunio_Moderato_Columella	Lucio_Giunio_Moderato_Columella	Lucius_Iunius_Moderatus_Columella
+33	Pomponio_Mela	Pomponio_Mela	Pomponio_Mela	Pomponius_Mela
+34	Marco_Gavio_Apicio	Marco_Gavio_Apicio	Marco_Gavio_Apicio	Marcus_Gavius_Apicius
+35	Aulo_Cornelio_Celso	Aulo_Cornelio_Celso	Aulo_Cornelio_Celso	Aulus_Cornelius_Celsus
+36	Plinio il Vecchio	Plinio_il_Vecchio	Gaio_Plinio_Secondo	Gaius_Plinius_Secundus
+37	Fedro	Fedro	Fedro	Phaedrus
+38	Lucano	Lucano	Marco_Anneo_Lucano	Marcus_Annaeus_Lucanus
+39	Persio	Persio	Aulo_Persio_Flacco	Aulus_Persius_Flaccus
+40	Silio Italico	Silio Italico	Silio_Italico	Silius_Italicus
+41	Stazio	Publio_Papinio_Stazio	Publio_Papinio_Stazio	Publius_Papinius_Statius
+42	Flacco	Flacco	Gaio_Valerio_Flacco	Gaius_Valerius_Flaccus
+43	Quintiliano	Quintiliano	Marco_Fabio_Quintiliano	Marcus_Fabius_Quintilianus
+44	Marziale	Marco_Valerio_Marziale	Marco_Valerio_Marziale	Marcus_Valerius_Martialis
+45	Giovenale	Biografia	Decimo_Giunio_Giovenale	Decimus_Iunius_Iuvenalis
+46	Plinio il Giovane	Plinio il Giovane	Gaio_Plinio_Cecilio_Secondo	Gaius_Plinius_Caecilius_Secundus
+47	Tacito	Tacito	Publio_Cornelio_Tacito	Publius_Cornelius_Tacitus
+48	Svetonio	Svetonio	Gaio_Svetonio_Tranquillo	Gaius_Suetonius_Tranquillus
+49	Apuleio	Apuleio	Apuleio	Lucius_Apuleius
+50	Gellio	Gellio	Aulo_Gellio	Aulus_Gellius
+51	Ammiano Marcellino	Ammiano Marcellino	Ammiano_Marcellino	Ammianus_Marcellinus
+52	Ausonio	Ausonio	Decimo_Magno_Ausonio	Decimus_Magnus_Ausonius
+53	Simmaco	Simmaco	Quinto_Aurelio_Simmaco	Quintus_Aurelius_Symmachus
+54	Sant'Ambrogio	Sant'Ambrogio	Sant'Ambrogio	Ambrosius
+55	Tertulliano	Tertulliano	Quinto_Settimio_Fiorente_Tertulliano	Quintus_Septimius_Florens_Tertullianus
+56	Claudiano	Claudiano	Claudio_Claudiano	Claudius_Claudianus
+57	Namaziano	Namaziano	Claudio_Rutilio_Namaziano	Claudius_Rutilius_Namatianus
+58	Sidonio Apollinare	Sidonio Apollinare	Gaio_Sollio_Sidonio_Apollinare	Sidonius_Apollinaris
+59	Agostino	Agostino	Agostino_d'Ippona	Aurelius_Augustinus
+60	Boezio	Boezio	Anicio_Manlio_Torquato_Severino_Boezio	Anicius_Manlius_Torquatus_Severinus_Boethius
+61	Cassiodoro	Cassiodoro	Flavio_Magno_Aurelio_Cassiodoro	Flavius_Magnus_Aurelius_Cassiodorus_Senator
+62	Guittone d'Arezzo	Guittone d'Arezzo	Testi_di_Guittone_d'Arezzo	-
+63	Guido Guinizelli	Guido Guinizelli	Testi_di_Guido_Guinizzelli	-
+64	Guido Cavalcanti	Guido Cavalcanti	Testi_di_Guido_Cavalcanti	-
+65	Cino da Pistoia	Cino da Pistoia	Testi_di_Cino_da_Pistoia	-
+66	Cecco Angiolieri	Cecco Angiolieri	Testi_di_Cecco_Angiolieri	-
+67	Iacopone da Todi	Iacopone da Todi	Testi_di_Jacopone_da_Todi	-
+68	Dante Alighieri	Dante Alighieri	Testi_di_Dante_Alighieri	-
+69	Marco Polo	Marco Polo	Marco Polo	-
+70	Francesco_Landini	Francesco_Landini	-	-
+71	Giovanni_Villani	Giovanni_Villani	Nuova_Cronica	-
+72	Antonio_Pucci_(poeta)	Antonio_Pucci_(poeta)	Testi_di_Antonio_Pucci	-
+73	Franco Sacchetti	Franco Sacchetti	Testi_di_Franco_Sacchetti	-
+74	Petrarca	Petrarca	Testi_di_Francesco_Petrarca	-
+75	Boccaccio	Boccaccio	Testi_di_Giovanni_Boccaccio	-
+76	Lorenzo_Valla	Lorenzo_Valla	--	-
+77	Burchiello	Burchiello	--	-
+78	Giusto_de'_Conti	Giusto_de'_Conti	--	-
+79	Leon_Battista_Alberti	Leon_Battista_Alberti	Testi_di_Leon_Battista_Alberti	-
+80	Leonardo_Bruni	Leonardo_Bruni	Testi_di_Leonardo_Bruni	-
+81	Leonardo_da_Vinci	Leonardo_da_Vinci	Testi_di_Leonardo_da_Vinci	-
+82	Giovanni_Pontano	Giovanni_Pontano	Testi_di_Giovanni_Pontano	-
+83	Masuccio_Salernitano	Masuccio_Salernitano	Testi_di_Masuccio_Salernitano	-
+84	Jacopo_Sannazaro	Jacopo_Sannazaro	Testi_di_Jacopo_Sannazaro	-
+85	Lorenzo de' Medici	Lorenzo de' Medici	Testi_di_Lorenzo_de'_Medici	-
+86	Luigi Pulci	Luigi Pulci	Testi_di_Luigi_Pulci	-
+87	Matteo Maria Boiardo	Matteo Maria Boiardo	Testi_di_Matteo_Maria_Boiardo	-
+88	Poliziano	Poliziano	Testi_di_Angelo_Poliziano	-
+89	Machiavelli	Machiavelli	Testi_di_Niccolò_Machiavelli	-
+90	Pietro Bembo	Pietro Bembo	Testi_di_Pietro_Bembo	-
+91	Baldassarre Castiglione	Baldassarre Castiglione	Testi_di_Baldassarre_Castiglione	-
+92	Gaspara_Stampa	Gaspara_Stampa	Testi_di_Gaspara_Stampa	-
+93	Giovanni_Della_Casa	Giovanni_Della_Casa	Testi_di_Giovanni_Della_Casa	-
+94	Francesco_Berni	Francesco_Berni	Testi_di_Francesco_Berni	-
+95	Agnolo_Firenzuola	Agnolo_Firenzuola	Testi_di_Agnolo_Firenzuola	-
+96	Teofilo_Folengo	Teofilo_Folengo	Testi_di_Teofilo_Folengo	-
+97	Bernardo_Dovizi	Bernardo_Dovizi	Testi_di_Bernardo_Dovizi_da_Bibbiena	-
+98	Pietro_Aretino	Pietro_Aretino	Testi_di_Pietro_Aretino	-
+99	Battista_Guarini	Battista_Guarini	Testi_di_Battista_Guarini	-
+100	Benvenuto_Cellini	Benvenuto_Cellini	Testi_di_Benvenuto_Cellini	-
+101	Michelangelo_Buonarroti	Michelangelo_Buonarroti	Testi_di_Michelangelo_Buonarroti	-
+102	Vittoria_Colonna	Vittoria_Colonna	Testi_di_Vittoria_Colonna	-
+103	Celio_Magno	Celio_Magno	Testi_de_Celio_Magno (su vec)	-
+104	Ruzante	Ruzante	Testi_de_Ruzante (su vec)	-
+105	Francesco Guicciardini	Francesco Guicciardini	Testi_di_Francesco_Guicciardini	-
+106	Ludovico Ariosto	Ludovico Ariosto	Testi_di_Ludovico_Ariosto	-
+107	Torquato Tasso	Torquato Tasso	Testi_di_Torquato_Tasso	-
+108	Alessandro_Tassoni	Alessandro_Tassoni	Testi_di_Alessandro_Tassoni	-
+109	Ciro_di_Pers	Ciro_di_Pers	Testi_di_Ciro_di_Pers	-
+110	Paolo_Sarpi	Paolo_Sarpi	Testi_di_Paolo_Sarpi	-
+111	Tommaso_Campanella	Tommaso_Campanella	Testi_di_Tommaso_Campanella	-
+112	Giacomo_Lubrano	Giacomo_Lubrano	Testi_di_Giacomo_Lubrano	-
+113	Giambattista Basile	Giambattista Basile	Testi_di_Giambattista_Basile	-
+114	Galileo Galilei	Galileo Galilei	Testi_di_Galileo_Galilei	-
+115	Giovan Battista Marino	Giovan Battista Marino	Testi_di_Giovan_Battista_Marino	-
+116	Pietro_Metastasio	Pietro_Metastasio	Testi_di_Pietro_Metastasio	-
+117	G.B. Vico	G.B. Vico	Testi_di_Giambattista_Vico	-
+118	Lorenzo_Da_Ponte	Lorenzo_Da_Ponte	Testi_di_Lorenzo_Da_Ponte	-
+119	Voltaire	Voltaire	Candido	-
+120	Denis_Diderot	Denis_Diderot	-	-
+121	Pietro_Verri	Pietro_Verri	Testi_di_Pietro_Verri	-
+122	Alessandro_Verri	Alessandro_Verri	Testi_di_Alessandro_Verri	-
+123	Cesare_Beccaria	Cesare_Beccaria	Testi_di_Cesare_Beccaria	-
+124	Carlo Goldoni	Biografia	Testi_di_Carlo_Goldoni	-
+125	Giuseppe Parini	Biografia	Testi_di_Giuseppe_Parini	-
+126	Vittorio Alfieri	Vittorio_Alfieri	Testi_di_Vittorio_Alfieri	-
+127	Vincenzo_Monti	Vincenzo_Monti	Testi_di_Vincenzo_Monti	-
+128	Carlo_Porta	Carlo_Porta	Testi_di_Carlo_Porta	-
+129	Ugo Foscolo	Ugo Foscolo	Testi_di_Ugo_Foscolo	-
+130	Pietro_Borsieri	Pietro_Borsieri	Testi_di_Pietro_Borsieri	-
+131	Pietro_Giordani	Pietro_Giordani	Testi_di_Pietro_Giordani	-
+132	Giovanni_Berchet	Giovanni_Berchet	Testi_di_Giovanni_Berchet	-
+133	Giuseppe_Gioachino_Belli	Giuseppe_Gioachino_Belli	Testi_di_Giuseppe_Gioachino_Belli	-
+134	Ippolito Nievo	Ippolito Nievo	Testi_di_Ippolito_Nievo	-
+135	Giuseppe Verdi	Giuseppe Verdi	Testi_musicati_da_Giuseppe_Verdi	-
+136	Alessandro Manzoni	Alessandro Manzoni	Testi_di_Alessandro_Manzoni	-
+137	Giacomo Leopardi	Giacomo Leopardi	Testi_di_Giacomo_Leopardi	-
+138	Emilio_Praga	Emilio_Praga	Testi_di_Emilio_Praga	-
+139	Arrigo_Boito	Arrigo_Boito	Testi_di_Arrigo_Boito	-
+140	Luigi_Capuana	Luigi_Capuana	Testi_di_Luigi_Capuana	-
+141	Federico_De_Roberto	Federico_De_Roberto	Testi_di_Federico_De_Roberto	-
+142	Emile_Zola	Emile_Zola	Testi_di_Emile_Zola	-
+143	Giovanni Verga	Giovanni Verga	Testi_di_Giovanni_Verga	-
+144	Igino_Ugo_Tarchetti	Igino_Ugo_Tarchetti	Testi_di_Iginio_Ugo_Tarchetti	-
+145	Antonio Fogazzaro	Antonio Fogazzaro	Testi_di_Antonio_Fogazzaro	-
+146	Edmondo_De_Amicis	Edmondo_De_Amicis	Testi_di_Edmondo_De_Amicis	-
+147	Carlo_Collodi	Carlo_Collodi	Testi_di_Carlo_Collodi	-
+148	Emilio_Salgari	Emilio_Salgari	Testi_di_Emilio_Salgari	-
+149	Salvatore_Di_Giacomo	Salvatore_Di_Giacomo	Testi_di_Salvatore_Di_Giacomo	-
+150	Francesco_De_Sanctis	Francesco_De_Sanctis	Testi_di_Francesco_De_Sanctis	-
+151	Giosuè Carducci	Giosuè Carducci	Testi_di_Giosuè_Carducci	-
+152	Giovanni Pascoli	Giovanni Pascoli	Testi_di_Giovanni_Pascoli	-
+153	Gabriele D'Annunzio	Gabriele D'Annunzio	Testi_di_Gabriele_D'Annunzio	-
+154	Guido_Gozzano	Guido_Gozzano	-	-
+155	Guido_Gozzano	Guido_Gozzano	Testi_di_Guido_Gozzano	-
+156	Sergio_Corazzini	Sergio_Corazzini	Testi_di_Sergio_Corazzini	-
+157	Marino_Moretti	Marino_Moretti	©	-
+158	Filippo_Tommaso_Marinetti	Filippo_Tommaso_Marinetti	Testi_di_Filippo_Tommaso_Marinetti	-
+159	Aldo_Palazzeschi	Aldo_Palazzeschi	Testi_di_Aldo_Palazzeschi	-
+160	Clemente_Rebora	Clemente_Rebora	©	-
+161	Dino_Campana	Dino_Campana	Testi_di_Dino_Campana	-
+162	Camillo_Sbarbaro	Camillo_Sbarbaro	©	-
+163	Luigi Pirandello	Luigi Pirandello	Testi_di_Luigi_Pirandello	-
+164	Giuseppe Ungaretti	Giuseppe Ungaretti	©	-
+165	Antonio Gramsci	Antonio Gramsci	Testi_di_Antonio_Gramsci	-
+166	Umberto Saba	Umberto Saba	©	-
+167	Salvatore Quasimodo	Biografia	©	-
+168	Alberto Moravia	Alberto_Moravia	©	-
+169	Giacomo_Noventa	Giacomo_Noventa	©	-
+170	Delio_Tessa	Delio_Tessa	©	-
+171	Carlo_Betocchi	Carlo_Betocchi	©	-
+172	Massimo_Bontempelli	Massimo_Bontempelli	©	-
+173	Italo Svevo	Italo Svevo	Testi_di_Italo_Svevo	
+174	Carlo Emilio Gadda	Carlo Emilio Gadda	©	
+175	Eugenio Montale	Eugenio Montale	©	
+176	Dino Buzzati	Dino Buzzati	©	
+177	Sandro_Penna	Sandro_Penna	©	
+178	Giorgio_Caproni	Giorgio_Caproni	©	
+179	Elio_Vittorini	Elio_Vittorini	©	
+180	Cesare Pavese	Cesare Pavese	©	
+181	Elsa Morante	Elsa Morante	©	
+182	Giuseppe_Tomasi_di_Lampedusa	Giuseppe_Tomasi_di_Lampedusa	©	
+183	Primo Levi	Primo Levi	©	
+184	Beppe Fenoglio	Beppe Fenoglio	©	
+185	PPP	PPP	©	
+186	Edoardo_Sanguineti	Edoardo_Sanguineti		
+187	Mario_Luzi	Mario_Luzi		
+188	Franco_Fortini	Franco_Fortini		
+189	Andrea_Zanzotto	Andrea_Zanzotto		
+190	Alberto_Arbasino	Alberto_Arbasino		
+191	Goffredo_Parise	Goffredo_Parise		
+192	Paolo_Volponi	Paolo_Volponi		
+193	Vittorio Sereni	Vittorio Sereni		
+194	Fabrizio_De_André	Fabrizio_De_André		
+195	Leonardo Sciascia	Biografia	©	
+196	Italo Calvino	Biografia		
+197	Alda_Merini	Alda_Merini		
+198	Patrizia_Valduga	Patrizia_Valduga		
+199	Valerio_Magrelli	Valerio_Magrelli		
+200	Franco_Scataglini	Franco_Scataglini		
+201	Milo_De_Angelis	Milo_De_Angelis		
+202	Antonella_Anedda	Antonella_Anedda		
+203	Umberto_Eco	Umberto_Eco		
+204	Pier_Vittorio_Tondelli	Pier_Vittorio_Tondelli		
+205	Antonio_Tabucchi	Antonio_Tabucchi		
+206	Aldo_Busi	Aldo_Busi		
+207	Claudio_Magris	Claudio_Magris		
+208	Giuseppe_Pontiggia	Giuseppe_Pontiggia		
+209	Silvia_Ballestra	Silvia_Ballestra		
