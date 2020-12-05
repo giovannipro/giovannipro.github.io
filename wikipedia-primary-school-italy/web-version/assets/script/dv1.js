@@ -40,6 +40,7 @@ const container = "#dv1";
 const font_size = 10;
 const filter_item = 120;
 const shiftx_article = 30;
+const wiki_link = "https://it.wikipedia.org/wiki/";
 
 let multiply = 1;
 let window_w = $(container).outerWidth();
@@ -56,7 +57,7 @@ let svg = d3.select(container)
 	.attr("id", "svg")
 
 function dv1(the_subject) {
-	d3.tsv("../assets/data/articles.tsv").then(loaded)
+	d3.tsv("assets/data/articles.tsv").then(loaded)
 
 	function loaded(data) {
 
@@ -235,7 +236,7 @@ function dv1(the_subject) {
 			.on("mouseout", handleMouseOut)
 			.append("a")
 			.attr("xlink:href", function(d,i){
-				return "https://it.wikipedia.org/wiki/" + d.article
+				return wiki_link + d.article
 			})
 			.attr("target","_blank")
 			
@@ -510,7 +511,7 @@ function dv1(the_subject) {
 			svg.select("#grid")
 				.transition()
 				.call(make_y_gridlines()
-	          		.tickSize(-width-margin.left-margin.right)
+	          		.tickSize(-width-margin.left-margin.right-60)
 	          	)
 
 	        let yaxis_label_box = d3.selectAll(".tick:nth-child(1)").select("text")
