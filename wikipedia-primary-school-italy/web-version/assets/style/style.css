@@ -54,11 +54,6 @@ table th {
 	padding-right: 20px;
 }
 
-#dv1 {
-	height: 75vh;
-	margin-bottom: 60px;
-}
-
 #dv_infobox {
 	display: flex;
 	justify-content: space-between;
@@ -84,7 +79,12 @@ footer ul li {
 	padding-bottom: 20px; 
 }
 
-/* ------- dataviz ------- */
+/* ------- dataviz n. 1 ------- */
+
+#dv1 {
+	height: 75vh;
+	margin-bottom: 60px;
+}
 
 #yAxis .domain, #yAxis .tick line, #grid .domain {
 	display: none;
@@ -109,3 +109,11 @@ footer ul li {
 	font-size: 12px;
 }
 
+/* ------- dataviz n. 2 ------- */
+
+
+#dv3 {
+	height: 75vh;
+	margin-bottom: 60px;
+	overflow-y: scroll;
+}
