@@ -70,8 +70,11 @@ function dv1(the_subject) {
 		let subject_group = d3.nest()
 			.key(d => d.subject)
 			.entries(data)
+		console.log(subject_group)
 	
+		// for (const [d,c] of Object.entries(subject_group)) {
 		for (const [d,c] of Object.entries(subject_group)) {
+
 			if (c.key == the_subject){
 				subject_articles = c.values;
 			}
