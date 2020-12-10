@@ -9,12 +9,12 @@ const font_size = 10;
 const filter_item = 120;
 const shiftx_author = 0;
 const circle_size = 4.5;
+const circle_opacity = 0.7;
 
 function escape_(item){
 	let output = item.replace("'","%27")
 	return output
 }
-
 
 let multiply = 1;
 let window_w = $(container).outerWidth();
@@ -27,8 +27,9 @@ let margin = {top: 20, left: 40, bottom: 20, right: 60},
 let svg = d3.select(container)
 	.append("svg")
 	.attr("width", width + (margin.right + margin.right))
-	.attr("height",height + (margin.top + margin.bottom))
+	.attr("height",1980)
 	.attr("id", "svg")
+	// .attr("height",height + (margin.top + margin.bottom))
 
 function dv3(the_literature) {
 	Promise.all([
@@ -88,7 +89,7 @@ function dv3(the_literature) {
 				return i + "_" + d.key
 			})
 			.attr("transform", function(d,i){
-				return "translate(" + 0 + "," + ((i)*15) + ")"
+				return "translate(" + 0 + "," + ((i)*13) + ")"
 			})
 
 		let author_box = author.append("g")
@@ -97,7 +98,7 @@ function dv3(the_literature) {
 			.attr("xlink:href", function(d,i){
 				// return ws_it_author_link + d.values[0].author_ws_it
 				if (d.values[0].source == "it") {
-					return ws_it_author_link + d.values[0].author_ws_it
+					return ws_it_author_link + d.values[0].author_ws_it.replace("Testi_di_","")
 				}
 				else {
 					return ws_la_author_link + d.values[0].author_ws_la
@@ -107,7 +108,7 @@ function dv3(the_literature) {
 
 		let author_name = author_box.append("text")
 			.text(function(d,i){
-				return (i+1) + "-" + d.key
+				return d.key.replace(/_/g," ") // (i+1) + "-" + 
 			})
 			.attr("font-size",font_size)
 
@@ -121,7 +122,7 @@ function dv3(the_literature) {
 			.enter()
 			.append("g")
 			.attr("transform",function(d,i){
-				return "translate(" + i*(circle_size*10) + ",0)" 
+				return "translate(" + i*(circle_size*15) + ",0)" 
 			})
 
 		let publication_ws_la = publication_box.append("a")	
@@ -143,7 +144,7 @@ function dv3(the_literature) {
 				}
 			})
 			.style("fill","blue")
-			// .style("opacity",0.5)
+			.style("opacity",circle_opacity)
 			.attr("class",function(d,i){
 				return d.pubb_w 
 			})
@@ -167,7 +168,7 @@ function dv3(the_literature) {
 				}
 			})
 			.style("fill","red")
-			// .style("opacity",0.5)
+			.style("opacity",circle_opacity)
 			.attr("class",function(d,i){
 				return d.pubbl_it 
 			})
@@ -190,8 +191,8 @@ function dv3(the_literature) {
 					return circle_size/4
 				}
 			})
-			.style("fill","green")
-			// .style("opacity",0.5)
+			.style("fill","#ffb600")
+			.style("opacity",circle_opacity)
 			.attr("class",function(d,i){
 				return d.pubbl_la
 			})
@@ -215,6 +216,15 @@ function dv3(the_literature) {
 		function update_literature(the_literature,the_sort){
 			console.log(the_literature,the_sort);
 
+			if (the_literature == "la"){
+				d3.select("svg")
+					.attr("height",850)
+			}
+			else{
+				d3.select("#svg")
+					.attr("height",1980)
+			}
+
 			d3.select("#authors").remove();
 
 			d3.selectAll("circle")
@@ -231,7 +241,7 @@ function dv3(the_literature) {
 					publications_authors.push(val)
 				}
 			})
-			console.log(publications_authors)
+			// console.log(publications_authors)
 
 			// nest by author
 			author_group = d3.nest()
@@ -248,11 +258,14 @@ function dv3(the_literature) {
 				.enter()
 				.append("g")
 				.attr("class","author")
+				.sort(function(a, b) {
+	  				return d3.ascending(a.key, b.key);
+				})
 				.attr("id", function(d,i){
 					return i + "_" + d.key
 				})
 				.attr("transform", function(d,i){
-					return "translate(" + 0 + "," + ((i)*15) + ")"
+					return "translate(" + 0 + "," + ((i)*13) + ")"
 				})
 
 			let author_box = author.append("g")
@@ -271,7 +284,7 @@ function dv3(the_literature) {
 
 			let author_name = author_box.append("text")
 				.text(function(d,i){
-					return (i+1) + "-" + d.key
+					return d.key.replace(/_/g," ") // (i+1) + "-" + 
 				})
 				.attr("font-size",font_size)
 
@@ -307,7 +320,7 @@ function dv3(the_literature) {
 					}
 				})
 				.style("fill","blue")
-				// .style("opacity",0.5)
+				.style("opacity",circle_opacity)
 				.attr("class",function(d,i){
 					return d.pubb_w 
 				})
@@ -331,7 +344,7 @@ function dv3(the_literature) {
 					}
 				})
 				.style("fill","red")
-				// .style("opacity",0.5)
+				.style("opacity",circle_opacity)
 				.attr("class",function(d,i){
 					return d.pubbl_it 
 				})
@@ -354,8 +367,8 @@ function dv3(the_literature) {
 						return circle_size/4
 					}
 				})
-				.style("fill","green")
-				// .style("opacity",0.5)
+				.style("fill","#ffb600")
+				.style("opacity",circle_opacity)
 				.attr("class",function(d,i){
 					return d.pubbl_la
 				})
@@ -363,8 +376,6 @@ function dv3(the_literature) {
 
 		function update_sort(literature,new_sort) {
 			console.log(literature,new_sort)
-
-			console.log()
 
 			if (new_sort == 3){
 				author.sort(function(a, b) {

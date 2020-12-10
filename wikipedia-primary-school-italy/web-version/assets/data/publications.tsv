@@ -112,7 +112,7 @@ id	author	pubb_w	pubbl_it	pubbl_la
 111	Iacopone da Todi	Donna_de_Paradiso	Donna_de_Paradiso	-
 112	Iacopone da Todi	O papa Bonifazio...	Laude/83	-
 113	Dante Alighieri	Vita_nuova	Vita_nuova	-
-114	Dante Alighieri	Beatrice_Portinari (approfondimento)		-
+114	Dante Alighieri	Beatrice_Portinari (approfondimento)	-	-
 115	Dante Alighieri	Convivio	Convivio	-
 116	Dante Alighieri	Le_Rime	Rime_(Dante)	-
 117	Dante Alighieri	Guido,_i'_vorrei_che_tu_e_Lapo_ed_io	Guido,_i'_vorrei_che_tu_e_Lapo_ed_io	-
@@ -121,10 +121,10 @@ id	author	pubb_w	pubbl_it	pubbl_la
 120	Dante Alighieri	Divina_Commedia	Opera:Divina_Commedia	-
 121	Dante Alighieri	Monarchia_(Dante)	Monarchia	-
 122	Dante Alighieri	Epistole_(Dante_Alighieri)	Epistole_(Dante)	-
-123	Dante Alighieri	Epistola_XIII_a_Cangrande_della_Scala		-
+123	Dante Alighieri	Epistola_XIII_a_Cangrande_della_Scala	-	-
 124	Dante Alighieri	Egloghe	Egloghe	-
-125	Dante Alighieri	Quaestio_de_aqua_et_terra		-
-126	Dante Alighieri	Influenza_culturale_di_Dante_Alighieri		-
+125	Dante Alighieri	Quaestio_de_aqua_et_terra	-	-
+126	Dante Alighieri	Influenza_culturale_di_Dante_Alighieri	-	-
 127	Marco Polo	Il_Milione	Milione	-
 128	Franco Sacchetti	Il_Trecentonovelle	Il_Trecentonovelle	-
 129	Petrarca	Laura_de_Noves	-	-
@@ -213,7 +213,7 @@ id	author	pubb_w	pubbl_it	pubbl_la
 212	Giacomo Leopardi	La_sera_del_dì_di_festa	La_sera_del_dì_di_festa	-
 213	Giacomo Leopardi	Ad Angelo Mai	Ad Angelo Mai	-
 214	Giacomo Leopardi	Ultimo_canto_di_Saffo	Ultimo_canto_di_Saffo	-
-215	Giacomo Leopardi	A_Silvia	A_Silvia	-
+215	Giacomo Leopardi	A_Silvia	Canti_(Leopardi_-_Donati)/XXI._A_Silvia	-
 216	Giacomo Leopardi	La_quiete_dopo_la_tempesta	La_quiete_dopo_la_tempesta	-
 217	Giacomo Leopardi	Il_sabato_del_villaggio	Il_sabato_del_villaggio	-
 218	Giacomo Leopardi	Canto_notturno_di_un_pastore_errante_dell'Asia	Canto_notturno_di_un_pastore_errante_dell'Asia	-
