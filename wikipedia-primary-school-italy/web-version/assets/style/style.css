@@ -27,7 +27,6 @@ table th {
 	vertical-align: top;
 }
 
-
 /* ------- layout ------- */
 
 .container {
@@ -35,8 +34,12 @@ table th {
 	margin: 20px auto 0;
 }
 
+header {
+	border-bottom: 1px solid #d6d5d5;
+}
+
 #header {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #d6d5d5;
 	width: 100%;
 }
 
@@ -68,7 +71,7 @@ table th {
 }
 
 footer {
-	border-top: 1px solid gray;
+	border-top: 1px solid #d6d5d5;
 }
 
 footer ul {
@@ -114,6 +117,10 @@ footer ul li {
 #dv2 {
 	height: 75vh;
 	margin-bottom: 60px;
+}
+
+#yAxis_features .domain, #yAxis_issues .domain, #yAxis_features .tick line, #yAxis_issues .tick line, #grid .domain {
+	display: none;
 }
 
 /* ------- dataviz n. 3 ------- */

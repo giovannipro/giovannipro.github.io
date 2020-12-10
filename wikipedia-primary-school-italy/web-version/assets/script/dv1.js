@@ -38,7 +38,7 @@ function format_date(date){
 
 const container = "#dv1";
 const font_size = 10;
-const filter_item = 120;
+const filter_item = 130; // 130;
 const shiftx_article = 30;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 

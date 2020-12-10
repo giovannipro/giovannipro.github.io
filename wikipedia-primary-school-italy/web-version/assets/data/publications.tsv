@@ -61,45 +61,45 @@ id	author	pubb_w	pubbl_it	pubbl_la
 60	Seneca	Medea_(Seneca)	Medea	Medea
 61	Seneca	Naturales quaestiones (deest)	-	Quaestiones_Naturales
 62	Petronio	Satyricon	Satire_di_Tito_Petronio_Arbitro	Satyricon
-63	Patercolo	Historiae_romanae	deest	Historiae_Romanae
-64	Valerio Massimo	Memorabilia	deest	Factorum_et_dictorum_memorabilium_libri_IX
-65	Plinio il Vecchio	Naturalis_historia	deest	Naturalis_Historia
+63	Patercolo	Historiae_romanae	-	Historiae_Romanae
+64	Valerio Massimo	Memorabilia	-	Factorum_et_dictorum_memorabilium_libri_IX
+65	Plinio il Vecchio	Naturalis_historia	-	Naturalis_Historia
 66	Fedro	Fabulae_(Fedro)	Favole_(Fedro)	Fabulae_(Phaedrus)
 67	Lucano	Pharsalia	Farsaglia	Pharsalia
 68	Persio	Satire (deest)	Satire_(Persio)	Saturae_(Persius,_Monti)
-69	Silio Italico	Punica	deest	Punica
+69	Silio Italico	Punica	-	Punica
 70	Stazio	Tebaide	La_Tebaide	Thebais
 71	Flacco	Argonautica	L'Argonautica	Argonautica_(Valerius_Flaccus)
-72	Quintiliano	Institutio_oratoria	deest	De_Institutione_Oratoria
-73	Marziale	Epigrammi	deest	Epigrammaton_libri_XII
+72	Quintiliano	Institutio_oratoria	-	De_Institutione_Oratoria
+73	Marziale	Epigrammi	-	Epigrammaton_libri_XII
 74	Giovenale	Satire_(Giovenale)	Satire_(Giovenale)	Saturae_(Iuvenalis,_Bucheler)
-75	Plinio il Giovane	Lettere_di_Plinio	deest	Epistularum_Libri_Decem_(Gaius_Plinius_Caecilius_Secundus)
-76	Plinio il Giovane	Panegirico_di_Traiano	deest	Panegyricus_(Plinius)
+75	Plinio il Giovane	Lettere_di_Plinio	-	Epistularum_Libri_Decem_(Gaius_Plinius_Caecilius_Secundus)
+76	Plinio il Giovane	Panegirico_di_Traiano	-	Panegyricus_(Plinius)
 77	Tacito	Historiae_(Tacito)	Storie_(Tacito)	Historiae_(Tacitus)
 78	Tacito	Annales_(Tacito)	Annali_(Tacito)	Ab_excessu_divi_Augusti_(Annales)
-79	Tacito	Agricola	deest	De_vita_et_moribus_Iulii_Agricolae
-80	Tacito	Germania	deest	De_origine_et_situ_Germanorum_(Germania)
-81	Svetonio	Vite_dei_Cesari	deest	De_vita_Caesarum_libri_VIII
-82	Svetonio	De_viris_illustribus_(Svetonio)	deest	De_viris_illustribus_(Suetonius)
+79	Tacito	Agricola	-	De_vita_et_moribus_Iulii_Agricolae
+80	Tacito	Germania	-	De_origine_et_situ_Germanorum_(Germania)
+81	Svetonio	Vite_dei_Cesari	-	De_vita_Caesarum_libri_VIII
+82	Svetonio	De_viris_illustribus_(Svetonio)	-	De_viris_illustribus_(Suetonius)
 83	Svetonio	Le_metamorfosi_(Apuleio)	L'asino_d'oro	Metamorphoses_(Apuleius)
-84	Svetonio	Amore_e_Psiche (approfondimento)	/	Psyche_et_Cupido
-85	Svetonio	Apologia_(Apuleio)	deest	Apologia_sive_pro_se_de_magia
+84	Svetonio	Amore_e_Psiche (approfondimento)	-	Psyche_et_Cupido
+85	Svetonio	Apologia_(Apuleio)	-	Apologia_sive_pro_se_de_magia
 86	Apuleio	Le_metamorfosi_(Apuleio)	L'asino_d'oro	Metamorphoses_(Apuleius)
-87	Apuleio	Amore_e_Psiche (approfondimento)	/	Psyche_et_Cupido
-88	Apuleio	Apologia_(Apuleio)	deest	Apologia_sive_pro_se_de_magia
-89	Gellio	Noctes_Atticae	deest	Noctes_Atticae
-90	Ammiano Marcellino	Storie_(Ammiano_Marcellino)	deest	Res_Gestae_Libri_XXXI
+87	Apuleio	Amore_e_Psiche (approfondimento)	-	Psyche_et_Cupido
+88	Apuleio	Apologia_(Apuleio)	-	Apologia_sive_pro_se_de_magia
+89	Gellio	Noctes_Atticae	-	Noctes_Atticae
+90	Ammiano Marcellino	Storie_(Ammiano_Marcellino)	-	Res_Gestae_Libri_XXXI
 91	Ausonio	Mosella_(poema)	-	Mosella
-92	Simmaco	Epistolario (deest)	deest	Libri_Decem_Epistolarum
-93	Claudiano	De raptu Proserpinae (deest)	deest	De_raptu_Proserpinae
-94	Namaziano	De_reditu_suo	deest	De_reditu_suo
-95	Namaziano	Querolus_sive_Aulularia	deest	deest
-96	Sidonio Apollinare	Carmina_(Sidonio_Apollinare)	deest	Carmina_(Sidonius_Apollinaris)
+92	Simmaco	Epistolario (deest)	-	Libri_Decem_Epistolarum
+93	Claudiano	De raptu Proserpinae (deest)	-	De_raptu_Proserpinae
+94	Namaziano	De_reditu_suo	-	De_reditu_suo
+95	Namaziano	Querolus_sive_Aulularia	-	-
+96	Sidonio Apollinare	Carmina_(Sidonio_Apollinare)	-	Carmina_(Sidonius_Apollinaris)
 97	Agostino	Pensiero_di_Agostino_d'Ippona	-	-
-98	Agostino	Confessioni	deest	Confessiones
-99	Agostino	La_città_di_Dio	deest	De_civitate_Dei
+98	Agostino	Confessioni	-	Confessiones
+99	Agostino	La_città_di_Dio	-	De_civitate_Dei
 100	Boezio	De_consolatione_philosophiae	Della_consolazione_della_filosofia	De_philosophiae_consolatione
-101	Cassiodoro	Variae (deest)	deest	Variarum_libri_XII
+101	Cassiodoro	Variae (deest)	-	Variarum_libri_XII
 102	Guittone d'Arezzo	Tutt'or_ch'eo_dirò_gioi,_gioiva_cosa	Tutt'or_ch'eo_dirò_gioi,_gioiva_cosa	-
 103	Guido Guinizelli	Al_cor_gentil_rempaira_sempre_amore	Al_cor_gentil_rempaira_sempre_amore	-
 104	Guido Guinizelli	Io_voglio_del_ver_la_mia_donna_laudare	Io_voglio_del_ver_la_mia_donna_laudare	-
@@ -124,344 +124,333 @@ id	author	pubb_w	pubbl_it	pubbl_la
 123	Dante Alighieri	Epistola_XIII_a_Cangrande_della_Scala	-	-
 124	Dante Alighieri	Egloghe	Egloghe	-
 125	Dante Alighieri	Quaestio_de_aqua_et_terra	-	-
-126	Dante Alighieri	Influenza_culturale_di_Dante_Alighieri	-	-
-127	Marco Polo	Il_Milione	Milione	-
-128	Franco Sacchetti	Il_Trecentonovelle	Il_Trecentonovelle	-
-129	Petrarca	Laura_de_Noves	-	-
-130	Petrarca	Epistole	Epistolae_familiares	-
-131	Petrarca	Secretum	Il_mio_segreto	-
-132	Petrarca	Canzoniere	Canzoniere	-
-133	Petrarca	Voi ch'ascoltate in rime sparse il suono	Voi ch'ascoltate in rime sparse il suono	-
-134	Petrarca	Chiare,_fresche_et_dolci_acque	Chiare,_fresche_et_dolci_acque	-
-135	Petrarca	Erano_i_capei_d'oro_a_l'aura_sparsi	Erano_i_capei_d'oro_a_l'aura_sparsi	-
-136	Petrarca	Italia_mia,_benché_'l_parlar_sia_indarno	Italia_mia,_benché_'l_parlar_sia_indarno	-
-137	Petrarca	Solo_et_pensoso_i_più_deserti_campi	Solo_et_pensoso_i_più_deserti_campi	-
-138	Petrarca	I_Trionfi	Trionfi	-
-139	Boccaccio	Opere_della_giovinezza_di_Giovanni_Boccaccio		-
-140	Boccaccio	Filostrato	Il Filostrato	-
-141	Boccaccio	Comedia_delle_ninfe_fiorentine	Canto_di_Ameto	-
-142	Boccaccio	Decameron	Decameron	-
-143	Boccaccio	Struttura_del_Decameron		-
-144	Boccaccio	Il_Corbaccio	Il_Corbaccio	-
-145	Lorenzo de' Medici	Il_trionfo_di_Bacco_e_Arianna	Canzona di Bacco	-
-146	Luigi Pulci	Morgante_(poema)	Morgante_maggiore	-
-147	Matteo Maria Boiardo	Amorum_libri_tres	--	-
-148	Matteo Maria Boiardo	Orlando_innamorato	Orlando_innamorato	-
-149	Poliziano	Rime	Ben_venga_maggio	-
-150	Machiavelli	Machiavellismo	-	-
-151	Machiavelli	Il_principe	Il_Principe	-
-152	Machiavelli	Cesare_Borgia (approfondimento al Principe)		-
-153	Machiavelli	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	-
-154	Machiavelli	Epistolario	Lettere_(Machiavelli)	-
-155	Machiavelli	La Mandragola	La_mandragola	-
-156	Pietro Bembo	Prose_della_volgar_lingua	Prose_della_volgar_lingua	-
-157	Baldassarre Castiglione	Il_Cortegiano	Il_libro_del_Cortegiano	-
-158	Francesco Guicciardini	Storia_d'Italia	Storia_d'Italia	-
-159	Francesco Guicciardini	Storie_fiorentine	Storie_fiorentine_dal_1378_al_1509	-
-160	Francesco Guicciardini	Ricordi_politici_e_civili	Ricordi	-
-161	Francesco Guicciardini	Considerazioni_sui_Discorsi_del_Machiavelli	Considerazioni_intorno_ai_Discorsi_del_Machiavelli_sopra_la_prima_Deca_di_Tito_Livio	-
-162	Ludovico Ariosto	Satire	Satire_(Ariosto)	-
-163	Ludovico Ariosto	Orlando_furioso	Orlando_furioso_(ed. 1928)	-
-164	Ludovico Ariosto	Proemio dell'Orlando	Canto_1	-
-165	Ludovico Ariosto	La follia di Orlando	Canto_23	-
-166	Ludovico Ariosto	Ritrovamento del senno di Orlando	Canto_34	-
-167	Ludovico Ariosto	Duello di Rodomonte e Ruggero	Canto_46	-
-168	Torquato Tasso	Rime	-	-
-169	Torquato Tasso	Gerusalemme_liberata	Gerusalemme_liberata	-
-170	Torquato Tasso	Proemio della Gerusalemme	Canto_primo	-
-171	Torquato Tasso	Olindo e Sofronia	Canto_secondo	-
-172	Torquato Tasso	Tancredi vs. Clorinda	Canto_dodicesimo	-
-173	Torquato Tasso	Aminta	Aminta	-
-174	Giambattista Basile	Lo_cunto_de_li_cunti	Lo_cunto_de_li_cunti	-
-175	Galileo Galilei	Sidereus_Nuncius	Sidereus_nuncius (la)	-
-176	Galileo Galilei	Il_Saggiatore	Il_Saggiatore	-
-177	Galileo Galilei	Dialogo_sopra_i_due_massimi_sistemi_del_mondo	Dialogo_sopra_i_due_massimi_sistemi_del_mondo	-
-178	Giovan Battista Marino	L'Adone	Adone	-
-179	Carlo Goldoni	La_locandiera	La_locandiera	-
-180	Carlo Goldoni	Il_servitore_di_due_padroni	Il_servitore_di_due_padroni	-
-181	Giuseppe Parini	Il_giorno	Il_Giorno	-
-182	Giuseppe Parini	Odi	Odi	-
-183	Vittorio Alfieri	Saul	Saul	-
-184	Vincenzo_Monti	Vincenzo_Monti	Traduzioni_di_Vincenzo_Monti	-
-185	Ugo Foscolo	Opere_di_Ugo_Foscolo	vedi sopra	-
-186	Ugo Foscolo	Ultime_lettere_di_Jacopo_Ortis	Ultime_lettere_di_Jacopo_Ortis	-
-187	Ugo Foscolo	A_Zacinto	A_Zacinto	-
-188	Ugo Foscolo	Alla_sera	Alla_sera	-
-189	Ugo Foscolo	In_morte_del_fratello_Giovanni	In_morte_del_fratello_Giovanni	-
-190	Ugo Foscolo	Dei_sepolcri	Dei_Sepolcri	-
-191	Ugo Foscolo	Le_Grazie_(Foscolo)	Le_Grazie	-
-192	Ippolito Nievo	Le_confessioni_d'un_italiano	Le_confessioni_di_un_ottuagenario	-
-193	Giuseppe Verdi	La_traviata	La_Traviata	-
-194	Giuseppe Verdi	Va,_pensiero	Va,_pensiero	-
-195	Alessandro Manzoni	Pensiero_e_poetica		-
-196	Alessandro Manzoni	Opere_di_Alessandro_Manzoni		-
-197	Alessandro Manzoni	Inni_sacri	Inni_sacri	-
-198	Alessandro Manzoni	Il_cinque_maggio	Il_cinque_maggio	-
-199	Alessandro Manzoni	Adelchi	Adelchi	-
-200	Alessandro Manzoni	Il_Conte_di_Carmagnola	Il_Conte_di_Carmagnola	-
-201	Alessandro Manzoni	Lettera al signor Chauvet	Testo francese	-
-202	Alessandro Manzoni	Sul_romanticismo	Lettera_sul_romanticismo_a_d'Azeglio	-
-203	Alessandro Manzoni	I_promessi_sposi	I_promessi_sposi	-
-204	Giacomo Leopardi	Pensiero_e_poetica	-	-
-205	Giacomo Leopardi	Opere_di_Giacomo_Leopardi		-
-206	Giacomo Leopardi	Discorso di un italiano intorno alla poesia romantica	Discorso_di_un_italiano_intorno_alla_poesia_romantica	-
-207	Giacomo Leopardi	Zibaldone	Zibaldone	-
-208	Giacomo Leopardi	Canti	Canti	-
-209	Giacomo Leopardi	Il_passero_solitario	Il_passero_solitario	-
-210	Giacomo Leopardi	L'infinito	L'infinito	-
-211	Giacomo Leopardi	Alla_luna	Alla_luna	-
-212	Giacomo Leopardi	La_sera_del_dì_di_festa	La_sera_del_dì_di_festa	-
-213	Giacomo Leopardi	Ad Angelo Mai	Ad Angelo Mai	-
-214	Giacomo Leopardi	Ultimo_canto_di_Saffo	Ultimo_canto_di_Saffo	-
-215	Giacomo Leopardi	A_Silvia	Canti_(Leopardi_-_Donati)/XXI._A_Silvia	-
-216	Giacomo Leopardi	La_quiete_dopo_la_tempesta	La_quiete_dopo_la_tempesta	-
-217	Giacomo Leopardi	Il_sabato_del_villaggio	Il_sabato_del_villaggio	-
-218	Giacomo Leopardi	Canto_notturno_di_un_pastore_errante_dell'Asia	Canto_notturno_di_un_pastore_errante_dell'Asia	-
-219	Giacomo Leopardi	A_se_stesso	A_se_stesso	-
-220	Giacomo Leopardi	La_ginestra	La_ginestra	-
-221	Giacomo Leopardi	Operette_morali	Operette_morali	-
-222	Giacomo Leopardi	Analisi_delle_Operette_morali		-
-223	Giacomo Leopardi	Appendice_alle_Operette_morali		-
-224	Giacomo Leopardi	Paralipomeni_della_Batracomiomachia	Paralipomeni_della_Batracomiomachia	-
-225	Giovanni Verga	Tecnica_narrativa_di_Giovanni_Verga		-
-226	Giovanni Verga	Opere_e_poetica_di_Giovanni_Verga		-
-227	Giovanni Verga	Vita_dei_campi (Novelle)	Vita_dei_campi	-
-228	Giovanni Verga	Rosso_Malpelo	Rosso_Malpelo	-
-229	Giovanni Verga	Novelle rusticane	Novelle_rusticane	-
-230	Giovanni Verga	La_roba	La_roba	-
-231	Giovanni Verga	Ciclo_dei_Vinti	-	-
-232	Giovanni Verga	I_Malavoglia	I_Malavoglia	-
-233	Giovanni Verga	Mastro-don_Gesualdo	Mastro-don_Gesualdo	-
-234	Antonio Fogazzaro	Piccolo_mondo_antico	Piccolo_mondo_antico	-
-235	Antonio Fogazzaro	Piccolo_mondo_moderno	Piccolo_mondo_moderno	-
-236	Edmondo_De_Amicis	Cuore	Cuore_(1889)	-
-237	Carlo_Collodi	Pinocchio	Le_avventure_di_Pinocchio	-
-238	Giosuè Carducci	Odi_barbare	Odi_barbare	-
-239	Giosuè Carducci	Rime_nuove	Rime_nuove	-
-240	Giosuè Carducci	Pianto_antico	Pianto_antico	-
-241	Giovanni Pascoli	Myricae	Myricae	-
-242	Giovanni Pascoli	Il_fanciullino	Il_fanciullino	-
-243	Giovanni Pascoli	Canti_di_Castelvecchio	Canti_di_Castelvecchio	-
-244	Giovanni Pascoli	La_cavalla_storna	La_cavalla_storna	-
-245	Giovanni Pascoli	Primi_poemetti	Primi_poemetti	-
-246	Giovanni Pascoli	Pascoli latinista	Opera_quae_Iohannes_Pascoli_scripsit	-
-247	Giovanni Pascoli	Dannunzianesimo	-	-
-248	Giovanni Pascoli	Poeta_vate	-	-
-249	Giovanni Pascoli	Motti_dannunziani	-	-
-250	Giovanni Pascoli	Opere_di_D'Annunzio	-	-
-251	Giovanni Pascoli	Alcyone	Alcyone	-
-252	Giovanni Pascoli	La_pioggia_nel_pineto	La_pioggia_nel_pineto	-
-253	Giovanni Pascoli	Il_piacere	Il_piacere	-
-254	Filippo_Tommaso_Marinetti	Manifesto_del_Futurismo	Manifesto_del_futurismo	-
-255	Filippo_Tommaso_Marinetti	Zang_Tumb_Tumb	boh, non c'è	-
-256	Luigi Pirandello	Il_fu_Mattia_Pascal	Il_fu_Mattia_Pascal	-
-257	Luigi Pirandello	Uno,_nessuno_e_centomila	Uno,_nessuno_e_centomila	-
-258	Luigi Pirandello	Novelle_per_un_anno	-	-
-259	Luigi Pirandello	Sei_personaggi_in_cerca_d'autore	Sei_personaggi_in_cerca_d%27autore	-
-260	Luigi Pirandello	Enrico_IV	Enrico_IV	-
-261	Giuseppe Ungaretti	L'allegria		-
-262	Giuseppe Ungaretti	San_Martino_del_Carso		-
-263	Giuseppe Ungaretti	Sentimento_del_tempo		-
-264	Antonio Gramsci	Quaderni_del_carcere	Quaderni_del_carcere	-
-265	Umberto Saba	Canzoniere	-	-
-266	Umberto Saba	Ernesto	-	-
-267	Salvatore Quasimodo	Ermetismo	-	-
-268	Salvatore Quasimodo	Oboe_sommerso	-	-
-269	Salvatore Quasimodo	Ed_è_subito_sera	-	-
-270	Salvatore Quasimodo	Uomo_del_mio_tempo	-	-
-271	Salvatore Quasimodo	Alle_fronde_dei_salici	-	-
-272	Alberto Moravia	Gli_indifferenti	-	-
-273	Alberto Moravia	Agostino	-	-
-274	Italo Svevo	Una_vita	-	-
-275	Italo Svevo	Senilità	-	-
-276	Italo Svevo	La_coscienza_di_Zeno	-	-
-277	Carlo Emilio Gadda	Quer_pasticciaccio_brutto_de_via_Merulana	-	-
-278	Carlo Emilio Gadda	La_cognizione_del_dolore	-	-
-279	Eugenio Montale	Ossi_di_seppia	-	-
-280	Eugenio Montale	I_limoni	-	-
-281	Eugenio Montale	Non_chiederci_la_parola_che_squadri_da_ogni_lato	-	-
-282	Eugenio Montale	Meriggiare_pallido_e_assorto	-	-
-283	Eugenio Montale	Spesso_il_male_di_vivere_ho_incontrato	-	-
-284	Eugenio Montale	Cigola_la_carrucola_del_pozzo	-	-
-285	Eugenio Montale	Le_occasioni	-	-
-286	Eugenio Montale	La_bufera_e_altro	-	-
-287	Eugenio Montale	Satura_(Montale)	-	-
-288	Dino Buzzati	Sessanta_racconti	-	-
-289	Dino Buzzati	Il_deserto_dei_Tartari	-	-
-290	Cesare Pavese	La_casa_in_collina	-	-
-291	Cesare Pavese	La_luna_e_i_falò	-	-
-292	Cesare Pavese	Lavorare_stanca	-	-
-293	Cesare Pavese	Verrà_la_morte_e_avrà_i_tuoi_occhi	-	-
-294	Elsa Morante	Menzogna_e_sortilegio	-	-
-295	Elsa Morante	L'isola_di_Arturo	-	-
-296	Elsa Morante	La_storia_(romanzo)	-	-
-297	Giuseppe_Tomasi_di_Lampedusa	Il_Gattopardo	-	-
-298	Primo Levi	Se_questo_è un_uomo	-	-
-299	Primo Levi	La_tregua	-	-
-300	Primo Levi	I_sommersi_e_i_salvati	-	-
-301	Primo Levi	Il_sistema_periodico	-	-
-302	Beppe Fenoglio	I_ventitre_giorni_della_città_di_Alba	-	-
-303	Beppe Fenoglio	La_malora	-	-
-304	Beppe Fenoglio	Una_questione_privata	-	-
-305	Beppe Fenoglio	Il_partigiano_Johnny	-	-
-306	PPP	La_meglio_gioventù	-	-
-307	PPP	Le_ceneri_di_Gramsci	-	-
-308	PPP	Ragazzi_di_vita	-	-
-309	PPP	Petrolio_(romanzo)	-	-
-310	PPP	Mamma_Roma	-	-
-311	Leonardo Sciascia	Il_giorno_della_civetta	-	-
-312	Leonardo Sciascia	A_ciascuno_il_suo	-	-
-313	Italo Calvino	Il_sentiero_dei_nidi_di_ragno	-	-
-314	Italo Calvino	Il_visconte_dimezzato	-	-
-315	Italo Calvino	Il_barone_rampante	-	-
-316	Italo Calvino	Il_cavaliere_inesistente	-	-
-317	Italo Calvino	Le_città_invisibili	-	-
-318	Italo Calvino	Se_una_notte_d'inverno_un_viaggiatore	-	-
-319	Agnolo_Firenzuola	-	-	-
-320	Alberto_Arbasino	-	-	-
-321	Alda_Merini	-	-	-
-322	Aldo_Busi	-	-	-
-323	Aldo_Palazzeschi	-	-	-
-324	Alessandro_Verri	-	-	-
-325	Ammiano Marcellino	-	-	-
-326	Andrea_Zanzotto	-	-	-
-327	Antonella_Anedda	-	-	-
-328	Antonio_Pucci_(poeta)	-	-	-
-329	Antonio_Tabucchi	-	-	-
-331	Arrigo_Boito	-	-	-
-332	Aulo_Cornelio_Celso	-	-	-
-333	Ausonio	-	-	-
-334	Battista_Guarini	-	-	-
-335	Benvenuto_Cellini	-	-	-
-336	Bernardo_Dovizi	-	-	-
-337	Boezio	-	-	-
-338	Burchiello	-	-	-
-339	Camillo_Sbarbaro	-	-	-
-340	Carlo Goldoni	-	-	-
-341	Carlo_Betocchi	-	-	-
-342	Carlo_Porta	-	-	-
-343	Cassiodoro	-	-	-
-345	Cecco Angiolieri	-	-	-
-346	Cecilio_Stazio	-	-	-
-347	Celio_Magno	-	-	-
-349	Cesare_Beccaria	-	-	-
-351	Ciro_di_Pers	-	-	-
-352	Claudiano	-	-	-
-353	Claudio_Magris	-	-	-
-354	Clemente_Rebora	-	-	-
-355	Cornelio Nepote	-	-	-
-356	Delio_Tessa	-	-	-
-357	Denis_Diderot	-	-	-
-358	Dino_Campana	-	-	-
-359	Edoardo_Sanguineti	-	-	-
-360	Elio_Vittorini	-	-	-
-361	Emile_Zola	-	-	-
-362	Emilio_Praga	-	-	-
-363	Emilio_Salgari	-	-	-
-364	Fabrizio_De_André	-	-	-
-365	Federico_De_Roberto	-	-	-
-366	Fedro	-	-	-
-367	Flacco	-	-	-
-368	Francesco_Berni	-	-	-
-369	Francesco_De_Sanctis	-	-	-
-370	Francesco_Landini	-	-	-
-371	Franco Sacchetti	-	-	-
-372	Franco_Fortini	-	-	-
-373	Franco_Scataglini	-	-	-
-374	G.B. Vico	-	-	-
-375	Gabriele D'Annunzio	-	-	-
-376	Gaio Valerio Catullo	-	-	-
-377	Gaio_Cornelio_Gallo	-	-	-
-378	Gaio_Lucilio	-	-	-
-379	Galileo Galilei	-	-	-
-380	Gaspara_Stampa	-	-	-
-382	Giacomo_Lubrano	-	-	-
-383	Giacomo_Noventa	-	-	-
-384	Giambattista Basile	-	-	-
-385	Giorgio_Caproni	-	-	-
-386	Giovan Battista Marino	-	-	-
-387	Giovanni_Berchet	-	-	-
-388	Giovanni_Della_Casa	-	-	-
-389	Giovanni_Pontano	-	-	-
-390	Giovanni_Villani	-	-	-
-391	Giovenale	-	-	-
-392	Giuseppe Parini	-	-	-
-393	Giuseppe Verdi	-	-	-
-394	Giuseppe_Gioachino_Belli	-	-	-
-395	Giuseppe_Pontiggia	-	-	-
-396	Giusto_de'_Conti	-	-	-
-397	Gneo_Nevio	-	-	-
-398	Goffredo_Parise	-	-	-
-400	Guido Guinizelli	-	-	-
-401	Guido_Gozzano	-	-	-
-402	Guittone d'Arezzo	-	-	-
-403	Iacopone da Todi	-	-	-
-404	Igino_Ugo_Tarchetti	-	-	-
-405	Ippolito Nievo	-	-	-
-406	Jacopo_Sannazaro	-	-	-
-407	Leon_Battista_Alberti	-	-	-
-408	Leonardo_Bruni	-	-	-
-409	Leonardo_da_Vinci	-	-	-
-411	Livio_Andronico	-	-	-
-412	Lorenzo de' Medici	-	-	-
-413	Lorenzo_Da_Ponte	-	-	-
-414	Lorenzo_Valla	-	-	-
-415	Lucano	-	-	-
-416	Lucio_Accio	-	-	-
-417	Lucio_Giunio_Moderato_Columella	-	-	-
-419	Luigi Pulci	-	-	-
-420	Luigi_Capuana	-	-	-
-421	Marco Polo	-	-	-
-422	Marco_Gavio_Apicio	-	-	-
-423	Marco_Pacuvio	-	-	-
-425	Marino_Moretti	-	-	-
-426	Mario_Luzi	-	-	-
-427	Marziale	-	-	-
-428	Massimo_Bontempelli	-	-	-
-429	Masuccio_Salernitano	-	-	-
-430	Matteo Maria Boiardo	-	-	-
-431	Michelangelo_Buonarroti	-	-	-
-432	Milo_De_Angelis	-	-	-
-433	Namaziano	-	-	-
-434	Paolo_Sarpi	-	-	-
-435	Paolo_Volponi	-	-	-
-436	Patercolo	-	-	-
-437	Patrizia_Valduga	-	-	-
-438	Persio	-	-	-
-440	Pier_Vittorio_Tondelli	-	-	-
-441	Pietro Bembo	-	-	-
-442	Pietro_Aretino	-	-	-
-443	Pietro_Borsieri	-	-	-
-444	Pietro_Giordani	-	-	-
-445	Pietro_Metastasio	-	-	-
-446	Pietro_Verri	-	-	-
-448	Plinio il Giovane	-	-	-
-449	Plinio il Vecchio	-	-	-
-450	Pomponio_Mela	-	-	-
-452	Quintiliano	-	-	-
-453	Quinto_Curzio_Rufo	-	-	-
-454	Quinto_Ennio	-	-	-
-455	Quinto_Lutazio_Catulo	-	-	-
-456	Ruzante	-	-	-
-458	Salvatore_Di_Giacomo	-	-	-
-459	Sandro_Penna	-	-	-
-460	Sant'Ambrogio	-	-	-
-461	Sergio_Corazzini	-	-	-
-462	Sesto_Properzio	-	-	-
-463	Sidonio Apollinare	-	-	-
-464	Silio Italico	-	-	-
-465	Silvia_Ballestra	-	-	-
-466	Simmaco	-	-	-
-467	Stazio	-	-	-
-469	Teofilo_Folengo	-	-	-
-470	Tertulliano	-	-	-
-471	Tito_Pomponio_Attico	-	-	-
-472	Tommaso_Campanella	-	-	-
-474	Umberto_Eco	-	-	-
-475	Valerio Massimo	-	-	-
-476	Valerio_Magrelli	-	-	-
-477	Vincenzo_Monti	-	-	-
-478	Vittoria_Colonna	-	-	-
-479	Vittorio Alfieri	-	-	-
-480	Vittorio Sereni	-	-	-
-481	Voltaire	-	-	-
+126	Marco Polo	Il_Milione	Milione	-
+127	Franco Sacchetti	Il_Trecentonovelle	Il_Trecentonovelle	-
+128	Petrarca	Laura_de_Noves	-	-
+129	Petrarca	Epistole	Epistolae_familiares	-
+130	Petrarca	Secretum	Il_mio_segreto	-
+131	Petrarca	Canzoniere	Canzoniere	-
+132	Petrarca	Voi ch'ascoltate in rime sparse il suono	Voi ch'ascoltate in rime sparse il suono	-
+133	Petrarca	Chiare,_fresche_et_dolci_acque	Chiare,_fresche_et_dolci_acque	-
+134	Petrarca	Erano_i_capei_d'oro_a_l'aura_sparsi	Erano_i_capei_d'oro_a_l'aura_sparsi	-
+135	Petrarca	Italia_mia,_benché_'l_parlar_sia_indarno	Italia_mia,_benché_'l_parlar_sia_indarno	-
+136	Petrarca	Solo_et_pensoso_i_più_deserti_campi	Solo_et_pensoso_i_più_deserti_campi	-
+137	Petrarca	I_Trionfi	Trionfi	-
+138	Boccaccio	Opere_della_giovinezza_di_Giovanni_Boccaccio		-
+139	Boccaccio	Filostrato	Il Filostrato	-
+140	Boccaccio	Comedia_delle_ninfe_fiorentine	Canto_di_Ameto	-
+141	Boccaccio	Decameron	Decameron	-
+142	Boccaccio	Struttura_del_Decameron		-
+143	Boccaccio	Il_Corbaccio	Il_Corbaccio	-
+144	Lorenzo de' Medici	Il_trionfo_di_Bacco_e_Arianna	Canzona di Bacco	-
+145	Luigi Pulci	Morgante_(poema)	Morgante_maggiore	-
+146	Matteo Maria Boiardo	Amorum_libri_tres	--	-
+147	Matteo Maria Boiardo	Orlando_innamorato	Orlando_innamorato	-
+148	Poliziano	Rime	Ben_venga_maggio	-
+149	Machiavelli	Machiavellismo	-	-
+150	Machiavelli	Il_principe	Il_Principe	-
+151	Machiavelli	Cesare_Borgia (approfondimento al Principe)		-
+152	Machiavelli	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	-
+153	Machiavelli	Epistolario	Lettere_(Machiavelli)	-
+154	Machiavelli	La Mandragola	La_mandragola	-
+155	Pietro Bembo	Prose_della_volgar_lingua	Prose_della_volgar_lingua	-
+156	Baldassarre Castiglione	Il_Cortegiano	Il_libro_del_Cortegiano	-
+157	Francesco Guicciardini	Storia_d'Italia	Storia_d'Italia	-
+158	Francesco Guicciardini	Storie_fiorentine	Storie_fiorentine_dal_1378_al_1509	-
+159	Francesco Guicciardini	Ricordi_politici_e_civili	Ricordi	-
+160	Francesco Guicciardini	Considerazioni_sui_Discorsi_del_Machiavelli	Considerazioni_intorno_ai_Discorsi_del_Machiavelli_sopra_la_prima_Deca_di_Tito_Livio	-
+161	Ludovico Ariosto	Satire	Satire_(Ariosto)	-
+162	Ludovico Ariosto	Orlando_furioso	Orlando_furioso_(ed. 1928)	-
+163	Ludovico Ariosto	Proemio dell'Orlando	Canto_1	-
+164	Ludovico Ariosto	La follia di Orlando	Canto_23	-
+165	Ludovico Ariosto	Ritrovamento del senno di Orlando	Canto_34	-
+166	Ludovico Ariosto	Duello di Rodomonte e Ruggero	Canto_46	-
+167	Torquato Tasso	Rime	-	-
+168	Torquato Tasso	Gerusalemme_liberata	Gerusalemme_liberata	-
+169	Torquato Tasso	Proemio della Gerusalemme	Canto_primo	-
+170	Torquato Tasso	Olindo e Sofronia	Canto_secondo	-
+171	Torquato Tasso	Tancredi vs. Clorinda	Canto_dodicesimo	-
+172	Torquato Tasso	Aminta	Aminta	-
+173	Giambattista Basile	Lo_cunto_de_li_cunti	Lo_cunto_de_li_cunti	-
+174	Galileo Galilei	Sidereus_Nuncius	Sidereus_nuncius (la)	-
+175	Galileo Galilei	Il_Saggiatore	Il_Saggiatore	-
+176	Galileo Galilei	Dialogo_sopra_i_due_massimi_sistemi_del_mondo	Dialogo_sopra_i_due_massimi_sistemi_del_mondo	-
+177	Giovan Battista Marino	L'Adone	Adone	-
+178	Carlo Goldoni	La_locandiera	La_locandiera	-
+179	Carlo Goldoni	Il_servitore_di_due_padroni	Il_servitore_di_due_padroni	-
+180	Giuseppe Parini	Il_giorno	Il_Giorno	-
+181	Giuseppe Parini	Odi	Odi	-
+182	Vittorio Alfieri	Saul	Saul	-
+183	Vincenzo_Monti	Vincenzo_Monti	Traduzioni_di_Vincenzo_Monti	-
+184	Ugo Foscolo	Opere_di_Ugo_Foscolo	vedi sopra	-
+185	Ugo Foscolo	Ultime_lettere_di_Jacopo_Ortis	Ultime_lettere_di_Jacopo_Ortis	-
+186	Ugo Foscolo	A_Zacinto	A_Zacinto	-
+187	Ugo Foscolo	Alla_sera	Alla_sera	-
+188	Ugo Foscolo	In_morte_del_fratello_Giovanni	In_morte_del_fratello_Giovanni	-
+189	Ugo Foscolo	Dei_sepolcri	Dei_Sepolcri	-
+190	Ugo Foscolo	Le_Grazie_(Foscolo)	Le_Grazie	-
+191	Ippolito Nievo	Le_confessioni_d'un_italiano	Le_confessioni_di_un_ottuagenario	-
+192	Giuseppe Verdi	La_traviata	La_Traviata	-
+193	Giuseppe Verdi	Va,_pensiero	Va,_pensiero	-
+194	Alessandro Manzoni	Pensiero_e_poetica		-
+195	Alessandro Manzoni	Opere_di_Alessandro_Manzoni		-
+196	Alessandro Manzoni	Inni_sacri	Inni_sacri	-
+197	Alessandro Manzoni	Il_cinque_maggio	Il_cinque_maggio	-
+198	Alessandro Manzoni	Adelchi	Adelchi	-
+199	Alessandro Manzoni	Il_Conte_di_Carmagnola	Il_Conte_di_Carmagnola	-
+200	Alessandro Manzoni	Lettera al signor Chauvet	Testo francese	-
+201	Alessandro Manzoni	Sul_romanticismo	Lettera_sul_romanticismo_a_d'Azeglio	-
+202	Alessandro Manzoni	I_promessi_sposi	I_promessi_sposi	-
+203	Giacomo Leopardi	Pensiero_e_poetica	-	-
+204	Giacomo Leopardi	Opere_di_Giacomo_Leopardi		-
+205	Giacomo Leopardi	Discorso di un italiano intorno alla poesia romantica	Discorso_di_un_italiano_intorno_alla_poesia_romantica	-
+206	Giacomo Leopardi	Zibaldone	Zibaldone	-
+207	Giacomo Leopardi	Canti	Canti	-
+208	Giacomo Leopardi	Il_passero_solitario	Il_passero_solitario	-
+209	Giacomo Leopardi	L'infinito	L'infinito	-
+210	Giacomo Leopardi	Alla_luna	Alla_luna	-
+211	Giacomo Leopardi	La_sera_del_dì_di_festa	La_sera_del_dì_di_festa	-
+212	Giacomo Leopardi	Ad Angelo Mai	Ad Angelo Mai	-
+213	Giacomo Leopardi	Ultimo_canto_di_Saffo	Ultimo_canto_di_Saffo	-
+214	Giacomo Leopardi	A_Silvia	Canti_(Leopardi_-_Donati)/XXI._A_Silvia	-
+215	Giacomo Leopardi	La_quiete_dopo_la_tempesta	La_quiete_dopo_la_tempesta	-
+216	Giacomo Leopardi	Il_sabato_del_villaggio	Il_sabato_del_villaggio	-
+217	Giacomo Leopardi	Canto_notturno_di_un_pastore_errante_dell'Asia	Canto_notturno_di_un_pastore_errante_dell'Asia	-
+218	Giacomo Leopardi	A_se_stesso	A_se_stesso	-
+219	Giacomo Leopardi	La_ginestra	La_ginestra	-
+220	Giacomo Leopardi	Operette_morali	Operette_morali	-
+221	Giacomo Leopardi	Analisi_delle_Operette_morali		-
+222	Giacomo Leopardi	Appendice_alle_Operette_morali		-
+223	Giacomo Leopardi	Paralipomeni_della_Batracomiomachia	Paralipomeni_della_Batracomiomachia	-
+224	Giovanni Verga	Tecnica_narrativa_di_Giovanni_Verga		-
+225	Giovanni Verga	Opere_e_poetica_di_Giovanni_Verga		-
+226	Giovanni Verga	Vita_dei_campi (Novelle)	Vita_dei_campi	-
+227	Giovanni Verga	Rosso_Malpelo	Rosso_Malpelo	-
+228	Giovanni Verga	Novelle rusticane	Novelle_rusticane	-
+229	Giovanni Verga	La_roba	La_roba	-
+230	Giovanni Verga	Ciclo_dei_Vinti	-	-
+231	Giovanni Verga	I_Malavoglia	I_Malavoglia	-
+232	Giovanni Verga	Mastro-don_Gesualdo	Mastro-don_Gesualdo	-
+233	Antonio Fogazzaro	Piccolo_mondo_antico	Piccolo_mondo_antico	-
+234	Antonio Fogazzaro	Piccolo_mondo_moderno	Piccolo_mondo_moderno	-
+235	Edmondo_De_Amicis	Cuore	Cuore_(1889)	-
+236	Carlo_Collodi	Pinocchio	Le_avventure_di_Pinocchio	-
+237	Giosuè Carducci	Odi_barbare	Odi_barbare	-
+238	Giosuè Carducci	Rime_nuove	Rime_nuove	-
+239	Giosuè Carducci	Pianto_antico	Pianto_antico	-
+240	Giovanni Pascoli	Myricae	Myricae	-
+241	Giovanni Pascoli	Il_fanciullino	Il_fanciullino	-
+242	Giovanni Pascoli	Canti_di_Castelvecchio	Canti_di_Castelvecchio	-
+243	Giovanni Pascoli	La_cavalla_storna	La_cavalla_storna	-
+244	Giovanni Pascoli	Primi_poemetti	Primi_poemetti	-
+245	Giovanni Pascoli	Pascoli latinista	Opera_quae_Iohannes_Pascoli_scripsit	-
+246	Giovanni Pascoli	Dannunzianesimo	-	-
+247	Giovanni Pascoli	Poeta_vate	-	-
+248	Giovanni Pascoli	Motti_dannunziani	-	-
+249	Giovanni Pascoli	Opere_di_D'Annunzio	-	-
+250	Giovanni Pascoli	Alcyone	Alcyone	-
+251	Giovanni Pascoli	La_pioggia_nel_pineto	La_pioggia_nel_pineto	-
+252	Giovanni Pascoli	Il_piacere	Il_piacere	-
+253	Filippo_Tommaso_Marinetti	Manifesto_del_Futurismo	Manifesto_del_futurismo	-
+254	Filippo_Tommaso_Marinetti	Zang_Tumb_Tumb	boh, non c'è	-
+255	Luigi Pirandello	Il_fu_Mattia_Pascal	Il_fu_Mattia_Pascal	-
+256	Luigi Pirandello	Uno,_nessuno_e_centomila	Uno,_nessuno_e_centomila	-
+257	Luigi Pirandello	Novelle_per_un_anno	-	-
+258	Luigi Pirandello	Sei_personaggi_in_cerca_d'autore	Sei_personaggi_in_cerca_d%27autore	-
+259	Luigi Pirandello	Enrico_IV	Enrico_IV	-
+260	Giuseppe Ungaretti	L'allegria		-
+261	Giuseppe Ungaretti	San_Martino_del_Carso		-
+262	Giuseppe Ungaretti	Sentimento_del_tempo		-
+263	Antonio Gramsci	Quaderni_del_carcere	Quaderni_del_carcere	-
+264	Umberto Saba	Canzoniere	-	-
+265	Umberto Saba	Ernesto	-	-
+266	Salvatore Quasimodo	Ermetismo	-	-
+267	Salvatore Quasimodo	Oboe_sommerso	-	-
+268	Salvatore Quasimodo	Ed_è_subito_sera	-	-
+269	Salvatore Quasimodo	Uomo_del_mio_tempo	-	-
+270	Salvatore Quasimodo	Alle_fronde_dei_salici	-	-
+271	Alberto Moravia	Gli_indifferenti	-	-
+272	Alberto Moravia	Agostino	-	-
+273	Italo Svevo	Una_vita	-	-
+274	Italo Svevo	Senilità	-	-
+275	Italo Svevo	La_coscienza_di_Zeno	-	-
+276	Carlo Emilio Gadda	Quer_pasticciaccio_brutto_de_via_Merulana	-	-
+277	Carlo Emilio Gadda	La_cognizione_del_dolore	-	-
+278	Eugenio Montale	Ossi_di_seppia	-	-
+279	Eugenio Montale	I_limoni	-	-
+280	Eugenio Montale	Non_chiederci_la_parola_che_squadri_da_ogni_lato	-	-
+281	Eugenio Montale	Meriggiare_pallido_e_assorto	-	-
+282	Eugenio Montale	Spesso_il_male_di_vivere_ho_incontrato	-	-
+283	Eugenio Montale	Cigola_la_carrucola_del_pozzo	-	-
+284	Eugenio Montale	Le_occasioni	-	-
+285	Eugenio Montale	La_bufera_e_altro	-	-
+286	Eugenio Montale	Satura_(Montale)	-	-
+287	Dino Buzzati	Sessanta_racconti	-	-
+288	Dino Buzzati	Il_deserto_dei_Tartari	-	-
+289	Cesare Pavese	La_casa_in_collina	-	-
+290	Cesare Pavese	La_luna_e_i_falò	-	-
+291	Cesare Pavese	Lavorare_stanca	-	-
+292	Cesare Pavese	Verrà_la_morte_e_avrà_i_tuoi_occhi	-	-
+293	Elsa Morante	Menzogna_e_sortilegio	-	-
+294	Elsa Morante	L'isola_di_Arturo	-	-
+295	Elsa Morante	La_storia_(romanzo)	-	-
+296	Giuseppe_Tomasi_di_Lampedusa	Il_Gattopardo	-	-
+297	Primo Levi	Se_questo_è un_uomo	-	-
+298	Primo Levi	La_tregua	-	-
+299	Primo Levi	I_sommersi_e_i_salvati	-	-
+300	Primo Levi	Il_sistema_periodico	-	-
+301	Beppe Fenoglio	I_ventitre_giorni_della_città_di_Alba	-	-
+302	Beppe Fenoglio	La_malora	-	-
+303	Beppe Fenoglio	Una_questione_privata	-	-
+304	Beppe Fenoglio	Il_partigiano_Johnny	-	-
+305	PPP	La_meglio_gioventù	-	-
+306	PPP	Le_ceneri_di_Gramsci	-	-
+307	PPP	Ragazzi_di_vita	-	-
+308	PPP	Petrolio_(romanzo)	-	-
+309	PPP	Mamma_Roma	-	-
+310	Leonardo Sciascia	Il_giorno_della_civetta	-	-
+311	Leonardo Sciascia	A_ciascuno_il_suo	-	-
+312	Italo Calvino	Il_sentiero_dei_nidi_di_ragno	-	-
+313	Italo Calvino	Il_visconte_dimezzato	-	-
+314	Italo Calvino	Il_barone_rampante	-	-
+315	Italo Calvino	Il_cavaliere_inesistente	-	-
+316	Italo Calvino	Le_città_invisibili	-	-
+317	Italo Calvino	Se_una_notte_d'inverno_un_viaggiatore	-	-
+318	Agnolo_Firenzuola	-	-	-
+319	Alberto_Arbasino	-	-	-
+320	Alda_Merini	-	-	-
+321	Aldo_Busi	-	-	-
+322	Aldo_Palazzeschi	-	-	-
+323	Alessandro_Verri	-	-	-
+324	Ammiano Marcellino	-	-	-
+325	Andrea_Zanzotto	-	-	-
+326	Antonella_Anedda	-	-	-
+327	Antonio_Pucci_(poeta)	-	-	-
+328	Antonio_Tabucchi	-	-	-
+329	Arrigo_Boito	-	-	-
+330	Aulo_Cornelio_Celso	-	-	-
+332	Battista_Guarini	-	-	-
+333	Benvenuto_Cellini	-	-	-
+334	Bernardo_Dovizi	-	-	-
+335	Boezio	-	-	-
+336	Burchiello	-	-	-
+337	Camillo_Sbarbaro	-	-	-
+339	Carlo_Betocchi	-	-	-
+340	Carlo_Porta	-	-	-
+341	Cassiodoro	-	-	-
+343	Cecilio_Stazio	-	-	-
+344	Celio_Magno	-	-	-
+345	Cesare_Beccaria	-	-	-
+346	Ciro_di_Pers	-	-	-
+348	Claudio_Magris	-	-	-
+349	Clemente_Rebora	-	-	-
+350	Cornelio Nepote	-	-	-
+351	Delio_Tessa	-	-	-
+352	Denis_Diderot	-	-	-
+353	Dino_Campana	-	-	-
+354	Edoardo_Sanguineti	-	-	-
+355	Elio_Vittorini	-	-	-
+356	Emile_Zola	-	-	-
+357	Emilio_Praga	-	-	-
+358	Emilio_Salgari	-	-	-
+359	Fabrizio_De_André	-	-	-
+360	Federico_De_Roberto	-	-	-
+361	Fedro	-	-	-
+362	Flacco	-	-	-
+363	Francesco_Berni	-	-	-
+364	Francesco_De_Sanctis	-	-	-
+365	Francesco_Landini	-	-	-
+366	Franco_Fortini	-	-	-
+367	Franco_Scataglini	-	-	-
+368	G.B. Vico	-	-	-
+369	Gabriele D'Annunzio	-	-	-
+370	Gaio Valerio Catullo	-	-	-
+371	Gaio_Cornelio_Gallo	-	-	-
+372	Gaio_Lucilio	-	-	-
+374	Gaspara_Stampa	-	-	-
+375	Giacomo_Lubrano	-	-	-
+376	Giacomo_Noventa	-	-	-
+378	Giorgio_Caproni	-	-	-
+379	Giovan Battista Marino	-	-	-
+380	Giovanni_Berchet	-	-	-
+381	Giovanni_Della_Casa	-	-	-
+382	Giovanni_Pontano	-	-	-
+383	Giovanni_Villani	-	-	-
+384	Giovenale	-	-	-
+387	Giuseppe_Gioachino_Belli	-	-	-
+388	Giuseppe_Pontiggia	-	-	-
+389	Giusto_de'_Conti	-	-	-
+390	Gneo_Nevio	-	-	-
+391	Goffredo_Parise	-	-	-
+392	Guido Guinizelli	-	-	-
+393	Guido_Gozzano	-	-	-
+394	Guittone d'Arezzo	-	-	-
+395	Iacopone da Todi	-	-	-
+396	Igino_Ugo_Tarchetti	-	-	-
+397	Ippolito Nievo	-	-	-
+398	Jacopo_Sannazaro	-	-	-
+399	Leon_Battista_Alberti	-	-	-
+400	Leonardo_Bruni	-	-	-
+401	Leonardo_da_Vinci	-	-	-
+402	Livio_Andronico	-	-	-
+403	Lorenzo de' Medici	-	-	-
+404	Lorenzo_Da_Ponte	-	-	-
+405	Lorenzo_Valla	-	-	-
+406	Lucano	-	-	-
+407	Lucio_Accio	-	-	-
+408	Lucio_Giunio_Moderato_Columella	-	-	-
+409	Luigi Pulci	-	-	-
+410	Luigi_Capuana	-	-	-
+411	Marco Polo	-	-	-
+412	Marco_Gavio_Apicio	-	-	-
+413	Marco_Pacuvio	-	-	-
+414	Marino_Moretti	-	-	-
+415	Mario_Luzi	-	-	-
+416	Marziale	-	-	-
+417	Massimo_Bontempelli	-	-	-
+418	Masuccio_Salernitano	-	-	-
+419	Matteo Maria Boiardo	-	-	-
+420	Michelangelo_Buonarroti	-	-	-
+421	Milo_De_Angelis	-	-	-
+422	Namaziano	-	-	-
+423	Paolo_Sarpi	-	-	-
+424	Paolo_Volponi	-	-	-
+425	Patercolo	-	-	-
+426	Patrizia_Valduga	-	-	-
+427	Persio	-	-	-
+428	Pier_Vittorio_Tondelli	-	-	-
+429	Pietro Bembo	-	-	-
+430	Pietro_Aretino	-	-	-
+431	Pietro_Borsieri	-	-	-
+432	Pietro_Giordani	-	-	-
+433	Pietro_Metastasio	-	-	-
+434	Pietro_Verri	-	-	-
+435	Plinio il Giovane	-	-	-
+436	Plinio il Vecchio	-	-	-
+437	Pomponio_Mela	-	-	-
+438	Quintiliano	-	-	-
+439	Quinto_Curzio_Rufo	-	-	-
+440	Quinto_Ennio	-	-	-
+441	Quinto_Lutazio_Catulo	-	-	-
+442	Ruzante	-	-	-
+443	Salvatore_Di_Giacomo	-	-	-
+444	Sandro_Penna	-	-	-
+445	Sant'Ambrogio	-	-	-
+446	Sergio_Corazzini	-	-	-
+447	Sesto_Properzio	-	-	-
+448	Sidonio Apollinare	-	-	-
+449	Silio Italico	-	-	-
+450	Silvia_Ballestra	-	-	-
+451	Simmaco	-	-	-
+452	Stazio	-	-	-
+453	Teofilo_Folengo	-	-	-
+454	Tertulliano	-	-	-
+455	Tito_Pomponio_Attico	-	-	-
+456	Tommaso_Campanella	-	-	-
+457	Umberto_Eco	-	-	-
+458	Valerio Massimo	-	-	-
+459	Valerio_Magrelli	-	-	-
+460	Vincenzo_Monti	-	-	-
+461	Vittoria_Colonna	-	-	-
+462	Vittorio Sereni	-	-	-
+463	Voltaire	-	-	-

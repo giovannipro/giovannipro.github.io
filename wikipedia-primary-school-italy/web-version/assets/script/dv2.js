@@ -1,6 +1,7 @@
 const container = "#dv2";
 const font_size = 10;
 const shiftx_article = 30;
+const v_shift = 8;
 const article_width = 5;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 // const filter_item = 120;
@@ -35,7 +36,7 @@ let c_issues = '#EC4C4E',
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 40, bottom: 20, right: 60},
+let margin = {top: 40, left: 40, bottom: 20, right: 60},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -115,11 +116,11 @@ function dv2(the_subject) {
 
 		let y_issues = d3.scaleLinear()
 			.domain([0,issues_max]) 
-			.range([0,height/2.2])
+			.range([0,height/2])
 
 		let y_features = d3.scaleLinear()
 			.domain([0,my_max_features]) 
-			.range([0,height/2.2])
+			.range([0,height/2])
 
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
@@ -132,6 +133,9 @@ function dv2(the_subject) {
 			.data(filtered_data)
 			.enter()
 			.append("g")
+			.sort(function(a, b) {
+	  				return d3.descending(a.issues, b.issues);
+			})
 			.attr("class", function(d,i){
 				return i + " " + d.article
 			})
@@ -145,12 +149,12 @@ function dv2(the_subject) {
 			.attr("target","_blank")
 
 		// article circle
-		let article_circle = article.append("circle")
-			.attr("cx", article_width/2)
-			.attr("cy", height/2)
-			.attr("r", article_width/2)
-			.style("fill","blue")
-			.style("opacity",0.5)
+		// let article_circle = article.append("circle")
+		// 	.attr("cx", article_width/2)
+		// 	.attr("cy", height/2+15)
+		// 	.attr("r", article_width)
+		// 	.style("fill","blue")
+		// 	.style("opacity",0.5)
 
 		//issues
 		let issues = article.append("rect")
@@ -170,7 +174,7 @@ function dv2(the_subject) {
 		// features
 		let features = article.append("g")
 			.attr("transform", function(d,i){
-				return "translate(" + 0 + "," + ((height/2)+30) + ")"
+				return "translate(" + 0 + "," + ((height/2)+v_shift) + ")"
 			})
 			.attr("class", function(d,i){
 				return "feat_" + d.features 
@@ -219,6 +223,32 @@ function dv2(the_subject) {
 				return "img_" + d.images 
 			})
 
+		// axis
+		let x_features_axis = d3.scaleLinear()
+			.domain([my_max_features,0]) 
+			.range([height/2,0])
+
+		let x_issues = d3.scaleLinear()
+			.domain([0,issues_max]) 
+			.range([height/2,0])
+
+		let axis_features = plot.append("g")
+			.attr("transform", "translate(" + -10 + "," + ((height/2)) + ")")
+			.call(d3.axisLeft(x_features_axis)
+				.ticks(5)
+				.tickFormat(d3.format("d"))
+			)
+			.attr("id","yAxis_features")
+
+		let axis_issues = plot.append("g")
+			.attr("transform", "translate(" + -10 + "," + 0 + ")")
+			.call(d3.axisLeft(x_issues)
+				// .tickFormat(d3.format("d"))
+				// .ticks(3)
+			)
+			.attr("id","yAxis_issues")
+
+		// sort
 		let new_sort;
 		$("#subjects").change(function() {
 			let subject = this.value;
@@ -227,9 +257,9 @@ function dv2(the_subject) {
 			update_subject(subject,new_sort);
 		});
 
-		$("#sort_publications").change(function() {
+		$("#sort_article").change(function() {
 			new_sort = parseInt(this.value);
-			let subject = $("#subject option:selected").val();
+			let subject = $("#subjects option:selected").val();
 
 			update_sort(subject,new_sort);
 			// console.log(subject,new_sort)
@@ -314,11 +344,11 @@ function dv2(the_subject) {
 
 			let y_issues = d3.scaleLinear()
 				.domain([0,issues_max]) 
-				.range([0,height/2.2])
+				.range([0,height/2])
 
 			let y_features = d3.scaleLinear()
 				.domain([0,my_max_features]) 
-				.range([0,height/2.2])
+				.range([0,height/2])
 
 			let plot = svg.append("g")
 				.attr("id", "d3_plot")
@@ -331,6 +361,9 @@ function dv2(the_subject) {
 				.data(filtered_data)
 				.enter()
 				.append("g")
+				.sort(function(a, b) {
+	  				return d3.descending(a.issues, b.issues);
+				})
 				.attr("class", function(d,i){
 					return i + " " + d.article
 				})
@@ -344,12 +377,12 @@ function dv2(the_subject) {
 				.attr("target","_blank")
 
 			// article circle
-			let article_circle = article.append("circle")
-				.attr("cx", article_width/2)
-				.attr("cy", height/2)
-				.attr("r", article_width/2)
-				.style("fill","blue")
-				.style("opacity",0.5)
+			// let article_circle = article.append("circle")
+			// 	.attr("cx", article_width/2)
+			// 	.attr("cy", height/2+15)
+			// 	.attr("r", article_width)
+			// 	.style("fill","blue")
+			// 	.style("opacity",0.5)
 
 			//issues
 			let issues = article.append("rect")
@@ -369,7 +402,7 @@ function dv2(the_subject) {
 			// features
 			let features = article.append("g")
 				.attr("transform", function(d,i){
-					return "translate(" + 0 + "," + ((height/2)+30) + ")"
+					return "translate(" + 0 + "," + ((height/2)+v_shift) + ")"
 				})
 				.attr("class", function(d,i){
 					return "feat_" + d.features 
@@ -417,6 +450,54 @@ function dv2(the_subject) {
 				.attr("class", function(d,i){
 					return "img_" + d.images 
 				})
+
+			svg.select("#yAxis_issues")
+				.transition()
+				.call(d3.axisLeft(y_issues))
+				.selectAll("text")
+				.attr("y", -10)
+
+			svg.select("#yAxis_features")
+				.transition()
+				.call(d3.axisLeft(y_features))
+				.selectAll("text")
+				.attr("y", -10)
+		}
+
+		function update_sort(the_subject,the_sort){
+			console.log(the_subject,the_sort);
+
+			// x = d3.scaleLinear()
+			// 	.domain([0,filtered_data.length]) 
+			// 	.range([0,width])
+
+			// if (new_sort == 1){
+			// 	article.sort(function(a, b) {
+  	// 				return d3.ascending(a.article, b.article);
+			// 	})
+			// 	.transition()
+			// 	.attr("transform", function(d,i){
+			// 		return "translate(" + x(i) + "," + 0 + ")"
+			// 	})
+			// }
+			// else if (new_sort == 2){
+			// 	article.sort(function(a, b) {
+	  // 				return d3.descending(a.issues, b.issues);
+			// 	})
+			// 	.transition()
+			// 	.attr("transform", function(d,i){
+			// 		return "translate(" + x(i) + "," + 0 + ")"
+			// 	})
+			// }
+			// else if (new_sort == 3){
+			// 	article.sort(function(a, b) {
+	  // 					return d3.ascending(a.notes, b.notes);
+			// 		})
+			// 		.transition()
+			// 		.attr("transform", function(d,i){
+			// 			return "translate(" + x(i) + "," + 0 + ")"
+			// 	})
+			// }
 		}
 	}
 }
