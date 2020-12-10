@@ -7,8 +7,8 @@ const ws_la_publication_link = "https://la.wikisource.org/wiki/"
 const container = "#dv3";
 const font_size = 10;
 const filter_item = 120;
-const shiftx_article = 30;
-const circle_size = 7;
+const shiftx_author = 0;
+const circle_size = 4.5;
 
 function escape_(item){
 	let output = item.replace("'","%27")
@@ -76,7 +76,7 @@ function dv3(the_literature) {
 
 		let authors = plot.append("g")	
 			.attr("id","authors")
-			.attr("transform","translate(" + shiftx_article + "," + (margin.top) + ")")	
+			.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")	
 
 		let author = authors.selectAll("g")
 			.data(author_group)
@@ -112,21 +112,25 @@ function dv3(the_literature) {
 
 		let publication_box = author.append("g")
 			.attr("class","publication_box")
-			.attr("transform","translate(220,0)")
-
-		let publications_wikipedia = publication_box.selectAll("a")
+			.attr("transform","translate(180,-3)")
+			.selectAll("g")
 			.data(function(d) { 
 				return d.values; 
 			})
 			.enter()
-			.append("a")
+			.append("g")
+			.attr("transform",function(d,i){
+				return "translate(" + i*(circle_size*10) + ",0)" 
+			})
+
+		let publication_ws_la = publication_box.append("a")	
 			.attr("xlink:href", function(d,i){
 				return wiki_link + d.pubb_w
 			})
 			.attr("target","_blank")
 			.append("circle")
 			.attr("cx",function(d,i) {
-				return ((i * circle_size) * 5)
+				return ((i * circle_size) + 0)
 			})
 			.attr("cy",0)
 			.attr("r",function(d,i){
@@ -134,12 +138,61 @@ function dv3(the_literature) {
 					return circle_size
 				}
 				else {
-					return circle_size/2
+					return circle_size/4
 				}
 			})
 			.style("fill","blue")
+			// .style("opacity",0.5)
 			.attr("class",function(d,i){
 				return d.pubb_w 
+			})
+
+		let publications_link_it = publication_box.append("a")	
+			.attr("xlink:href", function(d,i){
+				return ws_it_publication_link + d.pubbl_it
+			})
+			.attr("target","_blank")
+			.append("circle")
+			.attr("cx",function(d,i) {
+				return ((i * circle_size) + circle_size*2.5)
+			})
+			.attr("cy",0)
+			.attr("r",function(d,i){
+				if (d.pubbl_it !== "-"){
+					return circle_size
+				}
+				else {
+					return circle_size/4
+				}
+			})
+			.style("fill","red")
+			// .style("opacity",0.5)
+			.attr("class",function(d,i){
+				return d.pubbl_it 
+			})
+
+		let publications_link_la = publication_box.append("a")	
+			.attr("xlink:href", function(d,i){
+				return ws_la_publication_link + d.pubbl_la
+			})
+			.attr("target","_blank")
+			.append("circle")
+			.attr("cx",function(d,i) {
+				return ((i * circle_size) + (circle_size*5) )
+			})
+			.attr("cy",0)
+			.attr("r",function(d,i){
+				if (d.pubbl_la !== "-"){
+					return circle_size
+				}
+				else {
+					return circle_size/4
+				}
+			})
+			.style("fill","green")
+			// .style("opacity",0.5)
+			.attr("class",function(d,i){
+				return d.pubbl_la
 			})
 
 		function update_subject(the_literature,the_sort){
