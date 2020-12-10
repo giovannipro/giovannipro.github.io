@@ -68,11 +68,29 @@ function dv3(the_literature) {
 			.entries(publications_authors)
 		console.log(author_group)
 
-		// plot data
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
 			.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
 
+		// tooltip
+		let tooltip = d3.tip()
+			.attr('class', 'tooltip')
+			.attr('id', 'tooltip')
+			.direction(function (d,i) {
+				return 'n'
+			})
+			.offset([-10,0])
+			.html(function(d) {
+	            let content = "<p style='font-weight: bold; margin: 0 0 5px 3px;'>" + d.pubb_w.replace(/_/g," ") + "<p><table>";
+
+	            // content += "<tr><th>" + d.values[0].pubb_w.replace(/_/g," ") + "</th></tr>"
+
+	            content += "</table>"
+	            return content;
+	        });
+       	plot.call(tooltip);
+
+		// plot data
 		let authors = plot.append("g")	
 			.attr("id","authors")
 			.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")	
@@ -124,7 +142,10 @@ function dv3(the_literature) {
 			.attr("transform",function(d,i){
 				return "translate(" + i*(circle_size*15) + ",0)" 
 			})
+			.on("mouseover", tooltip.show) 
+			.on("mouseout", tooltip.hide)
 
+		// pubb_w
 		let publication_ws_la = publication_box.append("a")	
 			.attr("xlink:href", function(d,i){
 				return wiki_link + d.pubb_w

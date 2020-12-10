@@ -266,15 +266,14 @@ function dv2(the_subject) {
 			.attr("transform", "translate(" + -10 + "," + ((height/2)) + ")")
 			.call(d3.axisLeft(x_features_axis)
 				.ticks(5)
-				.tickFormat(d3.format("d"))
 			)
 			.attr("id","yAxis_features")
 
 		let axis_issues = plot.append("g")
 			.attr("transform", "translate(" + -10 + "," + 0 + ")")
 			.call(d3.axisLeft(x_issues)
-				// .tickFormat(d3.format("d"))
-				// .ticks(3)
+				.tickValues([1,2,3,4,5,6,7,8,9])
+				.tickFormat(d3.format("d"))
 			)
 			.attr("id","yAxis_issues")
 
