@@ -111,6 +111,13 @@ footer ul li {
 
 /* ------- dataviz n. 2 ------- */
 
+#dv2 {
+	height: 75vh;
+	margin-bottom: 60px;
+}
+
+/* ------- dataviz n. 3 ------- */
+
 
 #dv3 {
 	/*height: 2250px; /* 75vh; */*/
