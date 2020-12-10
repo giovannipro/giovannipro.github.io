@@ -41,15 +41,17 @@ function dv3(the_literature) {
 		// console.log(data[0],data[1])
 
 		let publications_authors = [];
+		let author_group = [];
+		let merged_data = [];
 		
 		// merge the two datasets
-		let merged_data = data[0].map((e) => {
+		merged_data = data[0].map((e) => {
 		    for(let element of data[1]){
 		        if(e.author == element.author) Object.assign(e, element);
 		    }
 		    return e;
 		});
-		console.log(merged_data);
+		// console.log(merged_data);
 
 		// filter by source (it or la)
 		merged_data.forEach(function (val,i) {
@@ -57,17 +59,13 @@ function dv3(the_literature) {
 				publications_authors.push(val)
 			}
 		})
-		console.log(publications_authors)
+		// console.log(publications_authors)
 
 		// nest by author
-		let author_group = d3.nest()
+		author_group = d3.nest()
 			.key(d => d.author)
 			.entries(publications_authors)
 		console.log(author_group)
-
-		// publication_sort = author_group.sort(function(a,b){
-		// 	return b.values.length - a.values.length;
-		// })
 
 		// plot data
 		let plot = svg.append("g")
@@ -82,6 +80,9 @@ function dv3(the_literature) {
 			.data(author_group)
 			.enter()
 			.append("g")
+			.sort(function(a, b) {
+	  			return d3.ascending(a.key, b.key);
+			})
 			.attr("class","author")
 			.attr("id", function(d,i){
 				return i + "_" + d.key
@@ -134,7 +135,7 @@ function dv3(the_literature) {
 			})
 			.attr("cy",0)
 			.attr("r",function(d,i){
-				if (d.pubb_w !== "-"){
+				if (d.pubb_w !== "-"){ //   || d.pubb_w !== ""
 					return circle_size
 				}
 				else {
@@ -158,7 +159,7 @@ function dv3(the_literature) {
 			})
 			.attr("cy",0)
 			.attr("r",function(d,i){
-				if (d.pubbl_it !== "-"){
+				if (d.pubbl_it !== "-"){ //  || d.pubbl_it !== ""
 					return circle_size
 				}
 				else {
@@ -182,7 +183,7 @@ function dv3(the_literature) {
 			})
 			.attr("cy",0)
 			.attr("r",function(d,i){
-				if (d.pubbl_la !== "-"){
+				if (d.pubbl_la !== "-"){ // || d.pubbl_la !== ""
 					return circle_size
 				}
 				else {
@@ -195,10 +196,194 @@ function dv3(the_literature) {
 				return d.pubbl_la
 			})
 
-		function update_subject(the_literature,the_sort){
-			// console.log(the_subject,the_sort);
+		let new_sort;
+		$("#literature").change(function() {
+			let literature = this.value;
+			new_sort =  $("#sort_publications option:selected").val();
+
+			update_literature(literature,new_sort);
+		});
+
+		$("#sort_publications").change(function() {
+			new_sort = parseInt(this.value);
+			let literature = $("#literature option:selected").val();
+
+			update_sort(literature,new_sort);
+			console.log(literature,new_sort)
+		});
+
+		function update_literature(the_literature,the_sort){
+			console.log(the_literature,the_sort);
 
 			d3.select("#authors").remove();
+
+			d3.selectAll("circle")
+				.transition()
+				.duration(300)
+				.attr("r",0)
+
+			let publications_authors = [];
+			let author_group = [];
+
+			// filter by source (it or la)
+			merged_data.forEach(function (val,i) {
+				if (val.source == the_literature){
+					publications_authors.push(val)
+				}
+			})
+			console.log(publications_authors)
+
+			// nest by author
+			author_group = d3.nest()
+				.key(d => d.author)
+				.entries(publications_authors)
+			console.log(author_group)
+
+			let authors = plot.append("g")	
+				.attr("id","authors")
+				.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")
+
+			let author = authors.selectAll("g")
+				.data(author_group)
+				.enter()
+				.append("g")
+				.attr("class","author")
+				.attr("id", function(d,i){
+					return i + "_" + d.key
+				})
+				.attr("transform", function(d,i){
+					return "translate(" + 0 + "," + ((i)*15) + ")"
+				})
+
+			let author_box = author.append("g")
+				.attr("class","author_box")
+				.append("a")
+				.attr("xlink:href", function(d,i){
+					// return ws_it_author_link + d.values[0].author_ws_it
+					if (d.values[0].source == "it") {
+						return ws_it_author_link + d.values[0].author_ws_it
+					}
+					else {
+						return ws_la_author_link + d.values[0].author_ws_la
+					}
+				})
+				.attr("target","_blank")
+
+			let author_name = author_box.append("text")
+				.text(function(d,i){
+					return (i+1) + "-" + d.key
+				})
+				.attr("font-size",font_size)
+
+			let publication_box = author.append("g")
+				.attr("class","publication_box")
+				.attr("transform","translate(180,-3)")
+				.selectAll("g")
+				.data(function(d) { 
+					return d.values; 
+				})
+				.enter()
+				.append("g")
+				.attr("transform",function(d,i){
+					return "translate(" + i*(circle_size*10) + ",0)" 
+				})
+
+			let publication_ws_la = publication_box.append("a")	
+				.attr("xlink:href", function(d,i){
+					return wiki_link + d.pubb_w
+				})
+				.attr("target","_blank")
+				.append("circle")
+				.attr("cx",function(d,i) {
+					return ((i * circle_size) + 0)
+				})
+				.attr("cy",0)
+				.attr("r",function(d,i){
+					if (d.pubb_w !== "-"){ //   || d.pubb_w !== ""
+						return circle_size
+					}
+					else {
+						return circle_size/4
+					}
+				})
+				.style("fill","blue")
+				// .style("opacity",0.5)
+				.attr("class",function(d,i){
+					return d.pubb_w 
+				})
+
+			let publications_link_it = publication_box.append("a")	
+				.attr("xlink:href", function(d,i){
+					return ws_it_publication_link + d.pubbl_it
+				})
+				.attr("target","_blank")
+				.append("circle")
+				.attr("cx",function(d,i) {
+					return ((i * circle_size) + circle_size*2.5)
+				})
+				.attr("cy",0)
+				.attr("r",function(d,i){
+					if (d.pubbl_it !== "-"){ //  || d.pubbl_it !== ""
+						return circle_size
+					}
+					else {
+						return circle_size/4
+					}
+				})
+				.style("fill","red")
+				// .style("opacity",0.5)
+				.attr("class",function(d,i){
+					return d.pubbl_it 
+				})
+
+			let publications_link_la = publication_box.append("a")	
+				.attr("xlink:href", function(d,i){
+					return ws_la_publication_link + d.pubbl_la
+				})
+				.attr("target","_blank")
+				.append("circle")
+				.attr("cx",function(d,i) {
+					return ((i * circle_size) + (circle_size*5) )
+				})
+				.attr("cy",0)
+				.attr("r",function(d,i){
+					if (d.pubbl_la !== "-"){ // || d.pubbl_la !== ""
+						return circle_size
+					}
+					else {
+						return circle_size/4
+					}
+				})
+				.style("fill","green")
+				// .style("opacity",0.5)
+				.attr("class",function(d,i){
+					return d.pubbl_la
+				})
+		}
+
+		function update_sort(literature,new_sort) {
+			console.log(literature,new_sort)
+
+			console.log()
+
+			if (new_sort == 3){
+				author.sort(function(a, b) {
+	  					return d3.descending(a.values.length, b.values.length);
+					})
+					.transition()
+					.attr("transform", function(d,i){
+					return "translate(" + 0 + "," + ((i)*15) + ")"
+				})
+			}
+			else if (new_sort == 1){
+				author.sort(function(a, b) {
+	  					return d3.ascending(a.key, b.key);
+					})
+					.transition()
+					.attr("transform", function(d,i){
+					return "translate(" + 0 + "," + ((i)*15) + ")"
+				})
+			}
 		}
 
 		// let output = "";

@@ -263,60 +263,60 @@ id	author	pubb_w	pubbl_it	pubbl_la
 262	Giuseppe Ungaretti	San_Martino_del_Carso		-
 263	Giuseppe Ungaretti	Sentimento_del_tempo		-
 264	Antonio Gramsci	Quaderni_del_carcere	Quaderni_del_carcere	-
-265	Umberto Saba	Canzoniere		-
-266	Umberto Saba	Ernesto		
-267	Salvatore Quasimodo	Ermetismo		
-268	Salvatore Quasimodo	Oboe_sommerso		
-269	Salvatore Quasimodo	Ed_è_subito_sera		
-270	Salvatore Quasimodo	Uomo_del_mio_tempo		
-271	Salvatore Quasimodo	Alle_fronde_dei_salici		
-272	Alberto Moravia	Gli_indifferenti		
-273	Alberto Moravia	Agostino		
-274	Italo Svevo	Una_vita	Una_vita	
-275	Italo Svevo	Senilità	Senilità	
-276	Italo Svevo	La_coscienza_di_Zeno	La_coscienza_di_Zeno	
-277	Carlo Emilio Gadda	Quer_pasticciaccio_brutto_de_via_Merulana		
-278	Carlo Emilio Gadda	La_cognizione_del_dolore		
-279	Eugenio Montale	Ossi_di_seppia		
-280	Eugenio Montale	I_limoni		
-281	Eugenio Montale	Non_chiederci_la_parola_che_squadri_da_ogni_lato		
-282	Eugenio Montale	Meriggiare_pallido_e_assorto		
-283	Eugenio Montale	Spesso_il_male_di_vivere_ho_incontrato		
-284	Eugenio Montale	Cigola_la_carrucola_del_pozzo		
-285	Eugenio Montale	Le_occasioni		
-286	Eugenio Montale	La_bufera_e_altro		
-287	Eugenio Montale	Satura_(Montale)		
-288	Dino Buzzati	Sessanta_racconti		
-289	Dino Buzzati	Il_deserto_dei_Tartari		
-290	Cesare Pavese	La_casa_in_collina		
-291	Cesare Pavese	La_luna_e_i_falò		
-292	Cesare Pavese	Lavorare_stanca		
-293	Cesare Pavese	Verrà_la_morte_e_avrà_i_tuoi_occhi		
-294	Elsa Morante	Menzogna_e_sortilegio		
-295	Elsa Morante	L'isola_di_Arturo		
-296	Elsa Morante	La_storia_(romanzo)		
-297	Giuseppe_Tomasi_di_Lampedusa	Il_Gattopardo		
-298	Primo Levi	Se_questo_è un_uomo		
-299	Primo Levi	La_tregua		
-300	Primo Levi	I_sommersi_e_i_salvati		
-301	Primo Levi	Il_sistema_periodico		
-302	Beppe Fenoglio	I_ventitre_giorni_della_città_di_Alba		
-303	Beppe Fenoglio	La_malora		
-304	Beppe Fenoglio	Una_questione_privata		
-305	Beppe Fenoglio	Il_partigiano_Johnny		
-306	PPP	La_meglio_gioventù		
-307	PPP	Le_ceneri_di_Gramsci		
-308	PPP	Ragazzi_di_vita		
-309	PPP	Petrolio		
-310	PPP	Mamma_Roma		
-311	Leonardo Sciascia	Il_giorno_della_civetta		
-312	Leonardo Sciascia	A_ciascuno_il_suo		
-313	Italo Calvino	Il_sentiero_dei_nidi_di_ragno		
-314	Italo Calvino	Il_visconte_dimezzato		
-315	Italo Calvino	Il_barone_rampante		
-316	Italo Calvino	Il_cavaliere_inesistente		
-317	Italo Calvino	Le_città_invisibili		
-318	Italo Calvino	Se_una_notte_d'inverno_un_viaggiatore		
+265	Umberto Saba	Canzoniere	-	-
+266	Umberto Saba	Ernesto	-	-
+267	Salvatore Quasimodo	Ermetismo	-	-
+268	Salvatore Quasimodo	Oboe_sommerso	-	-
+269	Salvatore Quasimodo	Ed_è_subito_sera	-	-
+270	Salvatore Quasimodo	Uomo_del_mio_tempo	-	-
+271	Salvatore Quasimodo	Alle_fronde_dei_salici	-	-
+272	Alberto Moravia	Gli_indifferenti	-	-
+273	Alberto Moravia	Agostino	-	-
+274	Italo Svevo	Una_vita	-	-
+275	Italo Svevo	Senilità	-	-
+276	Italo Svevo	La_coscienza_di_Zeno	-	-
+277	Carlo Emilio Gadda	Quer_pasticciaccio_brutto_de_via_Merulana	-	-
+278	Carlo Emilio Gadda	La_cognizione_del_dolore	-	-
+279	Eugenio Montale	Ossi_di_seppia	-	-
+280	Eugenio Montale	I_limoni	-	-
+281	Eugenio Montale	Non_chiederci_la_parola_che_squadri_da_ogni_lato	-	-
+282	Eugenio Montale	Meriggiare_pallido_e_assorto	-	-
+283	Eugenio Montale	Spesso_il_male_di_vivere_ho_incontrato	-	-
+284	Eugenio Montale	Cigola_la_carrucola_del_pozzo	-	-
+285	Eugenio Montale	Le_occasioni	-	-
+286	Eugenio Montale	La_bufera_e_altro	-	-
+287	Eugenio Montale	Satura_(Montale)	-	-
+288	Dino Buzzati	Sessanta_racconti	-	-
+289	Dino Buzzati	Il_deserto_dei_Tartari	-	-
+290	Cesare Pavese	La_casa_in_collina	-	-
+291	Cesare Pavese	La_luna_e_i_falò	-	-
+292	Cesare Pavese	Lavorare_stanca	-	-
+293	Cesare Pavese	Verrà_la_morte_e_avrà_i_tuoi_occhi	-	-
+294	Elsa Morante	Menzogna_e_sortilegio	-	-
+295	Elsa Morante	L'isola_di_Arturo	-	-
+296	Elsa Morante	La_storia_(romanzo)	-	-
+297	Giuseppe_Tomasi_di_Lampedusa	Il_Gattopardo	-	-
+298	Primo Levi	Se_questo_è un_uomo	-	-
+299	Primo Levi	La_tregua	-	-
+300	Primo Levi	I_sommersi_e_i_salvati	-	-
+301	Primo Levi	Il_sistema_periodico	-	-
+302	Beppe Fenoglio	I_ventitre_giorni_della_città_di_Alba	-	-
+303	Beppe Fenoglio	La_malora	-	-
+304	Beppe Fenoglio	Una_questione_privata	-	-
+305	Beppe Fenoglio	Il_partigiano_Johnny	-	-
+306	PPP	La_meglio_gioventù	-	-
+307	PPP	Le_ceneri_di_Gramsci	-	-
+308	PPP	Ragazzi_di_vita	-	-
+309	PPP	Petrolio	-	-
+310	PPP	Mamma_Roma	-	-
+311	Leonardo Sciascia	Il_giorno_della_civetta	-	-
+312	Leonardo Sciascia	A_ciascuno_il_suo	-	-
+313	Italo Calvino	Il_sentiero_dei_nidi_di_ragno	-	-
+314	Italo Calvino	Il_visconte_dimezzato	-	-
+315	Italo Calvino	Il_barone_rampante	-	-
+316	Italo Calvino	Il_cavaliere_inesistente	-	-
+317	Italo Calvino	Le_città_invisibili	-	-
+318	Italo Calvino	Se_una_notte_d'inverno_un_viaggiatore	-	-
 319	Agnolo_Firenzuola	-	-	-
 320	Alberto_Arbasino	-	-	-
 321	Alda_Merini	-	-	-
@@ -376,7 +376,6 @@ id	author	pubb_w	pubbl_it	pubbl_la
 378	Gaio_Lucilio	-	-	-
 379	Galileo Galilei	-	-	-
 380	Gaspara_Stampa	-	-	-
-381	Gellio	-	-	-
 382	Giacomo_Lubrano	-	-	-
 383	Giacomo_Noventa	-	-	-
 384	Giambattista Basile	-	-	-
@@ -430,7 +429,6 @@ id	author	pubb_w	pubbl_it	pubbl_la
 436	Patercolo	-	-	-
 437	Patrizia_Valduga	-	-	-
 438	Persio	-	-	-
-439	Petronio	-	-	-
 440	Pier_Vittorio_Tondelli	-	-	-
 441	Pietro Bembo	-	-	-
 442	Pietro_Aretino	-	-	-

@@ -94,7 +94,7 @@ footer ul li {
 	stroke: #e9e4e4;
 }
 
-#select_box {
+.select_box {
 	display: flex;
 	justify-content: space-between;
 }
