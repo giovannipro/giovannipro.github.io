@@ -166,12 +166,6 @@ function dv1(the_subject) {
 			.attr('id', 'tooltip')
 			.direction(function (d,i) {
 				return 'n'
-				// if (y(+d.average_daily_visit) > height/2) {
-				// 	return 'n'
-				// }
-				// else {
-				// 	return 's'
-				// }
 			})
 			.offset([-10,0])
 			.html(function(d) {
@@ -180,6 +174,7 @@ function dv1(the_subject) {
                 content += "<tr><th>pubblicazione</th><th>" + format_date(d.first_edit) + "</th></tr>"
                 content += "<tr><th>dimensione</th><th>" + d.size.toLocaleString() + " byte</th></tr>"
                 content += "<tr><th>discussione</th><th>" + d.discussion_size.toLocaleString() + " byte</th></tr>"
+                content += "<tr><th>visite giornaliere</th><th>" + d.average_daily_visit.toLocaleString() + "</th></tr>"
                 content += "<tr><th>incipit</th><th>" + d.incipit_size.toLocaleString() + " byte</th></tr>"
                 content += "<tr><th>avvisi</th><th>" + d.issues.toLocaleString() + "</th></tr>"
                 content += "<tr><th>immagini</th><th>" + d.images.toLocaleString() + "</th></tr>"
@@ -187,29 +182,6 @@ function dv1(the_subject) {
 
 	            content += "</table>"
                 return content;
-
-   
-				// if (the_sort == 2){ // publication
-    //            		content += "<br><span class='metadata'>" + d.first_edit + "</span>";
-				// }
-    //             else if (the_sort == 3){ // size
-    //            		content += "<br><span class='metadata'>" + d.size.toLocaleString() + " byte</span>";
-				// }
-				// else if (the_sort == 4){ // discussion
-    //            		content += "<br><span class='metadata'>pagina di discussione: " + d.discussion_size.toLocaleString() + " byte</span>";
-				// }
-                // else if (the_sort == 5) { // incipit
-               	// 	content += "<br><span class='metadata'>incipit: " + d.incipit_size.toLocaleString() + " byte</span>";
-                // }
-				// else if (the_sort == 6){ // issue
-    //            		content += "<br><span class='metadata'>avvisi: " + d.issues.toLocaleString() + "</span>";
-				// }
-				// else if (the_sort == 7){ // images
-    //            		content += "<br><span class='metadata'>immagini: " + d.images.toLocaleString() + "</span>";
-				// }
-    //             else {
-    //             	content += "" // "<span class='metadata'>" + "no metadata" + "</span>";
-    //             }
             });
        	plot.call(tooltip);
 		// console.log(the_sort);

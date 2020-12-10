@@ -36,7 +36,7 @@ let c_issues = '#EC4C4E',
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 40, left: 40, bottom: 20, right: 60},
+let margin = {top: 40, left: 60, bottom: 20, right: 60},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -112,7 +112,7 @@ function dv2(the_subject) {
 
 		let x = d3.scaleLinear()
 			.domain([0,filtered_data.length]) 
-			.range([0,width])
+			.range([0,width-margin.left])
 
 		let y_issues = d3.scaleLinear()
 			.domain([0,issues_max]) 
@@ -124,7 +124,28 @@ function dv2(the_subject) {
 
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
-			.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
+			.attr("transform", "translate(" + (margin.left*1.5) + "," + margin.top + ")");
+
+		// tooltip
+		let tooltip = d3.tip()
+			.attr('class', 'tooltip')
+			.attr('id', 'tooltip')
+			.direction(function (d,i) {
+				return 'n'
+			})
+			.offset([-10,0])
+			.html(function(d) {
+	            let content = "<p style='font-weight: bold; margin: 0 0 5px 3px;'>" + d.article + "<p><table>";
+
+	            content += "<tr><th>avvisi</th><th>" + d.issues.toLocaleString() + "</th></tr>"
+	            content += "<tr><th>riferimenti bibliografici</th><th>" + d.references.toLocaleString() + "</th></tr>"
+	            content += "<tr><th>note</th><th>" + d.notes.toLocaleString() + "</th></tr>"
+	            content += "<tr><th>immagini</th><th>" + d.images.toLocaleString() + "</th></tr>"
+
+	            content += "</table>"
+	            return content;
+	        });
+       	plot.call(tooltip);
 
 		// plot data
 		let article = plot.append("g")	
@@ -147,6 +168,8 @@ function dv2(the_subject) {
 				return wiki_link + d.article
 			})
 			.attr("target","_blank")
+			.on("mouseover", tooltip.show) 
+			.on("mouseout", tooltip.hide)
 
 		// article circle
 		// let article_circle = article.append("circle")
@@ -159,16 +182,19 @@ function dv2(the_subject) {
 		//issues
 		let issues = article.append("rect")
 			.attr("x",0)
-			.attr("y",function(d,i){
-				return y_issues(issues_max - d.issues)
-			})
-			.attr("height", function(d,i){
-				return y_issues(d.issues) 
-			})
+			.attr("y",y_issues(issues_max))
+			.attr("height",0)
 			.attr("width",article_width)
 			.attr("fill","red")
 			.attr("class", function(d,i){
 				return "iss_" + d.issues 
+			})
+			.transition()
+			.attr("height", function(d,i){
+				return y_issues(d.issues) 
+			})
+			.attr("y",function(d,i){
+				return y_issues(issues_max - d.issues)
 			})
 
 		// features
@@ -180,47 +206,51 @@ function dv2(the_subject) {
 				return "feat_" + d.features 
 			})
 
-		let references = features.append("rect")
+		let images = features.append("rect")
 			.attr("x",0)
-			.attr("y",function(d,i){
-				return 0
-				// return y_features(max_features - d.references)
-			})
+			.attr("y",0)
 			.attr("width",article_width)
-			.attr("height", function(d,i){
-				return y_features(d.references)
-			})
-			.attr("fill",c_reference)
+			.attr("fill",c_image)
 			.attr("class", function(d,i){
-				return "ref_" + d.references 
+				return "img_" + d.images 
+			})
+			.attr("height",0)
+			.transition()
+			.attr("height", function(d,i){
+				return y_features(d.references + d.notes + d.images)
 			})
 
 		let notes = features.append("rect")
 			.attr("x",0)
-			.attr("y",function(d,i){
-				return y_features(d.references)
-			})
+			.attr("y",0)
+			// function(d,i){
+			// 	return y_features(d.references)
+			// })
 			.attr("width",article_width)
-			.attr("height", function(d,i){
-				return y_features(d.notes)
-			})
 			.attr("fill",c_note)
 			.attr("class", function(d,i){
 				return "not_" + d.notes 
 			})
+			.attr("height",0)
+			.transition()
+			.attr("height", function(d,i){
+				return y_features(d.references + d.notes)
+			})
 
-		let images = features.append("rect")
+		let references = features.append("rect")
 			.attr("x",0)
 			.attr("y",function(d,i){
-				return y_features(d.references + d.notes) //  
+				return 0
 			})
 			.attr("width",article_width)
-			.attr("height", function(d,i){
-				return y_features(d.images)
-			})
-			.attr("fill",c_image)
+			.attr("fill",c_reference)
 			.attr("class", function(d,i){
-				return "img_" + d.images 
+				return "ref_" + d.references 
+			})
+			.attr("height", 0)
+			.transition()
+			.attr("height", function(d,i){
+				return y_features(d.references)
 			})
 
 		// axis
@@ -340,7 +370,7 @@ function dv2(the_subject) {
 
 			let x = d3.scaleLinear()
 				.domain([0,filtered_data.length]) 
-				.range([0,width])
+				.range([0,width-margin.left])
 
 			let y_issues = d3.scaleLinear()
 				.domain([0,issues_max]) 
@@ -352,7 +382,7 @@ function dv2(the_subject) {
 
 			let plot = svg.append("g")
 				.attr("id", "d3_plot")
-				.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
+				.attr("transform", "translate(" + (margin.left*1.5) + "," + margin.top + ")");
 
 			// plot data
 			let article = plot.append("g")	
@@ -375,6 +405,8 @@ function dv2(the_subject) {
 					return wiki_link + d.article
 				})
 				.attr("target","_blank")
+				.on("mouseover", tooltip.show) 
+				.on("mouseout", tooltip.hide)
 
 			// article circle
 			// let article_circle = article.append("circle")
@@ -396,7 +428,7 @@ function dv2(the_subject) {
 				.attr("width",article_width)
 				.attr("fill","red")
 				.attr("class", function(d,i){
-					return "iss_" + d.issues 
+					return "iss" // + d.issues 
 				})
 
 			// features
@@ -408,47 +440,51 @@ function dv2(the_subject) {
 					return "feat_" + d.features 
 				})
 
-			let references = features.append("rect")
+			let images = features.append("rect")
 				.attr("x",0)
-				.attr("y",function(d,i){
-					return 0
-					// return y_features(max_features - d.references)
-				})
+				.attr("y",0)
 				.attr("width",article_width)
-				.attr("height", function(d,i){
-					return y_features(d.references)
-				})
-				.attr("fill",c_reference)
+				.attr("fill",c_image)
 				.attr("class", function(d,i){
-					return "ref_" + d.references 
+					return "img_" + d.images 
+				})
+				.attr("height",0)
+				.transition()
+				.attr("height", function(d,i){
+					return y_features(d.references + d.notes + d.images)
 				})
 
 			let notes = features.append("rect")
 				.attr("x",0)
-				.attr("y",function(d,i){
-					return y_features(d.references)
-				})
+				.attr("y",0)
+				// function(d,i){
+				// 	return y_features(d.references)
+				// })
 				.attr("width",article_width)
-				.attr("height", function(d,i){
-					return y_features(d.notes)
-				})
 				.attr("fill",c_note)
 				.attr("class", function(d,i){
 					return "not_" + d.notes 
 				})
+				.attr("height",0)
+				.transition()
+				.attr("height", function(d,i){
+					return y_features(d.references + d.notes)
+				})
 
-			let images = features.append("rect")
+			let references = features.append("rect")
 				.attr("x",0)
 				.attr("y",function(d,i){
-					return y_features(d.references + d.notes) //  
+					return 0
 				})
 				.attr("width",article_width)
-				.attr("height", function(d,i){
-					return y_features(d.images)
-				})
-				.attr("fill",c_image)
+				.attr("fill",c_reference)
 				.attr("class", function(d,i){
-					return "img_" + d.images 
+					return "ref_" + d.references 
+				})
+				.attr("height", 0)
+				.transition()
+				.attr("height", function(d,i){
+					return y_features(d.references)
 				})
 
 			svg.select("#yAxis_issues")
