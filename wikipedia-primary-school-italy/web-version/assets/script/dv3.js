@@ -10,6 +10,7 @@ const filter_item = 120;
 const shiftx_author = 0;
 const circle_size = 4.5;
 const circle_opacity = 0.7;
+const v_shift = 13;
 
 function escape_(item){
 	let output = item.replace("'","%27")
@@ -64,9 +65,15 @@ function dv3(the_literature) {
 
 		// nest by author
 		author_group = d3.nest()
-			.key(d => d.author)
+			.key(d => d.surname)
 			.entries(publications_authors)
 		console.log(author_group)
+
+		author_group.forEach(function (val,i) {
+			let period = +val.values[0].period
+			period.toFixed(2)
+			console.log(val.key, period)
+		})
 
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
@@ -100,14 +107,14 @@ function dv3(the_literature) {
 			.enter()
 			.append("g")
 			.sort(function(a, b) {
-	  			return d3.ascending(a.key, b.key);
-			})
+	  			return d3.ascending(a.values[0].surname, b.values[0].surname); // a, b.key
+			}) 
 			.attr("class","author")
 			.attr("id", function(d,i){
-				return i + "_" + d.key
+				return i + "_" + d.values[0].surname
 			})
 			.attr("transform", function(d,i){
-				return "translate(" + 0 + "," + ((i)*13) + ")"
+				return "translate(" + 0 + "," + ((i)*v_shift) + ")"
 			})
 
 		let author_box = author.append("g")
@@ -126,7 +133,7 @@ function dv3(the_literature) {
 
 		let author_name = author_box.append("text")
 			.text(function(d,i){
-				return d.key.replace(/_/g," ") // (i+1) + "-" + 
+				return d.values[0].surname + " " + d.values[0].name // + " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
 			})
 			.attr("font-size",font_size)
 
@@ -266,7 +273,7 @@ function dv3(the_literature) {
 
 			// nest by author
 			author_group = d3.nest()
-				.key(d => d.author)
+				.key(d => d.surname)
 				.entries(publications_authors)
 			console.log(author_group)
 
@@ -280,13 +287,13 @@ function dv3(the_literature) {
 				.append("g")
 				.attr("class","author")
 				.sort(function(a, b) {
-	  				return d3.ascending(a.key, b.key);
+	  				return d3.ascending(a.values[0].surname, b.values[0].surname);
 				})
 				.attr("id", function(d,i){
 					return i + "_" + d.key
 				})
 				.attr("transform", function(d,i){
-					return "translate(" + 0 + "," + ((i)*13) + ")"
+					return "translate(" + 0 + "," + ((i)*v_shift) + ")"
 				})
 
 			let author_box = author.append("g")
@@ -305,7 +312,7 @@ function dv3(the_literature) {
 
 			let author_name = author_box.append("text")
 				.text(function(d,i){
-					return d.key.replace(/_/g," ") // (i+1) + "-" + 
+					return d.values[0].surname + " " + d.values[0].name
 				})
 				.attr("font-size",font_size)
 
@@ -404,7 +411,19 @@ function dv3(the_literature) {
 					})
 					.transition()
 					.attr("transform", function(d,i){
-					return "translate(" + 0 + "," + ((i)*15) + ")"
+					return "translate(" + 0 + "," + ((i)*v_shift) + ")"
+				})
+			}
+			else if (new_sort == 2){
+				// author.sort(function(a, b) {
+	  	// 				return d3.ascending(a.values[0].period, b.values[0].period);
+				// 	})
+				author.sort(function(a,b){
+					return a.values[0].period - b.values[0].period
+				})
+					.transition()
+					.attr("transform", function(d,i){
+					return "translate(" + 0 + "," + ((i)*v_shift) + ")"
 				})
 			}
 			else if (new_sort == 1){
@@ -413,7 +432,7 @@ function dv3(the_literature) {
 					})
 					.transition()
 					.attr("transform", function(d,i){
-					return "translate(" + 0 + "," + ((i)*15) + ")"
+					return "translate(" + 0 + "," + ((i)*v_shift) + ")"
 				})
 			}
 		}
@@ -457,5 +476,5 @@ function dv3(the_literature) {
 }
 
 $(document).ready(function() {
-	dv3("it");
+	dv3("it"); // it la
 });
