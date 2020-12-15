@@ -1,9 +1,23 @@
-function apply_color(item){
-	let color = "blue";
+function apply_color(subject){
+	let color;
+
+	if (subject == "Letteratura italiana"  || subject == "Letteratura latina" || subject == "Storia" || subject == "Storia dell'arte" || subject == "Filosofia" || subject == "Grammatica italiana" || subject == "Grammatica latina") {
+		color = "violet";
+	}
+	else if (subject == "Informatica" || subject == "Tecnologia"){
+		color = "blue";
+	}
+	else if (subject == "Geografia"  || subject == "Diritto e Economia" || subject == "Cittadinanza e costituzione"){
+		color = "gray";
+	}
+	else { // Biologia Chimica Fisica Matematica Scienze della Terra Scienze
+		color = "green";
+	}
 	return color;
 }
 
 const subjects = [
+	"Tutte le materie",
 	"Biologia",
 	"Chimica",
 	"Cittadinanza e costituzione",
@@ -58,27 +72,42 @@ let svg = d3.select(container)
 
 function dv1(the_subject) {
 	d3.tsv("assets/data/articles.tsv").then(loaded)
+	// console.log(the_subject)
 
 	function loaded(data) {
 
 		// load data
 		let total = 0;
-		let subject_articles;
+		let subject_articles = [];
 		let visit_sort;
 		let filter_data;
 
 		let subject_group = d3.nest()
 			.key(d => d.subject)
 			.entries(data)
-		console.log(subject_group)
+		// console.log(subject_group)
 	
 		// for (const [d,c] of Object.entries(subject_group)) {
 		for (const [d,c] of Object.entries(subject_group)) {
 
-			if (c.key == the_subject){
-				subject_articles = c.values;
+			// all subjects
+			if (the_subject == "all"){
+
+				if (c.key !== "-"){
+					let values = c.values
+
+					values.forEach(function (d,i) {
+						subject_articles.push(d)
+					})
+				}
+			}
+			else {
+				if (c.key == the_subject){
+					subject_articles = c.values;
+				}
 			}
 		}
+		// console.log(subject_articles)
 		
 		visit_sort = subject_articles.sort(function(x, y){
 			return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
@@ -100,6 +129,7 @@ function dv1(the_subject) {
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
 		})
+		// console.log(filtered_data
 		
 		// scale
 		let y_max = d3.max(filtered_data, function(d) { 
@@ -341,12 +371,7 @@ function dv1(the_subject) {
 		// });
 
 		function update_subject(the_subject,the_sort){
-			// console.log(the_subject,the_sort);
-
-			// the_sort = 1
-
-			// $("#sort").val(the_sort);
-			// document.getElementById("sort").selectedIndex = the_sort;
+			// console.log(the_subject)
 
 			d3.select("#articles").remove();
 
@@ -358,7 +383,7 @@ function dv1(the_subject) {
 			// load data
 			total = 0;
 
-			let subject_articles;
+			let subject_articles = [];
 			let visit_sort;
 			let filter_data;
 
@@ -367,11 +392,25 @@ function dv1(the_subject) {
 				.entries(data)
 		
 			for (const [d,c] of Object.entries(subject_group)) {
-				if (c.key == the_subject){
-					subject_articles = c.values;
+
+				// all subjects
+				if (the_subject == "all"){
+
+					if (c.key !== "-"){
+						let values = c.values
+
+						values.forEach(function (d,i) {
+							subject_articles.push(d)
+						})
+					}
+				}
+				else {
+					if (c.key == the_subject){
+						subject_articles = c.values;
+					}
 				}
 			}
-			// console.log(subject_articles);
+			// console.log(subject_articles)
 			
 			visit_sort = subject_articles.sort(function(x, y){
 				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
@@ -393,6 +432,7 @@ function dv1(the_subject) {
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
 			})
+			// console.log(filtered_data)
 
 			// scale
 			y_max = d3.max(filtered_data, function(d) { 
@@ -605,12 +645,12 @@ function dv1(the_subject) {
 		}
 
 		function update_sort(the_subject,the_sort){
-			// console.log(the_subject,the_sort);
+			// console.log(the_subject)
 
 			//load data
 			total = 0;
 
-			let subject_articles;
+			let subject_articles = [];
 			let visit_sort;
 			let filter_data;
 
@@ -619,11 +659,25 @@ function dv1(the_subject) {
 				.entries(data)
 		
 			for (const [d,c] of Object.entries(subject_group)) {
-				if (c.key == the_subject){
-					subject_articles = c.values;
+
+				// all subjects
+				if (the_subject == "all"){
+
+					if (c.key !== "-"){
+						let values = c.values
+
+						values.forEach(function (d,i) {
+							subject_articles.push(d)
+						})
+					}
+				}
+				else {
+					if (c.key == the_subject){
+						subject_articles = c.values;
+					}
 				}
 			}
-			// console.log(subject_articles);
+			// console.log(subject_articles)
 			
 			visit_sort = subject_articles.sort(function(x, y){
 				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
@@ -645,6 +699,7 @@ function dv1(the_subject) {
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
 			})
+			// console.log(filtered_data)
 			
 			let max = 0;
 			let min = 0;
@@ -763,9 +818,10 @@ function dv1(the_subject) {
 
 
 $(document).ready(function() {
-	const random_subject = (Math.floor(Math.random() * 17) + 0) + 1
+	const random_subject = (Math.floor(Math.random() * 18) + 0) + 1
 	document.getElementById("subjects").selectedIndex = random_subject;
 
 	dv1(subjects[random_subject]);
+	// dv1("all")
 });
 
