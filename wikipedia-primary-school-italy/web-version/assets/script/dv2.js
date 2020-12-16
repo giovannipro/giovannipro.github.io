@@ -40,7 +40,7 @@ function dv2(the_subject) {
 		let total = 0;
 		let subject_articles = [];
 		// let visit_sort;
-		let filter_data;
+		let filtered_data;
 
 		let subject_group = d3.nest()
 			.key(d => d.subject)
@@ -71,16 +71,16 @@ function dv2(the_subject) {
 		// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
 		// })
 
-		filter_data_ = subject_articles.filter(function(x,y){ 
+		let filtered_data_ = subject_articles.filter(function(x,y){ 
 			return x.issues > 0
 		})
 
-		filter_data = filter_data_.filter(function(x,y){ 
-			return y < filter_item 
+		filtered_data = filtered_data_.sort(function(a, b){
+			return d3.descending(a.issues, b.issues);
 		})
 
-		filtered_data = filter_data.sort(function(a, b){
-			return d3.descending(a.issues, b.issues);
+		filter_data = filtered_data.filter(function(x,y){ 
+			return y < filter_item 
 		})
 	
 		filtered_data.forEach(function (d,i) {
@@ -174,7 +174,7 @@ function dv2(the_subject) {
 
 		// article circle
 		let article_width = ((width-margin.left) - (h_space*(total-1))) / total
-		console.log(total,article_width,h_space)
+		// console.log(total,article_width,h_space)
 
 		let article_circle = article.append("circle")
 			.attr("cx", article_width/2)
@@ -365,7 +365,7 @@ function dv2(the_subject) {
 			let total = 0;
 			let subject_articles = [];
 			let visit_sort;
-			let filter_data;
+			let filtered_data;
 
 			let subject_group = d3.nest()
 				.key(d => d.subject)
@@ -396,40 +396,46 @@ function dv2(the_subject) {
 			// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
 			// })
 
-			filter_data_ = subject_articles.filter(function(x,y){ 
+			filtered_data_ = subject_articles.filter(function(x,y){ 
 				return x.issues > 0
 			})
 
-			filter_data = filter_data_.filter(function(x,y){ 
+			filtered_data = filtered_data_.sort(function(a, b){
+				return d3.descending(+a.issues, +b.issues);
+			})
+
+			filtered_data = filtered_data_.filter(function(x,y){ 
 				return y < filter_item 
 			})
 
 			if (the_sort == 1){
-				filtered_data = filter_data.sort(function(a, b){
+				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.issues, +b.issues);
 				})
 			}
 			else if (the_sort == 2){
-				filtered_data = filter_data.sort(function(a, b){
+				filtered_data = filtered_data.sort(function(a, b){
 					return d3.ascending(a.article, b.article);
 				})
 			}
 			else if (the_sort == 3){
-				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.references, +b.references);
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.references, +b.references);
 				})
 			}
 			else if (the_sort == 4){
-				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.notes, +b.notes);
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.notes, +b.notes);
 				})
 			}
 			else if (the_sort == 5){
-				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.images, +b.images);
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.images, +b.images);
 				})
 			}
-			
+			// console.log(filtered_data[0].article,filtered_data[0].references)
+			// console.log(filtered_data[1].article,filtered_data[2].references)
+
 			// filtered_data = filter_data.sort(function(a, b){
 			// 	return d3.descending(a.issues, b.issues);
 			// })
@@ -447,8 +453,10 @@ function dv2(the_subject) {
 				d.images = +d.images
 
 				d.features = d.references + d.notes + d.images;
+
+				// console.log(d.references)
 			})
-			console.log(filtered_data)
+			// console.log(filtered_data)
 
 			// scale
 			let issues_max = d3.max(filtered_data, function(d) { 
@@ -476,9 +484,9 @@ function dv2(the_subject) {
 				.domain([0,my_max_features]) 
 				.range([0,height/2])
 
-			let plot = svg.append("g")
-				.attr("id", "d3_plot")
-				.attr("transform", "translate(" + (margin.left*1.5) + "," + margin.top + ")");
+			// let plot = svg.append("g")
+			// 	.attr("id", "d3_plot")
+			// 	.attr("transform", "translate(" + (margin.left*1.5) + "," + margin.top + ")");
 
 			// plot data
 			let article = plot.append("g")	
@@ -605,13 +613,13 @@ function dv2(the_subject) {
 		}
 
 		function update_sort(the_subject,the_sort){
-			console.log(the_subject,the_sort);
+			// console.log(the_subject,the_sort);
 
 			// load data
 			let total = 0;
 			let subject_articles = [];
 			// let visit_sort;
-			let filter_data;
+			let filtered_data;
 
 			let subject_group = d3.nest()
 				.key(d => d.subject)
@@ -635,14 +643,18 @@ function dv2(the_subject) {
 					}
 				}
 			}
-			console.log(subject_articles[0])
-			console.log(subject_articles[1])
+			// console.log(subject_articles[0])
+			// console.log(subject_articles[1])
 		
-			filter_data_ = subject_articles.filter(function(x,y){ 
+			filtered_data_ = subject_articles.filter(function(x,y){ 
 				return x.issues > 0
 			})
 
-			filter_data = filter_data_.filter(function(x,y){ 
+			filtered_data = filtered_data_.sort(function(a, b){
+				return d3.descending(+a.issues, +b.issues);
+			})
+
+			filtered_data = filtered_data_.filter(function(x,y){ 
 				return y < filter_item 
 			})
 		
@@ -665,28 +677,28 @@ function dv2(the_subject) {
 
 			// sort
 			if (new_sort == 1){
-				filtered_data = filter_data.sort(function(a, b){
+				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.issues, +b.issues);
 				})
 			}
 			else if (new_sort == 2){
-				filtered_data = filter_data.sort(function(a, b){
+				filtered_data = filtered_data.sort(function(a, b){
 					return d3.ascending(a.article, b.article);
 				})
 			}
 			else if (new_sort == 3){
-				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.references, +b.references);
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.references, +b.references);
 				})
 			}
 			else if (new_sort == 4){
-				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.notes, +b.notes);
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.notes, +b.notes);
 				})
 			}
 			else if (new_sort == 5){
-				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.images, +b.images);
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.images, +b.images);
 				})
 			}
 
@@ -694,9 +706,9 @@ function dv2(the_subject) {
 				new_id = i;
 				d.new_id = new_id;
 
-				if (i < 5){
-					console.log(x(d.new_id), d.article)
-				}
+				// if (i < 5){
+				// 	console.log(x(d.new_id), d.article)
+				// }
 			})
 
 			x.domain([0,filtered_data.length]) 
