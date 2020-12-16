@@ -4,27 +4,7 @@ const shiftx_article = 30;
 const v_shift = 8;
 const article_width = 5;
 const wiki_link = "https://it.wikipedia.org/wiki/";
-// const filter_item = 120;
-
-const subjects = [
-	"Biologia",
-	"Chimica",
-	"Cittadinanza e costituzione",
-	"Diritto e Economia",
-	"Filosofia",
-	"Fisica",
-	"Geografia",
-	"Grammatica italiana",
-	"Grammatica latina",
-	"Informatica",
-	"Letteratura italiana",
-	"Letteratura latina",
-	"Matematica",
-	"Scienze della Terra",
-	"Scienze",
-	"Storia",
-	"Tecnologia"
-]
+const filter_item = 130; 
 
 let c_issues = '#EC4C4E',
 	c_reference = '#49A0D8',
@@ -54,7 +34,7 @@ function dv2(the_subject) {
 
 		// load data
 		let total = 0;
-		let subject_articles;
+		let subject_articles = [];
 		let visit_sort;
 		let filter_data;
 
@@ -64,9 +44,28 @@ function dv2(the_subject) {
 		// console.log(subject_group)
 	
 		// for (const [d,c] of Object.entries(subject_group)) {
+		// for (const [d,c] of Object.entries(subject_group)) {
+		// 	if (c.key == the_subject){
+		// 		subject_articles = c.values;
+		// 	}
+		// }
 		for (const [d,c] of Object.entries(subject_group)) {
-			if (c.key == the_subject){
-				subject_articles = c.values;
+
+			// all subjects
+			if (the_subject == "all"){
+
+				if (c.key !== "-"){
+					let values = c.values
+
+					values.forEach(function (d,i) {
+						subject_articles.push(d)
+					})
+				}
+			}
+			else {
+				if (c.key == the_subject){
+					subject_articles = c.values;
+				}
 			}
 		}
 		
@@ -74,8 +73,12 @@ function dv2(the_subject) {
 			return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
 		})
 
-		filter_data = visit_sort.filter(function(x,y){ 
+		filter_data_ = visit_sort.filter(function(x,y){ 
 			return x.issues > 0
+		})
+
+		filter_data = filter_data_.filter(function(x,y){ 
+			return y < filter_item 
 		})
 
 		filtered_data = filter_data.sort(function(a, b){
@@ -102,7 +105,7 @@ function dv2(the_subject) {
 		let issues_max = d3.max(filtered_data, function(d) { 
 				return d.issues
 			})
-		console.log(issues_max)
+		// console.log(issues_max)
 
 		let max_features = d3.max(filtered_data, function(d) {
 				return +d.features
@@ -116,11 +119,11 @@ function dv2(the_subject) {
 
 		let y_issues = d3.scaleLinear()
 			.domain([0,issues_max]) 
-			.range([0,height/2])
+			.range([0,height/2.1])
 
 		let y_features = d3.scaleLinear()
 			.domain([0,my_max_features]) 
-			.range([0,height/2])
+			.range([0,height/2.1])
 
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
@@ -158,7 +161,7 @@ function dv2(the_subject) {
 	  				return d3.descending(a.issues, b.issues);
 			})
 			.attr("class", function(d,i){
-				return i + " " + d.article
+				return /* i + " " + d.article + */ "article"
 			})
 			.attr("transform", function(d,i){
 				return "translate(" + x(i) + "," + 0 + ")"
@@ -172,12 +175,14 @@ function dv2(the_subject) {
 			.on("mouseout", tooltip.hide)
 
 		// article circle
-		// let article_circle = article.append("circle")
-		// 	.attr("cx", article_width/2)
-		// 	.attr("cy", height/2+15)
-		// 	.attr("r", article_width)
-		// 	.style("fill","blue")
-		// 	.style("opacity",0.5)
+		let article_circle = article.append("circle")
+			.attr("cx", article_width/2.5)
+			.attr("cy", height/2 -5)
+			.attr("r", article_width/1.5)
+			.style("fill", function(d,i) {
+				return apply_color(d.subject)
+			})
+			.style("opacity",0.5)
 
 		//issues
 		let issues = article.append("rect")
@@ -223,9 +228,6 @@ function dv2(the_subject) {
 		let notes = features.append("rect")
 			.attr("x",0)
 			.attr("y",0)
-			// function(d,i){
-			// 	return y_features(d.references)
-			// })
 			.attr("width",article_width)
 			.attr("fill",c_note)
 			.attr("class", function(d,i){
@@ -311,7 +313,7 @@ function dv2(the_subject) {
 
 			// load data
 			let total = 0;
-			let subject_articles;
+			let subject_articles = [];
 			let visit_sort;
 			let filter_data;
 
@@ -321,9 +323,28 @@ function dv2(the_subject) {
 			// console.log(subject_group)
 		
 			// for (const [d,c] of Object.entries(subject_group)) {
+			// for (const [d,c] of Object.entries(subject_group)) {
+			// 	if (c.key == the_subject){
+			// 		subject_articles = c.values;
+			// 	}
+			// }
 			for (const [d,c] of Object.entries(subject_group)) {
-				if (c.key == the_subject){
-					subject_articles = c.values;
+
+				// all subjects
+				if (the_subject == "all"){
+
+					if (c.key !== "-"){
+						let values = c.values
+
+						values.forEach(function (d,i) {
+							subject_articles.push(d)
+						})
+					}
+				}
+				else {
+					if (c.key == the_subject){
+						subject_articles = c.values;
+					}
 				}
 			}
 			
@@ -331,8 +352,12 @@ function dv2(the_subject) {
 				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
 			})
 
-			filter_data = visit_sort.filter(function(x,y){ 
+			filter_data_ = visit_sort.filter(function(x,y){ 
 				return x.issues > 0
+			})
+
+			filter_data = filter_data_.filter(function(x,y){ 
+				return y < filter_item 
 			})
 
 			filtered_data = filter_data.sort(function(a, b){
@@ -359,7 +384,7 @@ function dv2(the_subject) {
 			let issues_max = d3.max(filtered_data, function(d) { 
 					return d.issues
 				})
-			console.log(issues_max)
+			// console.log(issues_max)
 
 			let max_features = d3.max(filtered_data, function(d) {
 					return +d.features
@@ -373,7 +398,7 @@ function dv2(the_subject) {
 
 			let y_issues = d3.scaleLinear()
 				.domain([0,issues_max]) 
-				.range([0,height/2])
+				.range([0,height/2.1])
 
 			let y_features = d3.scaleLinear()
 				.domain([0,my_max_features]) 
@@ -408,12 +433,14 @@ function dv2(the_subject) {
 				.on("mouseout", tooltip.hide)
 
 			// article circle
-			// let article_circle = article.append("circle")
-			// 	.attr("cx", article_width/2)
-			// 	.attr("cy", height/2+15)
-			// 	.attr("r", article_width)
-			// 	.style("fill","blue")
-			// 	.style("opacity",0.5)
+			let article_circle = article.append("circle")
+				.attr("cx", article_width/2.5)
+				.attr("cy", height/2 -5)
+				.attr("r", article_width/1.5)
+				.style("fill", function(d,i) {
+					return apply_color(d.subject)
+				})
+				.style("opacity",0.5)
 
 			//issues
 			let issues = article.append("rect")
@@ -502,37 +529,42 @@ function dv2(the_subject) {
 		function update_sort(the_subject,the_sort){
 			console.log(the_subject,the_sort);
 
-			// x = d3.scaleLinear()
-			// 	.domain([0,filtered_data.length]) 
-			// 	.range([0,width])
+			if (new_sort == 1){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(+a.issues, +b.issues);
+				})
+			}
+			else if (new_sort == 2){
+				filter_data.sort(function(a, b){
+					return d3.ascending(a.article, b.article);
+				})
+			}
+			else if (new_sort == 3){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(+a.notes, +b.notes);
+				})
+			}
+			else if (new_sort == 4){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(+a.references, +b.references);
+				})
+			}
+			else if (new_sort == 5){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(+a.images, +b.images);
+				})
+			}
 
-			// if (new_sort == 1){
-			// 	article.sort(function(a, b) {
-  	// 				return d3.ascending(a.article, b.article);
-			// 	})
-			// 	.transition()
-			// 	.attr("transform", function(d,i){
-			// 		return "translate(" + x(i) + "," + 0 + ")"
-			// 	})
-			// }
-			// else if (new_sort == 2){
-			// 	article.sort(function(a, b) {
-	  // 				return d3.descending(a.issues, b.issues);
-			// 	})
-			// 	.transition()
-			// 	.attr("transform", function(d,i){
-			// 		return "translate(" + x(i) + "," + 0 + ")"
-			// 	})
-			// }
-			// else if (new_sort == 3){
-			// 	article.sort(function(a, b) {
-	  // 					return d3.ascending(a.notes, b.notes);
-			// 		})
-			// 		.transition()
-			// 		.attr("transform", function(d,i){
-			// 			return "translate(" + x(i) + "," + 0 + ")"
-			// 	})
-			// }
+			filtered_data.forEach(function(d,i){
+				let new_id = i;
+				d.new_id = new_id;
+			})
+
+			svg.selectAll(".article")
+				.transition()
+				.attr("transform", function(d,i){
+					return "translate(" + x(d.new_id) + "," + 0 + ")"
+				})
 		}
 	}
 }
