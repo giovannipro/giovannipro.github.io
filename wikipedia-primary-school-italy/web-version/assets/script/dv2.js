@@ -2,7 +2,8 @@ const container = "#dv2";
 const font_size = 10;
 const shiftx_article = 30;
 const v_shift = 8;
-const article_width = 5;
+const h_space = 2;
+// const article_width = 5;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 const filter_item = 130; 
 
@@ -26,6 +27,9 @@ let svg = d3.select(container)
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
 
+const issue_height = height/2.1
+const features_height = height/2.1
+
 function dv2(the_subject) {
 	d3.tsv("../assets/data/articles.tsv").then(loaded)
 
@@ -43,12 +47,6 @@ function dv2(the_subject) {
 			.entries(data)
 		// console.log(subject_group)
 	
-		// for (const [d,c] of Object.entries(subject_group)) {
-		// for (const [d,c] of Object.entries(subject_group)) {
-		// 	if (c.key == the_subject){
-		// 		subject_articles = c.values;
-		// 	}
-		// }
 		for (const [d,c] of Object.entries(subject_group)) {
 
 			// all subjects
@@ -119,11 +117,11 @@ function dv2(the_subject) {
 
 		let y_issues = d3.scaleLinear()
 			.domain([0,issues_max]) 
-			.range([0,height/2.1])
+			.range([0,issue_height])
 
 		let y_features = d3.scaleLinear()
 			.domain([0,my_max_features]) 
-			.range([0,height/2.1])
+			.range([0,features_height])
 
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
@@ -160,9 +158,7 @@ function dv2(the_subject) {
 			.sort(function(a, b) {
 	  				return d3.descending(a.issues, b.issues);
 			})
-			.attr("class", function(d,i){
-				return /* i + " " + d.article + */ "article"
-			})
+			.attr("class","article")
 			.attr("transform", function(d,i){
 				return "translate(" + x(i) + "," + 0 + ")"
 			})
@@ -175,10 +171,13 @@ function dv2(the_subject) {
 			.on("mouseout", tooltip.hide)
 
 		// article circle
+		let article_width = ( (width-margin.left) - (h_space*(total-1))) / total  // -(h_space*total)
+		console.log(total,article_width,h_space)
+
 		let article_circle = article.append("circle")
-			.attr("cx", article_width/2.5)
-			.attr("cy", height/2 -5)
-			.attr("r", article_width/1.5)
+			.attr("cx", article_width/2)
+			.attr("cy", -10)
+			.attr("r", 5)
 			.style("fill", function(d,i) {
 				return apply_color(d.subject)
 			})
@@ -192,7 +191,7 @@ function dv2(the_subject) {
 			.attr("width",article_width)
 			.attr("fill","red")
 			.attr("class", function(d,i){
-				return "iss_" + d.issues 
+				return "iss " + d.issues 
 			})
 			.transition()
 			.attr("height", function(d,i){
@@ -217,7 +216,7 @@ function dv2(the_subject) {
 			.attr("width",article_width)
 			.attr("fill",c_image)
 			.attr("class", function(d,i){
-				return "img_" + d.images 
+				return "feat img_" + d.images 
 			})
 			.attr("height",0)
 			.transition()
@@ -231,7 +230,7 @@ function dv2(the_subject) {
 			.attr("width",article_width)
 			.attr("fill",c_note)
 			.attr("class", function(d,i){
-				return "not_" + d.notes 
+				return "feat not_" + d.notes 
 			})
 			.attr("height",0)
 			.transition()
@@ -247,7 +246,7 @@ function dv2(the_subject) {
 			.attr("width",article_width)
 			.attr("fill",c_reference)
 			.attr("class", function(d,i){
-				return "ref_" + d.references 
+				return "feat ref_" + d.references 
 			})
 			.attr("height", 0)
 			.transition()
@@ -256,28 +255,57 @@ function dv2(the_subject) {
 			})
 
 		// axis
-		let x_features_axis = d3.scaleLinear()
-			.domain([my_max_features,0]) 
-			.range([height/2,0])
-
 		let x_issues = d3.scaleLinear()
 			.domain([0,issues_max]) 
-			.range([height/2,0])
+			.range([issue_height,0])
+
+		let axis_issues = plot.append("g")
+			.attr("transform", "translate(" + 0 + "," + -10 + ")")
+			.call(d3.axisLeft(x_issues)
+				.tickFormat(d3.format("d"))
+				.ticks(3)
+			)
+			.attr("id","yAxis_issues")
+
+		let x_features_axis = d3.scaleLinear()
+			.domain([my_max_features,0]) 
+			.range([features_height,0])
 
 		let axis_features = plot.append("g")
-			.attr("transform", "translate(" + -10 + "," + ((height/2)) + ")")
+			.attr("transform", "translate(" + 0 + "," + ((height/2)+v_shift) + ")")
 			.call(d3.axisLeft(x_features_axis)
 				.ticks(5)
 			)
 			.attr("id","yAxis_features")
 
-		let axis_issues = plot.append("g")
-			.attr("transform", "translate(" + -10 + "," + 0 + ")")
-			.call(d3.axisLeft(x_issues)
-				.tickValues([1,2,3,4,5,6,7,8,9])
-				.tickFormat(d3.format("d"))
-			)
-			.attr("id","yAxis_issues")
+		// grid 
+		function make_issue_gridlines() {		
+	    	return d3.axisLeft(y_issues)
+		}
+
+		function make_features_gridlines() {		
+	    	return d3.axisLeft(y_features)
+		}
+
+		let grids = svg.append("g")
+			.attr("id","grids")
+
+		let grid_issues = grids.append("g")
+			.attr("id","grid")
+			.attr("class","grid_issues")
+			.attr("transform", "translate(-1," + margin.top + ")")
+			.call(make_issue_gridlines()
+				.ticks(3)
+          		.tickSize(-width-margin.left-margin.right-60)
+          	)
+
+   //      let grid_features = grids.append("g")
+			// .attr("id","grid")
+			// .attr("class","grid_features")
+			// .attr("transform", "translate(-1," + ((height/2)+v_shift) + ")")
+			// .call(make_features_gridlines()
+   //        		.tickSize(-width-margin.left-margin.right-60)
+   //        	)
 
 		// sort
 		let new_sort;
@@ -301,14 +329,20 @@ function dv2(the_subject) {
 
 			d3.select("#articles").remove();
 
-			d3.selectAll("rect")
+			d3.selectAll(".feat")
 				.transition()
-				.duration(300)
+				.duration(500)
+				.attr("height",0)
+
+			d3.selectAll(".iss")
+				.transition()
+				.duration(500)
+				.attr("y",issue_height)
 				.attr("height",0)
 
 			d3.selectAll("circle")
 				.transition()
-				.duration(300)
+				.duration(500)
 				.attr("r",0)
 
 			// load data
@@ -322,12 +356,6 @@ function dv2(the_subject) {
 				.entries(data)
 			// console.log(subject_group)
 		
-			// for (const [d,c] of Object.entries(subject_group)) {
-			// for (const [d,c] of Object.entries(subject_group)) {
-			// 	if (c.key == the_subject){
-			// 		subject_articles = c.values;
-			// 	}
-			// }
 			for (const [d,c] of Object.entries(subject_group)) {
 
 				// all subjects
@@ -398,7 +426,7 @@ function dv2(the_subject) {
 
 			let y_issues = d3.scaleLinear()
 				.domain([0,issues_max]) 
-				.range([0,height/2.1])
+				.range([0,issue_height])
 
 			let y_features = d3.scaleLinear()
 				.domain([0,my_max_features]) 
@@ -433,10 +461,12 @@ function dv2(the_subject) {
 				.on("mouseout", tooltip.hide)
 
 			// article circle
+			let article_width = (width/total)-(150/total)
+
 			let article_circle = article.append("circle")
-				.attr("cx", article_width/2.5)
-				.attr("cy", height/2 -5)
-				.attr("r", article_width/1.5)
+				.attr("cx", article_width/2)
+				.attr("cy", -10)
+				.attr("r", 5)
 				.style("fill", function(d,i) {
 					return apply_color(d.subject)
 				})
@@ -472,7 +502,7 @@ function dv2(the_subject) {
 				.attr("width",article_width)
 				.attr("fill",c_image)
 				.attr("class", function(d,i){
-					return "img_" + d.images 
+					return "feat img_" + d.images 
 				})
 				.attr("height",0)
 				.transition()
@@ -489,7 +519,7 @@ function dv2(the_subject) {
 				.attr("width",article_width)
 				.attr("fill",c_note)
 				.attr("class", function(d,i){
-					return "not_" + d.notes 
+					return "feat not_" + d.notes 
 				})
 				.attr("height",0)
 				.transition()
@@ -505,7 +535,7 @@ function dv2(the_subject) {
 				.attr("width",article_width)
 				.attr("fill",c_reference)
 				.attr("class", function(d,i){
-					return "ref_" + d.references 
+					return "feat ref_" + d.references 
 				})
 				.attr("height", 0)
 				.transition()
@@ -513,25 +543,90 @@ function dv2(the_subject) {
 					return y_features(d.references)
 				})
 
+			y_issues = d3.scaleLinear()
+				.domain([0,issues_max]) 
+				.range([0,issue_height])
+
 			svg.select("#yAxis_issues")
 				.transition()
 				.call(d3.axisLeft(y_issues))
 				.selectAll("text")
-				.attr("y", -10)
+				.attr("y", 0)
 
 			svg.select("#yAxis_features")
 				.transition()
 				.call(d3.axisLeft(y_features))
 				.selectAll("text")
-				.attr("y", -10)
+				.attr("y", 0)
 		}
 
 		function update_sort(the_subject,the_sort){
 			console.log(the_subject,the_sort);
 
+			// load data
+			// let total = 0;
+			// let subject_articles = [];
+			// let visit_sort;
+			// let filter_data;
+
+			// let subject_group = d3.nest()
+			// 	.key(d => d.subject)
+			// 	.entries(data)
+		
+			// for (const [d,c] of Object.entries(subject_group)) {
+
+			// 	if (the_subject == "all"){
+
+			// 		if (c.key !== "-"){
+			// 			let values = c.values
+
+			// 			values.forEach(function (d,i) {
+			// 				subject_articles.push(d)
+			// 			})
+			// 		}
+			// 	}
+			// 	else {
+			// 		if (c.key == the_subject){
+			// 			subject_articles = c.values;
+			// 		}
+			// 	}
+			// }
+			
+			// visit_sort = subject_articles.sort(function(x, y){
+			// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
+			// })
+
+			// filter_data_ = visit_sort.filter(function(x,y){ 
+			// 	return x.issues > 0
+			// })
+
+			// filter_data = filter_data_.filter(function(x,y){ 
+			// 	return y < filter_item 
+			// })
+
+			// // filtered_data = filter_data.sort(function(a, b){
+			// // 	return d3.descending(a.issues, b.issues);
+			// // })
+		
+			// filtered_data.forEach(function (d,i) {
+			// 	total += 1
+			// 	d.id = +d.id
+			// 	d.discussion_size = +d.discussion_size
+			// 	d.average_daily_visit = +d.average_daily_visit
+			// 	d.article = d.article.replace(/_/g," ")
+			// 	d.size = +d.size
+
+			// 	d.references = +d.references
+			// 	d.notes = +d.notes
+			// 	d.images = +d.images
+
+			// 	d.features = d.references + d.notes + d.images;
+			// })
+			// console.log(filtered_data)
+
 			if (new_sort == 1){
 				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.issues, +b.issues);
+					return d3.descending(+a.issues, +b.issues);
 				})
 			}
 			else if (new_sort == 2){
@@ -541,12 +636,12 @@ function dv2(the_subject) {
 			}
 			else if (new_sort == 3){
 				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.notes, +b.notes);
+					return d3.ascending(+a.references, +b.references);
 				})
 			}
 			else if (new_sort == 4){
 				filtered_data = filter_data.sort(function(a, b){
-					return d3.ascending(+a.references, +b.references);
+					return d3.ascending(+a.notes, +b.notes);
 				})
 			}
 			else if (new_sort == 5){
@@ -556,14 +651,22 @@ function dv2(the_subject) {
 			}
 
 			filtered_data.forEach(function(d,i){
-				let new_id = i;
+				new_id = i;
 				d.new_id = new_id;
+
+				if (i < 5) {
+					console.log(d.new_id, d.article)
+				}
 			})
 
 			svg.selectAll(".article")
+				// .data(filtered_data)
+	   //     		.enter()
+	   // 			.append("div")
 				.transition()
 				.attr("transform", function(d,i){
 					return "translate(" + x(d.new_id) + "," + 0 + ")"
+					console.log(new_id, d.article)
 				})
 		}
 	}
