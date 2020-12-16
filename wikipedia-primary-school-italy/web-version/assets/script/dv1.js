@@ -756,19 +756,19 @@ function dv1(the_subject) {
 					else if (the_sort == 2){ // "publication"
 						return "translate(" + (x(+d.days)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
-					else if (the_sort == 3){ // "size"
+					else if (the_sort == 3){
 						return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
-					else if (the_sort == 4) { // "discussion"
+					else if (the_sort == 4) {
 						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
 					else if (the_sort == 5){
 						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
-					else if (the_sort == 6){ // "issue"
+					else if (the_sort == 6){
 						return "translate(" + (x(+d.issues)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
-					else if (the_sort == 7){ // "images"
+					else if (the_sort == 7){
 						return "translate(" + (x(+d.images)+50) + "," + y(+d.average_daily_visit) + ")"
 					}
 				})

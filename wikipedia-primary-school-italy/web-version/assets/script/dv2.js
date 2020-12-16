@@ -39,7 +39,7 @@ function dv2(the_subject) {
 		// load data
 		let total = 0;
 		let subject_articles = [];
-		let visit_sort;
+		// let visit_sort;
 		let filter_data;
 
 		let subject_group = d3.nest()
@@ -67,11 +67,11 @@ function dv2(the_subject) {
 			}
 		}
 		
-		visit_sort = subject_articles.sort(function(x, y){
-			return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
-		})
+		// visit_sort = subject_articles.sort(function(x, y){
+		// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
+		// })
 
-		filter_data_ = visit_sort.filter(function(x,y){ 
+		filter_data_ = subject_articles.filter(function(x,y){ 
 			return x.issues > 0
 		})
 
@@ -162,6 +162,8 @@ function dv2(the_subject) {
 			.attr("transform", function(d,i){
 				return "translate(" + x(i) + "," + 0 + ")"
 			})
+			.on("mouseover", handleMouseOver)
+			.on("mouseout", handleMouseOut)
 			.append("a")
 			.attr("xlink:href", function(d,i){
 				return wiki_link + d.article
@@ -171,7 +173,7 @@ function dv2(the_subject) {
 			.on("mouseout", tooltip.hide)
 
 		// article circle
-		let article_width = ( (width-margin.left) - (h_space*(total-1))) / total  // -(h_space*total)
+		let article_width = ((width-margin.left) - (h_space*(total-1))) / total
 		console.log(total,article_width,h_space)
 
 		let article_circle = article.append("circle")
@@ -307,6 +309,20 @@ function dv2(the_subject) {
    //        		.tickSize(-width-margin.left-margin.right-60)
    //        	)
 
+   		// mouse hover
+		function handleMouseOver(){
+			d3.selectAll(".article")
+				.attr("opacity",0.2)
+
+			d3.select(this)
+				.attr("opacity",1)
+		}
+
+	    function handleMouseOut(){
+			d3.selectAll(".article")
+				.attr("opacity",1)
+	    }
+
 		// sort
 		let new_sort;
 		$("#subjects").change(function() {
@@ -376,11 +392,11 @@ function dv2(the_subject) {
 				}
 			}
 			
-			visit_sort = subject_articles.sort(function(x, y){
-				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
-			})
+			// visit_sort = subject_articles.sort(function(x, y){
+			// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
+			// })
 
-			filter_data_ = visit_sort.filter(function(x,y){ 
+			filter_data_ = subject_articles.filter(function(x,y){ 
 				return x.issues > 0
 			})
 
@@ -388,9 +404,35 @@ function dv2(the_subject) {
 				return y < filter_item 
 			})
 
-			filtered_data = filter_data.sort(function(a, b){
-				return d3.descending(a.issues, b.issues);
-			})
+			if (the_sort == 1){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.descending(+a.issues, +b.issues);
+				})
+			}
+			else if (the_sort == 2){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(a.article, b.article);
+				})
+			}
+			else if (the_sort == 3){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(+a.references, +b.references);
+				})
+			}
+			else if (the_sort == 4){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(+a.notes, +b.notes);
+				})
+			}
+			else if (the_sort == 5){
+				filtered_data = filter_data.sort(function(a, b){
+					return d3.ascending(+a.images, +b.images);
+				})
+			}
+			
+			// filtered_data = filter_data.sort(function(a, b){
+			// 	return d3.descending(a.issues, b.issues);
+			// })
 		
 			filtered_data.forEach(function (d,i) {
 				total += 1
@@ -420,9 +462,11 @@ function dv2(the_subject) {
 
 			let my_max_features = max_features;
 
-			let x = d3.scaleLinear()
-				.domain([0,filtered_data.length]) 
-				.range([0,width-margin.left])
+			// let x = d3.scaleLinear()
+			// 	.domain([0,filtered_data.length]) 
+			// 	.range([0,width-margin.left])
+
+			x.domain([0,filtered_data.length]) 
 
 			let y_issues = d3.scaleLinear()
 				.domain([0,issues_max]) 
@@ -446,12 +490,12 @@ function dv2(the_subject) {
 				.sort(function(a, b) {
 	  				return d3.descending(a.issues, b.issues);
 				})
-				.attr("class", function(d,i){
-					return i + " " + d.article
-				})
+				.attr("class","article")
 				.attr("transform", function(d,i){
 					return "translate(" + x(i) + "," + 0 + ")"
 				})
+				.on("mouseover", handleMouseOver)
+				.on("mouseout", handleMouseOut)
 				.append("a")
 				.attr("xlink:href", function(d,i){
 					return wiki_link + d.article
@@ -564,73 +608,69 @@ function dv2(the_subject) {
 			console.log(the_subject,the_sort);
 
 			// load data
-			// let total = 0;
-			// let subject_articles = [];
+			let total = 0;
+			let subject_articles = [];
 			// let visit_sort;
-			// let filter_data;
+			let filter_data;
 
-			// let subject_group = d3.nest()
-			// 	.key(d => d.subject)
-			// 	.entries(data)
+			let subject_group = d3.nest()
+				.key(d => d.subject)
+				.entries(data)
 		
-			// for (const [d,c] of Object.entries(subject_group)) {
+			for (const [d,c] of Object.entries(subject_group)) {
+				let values = c.values
 
-			// 	if (the_subject == "all"){
+				if (the_subject == "all"){
 
-			// 		if (c.key !== "-"){
-			// 			let values = c.values
+					if (c.key !== "-"){
 
-			// 			values.forEach(function (d,i) {
-			// 				subject_articles.push(d)
-			// 			})
-			// 		}
-			// 	}
-			// 	else {
-			// 		if (c.key == the_subject){
-			// 			subject_articles = c.values;
-			// 		}
-			// 	}
-			// }
-			
-			// visit_sort = subject_articles.sort(function(x, y){
-			// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
-			// })
-
-			// filter_data_ = visit_sort.filter(function(x,y){ 
-			// 	return x.issues > 0
-			// })
-
-			// filter_data = filter_data_.filter(function(x,y){ 
-			// 	return y < filter_item 
-			// })
-
-			// // filtered_data = filter_data.sort(function(a, b){
-			// // 	return d3.descending(a.issues, b.issues);
-			// // })
+						values.forEach(function (d,i) {
+							subject_articles.push(d)
+						})
+					}
+				}
+				else {
+					if (c.key == the_subject){
+						subject_articles = values;
+					}
+				}
+			}
+			console.log(subject_articles[0])
+			console.log(subject_articles[1])
 		
-			// filtered_data.forEach(function (d,i) {
-			// 	total += 1
-			// 	d.id = +d.id
-			// 	d.discussion_size = +d.discussion_size
-			// 	d.average_daily_visit = +d.average_daily_visit
-			// 	d.article = d.article.replace(/_/g," ")
-			// 	d.size = +d.size
+			filter_data_ = subject_articles.filter(function(x,y){ 
+				return x.issues > 0
+			})
 
-			// 	d.references = +d.references
-			// 	d.notes = +d.notes
-			// 	d.images = +d.images
+			filter_data = filter_data_.filter(function(x,y){ 
+				return y < filter_item 
+			})
+		
+			filtered_data.forEach(function (d,i) {
+				total += 1
+				d.id = +d.id
+				d.discussion_size = +d.discussion_size
+				d.average_daily_visit = +d.average_daily_visit
+				d.article = d.article.replace(/_/g," ")
+				d.size = +d.size
 
-			// 	d.features = d.references + d.notes + d.images;
-			// })
-			// console.log(filtered_data)
+				d.references = +d.references
+				d.notes = +d.notes
+				d.images = +d.images
 
+				d.features = d.references + d.notes + d.images;
+			})
+			// console.log(filtered_data[0])
+			// console.log(filtered_data[1])
+
+			// sort
 			if (new_sort == 1){
 				filtered_data = filter_data.sort(function(a, b){
 					return d3.descending(+a.issues, +b.issues);
 				})
 			}
 			else if (new_sort == 2){
-				filter_data.sort(function(a, b){
+				filtered_data = filter_data.sort(function(a, b){
 					return d3.ascending(a.article, b.article);
 				})
 			}
@@ -654,19 +694,18 @@ function dv2(the_subject) {
 				new_id = i;
 				d.new_id = new_id;
 
-				if (i < 5) {
-					console.log(d.new_id, d.article)
+				if (i < 5){
+					console.log(x(d.new_id), d.article)
 				}
 			})
 
+			x.domain([0,filtered_data.length]) 
+
 			svg.selectAll(".article")
-				// .data(filtered_data)
-	   //     		.enter()
-	   // 			.append("div")
 				.transition()
 				.attr("transform", function(d,i){
 					return "translate(" + x(d.new_id) + "," + 0 + ")"
-					console.log(new_id, d.article)
+					// console.log(new_id, d.article)
 				})
 		}
 	}
