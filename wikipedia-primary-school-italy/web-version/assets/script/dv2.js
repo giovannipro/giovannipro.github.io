@@ -365,6 +365,7 @@ function dv2(the_subject) {
 			let total = 0;
 			let subject_articles = [];
 			let visit_sort;
+			let filtered_data_;
 			let filtered_data;
 
 			let subject_group = d3.nest()
@@ -724,7 +725,11 @@ function dv2(the_subject) {
 }
 
 $(document).ready(function() {
-	const random_subject = (Math.floor(Math.random() * 17) + 0) + 1
+	let random_subject = (Math.floor(Math.random() * 17) + 0) + 1
+	if (random_subject == 12 || random_subject == 17){
+		random_subject = 11
+	}
+
 	document.getElementById("subjects").selectedIndex = random_subject;
 
 	dv2(subjects[random_subject]);
