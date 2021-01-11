@@ -3,9 +3,9 @@ const font_size = 10;
 const shiftx_article = 30;
 const v_shift = 8;
 const h_space = 2;
-// const article_width = 5;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 const filter_item = 130; 
+// const article_width = 5;
 
 let c_issues = '#EC4C4E',
 	c_reference = '#49A0D8',
@@ -27,8 +27,13 @@ let svg = d3.select(container)
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
 
-const issue_height = height/2.1
-const features_height = height/2.1
+const issue_height = height/2.1;
+const features_height = height/2.1;
+
+// const axis_issues_ticks = 5;
+// const axis_features_ticks = 5;
+
+const ticksAmount = 10;
 
 function dv2(the_subject) {
 	d3.tsv("../assets/data/articles.tsv").then(loaded)
@@ -39,8 +44,8 @@ function dv2(the_subject) {
 		// load data
 		let total = 0;
 		let subject_articles = [];
-		// let visit_sort;
 		let filtered_data;
+		// let visit_sort;
 
 		let subject_group = d3.nest()
 			.key(d => d.subject)
@@ -66,10 +71,6 @@ function dv2(the_subject) {
 				}
 			}
 		}
-		
-		// visit_sort = subject_articles.sort(function(x, y){
-		// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
-		// })
 
 		let filtered_data_ = subject_articles.filter(function(x,y){ 
 			return x.issues > 0
@@ -97,7 +98,7 @@ function dv2(the_subject) {
 
 			d.features = d.references + d.notes + d.images;
 		})
-		console.log(filtered_data)
+		// console.log(filtered_data)
 
 		// scale
 		let issues_max = d3.max(filtered_data, function(d) { 
@@ -119,10 +120,74 @@ function dv2(the_subject) {
 			.domain([0,issues_max]) 
 			.range([0,issue_height])
 
+		let y_issues_text = d3.scaleLinear()
+			.domain([issues_max,0]) 
+			.range([0,issue_height])
+
 		let y_features = d3.scaleLinear()
 			.domain([0,my_max_features]) 
 			.range([0,features_height])
 
+		// grid 
+		let axis_grid = svg.append("g")
+			.attr("id","axis_grid")
+
+		let grids = axis_grid.append("g")
+			.attr("id","grids")
+
+		function make_issue_gridlines() {		
+	    	return d3.axisLeft(y_issues)
+		}
+
+		function make_features_gridlines() {		
+	    	return d3.axisLeft(y_features)
+		}
+
+		let grid_issues = grids.append("g")
+			.attr("id","grid_issues")
+			.attr("transform", "translate(-1," + margin.top + ")")
+			.call(make_issue_gridlines()
+				.ticks(ticksAmount)
+				.tickValues(d3.range(0,issues_max,1))
+          		.tickSize(-width-margin.left-margin.right-60)
+          	)
+
+        let grid_features = grids.append("g")
+			.attr("id","grid_features")
+			.attr("transform", "translate(-1," + (margin.top + v_shift + (height/2)) + ")")
+			.call(make_features_gridlines()
+				.ticks(ticksAmount)
+          		.tickValues(d3.range(0,my_max_features,25))
+          		.tickSize(-width-margin.left-margin.right-60)
+          	)
+
+		// axis
+		let axis = axis_grid.append("g")
+			.attr("id","axis")
+
+		let axis_issues = axis.append("g")
+			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top-v_shift) + ")")
+			.call(d3.axisLeft(y_issues_text)
+				.ticks(ticksAmount)
+				.tickValues(d3.range(0,issues_max,1))
+				.tickFormat(d3.format("d"))
+			)
+			.attr("id","yAxis_issues")
+
+		let x_features_axis = d3.scaleLinear()
+			.domain([my_max_features,0]) 
+			.range([features_height,0])
+
+		let axis_features = axis.append("g")
+			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top + (height/2)+(v_shift*2)) + ")") // ((height/2)+(v_shift*3))
+			.call(d3.axisLeft(x_features_axis)
+				.ticks(ticksAmount)
+				.tickValues(d3.range(0,my_max_features,50))
+			)
+			.attr("id","yAxis_features")
+
+
+		// plot data
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
 			.attr("transform", "translate(" + (margin.left*1.5) + "," + margin.top + ")");
@@ -148,7 +213,6 @@ function dv2(the_subject) {
 	        });
        	plot.call(tooltip);
 
-		// plot data
 		let article = plot.append("g")	
 			.attr("class","articles")
 			.selectAll("g")
@@ -255,59 +319,6 @@ function dv2(the_subject) {
 			.attr("height", function(d,i){
 				return y_features(d.references)
 			})
-
-		// axis
-		let x_issues = d3.scaleLinear()
-			.domain([0,issues_max]) 
-			.range([issue_height,0])
-
-		let axis_issues = plot.append("g")
-			.attr("transform", "translate(" + 0 + "," + -10 + ")")
-			.call(d3.axisLeft(x_issues)
-				.tickFormat(d3.format("d"))
-				.ticks(3)
-			)
-			.attr("id","yAxis_issues")
-
-		let x_features_axis = d3.scaleLinear()
-			.domain([my_max_features,0]) 
-			.range([features_height,0])
-
-		let axis_features = plot.append("g")
-			.attr("transform", "translate(" + 0 + "," + ((height/2)+v_shift) + ")")
-			.call(d3.axisLeft(x_features_axis)
-				.ticks(5)
-			)
-			.attr("id","yAxis_features")
-
-		// grid 
-		function make_issue_gridlines() {		
-	    	return d3.axisLeft(y_issues)
-		}
-
-		function make_features_gridlines() {		
-	    	return d3.axisLeft(y_features)
-		}
-
-		let grids = svg.append("g")
-			.attr("id","grids")
-
-		let grid_issues = grids.append("g")
-			.attr("id","grid")
-			.attr("class","grid_issues")
-			.attr("transform", "translate(-1," + margin.top + ")")
-			.call(make_issue_gridlines()
-				.ticks(3)
-          		.tickSize(-width-margin.left-margin.right-60)
-          	)
-
-   //      let grid_features = grids.append("g")
-			// .attr("id","grid")
-			// .attr("class","grid_features")
-			// .attr("transform", "translate(-1," + ((height/2)+v_shift) + ")")
-			// .call(make_features_gridlines()
-   //        		.tickSize(-width-margin.left-margin.right-60)
-   //        	)
 
    		// mouse hover
 		function handleMouseOver(){
@@ -454,40 +465,36 @@ function dv2(the_subject) {
 				d.images = +d.images
 
 				d.features = d.references + d.notes + d.images;
-
-				// console.log(d.references)
 			})
-			// console.log(filtered_data)
 
 			// scale
-			let issues_max = d3.max(filtered_data, function(d) { 
+			issues_max = d3.max(filtered_data, function(d) { 
 					return d.issues
 				})
-			// console.log(issues_max)
 
-			let max_features = d3.max(filtered_data, function(d) {
+			max_features = d3.max(filtered_data, function(d) {
 					return +d.features
 				})
 
-			let my_max_features = max_features;
-
-			// let x = d3.scaleLinear()
-			// 	.domain([0,filtered_data.length]) 
-			// 	.range([0,width-margin.left])
+			my_max_features = max_features;
 
 			x.domain([0,filtered_data.length]) 
 
-			let y_issues = d3.scaleLinear()
+			y_issues = d3.scaleLinear()
 				.domain([0,issues_max]) 
 				.range([0,issue_height])
 
-			let y_features = d3.scaleLinear()
+			y_issues_text = d3.scaleLinear()
+				.domain([issues_max,0]) 
+				.range([0,issue_height])
+
+			y_features = d3.scaleLinear()
 				.domain([0,my_max_features]) 
 				.range([0,height/2])
 
-			// let plot = svg.append("g")
-			// 	.attr("id", "d3_plot")
-			// 	.attr("transform", "translate(" + (margin.left*1.5) + "," + margin.top + ")");
+			x_features_axis = d3.scaleLinear()
+				.domain([my_max_features,0]) 
+				.range([features_height,0])
 
 			// plot data
 			let article = plot.append("g")	
@@ -596,21 +603,42 @@ function dv2(the_subject) {
 					return y_features(d.references)
 				})
 
-			y_issues = d3.scaleLinear()
-				.domain([0,issues_max]) 
-				.range([0,issue_height])
-
-			svg.select("#yAxis_issues")
+			// update axis
+			d3.select("#yAxis_issues")
 				.transition()
-				.call(d3.axisLeft(y_issues))
+				.call(d3.axisLeft(y_issues_text)
+					.ticks(ticksAmount)
+					.tickFormat(d3.format("d"))
+					.tickValues(d3.range(0,issues_max,1))
+				)
 				.selectAll("text")
 				.attr("y", 0)
 
-			svg.select("#yAxis_features")
+			d3.select("#yAxis_features")
 				.transition()
-				.call(d3.axisLeft(y_features))
+				.call(d3.axisLeft(x_features_axis)
+					.ticks(ticksAmount)
+					.tickValues(d3.range(0,my_max_features,50))
+				)
 				.selectAll("text")
 				.attr("y", 0)
+
+			// update grids
+			d3.select("#grid_issues")
+				.transition()
+				.call(make_issue_gridlines()
+					.ticks(ticksAmount)
+					.tickValues(d3.range(0,issues_max,1))
+	          		.tickSize(-width-margin.left-margin.right-60)
+	          	)
+
+	        d3.select("#grid_features")
+		        .transition()
+				.call(make_features_gridlines()
+					.ticks(ticksAmount)
+          			.tickSize(-width-margin.left-margin.right-60)
+          			.tickValues(d3.range(0,my_max_features,25))
+	          	)
 		}
 
 		function update_sort(the_subject,the_sort){
@@ -619,8 +647,8 @@ function dv2(the_subject) {
 			// load data
 			let total = 0;
 			let subject_articles = [];
-			// let visit_sort;
 			let filtered_data;
+			// let visit_sort;
 
 			let subject_group = d3.nest()
 				.key(d => d.subject)
@@ -706,10 +734,6 @@ function dv2(the_subject) {
 			filtered_data.forEach(function(d,i){
 				new_id = i;
 				d.new_id = new_id;
-
-				// if (i < 5){
-				// 	console.log(x(d.new_id), d.article)
-				// }
 			})
 
 			x.domain([0,filtered_data.length]) 

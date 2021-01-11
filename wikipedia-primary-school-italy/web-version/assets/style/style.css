@@ -119,8 +119,13 @@ footer ul li {
 	margin-bottom: 60px;
 }
 
-#yAxis_features .domain, #yAxis_issues .domain, #yAxis_features .tick line, #yAxis_issues .tick line, #grid .domain {
+/*#yAxis_features .domain, #yAxis_issues .domain, #yAxis_features .tick line, #yAxis_issues .tick line, #grid .domain {*/
+#axis_grid .domain, #axis .tick line {
 	display: none;
+}
+
+#grids #grid_issues .tick line, #grids #grid_features .tick line {
+	stroke: #e9e4e4;
 }
 
 /* ------- dataviz n. 3 ------- */

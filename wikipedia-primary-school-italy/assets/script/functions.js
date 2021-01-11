@@ -1,3 +1,5 @@
+const filter_items = 200;
+
 function articles() {
 
 	let template_source = 'assets/tpl/articles.tpl';
@@ -47,6 +49,8 @@ function articles() {
 				let duplicates = [];
 				let duplicates_count = 0;
 
+				let the_data = [];
+
 				$.each(data, function(a,b) {
 					if (activation == true) {
 						if (b.size == filter) {
@@ -76,13 +80,18 @@ function articles() {
 				// console.log("duplicates: " + duplicates_count)
 
 				filtered.sort(function(a, b) { 
-					// return compareValues(a.average_daily_visit, b.average_daily_visit);
 					return compareStrings(a.subject, b.subject);
+					// return compareValues(a.average_daily_visit, b.average_daily_visit);
 					// return compareValues(a[sort], b[sort]);
 				})
 
-				filtered.unshift(head);
+				$.each(filtered, function(a,b) {
+					if(a < filter_items){
+						the_data.push(b)
+					}
+				})
 
+				the_data.unshift(head);
 
 				if (duplicates === undefined || duplicates.length > 0) {
 					duplicates.forEach(function (d,i) {
@@ -95,7 +104,7 @@ function articles() {
 				}
 
 				let template = Handlebars.compile(tpl); 
-				$(target).html(template(filtered));
+				$(target).html(template(the_data));
 			});
 		});
 	}
