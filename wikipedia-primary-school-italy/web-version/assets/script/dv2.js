@@ -166,7 +166,7 @@ function dv2(the_subject) {
 			.attr("id","axis")
 
 		let axis_issues = axis.append("g")
-			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top-v_shift) + ")")
+			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top) + ")") // v_shift
 			.call(d3.axisLeft(y_issues_text)
 				.ticks(ticksAmount)
 				.tickValues(d3.range(0,issues_max,1))
@@ -179,7 +179,7 @@ function dv2(the_subject) {
 			.range([features_height,0])
 
 		let axis_features = axis.append("g")
-			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top + (height/2)+(v_shift*2)) + ")") // ((height/2)+(v_shift*3))
+			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top + (height/2)+(v_shift*1)) + ")") // ((height/2)+(v_shift*3))
 			.call(d3.axisLeft(x_features_axis)
 				.ticks(ticksAmount)
 				.tickValues(d3.range(0,my_max_features,50))

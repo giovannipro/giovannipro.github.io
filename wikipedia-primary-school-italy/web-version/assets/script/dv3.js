@@ -5,12 +5,15 @@ const ws_it_publication_link = "https://it.wikisource.org/wiki/"
 const ws_la_publication_link = "https://la.wikisource.org/wiki/"
 
 const container = "#dv3";
-const font_size = 10;
+const font_size = 11;
 const filter_item = 120;
 const shiftx_author = 0;
 const circle_size = 4.5;
 const circle_opacity = 0.7;
-const v_shift = 13;
+const v_shift = 16;
+
+const italian_height = 2300;
+const latin_height = 1000;
 
 function escape_(item){
 	let output = item.replace("'","%27")
@@ -21,14 +24,14 @@ let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 40, bottom: 20, right: 60},
+let margin = {top: 20, left: 60, bottom: 20, right: 60},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
 let svg = d3.select(container)
 	.append("svg")
 	.attr("width", width + (margin.right + margin.right))
-	.attr("height",1980)
+	.attr("height",italian_height)
 	.attr("id", "svg")
 	// .attr("height",height + (margin.top + margin.bottom))
 
@@ -72,9 +75,53 @@ function dv3(the_literature) {
 		author_group.forEach(function (val,i) {
 			let period = +val.values[0].period
 			period.toFixed(2)
-			console.log(val.key, period)
+			// console.log(val.key, period)
 		})
 
+		let max_publication = d3.max(author_group, function(d) {
+				return d.values.length
+			})
+		console.log(max_publication)
+
+		// grid
+		let grids = svg.append("g")
+			.attr("id", "grids")
+
+		let v_grid = grids.append("g")
+			.attr("id", "v_grid")
+			.attr('transform','translate(' + 0 + ',' + (margin.top+8) + ')' )  
+
+		// v_grid
+		for (let i=0; i<author_group.length; i++) { 
+			if(i % 3 == 0){ // i == i
+	       		v_grid.append('line')
+					.attr('x1', 0)
+					.attr('y1', i*v_shift) 
+					.attr('x2', width + margin.left + margin.right)
+					.attr('y2', i*v_shift)
+					.attr('stroke',"#e9e4e4")
+					.attr('stroke-width',1)
+	    	}
+		}
+
+		// let v_grid = grids.append("g")
+		// 	.attr("id", "v_grid")
+		// 	.attr('transform','translate(' + 0 + ',' + 0 + ')' )  
+
+		// // v_grid
+		// for (let i=0; i<author_group.length; i++) { 
+		// 	if(i % 3 == 0){ // i == i
+	 //       		grid.append('line')
+		// 			.attr('x1', 0)
+		// 			.attr('y1', i*v_shift) 
+		// 			.attr('x2', width + margin.left + margin.right + 5)
+		// 			.attr('y2', i*v_shift)
+		// 			.attr('stroke',"#e9e4e4")
+		// 			.attr('stroke-width',1)
+	 //    	}
+		// }	
+
+		// plot
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
 			.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
@@ -88,11 +135,11 @@ function dv3(the_literature) {
 			})
 			.offset([-10,0])
 			.html(function(d) {
-	            let content = "<p style='font-weight: bold; margin: 0 0 5px 3px;'>" + d.pubb_w.replace(/_/g," ") + "<p><table>";
+	            let content = "<p style='font-weight: bold; margin: 0;'>" + d.pubb_w.replace(/_/g," ") + "</p>";
 
-	            // content += "<tr><th>" + d.values[0].pubb_w.replace(/_/g," ") + "</th></tr>"
+	            // content += "<table><tr><th>" + d.values[0].pubb_w.replace(/_/g," ") + "</th></tr>"
 
-	            content += "</table>"
+	            // content += "</table>"
 	            return content;
 	        });
        	plot.call(tooltip);
@@ -137,6 +184,10 @@ function dv3(the_literature) {
 			})
 			.attr("font-size",font_size)
 
+		// let available_width;
+		let min_size;
+		let space;
+
 		let publication_box = author.append("g")
 			.attr("class","publication_box")
 			.attr("transform","translate(180,-3)")
@@ -147,7 +198,11 @@ function dv3(the_literature) {
 			.enter()
 			.append("g")
 			.attr("transform",function(d,i){
-				return "translate(" + i*(circle_size*15) + ",0)" 
+				min_size = (circle_size*3.2) * max_publication
+				space = (width-min_size)/(max_publication-1)
+				// console.log(width,min_size,space)
+
+				return "translate(" + (i*space) + ",0)" 
 			})
 			.on("mouseover", tooltip.show) 
 			.on("mouseout", tooltip.hide)
@@ -246,11 +301,11 @@ function dv3(the_literature) {
 
 			if (the_literature == "la"){
 				d3.select("svg")
-					.attr("height",850)
+					.attr("height",latin_height)
 			}
 			else{
 				d3.select("#svg")
-					.attr("height",1980)
+					.attr("height",italian_height)
 			}
 
 			d3.select("#authors").remove();

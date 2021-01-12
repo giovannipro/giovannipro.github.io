@@ -77,7 +77,7 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 76	Lorenzo_Valla	Lorenzo	Valla	Lorenzo_Valla	-	-			it	
 77	Burchiello		Burchiello	Burchiello	-	-			it	
 78	Giusto_de'_Conti	Giusto	De' Conti	Giusto_de'_Conti	-	-			it	
-79	Leon_Battista_Alberti	Leon Battista	Alberti	Leon_Battista_Alberti	Testi_di_Leon_Battista_Alberti	-			it	
+79	Leon_Battista_Alberti	Leon Battista	Alberti	Leon_Battista_Alberti	Testi_di_Leon_Battista_Alberti	-	XV Secolo	15	it	-
 80	Leonardo_Bruni	Leonardo	Bruni	Leonardo_Bruni	Testi_di_Leonardo_Bruni	-			it	
 81	Leonardo_da_Vinci		Leonardo da Vinci	Leonardo_da_Vinci	Testi_di_Leonardo_da_Vinci	-			it	
 82	Giovanni_Pontano	Giovanni	Pontano	Giovanni_Pontano	Testi_di_Giovanni_Pontano	-			it	
@@ -117,7 +117,7 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 116	Pietro_Metastasio	Pietro	Metastasio	Pietro_Metastasio	Testi_di_Pietro_Metastasio	-			it	
 117	G.B. Vico	G.B.	Vico	G.B. Vico	Testi_di_Giambattista_Vico	-			it	
 118	Lorenzo_Da_Ponte	Lorenzo	Da Ponte	Lorenzo_Da_Ponte	Testi_di_Lorenzo_Da_Ponte	-			it	
-119	Voltaire		Voltaire	Voltaire	Candido	-			it	
+119	Voltaire		Voltaire	Voltaire	Candido	-	XVIII Secolo	18	it	-
 120	Denis_Diderot	Denis	Diderot	Denis_Diderot	-	-			it	
 121	Pietro_Verri	Pietro	Verri	Pietro_Verri	Testi_di_Pietro_Verri	-			it	
 122	Alessandro_Verri	Alessandro	Verri	Alessandro_Verri	Testi_di_Alessandro_Verri	-			it	
@@ -140,7 +140,7 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 139	Arrigo_Boito	Arrigo	Boito	Arrigo_Boito	Testi_di_Arrigo_Boito	-			it	
 140	Luigi_Capuana	Luigi	Capuana	Luigi_Capuana	Testi_di_Luigi_Capuana	-	-		it	-
 141	Federico_De_Roberto	Federico	De Roberto	Federico_De_Roberto	Testi_di_Federico_De_Roberto	-			it	
-142	Emile_Zola	Emile	Zola	Emile_Zola	Testi_di_Emile_Zola	-			it	
+142	Emile_Zola	Emile	Zola	Emile_Zola	Testi_di_Emile_Zola	-	Secondo Ottocento	18.5	it	
 143	Giovanni Verga	Giovanni	Verga	Giovanni Verga	Testi_di_Giovanni_Verga	-	Secondo Ottocento	18.5	it	-
 144	Igino_Ugo_Tarchetti	Igino	Tarchetti	Igino_Ugo_Tarchetti	Testi_di_Iginio_Ugo_Tarchetti	-			it	
 145	Antonio Fogazzaro	Antonio	Fogazzaro	Antonio Fogazzaro	Testi_di_Antonio_Fogazzaro	-	Secondo Ottocento	18.5	it	-
@@ -200,7 +200,7 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 199	Valerio_Magrelli	Valerio	Magrelli	Valerio_Magrelli					it	
 200	Franco_Scataglini	Franco	Scataglini	Franco_Scataglini					it	
 201	Milo_De_Angelis	Milo	De Angelis	Milo_De_Angelis					it	
-202	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda					it	
+202	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda			-	19.8	it	
 203	Umberto_Eco	Umberto	Eco	Umberto_Eco					it	
 204	Pier_Vittorio_Tondelli	Pier Vittorio	Tondelli	Pier_Vittorio_Tondelli					it	
 205	Antonio_Tabucchi	Antonio	Tabucchi	Antonio_Tabucchi					it	
