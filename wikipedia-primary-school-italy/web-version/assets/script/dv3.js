@@ -104,22 +104,27 @@ function dv3(the_literature) {
 	    	}
 		}
 
-		// let v_grid = grids.append("g")
-		// 	.attr("id", "v_grid")
-		// 	.attr('transform','translate(' + 0 + ',' + 0 + ')' )  
+		let h_grid = grids.append("g")
+			.attr("id", "h_grid")
+			.attr('transform','translate(' + (180+margin.left-circle_size-2) + ',' + (margin.top+8) + ')' )  
 
-		// // v_grid
-		// for (let i=0; i<author_group.length; i++) { 
-		// 	if(i % 3 == 0){ // i == i
-	 //       		grid.append('line')
-		// 			.attr('x1', 0)
-		// 			.attr('y1', i*v_shift) 
-		// 			.attr('x2', width + margin.left + margin.right + 5)
-		// 			.attr('y2', i*v_shift)
-		// 			.attr('stroke',"#e9e4e4")
-		// 			.attr('stroke-width',1)
-	 //    	}
-		// }	
+		// v_grid
+		let min_size = (circle_size*3.2) * max_publication
+		let space = (width-min_size)/(max_publication-1)
+		let circle_set = circle_size*1
+
+		for (let i=0; i<max_publication; i++) { 
+			if( i % 2 == 0){ // i % 3 == 0
+				console.log(i)
+	       		h_grid.append('line')
+					.attr('x1', i * (circle_set + space) ) // (circle_size*1 + space*1) )
+					.attr('y1', 0) 
+					.attr('x2', i * (circle_set + space)) // (circle_size*1 + space*1) )
+					.attr('y2', italian_height)
+					.attr('stroke',"#e9e4e4")
+					.attr('stroke-width',1)
+	    	}
+		}	
 
 		// plot
 		let plot = svg.append("g")
@@ -184,10 +189,6 @@ function dv3(the_literature) {
 			})
 			.attr("font-size",font_size)
 
-		// let available_width;
-		let min_size;
-		let space;
-
 		let publication_box = author.append("g")
 			.attr("class","publication_box")
 			.attr("transform","translate(180,-3)")
@@ -198,10 +199,6 @@ function dv3(the_literature) {
 			.enter()
 			.append("g")
 			.attr("transform",function(d,i){
-				min_size = (circle_size*3.2) * max_publication
-				space = (width-min_size)/(max_publication-1)
-				// console.log(width,min_size,space)
-
 				return "translate(" + (i*space) + ",0)" 
 			})
 			.on("mouseover", tooltip.show) 
