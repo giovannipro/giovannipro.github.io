@@ -5,7 +5,7 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 4	Plauto		Plauto	Plauto	Tito_Maccio_Plauto	Titus_Maccius_Plautus	III - II sec. a.C.	-3	la	terzo liceo
 5	Publio_Terenzio_Afro	Publio	Terenzio Afro	Publio_Terenzio_Afro	Publio_Terenzio_Afro	Publio_Terenzio_Afro	III - II sec. a.C.	-3	la	terzo liceo
 6	Marco_Pacuvio	Marco	Pacuvio	Marco_Pacuvio	-	-			la	
-7	Lucio_Accio	Lucio	Accio	Lucio_Accio	Lucio_Accio	Lucius_Accius			la	
+7	Lucio_Accio	Lucio	Accio	Lucio_Accio	Lucio_Accio	Lucius_Accius	III - II sec. a.Ch.n.	-3	la	
 8	Cecilio_Stazio	Cecilio	Stazio	Cecilio_Stazio	Cecilio_Stazio	Caecilius_Statius			la	
 9	Catone		Catone	Catone	Marco_Porcio_Catone	Marcus_Porcius_Cato	III - II sec. a.C.	-3	la	terzo liceo
 10	Gaio_Lucilio	Gaio	Lucilio	Gaio_Lucilio	-	-	III - II sec. a.C.	-3	la	terzo liceo
@@ -170,40 +170,40 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 170	Delio_Tessa	Delio	Tessa	Delio_Tessa	©	-	Il secolo breve	19.1	it	-
 171	Carlo_Betocchi	Carlo	Betocchi	Carlo_Betocchi	©	-	Il secolo breve	19.1	it	-
 172	Massimo_Bontempelli	Massimo	Bontempelli	Massimo_Bontempelli	©	-	Il secolo breve	19.1	it	-
-173	Italo Svevo	Italo	Svevo	Italo Svevo	Testi_di_Italo_Svevo		Il secolo breve	19.1	it	-
-174	Carlo Emilio Gadda	Carlo Emilio	Gadda	Carlo Emilio Gadda	©		Il secolo breve	19.1	it	-
-175	Eugenio Montale	Eugenio	Montale	Eugenio Montale	©		Il secolo breve	19.1	it	-
-176	Dino Buzzati	Dino	Buzzati	Dino Buzzati	©		Dopoguerra	19.5	it	-
-177	Sandro_Penna	Sandro	Penna	Sandro_Penna	©		Dopoguerra	19.5	it	-
-178	Giorgio_Caproni	Giorgio	Caproni	Giorgio_Caproni	©		Dopoguerra	19.5	it	-
-179	Elio_Vittorini	Elio	Vittorini	Elio_Vittorini	©		Dopoguerra	19.5	it	-
-180	Cesare Pavese	Cesare	Pavese	Cesare Pavese	©		Dopoguerra	19.5	it	-
-181	Elsa Morante	Elsa	Morante	Elsa Morante	©		Dopoguerra	19.5	it	-
-182	Giuseppe_Tomasi_di_Lampedusa	Giuseppe	Tomasi di Lampedusa	Giuseppe_Tomasi_di_Lampedusa	©		Dopoguerra	19.5	it	-
-183	Primo Levi	Primo	Levi	Primo Levi	©		Dopoguerra	19.5	it	-
-184	Beppe Fenoglio	Beppe	Fenoglio	Beppe Fenoglio	©		Dopoguerra	19.5	it	-
-185	PPP		PPP	PPP	©		Dopoguerra	19.5	it	-
-186	Edoardo_Sanguineti	Edoardo	Sanguineti	Edoardo_Sanguineti			Anni 60-70	19.6	it	-
-187	Mario_Luzi	Mario	Luzi	Mario_Luzi			Anni 60-70	19.6	it	-
-188	Franco_Fortini	Franco	Fortini	Franco_Fortini			Anni 60-70	19.6	it	-
-189	Andrea_Zanzotto	Andrea	Zanzotto	Andrea_Zanzotto			Anni 60-70	19.6	it	-
-190	Alberto_Arbasino	Alberto	Arbasino	Alberto_Arbasino			Anni 60-70	19.6	it	-
-191	Goffredo_Parise	Goffredo	Parise	Goffredo_Parise			Anni 60-70	19.6	it	-
-192	Paolo_Volponi	Paolo	Volponi	Paolo_Volponi			Anni 60-70	19.6	it	-
-193	Vittorio Sereni	Vittorio	Sereni	Vittorio Sereni			Anni 60-70	19.6	it	-
-194	Fabrizio_De_André	Fabrizio	De André	Fabrizio_De_André			Anni 60-70	19.6	it	-
-195	Leonardo Sciascia	Leonardo	Sciascia	Biografia	©		Anni 60-70	19.6	it	-
-196	Italo Calvino	Italo	Calvino	Biografia			Anni 60-70	19.6	it	-
-197	Alda_Merini	Alda	Merini	Alda_Merini			Dagli anni 80 in poi	19.8	it	-
-198	Patrizia_Valduga	Patrizia	Valduga	Patrizia_Valduga			Dagli anni 80 in poi	19.8	it	-
-199	Valerio_Magrelli	Valerio	Magrelli	Valerio_Magrelli			Dagli anni 80 in poi	19.8	it	-
-200	Franco_Scataglini	Franco	Scataglini	Franco_Scataglini			Dagli anni 80 in poi	19.8	it	-
-201	Milo_De_Angelis	Milo	De Angelis	Milo_De_Angelis			Dagli anni 80 in poi	19.8	it	-
-202	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda			Dagli anni 80 in poi	19.8	it	-
-203	Umberto_Eco	Umberto	Eco	Umberto_Eco			Dagli anni 80 in poi	19.8	it	-
-204	Pier_Vittorio_Tondelli	Pier Vittorio	Tondelli	Pier_Vittorio_Tondelli			Dagli anni 80 in poi	19.8	it	-
-205	Antonio_Tabucchi	Antonio	Tabucchi	Antonio_Tabucchi			Dagli anni 80 in poi	19.8	it	-
-206	Aldo_Busi	Aldo	Busi	Aldo_Busi			Dagli anni 80 in poi	19.8	it	-
-207	Claudio_Magris	Claudio	Magris	Claudio_Magris			Dagli anni 80 in poi	19.8	it	-
-208	Giuseppe_Pontiggia	Giuseppe	Pontiggia	Giuseppe_Pontiggia			Dagli anni 80 in poi	19.8	it	-
-209	Silvia_Ballestra	Silvia	Ballestra	Silvia_Ballestra			Dagli anni 80 in poi	19.8	it	-
+173	Italo Svevo	Italo	Svevo	Italo Svevo	Testi_di_Italo_Svevo	-	Il secolo breve	19.1	it	-
+174	Carlo Emilio Gadda	Carlo Emilio	Gadda	Carlo Emilio Gadda	©	-	Il secolo breve	19.1	it	-
+175	Eugenio Montale	Eugenio	Montale	Eugenio Montale	©	-	Il secolo breve	19.1	it	-
+176	Dino Buzzati	Dino	Buzzati	Dino Buzzati	©	-	Dopoguerra	19.5	it	-
+177	Sandro_Penna	Sandro	Penna	Sandro_Penna	©	-	Dopoguerra	19.5	it	-
+178	Giorgio_Caproni	Giorgio	Caproni	Giorgio_Caproni	©	-	Dopoguerra	19.5	it	-
+179	Elio_Vittorini	Elio	Vittorini	Elio_Vittorini	©	-	Dopoguerra	19.5	it	-
+180	Cesare Pavese	Cesare	Pavese	Cesare Pavese	©	-	Dopoguerra	19.5	it	-
+181	Elsa Morante	Elsa	Morante	Elsa Morante	©	-	Dopoguerra	19.5	it	-
+182	Giuseppe_Tomasi_di_Lampedusa	Giuseppe	Tomasi di Lampedusa	Giuseppe_Tomasi_di_Lampedusa	©	-	Dopoguerra	19.5	it	-
+183	Primo Levi	Primo	Levi	Primo Levi	©	-	Dopoguerra	19.5	it	-
+184	Beppe Fenoglio	Beppe	Fenoglio	Beppe Fenoglio	©	-	Dopoguerra	19.5	it	-
+185	PPP		PPP	PPP	©	-	Dopoguerra	19.5	it	-
+186	Edoardo_Sanguineti	Edoardo	Sanguineti	Edoardo_Sanguineti	-	-	Anni 60-70	19.6	it	-
+187	Mario_Luzi	Mario	Luzi	Mario_Luzi	-	-	Anni 60-70	19.6	it	-
+188	Franco_Fortini	Franco	Fortini	Franco_Fortini	-	-	Anni 60-70	19.6	it	-
+189	Andrea_Zanzotto	Andrea	Zanzotto	Andrea_Zanzotto	-	-	Anni 60-70	19.6	it	-
+190	Alberto_Arbasino	Alberto	Arbasino	Alberto_Arbasino	-	-	Anni 60-70	19.6	it	-
+191	Goffredo_Parise	Goffredo	Parise	Goffredo_Parise	-	-	Anni 60-70	19.6	it	-
+192	Paolo_Volponi	Paolo	Volponi	Paolo_Volponi	-	-	Anni 60-70	19.6	it	-
+193	Vittorio Sereni	Vittorio	Sereni	Vittorio Sereni	-	-	Anni 60-70	19.6	it	-
+194	Fabrizio_De_André	Fabrizio	De André	Fabrizio_De_André	-	-	Anni 60-70	19.6	it	-
+195	Leonardo Sciascia	Leonardo	Sciascia	Biografia	©	-	Anni 60-70	19.6	it	-
+196	Italo Calvino	Italo	Calvino	Biografia	-	-	Anni 60-70	19.6	it	-
+197	Alda_Merini	Alda	Merini	Alda_Merini	-	-	Dagli anni 80 in poi	19.8	it	-
+198	Patrizia_Valduga	Patrizia	Valduga	Patrizia_Valduga	-	-	Dagli anni 80 in poi	19.8	it	-
+199	Valerio_Magrelli	Valerio	Magrelli	Valerio_Magrelli	-	-	Dagli anni 80 in poi	19.8	it	-
+200	Franco_Scataglini	Franco	Scataglini	Franco_Scataglini	-	-	Dagli anni 80 in poi	19.8	it	-
+201	Milo_De_Angelis	Milo	De Angelis	Milo_De_Angelis	-	-	Dagli anni 80 in poi	19.8	it	-
+202	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda	-	-	Dagli anni 80 in poi	19.8	it	-
+203	Umberto_Eco	Umberto	Eco	Umberto_Eco	-	-	Dagli anni 80 in poi	19.8	it	-
+204	Pier_Vittorio_Tondelli	Pier Vittorio	Tondelli	Pier_Vittorio_Tondelli	-	-	Dagli anni 80 in poi	19.8	it	-
+205	Antonio_Tabucchi	Antonio	Tabucchi	Antonio_Tabucchi	-	-	Dagli anni 80 in poi	19.8	it	-
+206	Aldo_Busi	Aldo	Busi	Aldo_Busi	-	-	Dagli anni 80 in poi	19.8	it	-
+207	Claudio_Magris	Claudio	Magris	Claudio_Magris	-	-	Dagli anni 80 in poi	19.8	it	-
+208	Giuseppe_Pontiggia	Giuseppe	Pontiggia	Giuseppe_Pontiggia	-	-	Dagli anni 80 in poi	19.8	it	-
+209	Silvia_Ballestra	Silvia	Ballestra	Silvia_Ballestra	-	-	Dagli anni 80 in poi	19.8	it	-

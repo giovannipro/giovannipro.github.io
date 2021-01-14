@@ -36,3 +36,8 @@ const subjects = [
 	"Storia",
 	"Tecnologia"
 ]
+
+const literature_ = [
+	"it",
+	"la"
+]
