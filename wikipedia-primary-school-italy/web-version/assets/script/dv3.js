@@ -12,6 +12,10 @@ const circle_size = 4.5;
 const circle_opacity = 0.7;
 const v_shift = 16;
 
+const wiki_color = "blue";
+const ws_it_color = "red";
+const ws_la_color = "rgb(255, 182, 0)";
+
 const italian_height = 2300;
 const latin_height = 1000;
 
@@ -131,23 +135,57 @@ function dv3(the_literature) {
 			.attr("id", "d3_plot")
 			.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
 
-		// tooltip
-		let tooltip = d3.tip()
+		// tooltips
+		let tooltip_wikipedia = d3.tip()
 			.attr('class', 'tooltip')
-			.attr('id', 'tooltip')
+			.attr('id', 'tooltip_wikipedia')
 			.direction(function (d,i) {
 				return 'n'
 			})
 			.offset([-10,0])
 			.html(function(d) {
-	            let content = "<p style='font-weight: bold; margin: 0;'>" + d.pubb_w.replace(/_/g," ") + "</p>";
+	            let content = "<p style='margin: 0;'>" 
+	            content += "<span style='font-weight: bold; display: block; margin: 0;'>" + d.pubb_w.replace(/_/g," ") + "</span></br>"; 
+	            content += "<span>Wikipedia</span>";
+	            content += "</p>"
 
-	            // content += "<table><tr><th>" + d.values[0].pubb_w.replace(/_/g," ") + "</th></tr>"
-
-	            // content += "</table>"
 	            return content;
 	        });
-       	plot.call(tooltip);
+       	plot.call(tooltip_wikipedia);
+
+       	let tooltip_wikis_it = d3.tip()
+			.attr('class', 'tooltip')
+			.attr('id', 'tooltip_wikis_it')
+			.direction(function (d,i) {
+				return 'n'
+			})
+			.offset([-10,0])
+			.html(function(d) {
+	            let content = "<p style='margin: 0;'>" 
+	            content += "<span style='font-weight: bold; display: block; margin: 0;'>" + d.pubb_w.replace(/_/g," ") + "</span></br>"; 
+	            content += "<span>Wikisource</span>";
+	            content += "</p>"
+
+	            return content;
+	        });
+       	plot.call(tooltip_wikis_it);
+
+       	let tooltip_wikis_la = d3.tip()
+			.attr('class', 'tooltip')
+			.attr('id', 'tooltip_wikis_la')
+			.direction(function (d,i) {
+				return 'n'
+			})
+			.offset([-10,0])
+			.html(function(d) {
+	            let content = "<p style='margin: 0;'>" 
+	            content += "<span style='font-weight: bold; display: block; margin: 0;'>" + d.pubb_w.replace(/_/g," ") + "</span></br>"; 
+	            content += "<span>Wicifons</span>";
+	            content += "</p>"
+
+	            return content;
+	        });
+       	plot.call(tooltip_wikis_la);
 
 		// plot data
 		let authors = plot.append("g")	
@@ -201,8 +239,6 @@ function dv3(the_literature) {
 			.attr("transform",function(d,i){
 				return "translate(" + (i*space) + ",0)" 
 			})
-			.on("mouseover", tooltip.show) 
-			.on("mouseout", tooltip.hide)
 
 		// pubb_w
 		let publication_ws_la = publication_box.append("a")	
@@ -223,11 +259,13 @@ function dv3(the_literature) {
 					return circle_size/4
 				}
 			})
-			.style("fill","blue")
+			.style("fill",wiki_color)
 			.style("opacity",circle_opacity)
 			.attr("class",function(d,i){
 				return d.pubb_w 
 			})
+			.on("mouseover", tooltip_wikipedia.show) 
+			.on("mouseout", tooltip_wikipedia.hide)
 
 		let publications_link_it = publication_box.append("a")	
 			.attr("xlink:href", function(d,i){
@@ -247,11 +285,13 @@ function dv3(the_literature) {
 					return circle_size/4
 				}
 			})
-			.style("fill","red")
+			.style("fill",ws_it_color)
 			.style("opacity",circle_opacity)
 			.attr("class",function(d,i){
 				return d.pubbl_it 
 			})
+			.on("mouseover", tooltip_wikis_it.show) 
+			.on("mouseout", tooltip_wikis_it.hide)
 
 		let publications_link_la = publication_box.append("a")	
 			.attr("xlink:href", function(d,i){
@@ -271,11 +311,13 @@ function dv3(the_literature) {
 					return circle_size/4
 				}
 			})
-			.style("fill","#ffb600")
+			.style("fill", ws_la_color) // #ffb600 
 			.style("opacity",circle_opacity)
 			.attr("class",function(d,i){
 				return d.pubbl_la
 			})
+			.on("mouseover", tooltip_wikis_la.show) 
+			.on("mouseout", tooltip_wikis_la.hide)
 
 		let new_sort;
 		$("#literature").change(function() {
@@ -404,6 +446,8 @@ function dv3(the_literature) {
 				.attr("class",function(d,i){
 					return d.pubb_w 
 				})
+				.on("mouseover", tooltip_wikipedia.show) 
+				.on("mouseout", tooltip_wikipedia.hide)
 
 			let publications_link_it = publication_box.append("a")	
 				.attr("xlink:href", function(d,i){
@@ -428,6 +472,8 @@ function dv3(the_literature) {
 				.attr("class",function(d,i){
 					return d.pubbl_it 
 				})
+				.on("mouseover", tooltip_wikis_it.show) 
+				.on("mouseout", tooltip_wikis_it.hide)
 
 			let publications_link_la = publication_box.append("a")	
 				.attr("xlink:href", function(d,i){
@@ -452,6 +498,8 @@ function dv3(the_literature) {
 				.attr("class",function(d,i){
 					return d.pubbl_la
 				})
+				.on("mouseover", tooltip_wikis_la.show) 
+				.on("mouseout", tooltip_wikis_la.hide)
 		}
 
 		function update_sort(literature,new_sort) {
