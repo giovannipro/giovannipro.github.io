@@ -154,15 +154,16 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 153	Gabriele D'Annunzio	Gabriele	D'Annunzio	Gabriele D'Annunzio	Testi_di_Gabriele_D'Annunzio	-	Primo novecento	19	it	-
 155	Guido_Gozzano	Guido	Gozzano	Guido_Gozzano	Testi_di_Guido_Gozzano	-	Primo novecento	19	it	-
 156	Sergio_Corazzini	Sergio	Corazzini	Sergio_Corazzini	Testi_di_Sergio_Corazzini	-	Primo novecento	19	it	-
-157	Marino_Moretti	Marino	Moretti	Marino_Moretti	©	-	Primo novecento	19	it	-
-158	Filippo_Tommaso_Marinetti	Filippo Tommaso	Marinetti	Filippo_Tommaso_Marinetti	Testi_di_Filippo_Tommaso_Marinetti	-	Primo novecento	19	it	-
-159	Aldo_Palazzeschi	Aldo	Palazzeschi	Aldo_Palazzeschi	Testi_di_Aldo_Palazzeschi	-	Primo novecento	19	it	-
-160	Clemente_Rebora	Clemente	Rebora	Clemente_Rebora	©	-	Primo novecento	19	it	-
-161	Dino_Campana	Dino	Campana	Dino_Campana	Testi_di_Dino_Campana	-	Primo novecento	19	it	-
-162	Camillo_Sbarbaro	Camillo	Sbarbaro	Camillo_Sbarbaro	©	-	Primo novecento	19	it	-
-163	Luigi Pirandello	Luigi	Pirandello	Luigi Pirandello	Testi_di_Luigi_Pirandello	-	Primo novecento	19	it	-
-164	Giuseppe Ungaretti	Giuseppe	Ungaretti	Giuseppe Ungaretti	©	-	Il secolo breve	19.1	it	-
-165	Antonio Gramsci	Antonio	Gramsci	Antonio Gramsci	Testi_di_Antonio_Gramsci	-	Il secolo breve	19.1	it	-
+157	Luigi Pirandello	Luigi	Pirandello	Luigi Pirandello	Testi_di_Luigi_Pirandello	-	Primo novecento	19	it	-
+158	Dino_Campana	Dino	Campana	Dino_Campana	Testi_di_Dino_Campana	-	Primo novecento	19	it	-
+159	Filippo_Tommaso_Marinetti	Filippo Tommaso	Marinetti	Filippo_Tommaso_Marinetti	Testi_di_Filippo_Tommaso_Marinetti	-	Primo novecento	19	it	-
+160	Aldo_Palazzeschi	Aldo	Palazzeschi	Aldo_Palazzeschi	Testi_di_Aldo_Palazzeschi	-	Primo novecento	19	it	-
+161	Marino_Moretti	Marino	Moretti	Marino_Moretti	©	-	Primo novecento	19	it	-
+162	Clemente_Rebora	Clemente	Rebora	Clemente_Rebora	©	-	Primo novecento	19	it	-
+163	Camillo_Sbarbaro	Camillo	Sbarbaro	Camillo_Sbarbaro	©	-	Primo novecento	19	it	-
+164	Antonio Gramsci	Antonio	Gramsci	Antonio Gramsci	Testi_di_Antonio_Gramsci	-	Il secolo breve	19.1	it	-
+173	Italo Svevo	Italo	Svevo	Italo Svevo	Testi_di_Italo_Svevo	-	Il secolo breve	19.1	it	-
+165	Giuseppe Ungaretti	Giuseppe	Ungaretti	Giuseppe Ungaretti	©	-	Il secolo breve	19.1	it	-
 166	Umberto Saba	Umberto	Saba	Umberto Saba	©	-	Il secolo breve	19.1	it	-
 167	Salvatore Quasimodo	Salvatore	Quasimodo	Biografia	©	-	Il secolo breve	19.1	it	-
 168	Alberto Moravia	Alberto	Moravia	Alberto_Moravia	©	-	Il secolo breve	19.1	it	-
@@ -170,7 +171,6 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 170	Delio_Tessa	Delio	Tessa	Delio_Tessa	©	-	Il secolo breve	19.1	it	-
 171	Carlo_Betocchi	Carlo	Betocchi	Carlo_Betocchi	©	-	Il secolo breve	19.1	it	-
 172	Massimo_Bontempelli	Massimo	Bontempelli	Massimo_Bontempelli	©	-	Il secolo breve	19.1	it	-
-173	Italo Svevo	Italo	Svevo	Italo Svevo	Testi_di_Italo_Svevo	-	Il secolo breve	19.1	it	-
 174	Carlo Emilio Gadda	Carlo Emilio	Gadda	Carlo Emilio Gadda	©	-	Il secolo breve	19.1	it	-
 175	Eugenio Montale	Eugenio	Montale	Eugenio Montale	©	-	Il secolo breve	19.1	it	-
 176	Dino Buzzati	Dino	Buzzati	Dino Buzzati	©	-	Dopoguerra	19.5	it	-
@@ -183,27 +183,27 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 183	Primo Levi	Primo	Levi	Primo Levi	©	-	Dopoguerra	19.5	it	-
 184	Beppe Fenoglio	Beppe	Fenoglio	Beppe Fenoglio	©	-	Dopoguerra	19.5	it	-
 185	PPP		PPP	PPP	©	-	Dopoguerra	19.5	it	-
-186	Edoardo_Sanguineti	Edoardo	Sanguineti	Edoardo_Sanguineti	-	-	Anni 60-70	19.6	it	-
-187	Mario_Luzi	Mario	Luzi	Mario_Luzi	-	-	Anni 60-70	19.6	it	-
-188	Franco_Fortini	Franco	Fortini	Franco_Fortini	-	-	Anni 60-70	19.6	it	-
-189	Andrea_Zanzotto	Andrea	Zanzotto	Andrea_Zanzotto	-	-	Anni 60-70	19.6	it	-
-190	Alberto_Arbasino	Alberto	Arbasino	Alberto_Arbasino	-	-	Anni 60-70	19.6	it	-
-191	Goffredo_Parise	Goffredo	Parise	Goffredo_Parise	-	-	Anni 60-70	19.6	it	-
-192	Paolo_Volponi	Paolo	Volponi	Paolo_Volponi	-	-	Anni 60-70	19.6	it	-
-193	Vittorio Sereni	Vittorio	Sereni	Vittorio Sereni	-	-	Anni 60-70	19.6	it	-
-194	Fabrizio_De_André	Fabrizio	De André	Fabrizio_De_André	-	-	Anni 60-70	19.6	it	-
-195	Leonardo Sciascia	Leonardo	Sciascia	Biografia	©	-	Anni 60-70	19.6	it	-
-196	Italo Calvino	Italo	Calvino	Biografia	-	-	Anni 60-70	19.6	it	-
-197	Alda_Merini	Alda	Merini	Alda_Merini	-	-	Dagli anni 80 in poi	19.8	it	-
-198	Patrizia_Valduga	Patrizia	Valduga	Patrizia_Valduga	-	-	Dagli anni 80 in poi	19.8	it	-
-199	Valerio_Magrelli	Valerio	Magrelli	Valerio_Magrelli	-	-	Dagli anni 80 in poi	19.8	it	-
-200	Franco_Scataglini	Franco	Scataglini	Franco_Scataglini	-	-	Dagli anni 80 in poi	19.8	it	-
-201	Milo_De_Angelis	Milo	De Angelis	Milo_De_Angelis	-	-	Dagli anni 80 in poi	19.8	it	-
-202	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda	-	-	Dagli anni 80 in poi	19.8	it	-
-203	Umberto_Eco	Umberto	Eco	Umberto_Eco	-	-	Dagli anni 80 in poi	19.8	it	-
-204	Pier_Vittorio_Tondelli	Pier Vittorio	Tondelli	Pier_Vittorio_Tondelli	-	-	Dagli anni 80 in poi	19.8	it	-
-205	Antonio_Tabucchi	Antonio	Tabucchi	Antonio_Tabucchi	-	-	Dagli anni 80 in poi	19.8	it	-
-206	Aldo_Busi	Aldo	Busi	Aldo_Busi	-	-	Dagli anni 80 in poi	19.8	it	-
-207	Claudio_Magris	Claudio	Magris	Claudio_Magris	-	-	Dagli anni 80 in poi	19.8	it	-
-208	Giuseppe_Pontiggia	Giuseppe	Pontiggia	Giuseppe_Pontiggia	-	-	Dagli anni 80 in poi	19.8	it	-
-209	Silvia_Ballestra	Silvia	Ballestra	Silvia_Ballestra	-	-	Dagli anni 80 in poi	19.8	it	-
+186	Leonardo Sciascia	Leonardo	Sciascia	Biografia	©	-	Anni 60-70	19.6	it	-
+187	Edoardo_Sanguineti	Edoardo	Sanguineti	Edoardo_Sanguineti	©	-	Anni 60-70	19.6	it	-
+188	Mario_Luzi	Mario	Luzi	Mario_Luzi	©	-	Anni 60-70	19.6	it	-
+189	Franco_Fortini	Franco	Fortini	Franco_Fortini	©	-	Anni 60-70	19.6	it	-
+190	Andrea_Zanzotto	Andrea	Zanzotto	Andrea_Zanzotto	©	-	Anni 60-70	19.6	it	-
+191	Alberto_Arbasino	Alberto	Arbasino	Alberto_Arbasino	©	-	Anni 60-70	19.6	it	-
+192	Goffredo_Parise	Goffredo	Parise	Goffredo_Parise	©	-	Anni 60-70	19.6	it	-
+193	Paolo_Volponi	Paolo	Volponi	Paolo_Volponi	©	-	Anni 60-70	19.6	it	-
+194	Vittorio Sereni	Vittorio	Sereni	Vittorio Sereni	©	-	Anni 60-70	19.6	it	-
+195	Fabrizio_De_André	Fabrizio	De André	Fabrizio_De_André	©	-	Anni 60-70	19.6	it	-
+196	Italo Calvino	Italo	Calvino	Biografia	©	-	Anni 60-70	19.6	it	-
+197	Alda_Merini	Alda	Merini	Alda_Merini	©	-	Dagli anni 80 in poi	19.8	it	-
+198	Patrizia_Valduga	Patrizia	Valduga	Patrizia_Valduga	©	-	Dagli anni 80 in poi	19.8	it	-
+199	Valerio_Magrelli	Valerio	Magrelli	Valerio_Magrelli	©	-	Dagli anni 80 in poi	19.8	it	-
+200	Franco_Scataglini	Franco	Scataglini	Franco_Scataglini	©	-	Dagli anni 80 in poi	19.8	it	-
+201	Milo_De_Angelis	Milo	De Angelis	Milo_De_Angelis	©	-	Dagli anni 80 in poi	19.8	it	-
+202	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda	©	-	Dagli anni 80 in poi	19.8	it	-
+203	Umberto_Eco	Umberto	Eco	Umberto_Eco	©	-	Dagli anni 80 in poi	19.8	it	-
+204	Pier_Vittorio_Tondelli	Pier Vittorio	Tondelli	Pier_Vittorio_Tondelli	©	-	Dagli anni 80 in poi	19.8	it	-
+205	Antonio_Tabucchi	Antonio	Tabucchi	Antonio_Tabucchi	©	-	Dagli anni 80 in poi	19.8	it	-
+206	Aldo_Busi	Aldo	Busi	Aldo_Busi	©	-	Dagli anni 80 in poi	19.8	it	-
+207	Claudio_Magris	Claudio	Magris	Claudio_Magris	©	-	Dagli anni 80 in poi	19.8	it	-
+208	Giuseppe_Pontiggia	Giuseppe	Pontiggia	Giuseppe_Pontiggia	©	-	Dagli anni 80 in poi	19.8	it	-
+209	Silvia_Ballestra	Silvia	Ballestra	Silvia_Ballestra	©	-	Dagli anni 80 in poi	19.8	it	-
