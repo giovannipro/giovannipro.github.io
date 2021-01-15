@@ -106,7 +106,7 @@ footer ul li {
 	justify-content: space-between;
 }
 
-.tooltip{
+.tooltip {
 	line-height: 1;
 	padding: 6px;
 	background-color: rgba(255, 255, 255, 1);
@@ -114,6 +114,12 @@ footer ul li {
 	border: 1px solid rgb(140,140,140);
 	border-radius: 4px;
 	font-size: 12px;
+	max-width: 150px;
+}
+
+.tooltip table tr {
+	/*padding-bottom: 10px;*/
+	height: 15px;
 }
 
 /* ------- dataviz n. 2 ------- */

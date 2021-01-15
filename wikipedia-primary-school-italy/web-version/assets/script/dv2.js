@@ -17,7 +17,7 @@ let c_issues = '#EC4C4E',
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 40, left: 60, bottom: 20, right: 60},
+let margin = {top: 40, left: 50, bottom: 20, right: 50},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
