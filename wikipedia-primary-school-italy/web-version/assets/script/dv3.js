@@ -17,7 +17,7 @@ const ws_it_color = "red";
 const ws_la_color = "rgb(255, 182, 0)";
 
 const italian_height = 2300;
-const latin_height = 910;
+const latin_height = 830;
 
 const literature_ = "it";
 
@@ -83,16 +83,50 @@ function dv3(the_literature) {
 		author_group = d3.nest()
 			.key(d => d.surname)
 			.entries(publications_authors)
-		// console.log(author_group)
 
 		author_group.forEach(function (val,i) {
 			let period = +val.values[0].period
 			period.toFixed(2)
-			// console.log(val.key, period)
+
+			let empty_publ = 0;
+			let values = val.values;
+			values.forEach(function (a,b) {
+				if (a.pubb_w == "-" && a.pubbl_it == "-" && a.pubbl_la == "-"){
+					empty_publ += 1
+				}
+			})
+			
+			val.values[0].tot_publ = (val.values.length - empty_publ)
+			val.values[0].id = +val.values[0].id
+			console.log(val.values.length,empty_publ,val.values.length - empty_publ)
 		})
+		console.log(author_group)
+
+		// sort
+		// let the_sort = 1
+		// if (the_sort == 1) {
+		// 	author_group.sort(function(a, b) {
+  // 				return a.key - b.key
+  // 				// return d3.ascending(a.key, a.key);
+		// 	})
+		// }
+		// else if (the_sort == 2){
+		// 	author_group.sort(function(a,b){
+		// 		return a.values[0].period - b.values[0].period
+		// 	})
+		// }
+		// else if (the_sort == 3){ 
+		// 	author_group.sort(function(a, b) {
+		// 		return b.values.length - a.values.length
+
+  // 				// return d3.descending(a.values.length, b.values.length);
+		// 	})
+		// }
+		// console.log(the_sort)
 
 		author_group.sort(function(a, b) {
 	  		return d3.ascending(a.values[0].surname, b.values[0].surname); // a, b.key
+			// return a.values[0].surname - b.values[0].surname
 		}) 
 
 		// let max_publication = d3.max(author_group, function(d) {
@@ -279,7 +313,7 @@ function dv3(the_literature) {
 
 		let author_name = author_box.append("text")
 			.text(function(d,i){
-				return d.values[0].surname + " " + d.values[0].name // + " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
+				return d.values[0].surname + " " + d.values[0].name //+ " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
 			})
 			.attr("font-size",font_size)
 
@@ -411,7 +445,7 @@ function dv3(the_literature) {
 				.attr("r",0)
 
 			let publications_authors = [];
-			let author_group = [];
+			// let author_group = [];
 
 			// filter by source (it or la)
 			merged_data.forEach(function (val,i) {
@@ -427,21 +461,44 @@ function dv3(the_literature) {
 				.entries(publications_authors)
 			console.log(author_group)
 
-			if (new_sort == 1) {
+			author_group.forEach(function (val,i) {
+				let period = +val.values[0].period
+				period.toFixed(2)
+
+				let empty_publ = 0;
+				let values = val.values;
+				values.forEach(function (a,b) {
+					if (a.pubb_w == "-" && a.pubbl_it == "-" && a.pubbl_la == "-"){
+						empty_publ += 1
+					}
+				})
+				
+				val.values[0].tot_publ = (val.values.length - empty_publ)
+				val.values[0].id = +val.values[0].id
+				console.log(val.values.length,empty_publ,val.values.length - empty_publ)
+			})
+			console.log(author_group)
+
+			// sort
+			if (the_sort == 1) {
 				author_group.sort(function(a, b) {
-	  				return d3.ascending(a.key, a.key);
+	  				return d3.ascending(a.values[0].surname, b.values[0].surname);
+	  				// return d3.ascending(a.key, a.key);
 				})
 			}
-			else if (new_sort == 2){
+			else if (the_sort == 2){
 				author_group.sort(function(a,b){
 					return a.values[0].period - b.values[0].period
 				})
 			}
-			else if (new_sort == 3){
+			else if (the_sort == 3){ 
 				author_group.sort(function(a, b) {
-	  				return d3.descending(a.values.length, b.values.length);
+	  				return d3.descending(a.values[0].tot_publ, b.values[0].tot_publ);
+					// return b.values.length - a.values.length
+
 				})
 			}
+			// console.log(the_sort)
 
 			let the_height = 0;
 			if (the_literature == "it") {
@@ -450,7 +507,7 @@ function dv3(the_literature) {
 			else {
 				the_height = latin_height
 			}
-			console.log(literature_,the_height)
+			// console.log(literature_,the_height)
 
 			let y = d3.scaleLinear()
 				.domain([0,author_group.length]) 
@@ -499,7 +556,7 @@ function dv3(the_literature) {
 
 			let author_name = author_box.append("text")
 				.text(function(d,i){
-					return d.values[0].surname + " " + d.values[0].name
+					return d.values[0].surname + " " + d.values[0].name // + " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
 				})
 				.attr("font-size",font_size)
 
@@ -513,9 +570,10 @@ function dv3(the_literature) {
 				.enter()
 				.append("g")
 				.attr("transform",function(d,i){
-					return "translate(" + i*(circle_size*10) + ",0)" 
+					return "translate(" + (i*space) + ",0)" 
 				})
 
+			// pubb_w
 			let publication_ws_la = publication_box.append("a")	
 				.attr("xlink:href", function(d,i){
 					return wiki_link + d.pubb_w
@@ -534,7 +592,7 @@ function dv3(the_literature) {
 						return circle_size/6
 					}
 				})
-				.style("fill","blue")
+				.style("fill",wiki_color)
 				.style("opacity",circle_opacity)
 				.attr("class",function(d,i){
 					return d.pubb_w 
@@ -560,7 +618,7 @@ function dv3(the_literature) {
 						return circle_size/6
 					}
 				})
-				.style("fill","red")
+				.style("fill",ws_it_color)
 				.style("opacity",circle_opacity)
 				.attr("class",function(d,i){
 					return d.pubbl_it 
@@ -586,7 +644,7 @@ function dv3(the_literature) {
 						return circle_size/6
 					}
 				})
-				.style("fill","#ffb600")
+				.style("fill", ws_la_color) // #ffb600 
 				.style("opacity",circle_opacity)
 				.attr("class",function(d,i){
 					return d.pubbl_la
@@ -598,107 +656,119 @@ function dv3(the_literature) {
 		function update_sort(literature,new_sort) {
 			console.log(literature,new_sort)
 
-			let publications_authors = [];
-			let author_group = [];
-			let merged_data = [];
+			// let publications_authors = [];
+			// let author_group = [];
+			// let merged_data = [];
 			
 			// merge the two datasets
-			merged_data = data[0].map((e) => {
-			    for(let element of data[1]){
-			        if(e.author == element.author) Object.assign(e, element);
-			    }
-			    return e;
-			});
+			// merged_data = data[0].map((e) => {
+			//     for(let element of data[1]){
+			//         if(e.author == element.author) Object.assign(e, element);
+			//     }
+			//     return e;
+			// });
 			// console.log(merged_data);
 
 			// filter by source (it or la)
-			merged_data.forEach(function (val,i) {
-				if (val.source == the_literature){
-					publications_authors.push(val)
-				}
-			})
+			// merged_data.forEach(function (val,i) {
+			// 	if (val.source == the_literature){
+			// 		publications_authors.push(val)
+			// 	}
+			// })
 			// console.log(publications_authors)
 
-			// nest by author
-			author_group = d3.nest()
-				.key(d => d.surname)
-				.entries(publications_authors)
+			// // nest by author
+			// author_group = d3.nest()
+			// 	.key(d => d.surname)
+			// 	.entries(publications_authors)
 
-			author_group.forEach(function (val,i) {
-				let period = +val.values[0].period
-				period.toFixed(2)
-				// console.log(val.key, period)
-			})
+			// author_group.forEach(function (val,i) {
+			// 	let period = +val.values[0].period
+			// 	period.toFixed(2)
+			// 	// console.log(val.key, period)
+			// })
+
 			console.log(author_group)
 
-			// let max_publication = d3.max(author_group, function(d) {
-			// 		return d.values.length
-			// 	})
-			let max_publication = 21
+			// let max_publication = 21
 
-			if (new_sort == 3){
+			// sort
+			if (new_sort == 1) {
 				author_group.sort(function(a, b) {
-	  				return d3.descending(a.values.length, b.values.length);
+	  				return d3.ascending(a.values[0].surname, b.values[0].surname);
 				})
-
-
-				// author.sort(function(a, b) {
-	  	// 			return d3.ascending(a.values.length, b.values.length); // a, b.key
-				// })
-				// .transition()
-				// .attr("transform", function(d,i){
-				// 	return "translate(" + 0 + "," + (i*v_shift) + ")" // ((d.new_id)*v_shift) + ")" // ((i)*v_shift) + ")"
-				// })
 			}
 			else if (new_sort == 2){
 				author_group.sort(function(a,b){
 					return a.values[0].period - b.values[0].period
 				})
-
-
-			// 	// .transition()
-			// 	// .attr("transform", function(d,i){
-			// 	// 	return "translate(" + 0 + "," + (i*v_shift) + ")" // ((d.new_id)*v_shift) + ")" // ((i)*v_shift) + ")"
-			// 	// })
 			}
-			else { //  if (new_sort == 1)
+			else if (new_sort == 3){
 				author_group.sort(function(a, b) {
-	  				return d3.ascending(a.key, a.key);
+	  				return d3.ascending(b.values[0].tot_publ, a.values[0].tot_publ);
+
+	  				// return b.values[0].tot_publ - b.values[0].tot_publ
+
+	  				// return b.values.length - a.values.length
 				})
-
-
-			// 	// .transition()
-			// 	// .attr("transform", function(d,i){
-			// 	// 	return "translate(" + 0 + "," +  (i*v_shift) + ")"  // ((d.new_id)*v_shift) + ")" // ((i)*v_shift) + ")"
-			// 	// })
 			}
 
-			author_group.forEach(function(d,i){
-				// d.values[0].new_id = i;
-				d.values[0].new_id = i;
-			})
-			console.log(author_group)
-
-			let the_height = 0;
-			if (the_literature == "it") {
+			if (literature == "it") {
 				the_height = italian_height
 			}
 			else {
 				the_height = latin_height
 			}
-			// console.log(literature_,the_height,author_group.length)
 
 			y.domain([0,author_group.length])
 				.range([0,the_height])
+			// console.log(the_height,author_group.length)
+
+			author_group.forEach(function(d,i){
+				d.values[0].new_id = i;
+				// console.log(d.values[0].author,d.values[0].id,d.values[0].new_id)
+				console.log(d.values[0].author,d.values[0].tot_publ)
+			})
 
 			svg.selectAll(".author")
 				.transition()
 				.attr("transform", function(d,i){
-					console.log(d)
-					return "translate(" + 0 + "," + y(d.values[0].new_id) +  ")" // d.new_id /* ((d.new_id)*v_shift)*/ + ")"
+					
+					let sort_y = +d.values[0].new_id
+					return "translate(" + 0 + "," + y(sort_y) +  ")" 
 
-					// console.log(d.values[0].new_id)
-					// return "translate(" + 0 + "," + y(d.values[0].new_id) +  ")" // d.new_id /* ((d.new_id)*v_shift)*/ + ")"
+					// if (the_literature == "it") {
+					// 	sort_y = +d.values[0].new_id
+					// }	
+					// else if (the_literature == "la") {
+					// 	if (new_sort == 1) {
+					// 		sort_y = +d.values[0].id_surname
+					// 	}
+					// 	else if (new_sort == 2) {
+					// 		sort_y = +d.values[0].id_period
+					// 	}
+					// 	else {
+					// 		sort_y = +d.values[0].id_publication
+					// 	}
+					// 	// else if (new_sort == 2){
+					// 	// 	sort_y = d.values[0].id_period 
+					// 	// }
+					// 	// else { // (new_sort == 2)
+					// 	// 	sort_y = d.values[0].id_publication
+					// 	// }
+					// }				
+					// console.log(+d.values[0].id_surname)
+
+					// return "translate(" + 0 + "," + y(sort_y) +  ")"
+
+					// // console.log(d.values[0])
+					// console.log(d.values[0])
+
+					// d.new_id /* ((d.new_id)*v_shift)*/ + ")"
+					// return "translate(" + 0 + "," + y(+d.values[0].id) +  ")" 
+					// console.log(d.values[0].author,+d.values[0].id)
+					
+					// console.log(d.values[0].author,+d.values[0])
 				})
 		}
 	}

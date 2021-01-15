@@ -672,8 +672,6 @@ function dv2(the_subject) {
 					}
 				}
 			}
-			// console.log(subject_articles[0])
-			// console.log(subject_articles[1])
 		
 			filtered_data_ = subject_articles.filter(function(x,y){ 
 				return x.issues > 0
@@ -701,8 +699,6 @@ function dv2(the_subject) {
 
 				d.features = d.references + d.notes + d.images;
 			})
-			// console.log(filtered_data[0])
-			// console.log(filtered_data[1])
 
 			// sort
 			if (new_sort == 1){
