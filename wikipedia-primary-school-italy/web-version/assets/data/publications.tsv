@@ -322,7 +322,6 @@ id	author	pubb_w	pubbl_it	pubbl_la
 321	Aldo_Busi	-	-	-
 322	Aldo_Palazzeschi	-	-	-
 323	Alessandro_Verri	-	-	-
-324	Ammiano Marcellino	-	-	-
 325	Andrea_Zanzotto	-	-	-
 326	Antonella_Anedda	-	-	-
 327	Antonio_Pucci_(poeta)	-	-	-
@@ -332,19 +331,15 @@ id	author	pubb_w	pubbl_it	pubbl_la
 332	Battista_Guarini	-	-	-
 333	Benvenuto_Cellini	-	-	-
 334	Bernardo_Dovizi	-	-	-
-335	Boezio	-	-	-
 336	Burchiello	-	-	-
 337	Camillo_Sbarbaro	-	-	-
 339	Carlo_Betocchi	-	-	-
 340	Carlo_Porta	-	-	-
-341	Cassiodoro	-	-	-
-343	Cecilio_Stazio	-	-	-
 344	Celio_Magno	-	-	-
 345	Cesare_Beccaria	-	-	-
 346	Ciro_di_Pers	-	-	-
 348	Claudio_Magris	-	-	-
 349	Clemente_Rebora	-	-	-
-350	Cornelio Nepote	-	-	-
 351	Delio_Tessa	-	-	-
 352	Denis_Diderot	-	-	-
 353	Dino_Campana	-	-	-
@@ -355,8 +350,6 @@ id	author	pubb_w	pubbl_it	pubbl_la
 358	Emilio_Salgari	-	-	-
 359	Fabrizio_De_André	-	-	-
 360	Federico_De_Roberto	-	-	-
-361	Fedro	-	-	-
-362	Flacco	-	-	-
 363	Francesco_Berni	-	-	-
 364	Francesco_De_Sanctis	-	-	-
 365	Francesco_Landini	-	-	-
@@ -364,71 +357,50 @@ id	author	pubb_w	pubbl_it	pubbl_la
 367	Franco_Scataglini	-	-	-
 368	G.B. Vico	-	-	-
 369	Gabriele D'Annunzio	-	-	-
-370	Gaio Valerio Catullo	-	-	-
-371	Gaio_Cornelio_Gallo	-	-	-
 372	Gaio_Lucilio	-	-	-
 374	Gaspara_Stampa	-	-	-
 375	Giacomo_Lubrano	-	-	-
 376	Giacomo_Noventa	-	-	-
 378	Giorgio_Caproni	-	-	-
-379	Giovan Battista Marino	-	-	-
 380	Giovanni_Berchet	-	-	-
 381	Giovanni_Della_Casa	-	-	-
 382	Giovanni_Pontano	-	-	-
 383	Giovanni_Villani	-	-	-
-384	Giovenale	-	-	-
 387	Giuseppe_Gioachino_Belli	-	-	-
 388	Giuseppe_Pontiggia	-	-	-
 389	Giusto_de'_Conti	-	-	-
 390	Gneo_Nevio	-	-	-
 391	Goffredo_Parise	-	-	-
-392	Guido Guinizelli	-	-	-
 393	Guido_Gozzano	-	-	-
-394	Guittone d'Arezzo	-	-	-
-395	Iacopone da Todi	-	-	-
 396	Igino_Ugo_Tarchetti	-	-	-
-397	Ippolito Nievo	-	-	-
 398	Jacopo_Sannazaro	-	-	-
 399	Leon_Battista_Alberti	-	-	-
 400	Leonardo_Bruni	-	-	-
 401	Leonardo_da_Vinci	-	-	-
 402	Livio_Andronico	-	-	-
-403	Lorenzo de' Medici	-	-	-
 404	Lorenzo_Da_Ponte	-	-	-
 405	Lorenzo_Valla	-	-	-
-406	Lucano	-	-	-
 407	Lucio_Accio	-	-	-
 408	Lucio_Giunio_Moderato_Columella	-	-	-
-409	Luigi Pulci	-	-	-
 410	Luigi_Capuana	-	-	-
-411	Marco Polo	-	-	-
 412	Marco_Gavio_Apicio	-	-	-
 413	Marco_Pacuvio	-	-	-
 414	Marino_Moretti	-	-	-
 415	Mario_Luzi	-	-	-
-416	Marziale	-	-	-
 417	Massimo_Bontempelli	-	-	-
 418	Masuccio_Salernitano	-	-	-
-419	Matteo Maria Boiardo	-	-	-
 420	Michelangelo_Buonarroti	-	-	-
 421	Milo_De_Angelis	-	-	-
-422	Namaziano	-	-	-
 423	Paolo_Sarpi	-	-	-
 424	Paolo_Volponi	-	-	-
-425	Patercolo	-	-	-
 426	Patrizia_Valduga	-	-	-
-427	Persio	-	-	-
 428	Pier_Vittorio_Tondelli	-	-	-
-429	Pietro Bembo	-	-	-
 430	Pietro_Aretino	-	-	-
 431	Pietro_Borsieri	-	-	-
 432	Pietro_Giordani	-	-	-
 433	Pietro_Metastasio	-	-	-
 434	Pietro_Verri	-	-	-
-435	Plinio il Giovane	-	-	-
-436	Plinio il Vecchio	-	-	-
 437	Pomponio_Mela	-	-	-
-438	Quintiliano	-	-	-
 439	Quinto_Curzio_Rufo	-	-	-
 440	Quinto_Ennio	-	-	-
 441	Quinto_Lutazio_Catulo	-	-	-
@@ -437,20 +409,13 @@ id	author	pubb_w	pubbl_it	pubbl_la
 444	Sandro_Penna	-	-	-
 445	Sant'Ambrogio	-	-	-
 446	Sergio_Corazzini	-	-	-
-447	Sesto_Properzio	-	-	-
-448	Sidonio Apollinare	-	-	-
-449	Silio Italico	-	-	-
 450	Silvia_Ballestra	-	-	-
-451	Simmaco	-	-	-
-452	Stazio	-	-	-
 453	Teofilo_Folengo	-	-	-
 454	Tertulliano	-	-	-
 455	Tito_Pomponio_Attico	-	-	-
 456	Tommaso_Campanella	-	-	-
 457	Umberto_Eco	-	-	-
-458	Valerio Massimo	-	-	-
 459	Valerio_Magrelli	-	-	-
-460	Vincenzo_Monti	-	-	-
 461	Vittoria_Colonna	-	-	-
 462	Vittorio Sereni	-	-	-
 461	Alessandro_Tassoni	-	-	-
