@@ -16,10 +16,16 @@ const wiki_color = "blue";
 const ws_it_color = "red";
 const ws_la_color = "rgb(255, 182, 0)";
 
-const italian_height = 2300;
-const latin_height = 830;
+const it_authors = 147;
+const la_authors = 61;
+
+const italian_height = it_authors * 20; // 2300;
+const latin_height = la_authors * 20; // 910
 
 const literature_ = "it";
+
+const reset_height_it = 50;
+const reset_height_la = 10;
 
 function escape_(item){
 	let output = item.replace("'","%27")
@@ -37,14 +43,14 @@ let margin = {top: 20, left: 60, bottom: 20, right: 60},
 let svg = d3.select(container)
 	.append("svg")
 	.attr("width", width + (margin.right + margin.right))
-	.attr("height", function(d,i) {
-		if (literature_ == "it") {
-			return italian_height
-		}
-		else {
-			return latin_height
-		}
-	})
+	.attr("height", italian_height)
+		// function(d,i) {
+		// if (literature_ == "it") {
+		// 	return italian_height + 40
+		// }
+		// else {
+		// 	return latin_height + 40
+		// })
 	.attr("id", "svg")
 	// .attr("height",height + (margin.top + margin.bottom))
 
@@ -98,32 +104,9 @@ function dv3(the_literature) {
 			
 			val.values[0].tot_publ = (val.values.length - empty_publ)
 			val.values[0].id = +val.values[0].id
-			console.log(val.values.length,empty_publ,val.values.length - empty_publ)
+			// console.log(val.values.length,empty_publ,val.values.length - empty_publ)
 		})
-		console.log(author_group)
-
-		// sort
-		// let the_sort = 1
-		// if (the_sort == 1) {
-		// 	author_group.sort(function(a, b) {
-  // 				return a.key - b.key
-  // 				// return d3.ascending(a.key, a.key);
-		// 	})
-		// }
-		// else if (the_sort == 2){
-		// 	author_group.sort(function(a,b){
-		// 		return a.values[0].period - b.values[0].period
-		// 	})
-		// }
-		// else if (the_sort == 3){ 
-		// 	author_group.sort(function(a, b) {
-		// 		return b.values.length - a.values.length
-
-  // 				// return d3.descending(a.values.length, b.values.length);
-		// 	})
-		// }
-		// console.log(the_sort)
-
+	
 		author_group.sort(function(a, b) {
 	  		return d3.ascending(a.values[0].surname, b.values[0].surname); // a, b.key
 			// return a.values[0].surname - b.values[0].surname
@@ -133,13 +116,19 @@ function dv3(the_literature) {
 		// 		return d.values.length
 		// 	})
 		let max_publication = 21;
-		// console.log(max_publication)
 
 		// grid
+		let the_height = 0;
+		if (the_literature == "it") {
+			the_height = italian_height + reset_height_it
+		}
+		else {
+			the_height = latin_height + reset_height_la
+		}
+
 		let y = d3.scaleLinear()
 			.domain([0,author_group.length]) 
-			.range([0,italian_height])
-		console.log(author_group.length)
+			.range([0,the_height])
 
 		let grids = svg.append("g")
 			.attr("id", "grids")
@@ -422,11 +411,11 @@ function dv3(the_literature) {
 			let literature_select = $("#literature option:selected").val();
 
 			update_sort(literature_select,new_sort);
-			console.log(literature_select,new_sort)
+			// console.log(literature_select,new_sort)
 		});
 
 		function update_literature(the_literature,the_sort){
-			console.log(the_literature,the_sort);
+			// console.log(the_literature,the_sort);
 
 			if (the_literature == "la"){
 				d3.select("svg")
@@ -459,7 +448,7 @@ function dv3(the_literature) {
 			author_group = d3.nest()
 				.key(d => d.surname)
 				.entries(publications_authors)
-			console.log(author_group)
+			// console.log(author_group)
 
 			author_group.forEach(function (val,i) {
 				let period = +val.values[0].period
@@ -475,9 +464,11 @@ function dv3(the_literature) {
 				
 				val.values[0].tot_publ = (val.values.length - empty_publ)
 				val.values[0].id = +val.values[0].id
-				console.log(val.values.length,empty_publ,val.values.length - empty_publ)
+				// console.log(val.values.length,empty_publ,val.values.length - empty_publ)
 			})
-			console.log(author_group)
+			// console.log(author_group)
+			console.log(author_group.length)
+
 
 			// sort
 			if (the_sort == 1) {
@@ -502,10 +493,10 @@ function dv3(the_literature) {
 
 			let the_height = 0;
 			if (the_literature == "it") {
-				the_height = italian_height
+				the_height = italian_height + reset_height_it
 			}
 			else {
-				the_height = latin_height
+				the_height = latin_height + reset_height_la
 			}
 			// console.log(literature_,the_height)
 
@@ -515,18 +506,15 @@ function dv3(the_literature) {
 
 			let authors = plot.append("g")	
 				.attr("id","authors")
-				.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")
+				.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")	
 
 			let author = authors.selectAll("g")
 				.data(author_group)
 				.enter()
 				.append("g")
 				.attr("class","author")
-				// .sort(function(a, b) {
-	  	// 			return d3.ascending(a.values[0].surname, b.values[0].surname);
-				// })
 				.attr("id", function(d,i){
-					return i + "_" + d.key
+					return i + "_" + d.values[0].surname
 				})
 				.attr("transform", function(d,i){
 					return "translate(" + 0 + "," + y(i) + ")" // ((i)*v_shift)
@@ -537,26 +525,27 @@ function dv3(the_literature) {
 				.append("a")
 				.attr("xlink:href", function(d,i){
 					if (d.values[0].source == "it") {
-						if (d.values[0].author_ws_it !== "©" || d.values[0].author_ws_it !== "" || d.values[0].author_ws_it !== "-") {
+						if (d.values[0].author_ws_it !== "©" && d.values[0].author_ws_it !== "-") {
 							return ws_it_author_link + d.values[0].author_ws_it.replace("Testi_di_","")
 						}
 						else {
-							return ""
+							return wiki_link + d.values[0].author_w
 						}
 					}
-					else {
-						if (d.values[0].author_ws_la !== "" || d.values[0].author_ws_la !== "-") {
+					else if (d.values[0].source == "la") {
+						if (d.values[0].author_ws_la !== "-") {
 							return ws_la_author_link + d.values[0].author_ws_la
 						}
 						else {
-							return ""
+							return wiki_link + d.values[0].author_w
 						}
 					}
 				})
+				.attr("target","_blank")
 
 			let author_name = author_box.append("text")
 				.text(function(d,i){
-					return d.values[0].surname + " " + d.values[0].name // + " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
+					return d.values[0].surname + " " + d.values[0].name //+ " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
 				})
 				.attr("font-size",font_size)
 
@@ -656,42 +645,6 @@ function dv3(the_literature) {
 		function update_sort(literature,new_sort) {
 			console.log(literature,new_sort)
 
-			// let publications_authors = [];
-			// let author_group = [];
-			// let merged_data = [];
-			
-			// merge the two datasets
-			// merged_data = data[0].map((e) => {
-			//     for(let element of data[1]){
-			//         if(e.author == element.author) Object.assign(e, element);
-			//     }
-			//     return e;
-			// });
-			// console.log(merged_data);
-
-			// filter by source (it or la)
-			// merged_data.forEach(function (val,i) {
-			// 	if (val.source == the_literature){
-			// 		publications_authors.push(val)
-			// 	}
-			// })
-			// console.log(publications_authors)
-
-			// // nest by author
-			// author_group = d3.nest()
-			// 	.key(d => d.surname)
-			// 	.entries(publications_authors)
-
-			// author_group.forEach(function (val,i) {
-			// 	let period = +val.values[0].period
-			// 	period.toFixed(2)
-			// 	// console.log(val.key, period)
-			// })
-
-			console.log(author_group)
-
-			// let max_publication = 21
-
 			// sort
 			if (new_sort == 1) {
 				author_group.sort(function(a, b) {
@@ -706,28 +659,22 @@ function dv3(the_literature) {
 			else if (new_sort == 3){
 				author_group.sort(function(a, b) {
 	  				return d3.ascending(b.values[0].tot_publ, a.values[0].tot_publ);
-
-	  				// return b.values[0].tot_publ - b.values[0].tot_publ
-
-	  				// return b.values.length - a.values.length
 				})
 			}
 
+			let the_height = 0;
 			if (literature == "it") {
-				the_height = italian_height
+				the_height = italian_height + reset_height_it
 			}
 			else {
-				the_height = latin_height
+				the_height = latin_height + reset_height_la
 			}
 
 			y.domain([0,author_group.length])
 				.range([0,the_height])
-			// console.log(the_height,author_group.length)
 
 			author_group.forEach(function(d,i){
 				d.values[0].new_id = i;
-				// console.log(d.values[0].author,d.values[0].id,d.values[0].new_id)
-				console.log(d.values[0].author,d.values[0].tot_publ)
 			})
 
 			svg.selectAll(".author")
@@ -736,39 +683,6 @@ function dv3(the_literature) {
 					
 					let sort_y = +d.values[0].new_id
 					return "translate(" + 0 + "," + y(sort_y) +  ")" 
-
-					// if (the_literature == "it") {
-					// 	sort_y = +d.values[0].new_id
-					// }	
-					// else if (the_literature == "la") {
-					// 	if (new_sort == 1) {
-					// 		sort_y = +d.values[0].id_surname
-					// 	}
-					// 	else if (new_sort == 2) {
-					// 		sort_y = +d.values[0].id_period
-					// 	}
-					// 	else {
-					// 		sort_y = +d.values[0].id_publication
-					// 	}
-					// 	// else if (new_sort == 2){
-					// 	// 	sort_y = d.values[0].id_period 
-					// 	// }
-					// 	// else { // (new_sort == 2)
-					// 	// 	sort_y = d.values[0].id_publication
-					// 	// }
-					// }				
-					// console.log(+d.values[0].id_surname)
-
-					// return "translate(" + 0 + "," + y(sort_y) +  ")"
-
-					// // console.log(d.values[0])
-					// console.log(d.values[0])
-
-					// d.new_id /* ((d.new_id)*v_shift)*/ + ")"
-					// return "translate(" + 0 + "," + y(+d.values[0].id) +  ")" 
-					// console.log(d.values[0].author,+d.values[0].id)
-					
-					// console.log(d.values[0].author,+d.values[0])
 				})
 		}
 	}
