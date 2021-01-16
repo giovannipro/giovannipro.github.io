@@ -22,7 +22,17 @@
 					<li><a href="autori">Autori e pubblicazioni</a></li>
 				</ul>
 			</nav>
+			<div id="mobile_menu_icon"></div>
 		</header>
+		<div id="mobile_menu_box">
+			<nav id="mobile_menu">
+				<ul class="">
+					<li style="color: #ccc">Articoli più visti</li>
+					<li><a href="avvisi">Articoli con avvisi</a></li>
+					<li><a href="autori">Autori e pubblicazioni</a></li>
+				</ul>
+			</nav>
+		</div>
 		<main>
 			<section id="dataviz">
 				<div id="select_section">
@@ -78,25 +88,28 @@
 				</div>
 				<div id="dv1" class="dataviz"></div>
 			</section>
-			<section>
+			<section id="legend">
 				<h3 class="container">Come leggere la visualizzazione</h3>
 				<div class="container" id="dv_infobox">
 					<div id="how_to_read" class="">
 						<p>
-							La visualizzazione mostra gli articoli con più visite medie giornaliere per materia scolastica nel periodo compreso tra il 1° luglio 2015 e il 31 maggio 2020. Il cerchio di colore chiaro rappresenta la dimensione dell’articolo, il cerchio scuro rappresenta la dimensione dell’incipit e il cerchio con il solo contorno rappresenta la dimensione della pagina di discussione Tutte e tre le dimensioni sono espresse in byte.
+							La visualizzazione mostra gli articoli con più visite medie giornaliere per materia scolastica nel periodo compreso tra il 1° luglio 2015 e il 31 maggio 2020. <br/>
+							Il cerchio di colore chiaro rappresenta la dimensione dell’articolo, il cerchio scuro rappresenta la dimensione dell’incipit e il cerchio con il solo contorno rappresenta la dimensione della pagina di discussione. <br/>
+							Tutte e tre le dimensioni sono espresse in byte.
 						</p>
 					</div>
-					<div id="dv1_legend" class="">
-						<!-- <p>legenda ...</p> -->
+					<div id="dv1_legend" class="container">
 						<img src="assets/img/dv1_legend.svg" width="300">
 					</div>
 				</div>
-				<div class="container">
-					<!-- <p>scaricamento dati ...</p> -->
-				</div>
+				<!-- <div id="dv1_dataset" class="">
+					<h3 class="container">Scarica i dati</h3>
+					<p>scaricamento dati ...</p>
+				</div> -->
 			</section>
 			<footer>
 				<div class="container">
+					<h3>Crediti</h3>
 					<ul>
 						<li>
 							Ideazione e responsabile<br/>
