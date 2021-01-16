@@ -24,50 +24,58 @@
 			</nav>
 		</header>
 		<main>
-			<section>
-				<div id="select_box" class="container select_box">
-					<div id="select_year" class="selector">
-						<p style="margin: 0 0 20px;">Anno</p>
-						<p>2020</p>
-					</div>
-					<div id="select_subject" class="selector">
-						<p style="margin: 0 0 20px;">Materia</p>
-						<select name="subjects" id="subjects">
-							<option value="all">Tutte le materie</option>
-							<option value="Biologia">Biologia</option>
-							<option value="Chimica">Chimica</option>
-							<option value="Cittadinanza e costituzione">Cittadinanza e costituzione</option>
-							<option value="Diritto e Economia">Diritto e Economia</option>
-							<option value="Filosofia">Filosofia</option>
-							<option value="Fisica">Fisica</option>
-							<option value="Geografia">Geografia</option>
-							<option value="Grammatica italiana">Grammatica italiana</option>
-							<option value="Grammatica latina">Grammatica latina</option>
-							<option value="Informatica">Informatica</option>
-							<option value="Letteratura italiana">Letteratura italiana</option>
-							<option value="Letteratura latina">Letteratura latina</option>
-							<option value="Matematica">Matematica</option>
-							<option value="Scienze della Terra">Scienze della Terra</option>
-							<option value="Scienze">Scienze</option>
-							<option value="Storia">Storia</option>
-							<option value="Tecnologia">Tecnologia</option>
-						</select>
-					</div>
-					<div id="select_sort" class="selector">
-						<p style="margin: 0 0 20px;">Ordina per</p>
-						<select name="sort" id="sort">
-							<option name="article" value="1">titolo</option>
-							<option name="publication" value="2">data di pubblicazione</option>
-							<option name="size" value="3">dimensione articolo</option>
-							<option name="discussion" value="4">dimensione pagina di discussione</option>
-							<option name="incipit" value="5">dimensione incipit</option>
-							<option name="issue" value="6">numero di avvisi</option>
-							<option name="images" value="7">numero di immagini</option>
-						</select>
+			<section id="dataviz">
+				<div id="select_section">
+					<div class="container select_box">
+						<div id="select_year" class="selector">
+							<p class="key">Anno</p>
+							<p class="value">2020</p>
+						</div>
+						<div id="select_subject" class="selector">
+							<p class="key">Materia</p>
+							<select name="subjects" id="subjects" class="select value">
+								<option value="all">Tutte le materie</option>
+								<option value="Biologia">Biologia</option>
+								<option value="Chimica">Chimica</option>
+								<option value="Cittadinanza e costituzione">Cittadinanza e costituzione</option>
+								<option value="Diritto e Economia">Diritto e Economia</option>
+								<option value="Filosofia">Filosofia</option>
+								<option value="Fisica">Fisica</option>
+								<option value="Geografia">Geografia</option>
+								<option value="Grammatica italiana">Grammatica italiana</option>
+								<option value="Grammatica latina">Grammatica latina</option>
+								<option value="Informatica">Informatica</option>
+								<option value="Letteratura italiana">Letteratura italiana</option>
+								<option value="Letteratura latina">Letteratura latina</option>
+								<option value="Matematica">Matematica</option>
+								<option value="Scienze della Terra">Scienze della Terra</option>
+								<option value="Scienze">Scienze</option>
+								<option value="Storia">Storia</option>
+								<option value="Tecnologia">Tecnologia</option>
+							</select>
+						</div>
+						<div class="selector">
+							<p class="key">Ordina per</p>
+							<select name="sort" id="sort" class="select value">
+								<option name="article" value="1">titolo</option>
+								<option name="publication" value="2">pubblicazione</option>
+								<option name="size" value="3">dimensione articolo</option>
+								<option name="discussion" value="4">dimensione pagina di discussione</option>
+								<option name="incipit" value="5">dimensione incipit</option>
+								<option name="issue" value="6">numero di avvisi</option>
+								<option name="images" value="7">numero di immagini</option>
+							</select>
+							<!-- <div id="sort" class="wrapper_dropdown" tabindex="1">
+								<p class="key">Ordina per</p>
+								<ul class="dropdown">
+									<li class="1">titolo</a></li>
+									<li class="2">pubblicazione</a></li>
+									<li class="3">dimensione articolo</a></li>
+								</ul>
+							</div> -->
+						</div>
 					</div>
 				</div>
-			</section>
-			<section>
 				<div id="dv1" class="dataviz"></div>
 			</section>
 			<section>
@@ -99,7 +107,7 @@
 							Federico Benvenuti, Valerio Iannucci, Luca Martinelli, Paolo Fichera
 						</li>
 						<li>
-							Visualizzazione dei dati<br/>
+							Web design e visualizzazione dei dati<br/>
 							Giovanni Profeta
 						</li>
 						<li>

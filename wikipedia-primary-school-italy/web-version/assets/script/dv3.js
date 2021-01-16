@@ -36,7 +36,7 @@ let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 60, bottom: 20, right: 60},
+let margin = {top: 20, left: 20, bottom: 20, right: 20},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -139,7 +139,7 @@ function dv3(the_literature) {
 
 		// v_grid
 		for (let i=0; i<author_group.length; i++) { 
-			if(i % 3 == 0){ // i == i
+			if(i % 3 == 0 && i !== 0){ // i == i
 	       		v_grid.append('line')
 					.attr('x1', 0)
 					.attr('y1', y(i)) // i* (v_shift*1))  
@@ -164,7 +164,7 @@ function dv3(the_literature) {
 				// console.log(i)
 	       		h_grid.append('line')
 					.attr('x1', i * (circle_set + space) ) //  *  (circle_size*1 + space*1) )
-					.attr('y1', 0) 
+					.attr('y1', -100) 
 					.attr('x2', i * (circle_set + space)) // (circle_size*1 + space*1) )
 					.attr('y2', function(d,i) {
 						if (literature_ == "it") {
@@ -288,7 +288,8 @@ function dv3(the_literature) {
 			})
 			.attr("class","license")
 			.attr("font-size",font_size)
-			.attr("transform","translate(" + (width-100) + ",0)")
+			.attr("text-anchor","end")
+			.attr("transform","translate(" + (width) + ",0)")
 			.attr("opacity",0)
 
 		let author_box = author.append("g")

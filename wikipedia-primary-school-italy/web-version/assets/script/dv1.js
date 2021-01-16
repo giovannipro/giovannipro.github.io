@@ -20,7 +20,7 @@ let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 40, bottom: 20, right: 60},
+let margin = {top: 20, left: 0, bottom: 20, right: 60},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -295,10 +295,28 @@ function dv1(the_subject) {
 				.attr("opacity",1)
 	    }
 
-	    let new_sort;
+	    // get new subject
+	 //    let new_sort = 1;
+	 //    let new_subject = the_subject;
+
+	 //    const sort_options = document.querySelectorAll("#sort .dropdown li")
+	 //    $("#subjects").change(function() {
+	 //    	let subject = this.value;
+		//     update_subject(subject,new_sort);
+		//     console.log(subject,new_sort);
+	 //    })
+
+		// for (const sort_option of sort_options) {
+		// 	sort_option.addEventListener('click', function(event) {
+		// 		let new_sort = event.target.className;
+		// 		update_sort(new_subject,new_sort);
+		// 	})
+		// }
+
 		$("#subjects").change(function() {
 			let subject = this.value;
 			new_sort =  $("#sort option:selected").val();
+			// new_sort =  $("#sort option:selected").val();
 
 			update_subject(subject,new_sort);
 			// console.log(subject,new_sort);
@@ -309,7 +327,6 @@ function dv1(the_subject) {
 			let subject = $("#subjects option:selected").val();
 
 			update_sort(subject,new_sort);
-			// console.log(subject,new_sort);
 		});
 
 		// $(window).resize(function() {

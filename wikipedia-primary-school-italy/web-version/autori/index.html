@@ -24,26 +24,28 @@
 			</nav>
 		</header>
 		<main>
-			<section>
-				<div id="select_box_author" class="select_box container">
-					<div id="select_year" class="selector">
-						<p style="margin: 0 0 20px;">Anno</p>
-						<p>2020</p>
-					</div>
-					<div id="select_subject_author" class="selector">
-						<p style="margin: 0 0 20px;">Lingua</p>
-						<select name="literature" id="literature">
-							<option value="it">Italiana</option>
-							<option value="la">Latina</option>
-						</select>
-					</div>
-					<div id="select_sort" class="selector">
-						<p style="margin: 0 0 20px;">Ordina per</p>
-						<select name="sort" id="sort_publications">
-							<option name="author" value="1">autore</option>
-							<option name="period" value="2">periodo</option>
-							<option name="publication" value="3">numero di pubblicazioni</option>
-						</select>
+			<section id="dataviz">
+				<div id="select_section">
+					<div class="container select_box">
+						<div id="select_year" class="selector">
+							<p class="key">Anno</p>
+							<p class="value">2020</p>
+						</div>
+						<div id="select_subject_author" class="selector">
+							<p class="key">Lingua</p>
+							<select name="literature" id="literature" class="select value">
+								<option value="it">Italiana</option>
+								<option value="la">Latina</option>
+							</select>
+						</div>
+						<div id="select_sort" class="selector">
+							<p class="key">Ordina per</p>
+							<select name="sort" id="sort_publications" class="select value">
+								<option name="author" value="1">autore</option>
+								<option name="period" value="2">periodo</option>
+								<option name="publication" value="3">numero di pubblicazioni</option>
+							</select>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -78,7 +80,7 @@
 							Federico Benvenuti, Valerio Iannucci, Luca Martinelli, Paolo Fichera
 						</li>
 						<li>
-							Visualizzazione dei dati<br/>
+							Web design e visualizzazione dei dati<br/>
 							Giovanni Profeta
 						</li>
 						<li>
