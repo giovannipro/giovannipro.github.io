@@ -36,7 +36,7 @@ let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 20, bottom: 20, right: 20},
+let margin = {top: 20, left: 20, bottom: 20, right: 30},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 

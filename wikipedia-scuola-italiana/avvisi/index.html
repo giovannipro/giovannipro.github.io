@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Autori e pubblicazioni| Wikipedia Primary School - Italy</title>
+		<title>Articoli con avvisi | Wikipedia Primary School - Italy</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,14 +12,18 @@
 		<header>
 			<div id="header">
 				<div class="container">
-					<h1>Wikipedia e scuola italiana</h1>
+					<h1>
+						<a href="../" title="Wikipedia e scuola italiana">
+							Wikipedia e scuola italiana
+						</a>
+					</h1>
 				</div>
 			</div>
 			<nav id="menu">
 				<ul class="container">
 					<li><a href="../">Articoli più visti</a></li>
-					<li><a href="../avvisi">Articoli con avvisi</a></li>
-					<li style="color: #ccc">Autori e pubblicazioni</li>
+					<li style="color: #ccc">Articoli con avvisi</li>
+					<li><a href="../autori">Autori e pubblicazioni</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -31,26 +35,42 @@
 							<p class="key">Anno</p>
 							<p class="value">2020</p>
 						</div>
-						<div id="select_subject_author" class="selector">
-							<p class="key">Lingua</p>
-							<select name="literature" id="literature" class="select value">
-								<option value="it">Italiana</option>
-								<option value="la">Latina</option>
+						<div id="select_subject" class="selector">
+							<p class="key">Materia</p>
+							<select name="subjects" id="subjects"  class="select value">
+								<option value="all">Tutte le materie</option>
+								<option value="Biologia">Biologia</option>
+								<option value="Chimica">Chimica</option>
+								<option value="Cittadinanza e costituzione">Cittadinanza e costituzione</option>
+								<option value="Diritto e Economia">Diritto e Economia</option>
+								<option value="Filosofia">Filosofia</option>
+								<option value="Fisica">Fisica</option>
+								<option value="Geografia">Geografia</option>
+								<option value="Grammatica italiana">Grammatica italiana</option>
+								<option value="Grammatica latina">Grammatica latina</option>
+								<option value="Informatica">Informatica</option>
+								<option value="Letteratura italiana">Letteratura italiana</option>
+								<option value="Letteratura latina">Letteratura latina</option>
+								<option value="Matematica">Matematica</option>
+								<option value="Scienze della Terra">Scienze della Terra</option>
+								<option value="Scienze">Scienze</option>
+								<option value="Storia">Storia</option>
+								<option value="Tecnologia">Tecnologia</option>
 							</select>
 						</div>
 						<div id="select_sort" class="selector">
 							<p class="key">Ordina per</p>
-							<select name="sort" id="sort_publications" class="select value">
-								<option name="author" value="1">autore</option>
-								<option name="period" value="2">periodo</option>
-								<option name="publication" value="3">numero di pubblicazioni</option>
+							<select name="sort" id="sort_article"  class="select value">
+								<option name="issue" value="1">numero di avvisi</option>
+								<option name="article" value="2">titolo</option>
+								<option name="references" value="3">numero di riferimenti bibliografici</option>
+								<option name="notes" value="4">numero di note</option>
+								<option name="images" value="5">numero di immagini</option>
 							</select>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section style="overflow: hidden;">
-				<div id="dv3" class="dataviz"></div>
+				<div id="dv2" class="dataviz"></div>
 			</section>
 			<section>
 				<h3 class="container">Come leggere la visualizzazione</h3>
@@ -60,8 +80,9 @@
 							La visualizzazione mostra ...
 						</p>
 					</div>
-					<div id="dv3_legend" class="">
-						<p>legenda ...</p>
+					<div id="dv2_legend" class="">
+						<!-- <p>legenda ...</p> -->
+						<img src="../assets/img/dv2_legend.svg" width="250">
 					</div>
 				</div>
 				<!-- <div class="container">
@@ -94,13 +115,13 @@
 						Wikipedia e scuola italiana |
 						<a href="https://meta.wikimedia.org/wiki/Wikipedia_Primary_School/Italy/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia</a>
 					</div>
-				</div> 
+				</div>
 			</footer>
 		</main>
 		<script src="../assets/lib/jquery-3.5.1.min.js"></script>
 		<script src="../assets/lib/5.16.0.min.js"></script>
 		<script src="../assets/lib/d3-tip.js"></script>
-		<!-- <script src="../assets/script/utilities.js"></script> -->
-		<script src="../assets/script/dv3.js"></script>
+		<script src="../assets/script/utilities.js"></script>
+		<script src="../assets/script/dv2.js"></script>
 	</body>
 </html>

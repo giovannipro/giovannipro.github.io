@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 136.3 70.5" style="enable-background:new 0 0 136.3 70.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;fill:#0000FF;enable-background:new    ;}
+	.st1{opacity:0.9;fill:none;stroke:#0000FF;stroke-width:0.5;enable-background:new    ;}
+	.st2{font-family:'OpenSans';}
+	.st3{font-size:7.2px;}
+	.st4{font-size:5px;}
+	.st5{fill:none;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;}
+</style>
+<g transform="translate(560.802695652174,694.054)">
+	<circle class="st0" cx="-494.9" cy="-655.6" r="17.6"/>
+	<circle class="st0" cx="-494.9" cy="-655.6" r="3.4"/>
+	<circle class="st1" cx="-494.9" cy="-655.6" r="11.1"/>
+	<text transform="matrix(1 0 0 1 -506.505 -679.5717)" class="st2 st3">articolo</text>
+	<text transform="matrix(1 0 0 1 -468.3265 -643.0921)" class="st2 st4">dimensione </text>
+	<text transform="matrix(1 0 0 1 -468.3265 -637.0921)" class="st2 st4">pagina di  </text>
+	<text transform="matrix(1 0 0 1 -468.3265 -631.0921)" class="st2 st4">discussione</text>
+	<line class="st5" x1="-494.9" y1="-644.4" x2="-470.5" y2="-644.4"/>
+	<text transform="matrix(1 0 0 1 -552.7922 -671.7154)" class="st2 st4">dimensione </text>
+	<text transform="matrix(1 0 0 1 -552.7922 -666.7154)" class="st2 st4">articolo</text>
+	<line class="st5" x1="-524.4" y1="-670.1" x2="-498.3" y2="-670.1"/>
+	<text transform="matrix(1 0 0 1 -552.7922 -656.9037)" class="st2 st4">dimensione </text>
+	<text transform="matrix(1 0 0 1 -552.7922 -651.9037)" class="st2 st4">incipit</text>
+	<line class="st5" x1="-524.4" y1="-656.2" x2="-494.9" y2="-656.2"/>
+</g>
+</svg>
