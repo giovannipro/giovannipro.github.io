@@ -20,20 +20,21 @@ h3 {
 	margin: 0 0 15px;
 }
 
+p, ul {
+	font-size: 0.9em;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
 }
 
-table th {
-	font-weight: normal;
-	padding: 0 5px 3px 0;
-	text-align: left;
-	vertical-align: top;
-}
-
 p {
 	margin: 0 0 30px; 
+}
+
+img {
+	max-width: 100%;
 }
 
 /* ------- layout ------- */
@@ -131,13 +132,9 @@ header a {
 
 #mobile_menu_box a {
 	text-decoration: none;
-}
-
-#mobile_menu_box li {
 	padding: 20px 10px;
-	/*border-bottom: 1px solid #d6d5d5;*/
+	display: block;
 }
-
 
 /* ------- select box ------- */
 
@@ -183,20 +180,50 @@ header a {
 	border: none;
 }
 
-/* ------- dataviz and legend------- */
+/* ------- column ------- */
 
-/*#legend h3 {*/
-	/*font-size: 0.9em;*/
-	/*margin: 0 auto 0;*/
-/*}*/
-
-#dv_infobox {
+.row {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
-.paragraph {
-	width: 45%;
+.column {
+	width: 48%;
+}
+
+/* ------- dataviz and legend ------- */
+
+
+@media only screen and (max-width: 450px) {
+	.legend {
+		text-align: center; 
+	}
+}
+
+.dataviz {
+	overflow: hidden;
+}
+
+.dataset a {
+	text-decoration: none;
+}
+
+.dataset img {
+	margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.row {
+		display: block;
+	}
+
+	.column {
+		width: 100%;
+	}
+	
+	.dataset {
+		margin-top: 50px;
+	}
 }
 
 .article {
@@ -223,7 +250,11 @@ footer ul li {
 
 #sub_footer {
 	border-top: 1px solid #d6d5d5; 
-	padding: 10px 0 20px;
+	padding: 10px 0 0px;
+}
+
+#sub_footer p {
+	margin: 0 0 20px;
 }
 
 /*#sub_footer a {
@@ -238,7 +269,7 @@ footer ul li {
 }
 
 #dv1_legend {
-	top: 20px;
+	top: 18px;
 	position: relative;
 }
 
@@ -263,6 +294,25 @@ footer ul li {
 
 .tooltip table tr {
 	height: 10px;
+}
+
+.tooltip table th {
+	/*border-bottom: 1px solid rgb(140,140,140);*/
+}
+
+.tooltip table th {
+	font-weight: normal;
+	padding: 0 0px 8px 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+.tooltip table th:nth-child(1) {
+	min-width: 80px
+}
+
+.tooltip table th:nth-child(2) {
+	min-width: 90px
 }
 
 /* ------- dataviz n. 2 ------- */

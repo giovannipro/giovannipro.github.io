@@ -31,7 +31,7 @@
 		<div id="mobile_menu_box">
 			<nav id="mobile_menu">
 				<ul class="">
-					<li style="color: #ccc">Articoli più visti</li>
+					<li><a href="" style="color: #ccc"	>Articoli più visti</a></li>
 					<li><a href="avvisi">Articoli con avvisi</a></li>
 					<li><a href="autori">Autori e pubblicazioni</a></li>
 				</ul>
@@ -85,52 +85,63 @@
 				<div id="dv1" class="dataviz"></div>
 			</section>
 			<section id="legend" class="container">
-				<div class="" id="dv_infobox">
-					<div class="paragraph">
+				<div id="dv_infobox" class="row">
+					<div class="column">
 						<h3>Come leggere la visualizzazione</h3>
 						<p>
 							La visualizzazione mostra gli articoli con più visite medie giornaliere per materia scolastica nel periodo compreso tra il 1° luglio 2015 e il 31 maggio 2020. <br/>
-							Il cerchio di colore chiaro rappresenta la dimensione dell’articolo, il cerchio scuro rappresenta la dimensione dell’incipit e il cerchio con il solo contorno rappresenta la dimensione della pagina di discussione. <br/>
-							Tutte e tre le dimensioni sono espresse in byte.
+							Il cerchio di colore chiaro rappresenta la dimensione dell’articolo, il cerchio scuro rappresenta la dimensione dell’incipit e il cerchio con il solo contorno rappresenta la dimensione della pagina di discussione. <br/><br/>
+							Tutte e tre le dimensioni sono espresse in byte. Sono mostrati un massimo di 120 articoli per materia.
 						</p>
 					</div>
-					<div id="dv1_legend" class="">
-						<img src="assets/img/dv1_legend.svg" width="300">
+					<div id="dv1_legend" class="column legend">
+						<img src="assets/img/dv1_legend.svg" width="320">
 					</div>
 				</div>
 			</section>
 			<section class="container">
-				<div id="dv1_dataset" class="paragraph">
-					<!-- <h3>Scarica i dati</h3> -->
-					<a href="" title="" style="margin-bottom: 30px; display: block;">Scarica i dati</a>
+				<div id="dv1_dataset" class="dataset">
+					<a href="assets/data/articoli.tsv" title="" style="font-size: 0.9em; margin-bottom: 30px; display: block;">
+						Scarica i dati <img src="assets/img/download.svg" width="20" height="20">
+					</a>
 				</div>
 			</section>
 			<footer>
 				<div id="colophon" class="container">
 					<h3>Crediti</h3>
-					<ul>
-						<li>
-							Ideazione e responsabile<br/>
-							Iolanda Pensa
-						</li>
-						<li>
-							Gruppo di lavoro<br/>
-							Federico Benvenuti, Valerio Iannucci, Luca Martinelli, Paolo Fichera
-						</li>
-						<li>
-							Web design e visualizzazione dei dati<br/>
-							Giovanni Profeta
-						</li>
-						<li>
-							Sostegno e collaborazione<br/>
-							<a href="https://www.wikimedia.it/" target="_blank">Wikimedia Italia</a>
-						</li>
-					</ul>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li>
+									Ideazione e responsabile<br/>
+									Iolanda Pensa
+								</li>
+								<li>
+									Gruppo di lavoro<br/>
+									Federico Benvenuti, Valerio Iannucci, Luca Martinelli, Paolo Fichera
+								</li>
+							</ul>
+						</div>
+						<div class="column">
+							<ul>
+								<li>
+									Web design e visualizzazione dei dati<br/>
+									Giovanni Profeta
+								</li>
+								<li>
+									Sostegno e collaborazione<br/>
+									<a href="https://www.wikimedia.it/" target="_blank">Wikimedia Italia</a>
+								</li>
+							</ul>
+						</div> 
+					</div>
 				</div>
 				<div id="sub_footer">
 					<div class="container">
-						Wikipedia e scuola italiana |
-						<a href="https://meta.wikimedia.org/wiki/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia del progetto</a>
+						<p>
+							Wikipedia e scuola italiana |
+							<a href="https://meta.wikimedia.org/wiki/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia del progetto</a>
+						</p>
 					</div>
 				</div>
 			</footer>

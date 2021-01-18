@@ -31,7 +31,7 @@ let svg = d3.select(container)
 	.attr("id", "svg")
 
 function dv1(the_subject) {
-	d3.tsv("assets/data/articles.tsv").then(loaded)
+	d3.tsv("assets/data/articoli.tsv").then(loaded)
 	// console.log(the_subject)
 
 	function loaded(data) {
