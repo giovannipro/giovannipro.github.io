@@ -16,11 +16,19 @@ const filter_item = 120; // 130;
 const shiftx_article = 30;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 
-let multiply = 1;
+// let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 0, bottom: 20, right: 60},
+if (window_w <= 768) {
+	reduction = 20;
+}
+else {
+	reduction = 0;
+}
+console.log(reduction)
+
+let margin = {top: 20, left: 0-reduction, bottom: 20, right: 60-reduction},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -159,12 +167,12 @@ function dv1(the_subject) {
 			})
 			.offset([-10,0])
 			.html(function(d) {
-                let content = "<p style='font-weight: bold; margin: 0 0 5px 3px;'>" + d.article + "<p><table>";
+                let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
                 content += "<tr><th>pubblicazione</th><th>" + format_date(d.first_edit) + "</th></tr>"
+                content += "<tr><th>visite giornaliere</th><th>" + d.average_daily_visit.toLocaleString() + "</th></tr>"
                 content += "<tr><th>dimensione</th><th>" + d.size.toLocaleString() + " byte</th></tr>"
                 content += "<tr><th>discussione</th><th>" + d.discussion_size.toLocaleString() + " byte</th></tr>"
-                content += "<tr><th>visite giornaliere</th><th>" + d.average_daily_visit.toLocaleString() + "</th></tr>"
                 content += "<tr><th>incipit</th><th>" + d.incipit_size.toLocaleString() + " byte</th></tr>"
                 content += "<tr><th>avvisi</th><th>" + d.issues.toLocaleString() + "</th></tr>"
                 content += "<tr><th>immagini</th><th>" + d.images.toLocaleString() + "</th></tr>"

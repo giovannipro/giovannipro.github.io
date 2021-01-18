@@ -16,7 +16,7 @@ h1 {
 }
 
 h3 {
-	font-size: 0.9em;
+	font-size: 1em;
 	margin: 0 0 15px;
 }
 
@@ -184,11 +184,22 @@ header a {
 
 .row {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
-.column {
-	width: 48%;
+.column_2 {
+	width: 50%;
+	padding-right: 2%; 
+}
+
+.column_3 {
+	width: 33%;
+	padding-right: 2%; 
+}
+
+.column_4 {
+	width: 25%;
+	padding-right: 2%; 
 }
 
 /* ------- dataviz and legend ------- */
@@ -217,8 +228,9 @@ header a {
 		display: block;
 	}
 
-	.column {
+	.column_2, .column_3, .column_4 {
 		width: 100%;
+		padding-right: 0; 
 	}
 	
 	.dataset {
@@ -308,7 +320,7 @@ footer ul li {
 }
 
 .tooltip table th:nth-child(1) {
-	min-width: 80px
+	min-width: 85px
 }
 
 .tooltip table th:nth-child(2) {
