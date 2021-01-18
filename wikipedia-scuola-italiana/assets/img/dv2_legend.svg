@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 136.3 70.5" style="enable-background:new 0 0 136.3 70.5;" xml:space="preserve">
+	 viewBox="0 0 92.5 60.8" style="enable-background:new 0 0 92.5 60.8;" xml:space="preserve">
 <style type="text/css">
-	.st0{font-family:'ArialMT';}
+	.st0{font-family:'OpenSans';}
 	.st1{font-size:5px;}
 	.st2{fill:#49A0D8;}
 	.st3{fill:#A8D2A2;}
 	.st4{fill:#F5A3BD;}
 	.st5{fill:#EC4C4E;}
 </style>
-<text transform="matrix(1 0 0 1 25.3627 13.7587)" class="st0 st1">riferimenti bibliografici (stima)</text>
-<rect x="8.6" y="6.5" class="st2" width="11.9" height="11.9"/>
-<text transform="matrix(1 0 0 1 25.3627 28.6126)" class="st0 st1">note</text>
-<rect x="8.6" y="21.3" class="st3" width="11.9" height="11.9"/>
-<text transform="matrix(1 0 0 1 25.3627 43.5268)" class="st0 st1">immagini</text>
-<rect x="8.6" y="36.2" class="st4" width="11.9" height="11.9"/>
-<text transform="matrix(1 0 0 1 25.3627 58.4411)" class="st0 st1">avvisi</text>
-<rect x="8.6" y="51.2" class="st5" width="11.9" height="11.9"/>
+<text transform="matrix(1 0 0 1 19.6001 24.3234)" class="st0 st1">riferimenti bibliografici (stima)</text>
+<rect x="2.8" y="17.1" class="st2" width="11.9" height="11.9"/>
+<text transform="matrix(1 0 0 1 19.6001 39.1773)" class="st0 st1">note</text>
+<rect x="2.8" y="31.9" class="st3" width="11.9" height="11.9"/>
+<text transform="matrix(1 0 0 1 19.6001 54.0915)" class="st0 st1">immagini</text>
+<rect x="2.8" y="46.8" class="st4" width="11.9" height="11.9"/>
+<text transform="matrix(1 0 0 1 19.6001 9.5058)" class="st0 st1">avvisi</text>
+<rect x="2.8" y="2.3" class="st5" width="11.9" height="11.9"/>
 </svg>

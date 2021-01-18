@@ -26,7 +26,6 @@ if (window_w <= 768) {
 else {
 	reduction = 0;
 }
-console.log(reduction)
 
 let margin = {top: 20, left: 0-reduction, bottom: 20, right: 60-reduction},
 	width = window_w - (margin.right + margin.right),

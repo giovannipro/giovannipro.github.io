@@ -334,6 +334,11 @@ footer ul li {
 	margin-bottom: 60px;
 }
 
+#dv2_legend {
+	top: 35px;
+	position: relative;
+}
+
 /*#yAxis_features .domain, #yAxis_issues .domain, #yAxis_features .tick line, #yAxis_issues .tick line, #grid .domain {*/
 #axis_grid .domain, #axis .tick line {
 	display: none;

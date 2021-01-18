@@ -72,48 +72,64 @@
 				</div>
 				<div id="dv2" class="dataviz"></div>
 			</section>
-			<section>
-				<h3 class="container">Come leggere la visualizzazione</h3>
-				<div class="container" id="dv_infobox">
-					<div id="how_to_read" class="">
+			<section id="legend" class="container">
+				<div id="dv_infobox" class="row">
+					<div class="column_3">
+						<h3>Come leggere la visualizzazione</h3>
 						<p>
-							La visualizzazione mostra ...
+							La visualizzazione mostra il numero di avvisi, referenze, note e immagini per articolo.<br/>
+							Sono mostrati gli articoli con più di 350 visite giornaliere medie nel maggio 2020.<br/><br/>
+							Scegli dal menu in alto una materia e l'ordine di visualizzazione per ottenere maggiori informazioni.
 						</p>
 					</div>
-					<div id="dv2_legend" class="">
-						<!-- <p>legenda ...</p> -->
+					<div id="dv2_legend" class="column_3 legend">
 						<img src="../assets/img/dv2_legend.svg" width="250">
 					</div>
 				</div>
-				<!-- <div class="container">
-					<p>scaricamento dati ...</p>
-				</div> -->
+			</section>
+			<section class="container">
+				<div id="dv1_dataset" class="dataset">
+					<a href="../assets/data/articoli.tsv" title="" style="font-size: 0.9em; margin-bottom: 30px; display: block;">
+						Scarica i dati <img src="../assets/img/download.svg" width="20" height="20">
+					</a>
+				</div>
+			</section>
 			</section>
 			<footer>
-				<div class="container">
-					<ul>
-						<li>
-							Ideazione e responsabile<br/>
-							Iolanda Pensa
-						</li>
-						<li>
-							Gruppo di lavoro<br/>
-							Federico Benvenuti, Valerio Iannucci, Luca Martinelli, Paolo Fichera
-						</li>
-						<li>
-							Web design e visualizzazione dei dati<br/>
-							Giovanni Profeta
-						</li>
-						<li>
-							Sostegno e collaborazione<br/>
-							<a href="https://www.wikimedia.it/" target="_blank">Wikimedia Italia</a>
-						</li>
-					</ul>
+				<div id="colophon" class="container">
+					<h3>Crediti</h3>
+					<div class="row">
+						<div class="column_3">
+							<p>
+								<strong>Ideazione e responsabile</strong><br/>
+								Iolanda Pensa
+							</p>
+							<p>
+								<strong>Gruppo di lavoro</strong><br/>
+								Federico Benvenuti<br/>
+								Valerio Iannucci<br/>
+								Luca Martinelli<br/>
+								Paolo Fichera
+							</p>
+						</div>
+						<div class="column_3">
+							<p>
+								<strong>Web design e visualizzazione dei dati</strong><br/>
+								Giovanni Profeta
+							</p>
+							<p>
+								<strong>Sostegno e collaborazione</strong><br/>
+								<a href="https://www.wikimedia.it/" target="_blank">Wikimedia Italia</a>
+							</p>
+						</div>
+					</div>
 				</div>
-				<div style="border-top: 1px solid #d6d5d5; padding: 0 0 30px;">
+				<div id="sub_footer">
 					<div class="container">
-						Wikipedia e scuola italiana |
-						<a href="https://meta.wikimedia.org/wiki/Wikipedia_Primary_School/Italy/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia</a>
+						<p>
+							Wikipedia e scuola italiana |
+							<a href="https://meta.wikimedia.org/wiki/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia del progetto</a>
+						</p>
 					</div>
 				</div>
 			</footer>

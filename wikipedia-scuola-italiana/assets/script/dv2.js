@@ -17,7 +17,14 @@ let c_issues = '#EC4C4E',
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 40, left: 50, bottom: 20, right: 50},
+if (window_w <= 768) {
+	reduction = 10;
+}
+else {
+	reduction = 0;
+}
+
+let margin = {top: 40, left: 40-reduction, bottom: 20, right: 40-reduction},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -30,13 +37,10 @@ let svg = d3.select(container)
 const issue_height = height/2.1;
 const features_height = height/2.1;
 
-// const axis_issues_ticks = 5;
-// const axis_features_ticks = 5;
-
 const ticksAmount = 10;
 
 function dv2(the_subject) {
-	d3.tsv("../assets/data/articles.tsv").then(loaded)
+	d3.tsv("../assets/data/articoli.tsv").then(loaded)
 
 	function loaded(data) {
 		// console.log(data)
@@ -166,7 +170,7 @@ function dv2(the_subject) {
 			.attr("id","axis")
 
 		let axis_issues = axis.append("g")
-			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top) + ")") // v_shift
+			.attr("transform", "translate(" + (margin.left*1) + "," + (margin.top) + ")") // v_shift
 			.call(d3.axisLeft(y_issues_text)
 				.ticks(ticksAmount)
 				.tickValues(d3.range(0,issues_max,1))
@@ -179,7 +183,7 @@ function dv2(the_subject) {
 			.range([features_height,0])
 
 		let axis_features = axis.append("g")
-			.attr("transform", "translate(" + (margin.left*1.5) + "," + (margin.top + (height/2)+(v_shift*1)) + ")") // ((height/2)+(v_shift*3))
+			.attr("transform", "translate(" + (margin.left*1) + "," + (margin.top + (height/2)+(v_shift*1)) + ")") // ((height/2)+(v_shift*3))
 			.call(d3.axisLeft(x_features_axis)
 				.ticks(ticksAmount)
 				.tickValues(d3.range(0,my_max_features,50))
@@ -197,11 +201,24 @@ function dv2(the_subject) {
 			.attr('class', 'tooltip')
 			.attr('id', 'tooltip')
 			.direction(function (d,i) {
-				return 'n'
+				if (i <= filtered_data.length/2) {
+					return 'e'
+				}
+				else {
+					return 'w'
+				}
 			})
-			.offset([-10,0])
+			.offset(function (d,i){
+				if (i <= filtered_data.length/2) {
+					return [0,10]
+				}
+				else {
+					return [0,-10]
+				}
+				
+			})
 			.html(function(d) {
-	            let content = "<p style='font-weight: bold; margin: 0 0 5px 3px;'>" + d.article + "<p><table>";
+	            let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
 	            content += "<tr><th>avvisi</th><th>" + d.issues.toLocaleString() + "</th></tr>"
 	            content += "<tr><th>riferimenti bibliografici</th><th>" + d.references.toLocaleString() + "</th></tr>"
