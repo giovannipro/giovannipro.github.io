@@ -36,7 +36,14 @@ let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-let margin = {top: 20, left: 20, bottom: 20, right: 30},
+if (window_w <= 768) {
+	reduction = 10;
+}
+else {
+	reduction = 0;
+}
+
+let margin = {top: 20, left: 20-reduction, bottom: 20, right: 20-reduction},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -152,7 +159,7 @@ function dv3(the_literature) {
 
 		let h_grid = grids.append("g")
 			.attr("id", "h_grid")
-			.attr('transform','translate(' + (180+margin.left-circle_size-2) + ',' + (margin.top+8) + ')' )  
+			.attr('transform','translate(' + (173+margin.left-circle_size-2) + ',' + (margin.top+8) + ')' )  
 
 		// h_grid
 		let min_size = (circle_size*3.2) * max_publication
@@ -160,7 +167,7 @@ function dv3(the_literature) {
 		let circle_set = circle_size*1
 
 		for (let i=0; i<max_publication; i++) { 
-			if( i % 2 == 0){ // i % 3 == 0
+			if( i % 1 == 0){ // i % 3 == 0
 				// console.log(i)
 	       		h_grid.append('line')
 					.attr('x1', i * (circle_set + space) ) //  *  (circle_size*1 + space*1) )
