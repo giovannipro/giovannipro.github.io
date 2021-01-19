@@ -290,13 +290,13 @@ function dv3(the_literature) {
 		let license = author.append("text")
 			.text(function(d,i){
 				if(d.values[0].author_ws_it == "©") {
-					return "Opere protette da copiright"
+					return "Opere protette da copyright"
 				}
 			})
 			.attr("class","license")
 			.attr("font-size",font_size)
 			.attr("text-anchor","end")
-			.attr("transform","translate(" + (width) + ",0)")
+			.attr("transform","translate(" + (width-10) + ",0)")
 			.attr("opacity",0)
 
 		let author_box = author.append("g")
