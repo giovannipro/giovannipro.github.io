@@ -48,7 +48,7 @@ function mobile_menu() {
 	$("#mobile_menu_icon").click(function(){
 
 		let display = $("#mobile_menu_icon").css('display')
-		console.log(display)
+		// console.log(display)
 
 		if (open == false) {
 			$("#mobile_menu_icon").css("background","url(assets/img/close-menu.svg) center center no-repeat").css("background-size","55%");

@@ -44,6 +44,12 @@ img {
 	margin: 10px auto 0;
 }
 
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 95%;
+	}	
+}
+
 /* ------- header ------- */
 
 header {
@@ -337,6 +343,12 @@ footer ul li {
 #dv2_legend {
 	top: 35px;
 	position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+	#dv2_legend {
+		top: 0;
+	}
 }
 
 /*#yAxis_features .domain, #yAxis_issues .domain, #yAxis_features .tick line, #yAxis_issues .tick line, #grid .domain {*/
