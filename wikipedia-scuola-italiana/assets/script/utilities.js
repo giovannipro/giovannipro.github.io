@@ -37,10 +37,10 @@ const subjects = [
 	"Tecnologia"
 ]
 
-const literature_ = [
-	"it",
-	"la"
-]
+// const literature_ = [
+// 	"it",
+// 	"la"
+// ]
 
 function mobile_menu() {
  	let open = false;
@@ -51,13 +51,24 @@ function mobile_menu() {
 		// console.log(display)
 
 		if (open == false) {
-			$("#mobile_menu_icon").css("background","url(assets/img/close-menu.svg) center center no-repeat").css("background-size","55%");
+
+			const path = window.location.pathname;
+			let the_path = "";
+
+			if (path == ""){
+				the_path = "";
+			}
+			else {
+				the_path = "../";
+			}
+
+			$("#mobile_menu_icon").css("background","url(" + the_path + "assets/img/close-menu.svg) center center no-repeat").css("background-size","55%");
 			// $("#mobile_menu_box").css("top",45)
 			$("#mobile_menu_box").show()
 			open = true;
 		}
 		else {
-			$("#mobile_menu_icon").css("background","url(assets/img/mobile-menu.svg) center center no-repeat").css("background-size","55%");			
+			$("#mobile_menu_icon").css("background","url(" + the_path + "assets/img/mobile-menu.svg) center center no-repeat").css("background-size","55%");			
 			// $("#mobile_menu_box").css("top",-140)
 			$("#mobile_menu_box").hide()
 			open = false;
