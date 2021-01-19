@@ -44,11 +44,11 @@ img {
 	margin: 10px auto 0;
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
 	.container {
 		width: 95%;
 	}	
-}
+}*/
 
 /* ------- header ------- */
 

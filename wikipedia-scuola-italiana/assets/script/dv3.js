@@ -37,7 +37,7 @@ let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
 if (window_w <= 768) {
-	reduction = 10;
+	reduction = 0;
 }
 else {
 	reduction = 0;
