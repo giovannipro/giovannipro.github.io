@@ -8,7 +8,7 @@ function apply_color(subject){
 		color = "blue";
 	}
 	else if (subject == "Geografia"  || subject == "Diritto e Economia" || subject == "Cittadinanza e costituzione"){
-		color = "#00c2f5";
+		color = "#00b2ff";
 	}
 	else { // Biologia Chimica Fisica Matematica Scienze della Terra Scienze
 		color = "green";
