@@ -118,22 +118,25 @@ function wave_maker(index,min,max){
 	}
 	
 	//console.log(data)
-	var value = (300/max) * index;
+	var value = (250/max) * index;
 	water(data,value);
 }
 
 function get_data(param,cache){
 
 	var baseurl =  window.location.protocol + "//" + window.location.host + "/" + "giovannipro.github.io/adv-poster/"
-	
+	// https://cors-anywhere.herokuapp.com/http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG&parameter=pm10
+
+	var api = "https://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG";
+	  api_2 = "https://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=d&locations=air_Nabel_LUG"; //parameter=no2&from=2021-01-21&to=2021-02-03&locations=air_Nabel_LUG"
+
 	var oasi_proxy = baseurl + "assets/lib/proxy.php" +  "?url=" ,
 		cross_origin = "http://crossorigin.me/",
 		cors = "http://cors.io/?",
-		cors_api = "https://cors-anywhere.herokuapp.com/",
 		benalman_proxy = "http://benalman.com/code/projects/php-simple-proxy/ba-simple-proxy.php?url=",
-		my_proxy = "http://www.gprofeta.it/utilities/proxy.php" + "?url=";
+		my_proxy = "http://www.gprofeta.it/utilities/proxy.php" + "?url=",
 
-	var api = "http://www.oasi.ti.ch/web/rest/measure?domain=air&resolution=h&locations=Nabel_LUG";
+		cors_api = "https://cors-anywhere.herokuapp.com/";
 
 	function add_zero(x){
 		if (x < 10) {
@@ -157,155 +160,112 @@ function get_data(param,cache){
 
 	var time = year + month + day + "T" + hour,
 		date = year + "-" + month + "-" + day + "&" + year + "-" + month + "-" + day,
-		request =  api + "&parameter=" + param + "&from=" + date;
-		cors_request = cors_api + request; // cors_api
-	   console.log(request);
+		request =  api_2 + "&parameter=" + param + "&from=" + date;
+		cors_request = cors_api + request; // cors_api cors
+	   // console.log(cors_request);
 
-	// match
-	// var anticipation = 2;
-	// if (day < 10){
-	// 	//day = day;
-	// 	if (hour < (10+anticipation) ) {
-	// 		if (hour == anticipation || hour < anticipation){
-	// 			day = "0" + (day - 1);
-	// 			hour = "T" + (23 - (anticipation-1) );
-	// 		}
-	// 		else {
-	// 			hour = "T0" + (hour - anticipation);
-	// 		}
-	// 	}
-	// 	else {
-	// 		hour = "T" + (hour - anticipation);  
-	// 	}
-	// }
-	// else {
-	// 	day = day;
-	// 	if (hour < (10+anticipation) ) {
-	// 		if (hour == anticipation || hour < anticipation) {
-	// 			day = (day - 1);
-	// 			hour = "T" + (23 - (anticipation-1) );
-	// 		}
-	// 		else {
-	// 			hour = "T0" + (hour - anticipation);
-	// 		}
-	// 	}
-	// 	else{
-	// 		hour = "T" + (hour - anticipation);
-	// 	}
-	// }
-	// match = year + "-" + month + "-" + day + hour;
-	// console.log(match); 
-	
+	let headers = new Headers();
+	    // headers.append('Origin','x-requested-with'); // 'http://localhost:8000
+	    // headers.append('Access-Control-Allow-Credentials', true);
+	    // headers.append('Access-Control-Allow-Origin', '*');
+	   	// headers.append('Access-Control-Allow-Methods', 'GET');
+    // console.log(headers);
 
+    fetch(cors_request, {
+	        mode: 'cors',
+	        method: 'GET',
+	        headers: headers
+	    })
+		.then(function (response) {
+			console.log(request)
 
-	$.ajax({
-		url: cors_request,
-		cache: cache,
-		headers: {
-			"Accept": "application/json",
-			"Content-Type": "application/json",
-  		},
-		beforeSend: function(){
-			$('#no_data').html(
-				'<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>'
-			);
-			//console.log("loading")
-		},
-		success: function(data) {
-			// console.log(request)
-			// console.log(data)
+			response.json().then((data) => {
+        		// console.log(data);
 
-			var values = data.locations[0].data;
+        		let values = data.locations[0].data;
+        		// console.log(values);
 
-			var found = (function search () { 
-				for (var i = values.length - 1; i >= 0; i--) {
-					if(values[i].values[0].value !== null) {
-						return values[i];
+				var found = (function search () { 
+					for (var i = values.length - 1; i >= 0; i--) {
+						// if(values[i].values[0].value !== null) {
+						if(values[i].values[0].value !== undefined) {
+							return values[i];
+						}
 					}
-				}
-			})();
+				})();
 
-			var time = found.date,
+				let time = found.date,
 				value = found.values[0].value;
+				// console.log(found)
+				// console.log(value)
 
-			min = 0;
+				min = 0;
 
-			if (param == "pm10"){
-				max =  100;
-			}
-			if (param == "o3"){
-				max =  300;
-			}
-			if (param == "no2"){
-				max =  100;
-			}
-			console.log(time, value + "/" + max);
+				match = year + "-" + month + "-" + day + hour;
 
-			var dates = $(data.locations)[0].data;
-			var x = $(data.locations)[0].data[0].date;
-			var y = $(data.locations)[0].data[0].values[0].value;
-			//console.log(y)
+				if (param == "pm10"){
+					max =  75; // 100
+				}
+				if (param == "o3"){
+					max =  150; // 300
+				}
+				if (param == "no2"){
+					max =  100;
+				}
+				console.log(time, value + "/" + max);
 
-			var index = 0;
+				var dates = $(data.locations)[0].data;
+				var x = $(data.locations)[0].data[0].date;
+				var y = $(data.locations)[0].data[0].values[0].value;
+				// //console.log(y)
 
-			wave_maker(value,min,max);
-			$('#no_data').empty();
+				var index = 0;
 
-			// jQuery.each( dates, function( a,b ) {
+				wave_maker(value,min,max);
+				$('#no_data').empty();
 
-			// 	index++;
+				$.each( dates, function( a,b ) {
 
-			// 	var interval = 1000;
-			// 	var date_string = b.date.toString().substring(0,13);
+					index++;
 
-			// 	if (date_string == match) {
+					var interval = 1000;
+					var date_string = b.date.toString().substring(0,13);
 
-			// 		var value = b.values[0].value;
-			// 		//console.log(value);
+					if (date_string == match) {
 
-			// 		if (value !== null) {
-			// 		   //console.log(date_string + ' - ' + match + ' - ' + value)
+						var value = b.values[0].value;
+						//console.log(value);
 
-			// 			var percentage = (value * 100) / max;
-			// 			$('#no_data').empty();
-			// 			wave_maker(value,min,max);
-						
-			// 			var load = 0
-						
-			// 			console.log(/*b.date.toString() + ' - ' + */ param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
-			// 			return false; 
-			// 		}
-			// 		else {
-						
-			// 			$('#no_data').empty();
-			// 			$('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
-			// 			//wave_maker(0,min,max);
-						
-			// 			load++
+						if (value !== null) {
+						   //console.log(date_string + ' - ' + match + ' - ' + value)
 
-			// 			console.log(request);
-			// 			//console.log(b.date.toString() + ' - ' + param + ": " + b.values[0].value)
-			// 			//get_data(param,1) // 0: cache; 1: no_cache
-			// 			//return false; 
-			// 		}
-			// 	}
-			// 	else{
-			// 		//console.log("no values error")
-			// 		//console.log(date_string + ' - ' + match + ' - ' + value)
-   			//	  //clearInterval(interval);
-			// 		//$('#no_data').empty();
-			// 		//
-			// 		//wave_maker(0,0,100);
-			// 		//return false;
-			// 	}
-			// });
-			//save(time);
-		},
-		fail: function() {
-			wave_maker(0,0,100);
-			console.log("api error")
-		}
-	})
+							var percentage = (value * 100) / max;
+							$('#no_data').empty();
+							wave_maker(value,min,max);
+							
+							var load = 0
+							
+							console.log(/*b.date.toString() + ' - ' + */ param + ": " + value + "/" + max + " (" + percentage.toFixed(0) + "%)");
+							return false; 
+						}
+						else {
+							
+							$('#no_data').empty();
+							$('#no_data').append('<div style="height100%;">no data available <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>');
+							//wave_maker(0,min,max);
+							
+							load++
+
+							console.log(request);
+						}
+					}
+				});
+				save(time);
+
+	    	});
+		})
+		.catch(() => console.log("Can’t access " + cors_request + " response. Blocked by browser?"))
+
 }
 
 function save(time){
