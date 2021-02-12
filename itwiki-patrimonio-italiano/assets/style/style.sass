@@ -1,0 +1,185 @@
+html, body 
+	margin: 0
+	padding: 0
+	font-family: 'Open Sans', sans-serif
+
+/* ------- typography ------- */
+
+a, a:visited 
+	color: black
+
+h1 
+	font-size: 1.1em
+	margin: 0 0 10px
+
+h3 
+	font-size: 1em
+	margin: 0 0 15px
+
+p, ul 
+	font-size: 0.9em
+
+ul 
+	margin: 0
+	padding: 0
+
+p 
+	margin: 0 0 30px 
+
+img 
+	max-width: 100%
+
+
+/* ------- layout ------- */
+
+.container 
+	width: 97%
+	margin: 10px auto 0
+
+
+	@media only screen and (max-width: 768px)
+		width: 95%
+		
+main
+	margin-top: 45px
+
+
+/* ------- header ------- */
+
+header 
+	display: flex
+	justify-content: space-between
+	position: fixed
+	width: 100%
+	background-color: white
+	top: 0
+	z-index: 2
+	box-shadow: 0px 1px 3px #9a9a9a
+
+#header 
+	width: 35%
+
+header a 
+	text-decoration: none
+
+
+@media only screen and (max-width: 768px) 
+	#header 
+		width: 80%
+	
+
+/* ------- menu ------- */
+
+#menu 
+	margin: 3px 0 0
+	width: 65%
+
+
+#menu ul 
+	list-style: none
+	display: flex
+	justify-content: flex-end
+
+#menu a 
+	text-decoration: none
+
+#menu ul li 
+	width: 33%
+	text-align: right
+	cursor: pointer
+
+#mobile_menu_box, #mobile_menu_icon 
+	display: none
+
+@media only screen and (max-width: 768px) 
+	#menu 
+		display: none
+	
+	#mobile_menu_icon 
+		display: block
+
+/* ------- mobile menu ------- */
+
+#mobile_menu_icon 
+	padding: 5px 10px
+	background: url(../img/mobile-menu.svg) center center no-repeat
+	background-size: 55%
+	width: 30px
+	height: 30px
+
+#mobile_menu_box 
+	top: 45px
+	position: fixed
+	background-color: white
+	width: 100%
+	z-index: 1
+	box-shadow: 0px 1px 3px #bbbbbb
+
+#mobile_menu_box a 
+	text-decoration: none
+	padding: 20px 10px
+	display: block
+
+
+/* ------- dataviz and legend ------- */
+
+
+@media only screen and (max-width: 450px) 
+	.legend 
+		text-align: center 
+
+.dataviz 
+	overflow: hidden
+
+
+.dataset a 
+	text-decoration: none
+
+
+.dataset img 
+	margin: 0 10px
+
+	.row 
+		@media only screen and (max-width: 768px) 
+			display: block
+	
+
+	.column_2, .column_3, .column_4 
+		width: 100%
+		padding-right: 0 
+	
+	
+	.dataset 
+		margin-top: 50px
+
+.article 
+	cursor: pointer
+
+
+/* ------- dataviz n. 1 ------- */
+
+#dv1
+	height: 75vh
+	margin-bottom: 60px
+
+
+/* ------- footer ------- */
+
+footer 
+	border-top: 1px solid #d6d5d5
+
+footer ul 
+	list-style: none
+
+footer ul li 
+	padding-bottom: 20px 
+
+#colophon 
+	padding: 20px 0
+
+#sub_footer 
+	border-top: 1px solid #d6d5d5 
+	padding: 10px 0 0px
+
+#sub_footer p 
+	margin: 0 0 20px
