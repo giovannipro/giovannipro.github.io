@@ -1,5 +1,5 @@
 // settings
-const it_articles_url = "/assets/data/it_articles.tsv";
+const it_articles_url = "assets/data/it_articles.tsv";
 const map_contaier = "map1";
 
 const place_color = "red"
