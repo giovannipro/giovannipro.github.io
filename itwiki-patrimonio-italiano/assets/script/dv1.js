@@ -2,14 +2,14 @@
 const it_articles_url = "assets/data/it_articles.tsv";
 const map_contaier = "map1";
 
-const place_color = "#4b4cf9"
+const place_color = "#2a35f7"
 
 // make the visualization
 function dv1(){
 	console.log("start");	
 
 	let map = L.map(map_contaier, {
-		center: [41.9028, 12.4964],
+		center: [41.9028, 12.9164],
 		zoom: 6
 	});
 
@@ -24,19 +24,19 @@ function dv1(){
   		.then(function(data) {
 			console.log(data);
 
-			let filter_region = "Sardegnaa";
-			let filter_population = 15000;
-			console.log(filter_region, filter_population)
+			let the_population_min = 30;
+			let the_population_max = 2000;
+			console.log(the_population_min,the_population_max)
 
 			// filter by region
-			filter_region = data.filter(function(a,b){ 
-				return a.Regione !== filter_region
-			})
-			console.log(filter_region.length)
+			// filter_region = data.filter(function(a,b){ 
+			// 	return a.Regione == the_region
+			// })
+			// console.log(filter_region.length)
 
 			// filter by population
-			filter_population = filter_region.filter(function(a,b){ 
-				return a.Popolazione > filter_population
+			filter_population = data.filter(function(a,b){ 
+				return a.Popolazione >= the_population_min && a.Popolazione <= the_population_max
 			})
 			console.log(filter_population.length)
 
@@ -48,55 +48,88 @@ function dv1(){
 				return Math.sqrt(+d.aNum/3.14);
 			})
 
-			let bounds = [];
+			function append_markers(dataset){
 
-			filter_population.forEach(function (a,b) {
+				// var bounds = L.latLngBounds()
 
-				let population = a.Popolazione
+				let bounds = [];
 
-				let lat = a.lat
-				let lon = a.lon
-				let name = a.Titolo
-				let prov = a.Sigla
-				let tooltip_text = name + " (" + prov + ")"
+				dataset.forEach(function (a,b) {
 
-				let issues = a.aNum;
+					let population = a.Popolazione
 
-				bounds.push([lat,lon])
+					let lat = a.lat
+					let lon = a.lon
+					let name = a.Titolo
+					let prov = a.Sigla
+					let tooltip_text = name + " (" + prov + ")"
 
-				let scale_issues = d3.scaleLinear()
-					.range([2,6])
-					.domain([issue_min,issue_max])
+					let issues = a.aNum;
 
-				let place = L.circleMarker([lat, lon], {
-					color: place_color,
-					fillColor: place_color,
-					fillOpacity: 0.5,
-					radius: scale_issues(issues)
+					bounds.push([lat,lon])
+
+					let scale_issues = d3.scaleLinear()
+						.range([2,6])
+						.domain([issue_min,issue_max])
+
+					let place = L.circleMarker([lat, lon], {
+						color: place_color,
+						fillColor: place_color,
+						fillOpacity: 0.5,
+						radius: scale_issues(issues),
+						className: "place"
+					})
+				   	.bindTooltip( tooltip_text , {
+						permanent: false,
+						interactive: true,
+						noWrap: true,
+						opacity: 0.9
+					})
+					.addTo(map);
+
+					place.on('mouseover', customTip);
+
+					function customTip() {
+						this.openTooltip()
+					}
 				})
-			   	.bindTooltip( tooltip_text , {
-					permanent: false,
-					interactive: true,
-					noWrap: true,
-					opacity: 0.9
-				})
-				.addTo(map);
 
-				place.on('mouseover', customTip);
+				map.fitBounds(bounds, {
+					"padding": [50, 50],
+					"animate": true,
+				    "duration": 2
+				});
+			}
 
-				function customTip() {
-					this.openTooltip()
+			append_markers(filter_population);
+
+			$("#region").change(function() {
+				let region = this.value;
+				let inhabitants =  $("#inhabitants option:selected").val();
+				console.log(region, inhabitants)
+
+				// filter by region
+				if (region !== "all"){
+					filter_region = data.filter(function(a,b){ 
+						return a.Regione == region
+					})
 				}
-			})
+				else {
+					filter_region = data
+				}
 
-			map.fitBounds(bounds, {
-				"padding": [50, 50],
-				"animate": true,
-			    "duration": 10
+				// filter by population
+				filter_population = filter_region.filter(function(a,b){ 
+					return a.Popolazione > inhabitants
+				})
+
+				$(".place").remove();
+				append_markers(filter_population);
 			});
+
 	})
-  	.catch(function(error) {
-    	console.log("some error occurred")
-  	});
+  	// .catch(function(error) {
+   //  	console.log("some error occurred")
+  	// });
 }
 

@@ -302,24 +302,6 @@ function dv1(the_subject) {
 				.attr("opacity",1)
 	    }
 
-	    // get new subject
-	 //    let new_sort = 1;
-	 //    let new_subject = the_subject;
-
-	 //    const sort_options = document.querySelectorAll("#sort .dropdown li")
-	 //    $("#subjects").change(function() {
-	 //    	let subject = this.value;
-		//     update_subject(subject,new_sort);
-		//     console.log(subject,new_sort);
-	 //    })
-
-		// for (const sort_option of sort_options) {
-		// 	sort_option.addEventListener('click', function(event) {
-		// 		let new_sort = event.target.className;
-		// 		update_sort(new_subject,new_sort);
-		// 	})
-		// }
-
 		$("#subjects").change(function() {
 			let subject = this.value;
 			new_sort =  $("#sort option:selected").val();
@@ -335,24 +317,6 @@ function dv1(the_subject) {
 
 			update_sort(subject,new_sort);
 		});
-
-		// $(window).resize(function() {
-		// 	let subject = $("#subjects :selected").text()
-		// 	console.log(subject);
-
-		// 	let window_w = $(container).outerWidth();
-		// 		window_h = $(container).outerHeight();
-
-		// 	let width = window_w - (margin.right + margin.right),
-		// 		height = window_h - (margin.top + margin.bottom);
-			
-		// 	d3.select("#svg")
-		// 		.transition()
-		// 		.attr("width", width + (margin.right + margin.right))
-		// 		.attr("height",height + (margin.top + margin.bottom))
-
-		// 	update(subject);
-		// });
 
 		function update_subject(the_subject,the_sort){
 			// console.log(the_subject)
