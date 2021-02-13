@@ -107,6 +107,42 @@ header a {
   padding: 20px 10px;
   display: block; }
 
+/* ------- select box ------- */
+#select_section {
+  margin-top: 45px;
+  height: 140px;
+  border-bottom: 1px solid #d6d5d5; }
+
+.select_box {
+  display: flex;
+  justify-content: space-between; }
+
+#select_section .key {
+  font-size: 0.8em;
+  margin: 0; }
+
+#select_section .value {
+  font-size: 1.1em;
+  margin: 10px 0 0 0; }
+
+#select_section .select {
+  font-family: "Open Sans", sans-serif;
+  left: -5px;
+  border: none;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  border-bottom: 1px solid #808080; }
+
+.selector {
+  padding-top: 50px;
+  border-right: 1px solid #d6d5d5;
+  height: 90px;
+  width: 18%; }
+
+.selector:last-child {
+  border: none; }
+
 /* ------- dataviz and legend ------- */
 @media only screen and (max-width: 450px) {
   .legend {
@@ -136,7 +172,7 @@ header a {
   margin-bottom: 60px; }
 
 #map1 {
-  height: 75vh; }
+  height: 65vh; }
 
 /* ------- footer ------- */
 footer {

@@ -2,7 +2,7 @@
 const it_articles_url = "assets/data/it_articles.tsv";
 const map_contaier = "map1";
 
-const place_color = "red"
+const place_color = "#4b4cf9"
 
 // make the visualization
 function dv1(){
@@ -17,8 +17,7 @@ function dv1(){
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 		maxZoom: 15,
 		minZoom: 6,
-		tileSize: 512,
-		zoomOffset: -1
+		tileSize: 256
 	}).addTo(map);
 
 	d3.tsv(it_articles_url)
