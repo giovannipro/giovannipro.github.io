@@ -2,7 +2,9 @@
 const it_articles_url = "assets/data/it_articles.tsv";
 const map_contaier = "map1";
 
-const place_color = "#2a35f7"
+const place_color = "#1F5BD1"; // #2a35f7
+const circle_min_size = 2;
+const circle_max_size = 7;
 
 const population_range = [{
 	"a": {
@@ -83,60 +85,111 @@ function dv1(){
   		.then(function(data) {
 			console.log(data);
 
-			// let the_population_min = 30;
-			// let the_population_max = 2000;
-			// console.log(the_population_min,the_population_max)
-
-			// filter by region
-			// filter_region = data.filter(function(a,b){ 
-			// 	return a.Regione == the_region
-			// })
-			// console.log(filter_region.length)
-
 			// filter by population
 			let p_min = population_range[0].a.min
 			let p_max = population_range[0].a.max
 			filter_population = data.filter(function(a,b){ 
 				return a.Popolazione >= p_min && a.Popolazione <= p_max
 			})
-			// console.log(p_min,p_max)
-			// console.log(filter_population.length)
 
-			let issue_min = d3.min(filter_population, function(d) { 
-				return Math.sqrt(+d.aNum/3.14);
-			})
-			let issue_max = d3.max(filter_population, function(d) { 
-				return Math.sqrt(+d.aNum/3.14);
-			})
+			let scale = d3.scaleLinear()
+				.range([circle_min_size,circle_max_size])
 
-			function append_markers(dataset){
+			function append_markers(dataset,feature){
 
 				let bounds = [];
+				let min = 0;
+				let max = 0;
+			
+				if (feature == "size") {
+					min = d3.min(filter_population, function(d) { 
+						return Math.sqrt(+d.pDim/3.14);
+					})
+					max = d3.max(filter_population, function(d) { 
+						return Math.sqrt(+d.pDim/3.14);
+					})
+				}
+				else if (feature == "issues") {
+					min = d3.min(filter_population, function(d) { 
+						return Math.sqrt(+d.aNum/3.14);
+					})
+					
+					max = d3.max(filter_population, function(d) { 
+						return Math.sqrt(+d.aNum/3.14);
+					})
+				}
+				else if (feature == "references") {
+					min = d3.min(filter_population, function(d) { 
+						return Math.sqrt(+d.bNum/3.14);
+					})
+					
+					max = d3.max(filter_population, function(d) { 
+						return Math.sqrt(+d.bNum/3.14);
+					})
+				}
+				else if (feature == "notes") {
+					min = d3.min(filter_population, function(d) { 
+						return Math.sqrt(+d.nNum/3.14);
+					})
+					
+					max = d3.max(filter_population, function(d) { 
+						return Math.sqrt(+d.nNum/3.14);
+					})
+				}
+				else if (feature == "monuments") {
+					min = d3.min(filter_population, function(d) { 
+						return Math.sqrt(+d.mNum/3.14);
+					})
+					
+					max = d3.max(filter_population, function(d) { 
+						return Math.sqrt(+d.mNum/3.14);
+					})
+				}
 
+				scale.domain([min,max]);
+				
+				console.log(min,max);
+				
 				dataset.forEach(function (a,b) {
 
-					let population = a.Popolazione
+					let lat = a.lat;
+					let lon = a.lon;
+					let name = a.Titolo;
+					let prov = a.Sigla;
+					let issues = +a.aNum;
+					let size = +a.pDim;
+					let references = +a.bNum;
+					let notes = +a.nNum;
+					let monuments = +a.mNum;
+					let population = a.Popolazione;
 
-					let lat = a.lat
-					let lon = a.lon
-					let name = a.Titolo
-					let prov = a.Sigla
-					let tooltip_text = name + " (" + prov + ")"
+					let tooltip_text = name + " (" + prov + ")";
 
-					let issues = a.aNum;
-
+					let radius;
+					if (feature == "size"){
+						radius = scale(size)/200;
+					}
+					else if (feature == "issues") {
+						radius = scale(issues);
+					}
+					else if (feature == "references"){
+						radius = scale(references)/3;
+					}
+					else if (feature == "notes"){
+						radius = scale(notes)/7;
+					}
+					else { //  if (feature == "monuments")
+						radius = scale(monuments)/2;
+					}
 					bounds.push([lat,lon])
 
-					let scale_issues = d3.scaleLinear()
-						.range([2,6])
-						.domain([issue_min,issue_max])
-
-					let place = L.circleMarker([lat, lon], {
+					let place = L.circleMarker([lat, lon], { // circleMarker
 						color: place_color,
 						fillColor: place_color,
 						fillOpacity: 0.5,
-						radius: scale_issues(issues),
-						className: "place"
+						radius: radius,
+						className: "place",
+						id: "place_" + b
 					})
 				   	.bindTooltip( tooltip_text , {
 						permanent: false,
@@ -160,12 +213,13 @@ function dv1(){
 				});
 			}
 
-			append_markers(filter_population);
+			append_markers(filter_population,"size");
 
 			$("#region").change(function() {
 				let region = this.value;
 				let inhabitants =  $("#inhabitants option:selected").val();
-				console.log(region, inhabitants)
+				let feature =  $("#feature option:selected").val();
+				console.log(region, inhabitants, feature)
 
 				// filter by region
 				if (region !== "all"){
@@ -183,13 +237,14 @@ function dv1(){
 				})
 
 				$(".place").remove();
-				append_markers(filter_population);
+				append_markers(filter_population, feature);
 			});
 
 			$("#inhabitants").change(function() {
 				let inhabitants = this.value;
-				let region =  $("#region option:selected").val();
-				// console.log(region, inhabitants)
+				let region = $("#region option:selected").val();
+				let feature =  $("#feature option:selected").val();
+				console.log(region, inhabitants, feature)
 
 				// filter by region
 				if (region !== "all"){
@@ -205,10 +260,34 @@ function dv1(){
 				filter_population = filter_region.filter(function(a,b){ 
 					return a.Popolazione >= population(inhabitants)[0] && a.Popolazione <= population(inhabitants)[1]
 				})
-				console.log(population(inhabitants)[0], population(inhabitants)[1], filter_population.length)
+				
+				$(".place").remove();
+				append_markers(filter_population, feature);
+			});
+
+			$("#feature").change(function() {
+				let feature = this.value;
+				let inhabitants = $("#inhabitants option:selected").val();
+				let region =  $("#region option:selected").val();
+				console.log(region, inhabitants, feature)
+
+				// filter by region
+				if (region !== "all"){
+					filter_region = data.filter(function(a,b){ 
+						return a.Regione == region
+					})
+				}
+				else {
+					filter_region = data
+				}
+
+				// filter by population
+				filter_population = filter_region.filter(function(a,b){ 
+					return a.Popolazione >= population(inhabitants)[0] && a.Popolazione <= population(inhabitants)[1]
+				})
 
 				$(".place").remove();
-				append_markers(filter_population);
+				append_markers(filter_population, feature);
 			});
 
 	})
