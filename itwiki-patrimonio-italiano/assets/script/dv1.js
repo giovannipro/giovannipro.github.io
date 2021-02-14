@@ -6,6 +6,8 @@ const place_color = "#1F5BD1"; // #2a35f7
 const circle_min_size = 2;
 const circle_max_size = 7;
 
+const it_wiki = "https://it.wikipedia.org/wiki/";
+
 const population_range = [{
 	"a": {
 		"min": 0,
@@ -145,6 +147,17 @@ function dv1(){
 						return Math.sqrt(+d.mNum/3.14);
 					})
 				}
+				else if (feature == "images") {
+					min = d3.min(filter_population, function(d) { 
+						images = (+d.svg) + (+d.jpg) + (d.png) + (d.gif) + (+d.tif) + (d.mAltri);
+						return Math.sqrt(images/3.14);
+					})
+					
+					max = d3.max(filter_population, function(d) { 
+						images = (+d.svg) + (+d.jpg) + (d.png) + (d.gif) + (+d.tif) + (d.mAltri);
+						return Math.sqrt(images/3.14);
+					})
+				}
 
 				scale.domain([min,max]);
 				
@@ -162,6 +175,7 @@ function dv1(){
 					let notes = +a.nNum;
 					let monuments = +a.mNum;
 					let population = a.Popolazione;
+					let images = (+a.svg) + (+a.jpg) + (a.png) + (a.gif) + (+a.tif) + (a.mAltri);
 
 					let tooltip_text = name + " (" + prov + ")";
 
@@ -178,9 +192,13 @@ function dv1(){
 					else if (feature == "notes"){
 						radius = scale(notes)/7;
 					}
-					else { //  if (feature == "monuments")
+					else if (feature == "images"){
+						radius = scale(images)/800;
+					}
+					else{
 						radius = scale(monuments)/2;
 					}
+
 					bounds.push([lat,lon])
 
 					let place = L.circleMarker([lat, lon], { // circleMarker
@@ -197,12 +215,18 @@ function dv1(){
 						noWrap: true,
 						opacity: 0.9
 					})
-					.addTo(map);
+					.addTo(map)
+					.on('click', onClick);
 
 					place.on('mouseover', customTip);
 
 					function customTip() {
 						this.openTooltip()
+					}
+
+					function onClick() {
+						let url = it_wiki + name;
+						window.open(url);
 					}
 				})
 
