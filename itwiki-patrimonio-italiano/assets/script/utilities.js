@@ -33,5 +33,4 @@ function mobile_menu() {
 
 $(document).ready(function() {
 	// mobile_menu();
-	dv1();
 })

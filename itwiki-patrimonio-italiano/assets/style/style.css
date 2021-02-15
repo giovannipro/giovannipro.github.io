@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", Arial, sans-serif; }
 
 /* ------- typography ------- */
 a, a:visited {
@@ -116,40 +116,39 @@ header a {
   display: block; }
 
 /* ------- select box ------- */
-#select_section {
+#select_section_1, #select_section_2 {
   margin-top: 45px;
   height: 140px;
   border-bottom: 1px solid #d6d5d5; }
+  #select_section_1 .select_box, #select_section_2 .select_box {
+    display: flex;
+    justify-content: space-between; }
+    #select_section_1 .select_box .selector, #select_section_2 .select_box .selector {
+      padding-top: 50px;
+      border-right: 1px solid #d6d5d5;
+      height: 90px; }
+      #select_section_1 .select_box .selector .key, #select_section_2 .select_box .selector .key {
+        font-size: 0.8em;
+        margin: 0; }
+      #select_section_1 .select_box .selector .value, #select_section_2 .select_box .selector .value {
+        font-size: 1.1em;
+        margin: 10px 0 0 0; }
+      #select_section_1 .select_box .selector .select, #select_section_2 .select_box .selector .select {
+        font-family: "Open Sans", sans-serif;
+        left: -5px;
+        border: none;
+        position: relative;
+        display: inline-block;
+        width: 90%;
+        border-bottom: 1px solid #808080; }
+    #select_section_1 .select_box .selector:last-child, #select_section_2 .select_box .selector:last-child {
+      border: none; }
 
-.select_box {
-  display: flex;
-  justify-content: space-between; }
-
-#select_section .key {
-  font-size: 0.8em;
-  margin: 0; }
-
-#select_section .value {
-  font-size: 1.1em;
-  margin: 10px 0 0 0; }
-
-#select_section .select {
-  font-family: "Open Sans", sans-serif;
-  left: -5px;
-  border: none;
-  position: relative;
-  display: inline-block;
-  width: 90%;
-  border-bottom: 1px solid #808080; }
-
-.selector {
-  padding-top: 50px;
-  border-right: 1px solid #d6d5d5;
-  height: 90px;
+#select_section_1 .select_box .selector {
   width: 18%; }
 
-.selector:last-child {
-  border: none; }
+#select_section_2 .select_box .selector {
+  width: 24%; }
 
 /* ------- dataviz and legend ------- */
 @media only screen and (max-width: 450px) {
