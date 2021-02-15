@@ -1,5 +1,6 @@
 function mobile_menu() {
  	let open = false;
+	let the_path = "";
 
 	$("#mobile_menu_icon").click(function(){
 
@@ -9,7 +10,6 @@ function mobile_menu() {
 		if (open == false) {
 
 			const path = window.location.pathname;
-			let the_path = "";
 
 			if (path == ""){
 				the_path = "";
@@ -32,5 +32,5 @@ function mobile_menu() {
 }
 
 $(document).ready(function() {
-	// mobile_menu();
+	mobile_menu();
 })

@@ -1,9 +1,16 @@
+/* ------- settings ------- */
+
+$smartphone: 450px
+$tablet-v: 768px
+$tablet-h: 900px
+
+
+/* ------- typography ------- */
+
 html, body 
 	margin: 0
 	padding: 0
 	font-family: 'Open Sans', Arial, sans-serif
-
-/* ------- typography ------- */
 
 a, a:visited 
 	color: black
@@ -11,6 +18,9 @@ a, a:visited
 h1 
 	font-size: 1.1em
 	margin: 0 0 10px
+
+	@media only screen and (max-width: $tablet-v)
+		font-size: 0.8em
 
 h3 
 	font-size: 1em
@@ -45,11 +55,11 @@ img
 	margin: 10px auto 0
 
 
-	@media only screen and (max-width: 768px)
+	@media only screen and (max-width: $tablet-v)
 		width: 95%
 		
 main
-	margin-top: 45px
+	margin-top: 40px
 
 
 /* ------- header ------- */
@@ -64,41 +74,38 @@ header
 	z-index: 2
 	box-shadow: 0px 1px 3px #9a9a9a
 
-#header 
-	width: 45%
+#header
+	width: 70%
+
+	@media only screen and (max-width: $tablet-v) 
+		width: 90%
 
 header a 
 	text-decoration: none
-
-
-@media only screen and (max-width: 768px) 
-	#header 
-		width: 80%
 	
 
 /* ------- menu ------- */
 
 #menu 
-	margin: 3px 0 0
-	width: 55%
+	margin: 3px 10px 0 0
+	width: 30%
 
 #menu ul 
 	list-style: none
 	display: flex
-	justify-content: flex-end
+	justify-content: space-between
 
 #menu a 
 	text-decoration: none
 
 #menu ul li 
-	width: 33%
 	text-align: right
 	cursor: pointer
 
 #mobile_menu_box, #mobile_menu_icon 
 	display: none
 
-@media only screen and (max-width: 768px) 
+@media only screen and (max-width: $tablet-v) 
 	#menu 
 		display: none
 	
@@ -115,7 +122,7 @@ header a
 	height: 30px
 
 #mobile_menu_box 
-	top: 45px
+	top: 40px
 	position: fixed
 	background-color: white
 	width: 100%
@@ -130,7 +137,7 @@ header a
 /* ------- select box ------- */
 
 #select_section_1, #select_section_2
-	margin-top: 45px
+	margin-top: 40px
 	height: 140px
 	border-bottom: 1px solid #d6d5d5
 
@@ -177,7 +184,7 @@ header a
 /* ------- dataviz and legend ------- */
 
 
-@media only screen and (max-width: 450px) 
+@media only screen and (max-width: $smartphone) 
 	.legend 
 		text-align: center 
 
@@ -193,7 +200,7 @@ header a
 	margin: 0 10px
 
 	.row 
-		@media only screen and (max-width: 768px) 
+		@media only screen and (max-width: $tablet-v) 
 			display: block
 	
 
