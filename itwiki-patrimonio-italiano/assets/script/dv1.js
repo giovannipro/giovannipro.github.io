@@ -253,9 +253,16 @@ function dv1(){
 
 						if (language == "it") {
 							name = a.it_Titolo;
-
 							size = +a.it_pDim;
+
 							issues = +a.it_aNum;
+							issue_verifica = +a.it_verifica;
+							issues_correggere = +a.it_correggere;
+							issues_curiosita = +a.it_curiosita;
+							issues_dividere = +a.it_dividere;
+							issues_notabile = +a.it_notabile;
+							issues_noReferenze = +a.it_noReferenze;
+
 							references = +a.it_bNum;
 							notes = +a.it_nNum;
 							monuments = +a.it_mNum;
@@ -266,9 +273,17 @@ function dv1(){
 						}
 						else {
 							name = a.en_Titolo;
-
 							size = +a.en_pDim;
+
+							
 							issues = +a.en_aNum;
+							issue_verifica = +a.en_verifica;
+							issues_correggere = +a.en_correggere;
+							issues_curiosita = +a.en_curiosita;
+							issues_dividere = +a.en_dividere;
+							issues_notabile = +a.en_notabile;
+							issues_noReferenze = +a.en_noReferenze;
+
 							references = +a.en_bNum;
 							notes = +a.en_nNum;
 							monuments = +a.en_mNum;
@@ -283,7 +298,33 @@ function dv1(){
 							feature_text = size.toLocaleString() + " byte";
 						}
 						else if (feature == "issues") {
-							feature_text = issues + " avvisi";
+
+							if (issues > 0){
+								feature_text = issues + " avvisi:";
+
+								if (issue_verifica > 0){
+									feature_text += "<br>- " + issue_verifica + " verifica sorgente"
+								}
+								if (issues_correggere > 0){
+									feature_text += "<br>- " + issues_correggere + " correggere"
+								}
+								if (issues_curiosita > 0){
+									feature_text += "<br>- " + issues_curiosita + " curiosità"
+								}
+								if (issues_dividere > 0){
+									feature_text += "<br>- " + issues_dividere + " dividere"
+								}
+								if (issues_notabile > 0){
+									feature_text += "<br>- " + issues_notabile + " notabilità"
+								}
+								if (issues_noReferenze > 0){
+									feature_text += "<br>- " + issues_noReferenze + " senza referenze"
+								}
+							}
+							else {
+								feature_text = "0 avvisi";
+							}
+
 						}
 						else if (feature == "references") {
 							feature_text = references + " referenze bibliografiche";
@@ -385,7 +426,7 @@ function dv1(){
 					});
 				}
 
-				append_markers(filter_inhabitants, "it", "monuments");
+				append_markers(filter_inhabitants, "it", "size");
 
 				$("#region").change(function() {
 					region = this.value;
