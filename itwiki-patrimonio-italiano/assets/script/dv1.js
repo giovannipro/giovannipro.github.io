@@ -579,7 +579,7 @@ function dv1(){
    //  	console.log("some error occurred")
   	// });
 
-  	load_data(articles_url,);
+  	load_data(articles_url);
 }
 
 $(document).ready(function() {
