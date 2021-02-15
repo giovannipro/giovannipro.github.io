@@ -6,11 +6,12 @@ const map_contaier = "map1";
 const place_color = "#1F5BD1"; // #2a35f7
 const circle_min_size = 2;
 const circle_max_size = 7;
+const pg = 3.14;
 
 const it_wiki = "https://it.wikipedia.org/wiki/";
 const en_wiki = "https://en.wikipedia.org/wiki/";
 
-const population_range = [{
+const inhabitants_range = [{
 	"a": {
 		"min": 0,
 		"max": 1000
@@ -37,38 +38,37 @@ const population_range = [{
 	}
 }]
 
-function population(value){
+function the_inhabitants(value){
 	if (value == 0){
-		p_min = population_range[0].a.min;
-		p_max = population_range[0].f.max;
+		p_min = inhabitants_range[0].a.min;
+		p_max = inhabitants_range[0].f.max;
 	}
 	else if (value == 1){
-		p_min = population_range[0].a.min;
-		p_max = population_range[0].a.max;
+		p_min = inhabitants_range[0].a.min;
+		p_max = inhabitants_range[0].a.max;
 	}
 	else if (value == 2){
-		p_min = population_range[0].b.min;
-		p_max = population_range[0].b.max;
+		p_min = inhabitants_range[0].b.min;
+		p_max = inhabitants_range[0].b.max;
 	}
 	else if (value == 3){
-		p_min = population_range[0].c.min;
-		p_max = population_range[0].c.max;
+		p_min = inhabitants_range[0].c.min;
+		p_max = inhabitants_range[0].c.max;
 	}
 	else if (value == 4){
-		p_min = population_range[0].d.min;
-		p_max = population_range[0].d.max;
+		p_min = inhabitants_range[0].d.min;
+		p_max = inhabitants_range[0].d.max;
 	}
 	else if (value == 5){
-		p_min = population_range[0].e.min;
-		p_max = population_range[0].e.max;
+		p_min = inhabitants_range[0].e.min;
+		p_max = inhabitants_range[0].e.max;
 	}
 	else {
-		p_min = population_range[0].f.min;
-		p_max = population_range[0].f.max;
+		p_min = inhabitants_range[0].f.min;
+		p_max = inhabitants_range[0].f.max;
 	}
 	return [p_min, p_max]
 }
-
 
 // make the visualization
 function dv1(){
@@ -91,151 +91,163 @@ function dv1(){
 	  		.then(function(data) {
 				console.log(data);
 
-				// filter by population
-				let p_min = population_range[0].a.min
-				let p_max = population_range[0].a.max
-				filter_population = data.filter(function(a,b){ 
-					return a.Popolazione >= p_min && a.Popolazione <= p_max
+				// filter by inhabitants
+				let p_min = inhabitants_range[0].a.min
+				let p_max = inhabitants_range[0].a.max
+
+				filter_inhabitants = data.filter(function(a,b){ 
+					return +a.Popolazione >= p_min && +a.Popolazione <= p_max
 				})
 
-				let scale = d3.scaleLinear()
-					.range([circle_min_size,circle_max_size])
-
-				let language;
-				let region;
-				let inhabitants;
-				let feature;
-
 				function append_markers(dataset, language, feature){
+
+					let scale = d3.scaleLinear()
+						.range([circle_min_size,circle_max_size])
 
 					let bounds = [];
 					let min = 0;
 					let max = 0;
 				
 					if (language == "it") {
+						// if (feature == "inhabitants") {
+						// 	min = d3.min(filter_inhabitants, function(d) { 
+						// 		return Math.sqrt(+d.Popolazione/pg);
+						// 	})
+						// 	max = d3.max(filter_inhabitants, function(d) { 
+						// 		return Math.sqrt(+d.Popolazione/pg);
+						// 	})
+						// }					
 						if (feature == "size") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.it_pDim/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_pDim/pg);
 							})
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.it_pDim/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_pDim/pg);
 							})
 						}
 						else if (feature == "issues") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.it_aNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_aNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.it_aNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_aNum/pg);
 							})
 						}
 						else if (feature == "references") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.it_bNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_bNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.it_bNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_bNum/pg);
 							})
 						}
 						else if (feature == "notes") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.it_nNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_nNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.it_nNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_nNum/pg);
 							})
 						}
 						else if (feature == "monuments") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.it_mNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_mNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.it_mNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_mNum/pg);
 							})
 						}
 						else if (feature == "images") {
-							min = d3.min(filter_population, function(d) { 
+							min = d3.min(filter_inhabitants, function(d) { 
 								images = (+d.it_svg) + (+d.it_jpg) + (d.it_png) + (d.it_gif) + (+d.it_tif) + (d.it_mAltri);
-								return Math.sqrt(images/3.14);
+								return Math.sqrt(images/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
+							max = d3.max(filter_inhabitants, function(d) { 
 								images = (+d.it_svg) + (+d.it_jpg) + (d.it_png) + (d.it_gif) + (+d.it_tif) + (d.it_mAltri);
-								return Math.sqrt(images/3.14);
+								return Math.sqrt(images/pg);
 							})
 						}
 					}
 					else {
+						// if (feature == "inhabitants") {
+						// 	min = d3.min(filter_inhabitants, function(d) { 
+						// 		return Math.sqrt(+d.Popolazione/pg);
+						// 	})
+						// 	max = d3.max(filter_inhabitants, function(d) { 
+						// 		return Math.sqrt(+d.Popolazione/pg);
+						// 	})
+						// }	
 						if (feature == "size") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.en_pDim/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_pDim/pg);
 							})
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.en_pDim/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_pDim/pg);
 							})
 						}
 						else if (feature == "issues") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.en_aNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_aNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.en_aNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_aNum/pg);
 							})
 						}
 						else if (feature == "references") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.en_bNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_bNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.en_bNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_bNum/pg);
 							})
 						}
 						else if (feature == "notes") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.en_nNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_nNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.en_nNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_nNum/pg);
 							})
 						}
 						else if (feature == "monuments") {
-							min = d3.min(filter_population, function(d) { 
-								return Math.sqrt(+d.en_mNum/3.14);
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_mNum/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
-								return Math.sqrt(+d.en_mNum/3.14);
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_mNum/pg);
 							})
 						}
 						else if (feature == "images") {
-							min = d3.min(filter_population, function(d) { 
+							min = d3.min(filter_inhabitants, function(d) { 
 								images = (+d.en_svg) + (+d.en_jpg) + (d.en_png) + (d.en_gif) + (+d.en_tif) + (d.en_mAltri);
-								return Math.sqrt(images/3.14);
+								return Math.sqrt(images/pg);
 							})
 							
-							max = d3.max(filter_population, function(d) { 
+							max = d3.max(filter_inhabitants, function(d) { 
 								images = (+d.en_svg) + (+d.en_jpg) + (d.en_png) + (d.en_gif) + (+d.en_tif) + (d.en_mAltri);
-								return Math.sqrt(images/3.14);
+								return Math.sqrt(images/pg);
 							})
 						}
 					}
 
 					scale.domain([min,max]);
-					// console.log(min,max);
 					
 					dataset.forEach(function (a,b) {
 
 						let lat = a.lat;
 						let lon = a.lon;
 						let prov = a.Sigla;
-						let population = a.Popolazione;
+						let inhabitants = +a.Popolazione;
+						let feature_text;
 
 						if (language == "it") {
 							name = a.it_Titolo;
@@ -246,6 +258,7 @@ function dv1(){
 							notes = +a.it_nNum;
 							monuments = +a.it_mNum;
 							images = (+a.it_svg) + (+a.it_jpg) + (a.it_png) + (a.it_gif) + (+a.it_tif) + (a.it_mAltri);
+							
 						}
 						else {
 							name = a.en_Titolo;
@@ -258,7 +271,26 @@ function dv1(){
 							images = (+a.en_svg) + (+a.en_jpg) + (a.en_png) + (a.en_gif) + (+a.en_tif) + (a.en_mAltri);
 						}
 
-						let tooltip_text = name + " (" + prov + ")";
+						if (feature == "size"){
+							feature_text = size.toLocaleString() + " byte";
+						}
+						else if (feature == "issues") {
+							feature_text = issues + " avvisi";
+						}
+						else if (feature == "references") {
+							feature_text = references + " referenze bibliografiche";
+						}
+						else if (feature == "notes") {
+							feature_text = notes + " note";
+						}
+						else if (feature == "monuments") {
+							feature_text = monuments + " sezioni monumenti";
+						}
+						else if (feature == "images") {
+							feature_text = images + " immagini";
+						}
+
+						let tooltip_text = name + " (" + prov + ")<br/>" + inhabitants.toLocaleString() + " abitanti<br/><br/>" + feature_text + "</br>";
 
 						let radius;
 						if (feature == "size"){
@@ -331,14 +363,14 @@ function dv1(){
 					});
 				}
 
-				append_markers(filter_population, "it", "size");
+				append_markers(filter_inhabitants, "it", "size");
 
 				$("#region").change(function() {
 					region = this.value;
 					language =  $("#language option:selected").val();
 					inhabitants =  $("#inhabitants option:selected").val();
 					feature =  $("#feature option:selected").val();
-					console.log(region, inhabitants, feature)
+					console.log(language, region, inhabitants, feature)
 
 					// filter by region
 					if (region !== "all"){
@@ -350,13 +382,13 @@ function dv1(){
 						filter_region = data
 					}
 
-					// filter by population
-					filter_population = filter_region.filter(function(a,b){ 
-						return a.Popolazione >= population(inhabitants)[0] && a.Popolazione <= population(inhabitants)[1]
+					// filter by inhabitants
+					filter_inhabitants = filter_region.filter(function(a,b){ 
+						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
 					})
 
 					$(".place").remove();
-					append_markers(filter_population, language, feature);
+					append_markers(filter_inhabitants, language, feature);
 				});
 
 				$("#inhabitants").change(function() {
@@ -376,13 +408,13 @@ function dv1(){
 						filter_region = data
 					}
 
-					// filter by population
-					filter_population = filter_region.filter(function(a,b){ 
-						return a.Popolazione >= population(inhabitants)[0] && a.Popolazione <= population(inhabitants)[1]
+					// filter by inhabitants
+					filter_inhabitants = filter_region.filter(function(a,b){ 
+						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
 					})
 					
 					$(".place").remove();
-					append_markers(filter_population, language, feature);
+					append_markers(filter_inhabitants, language, feature);
 				});
 
 				$("#feature").change(function() {
@@ -402,13 +434,13 @@ function dv1(){
 						filter_region = data
 					}
 
-					// filter by population
-					filter_population = filter_region.filter(function(a,b){ 
-						return a.Popolazione >= population(inhabitants)[0] && a.Popolazione <= population(inhabitants)[1]
+					// filter by inhabitants
+					filter_inhabitants = filter_region.filter(function(a,b){ 
+						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
 					})
 
 					$(".place").remove();
-					append_markers(filter_population, language, feature);
+					append_markers(filter_inhabitants, language, feature);
 				});
 
 				$("#language").change(function() {
@@ -428,13 +460,13 @@ function dv1(){
 						filter_region = data
 					}
 
-					// filter by population
-					filter_population = filter_region.filter(function(a,b){ 
-						return a.Popolazione >= population(inhabitants)[0] && a.Popolazione <= population(inhabitants)[1]
+					// filter by inhabitants
+					filter_inhabitants = filter_region.filter(function(a,b){ 
+						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
 					})
 
 					$(".place").remove();
-					append_markers(filter_population, language, feature);
+					append_markers(filter_inhabitants, language, feature);
 				});
 
 		})
