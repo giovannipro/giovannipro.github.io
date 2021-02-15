@@ -285,7 +285,8 @@ function dv1(){
 						let place = L.circleMarker([lat, lon], {
 							color: place_color,
 							fillColor: place_color,
-							fillOpacity: 0.5,
+							fillOpacity: 0.4,
+							opacity: 0.8,
 							radius: radius,
 							className: "place",
 							id: "place_" + b
@@ -299,10 +300,16 @@ function dv1(){
 						.addTo(map)
 						.on('click', onClick);
 
-						place.on('mouseover', customTip);
+						place.on('mouseover', mouseover);
+						place.on('mouseout', mouseleave);
 
-						function customTip() {
-							this.openTooltip()
+						function mouseover() {
+							this.openTooltip();
+							place.setStyle({opacity: 1, fillOpacity: 0.8});
+						}
+
+						function mouseleave() {
+							place.setStyle({opacity: 0.8, fillOpacity: 0.5});
 						}
 
 						function onClick() {
