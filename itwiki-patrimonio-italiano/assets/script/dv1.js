@@ -261,6 +261,8 @@ function dv1(){
 							monuments = +a.it_mNum;
 							monuments_size = +a.it_mDim;
 							images = (+a.it_svg) + (+a.it_jpg) + (a.it_png) + (a.it_gif) + (+a.it_tif) + (a.it_mAltri);
+
+							monuments_section = a.it_mSezioni.split("|");
 						}
 						else {
 							name = a.en_Titolo;
@@ -272,6 +274,9 @@ function dv1(){
 							monuments = +a.en_mNum;
 							monuments_size = +a.en_mDim;
 							images = (+a.en_svg) + (+a.en_jpg) + (a.en_png) + (a.en_gif) + (+a.en_tif) + (a.en_mAltri);
+
+							monuments_section = a.en_mSezioni.split("|");
+
 						}
 
 						if (feature == "size"){
@@ -287,7 +292,15 @@ function dv1(){
 							feature_text = notes + " note";
 						}
 						else if (feature == "monuments") {
-							feature_text = monuments + " sezioni monumenti";
+							if (monuments > 0){
+								feature_text =  "sezioni monumenti:"
+								monuments_section.forEach(function (a,b) {
+									feature_text += "<br/>- " + a
+								})
+							}
+							else {
+								feature_text = "0 sezioni monumenti"
+							}
 						}
 						else if (feature == "monuments_size") {
 							feature_text = monuments_size.toLocaleString() + " byte";
@@ -372,7 +385,7 @@ function dv1(){
 					});
 				}
 
-				append_markers(filter_inhabitants, "it", "size");
+				append_markers(filter_inhabitants, "it", "monuments");
 
 				$("#region").change(function() {
 					region = this.value;
