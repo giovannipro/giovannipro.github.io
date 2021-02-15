@@ -108,15 +108,7 @@ function dv1(){
 					let min = 0;
 					let max = 0;
 				
-					if (language == "it") {
-						// if (feature == "inhabitants") {
-						// 	min = d3.min(filter_inhabitants, function(d) { 
-						// 		return Math.sqrt(+d.Popolazione/pg);
-						// 	})
-						// 	max = d3.max(filter_inhabitants, function(d) { 
-						// 		return Math.sqrt(+d.Popolazione/pg);
-						// 	})
-						// }					
+					if (language == "it") {					
 						if (feature == "size") {
 							min = d3.min(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.it_pDim/pg);
@@ -159,6 +151,15 @@ function dv1(){
 							
 							max = d3.max(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.it_mNum/pg);
+							})
+						}
+						else if (feature == "monuments_size") {
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_mDim/pg);
+							})
+							
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.it_mDim/pg);
 							})
 						}
 						else if (feature == "images") {
@@ -173,15 +174,7 @@ function dv1(){
 							})
 						}
 					}
-					else {
-						// if (feature == "inhabitants") {
-						// 	min = d3.min(filter_inhabitants, function(d) { 
-						// 		return Math.sqrt(+d.Popolazione/pg);
-						// 	})
-						// 	max = d3.max(filter_inhabitants, function(d) { 
-						// 		return Math.sqrt(+d.Popolazione/pg);
-						// 	})
-						// }	
+					else {	
 						if (feature == "size") {
 							min = d3.min(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.en_pDim/pg);
@@ -224,6 +217,15 @@ function dv1(){
 							
 							max = d3.max(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.en_mNum/pg);
+							})
+						}
+						else if (feature == "monuments_size") {
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_mDim/pg);
+							})
+							
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.en_mDim/pg);
 							})
 						}
 						else if (feature == "images") {
@@ -257,8 +259,8 @@ function dv1(){
 							references = +a.it_bNum;
 							notes = +a.it_nNum;
 							monuments = +a.it_mNum;
+							monuments_size = +a.it_mDim;
 							images = (+a.it_svg) + (+a.it_jpg) + (a.it_png) + (a.it_gif) + (+a.it_tif) + (a.it_mAltri);
-							
 						}
 						else {
 							name = a.en_Titolo;
@@ -268,6 +270,7 @@ function dv1(){
 							references = +a.en_bNum;
 							notes = +a.en_nNum;
 							monuments = +a.en_mNum;
+							monuments_size = +a.en_mDim;
 							images = (+a.en_svg) + (+a.en_jpg) + (a.en_png) + (a.en_gif) + (+a.en_tif) + (a.en_mAltri);
 						}
 
@@ -285,6 +288,9 @@ function dv1(){
 						}
 						else if (feature == "monuments") {
 							feature_text = monuments + " sezioni monumenti";
+						}
+						else if (feature == "monuments_size") {
+							feature_text = monuments_size.toLocaleString() + " byte";
 						}
 						else if (feature == "images") {
 							feature_text = images + " immagini";
@@ -305,11 +311,14 @@ function dv1(){
 						else if (feature == "notes"){
 							radius = scale(notes)/7;
 						}
+						else if (feature == "monuments"){
+							radius = scale(monuments)/2;
+						}
+						else if (feature == "monuments_size"){
+							radius = scale(monuments_size)/100;
+						}
 						else if (feature == "images"){
 							radius = scale(images)/800;
-						}
-						else{
-							radius = scale(monuments)/2;
 						}
 
 						bounds.push([lat,lon])
