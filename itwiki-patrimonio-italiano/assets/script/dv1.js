@@ -262,6 +262,14 @@ function dv1(){
 							issues_dividere = +a.it_dividere;
 							issues_notabile = +a.it_notabile;
 							issues_noReferenze = +a.it_noReferenze;
+							issues_noNote = +a.it_noNote;
+							issues_organizzare = +a.it_organizzare;
+							issues_pov = +a.it_pov;
+							issues_recentismo = +a.it_recentismo;
+							issues_stub = +a.it_stub;
+							issues_noFonte = +a.it_noFonte;
+							issues_noInfobox = +a.it_noInfobox;
+							issues_wikify = +a.it_wikify;
 
 							references = +a.it_bNum;
 							notes = +a.it_nNum;
@@ -274,7 +282,6 @@ function dv1(){
 						else {
 							name = a.en_Titolo;
 							size = +a.en_pDim;
-
 							
 							issues = +a.en_aNum;
 							issue_verifica = +a.en_verifica;
@@ -283,6 +290,14 @@ function dv1(){
 							issues_dividere = +a.en_dividere;
 							issues_notabile = +a.en_notabile;
 							issues_noReferenze = +a.en_noReferenze;
+							issues_noNote = +a.en_noNote;
+							issues_organizzare = +a.en_organizzare;
+							issues_pov = +a.en_pov;
+							issues_recentismo = +a.en_recentismo;
+							issues_stub = +a.en_stub;
+							issues_noFonte = +a.en_noFonte;
+							issues_noInfobox = +a.en_noInfobox;
+							issues_wikify = +a.en_wikify;
 
 							references = +a.en_bNum;
 							notes = +a.en_nNum;
@@ -319,6 +334,30 @@ function dv1(){
 								}
 								if (issues_noReferenze > 0){
 									feature_text += "<br>- " + issues_noReferenze + " senza referenze"
+								}
+								if (issues_noNote > 0){
+									feature_text += "<br>- " + issues_noNote + " senza note"
+								}
+								if (issues_organizzare > 0){
+									feature_text += "<br>- " + issues_organizzare + " organizzare"
+								}
+								if (issues_pov > 0){
+									feature_text += "<br>- " + issues_pov + " POV"
+								}
+								if (issues_recentismo > 0){
+									feature_text += "<br>- " + issues_recentismo + " recentismo"
+								}
+								if (issues_stub > 0){
+									feature_text += "<br>- " + issues_stub + " stub"
+								}
+								if (issues_noFonte > 0){
+									feature_text += "<br>- " + issues_noFonte + " senza fonte"
+								}
+								if (issues_noInfobox > 0){
+									feature_text += "<br>- " + issues_noInfobox + " necessario infobox"
+								}
+								if (issues_wikify > 0){
+									feature_text += "<br>- " + issues_wikify + " wikificare"
 								}
 							}
 							else {
