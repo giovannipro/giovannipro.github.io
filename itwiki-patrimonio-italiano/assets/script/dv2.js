@@ -54,44 +54,166 @@ function dv2(){
 	  			let total = 0;
 	  			let region_articles = [];
 
-	  			function make_chart(dataset){
-	  				console.log(dataset.length)
+	  			function make_chart(dataset,language){
 
-		  			// aggregate cities by region
-		  			let region_group = d3.nest()
-						.key(d => d.Regione)
-						// .rollup(function(v) {return d3.mean(v, function(d) { return d.Popolazione; })})
-						.rollup(function(v) { return {
-						    places: v.length,
-						    population: d3.sum(v, function(d) { 
-						    	return +d.Popolazione 
-						    }),
-						    size_avg: d3.mean(v, function(d) { 
-						    	return +d.it_pDim 
-						    }),
-						    monuments_size_avg: d3.mean(v, function(d) { 
-						    	return +d.it_mDim 
-						    }),
-						    issues_avg: d3.mean(v, function(d) { 
-						    	return +d.it_aNum 
-						    }),
-						    references_avg: d3.mean(v, function(d) { 
-						    	return +d.it_bNum 
-						    }),
-						    notes_avg: d3.mean(v, function(d) { 
-						    	return +d.it_nNum 
-						    }),
-						    images_avg: d3.mean(v, function(d) { 
-						    	return (+d.it_svg) + (+d.it_jpg) + (+d.it_png) + (+d.it_gif) + (+d.it_tif) + (+d.it_mAltri); 
-						    })
-						}})
-						.entries(dataset)
+	  				let region_group;
+
+			  		// aggregate cities by region
+	  				if (language == "it") {	
+			  			region_group = d3.nest()
+							.key(d => d.Regione)
+							.rollup(function(v) { return {
+							    places: v.length,
+							    population: d3.sum(v, function(d) { 
+							    	return +d.Popolazione 
+							    }),
+							    size_avg: d3.mean(v, function(d) { 
+							    	return +d.it_pDim 
+							    }),
+							    monuments_size_avg: d3.mean(v, function(d) { 
+							    	return +d.it_mDim 
+							    }),
+							    
+							    // issues
+							    issues_avg: d3.mean(v, function(d) { 
+							    	return +d.it_aNum 
+							    }),
+							    issues_Verifica_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_verifica)
+							    }),
+							    issues_correggere_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_correggere)
+							    }),
+							    issues_curiosita_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_curiosita)
+							    }),
+							    issues_dividere_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_dividere)
+							    }),
+							    issues_notabile_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_notabile)
+							    }),
+							    issues_noReferenze_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_noReferenze)
+							    }),
+							    issues_noNote_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_noNote)
+							    }),
+							    issues_organizzare_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_organizzare)
+							    }),
+							    issues_pov_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_pov)
+							    }),
+							    issues_recentismo_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_recentismo)
+							    }),
+							    issues_stub_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_stub)
+							    }),
+							    issues_noFonte_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_noFonte)
+							    }),
+							    issues_noInfobox_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_noInfobox)
+							    }),
+							    issues_wikify_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_wikify)
+							    }),
+
+
+							    references_avg: d3.mean(v, function(d) { 
+							    	return +d.it_bNum 
+							    }),
+							    notes_avg: d3.mean(v, function(d) { 
+							    	return +d.it_nNum 
+							    }),
+							    images_avg: d3.mean(v, function(d) { 
+							    	return (+d.it_svg) + (+d.it_jpg) + (+d.it_png) + (+d.it_gif) + (+d.it_tif) + (+d.it_mAltri); 
+							    })
+							}})
+							.entries(dataset)
+	  				}
+	  				else {	
+			  			region_group = d3.nest()
+							.key(d => d.Regione)
+							.rollup(function(v) { return {
+							    places: v.length,
+							    population: d3.sum(v, function(d) { 
+							    	return +d.Popolazione 
+							    }),
+							    size_avg: d3.mean(v, function(d) { 
+							    	return +d.en_pDim 
+							    }),
+							    monuments_size_avg: d3.mean(v, function(d) { 
+							    	return +d.en_mDim 
+							    }),
+							    
+							    // issues
+							    issues_avg: d3.mean(v, function(d) { 
+							    	return +d.en_aNum 
+							    }),
+							    issues_Verifica_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_verifica)
+							    }),
+							    issues_correggere_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_correggere)
+							    }),
+							    issues_curiosita_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_curiosita)
+							    }),
+							    issues_dividere_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_dividere)
+							    }),
+							    issues_notabile_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_notabile)
+							    }),
+							    issues_noReferenze_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_noReferenze)
+							    }),
+							    issues_noNote_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_noNote)
+							    }),
+							    issues_organizzare_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_organizzare)
+							    }),
+							    issues_pov_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_pov)
+							    }),
+							    issues_recentismo_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_recentismo)
+							    }),
+							    issues_stub_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_stub)
+							    }),
+							    issues_noFonte_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_noFonte)
+							    }),
+							    issues_noInfobox_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_noInfobox)
+							    }),
+							    issues_wikify_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_wikify)
+							    }),
+
+
+							    references_avg: d3.mean(v, function(d) { 
+							    	return +d.en_bNum 
+							    }),
+							    notes_avg: d3.mean(v, function(d) { 
+							    	return +d.en_nNum 
+							    }),
+							    images_avg: d3.mean(v, function(d) { 
+							    	return (+d.en_svg) + (+d.en_jpg) + (+d.en_png) + (+d.en_gif) + (+d.en_tif) + (+d.en_mAltri); 
+							    })
+							}})
+							.entries(dataset)
+	  				}
 					console.log(region_group);
 
 					let sorted_data = region_group.sort(function(a, b){
 						return d3.descending(+a.value.issues_avg, +b.value.issues_avg);
 					})
-					// console.log(sorted_data);
 
 					// scale
 					let issues_max = d3.max(region_group, function(d) { 
@@ -110,18 +232,8 @@ function dv2(){
 						.range([0, 1])
 						.domain([0,r_max])
 
-					// let sum = 0;
-					// let count = 0;
-					// region_group.forEach(function (d,i) {
-					// 	count += 1;
-					// 	sum += d.value.max_features
-					// })
-					// console.log(sum,count)
-
-					// let my_max_features = sum/count;
 
 					// axis and grid
-
 					let x = d3.scaleLinear()
 						.domain([0,region_group.length]) 
 						.range([0,width-margin.left])
@@ -167,13 +279,13 @@ function dv2(){
 				  // 				return d3.descending(a.it_aNum, b.it_aNum);
 						// })
 						.attr("class",function(d,i){
-							return d.key
+							return d.key + " region"
 						})
 						.attr("transform", function(d,i){
 							return "translate(" + x(i) + "," + 0 + ")"
 						})
-						// .on("mouseover", handleMouseOver)
-						// .on("mouseout", handleMouseOut)
+						.on("mouseover", handleMouseOver)
+						.on("mouseout", handleMouseOut)
 						// .append("a")
 						// .attr("xlink:href", function(d,i){
 						// 	return wiki_link + d.article
@@ -297,16 +409,62 @@ function dv2(){
 							return y_features(d.value.references_avg)
 						})
 
+					function handleMouseOver(){
+						d3.selectAll(".region")
+							.attr("opacity",0.2)
+
+						d3.select(this)
+							.attr("opacity",1)
+					}
+
+				    function handleMouseOut(){
+						d3.selectAll(".region")
+							.attr("opacity",1)
+				    }
+
 				}
 
-				let inhabitants = 1;
+				let inhabitants = 0;
 
 				let filtered_data = data.filter(function(a,b){ 
 					return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
 				})
 				// console.log(the_inhabitants(inhabitants)[0])
 
-				make_chart(filtered_data)
+				make_chart(filtered_data,"it")
+
+
+				$("#language").change(function() {
+					let language = this.value;
+					let inhabitants =  $("#inhabitants option:selected").val();
+					let feature =  $("#sort_feature option:selected").val();
+					console.log(feature);
+
+					let filtered_data = data.filter(function(a,b){ 
+						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
+					})
+
+					$("#d3_plot").empty();
+
+					update_language(filtered_data,language,feature);
+				});
+
+				$("#sort_feature").change(function() {
+					let feature = this.value;
+					let inhabitants =  $("#inhabitants option:selected").val();
+					let language =  $("#language option:selected").val();
+
+					update_sort(filtered_data,language,feature);
+				});
+
+				function update_language(dataset,language,feature){
+					make_chart(dataset,language);
+				}
+
+				function update_sort(dataset,language,feature){
+					// make_chart(dataset,language);
+					console.log(language,feature)
+				}
 
 	  		})
 
