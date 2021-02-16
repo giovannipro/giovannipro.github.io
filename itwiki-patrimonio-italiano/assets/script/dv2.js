@@ -67,10 +67,18 @@ function dv2(){
 						    }),
 						    notes_avg: d3.mean(v, function(d) { 
 						    	return d.it_nNum 
+						    }),
+						    images_avg: d3.mean(v, function(d) { 
+						    	return (+d.it_svg) + (+d.it_jpg) + (d.it_png) + (d.it_gif) + (+d.it_tif) + (d.it_mAltri); 
 						    })
 						}})
 						.entries(data)
-					console.log(region_group)
+					console.log(region_group);
+
+					let sorted_data = region_group.sort(function(a, b){
+						return d3.descending(+a.value.issues_avg, +b.value.issues_avg);
+					})
+					console.log(sorted_data);
 
 					// scale
 					let issues_max = d3.max(region_group, function(d) { 
@@ -122,12 +130,12 @@ function dv2(){
 					let region = plot.append("g")	
 						.attr("class","regions")
 						.selectAll("g")
-						.data(region_group)
+						.data(sorted_data)
 						.enter()
 						.append("g")
-						.sort(function(a, b) {
-				  				return d3.descending(a.it_aNum, b.it_aNum);
-						})
+						// .sort(function(a, b) {
+				  // 				return d3.descending(a.it_aNum, b.it_aNum);
+						// })
 						.attr("class",function(d,i){
 							return d.key
 						})
@@ -153,7 +161,7 @@ function dv2(){
 						.attr("cx", 0)
 						.attr("cy", 200)
 						.attr("r", function(d,i){
-							return d.value.size_avg/400
+							return d.value.size_avg/300
 						})
 						.style("fill", function(d,i) {
 							// return apply_color(d.subject)
