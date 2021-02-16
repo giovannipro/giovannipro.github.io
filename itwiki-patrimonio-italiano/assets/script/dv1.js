@@ -11,65 +11,6 @@ const pg = 3.14;
 const it_wiki = "https://it.wikipedia.org/wiki/";
 const en_wiki = "https://en.wikipedia.org/wiki/";
 
-const inhabitants_range = [{
-	"a": {
-		"min": 0,
-		"max": 1000
-	},
-	"b": {
-		"min": 1001,
-		"max": 3000
-	},
-	"c": {
-		"min": 3001,
-		"max": 5000
-	},
-	"d": {
-		"min": 5001,
-		"max": 10000
-	},
-	"e": {
-		"min": 10001,
-		"max": 50000
-	},
-	"f": {
-		"min": 50001,
-		"max": 3000000
-	}
-}]
-
-function the_inhabitants(value){
-	if (value == 0){
-		p_min = inhabitants_range[0].a.min;
-		p_max = inhabitants_range[0].f.max;
-	}
-	else if (value == 1){
-		p_min = inhabitants_range[0].a.min;
-		p_max = inhabitants_range[0].a.max;
-	}
-	else if (value == 2){
-		p_min = inhabitants_range[0].b.min;
-		p_max = inhabitants_range[0].b.max;
-	}
-	else if (value == 3){
-		p_min = inhabitants_range[0].c.min;
-		p_max = inhabitants_range[0].c.max;
-	}
-	else if (value == 4){
-		p_min = inhabitants_range[0].d.min;
-		p_max = inhabitants_range[0].d.max;
-	}
-	else if (value == 5){
-		p_min = inhabitants_range[0].e.min;
-		p_max = inhabitants_range[0].e.max;
-	}
-	else {
-		p_min = inhabitants_range[0].f.min;
-		p_max = inhabitants_range[0].f.max;
-	}
-	return [p_min, p_max]
-}
-
 // make the visualization
 function dv1(){
 
@@ -164,12 +105,12 @@ function dv1(){
 						}
 						else if (feature == "images") {
 							min = d3.min(filter_inhabitants, function(d) { 
-								images = (+d.it_svg) + (+d.it_jpg) + (d.it_png) + (d.it_gif) + (+d.it_tif) + (d.it_mAltri);
+								images = (+d.it_svg) + (+d.it_jpg) + (+d.it_png) + (+d.it_gif) + (+d.it_tif) + (+d.it_mAltri);
 								return Math.sqrt(images/pg);
 							})
 							
 							max = d3.max(filter_inhabitants, function(d) { 
-								images = (+d.it_svg) + (+d.it_jpg) + (d.it_png) + (d.it_gif) + (+d.it_tif) + (d.it_mAltri);
+								images = (+d.it_svg) + (+d.it_jpg) + (+d.it_png) + (+d.it_gif) + (+d.it_tif) + (+d.it_mAltri);
 								return Math.sqrt(images/pg);
 							})
 						}
@@ -230,12 +171,12 @@ function dv1(){
 						}
 						else if (feature == "images") {
 							min = d3.min(filter_inhabitants, function(d) { 
-								images = (+d.en_svg) + (+d.en_jpg) + (d.en_png) + (d.en_gif) + (+d.en_tif) + (d.en_mAltri);
+								images = (+d.en_svg) + (+d.en_jpg) + (+d.en_png) + (+d.en_gif) + (+d.en_tif) + (+d.en_mAltri);
 								return Math.sqrt(images/pg);
 							})
 							
 							max = d3.max(filter_inhabitants, function(d) { 
-								images = (+d.en_svg) + (+d.en_jpg) + (d.en_png) + (d.en_gif) + (+d.en_tif) + (d.en_mAltri);
+								images = (+d.en_svg) + (+d.en_jpg) + (+d.en_png) + (+d.en_gif) + (+d.en_tif) + (+d.en_mAltri);
 								return Math.sqrt(images/pg);
 							})
 						}
@@ -275,7 +216,7 @@ function dv1(){
 							notes = +a.it_nNum;
 							monuments = +a.it_mNum;
 							monuments_size = +a.it_mDim;
-							images = (+a.it_svg) + (+a.it_jpg) + (a.it_png) + (a.it_gif) + (+a.it_tif) + (a.it_mAltri);
+							images = (+a.it_svg) + (+a.it_jpg) + (+a.it_png) + (+a.it_gif) + (+a.it_tif) + (+a.it_mAltri);
 
 							monuments_section = a.it_mSezioni.split("|");
 						}
@@ -303,7 +244,7 @@ function dv1(){
 							notes = +a.en_nNum;
 							monuments = +a.en_mNum;
 							monuments_size = +a.en_mDim;
-							images = (+a.en_svg) + (+a.en_jpg) + (a.en_png) + (a.en_gif) + (+a.en_tif) + (a.en_mAltri);
+							images = (+a.en_svg) + (+a.en_jpg) + (+a.en_png) + (+a.en_gif) + (+a.en_tif) + (+a.en_mAltri);
 
 							monuments_section = a.en_mSezioni.split("|");
 
@@ -411,7 +352,7 @@ function dv1(){
 							radius = scale(monuments_size)/100;
 						}
 						else if (feature == "images"){
-							radius = scale(images)/800;
+							radius = scale(images)/5;
 						}
 
 						bounds.push([lat,lon])

@@ -3,6 +3,14 @@ const articles_url = "../assets/data/articles.tsv";
 const container = "#dv2";
 
 const h_space = 2;
+const v_shift = 8;
+
+let c_issues = '#EC4C4E',
+	c_reference = '#49A0D8',
+	c_note = '#A8D2A2',
+	c_image = '#F5A3BD',
+	c_days = '#9e9e9e',
+	c_line = '#9E9E9E';
 
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
@@ -46,6 +54,7 @@ function dv2(){
 	  			let region_articles = [];
 
 	  			function make_chart(dataset){
+	  				console.log(dataset.length)
 
 		  			// aggregate cities by region
 		  			let region_group = d3.nest()
@@ -54,43 +63,63 @@ function dv2(){
 						.rollup(function(v) { return {
 						    places: v.length,
 						    population: d3.sum(v, function(d) { 
-						    	return d.Popolazione 
+						    	return +d.Popolazione 
 						    }),
 						    size_avg: d3.mean(v, function(d) { 
-						    	return d.it_pDim 
+						    	return +d.it_pDim 
+						    }),
+						    monuments_size_avg: d3.mean(v, function(d) { 
+						    	return +d.it_mDim 
 						    }),
 						    issues_avg: d3.mean(v, function(d) { 
-						    	return d.it_aNum 
+						    	return +d.it_aNum 
 						    }),
 						    references_avg: d3.mean(v, function(d) { 
-						    	return d.it_bNum 
+						    	return +d.it_bNum 
 						    }),
 						    notes_avg: d3.mean(v, function(d) { 
-						    	return d.it_nNum 
+						    	return +d.it_nNum 
 						    }),
 						    images_avg: d3.mean(v, function(d) { 
-						    	return (+d.it_svg) + (+d.it_jpg) + (d.it_png) + (d.it_gif) + (+d.it_tif) + (d.it_mAltri); 
+						    	return (+d.it_svg) + (+d.it_jpg) + (+d.it_png) + (+d.it_gif) + (+d.it_tif) + (+d.it_mAltri); 
 						    })
 						}})
-						.entries(data)
+						.entries(dataset)
 					console.log(region_group);
 
 					let sorted_data = region_group.sort(function(a, b){
 						return d3.descending(+a.value.issues_avg, +b.value.issues_avg);
 					})
-					console.log(sorted_data);
+					// console.log(sorted_data);
 
 					// scale
 					let issues_max = d3.max(region_group, function(d) { 
-						return d.it_aNum
+						return +d.value.issues_avg
 					})
 
-					let max_features = d3.max(region_group, function(d) {
-						return +d.en_pDim // size
+					let my_max_features = d3.max(region_group, function(d) {
+						return +d.value.references_avg + (+d.value.notes_avg) + (d.value.images_avg)
 					})
+
+					let r_max = d3.max(region_group, function(d) { 
+						return Math.sqrt(+d.value.size_avg/3.14);
+					})
+
+					let r = d3.scaleLinear()
+						.range([0, 1])
+						.domain([0,r_max])
+
+					// let sum = 0;
+					// let count = 0;
+					// region_group.forEach(function (d,i) {
+					// 	count += 1;
+					// 	sum += d.value.max_features
+					// })
+					// console.log(sum,count)
+
+					// let my_max_features = sum/count;
 
 					// axis and grid
-					let my_max_features = max_features;
 
 					let x = d3.scaleLinear()
 						.domain([0,region_group.length]) 
@@ -153,30 +182,113 @@ function dv2(){
 						// .on("mouseout", tooltip.hide)
 
 					// place circle
-					// let place_width = ((width-margin.left) - (h_space*(total-1))) / total
-
-					console.log(region_group[0].value.size_avg)
+					let place_width = 20//((width-margin.left) - (h_space*(20-1))) / 20
 
 					let region_circle = region.append("circle")
 						.attr("cx", 0)
 						.attr("cy", 200)
 						.attr("r", function(d,i){
-							return d.value.size_avg/300
+							return r(+d.value.size_avg)/10
 						})
 						.style("fill", function(d,i) {
-							// return apply_color(d.subject)
 							return "red"
+						})
+						.style("opacity",0.5)
+
+					let monument_circle = region.append("circle")
+						.attr("cx", 0)
+						.attr("cy", 200)
+						.attr("r", function(d,i){
+							return r(+d.value.monuments_size_avg)/10
+						})
+						.style("fill", function(d,i) {
+							return "blue"
 						})
 						.style("opacity",0.5)
 
 					let region_name = region.append("text")
 						.text(function(d,i){
 							return d.key
+						}) 
+
+					//issues
+					let issues = region.append("rect")
+						.attr("x",0)
+						.attr("y",function(d,i){
+							return y_issues(issues_max - d.value.issues_avg)
+						})
+						.attr("height", function(d,i){
+							return y_issues(d.value.issues_avg) 
+						})
+						.attr("width",place_width)
+						.attr("fill","red")
+						.attr("class", function(d,i){
+							return "iss " + d.value.issues_avg
+						})
+
+					// features
+					let features = region.append("g")
+						.attr("transform", function(d,i){
+							return "translate(" + 0 + "," + ((height/2)+v_shift) + ")"
+						})
+						// .attr("class", function(d,i){
+						// 	return "feat_" + d.features 
+						// })
+
+					let images = features.append("rect")
+						.attr("x",0)
+						.attr("y",0)
+						.attr("width",place_width)
+						.attr("fill",c_image)
+						.attr("class", function(d,i){
+							return "feat img_" + d.value.images_avg 
+						})
+						.attr("height",0)
+						.transition()
+						.attr("height", function(d,i){
+							return y_features(d.value.references_avg + d.value.notes_avg + d.value.images_avg)
+						})
+
+					let notes = features.append("rect")
+						.attr("x",0)
+						.attr("y",0)
+						.attr("width",place_width)
+						.attr("fill",c_note)
+						.attr("class", function(d,i){
+							return "feat not_" + d.value.notes_avg 
+						})
+						.attr("height",0)
+						.transition()
+						.attr("height", function(d,i){
+							return y_features(d.value.references_avg + d.value.notes_avg)
+						})
+
+					let references = features.append("rect")
+						.attr("x",0)
+						.attr("y",function(d,i){
+							return 0
+						})
+						.attr("width",place_width)
+						.attr("fill",c_reference)
+						.attr("class", function(d,i){
+							return "feat ref_" + d.value.references_avg 
+						})
+						.attr("height", 0)
+						.transition()
+						.attr("height", function(d,i){
+							return y_features(d.value.references_avg)
 						})
 
 				}
 
-				make_chart(data)
+				let inhabitants = 0;
+
+				let filtered_data = data.filter(function(a,b){ 
+					return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
+				})
+				// console.log(the_inhabitants(inhabitants)[0])
+
+				make_chart(filtered_data)
 
 	  		})
 
