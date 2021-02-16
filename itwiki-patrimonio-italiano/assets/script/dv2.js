@@ -5,6 +5,8 @@ const container = "#dv2";
 const h_space = 2;
 const v_shift = 8;
 
+const region_color = "#1F5BD1"
+
 let c_issues = '#EC4C4E',
 	c_reference = '#49A0D8',
 	c_note = '#A8D2A2',
@@ -26,9 +28,8 @@ let margin = {top: 20, left: 0-reduction, bottom: 20, right: 60-reduction},
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
-const issue_height = height/2.1;
+const issue_height = height/2.8;
 const features_height = height/2.1;
-
 
 // make the visualization
 function dv2(){
@@ -182,27 +183,41 @@ function dv2(){
 						// .on("mouseout", tooltip.hide)
 
 					// place circle
-					let place_width = 20//((width-margin.left) - (h_space*(20-1))) / 20
+					let place_width = ((width-margin.left) - (h_space*(20-1))) / 20
 
-					let region_circle = region.append("circle")
+					let region_size = region.append("g")
+						.attr("transform","translate(" + (place_width/2) + "," + 40 + ")")
+						.attr("class", "size")
+
+					let region_circle = region_size.append("circle")
+						.transition()
+						.duration(500)
+						.delay(function(d,i){ 
+							return i * 2
+						})
 						.attr("cx", 0)
-						.attr("cy", 200)
+						.attr("cy", 0)
 						.attr("r", function(d,i){
 							return r(+d.value.size_avg)/10
 						})
 						.style("fill", function(d,i) {
-							return "red"
+							return region_color
 						})
 						.style("opacity",0.5)
 
-					let monument_circle = region.append("circle")
+					let monument_circle = region_size.append("circle")
+						.transition()
+						.duration(500)
+						.delay(function(d,i){ 
+							return i * 2
+						})
 						.attr("cx", 0)
-						.attr("cy", 200)
+						.attr("cy", 0)
 						.attr("r", function(d,i){
 							return r(+d.value.monuments_size_avg)/10
 						})
 						.style("fill", function(d,i) {
-							return "blue"
+							return region_color
 						})
 						.style("opacity",0.5)
 
@@ -212,10 +227,15 @@ function dv2(){
 						}) 
 
 					//issues
-					let issues = region.append("rect")
+					let issues = region.append("g")
+						.attr("transform",function(d,i){
+							return "translate(" + 0 + "," + 85 + ")";
+						})
+						.attr("class", "issues")
+						.append("rect")
 						.attr("x",0)
 						.attr("y",function(d,i){
-							return y_issues(issues_max - d.value.issues_avg)
+							return y_issues(issues_max - d.value.issues_avg);
 						})
 						.attr("height", function(d,i){
 							return y_issues(d.value.issues_avg) 
@@ -231,9 +251,7 @@ function dv2(){
 						.attr("transform", function(d,i){
 							return "translate(" + 0 + "," + ((height/2)+v_shift) + ")"
 						})
-						// .attr("class", function(d,i){
-						// 	return "feat_" + d.features 
-						// })
+						.attr("class", "features")
 
 					let images = features.append("rect")
 						.attr("x",0)
@@ -281,7 +299,7 @@ function dv2(){
 
 				}
 
-				let inhabitants = 0;
+				let inhabitants = 1;
 
 				let filtered_data = data.filter(function(a,b){ 
 					return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
