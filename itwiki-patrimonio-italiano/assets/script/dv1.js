@@ -216,7 +216,14 @@ function dv1(){
 							notes = +a.it_nNum;
 							monuments = +a.it_mNum;
 							monuments_size = +a.it_mDim;
-							images = (+a.it_svg) + (+a.it_jpg) + (+a.it_png) + (+a.it_gif) + (+a.it_tif) + (+a.it_mAltri);
+
+							images_svg = +a.it_svg;
+							images_jpg = +a.it_jpg;
+							images_png = +a.it_png;
+							images_gif = +a.it_gif;
+							images_tif = +a.it_tif;
+							images_oth = +a.it_mAltri;
+							images = images_svg + images_jpg + images_png + images_gif + images_tif + images_oth;
 
 							monuments_section = a.it_mSezioni.split("|");
 						}
@@ -244,7 +251,14 @@ function dv1(){
 							notes = +a.en_nNum;
 							monuments = +a.en_mNum;
 							monuments_size = +a.en_mDim;
-							images = (+a.en_svg) + (+a.en_jpg) + (+a.en_png) + (+a.en_gif) + (+a.en_tif) + (+a.en_mAltri);
+
+							images_svg = +a.en_svg;
+							images_jpg = +a.en_jpg;
+							images_png = +a.en_png;
+							images_gif = +a.en_gif;
+							images_tif = +a.en_tif;
+							images_oth = +a.en_mAltri;
+							images = images_svg + images_jpg + images_png + images_gif + images_tif + images_oth;
 
 							monuments_section = a.en_mSezioni.split("|");
 
@@ -327,7 +341,27 @@ function dv1(){
 							feature_text = monuments_size.toLocaleString() + " byte";
 						}
 						else if (feature == "images") {
-							feature_text = images + " immagini";
+							feature_text = images + " immagini:";
+
+							if (images_svg > 0){
+								feature_text += "<br>- " + images_svg + " svg"
+							}
+							if (images_jpg > 0){
+								feature_text += "<br>- " + images_jpg + " jpg"
+							}
+							if (images_png > 0){
+								feature_text += "<br>- " + images_png + " png"
+							}
+							if (images_gif > 0){
+								feature_text += "<br>- " + images_gif + " gif"
+							}
+							if (images_tif > 0){
+								feature_text += "<br>- " + images_tif + " tif"
+							}
+							if (images_oth > 0){
+								feature_text += "<br>- " + images_oth + " altro"
+							}
+
 						}
 
 						let tooltip_text = name + " (" + prov + ")<br/>" + inhabitants.toLocaleString() + " abitanti<br/><br/>" + feature_text + "</br>";
@@ -413,7 +447,7 @@ function dv1(){
 					language =  $("#language option:selected").val();
 					inhabitants =  $("#inhabitants option:selected").val();
 					feature =  $("#feature option:selected").val();
-					console.log(language, region, inhabitants, feature)
+					// console.log(language, region, inhabitants, feature)
 
 					// filter by region
 					if (region !== "all"){
@@ -439,7 +473,7 @@ function dv1(){
 					language = $("#language option:selected").val();
 					region = $("#region option:selected").val();
 					feature =  $("#feature option:selected").val();
-					console.log(language, region, inhabitants, feature)
+					// console.log(language, region, inhabitants, feature)
 
 					// filter by region
 					if (region !== "all"){
@@ -465,7 +499,7 @@ function dv1(){
 					language = $("#language option:selected").val();
 					region =  $("#region option:selected").val();
 					inhabitants = $("#inhabitants option:selected").val();
-					console.log(language, region, inhabitants, feature)
+					// console.log(language, region, inhabitants, feature)
 
 					// filter by region
 					if (region !== "all"){
@@ -491,7 +525,7 @@ function dv1(){
 					region = $("#region option:selected").val();
 					inhabitants = $("#inhabitants option:selected").val();
 					feature =  $("#feature option:selected").val();
-					console.log(language, region, inhabitants, feature)
+					// console.log(language, region, inhabitants, feature)
 
 					// filter by region
 					if (region !== "all"){
