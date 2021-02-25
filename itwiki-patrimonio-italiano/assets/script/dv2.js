@@ -58,7 +58,7 @@ function dv2(){
 				let x = d3.scaleLinear()
 					.range([0,width-margin.left])
 
-	  			function make_chart(dataset,language){
+	  			function make_chart(dataset,language,feature){
 
 	  				let region_group;
 	  				function make_dataset(dataset,language){
@@ -217,12 +217,35 @@ function dv2(){
 						// console.log(region_group);
 		  				return region_group
 	  				}
-
 					make_dataset(dataset,language)
 
-					sorted_data = region_group.sort(function(a, b){
-						return d3.descending(+a.value.size_avg, +b.value.size_avg);
-					})
+					// sort
+					let sorted_data = [];
+					if (feature == "size"){
+						sorted_data = region_group.sort(function(a, b){
+							return d3.descending(+a.value.size_avg, +b.value.size_avg);
+						})
+					}
+					else if (feature == "issues"){
+						sorted_data = region_group.sort(function(a, b){
+							return d3.descending(+a.value.issues_avg, +b.value.issues_avg);
+						})
+					}
+					else if (feature == "references") {
+						sorted_data = region_group.sort(function(a, b){
+							return d3.descending(+a.value.references_avg, +b.value.references_avg);
+						})
+					}
+					else if (feature == "notes") {
+						sorted_data = region_group.sort(function(a, b){
+							return d3.descending(+a.value.notes_avg, +b.value.notes_avg);
+						})
+					}
+					else if (feature == "images") {
+						sorted_data = region_group.sort(function(a, b){
+							return d3.descending(+a.value.images_avg, +b.value.images_avg);
+						})
+					}
 
 					// scale
 					let issues_max = d3.max(region_group, function(d) { 
@@ -307,7 +330,7 @@ function dv2(){
 						.attr("cx", 0)
 						.attr("cy", 0)
 						.attr("r", function(d,i){
-							return r(+d.value.size_avg)/13
+							return r(+d.value.size_avg)/14
 						})
 						.style("fill", function(d,i) {
 							return region_color
@@ -430,7 +453,7 @@ function dv2(){
 				})
 				// console.log(the_inhabitants(inhabitants)[0])
 
-				make_chart(filtered_data,"it")
+				make_chart(filtered_data,"it","size")
 
 				console.log(sorted_data.length)
 
@@ -451,8 +474,9 @@ function dv2(){
 
 				$("#inhabitants").change(function() {
 					let inhabitants = this.value;
-					let language =  $("#language option:selected").val();
-					let feature =  $("#sort_feature option:selected").val();
+					let language = $("#language option:selected").val();
+					let feature = $("#sort_feature option:selected").val();
+					console.log(inhabitants,feature);
 
 					let filtered_data = data.filter(function(a,b){ 
 						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
@@ -471,7 +495,7 @@ function dv2(){
 				});
 
 				function update_language(dataset,language,feature){
-					make_chart(dataset,language);
+					make_chart(dataset,language,feature);
 				}
 
 				function update_sort(dataset,feature,language){
