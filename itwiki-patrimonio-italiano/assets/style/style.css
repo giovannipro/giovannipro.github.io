@@ -3,7 +3,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial, sans-serif; }
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 0.9; }
 
 a, a:visited {
   color: black; }
@@ -19,12 +20,13 @@ h1 {
       font-size: 0.7em;
       margin-top: 5px; } }
 
-h3 {
-  font-size: 1em;
+h2 {
+  font-size: 1.1em;
   margin: 0 0 15px; }
 
-p, ul {
-  font-size: 0.9em; }
+h3 {
+  font-size: 0.9em;
+  margin: 0; }
 
 ul {
   margin: 0;
@@ -54,6 +56,15 @@ img {
 
 main {
   margin-top: 40px; }
+
+.row {
+  display: flex;
+  justify-content: flex-start; }
+  .row .column_3 {
+    width: 33%;
+    padding-right: 2%; }
+    .row .column_3 div {
+      margin-bottom: 20px; }
 
 /* ------- header ------- */
 header {
@@ -177,18 +188,14 @@ header a {
   overflow: hidden; }
 
 .dataset a {
-  text-decoration: none; }
-
+  text-decoration: none;
+  margin: 30px 0 30px;
+  display: block; }
 .dataset img {
   margin: 0 10px; }
-  @media only screen and (max-width: 768px) {
-    .dataset img .row {
-      display: block; } }
-  .dataset img .column_2, .dataset img .column_3, .dataset img .column_4 {
-    width: 100%;
-    padding-right: 0; }
-  .dataset img .dataset {
-    margin-top: 50px; }
+@media only screen and (max-width: 768px) {
+  .dataset .row {
+    display: block; } }
 
 .article {
   cursor: pointer; }
@@ -208,12 +215,10 @@ header a {
 /* ------- footer ------- */
 footer {
   border-top: 1px solid #d6d5d5; }
-
-footer ul {
-  list-style: none; }
-
-footer ul li {
-  padding-bottom: 20px; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      margin: 0; }
 
 #colophon {
   padding: 20px 0; }
