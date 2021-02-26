@@ -4,6 +4,9 @@ const articles_url = "assets/data/articles.tsv";
 const map_contaier = "map1";
 
 const place_color = "#1F5BD1"; // #2a35f7
+const issue_color = "#f95656";
+const no_issue_color = "#5bcc5b";
+
 const circle_min_size = 2;
 const circle_max_size = 7;
 const pg = 3.14;
@@ -183,6 +186,13 @@ function dv1(){
 					}
 
 					scale.domain([min,max]);
+
+					let issue_color_scale = d3.scaleLinear()
+						.domain(d3.range(0, 4))
+						.range([no_issue_color,issue_color])
+						// .range(d3.schemeBlues[9]);
+
+					    // .range(no_issue_color,issue_color);
 					
 					dataset.forEach(function (a,b) {
 
@@ -270,49 +280,97 @@ function dv1(){
 						else if (feature == "issues") {
 
 							if (issues > 0){
-								feature_text = issues + " avvisi:";
+								if (issues == 1){
+									feature_text = issues + " avviso:";
 
-								if (issue_verifica > 0){
-									feature_text += "<br>- verifica sorgente"
+									if (issue_verifica > 0){
+										feature_text += "<br>- verifica sorgente"
+									}
+									if (issues_correggere > 0){
+										feature_text += "<br>- correggere"
+									}
+									if (issues_curiosita > 0){
+										feature_text += "<br>- curiosità"
+									}
+									if (issues_dividere > 0){
+										feature_text += "<br>- dividere"
+									}
+									if (issues_notabile > 0){
+										feature_text += "<br>- notabilità"
+									}
+									if (issues_noReferenze > 0){
+										feature_text += "<br>- senza referenze"
+									}
+									if (issues_noNote > 0){
+										feature_text += "<br>- senza note"
+									}
+									if (issues_organizzare > 0){
+										feature_text += "<br>- organizzare"
+									}
+									if (issues_pov > 0){
+										feature_text += "<br>- POV"
+									}
+									if (issues_recentismo > 0){
+										feature_text += "<br>- recentismo"
+									}
+									if (issues_stub > 0){
+										feature_text += "<br>- stub"
+									}
+									if (issues_noFonte > 0){
+										feature_text += "<br>- senza fonte"
+									}
+									if (issues_noInfobox > 0){
+										feature_text += "<br>- necessario infobox"
+									}
+									if (issues_wikify > 0){
+										feature_text += "<br>- wikificare"
+									}
 								}
-								if (issues_correggere > 0){
-									feature_text += "<br>- correggere"
-								}
-								if (issues_curiosita > 0){
-									feature_text += "<br>- curiosità"
-								}
-								if (issues_dividere > 0){
-									feature_text += "<br>- dividere"
-								}
-								if (issues_notabile > 0){
-									feature_text += "<br>- notabilità"
-								}
-								if (issues_noReferenze > 0){
-									feature_text += "<br>- senza referenze"
-								}
-								if (issues_noNote > 0){
-									feature_text += "<br>- senza note"
-								}
-								if (issues_organizzare > 0){
-									feature_text += "<br>- organizzare"
-								}
-								if (issues_pov > 0){
-									feature_text += "<br>- POV"
-								}
-								if (issues_recentismo > 0){
-									feature_text += "<br>- recentismo"
-								}
-								if (issues_stub > 0){
-									feature_text += "<br>- stub"
-								}
-								if (issues_noFonte > 0){
-									feature_text += "<br>- senza fonte"
-								}
-								if (issues_noInfobox > 0){
-									feature_text += "<br>- necessario infobox"
-								}
-								if (issues_wikify > 0){
-									feature_text += "<br>- wikificare"
+								else {
+									feature_text = issues + " avvisi:";
+
+									if (issue_verifica > 0){
+										feature_text += "<br>- verifica sorgente"
+									}
+									if (issues_correggere > 0){
+										feature_text += "<br>- correggere"
+									}
+									if (issues_curiosita > 0){
+										feature_text += "<br>- curiosità"
+									}
+									if (issues_dividere > 0){
+										feature_text += "<br>- dividere"
+									}
+									if (issues_notabile > 0){
+										feature_text += "<br>- notabilità"
+									}
+									if (issues_noReferenze > 0){
+										feature_text += "<br>- senza referenze"
+									}
+									if (issues_noNote > 0){
+										feature_text += "<br>- senza note"
+									}
+									if (issues_organizzare > 0){
+										feature_text += "<br>- organizzare"
+									}
+									if (issues_pov > 0){
+										feature_text += "<br>- POV"
+									}
+									if (issues_recentismo > 0){
+										feature_text += "<br>- recentismo"
+									}
+									if (issues_stub > 0){
+										feature_text += "<br>- stub"
+									}
+									if (issues_noFonte > 0){
+										feature_text += "<br>- senza fonte"
+									}
+									if (issues_noInfobox > 0){
+										feature_text += "<br>- necessario infobox"
+									}
+									if (issues_wikify > 0){
+										feature_text += "<br>- wikificare"
+									}
 								}
 							}
 							else {
@@ -369,31 +427,49 @@ function dv1(){
 						let radius;
 						if (feature == "size"){
 							radius = scale(size)/200;
+							color = place_color;
 						}
 						else if (feature == "issues") {
 							radius = scale(issues);
+
+							color = issue_color_scale(issues);
+
+							// if (issues == 0){
+							// 	color = no_issue_color;
+							// }
+							// else if (issues == 1){
+							// 	color = one_issue_color;
+							// }
+							// else {
+							// 	color = issue_color;
+							// }
 						}
 						else if (feature == "references"){
 							radius = scale(references)/3;
+							color = place_color;
 						}
 						else if (feature == "notes"){
 							radius = scale(notes)/7;
+							color = place_color;
 						}
 						else if (feature == "monuments"){
 							radius = scale(monuments)/2;
+							color = place_color;
 						}
 						else if (feature == "monuments_size"){
 							radius = scale(monuments_size)/100;
+							color = place_color;
 						}
 						else if (feature == "images"){
 							radius = scale(images)/5;
+							color = place_color;
 						}
 
 						bounds.push([lat,lon])
 
 						let place = L.circleMarker([lat, lon], {
-							color: place_color,
-							fillColor: place_color,
+							color: color,
+							fillColor: color,							
 							fillOpacity: 0.4,
 							opacity: 0.8,
 							radius: radius,
