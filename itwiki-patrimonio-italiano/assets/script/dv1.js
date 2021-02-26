@@ -379,7 +379,7 @@ function dv1(){
 
 						}
 						else if (feature == "references") {
-							feature_text = references + " referenze bibliografiche";
+							feature_text = references + " riferimenti bibliografici";
 						}
 						else if (feature == "notes") {
 							feature_text = notes + " note";

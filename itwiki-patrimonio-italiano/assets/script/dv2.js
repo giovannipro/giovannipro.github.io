@@ -368,7 +368,7 @@ function dv2(){
 							let tooltip_text = d.key + "<br>" + Math.floor(d.value.population).toLocaleString() + 
 								" abitanti (media)<br><br>" + 
 								+d.value.issues_avg.toFixed(2) + " avvisi<br>" + 
-								+d.value.references_avg.toFixed(1) + " referenze bibliografiche<br>" + 
+								+d.value.references_avg.toFixed(1) + " referimenti bibliografici<br>" + 
 								+d.value.notes_avg.toFixed(1) + " note<br>" + 
 								+d.value.images_avg.toFixed(1) + " immagini<br>";
 
