@@ -246,12 +246,47 @@ header a
 #map1
 	height: 65vh
 
-/* ------- dataviz n. 1 ------- */
+	.leaflet-tooltip
+		font-size: 1em
+
+/* ------- dataviz n. 2 ------- */
 
 #dv2
 	margin-bottom: 60px
 	height: 65vh
 
+
+	.tooltip
+		position: absolute			
+		text-align: left		
+		padding: 6px	
+		background-color: #fff	
+		border: 1px solid #fff	
+		color: #222
+		border-radius: 2px		
+		pointer-events: none
+		white-space: nowrap
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		pointer-events: none
+		box-shadow: 0 1px 3px rgba(0,0,0,0.4)
+		font-size: 0.8em
+
+	// .tooltip::after
+	// 	content: ""
+	// 	position: absolute
+	// 	top: 100%
+	// 	left: 50%
+	// 	margin-left: -5px
+	// 	border-width: 5px
+	// 	border-style: solid
+	// 	border-color: black transparent transparent transparent
+
+#dv2_legend
+	top: 35px
+	position: relative
 
 /* ------- footer ------- */
 

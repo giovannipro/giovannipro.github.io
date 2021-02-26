@@ -206,11 +206,34 @@ header a {
 
 #map1 {
   height: 65vh; }
+  #map1 .leaflet-tooltip {
+    font-size: 1em; }
 
-/* ------- dataviz n. 1 ------- */
+/* ------- dataviz n. 2 ------- */
 #dv2 {
   margin-bottom: 60px;
   height: 65vh; }
+  #dv2 .tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #222;
+    border-radius: 2px;
+    pointer-events: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    font-size: 0.8em; }
+
+#dv2_legend {
+  top: 35px;
+  position: relative; }
 
 /* ------- footer ------- */
 footer {

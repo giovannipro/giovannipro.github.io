@@ -51,6 +51,11 @@ function dv2(){
 					.attr("id", "d3_plot")
 					.attr("transform", "translate(" + margin.right + "," + margin.top + ")");
 
+				// tooltip
+				let div = d3.select("#dv2").append("div")	
+				    .attr("class", "tooltip")				
+				    .style("opacity", 0);
+
 	  			let total = 0;
 	  			let region_articles = [];
 	  			let sorted_data = []
@@ -69,7 +74,7 @@ function dv2(){
 								.key(d => d.Regione)
 								.rollup(function(v) { return {
 								    places: v.length,
-								    population: d3.sum(v, function(d) { 
+								    population: d3.mean(v, function(d) { 
 								    	return +d.Popolazione 
 								    }),
 								    size_avg: d3.mean(v, function(d) { 
@@ -144,7 +149,7 @@ function dv2(){
 								.key(d => d.Regione)
 								.rollup(function(v) { return {
 								    places: v.length,
-								    population: d3.sum(v, function(d) { 
+								    population: d3.mean(v, function(d) { 
 								    	return +d.Popolazione 
 								    }),
 								    size_avg: d3.mean(v, function(d) { 
@@ -214,13 +219,13 @@ function dv2(){
 								}})
 								.entries(dataset)
 		  				}
-						// console.log(region_group);
+						console.log(region_group);
 		  				return region_group
 	  				}
 					make_dataset(dataset,language)
 
 					// sort
-					let sorted_data = [];
+					// let sorted_data = [];
 					if (feature == "size"){
 						sorted_data = region_group.sort(function(a, b){
 							return d3.descending(+a.value.size_avg, +b.value.size_avg);
@@ -260,7 +265,7 @@ function dv2(){
 						return Math.sqrt(+d.value.size_avg/3.14);
 					})
 
-					x.domain([0,sorted_data.length])
+					x.domain([0,region_group.length]) // sorted_data
 					// console.log(sorted_data.length)
 
 					let r = d3.scaleLinear()
@@ -311,8 +316,41 @@ function dv2(){
 						.attr("transform", function(d,i){
 							return "translate(" + x(i) + "," + 0 + ")"
 						})
-						.on("mouseover", handleMouseOver)
-						.on("mouseout", handleMouseOut)
+						.on("mouseover", function(d) {
+							// handleMouseOver
+					
+							let tooltip_text = d.key + "<br>" + Math.floor(d.value.population).toLocaleString() + 
+								" abitanti (media)<br><br>" + 
+								+d.value.issues_avg.toFixed(2) + " avvisi<br>" + 
+								+d.value.references_avg.toFixed(1) + " referenze bibliografiche<br>" + 
+								+d.value.notes_avg.toFixed(1) + " note<br>" + 
+								+d.value.images_avg.toFixed(1) + " immagini<br>";
+
+							div.transition()		
+				            	.duration(200)		
+				            	.style("opacity", .9);
+
+				            div.html(tooltip_text)	
+				                .style("left", (d3.event.pageX) + "px")		
+				                .style("top", (d3.event.pageY - 40) + "px");	
+
+				            d3.selectAll(".region")
+								.attr("opacity",0.2)
+
+							d3.select(this)
+								.attr("opacity",1)
+
+				        })			
+						.on("mouseout", function(d) {
+
+							d3.selectAll(".region")
+							.attr("opacity",1)
+
+							div.transition()		
+                				.duration(500)		
+                				.style("opacity", 0);
+
+						})
 
 					// place circle
 					let place_width = ((width-margin.left) - (h_space*(sorted_data.length-1))) / sorted_data.length
@@ -353,10 +391,10 @@ function dv2(){
 						})
 						.style("opacity",0.5)
 
-					let region_name = region.append("text")
-						.text(function(d,i){
-							return d.key
-						}) 
+					// let region_name = region.append("text")
+					// 	.text(function(d,i){
+					// 		return d.key
+					// 	}) 
 
 					//issues
 					let issues = region.append("g")
@@ -431,19 +469,6 @@ function dv2(){
 						.attr("height", function(d,i){
 							return y_features(d.value.references_avg)
 						})
-
-					function handleMouseOver(){
-						d3.selectAll(".region")
-							.attr("opacity",0.2)
-
-						d3.select(this)
-							.attr("opacity",1)
-					}
-
-				    function handleMouseOut(){
-						d3.selectAll(".region")
-							.attr("opacity",1)
-				    }
 				}
 
 				let inhabitants = 0;
@@ -454,9 +479,7 @@ function dv2(){
 				// console.log(the_inhabitants(inhabitants)[0])
 
 				make_chart(filtered_data,"it","size")
-
-				console.log(sorted_data.length)
-
+				// console.log(sorted_data.length)
 
 				$("#language").change(function() {
 					let language = this.value;
@@ -476,7 +499,7 @@ function dv2(){
 					let inhabitants = this.value;
 					let language = $("#language option:selected").val();
 					let feature = $("#sort_feature option:selected").val();
-					console.log(inhabitants,feature);
+					// console.log(inhabitants,feature);
 
 					let filtered_data = data.filter(function(a,b){ 
 						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
@@ -490,15 +513,17 @@ function dv2(){
 				$("#sort_feature").change(function() {
 					let feature = this.value;
 					let language =  $("#language option:selected").val();
+					let inhabitants = $("#inhabitants option:selected").val();
 
-					update_sort(data,feature,language);
+					update_sort(filtered_data,inhabitants,feature,language);
+					console.log(filtered_data)
 				});
 
 				function update_language(dataset,language,feature){
 					make_chart(dataset,language,feature);
 				}
 
-				function update_sort(dataset,feature,language){
+				function update_sort(dataset,inhabitants,feature,language){
 					// console.log(feature)
 
 					function make_dataset(dataset,language){
@@ -659,9 +684,10 @@ function dv2(){
 	  				}
 
 	  				data_ = make_dataset(dataset,language);
-	  				let sorted_data = [];
+	  				console.log(data_)
 
 					// sort
+	  				let sorted_data = [];
 					if (feature == "size"){
 						sorted_data = data_.sort(function(a, b){
 							return d3.descending(+a.value.size_avg, +b.value.size_avg);
@@ -689,19 +715,41 @@ function dv2(){
 					}
 					// console.log(data_)
 
-					x.domain([0,sorted_data.length])
-					console.log(sorted_data.length)
+					// let max = 0;
+					// if (inhabitants == 4){
+					// 	max = 19
+					// }
+					// else if (inhabitants == 6){
+					// 	max = 18
+					// }
+					// else {
+					// 	max = 20
+					// }
+					// console.log(inhabitants,max)
+					// x.domain([0,max])
+
+					sorted_data.forEach(function(d,i){
+						new_id = i;
+						d.new_id = new_id;
+					})
+
+					x.domain([0,data_.length])
+					console.log(data_.length)
  
 					svg.selectAll(".region")
 						.transition()
-						.attr("transform", function(d,i){
+						
+						// .attr("transform", function(d,i){
+						// 	console.log(d)
+						// 	return "translate(" + (d) + "," + 0 + ")"
+						// })
 
+						.attr("transform", function(d,i){
 							sorted_data.forEach(function(a,b){
 								if (d.key == a.key){
 									d.new_id = b
 								}
 							})
-
 							return "translate(" + x(d.new_id) + "," + 0 + ")" // x(d.new_id)
 						})
 				}
