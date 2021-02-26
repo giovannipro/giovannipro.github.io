@@ -142,7 +142,7 @@ header a {
     height: 140px;
     justify-content: space-between;
     margin-top: 0; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 768px) {
       #select_section_1 .select_box, #select_section_2 .select_box {
         display: none; } }
     #select_section_1 .select_box .selector, #select_section_2 .select_box .selector {
@@ -176,7 +176,7 @@ header a {
   display: none;
   border-bottom: 1px solid #d6d5d5;
   padding: 5px 0 10px; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 768px) {
     #filter_button {
       display: block; } }
 

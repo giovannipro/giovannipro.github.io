@@ -15,7 +15,7 @@ const en_wiki = "https://en.wikipedia.org/wiki/";
 function dv1(){
 
 	let map = L.map(map_contaier, {
-		center: [41.9028, 12.9164],
+		center: [42.3, 12.0], // 41.9028 12.9164
 		zoom: 6
 	});
 
@@ -434,10 +434,11 @@ function dv1(){
 					})
 
 					map.fitBounds(bounds, {
-						"padding": [50, 50],
+						"padding": [80, 80],
 						"animate": true,
-					    "duration": 1
+					    "duration": 2
 					});
+					// console.log(bounds)
 				}
 
 				append_markers(filter_inhabitants, "it", "size");
