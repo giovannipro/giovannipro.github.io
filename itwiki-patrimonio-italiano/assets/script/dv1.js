@@ -51,6 +51,7 @@ function dv1(){
 					let bounds = [];
 					let min = 0;
 					let max = 0;
+					let max_issue = 0;
 				
 					if (language == "it") {					
 						if (feature == "size") {
@@ -68,6 +69,10 @@ function dv1(){
 							
 							max = d3.max(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.it_aNum/pg);
+							})
+
+							max_issue = d3.max(filter_inhabitants, function(d) { 
+								return +d.it_aNum;
 							})
 						}
 						else if (feature == "references") {
@@ -135,6 +140,10 @@ function dv1(){
 							max = d3.max(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.en_aNum/pg);
 							})
+
+							max_issue = d3.max(filter_inhabitants, function(d) { 
+								return +d.en_aNum;
+							})
 						}
 						else if (feature == "references") {
 							min = d3.min(filter_inhabitants, function(d) { 
@@ -188,11 +197,9 @@ function dv1(){
 					scale.domain([min,max]);
 
 					let issue_color_scale = d3.scaleLinear()
-						.domain(d3.range(0, 4))
+						.domain(d3.range(0, max_issue))
 						.range([no_issue_color,issue_color])
-						// .range(d3.schemeBlues[9]);
-
-					    // .range(no_issue_color,issue_color);
+					// console.log(max_issue)
 					
 					dataset.forEach(function (a,b) {
 
