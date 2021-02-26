@@ -40,7 +40,7 @@ function dv2(){
 
 		d3.tsv(url)
 	  		.then(function(data) {
-	  			console.log(data)
+	  			// console.log(data)
 
 				let svg = d3.select(container)
 					.append("svg")
@@ -221,7 +221,43 @@ function dv2(){
 								}})
 								.entries(dataset)
 		  				}
+
+						let empty = {
+						  "key": "test",
+						  "value": {
+						    "images_avg": 0,
+							"issues_Verifica_avg": 0,
+							"issues_avg": 0,
+							"issues_correggere_avg": 0,
+							"issues_curiosita_avg": 0,
+							"issues_dividere_avg": 0,
+							"issues_noFonte_avg": 0,
+							"issues_noInfobox_avg": 0,
+							"issues_noNote_avg": 0,
+							"issues_noReferenze_avg": 0,
+							"issues_notabile_avg": 0,
+							"issues_organizzare_avg": 0,
+							"issues_pov_avg": 0,
+							"issues_recentismo_avg": 0,
+							"issues_stub_avg": 0,
+							"issues_wikify_avg": 0,
+							"monuments_size_avg": 0,
+							"notes_avg": 0,
+							"places": 0,
+							"population": 0,
+							"references_avg": 0,
+							"size_avg": 0
+						  }
+						}
+						if (region_group.length == 19) {
+							region_group.push(empty)
+						}
+						else if (region_group.length == 18) {
+							region_group.push(empty,empty)
+						}
 						console.log(region_group);
+						console.log(region_group.length);
+		  				
 		  				return region_group
 	  				}
 					make_dataset(dataset,language)
@@ -267,7 +303,7 @@ function dv2(){
 						return Math.sqrt(+d.value.size_avg/3.14);
 					})
 
-					x.domain([0,region_group.length]) // sorted_data
+					x.domain([0, 20]) // region_group.length sorted_data
 					// console.log(sorted_data.length)
 
 					let r = d3.scaleLinear()
@@ -562,7 +598,7 @@ function dv2(){
 					let inhabitants = $("#inhabitants option:selected").val();
 
 					update_sort(filtered_data,inhabitants,feature,language);
-					console.log(filtered_data)
+					// console.log(filtered_data)
 				});
 
 				function update_language(dataset,language,feature){
@@ -779,8 +815,8 @@ function dv2(){
 						d.new_id = new_id;
 					})
 
-					x.domain([0,data_.length])
-					console.log(data_.length)
+					x.domain([0,20]) // data_.length
+					console.log(sorted_data)
  
 					svg.selectAll(".region")
 						.transition()

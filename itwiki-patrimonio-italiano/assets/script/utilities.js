@@ -1,25 +1,17 @@
 const inhabitants_range = [{
 	"a": {
 		"min": 0,
-		"max": 1000
-	},
-	"b": {
-		"min": 1001,
 		"max": 3000
 	},
-	"c": {
+	"b": {
 		"min": 3001,
-		"max": 5000
+		"max": 20000
 	},
-	"d": {
-		"min": 5001,
-		"max": 10000
-	},
-	"e": {
-		"min": 10001,
+	"c": {
+		"min": 20001,
 		"max": 50000
 	},
-	"f": {
+	"d": {
 		"min": 50001,
 		"max": 3000000
 	}
@@ -28,7 +20,7 @@ const inhabitants_range = [{
 function the_inhabitants(value){
 	if (value == 0){
 		p_min = inhabitants_range[0].a.min;
-		p_max = inhabitants_range[0].f.max;
+		p_max = inhabitants_range[0].d.max;
 	}
 	else if (value == 1){
 		p_min = inhabitants_range[0].a.min;
@@ -45,14 +37,6 @@ function the_inhabitants(value){
 	else if (value == 4){
 		p_min = inhabitants_range[0].d.min;
 		p_max = inhabitants_range[0].d.max;
-	}
-	else if (value == 5){
-		p_min = inhabitants_range[0].e.min;
-		p_max = inhabitants_range[0].e.max;
-	}
-	else {
-		p_min = inhabitants_range[0].f.min;
-		p_max = inhabitants_range[0].f.max;
 	}
 	return [p_min, p_max]
 }
