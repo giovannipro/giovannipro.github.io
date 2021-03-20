@@ -197,7 +197,7 @@ function dv1(){
 					scale.domain([min,max]);
 
 					let issue_color_scale = d3.scaleLinear()
-						.domain(d3.range(0, max_issue))
+						.domain([0,max_issue])
 						.range([no_issue_color,issue_color])
 					// console.log(max_issue)
 					
@@ -280,6 +280,9 @@ function dv1(){
 							monuments_section = a.en_mSezioni.split("|");
 
 						}
+
+						let fill_opacity = 0.3;
+						let stroke_opacity = 0.8;
 
 						if (feature == "size"){
 							feature_text = size.toLocaleString() + " byte";
@@ -382,6 +385,8 @@ function dv1(){
 							}
 							else {
 								feature_text = "0 avvisi";
+								fill_opacity = 0.2
+								stroke_opacity = 0.1
 							}
 
 						}
@@ -426,7 +431,6 @@ function dv1(){
 							if (images_oth > 0){
 								feature_text += "<br>- " + images_oth + " altro"
 							}
-
 						}
 
 						let tooltip_text = name + " (" + prov + ")<br/>" + inhabitants.toLocaleString() + " abitanti<br/><br/>" + feature_text + "</br>";
@@ -438,18 +442,7 @@ function dv1(){
 						}
 						else if (feature == "issues") {
 							radius = scale(issues);
-
 							color = issue_color_scale(issues);
-
-							// if (issues == 0){
-							// 	color = no_issue_color;
-							// }
-							// else if (issues == 1){
-							// 	color = one_issue_color;
-							// }
-							// else {
-							// 	color = issue_color;
-							// }
 						}
 						else if (feature == "references"){
 							radius = scale(references)/3;
@@ -477,8 +470,8 @@ function dv1(){
 						let place = L.circleMarker([lat, lon], {
 							color: color,
 							fillColor: color,							
-							fillOpacity: 0.4,
-							opacity: 0.8,
+							fillOpacity: fill_opacity,
+							opacity: stroke_opacity,
 							radius: radius,
 							className: "place",
 							id: "place_" + b
