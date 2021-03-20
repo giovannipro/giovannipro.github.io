@@ -14,6 +14,9 @@ const pg = 3.14;
 const it_wiki = "https://it.wikipedia.org/wiki/";
 const en_wiki = "https://en.wikipedia.org/wiki/";
 
+const avg_size_it = 17992;
+const avg_size_en = 4279;
+
 // make the visualization
 function dv1(){
 
@@ -61,16 +64,17 @@ function dv1(){
 							max = d3.max(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.it_pDim/pg);
 							})
+							avg_size = d3.mean(filter_inhabitants, function(d) { 
+								return Math.floor(+d.it_pDim);
+							})
 						}
 						else if (feature == "issues") {
 							min = d3.min(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.it_aNum/pg);
 							})
-							
 							max = d3.max(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.it_aNum/pg);
 							})
-
 							max_issue = d3.max(filter_inhabitants, function(d) { 
 								return +d.it_aNum;
 							})
@@ -130,6 +134,10 @@ function dv1(){
 							})
 							max = d3.max(filter_inhabitants, function(d) { 
 								return Math.sqrt(+d.en_pDim/pg);
+							})
+
+							avg_size = d3.mean(filter_inhabitants, function(d) { 
+								return Math.floor(+d.en_pDim);
 							})
 						}
 						else if (feature == "issues") {
@@ -285,7 +293,24 @@ function dv1(){
 						let stroke_opacity = 0.8;
 
 						if (feature == "size"){
+							let diff; 
+							let sign;
+							if (avg_size >= size) {
+								diff = avg_size - size
+								sign = "-"	
+							}
+							else {
+								diff = size - avg_size;
+								sign = "+"	
+							}
+
+							let diff100 = Math.round(diff*100/avg_size,1).toLocaleString();
+							// console.log(avg_size,size,Math.floor(diff),diff100);
+
 							feature_text = size.toLocaleString() + " byte";
+							// feature_text += "<br>" + diff.toLocaleString() + " byte";
+							feature_text += "<br>" + sign + diff100 + "% rispetto a media italiana";
+
 						}
 						else if (feature == "issues") {
 
