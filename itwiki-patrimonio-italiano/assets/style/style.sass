@@ -92,7 +92,7 @@ header
 	box-shadow: 0px 1px 3px #9a9a9a
 
 #header
-	width: 70%
+	width: 65%
 
 	@media only screen and (max-width: $tablet-v) 
 		width: 90%
@@ -105,7 +105,7 @@ header a
 
 #menu 
 	margin: 3px 10px 0 0
-	width: 30%
+	width: 35%
 
 #menu ul 
 	list-style: none
@@ -122,7 +122,7 @@ header a
 #mobile_menu_box, #mobile_menu_icon 
 	display: none
 
-@media only screen and (max-width: $tablet-v) 
+@media only screen and (max-width: $tablet-h) 
 	#menu 
 		display: none
 	
@@ -236,6 +236,17 @@ header a
 
 .article 
 	cursor: pointer
+
+@media only screen and (max-width: 768px)
+	.row
+		display: block
+
+		.column_2, .column_3, .column_4 
+			width: 100%
+			padding-right: 0
+	
+	.dataset
+		margin-top: 50px
 
 
 /* ------- dataviz n. 1 ------- */

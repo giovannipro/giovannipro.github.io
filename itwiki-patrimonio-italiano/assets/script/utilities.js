@@ -47,20 +47,20 @@ function mobile_menu() {
 
 	$("#mobile_menu_icon").click(function(){
 
+		let path = window.location.pathname;
 		let display = $("#mobile_menu_icon").css('display')
 		// console.log(display)
 
 		if (open == false) {
 
-			const path = window.location.pathname;
-
-			if (path == ""){
+			if (path.indexOf("regioni") == -1){ 
 				the_path = "";
+				// console.log(path.indexOf("regioni"))
 			}
 			else {
 				the_path = "../";
 			}
-			console.log(path,the_path)
+			// console.log(path,the_path)
 
 			$("#mobile_menu_icon").css("background","url(" + the_path + "assets/img/close-menu.svg) center center no-repeat").css("background-size","55%");
 			$("#mobile_menu_box").show()

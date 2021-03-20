@@ -44,6 +44,7 @@ const subjects = [
 
 function mobile_menu() {
  	let open = false;
+ 	let the_path = "";
 
 	$("#mobile_menu_icon").click(function(){
 
@@ -52,10 +53,9 @@ function mobile_menu() {
 
 		if (open == false) {
 
-			const path = window.location.pathname;
-			let the_path = "";
-
-			if (path == ""){
+			let path = window.location.pathname;
+			
+			if (path.indexOf("autori") == -1 || path.indexOf("avvisi") == -1){
 				the_path = "";
 			}
 			else {
@@ -63,13 +63,11 @@ function mobile_menu() {
 			}
 
 			$("#mobile_menu_icon").css("background","url(" + the_path + "assets/img/close-menu.svg) center center no-repeat").css("background-size","55%");
-			// $("#mobile_menu_box").css("top",45)
 			$("#mobile_menu_box").show()
 			open = true;
 		}
 		else {
 			$("#mobile_menu_icon").css("background","url(" + the_path + "assets/img/mobile-menu.svg) center center no-repeat").css("background-size","55%");			
-			// $("#mobile_menu_box").css("top",-140)
 			$("#mobile_menu_box").hide()
 			open = false;
 		}
