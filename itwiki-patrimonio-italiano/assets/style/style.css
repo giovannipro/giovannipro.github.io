@@ -15,10 +15,6 @@ h1 {
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 0.8em; } }
-  @media only screen and (max-width: 400px) {
-    h1 {
-      font-size: 0.7em;
-      margin-top: 5px; } }
 
 h2 {
   font-size: 1.1em;
@@ -56,6 +52,9 @@ img {
 
 main {
   margin-top: 40px; }
+  @media only screen and (max-width: 400px) {
+    main {
+      margin-top: 60px; } }
 
 .row {
   display: flex;
@@ -137,6 +136,9 @@ header a {
 #select_section_1, #select_section_2 {
   margin-top: 40px;
   border-bottom: 1px solid #d6d5d5; }
+  @media only screen and (max-width: 400px) {
+    #select_section_1, #select_section_2 {
+      margin-top: 50px; } }
   #select_section_1 #select_box, #select_section_2 #select_box {
     display: flex;
     height: 140px;
@@ -173,7 +175,8 @@ header a {
       #select_section_1 #select_box .selector .value, #select_section_2 #select_box .selector .value {
         font-size: 1.1em;
         margin: 5px 0 0 0;
-        width: 90%; }
+        width: 90%;
+        background-color: white; }
         @media only screen and (max-width: 768px) {
           #select_section_1 #select_box .selector .value, #select_section_2 #select_box .selector .value {
             margin: 0;

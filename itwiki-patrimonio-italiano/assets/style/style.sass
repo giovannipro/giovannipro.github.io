@@ -25,7 +25,7 @@ h1
 		font-size: 0.8em
 
 	@media only screen and (max-width: $smartphone)
-		font-size: 0.7em
+	//	font-size: 0.7em
 		margin-top: 5px
 
 h2
@@ -67,6 +67,9 @@ img
 		
 main
 	margin-top: 40px
+
+	@media only screen and (max-width: $smartphone)
+		margin-top: 60px 
 
 .row
 	display: flex
@@ -157,6 +160,9 @@ header a
 	margin-top: 40px
 	border-bottom: 1px solid $light_gray
 
+	@media only screen and (max-width: $smartphone)
+		margin-top: 50px 
+
 	#select_box 
 		display: flex
 		height: 140px
@@ -197,6 +203,7 @@ header a
 				font-size: 1.1em
 				margin: 5px 0 0 0
 				width: 90%
+				background-color: white
 
 				@media only screen and (max-width: $tablet-v) 
 					margin: 0
