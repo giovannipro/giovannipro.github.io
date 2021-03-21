@@ -286,6 +286,12 @@ header a {
   top: 35px;
   position: relative; }
 
+#grid_issues .domain {
+  stroke: #e9e4e4; }
+
+#grid_issues .domain, #grid_features .domain, #axis g .domain, #axis .tick line {
+  display: none; }
+
 /* ------- footer ------- */
 footer {
   border-top: 1px solid #d6d5d5; }

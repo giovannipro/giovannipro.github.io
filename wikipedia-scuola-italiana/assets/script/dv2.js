@@ -147,6 +147,7 @@ function dv2(the_subject) {
 	    	return d3.axisLeft(y_features)
 		}
 
+		// grid
 		let grid_issues = grids.append("g")
 			.attr("id","grid_issues")
 			.attr("transform", "translate(-1," + margin.top + ")")
@@ -189,7 +190,6 @@ function dv2(the_subject) {
 				.tickValues(d3.range(0,my_max_features,50))
 			)
 			.attr("id","yAxis_features")
-
 
 		// plot data
 		let plot = svg.append("g")
