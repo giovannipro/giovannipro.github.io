@@ -74,6 +74,37 @@ function mobile_menu() {
 	})
 }
 
+function mobile_filter() {
+ 	let open = false;
+	let the_path = "";
+
+
+	$("#mobile_filter_icon").click(function(){
+		let path = window.location.pathname;
+		
+		if (open == false) {
+
+			if (path.indexOf("regioni") == -1){ 
+				the_path = "";
+			}
+			else {
+				the_path = "../";
+			}
+
+			$("#mobile_filter_icon").css("background","url(" + the_path + "assets/img/arrow-up.svg) center center no-repeat").css("background-size","55%");
+			$("#select_box").show()
+			$("#select_box").css("display","flex")
+			open = true;
+		}
+		else {
+			$("#mobile_filter_icon").css("background","url(" + the_path + "assets/img/arrow-down.svg) center center no-repeat").css("background-size","55%");			
+			$("#select_box").hide()
+			open = false;
+		}
+	})
+}
+
 $(document).ready(function() {
 	mobile_menu();
+	mobile_filter();
 })

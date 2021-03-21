@@ -157,27 +157,53 @@ header a
 	margin-top: 40px
 	border-bottom: 1px solid $light_gray
 
-	.select_box 
+	#select_box 
 		display: flex
 		height: 140px
+		width: 98%
 		justify-content: space-between
-		margin-top: 0
+		margin: 0 auto
 
 		@media only screen and (max-width: $tablet-v) 
+			width: 100%
 			display: none
+			height: auto
+			flex-wrap: wrap
 
 		.selector 
 			padding-top: 50px
 			border-right: 1px solid $light_gray
 			height: 90px
 
+			@media only screen and (max-width: $tablet-v) 
+				width: 100%
+				height: 55px
+				margin: 0
+				padding-top: 0px
+				padding-left: 2.5%
+				border-right: none
+				border-bottom: 1px solid $light_gray
+				display: flex
+
 			.key 
 				font-size: 0.8em
 				margin: 0
 
+				@media only screen and (max-width: $tablet-v) 
+					margin: 15px 0 0 0
+					width: 40%
+
 			.value 
 				font-size: 1.1em
-				margin: 10px 0 0 0
+				margin: 5px 0 0 0
+				width: 90%
+
+				@media only screen and (max-width: $tablet-v) 
+					margin: 0
+					width: 60%
+
+			.noselect
+				margin-top: 10px
 
 			.select 
 				font-family: 'Open Sans', sans-serif
@@ -186,11 +212,15 @@ header a
 				position: relative
 				display: inline-block
 				width: 90%
+				height: 45px
 				border-bottom: 1px solid #808080
+
+				@media only screen and (max-width: $tablet-v)
+					border-bottom: none
+					width: 60%
 
 		.selector:last-child 
 			border: none
-
 
 #select_section_1
 	.select_box 
@@ -208,7 +238,18 @@ header a
 	padding: 5px 0 10px
 
 	@media only screen and (max-width: $tablet-v) 
-		display: block
+		display: flex
+		justify-content: space-between
+
+	.filter
+		width: 90%
+
+#mobile_filter_icon
+	background: url("../img/arrow-down.svg") center center no-repeat
+	background-size: 55%
+	width: 30px
+	height: 30px
+	padding: 5px 10px
 
 /* ------- dataviz and legend ------- */
 
