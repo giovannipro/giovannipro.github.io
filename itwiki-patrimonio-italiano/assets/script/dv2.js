@@ -399,16 +399,6 @@ function dv2(){
 							return "translate(" + x(i) + "," + 0 + ")"
 						})
 						.on("mouseover", function(d,i) {
-							// console.log(i)
-							let shift;
-
-							if (i <= 10) {
-								shift = 10
-							}
-							else {
-								shift = -190
-							}
-
 							let tooltip_text = d.key + "<br>" + Math.floor(d.value.population).toLocaleString() + 
 								" abitanti (media)<br><br>" + 
 								+d.value.issues_avg.toFixed(2) + " avvisi<br>" + 
@@ -421,8 +411,8 @@ function dv2(){
 				            	.style("opacity", .9);
 
 				            div.html(tooltip_text)	
-				            	.style("left", (d3.event.pageX + shift) + "px")
-				                .style("top", (d3.event.pageY - 40) + "px");	
+				            	.style("left", (d3.event.pageX-110) + "px")
+				                .style("top", (d3.event.pageY-220) + "px");	
 
 				            d3.selectAll(".region")
 								.attr("opacity",0.2)
