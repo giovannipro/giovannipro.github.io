@@ -40,7 +40,7 @@ const features_height = height/2.1;
 const ticksAmount = 10;
 
 function dv2(the_subject) {
-	d3.tsv("../assets/data/articoli.tsv").then(loaded)
+	d3.tsv("../assets/data/voci.tsv").then(loaded)
 
 	function loaded(data) {
 		// console.log(data)
