@@ -77,7 +77,7 @@ header {
   box-shadow: 0px 1px 3px #9a9a9a; }
 
 #header {
-  width: 65%; }
+  width: 100%; }
   @media only screen and (max-width: 768px) {
     #header {
       width: 90%; } }
@@ -88,7 +88,7 @@ header a {
 /* ------- menu ------- */
 #menu {
   margin: 3px 10px 0 0;
-  width: 35%; }
+  width: 20%; }
 
 #menu ul {
   list-style: none;
@@ -120,12 +120,15 @@ header a {
   height: 30px; }
 
 #mobile_menu_box {
-  top: 40px;
+  top: 42px;
   position: fixed;
   background-color: white;
   width: 100%;
   z-index: 9999;
   box-shadow: 0px 1px 3px #bbbbbb; }
+  @media only screen and (max-width: 400px) {
+    #mobile_menu_box {
+      top: 55px; } }
 
 #mobile_menu_box a {
   text-decoration: none;
@@ -134,11 +137,14 @@ header a {
 
 /* ------- select box ------- */
 #select_section_1, #select_section_2 {
-  margin-top: 40px;
+  margin-top: 55px;
   border-bottom: 1px solid #d6d5d5; }
+  @media only screen and (max-width: 768px) {
+    #select_section_1, #select_section_2 {
+      margin-top: 65px; } }
   @media only screen and (max-width: 400px) {
     #select_section_1, #select_section_2 {
-      margin-top: 50px; } }
+      margin-top: 75px; } }
   #select_section_1 #select_box, #select_section_2 #select_box {
     display: flex;
     height: 140px;
@@ -152,9 +158,8 @@ header a {
         height: auto;
         flex-wrap: wrap; } }
     #select_section_1 #select_box .selector, #select_section_2 #select_box .selector {
-      padding-top: 50px;
-      border-right: 1px solid #d6d5d5;
-      height: 90px; }
+      padding-top: 40px;
+      border-right: 1px solid #d6d5d5; }
       @media only screen and (max-width: 768px) {
         #select_section_1 #select_box .selector, #select_section_2 #select_box .selector {
           width: 100%;
@@ -190,7 +195,7 @@ header a {
         position: relative;
         display: inline-block;
         width: 90%;
-        height: 45px;
+        height: 30px;
         border-bottom: 1px solid #808080; }
         @media only screen and (max-width: 768px) {
           #select_section_1 #select_box .selector .select, #select_section_2 #select_box .selector .select {
