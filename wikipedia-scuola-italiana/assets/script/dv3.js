@@ -10,7 +10,7 @@ const filter_item = 120;
 const shiftx_author = 0;
 const circle_size = 4.5;
 const circle_opacity = 0.7;
-const v_shift = 16;
+// const v_shift = 16;
 
 const wiki_color = "blue";
 const ws_it_color = "red";
@@ -21,6 +21,9 @@ const la_authors = 61;
 
 const italian_height = it_authors * 20; // 2300;
 const latin_height = la_authors * 20; // 910
+
+const it_h = 0.97;
+const la_h = 0.97;
 
 const literature_ = "it";
 
@@ -127,10 +130,12 @@ function dv3(the_literature) {
 		// grid
 		let the_height = 0;
 		if (the_literature == "it") {
-			the_height = italian_height + reset_height_it
+			the_height = italian_height + reset_height_it;
+			v_shift = it_h;
 		}
 		else {
-			the_height = latin_height + reset_height_la
+			the_height = latin_height + reset_height_la;
+			v_shift = la_h;
 		}
 
 		let y = d3.scaleLinear()
@@ -149,9 +154,9 @@ function dv3(the_literature) {
 			if(i % 3 == 0 && i !== 0){ // i == i
 	       		v_grid.append('line')
 					.attr('x1', 0)
-					.attr('y1', y(i)) // i* (v_shift*1))  
+					.attr('y1', y(i * v_shift)) // i* (v_shift*1))  
 					.attr('x2', width + margin.left + margin.right)
-					.attr('y2', y(i)) // i* (v_shift*1) )
+					.attr('y2', y(i * v_shift)) // i* (v_shift*1) )
 					.attr('stroke',"#e9e4e4")
 					.attr('stroke-width',1)
 	    	}
@@ -259,15 +264,6 @@ function dv3(the_literature) {
 	        });
        	plot.call(tooltip_wikis_la);
 
-		// plot data
-		// let the_height = 0;
-		// if (literature_ == "it") {
-		// 	the_height == italian_height
-		// }
-		// else {
-		// 	the_height == latin_height
-		// }
-
 		let authors = plot.append("g")	
 			.attr("id","authors")
 			.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")	
@@ -281,7 +277,7 @@ function dv3(the_literature) {
 				return i + "_" + d.values[0].surname
 			})
 			.attr("transform", function(d,i){
-				return "translate(" + 0 + "," + y(i) + ")" // ((i)*v_shift)
+				return "translate(" + 0 + "," + y(i * v_shift) + ")" // ((i)*v_shift)
 			})
 			.on("mouseover", handleMouseOver)
 			.on("mouseout", handleMouseOut)
@@ -327,7 +323,6 @@ function dv3(the_literature) {
 				return d.values[0].surname + " " + d.values[0].name //+ " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
 			})
 			.attr("font-size",font_size)
-
 
 		// publications
 		let publication_box = author.append("g")
@@ -511,8 +506,7 @@ function dv3(the_literature) {
 				// console.log(val.values.length,empty_publ,val.values.length - empty_publ)
 			})
 			// console.log(author_group)
-			console.log(author_group.length)
-
+			// console.log(author_group.length)
 
 			// sort
 			if (the_sort == 1) {
@@ -537,10 +531,12 @@ function dv3(the_literature) {
 
 			let the_height = 0;
 			if (the_literature == "it") {
-				the_height = italian_height + reset_height_it
+				the_height = italian_height + reset_height_it;
+				v_shift = it_h;
 			}
 			else {
-				the_height = latin_height + reset_height_la
+				the_height = latin_height + reset_height_la;
+				v_shift = la_h;
 			}
 			// console.log(literature_,the_height)
 
@@ -561,7 +557,7 @@ function dv3(the_literature) {
 					return i + "_" + d.values[0].surname
 				})
 				.attr("transform", function(d,i){
-					return "translate(" + 0 + "," + y(i) + ")" // ((i)*v_shift)
+					return "translate(" + 0 + "," + y(i*v_shift) + ")" // ((i)*v_shift)
 				})
 				.on("mouseover", handleMouseOver)
 				.on("mouseout", handleMouseOut)
