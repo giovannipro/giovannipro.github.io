@@ -344,7 +344,7 @@ function dv2(){
 						.attr("id","grid_issues")
 						.attr("transform", "translate(-1," + (margin.top+85) + ")")
 						.call(make_issue_gridlines()
-							.ticks(ticksAmount)
+							//.ticks(ticksAmount)
 							.tickValues(d3.range(0,issues_max,0.2))
 			          		.tickSize(-width-margin.left-margin.right-60)
 			          	)
@@ -353,7 +353,7 @@ function dv2(){
 						.attr("id","grid_features")
 						.attr("transform", "translate(-1," + (margin.top + v_shift + (height/2)) + ")")
 						.call(make_features_gridlines()
-							.ticks(ticksAmount)
+							//.ticks(ticksAmount)
 			          		.tickValues(d3.range(0,my_max_features,25))
 			          		.tickSize(-width-margin.left-margin.right-60)
 			          	)
@@ -365,7 +365,7 @@ function dv2(){
 					let axis_issues = axis.append("g")
 						.attr("transform", "translate(" + (margin.left*1+40) + "," + (margin.top+85) + ")")
 						.call(d3.axisLeft(y_issues_text)
-							.ticks(ticksAmount)
+							//.ticks(ticksAmount)
 							.tickValues(d3.range(0,issues_max,1))
 							.tickFormat(d3.format("d"))
 						)
@@ -378,8 +378,9 @@ function dv2(){
 					let axis_features = axis.append("g")
 						.attr("transform", "translate(" + (margin.left*1+40) + "," + (margin.top + (height/2)+(v_shift*1)) + ")") // ((height/2)+(v_shift*3))
 						.call(d3.axisLeft(x_features_axis)
-							.ticks(ticksAmount)
+							//.ticks(ticksAmount)
 							.tickValues(d3.range(0,my_max_features,50))
+							.tickFormat(d3.format("d"))
 						)
 						.attr("id","yAxis_features")
 
@@ -553,42 +554,6 @@ function dv2(){
 						.attr("height", function(d,i){
 							return y_features(d.value.references_avg)
 						})
-
-					// update axis
-					// d3.select("#yAxis_issues")
-					// 	.transition()
-					// 	.call(d3.axisLeft(y_issues_text)
-					// 		.ticks(ticksAmount)
-					// 		// .ticks(ticksAmount)
-					// 		// .tickFormat(d3.format("d"))
-					// 		// .tickValues(d3.range(0,issues_max,1))
-					// 	)
-					// 	.selectAll("text")
-
-					// d3.select("#yAxis_features")
-					// 	.transition()
-					// 	.call(d3.axisLeft(x_features_axis)
-					// 		.ticks(ticksAmount)
-					// 		.tickValues(d3.range(0,my_max_features,50))
-					// 	)
-					// 	.selectAll("text")
-
-					// // update grids
-					// d3.select("#grid_issues")
-					// 	.transition()
-					// 	.call(make_issue_gridlines()
-					// 		.ticks(ticksAmount)
-					// 		.tickValues(d3.range(0,issues_max,0.5))
-			  //         		.tickSize(-width-margin.left-margin.right-60)
-			  //         	)
-
-			  //       d3.select("#grid_features")
-				 //        .transition()
-					// 	.call(make_features_gridlines()
-					// 		.ticks(ticksAmount)
-		   //        			.tickSize(-width-margin.left-margin.right-60)
-		   //        			.tickValues(d3.range(0,my_max_features,25))
-			  //         	)
 				}
 
 				let inhabitants = 0;
@@ -596,10 +561,8 @@ function dv2(){
 				let filtered_data = data.filter(function(a,b){ 
 					return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
 				})
-				// console.log(the_inhabitants(inhabitants)[0])
 
 				make_chart(filtered_data,"it","size")
-				// console.log(sorted_data.length)
 
 				$("#language").change(function() {
 					let language = this.value;
@@ -620,7 +583,6 @@ function dv2(){
 					let inhabitants = this.value;
 					let language = $("#language option:selected").val();
 					let feature = $("#sort_feature option:selected").val();
-					// console.log(inhabitants,feature);
 
 					let filtered_data = data.filter(function(a,b){ 
 						return +a.Popolazione >= the_inhabitants(inhabitants)[0] && +a.Popolazione <= the_inhabitants(inhabitants)[1]
@@ -630,7 +592,7 @@ function dv2(){
 					$("#axis_grid").remove();
 
 					update_language(filtered_data,language,feature);
-					console.log(filtered_data,language,feature)
+					//console.log(filtered_data,language,feature)
 				});
 
 				$("#sort_feature").change(function() {
