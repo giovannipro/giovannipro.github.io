@@ -33,6 +33,34 @@ const features_height = height/2.1;
 
 const ticksAmount = 3;
 
+let empty = {
+  "key": "test",
+  "value": {
+    "images_avg": 20,
+	"issues_Verifica_avg": 30,
+	"issues_avg": 100,
+	"issues_correggere_avg": 20,
+	"issues_curiosita_avg": 0,
+	"issues_dividere_avg": 0,
+	"issues_noFonte_avg": 0,
+	"issues_noInfobox_avg": 0,
+	"issues_noNote_avg": 0,
+	"issues_noReferenze_avg": 0,
+	"issues_notabile_avg": 0,
+	"issues_organizzare_avg": 0,
+	"issues_pov_avg": 0,
+	"issues_recentismo_avg": 0,
+	"issues_stub_avg": 0,
+	"issues_wikify_avg": 0,
+	"monuments_size_avg": 0,
+	"notes_avg": 0,
+	"places": 0,
+	"population": 0,
+	"references_avg": 0,
+	"size_avg": 200
+  }
+}
+
 // make the visualization
 function dv2(){
 
@@ -40,7 +68,7 @@ function dv2(){
 
 		d3.tsv(url)
 	  		.then(function(data) {
-	  			// console.log(data)
+	  			//console.log(data)
 
 				let svg = d3.select(container)
 					.append("svg")
@@ -218,43 +246,17 @@ function dv2(){
 								}})
 								.entries(dataset)
 		  				}
-
-						let empty = {
-						  "key": "test",
-						  "value": {
-						    "images_avg": 0,
-							"issues_Verifica_avg": 0,
-							"issues_avg": 0,
-							"issues_correggere_avg": 0,
-							"issues_curiosita_avg": 0,
-							"issues_dividere_avg": 0,
-							"issues_noFonte_avg": 0,
-							"issues_noInfobox_avg": 0,
-							"issues_noNote_avg": 0,
-							"issues_noReferenze_avg": 0,
-							"issues_notabile_avg": 0,
-							"issues_organizzare_avg": 0,
-							"issues_pov_avg": 0,
-							"issues_recentismo_avg": 0,
-							"issues_stub_avg": 0,
-							"issues_wikify_avg": 0,
-							"monuments_size_avg": 0,
-							"notes_avg": 0,
-							"places": 0,
-							"population": 0,
-							"references_avg": 0,
-							"size_avg": 0
-						  }
-						}
+						
 						if (region_group.length == 19) {
 							region_group.push(empty)
 						}
 						else if (region_group.length == 18) {
 							region_group.push(empty,empty)
 						}
-						console.log(region_group);
-						console.log(region_group.length);
-		  				
+
+						region_group.forEach(function(d,i){
+							console.log(i+1, d.key)
+						})
 		  				return region_group
 	  				}
 					make_dataset(dataset,language)
@@ -433,12 +435,10 @@ function dv2(){
 							div.transition()		
                 				.duration(500)		
                 				.style("opacity", 0);
-
 						})
 
 					// place circle
 					let place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / sorted_data.length
-					// let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
 
 					let region_size = region.append("g")
 						.attr("transform","translate(" + (place_width/2) + "," + 40 + ")")
@@ -764,9 +764,19 @@ function dv2(){
 								}})
 								.entries(dataset)
 		  				}
-						// console.log(region_group);
+
+						if (region_group.length == 19) {
+							region_group.push(empty)
+						}
+						else if (region_group.length == 18) {
+							region_group.push(empty,empty)
+						}
+
+						region_group.forEach(function(d,i){
+							console.log(i+1, d.key)
+						})
 		  				return region_group
-	  				}
+		  			}
 
 	  				data_ = make_dataset(dataset,language);
 	  				console.log(data_)
@@ -798,44 +808,25 @@ function dv2(){
 							return d3.descending(+a.value.images_avg, +b.value.images_avg);
 						})
 					}
-					// console.log(data_)
-
-					// let max = 0;
-					// if (inhabitants == 4){
-					// 	max = 19
-					// }
-					// else if (inhabitants == 6){
-					// 	max = 18
-					// }
-					// else {
-					// 	max = 20
-					// }
-					// console.log(inhabitants,max)
-					// x.domain([0,max])
 
 					sorted_data.forEach(function(d,i){
 						new_id = i;
-						d.new_id = new_id;
+						d.new_id = new_id+1;
+						console.log(d.new_id,d.key)
 					})
 
-					x.domain([0,20]) // data_.length
+					x.domain([0,data_.length]) // data_.length
 					console.log(sorted_data)
  
 					svg.selectAll(".region")
 						.transition()
-						
-						// .attr("transform", function(d,i){
-						// 	console.log(d)
-						// 	return "translate(" + (d) + "," + 0 + ")"
-						// })
-
 						.attr("transform", function(d,i){
 							sorted_data.forEach(function(a,b){
 								if (d.key == a.key){
 									d.new_id = b
 								}
 							})
-							return "translate(" + x(d.new_id) + "," + 0 + ")" // x(d.new_id)
+							return "translate(" + x(d.new_id) + "," + 0 + ")";
 						})
 				}
 
