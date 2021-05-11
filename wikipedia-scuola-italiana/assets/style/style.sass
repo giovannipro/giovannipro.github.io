@@ -329,8 +329,11 @@ footer
 #grid .tick line
 	stroke: #e9e4e4
 
+
+/* ------- tooltip ------- */
+
 .tooltip
-	line-height: 1
+	line-height: 1em
 	padding: 6px
 	background-color: rgba(255, 255, 255, 1)
 	color: black
@@ -338,14 +341,15 @@ footer
 	border-radius: 4px
 	font-size: 12px
 	max-width: 180px
+	text-align: left
+	font-weight: normal
+
+	p
+		line-height: 1.4em
 
 	table 
 		tr
 			height: 10px
-
-	/*table th*/
-	/*border-bottom: 1px solid rgb(140,140,140)*/
-
 
 		th
 			font-weight: normal
@@ -353,11 +357,21 @@ footer
 			text-align: left
 			vertical-align: top
 
-		th:nth-child(1)
-			min-width: 85px
+#tooltip_dv1
+	th:nth-child(1)
+		min-width: 90px
 
-		th:nth-child(2)
-			min-width: 90px
+	th:nth-child(2)
+		min-width: 60px
+		text-align: right
+
+#tooltip_dv2
+	th:nth-child(1)
+		min-width: 100px
+
+	th:nth-child(2)
+		min-width: 50px
+		text-align: right
 
 /* ------- dataviz n. 2 ------- */
 

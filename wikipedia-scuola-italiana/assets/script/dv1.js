@@ -160,7 +160,7 @@ function dv1(the_subject) {
 		let the_sort;
 		let tooltip = d3.tip()
 			.attr('class', 'tooltip')
-			.attr('id', 'tooltip')
+			.attr('id', 'tooltip_dv1')
 			.direction(function (d,i) {
 				return 'n'
 			})

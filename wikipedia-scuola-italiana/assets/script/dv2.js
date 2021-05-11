@@ -199,7 +199,7 @@ function dv2(the_subject) {
 		// tooltip
 		let tooltip = d3.tip()
 			.attr('class', 'tooltip')
-			.attr('id', 'tooltip')
+			.attr('id', 'tooltip_dv2')
 			.direction(function (d,i) {
 				return 'n'
 
