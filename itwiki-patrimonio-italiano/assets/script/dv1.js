@@ -21,7 +21,7 @@ const avg_size_en = 4279;
 function dv1(){
 
 	let map = L.map(map_contaier, {
-		center: [42.3, 12.0], // 41.9028 12.9164
+		center: [42.21, 12.6],
 		zoom: 6
 	});
 
@@ -207,7 +207,6 @@ function dv1(){
 					let issue_color_scale = d3.scaleLinear()
 						.domain([0,max_issue])
 						.range([no_issue_color,issue_color])
-					// console.log(max_issue)
 					
 					dataset.forEach(function (a,b) {
 
@@ -538,8 +537,8 @@ function dv1(){
 						"padding": [80, 80],
 						"animate": true,
 					    "duration": 2
-					});
-					// console.log(bounds)
+					});		
+					// console.log(map);
 				}
 
 				append_markers(filter_inhabitants, "it", "size");
