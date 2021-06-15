@@ -441,7 +441,14 @@ function dv1(){
 						}
 						else if (feature == "monuments") {
 							if (monuments > 0){
-								feature_text =  "sezioni monumenti:"
+								
+								if (monuments == 1){
+									feature_text =  monuments + " sezione monumenti:"
+								}
+								else {
+									feature_text =  monuments + " sezioni monumenti:"
+								}	
+
 								monuments_section.forEach(function (a,b) {
 									feature_text += "<br/>- " + a
 								})
@@ -452,7 +459,8 @@ function dv1(){
 
 						}
 						else if (feature == "monuments_size") {
-							feature_text = monuments_size.toLocaleString() + " byte";
+							feature_text = "dimensione delle sezioni monumenti"
+							feature_text += "</br>" + monuments_size.toLocaleString() + " byte";
 						}
 						else if (feature == "images") {
 							feature_text = images + " immagini:";
@@ -478,7 +486,6 @@ function dv1(){
 						}
 						else if (feature == "monuments_WLM"){
 							WLM_relig = 0;
-							WLM_relig_letter = "";
 							if (a.Beni_religiosi_WLM !== ""){
 								WLM_relig = +a.Beni_religiosi_WLM
 							}
@@ -491,7 +498,6 @@ function dv1(){
 							if (WLM_relig !== 0){
 
 								feature_text += "<br>(" + WLM_relig + " religiosi)"
-								console.log(a.Beni_religiosi_WLM)
 							}
 							
 							// WLM_tot = 0;
@@ -533,10 +539,10 @@ function dv1(){
 							color = place_color;
 						}
 						else if (feature == "monuments_WLM"){
-							radius = scale(WLM)/2;
+							radius = scale(WLM)/3;
 							color = place_color;
 
-							console.log(a.Beni_WLM, a.Beni_totali)
+							console.log(WLM,WLM_relig)
 						}
 
 						bounds.push([lat,lon])
