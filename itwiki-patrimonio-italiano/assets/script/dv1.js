@@ -126,6 +126,15 @@ function dv1(){
 								return Math.sqrt(images/pg);
 							})
 						}
+						else if (feature == "monuments_WLM") {
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.Beni_WLM/pg);
+							})
+							
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.Beni_WLM/pg);
+							})
+						}
 					}
 					else {	
 						if (feature == "size") {
@@ -200,6 +209,15 @@ function dv1(){
 								return Math.sqrt(images/pg);
 							})
 						}
+						else if (feature == "monuments_WLM") {
+							min = d3.min(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.Beni_WLM/pg);
+							})
+							
+							max = d3.max(filter_inhabitants, function(d) { 
+								return Math.sqrt(+d.Beni_WLM/pg);
+							})
+						}
 					}
 
 					scale.domain([min,max]);
@@ -250,6 +268,8 @@ function dv1(){
 							images = images_svg + images_jpg + images_png + images_gif + images_tif + images_oth;
 
 							monuments_section = a.it_mSezioni.split("|");
+
+							WLM = +a.Beni_WLM;
 						}
 						else {
 							name = a.en_Titolo;
@@ -286,6 +306,7 @@ function dv1(){
 
 							monuments_section = a.en_mSezioni.split("|");
 
+							WLM = +a.Beni_WLM;
 						}
 
 						let fill_opacity = 0.3;
@@ -304,10 +325,9 @@ function dv1(){
 							}
 
 							let diff100 = Math.round(diff*100/avg_size,1).toLocaleString();
-							// console.log(avg_size,size,Math.floor(diff),diff100);
 
+							// size
 							feature_text = size.toLocaleString() + " byte";
-							// feature_text += "<br>" + diff.toLocaleString() + " byte";
 							feature_text += "<br>" + sign + diff100 + "% rispetto a media italiana";
 
 						}
@@ -412,7 +432,6 @@ function dv1(){
 								fill_opacity = 0.2
 								stroke_opacity = 0.1
 							}
-
 						}
 						else if (feature == "references") {
 							feature_text = references + " riferimenti bibliografici";
@@ -430,6 +449,7 @@ function dv1(){
 							else {
 								feature_text = "0 sezioni monumenti"
 							}
+
 						}
 						else if (feature == "monuments_size") {
 							feature_text = monuments_size.toLocaleString() + " byte";
@@ -455,6 +475,30 @@ function dv1(){
 							if (images_oth > 0){
 								feature_text += "<br>- " + images_oth + " altro"
 							}
+						}
+						else if (feature == "monuments_WLM"){
+							WLM_relig = 0;
+							WLM_relig_letter = "";
+							if (a.Beni_religiosi_WLM !== ""){
+								WLM_relig = +a.Beni_religiosi_WLM
+							}
+							else {
+								WLM_relig = 0
+							}
+
+							feature_text =  WLM + " monumenti fotografabili"
+
+							if (WLM_relig !== 0){
+
+								feature_text += "<br>(" + WLM_relig + " religiosi)"
+								console.log(a.Beni_religiosi_WLM)
+							}
+							
+							// WLM_tot = 0;
+							// if (a.Beni_totali !== ""){
+							// 	WLM_tot = +a.Beni_totali
+							// }
+							// feature_text += "<br><br>" + WLM_tot + " monumenti totali"
 						}
 
 						let tooltip_text = name + " (" + prov + ")<br/>" + inhabitants.toLocaleString() + " abitanti<br/><br/>" + feature_text + "</br>";
@@ -487,6 +531,12 @@ function dv1(){
 						else if (feature == "images"){
 							radius = scale(images)/5;
 							color = place_color;
+						}
+						else if (feature == "monuments_WLM"){
+							radius = scale(WLM)/2;
+							color = place_color;
+
+							console.log(a.Beni_WLM, a.Beni_totali)
 						}
 
 						bounds.push([lat,lon])
