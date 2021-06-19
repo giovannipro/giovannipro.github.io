@@ -502,6 +502,10 @@ function dv1(){
 
 									feature_text += " (" + WLM_relig + " religiosi)"
 								}
+
+								if ((+a.Beni_totali - WLM) > 0) {
+ 									feature_text +=  "<br>- " + (+a.Beni_totali - WLM) + " non fotografabili"
+								}
 							}
 
 							// WLM_tot = 0;
