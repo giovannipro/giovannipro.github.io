@@ -328,8 +328,8 @@ function dv1(){
 
 							// size
 							feature_text = size.toLocaleString() + " byte";
-							feature_text += "<br>" + sign + diff100 + "% rispetto a media italiana";
 
+							feature_text += "<br><table><tr><th clas='label'>" + sign + diff100 + "% rispetto a media italiana<th></tr>"
 						}
 						else if (feature == "issues") {
 
@@ -441,7 +441,7 @@ function dv1(){
 						}
 						else if (feature == "monuments") {
 							if (monuments > 0){
-								
+
 								if (monuments == 1){
 									feature_text =  monuments + " sezione monumenti:"
 								}
@@ -449,14 +449,17 @@ function dv1(){
 									feature_text =  monuments + " sezioni monumenti:"
 								}	
 
+								feature_text += "<table>" 
+
 								monuments_section.forEach(function (a,b) {
-									feature_text += "<br/>- " + a
+									feature_text += ("<tr><th class='label'>- " + a + "</th></tr>")
 								})
+
+								feature_text += "</table>" 
 							}
 							else {
 								feature_text = "0 sezioni monumenti"
 							}
-
 						}
 						else if (feature == "monuments_size") {
 							feature_text = "dimensione delle sezioni monumenti"
@@ -465,24 +468,28 @@ function dv1(){
 						else if (feature == "images") {
 							feature_text = images + " immagini:";
 
+							feature_text += "<table>" 
+
 							if (images_svg > 0){
-								feature_text += "<br>- " + images_svg + " svg"
+								feature_text += "<tr><th class='label'>- svg</th>" + "<th class='value'>" + images_svg + "</th>"
 							}
 							if (images_jpg > 0){
-								feature_text += "<br>- " + images_jpg + " jpg"
+								feature_text += "<tr><th class='label'>- jpg</th>" + "<th class='value'>" + images_jpg + "</th>"
 							}
 							if (images_png > 0){
-								feature_text += "<br>- " + images_png + " png"
+								feature_text += "<tr><th class='label'>- png</th>" + "<th class='value'>" + images_png + "</th>"
 							}
 							if (images_gif > 0){
-								feature_text += "<br>- " + images_gif + " gif"
+								feature_text += "<tr><th class='label'>- gif</th>" + "<th class='value'>" + images_gif + "</th>"
 							}
 							if (images_tif > 0){
-								feature_text += "<br>- " + images_tif + " tif"
+								feature_text += "<tr><th class='label'>- tif</th>" + "<th class='value'>" + images_tif + "</th>"
 							}
 							if (images_oth > 0){
-								feature_text += "<br>- " + images_oth + " altro"
+								feature_text += "<tr><th class='label'>- altri formati</th>" + "<th class='value'>" + images_oth + "</th>"
 							}
+
+							feature_text += "</table>" 
 						}
 						else if (feature == "monuments_WLM"){
 							WLM_relig = 0;
