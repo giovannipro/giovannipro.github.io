@@ -339,96 +339,57 @@ function dv1(){
 							if (issues > 0){
 								if (issues == 1){
 									feature_text = issues + " avviso:";
-
-									if (issue_verifica > 0){
-										feature_text += "<br>- verifica sorgente"
-									}
-									if (issues_correggere > 0){
-										feature_text += "<br>- correggere"
-									}
-									if (issues_curiosita > 0){
-										feature_text += "<br>- curiosità"
-									}
-									if (issues_dividere > 0){
-										feature_text += "<br>- dividere"
-									}
-									if (issues_notabile > 0){
-										feature_text += "<br>- notabilità"
-									}
-									if (issues_noReferenze > 0){
-										feature_text += "<br>- senza referenze"
-									}
-									if (issues_noNote > 0){
-										feature_text += "<br>- senza note"
-									}
-									if (issues_organizzare > 0){
-										feature_text += "<br>- organizzare"
-									}
-									if (issues_pov > 0){
-										feature_text += "<br>- POV"
-									}
-									if (issues_recentismo > 0){
-										feature_text += "<br>- recentismo"
-									}
-									if (issues_stub > 0){
-										feature_text += "<br>- stub"
-									}
-									if (issues_noFonte > 0){
-										feature_text += "<br>- senza fonte"
-									}
-									if (issues_noInfobox > 0){
-										feature_text += "<br>- necessario infobox"
-									}
-									if (issues_wikify > 0){
-										feature_text += "<br>- wikificare"
-									}
 								}
 								else {
 									feature_text = issues + " avvisi:";
-
-									if (issue_verifica > 0){
-										feature_text += "<br>- verifica sorgente"
-									}
-									if (issues_correggere > 0){
-										feature_text += "<br>- correggere"
-									}
-									if (issues_curiosita > 0){
-										feature_text += "<br>- curiosità"
-									}
-									if (issues_dividere > 0){
-										feature_text += "<br>- dividere"
-									}
-									if (issues_notabile > 0){
-										feature_text += "<br>- notabilità"
-									}
-									if (issues_noReferenze > 0){
-										feature_text += "<br>- senza referenze"
-									}
-									if (issues_noNote > 0){
-										feature_text += "<br>- senza note"
-									}
-									if (issues_organizzare > 0){
-										feature_text += "<br>- organizzare"
-									}
-									if (issues_pov > 0){
-										feature_text += "<br>- POV"
-									}
-									if (issues_recentismo > 0){
-										feature_text += "<br>- recentismo"
-									}
-									if (issues_stub > 0){
-										feature_text += "<br>- stub"
-									}
-									if (issues_noFonte > 0){
-										feature_text += "<br>- senza fonte"
-									}
-									if (issues_noInfobox > 0){
-										feature_text += "<br>- necessario infobox"
-									}
-									if (issues_wikify > 0){
-										feature_text += "<br>- wikificare"
-									}
 								}
+
+								feature_text += "<table>"
+
+								if (issue_verifica > 0){
+									feature_text += "<tr><td>" + "- verifica sorgente" + "</td></tr>"
+								}
+								if (issues_correggere > 0){
+									feature_text += "<tr><td>" + "- correggere" + "</td></tr>"
+								}
+								if (issues_curiosita > 0){
+									feature_text += "<tr><td>" + "- curiosità" + "</td></tr>"
+								}
+								if (issues_dividere > 0){
+									feature_text += "<tr><td>" + "- dividere" + "</td></tr>"
+								}
+								if (issues_notabile > 0){
+									feature_text += "<tr><td>" + "- notabilità" + "</td></tr>"
+								}
+								if (issues_noReferenze > 0){
+									feature_text += "<tr><td>" + "- senza referenze" + "</td></tr>"
+								}
+								if (issues_noNote > 0){
+									feature_text += "<tr><td>" + "- senza note" + "</td></tr>" 
+								}
+								if (issues_organizzare > 0){
+									feature_text += "<tr><td>" + "- organizzare" + "</td></tr>"
+								}
+								if (issues_pov > 0){
+									feature_text += "<tr><td>" + "- POV" + "</td></tr>"
+								}
+								if (issues_recentismo > 0){
+									feature_text += "<tr><td>" + "- recentismo" + "</td></tr>"
+								}
+								if (issues_stub > 0){
+									feature_text += "<tr><td>" + "- stub" + "</td></tr>"
+								}
+								if (issues_noFonte > 0){
+									feature_text += "<tr><td>" + "- senza fonte" + "</td></tr>"
+								}
+								if (issues_noInfobox > 0){
+									feature_text += "<tr><td>" + "- necessario infobox" + "</td></tr>"
+								}
+								if (issues_wikify > 0){
+									feature_text += "<tr><td>" + "- wikificare" + "</td></tr>"
+								}
+
+								feature_text += "</table>"
 							}
 							else {
 								feature_text = "0 avvisi";
@@ -455,7 +416,7 @@ function dv1(){
 								feature_text += "<table>" 
 
 								monuments_section.forEach(function (a,b) {
-									feature_text += ("<tr><th class='label'>- " + a + "</th></tr>")
+									feature_text += ("<tr><td class='label'>- " + a + "</td></tr>")
 								})
 
 								feature_text += "</table>" 
@@ -474,22 +435,22 @@ function dv1(){
 							feature_text += "<table>" 
 
 							if (images_svg > 0){
-								feature_text += "<tr><th class='label'>- svg</th>" + "<th class='value'>" + images_svg + "</th>"
+								feature_text += "<tr><td class='label'>- svg</td>" + "<td class='value'>" + images_svg + "</td>"
 							}
 							if (images_jpg > 0){
-								feature_text += "<tr><th class='label'>- jpg</th>" + "<th class='value'>" + images_jpg + "</th>"
+								feature_text += "<tr><td class='label'>- jpg</td>" + "<td class='value'>" + images_jpg + "</td>"
 							}
 							if (images_png > 0){
-								feature_text += "<tr><th class='label'>- png</th>" + "<th class='value'>" + images_png + "</th>"
+								feature_text += "<tr><td class='label'>- png</td>" + "<td class='value'>" + images_png + "</td>"
 							}
 							if (images_gif > 0){
-								feature_text += "<tr><th class='label'>- gif</th>" + "<th class='value'>" + images_gif + "</th>"
+								feature_text += "<tr><td class='label'>- gif</td>" + "<td class='value'>" + images_gif + "</td>"
 							}
 							if (images_tif > 0){
-								feature_text += "<tr><th class='label'>- tif</th>" + "<th class='value'>" + images_tif + "</th>"
+								feature_text += "<tr><td class='label'>- tif</td>" + "<td class='value'>" + images_tif + "</td>"
 							}
 							if (images_oth > 0){
-								feature_text += "<tr><th class='label'>- altri formati</th>" + "<th class='value'>" + images_oth + "</th>"
+								feature_text += "<tr><td class='label'>- altri formati</td>" + "<td class='value'>" + images_oth + "</td>"
 							}
 
 							feature_text += "</table>" 
@@ -506,14 +467,14 @@ function dv1(){
 							feature_text = monumenti_wikidata + " monumenti su Wikidata"
 
 							if (monumenti_wikidata > 0) {
-								feature_text +=  ":<br/><table><tr><th class='label'>- fotografabili" + "<th class='value'>" + WLM + "</th></tr>"
+								feature_text +=  ":<br/><table><tr><td class='label'>- fotografabili" + "<td class='value'>" + WLM + "</td></tr>"
 
 								if (WLM_relig !== 0){
-									feature_text += "<tr><th class='label'>- fotografabili religiosi</th>" + "<th class='value'>" + WLM_relig + "</th></th>"
+									feature_text += "<tr><td class='label'>- fotografabili religiosi</th>" + "<td class='value'>" + WLM_relig + "</td></th>"
 								}
 
 								if ((monumenti_wikidata - WLM) > 0) {
- 									feature_text +=  "<tr><th class='label'>- non fotografabili</th>" + "<th class='value'>" + (monumenti_wikidata - WLM) + "</th></tr>"
+ 									feature_text +=  "<tr><td class='label'>- non fotografabili</td>" + "<td class='value'>" + (monumenti_wikidata - WLM) + "</td></tr>"
 								}
 
 								feature_text += "</table>"
