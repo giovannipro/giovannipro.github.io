@@ -539,7 +539,7 @@ function dv1(){
 							color = place_color;
 						}
 						else if (feature == "monuments_WLM"){
-							radius = scale(WLM)/3;
+							radius = scale(WLM)/3.5;
 							color = place_color;
 
 							console.log(WLM,WLM_relig)
