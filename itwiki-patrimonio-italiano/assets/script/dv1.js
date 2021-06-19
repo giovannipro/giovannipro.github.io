@@ -269,6 +269,7 @@ function dv1(){
 
 							monuments_section = a.it_mSezioni.split("|");
 
+							monumenti_wikidata = +a.Beni_Wikidata;
 							WLM = +a.Beni_WLM;
 						}
 						else {
@@ -306,8 +307,10 @@ function dv1(){
 
 							monuments_section = a.en_mSezioni.split("|");
 
+							monumenti_wikidata = +a.Beni_Wikidata;
 							WLM = +a.Beni_WLM;
 						}
+						// console.log(name, monumenti_wikidata)
 
 						let fill_opacity = 0.3;
 						let stroke_opacity = 0.8;
@@ -500,34 +503,28 @@ function dv1(){
 								WLM_relig = 0
 							}
 							
-							feature_text = (+a.Beni_totali) + " monumenti su Wikidata"
+							feature_text = monumenti_wikidata + " monumenti su Wikidata"
 
-							if (+a.Beni_totali > 0) {
+							if (monumenti_wikidata > 0) {
 								feature_text +=  ":<br/><table><tr><th class='label'>- fotografabili" + "<th class='value'>" + WLM + "</th></tr>"
 
 								if (WLM_relig !== 0){
 									feature_text += "<tr><th class='label'>- fotografabili religiosi</th>" + "<th class='value'>" + WLM_relig + "</th></th>"
 								}
 
-								if ((+a.Beni_totali - WLM) > 0) {
- 									feature_text +=  "<tr><th class='label'>- non fotografabili</th>" + "<th class='value'>" + (+a.Beni_totali - WLM) + "</th></tr>"
+								if ((monumenti_wikidata - WLM) > 0) {
+ 									feature_text +=  "<tr><th class='label'>- non fotografabili</th>" + "<th class='value'>" + (monumenti_wikidata - WLM) + "</th></tr>"
 								}
 
 								feature_text += "</table>"
 							}
-
-							// WLM_tot = 0;
-							// if (a.Beni_totali !== ""){
-							// 	WLM_tot = +a.Beni_totali
-							// }
-							// feature_text += "<br><br>" + WLM_tot + " monumenti totali"
 						}
 
 						let tooltip_text = name + " (" + prov + ")<br/>" + inhabitants.toLocaleString() + " abitanti<br/><br/>" + feature_text;
 
 						let radius;
 						if (feature == "size"){
-							radius = scale(size)/200;
+							radius = scale(size/200);
 							color = place_color;
 						}
 						else if (feature == "issues") {
@@ -535,30 +532,29 @@ function dv1(){
 							color = issue_color_scale(issues);
 						}
 						else if (feature == "references"){
-							radius = scale(references)/3;
+							radius = scale(references/3);
 							color = place_color;
 						}
 						else if (feature == "notes"){
-							radius = scale(notes)/7;
+							radius = scale(notes/7);
 							color = place_color;
 						}
 						else if (feature == "monuments"){
-							radius = scale(monuments)/2;
+							radius = scale(monuments/2);
 							color = place_color;
 						}
 						else if (feature == "monuments_size"){
-							radius = scale(monuments_size)/100;
+							radius = scale(monuments_size/100);
 							color = place_color;
 						}
 						else if (feature == "images"){
-							radius = scale(images)/5;
+							radius = scale(images/5);
 							color = place_color;
 						}
 						else if (feature == "monuments_WLM"){
-							radius = scale(WLM)/3.5;
+							radius = scale(monumenti_wikidata/10); // WLM 3.5 /6
 							color = place_color;
-
-							console.log(WLM,WLM_relig)
+							// console.log(WLM,WLM_relig)
 						}
 
 						bounds.push([lat,lon])
