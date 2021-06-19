@@ -496,16 +496,17 @@ function dv1(){
 							feature_text = (+a.Beni_totali) + " monumenti su Wikidata"
 
 							if (+a.Beni_totali > 0) {
-								feature_text +=  ":<br>- " + WLM + " fotografabili"
+								feature_text +=  ":<br/><table><tr><th class='label'>- fotografabili" + "<th class='value'>" + WLM + "</th></tr>"
 
 								if (WLM_relig !== 0){
-
-									feature_text += " (" + WLM_relig + " religiosi)"
+									feature_text += "<tr><th class='label'>- fotografabili religiosi</th>" + "<th class='value'>" + WLM_relig + "</th></th>"
 								}
 
 								if ((+a.Beni_totali - WLM) > 0) {
- 									feature_text +=  "<br>- " + (+a.Beni_totali - WLM) + " non fotografabili"
+ 									feature_text +=  "<tr><th class='label'>- non fotografabili</th>" + "<th class='value'>" + (+a.Beni_totali - WLM) + "</th></tr>"
 								}
+
+								feature_text += "</table>"
 							}
 
 							// WLM_tot = 0;
@@ -515,7 +516,7 @@ function dv1(){
 							// feature_text += "<br><br>" + WLM_tot + " monumenti totali"
 						}
 
-						let tooltip_text = name + " (" + prov + ")<br/>" + inhabitants.toLocaleString() + " abitanti<br/><br/>" + feature_text + "</br>";
+						let tooltip_text = name + " (" + prov + ")<br/>" + inhabitants.toLocaleString() + " abitanti<br/><br/>" + feature_text;
 
 						let radius;
 						if (feature == "size"){
