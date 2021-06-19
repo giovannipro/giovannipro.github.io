@@ -492,14 +492,18 @@ function dv1(){
 							else {
 								WLM_relig = 0
 							}
-
-							feature_text =  WLM + " monumenti fotografabili"
-
-							if (WLM_relig !== 0){
-
-								feature_text += "<br>(" + WLM_relig + " religiosi)"
-							}
 							
+							feature_text = (+a.Beni_totali) + " monumenti su Wikidata"
+
+							if (+a.Beni_totali > 0) {
+								feature_text +=  ":<br>- " + WLM + " fotografabili"
+
+								if (WLM_relig !== 0){
+
+									feature_text += " (" + WLM_relig + " religiosi)"
+								}
+							}
+
 							// WLM_tot = 0;
 							// if (a.Beni_totali !== ""){
 							// 	WLM_tot = +a.Beni_totali
