@@ -552,7 +552,7 @@ function dv1(){
 							color = place_color;
 						}
 						else if (feature == "monuments_WLM"){
-							radius = scale(monumenti_wikidata/10); // WLM 3.5 /6
+							radius = scale(monumenti_wikidata/15); // WLM 3.5 /6
 							color = place_color;
 							// console.log(WLM,WLM_relig)
 						}
