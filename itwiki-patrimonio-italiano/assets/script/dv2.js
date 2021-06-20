@@ -38,7 +38,7 @@ let empty = {
   "value": {
     "images_avg": 20,
 	"issues_Verifica_avg": 30,
-	"issues_avg": 100,
+	"issues_avg": 3,
 	"issues_correggere_avg": 20,
 	"issues_curiosita_avg": 0,
 	"issues_dividere_avg": 0,
@@ -53,11 +53,11 @@ let empty = {
 	"issues_stub_avg": 0,
 	"issues_wikify_avg": 0,
 	"monuments_size_avg": 0,
-	"notes_avg": 0,
+	"notes_avg": 20,
 	"places": 0,
-	"population": 0,
-	"references_avg": 0,
-	"size_avg": 200
+	"population": 20000,
+	"references_avg": 2,
+	"size_avg": 20
   }
 }
 
@@ -247,19 +247,23 @@ function dv2(){
 								.entries(dataset)
 		  				}
 						
-						if (region_group.length == 19) {
-							region_group.push(empty)
-						}
-						else if (region_group.length == 18) {
-							region_group.push(empty,empty)
-						}
+						// if (region_group.length == 19) {
+						// 	region_group.push(empty)
+						// }
+						// else if (region_group.length == 18) {
+						// 	region_group.push(empty,empty)
+						// }
 
-						region_group.forEach(function(d,i){
-							console.log(i+1, d.key)
-						})
+						// region_group.forEach(function(d,i){
+						// 	console.log(i+1, d.key)
+						// })
+		  		// 		console.log(region_group);
+
 		  				return region_group
 	  				}
 					make_dataset(dataset,language)
+
+					console.log(region_group.length)
 
 					// sort
 					// let sorted_data = [];
@@ -302,7 +306,7 @@ function dv2(){
 						return Math.sqrt(+d.value.size_avg/3.14);
 					})
 
-					x.domain([0, 20]) // region_group.length sorted_data
+					x.domain([0, region_group.length]) // region_group.length sorted_data
 					// console.log(sorted_data.length)
 
 					let r = d3.scaleLinear()
@@ -406,11 +410,14 @@ function dv2(){
 						})
 						.on("mouseover", function(d,i) {
 							let tooltip_text = d.key + "<br>" + Math.floor(d.value.population).toLocaleString() + 
-								" abitanti (media)<br><br>" + 
-								+d.value.issues_avg.toFixed(2) + " avvisi<br>" + 
-								+d.value.references_avg.toFixed(1) + " referimenti bibliografici<br>" + 
-								+d.value.notes_avg.toFixed(1) + " note<br>" + 
-								+d.value.images_avg.toFixed(1) + " immagini<br>";
+								" abitanti (media)<br><br>"
+
+								tooltip_text += "<table>"
+								tooltip_text += "<tr><td class='label'>avvisi</td>" + "<td class='value' style='text-align: right;'>" + (+d.value.issues_avg.toFixed(2)) + "</td></tr>" 
+								tooltip_text += "<tr><td class='label'>riferimenti bibliografici</td>" + "<td class='value' style='text-align: right;'>" + (+d.value.references_avg.toFixed(1)) + "</td></tr>" 
+								tooltip_text += "<tr><td class='label'>note</td>" + "<td class='value' style='text-align: right;'>" + (+d.value.notes_avg.toFixed(1)) + "</td></tr>" 
+								tooltip_text += "<tr><td class='label'>immagini</td>" + "<td class='value' style='text-align: right;'>" + (+d.value.images_avg.toFixed(1)) + "</td></tr>" 
+								tooltip_text += "</table>"
 
 							div.transition()		
 				            	.duration(200)		
@@ -425,10 +432,8 @@ function dv2(){
 
 							d3.select(this)
 								.attr("opacity",1)
-
 				        })			
 						.on("mouseout", function(d) {
-
 							d3.selectAll(".region")
 							.attr("opacity",1)
 
@@ -438,7 +443,16 @@ function dv2(){
 						})
 
 					// place circle
-					let place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / sorted_data.length
+					let place_width = 0;
+					if (sorted_data.length == 20){
+						place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length)
+					}
+					else if (sorted_data.length == 19) {
+						place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length + 1)
+					}
+					else {
+						place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length + 2)
+					}
 
 					let region_size = region.append("g")
 						.attr("transform","translate(" + (place_width/2) + "," + 40 + ")")
@@ -600,7 +614,7 @@ function dv2(){
 					let language =  $("#language option:selected").val();
 					let inhabitants = $("#inhabitants option:selected").val();
 
-					update_sort(filtered_data,inhabitants,feature,language);
+					update_sort(filtered_data,feature,language);
 					// console.log(filtered_data)
 				});
 
@@ -608,8 +622,7 @@ function dv2(){
 					make_chart(dataset,language,feature);
 				}
 
-				function update_sort(dataset,inhabitants,feature,language){
-					// console.log(feature)
+				function update_sort(dataset,feature,language){
 
 					function make_dataset(dataset,language){
 
@@ -751,7 +764,6 @@ function dv2(){
 								    	return (+d.en_wikify)
 								    }),
 
-
 								    references_avg: d3.mean(v, function(d) { 
 								    	return +d.en_bNum 
 								    }),
@@ -765,63 +777,64 @@ function dv2(){
 								.entries(dataset)
 		  				}
 
-						if (region_group.length == 19) {
-							region_group.push(empty)
-						}
-						else if (region_group.length == 18) {
-							region_group.push(empty,empty)
-						}
+						// if (region_group.length == 19) {
+						// 	region_group.push(empty)
+						// }
+						// else if (region_group.length == 18) {
+						// 	region_group.push(empty,empty)
+						// }
 
-						region_group.forEach(function(d,i){
-							console.log(i+1, d.key)
-						})
-		  				return region_group
+						// region_group.forEach(function(d,i){
+						// 	console.log(i+1, d.key)
+						// })
+		  				return region_group;
 		  			}
 
-	  				data_ = make_dataset(dataset,language);
+	  				let data_ = make_dataset(dataset,language);
 	  				console.log(data_)
+	  				console.log(feature)
 
 					// sort
-	  				let sorted_data = [];
+	  				// let sorted_data = [];
 					if (feature == "size"){
-						sorted_data = data_.sort(function(a, b){
+						data_ = data_.sort(function(a, b){
 							return d3.descending(+a.value.size_avg, +b.value.size_avg);
 						})
 					}
 					else if (feature == "issues"){
-						sorted_data = data_.sort(function(a, b){
+						data_ = data_.sort(function(a, b){
 							return d3.descending(+a.value.issues_avg, +b.value.issues_avg);
 						})
 					}
 					else if (feature == "references") {
-						sorted_data = data_.sort(function(a, b){
+						data_ = data_.sort(function(a, b){
 							return d3.descending(+a.value.references_avg, +b.value.references_avg);
 						})
 					}
 					else if (feature == "notes") {
-						sorted_data = data_.sort(function(a, b){
+						data_ = data_.sort(function(a, b){
 							return d3.descending(+a.value.notes_avg, +b.value.notes_avg);
 						})
 					}
 					else if (feature == "images") {
-						sorted_data = data_.sort(function(a, b){
+						data_ = data_.sort(function(a, b){
 							return d3.descending(+a.value.images_avg, +b.value.images_avg);
 						})
 					}
 
-					sorted_data.forEach(function(d,i){
+					data_.forEach(function(d,i){
 						new_id = i;
-						d.new_id = new_id+1;
+						d.new_id = new_id;
 						console.log(d.new_id,d.key)
 					})
 
-					x.domain([0,data_.length]) // data_.length
-					console.log(sorted_data)
+					x.domain([0,data_.length]);
+					console.log(data_);
  
 					svg.selectAll(".region")
 						.transition()
 						.attr("transform", function(d,i){
-							sorted_data.forEach(function(a,b){
+							data_.forEach(function(a,b){
 								if (d.key == a.key){
 									d.new_id = b
 								}
@@ -829,7 +842,6 @@ function dv2(){
 							return "translate(" + x(d.new_id) + "," + 0 + ")";
 						})
 				}
-
 	  		})
 
 			// .catch(function(error) {
