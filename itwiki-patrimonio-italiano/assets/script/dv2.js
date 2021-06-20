@@ -262,7 +262,6 @@ function dv2(){
 		  				return region_group
 	  				}
 					make_dataset(dataset,language)
-
 					console.log(region_group.length)
 
 					// sort
@@ -402,9 +401,10 @@ function dv2(){
 						.data(sorted_data)
 						.enter()
 						.append("g")
-						.attr("class",function(d,i){
-							return d.key + " region"
+						.attr("data-region",function(d,i){
+							return d.key
 						})
+						.attr("class","region")
 						.attr("transform", function(d,i){
 							return "translate(" + x(i) + "," + 0 + ")"
 						})
@@ -413,6 +413,7 @@ function dv2(){
 								" abitanti (media)<br><br>"
 
 								tooltip_text += "<table>"
+								tooltip_text += "<tr><td class='label'>byte</td>" + "<td class='value' style='text-align: right;'>" + Math.floor(+d.value.size_avg).toLocaleString() + "</td></tr>" 
 								tooltip_text += "<tr><td class='label'>avvisi</td>" + "<td class='value' style='text-align: right;'>" + (+d.value.issues_avg.toFixed(2)) + "</td></tr>" 
 								tooltip_text += "<tr><td class='label'>riferimenti bibliografici</td>" + "<td class='value' style='text-align: right;'>" + (+d.value.references_avg.toFixed(1)) + "</td></tr>" 
 								tooltip_text += "<tr><td class='label'>note</td>" + "<td class='value' style='text-align: right;'>" + (+d.value.notes_avg.toFixed(1)) + "</td></tr>" 
@@ -444,15 +445,17 @@ function dv2(){
 
 					// place circle
 					let place_width = 0;
-					if (sorted_data.length == 20){
-						place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length)
-					}
-					else if (sorted_data.length == 19) {
-						place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length + 1)
-					}
-					else {
-						place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length + 2)
-					}
+					place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length)
+
+					// if (sorted_data.length == 20){
+					// 	place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length)
+					// }
+					// else if (sorted_data.length == 19) {
+					// 	place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length + 1)
+					// }
+					// else {
+					// 	place_width = ((width-margin.left*2) - (h_space*(sorted_data.length-1))) / (sorted_data.length + 2)
+					// }
 
 					let region_size = region.append("g")
 						.attr("transform","translate(" + (place_width/2) + "," + 40 + ")")
@@ -606,7 +609,7 @@ function dv2(){
 					$("#axis_grid").remove();
 
 					update_language(filtered_data,language,feature);
-					//console.log(filtered_data,language,feature)
+					// console.log(filtered_data,language,feature,inhabitants)
 				});
 
 				$("#sort_feature").change(function() {
@@ -614,15 +617,30 @@ function dv2(){
 					let language =  $("#language option:selected").val();
 					let inhabitants = $("#inhabitants option:selected").val();
 
-					update_sort(filtered_data,feature,language);
-					// console.log(filtered_data)
+					let data_to_sort;
+					if (inhabitants == "3"){
+						data_to_sort = filtered_data.filter(function(value, index, arr){ 
+							return value.Regione != "Basilicata";
+						})
+					}
+					else if (inhabitants == "4"){
+						data_to_sort = filtered_data.filter(function(value, index, arr){ 
+							return value.Regione != "Molise" && value.Regione != "Valle d'Aosta/Vallée d'Aoste";
+						})
+					}
+					else {
+						data_to_sort = filtered_data;
+					}
+
+					update_sort(data_to_sort,feature,language,inhabitants);
+					console.log(data_to_sort)
 				});
 
 				function update_language(dataset,language,feature){
 					make_chart(dataset,language,feature);
 				}
 
-				function update_sort(dataset,feature,language){
+				function update_sort(dataset,feature,language,inhabitants){
 
 					function make_dataset(dataset,language){
 
@@ -825,11 +843,22 @@ function dv2(){
 					data_.forEach(function(d,i){
 						new_id = i;
 						d.new_id = new_id;
-						console.log(d.new_id,d.key)
+						console.log(d.new_id,d.key,+d.value.issues_avg.toFixed(2),+d.value.references_avg.toFixed(1))
 					})
 
-					x.domain([0,data_.length]);
-					console.log(data_);
+					// let dataset_length = 0;
+					// if (inhabitants == "3"){
+					// 	dataset_length = 19
+					// }
+					// else if (inhabitants == "4"){
+					// 	dataset_length = 18
+					// }
+					// else {
+					// 	dataset_length = 20
+					// }
+
+					let dataset_length = data_.length; // 20
+					x.domain([0,dataset_length]);
  
 					svg.selectAll(".region")
 						.transition()
@@ -837,6 +866,7 @@ function dv2(){
 							data_.forEach(function(a,b){
 								if (d.key == a.key){
 									d.new_id = b
+									// console.log(d.key,x(d.new_id))
 								}
 							})
 							return "translate(" + x(d.new_id) + "," + 0 + ")";
