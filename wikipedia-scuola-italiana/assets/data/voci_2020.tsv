@@ -216,7 +216,7 @@ Q191390	Legame metallico	Chimica		Superiori	I legami chimici		2	1	111	113	199004
 Q425597	Idrossido	Chimica		Superiori	Nomenclatura dei composti		2	1	90	83	161334	7963	2	2	2	1053	13.22	0	0	0	567	2006-01-01	5265
 Q137056	Corrosione	Chimica		Superiori	Ossidoriduzione e elettrochimica		2	1	160	145	288236	52396	22	18	11	1151	2.20	0	1	0	9681	2005-12-17	5280
 Q220089	Legge delle pressioni parziali	Chimica		Superiori	Leggi dei gas		2	1	83	82	149139	4796	2	0	0	1160	24.19	0	0	0	465	2005-10-29	5329
-#N/A	Simbolo chimico	Chimica		Superiori	Teoria atomica		2	1	48	39	86186	2411	0	1	1	1752	72.67	0	0	0	37	2005-10-29	5329
+Q102500	Simbolo chimico	Chimica		Superiori	Teoria atomica		2	1	48	39	86186	2411	0	1	1	1752	72.67	0	0	0	37	2005-10-29	5329
 Q79529	Sostanza pura	Chimica		Superiori	Sistemi, miscele, sostanze		2	1	91	84	163267	3913	3	0	2	300	7.67	0	0	0	91	2005-10-21	5337
 Q169336	Miscela	Chimica		Superiori	Sistemi, miscele, sostanze		2	1	99	87	177315	6556	1	0	1	644	9.82	0	0	0	1029	2005-10-14	5344
 Q320388	Sistema isolato	Chimica		Superiori	Sistemi, miscele, sostanze		2	1	37	37	66222	1585	3	0	4	1066	67.26	0	0	0	37	2005-10-05	5353
@@ -730,7 +730,7 @@ Q4295	Pietro Abelardo	Filosofia		Superiori	Filosofia nell'età medievale		???	1	
 Q868	Aristotele	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	728	697	1308462	96098	87	9	22	717	0.75	0	0	0	98568	2004-06-02	5843
 Q679842	Idealismo tedesco	Filosofia		Superiori	Tra settecento e ottocento		???	1	69	70	123165	20914	19	4	8	883	4.22	0	0	0	1998	2004-05-20	5856
 Q859	Platone	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	797	852	1432778	122504	151	12	25	2255	1.84	0	0	0	151568	2004-05-20	5856
-#N/A	Johann Gottlieb Fichte	Filosofia		Superiori	Tra settecento e ottocento		???	1	145	147	260597	53044	25	7	5	62	0.12	0	0	0	18031	2004-05-19	5857
+Q102585	Johann Gottlieb Fichte	Filosofia		Superiori	Tra settecento e ottocento		???	1	145	147	260597	53044	25	7	5	62	0.12	0	0	0	18031	2004-05-19	5857
 Q35802	Baruch Spinoza	Filosofia		Superiori	Tra seicento e settecento		???	1	355	411	637855	95000	49	9	383	646	0.68	0	0	0	30426	2004-05-04	5872
 Q9438	Tommaso d'Aquino	Filosofia		Superiori	Filosofia nell'età medievale		???	1	391	362	702654	76003	27	13	5	847	1.11	1	7	0	63406	2004-04-29	5877
 Q913	Socrate	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	776	787	1394285	83290	94	12	7	1618	1.94	0	0	0	57677	2004-04-28	5878
@@ -742,12 +742,12 @@ Q6512	Søren Kierkegaard	Filosofia		Superiori	Tra settecento e ottocento		???	1	
 Q38066	Esistenzialismo	Filosofia		Superiori	Novecento		???	1	520	1138	933756	46504	26	8	8	2499	5.37	0	0	0	12130	2004-04-13	5893
 Q42156	Henri Bergson	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	143	130	256753	48627	17	4	81	750	1.54	0	0	0	4622	2004-04-13	5893
 Q2054	Lucio Anneo Seneca	Filosofia		Superiori	Filosofia latina		???	1	574	542	1031160	61922	13	10	4	1171	1.89	1	0	0	12339	2004-04-12	5894
-#N/A	Plotino	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	152	195	272701	58607	47	5	34	722	1.23	0	0	0	23748	2004-04-12	5894
+Q134189	Plotino	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	152	195	272701	58607	47	5	34	722	1.23	0	0	0	23748	2004-04-12	5894
 Q203445	Porfirio	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	34	34	61253	11222	8	1	12	84	0.75	0	0	0	562	2004-04-12	5894
 Q41980	Democrito	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	164	162	294705	23219	10	4	1	501	2.16	0	1	0	2509	2004-04-07	5899
 Q208238	Circolo di Vienna	Filosofia		Superiori	Novecento		???	1	27	28	47709	2289	1	0	0	1797	78.51	1	0	0	39	2004-04-05	5901
 Q37388	Francesco Bacone	Filosofia		Superiori	Tra cinquecente e seicento		???	1	220	209	395015	30162	14	6	19	228	0.76	0	0	0	10495	2004-04-04	5902
-#N/A	Zenone di Elea	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	102	92	183308	9420	10	1	5	1296	13.76	0	0	0	1677	2004-04-03	5903
+Q132157	Zenone di Elea	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	102	92	183308	9420	10	1	5	1296	13.76	0	0	0	1677	2004-04-03	5903
 Q165589	Leucippo	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	16	23	27973	11166	7	1	0	44	0.39	0	0	0	3612	2004-04-02	5904
 Q169243	Protagora	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	118	127	212585	16521	11	1	15	2	0.01	0	0	0	2310	2004-04-01	5905
 Q9191	Cartesio	Filosofia		Superiori	Tra cinquecente e seicento		???	1	525	489	944031	94389	105	17	18	394	0.42	0	0	0	15416	2004-03-29	5908
@@ -774,26 +774,26 @@ Q9358	Friedrich Nietzsche	Filosofia		Superiori	Tra settecento e ottocento		???	1
 Q8018	Agostino d'Ippona	Filosofia		Superiori	Patristica		???	1	605	534	1087978	93264	55	21	43	1086	1.16	0	1	0	31645	2003-12-31	5997
 Q70991	Ildegarda di Bingen	Filosofia		Superiori	Filosofia nell'età medievale		???	1	132	152	237278	35663	19	7	6	586	1.64	0	0	0	1615	2003-12-31	5997
 Q41630	Psicoanalisi	Filosofia		Superiori	Novecento		???	1	311	262	558663	86179	61	5	25	4313	5.00	0	4	0	19941	2003-12-27	6001
-#N/A	Blaise Pascal	Filosofia		Superiori	Tra seicento e settecento		???	1	294	248	529070	47641	34	9	9	1611	3.38	0	0	0	41146	2003-09-02	6117
-#N/A	Ipparco di Nicea	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	33	33	59195	13157	21	2	3	399	3.03	0	0	0	1628	2003-07-27	6154
+Q1290	Blaise Pascal	Filosofia		Superiori	Tra seicento e settecento		???	1	294	248	529070	47641	34	9	9	1611	3.38	0	0	0	41146	2003-09-02	6117
+Q159905	Ipparco di Nicea	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	33	33	59195	13157	21	2	3	399	3.03	0	0	0	1628	2003-07-27	6154
 Q8963	Giovanni Keplero	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	208	212	374206	23934	16	7	0	962	4.02	0	0	0	4125	2003-05-25	6217
-#N/A	Montesquieu	Filosofia		Superiori	Illuminismo		???	1	217	216	389436	37143	13	4	16	83	0.22	0	0	0	5113	2003-04-13	6259
-#N/A	Pitagora	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	508	510	913674	41567	78	9	20	744	1.79	0	0	0	36722	2003-02-07	6324
+Q15975	Montesquieu	Filosofia		Superiori	Illuminismo		???	1	217	216	389436	37143	13	4	16	83	0.22	0	0	0	5113	2003-04-13	6259
+Q10261	Pitagora	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	508	510	913674	41567	78	9	20	744	1.79	0	0	0	36722	2003-02-07	6324
 Q182123	Ireneo di Lione	Filosofia		Superiori	Patristica		???	1	44	50	79551	9362	0	3	2	380	4.06	0	0	0	765	2005-07-11	5439
 Q184876	Sistema di riferimento	Fisica		Superiori	La velocità		???	1	64	50	115764	1793	0	0	0	1308	72.95	1	0	0	36	2017-01-30	1218
 Q3748907	Forza dissipativa	Fisica		Superiori	Il lavoro e l'energia		???	1	15	14	27794	489	0	0	0	415	84.87	1	0	0	36	2009-03-30	4081
 Q673166	Campo gravitazionale terrestre	Fisica		Superiori	La gravitazione		???	1	97	105	174796	21958	2	8	0	2274	10.36	1	2	0	3087	2008-10-23	4239
-#N/A	Forza elastica	Fisica		Superiori	Vettori e forze		???	1	102	63	182665	6782	9	0	12	2067	30.48	0	0	0	36	2008-07-02	4352
+Q1185557	Forza elastica	Fisica		Superiori	Vettori e forze		???	1	102	63	182665	6782	9	0	12	2067	30.48	0	0	0	36	2008-07-02	4352
 Q891408	Energia elastica	Fisica		Superiori	Il lavoro e l'energia		???	1	44	37	79435	1522	0	0	0	122	8.02	0	0	0	230	2008-04-09	4436
 Q50380212	Galleggiante (fisica)	Fisica		Superiori	Equilibrio dei fluidi		???	1	4	6	7464	986	0	0	0	788	79.92	1	0	0	36	2008-03-06	4470
 Q907823	Teoria delle collisioni	Fisica		Superiori	Il lavoro e l'energia		???	1	21	23	37781	2328	0	0	1	804	34.54	0	0	0	59	2007-06-12	4738
-#N/A	Solido	Fisica		Superiori	Equilibrio dei fluidi		???	1	68	57	122595	6862	5	5	3	685	9.98	0	0	0	1875	2007-01-03	4898
+Q11438	Solido	Fisica		Superiori	Equilibrio dei fluidi		???	1	68	57	122595	6862	5	5	3	685	9.98	0	0	0	1875	2007-01-03	4898
 Q675287	Ingrandimento	Fisica		Superiori	La luce		???	1	24	23	43671	4839	0	1	0	793	16.39	0	0	0	866	2006-12-11	4921
 Q81809	Pressione atmosferica	Fisica		Superiori	Equilibrio dei fluidi		???	1	599	585	1076875	11700	9	4	9	518	4.43	1	0	0	5817	2006-12-10	4922
 Q7364	Occhio	Fisica		Superiori	La luce		???	1	421	364	756171	49924	8	11	0	809	1.62	0	0	0	12558	2006-11-24	4938
 Q217113	Analisi dimensionale	Fisica		Superiori	Le grandezze fisiche		???	1	42	37	74670	31330	4	0	2	682	2.18	0	0	0	2460	2006-10-12	4981
-#N/A	Incertezza di misura	Fisica		Superiori	La misura		???	1	94	98	169075	14784	12	1	4	1929	13.05	0	0	0	1102	2006-10-02	4991
-#N/A	Principio dei vasi comunicanti	Fisica		Superiori	Equilibrio dei fluidi		???	1	155	136	278871	7539	1	3	1	333	4.42	2	0	0	3221	2006-08-26	5028
+Q1403517	Incertezza di misura	Fisica		Superiori	La misura		???	1	94	98	169075	14784	12	1	4	1929	13.05	0	0	0	1102	2006-10-02	4991
+Q117701	Principio dei vasi comunicanti	Fisica		Superiori	Equilibrio dei fluidi		???	1	155	136	278871	7539	1	3	1	333	4.42	2	0	0	3221	2006-08-26	5028
 Q48103	Momento meccanico	Fisica		Superiori	Equilibrio dei solidi		???	1	242	217	434296	17114	4	3	0	1305	7.63	0	0	1	731	2006-08-20	5034
 Q716915	Equilibrio meccanico	Fisica		Superiori	Equilibrio dei solidi		???	1	35	28	62456	7817	0	1	0	934	11.95	0	0	0	118	2006-08-10	5044
 Q829564	Sistema di riferimento non inerziale	Fisica		Superiori	I principi della dinamica e la relatività galileiana		???	1	51	43	92295	4311	0	0	0	392	9.09	0	0	0	36	2006-05-04	5142
@@ -805,18 +805,18 @@ Q79782	Moto (fisica)	Fisica		Superiori	La velocità		???	1	87	76	157048	3697	1	3
 Q558066	Campo gravitazionale	Fisica		Superiori	La gravitazione		???	1	74	67	133529	6770	0	1	3	787	11.62	0	0	0	34151	2005-12-17	5280
 Q101965	Esperimento	Fisica		Superiori	La misura		???	1	37	36	66362	7100	0	0	0	782	11.01	1	0	0	8184	2005-11-18	5309
 Q192788	Corpo rigido	Fisica		Superiori	Equilibrio dei solidi		???	1	57	51	103043	10806	0	0	0	341	3.16	1	0	0	36	2005-10-26	5332
-#N/A	Errore statistico	Fisica		Superiori	La misura		???	1	32	31	57169	2835	0	0	0	829	29.24	1	0	0	36	2005-10-04	5354
+Q12089457	Errore statistico	Fisica		Superiori	La misura		???	1	32	31	57169	2835	0	0	0	829	29.24	1	0	0	36	2005-10-04	5354
 Q3057447	Errore assoluto	Fisica		Superiori	La misura		???	1	104	96	186877	5479	0	0	0	724	13.21	1	0	0	2554	2005-10-03	5355
 Q865920	Errore relativo	Fisica		Superiori	La misura		???	1	133	135	238314	2203	0	0	0	1782	80.89	0	0	0	36	2005-10-03	5355
-#N/A	Cifra significativa	Fisica		Superiori	La misura		???	1	63	51	113811	4347	0	0	0	863	19.85	1	0	0	785	2005-09-16	5372
+Q1056761	Cifra significativa	Fisica		Superiori	La misura		???	1	63	51	113811	4347	0	0	0	863	19.85	1	0	0	785	2005-09-16	5372
 Q7783183	Termologia	Fisica		Superiori	La termologia		???	1	16	11	27977	1349	0	1	0	885	65.60	0	0	0	152	2005-09-01	5387
-#N/A	Riflessione (fisica)	Fisica		Superiori	La luce		???	1	91	73	163712	6073	0	6	7	1288	21.21	0	0	0	1424	2005-08-22	5397
+Q165939	Riflessione (fisica)	Fisica		Superiori	La luce		???	1	91	73	163712	6073	0	6	7	1288	21.21	0	0	0	1424	2005-08-22	5397
 Q170749	Tensione superficiale	Fisica		Superiori	Grandezze e caratteristiche di un fluido		???	1	196	181	352963	13536	1	6	4	1616	11.94	0	0	0	2913	2005-07-15	5435
 Q178733	Forza centrifuga	Fisica		Superiori	I moti nel piano		???	1	200	173	359531	8952	0	1	0	658	7.35	0	0	0	2340	2005-06-29	5451
-#N/A	Legge di conservazione dell'energia	Fisica		Superiori	Il lavoro e l'energia		???	1	153	148	275714	9238	3	0	3	546	5.91	1	0	0	8203	2005-06-24	5456
+Q11382	Legge di conservazione dell'energia	Fisica		Superiori	Il lavoro e l'energia		???	1	153	148	275714	9238	3	0	3	546	5.91	1	0	0	8203	2005-06-24	5456
 Q38433	Principi della dinamica	Fisica		Superiori	I principi della dinamica e la relatività galileiana		???	1	380	281	682526	34099	9	3	10	1079	3.16	1	0	2	6013	2005-05-19	5492
 Q768575	Lente	Fisica		Superiori	La luce		???	1	96	80	172998	14698	4	9	0	438	2.98	0	0	0	2177	2005-05-18	5493
-#N/A	Viscosità	Fisica		Superiori	Grandezze e caratteristiche di un fluido		???	1	435	435	780859	38022	14	8	3	2247	5.91	0	0	0	9114	2005-05-14	5497
+Q128709	Viscosità	Fisica		Superiori	Grandezze e caratteristiche di un fluido		???	1	435	435	780859	38022	14	8	3	2247	5.91	0	0	0	9114	2005-05-14	5497
 Q179388	Capacità termica	Fisica		Superiori	La termologia		???	1	215	209	386707	7303	9	0	0	735	10.06	0	0	0	2828	2005-04-07	5534
 Q25342	Potenza (fisica)	Fisica		Superiori	Il lavoro e l'energia		???	1	390	296	701626	11783	2	1	0	1452	12.32	1	0	0	1688	2005-03-15	5557
 Q313600	Fotocamera	Fisica		Superiori	La luce		???	1	183	179	328842	82224	89	40	15	1584	1.93	0	0	0	28855	2005-02-17	5583
@@ -825,26 +825,26 @@ Q2481895	Relatività galileiana	Fisica		Superiori	I principi della dinamica e la
 Q219207	Trasformazione galileiana	Fisica		Superiori	I principi della dinamica e la relatività galileiana		???	1	25	23	44206	5053	0	2	0	349	6.91	0	0	0	36	2005-01-22	5609
 Q985318	Legge di conservazione del momento angolare	Fisica		Superiori	Il lavoro e l'energia		???	1	79	75	142461	5258	0	1	0	426	8.10	1	0	0	1165	2005-01-14	5617
 Q192388	Posizione	Fisica		Superiori	I moti nel piano		???	1	28	30	50688	3737	0	1	0	962	25.74	0	0	0	880	2005-01-09	5622
-#N/A	Punto materiale	Fisica		Superiori	Equilibrio dei solidi		???	1	36	32	64762	5607	0	1	0	841	15.00	0	0	0	1215	2005-01-09	5622
+Q1068091	Punto materiale	Fisica		Superiori	Equilibrio dei solidi		???	1	36	32	64762	5607	0	1	0	841	15.00	0	0	0	1215	2005-01-09	5622
 Q190291	Spostamento (cinematica)	Fisica		Superiori	I moti nel piano		???	1	3	4	4511	3496	0	3	0	2759	78.92	1	0	0	36	2005-01-09	5622
 Q172881	Forza centripeta	Fisica		Superiori	I moti nel piano		???	1	149	111	267419	5656	5	1	10	1559	27.56	0	0	0	198	2005-01-04	5627
-#N/A	Momento angolare	Fisica		Superiori	L'accelerazione		???	1	317	332	570074	16468	13	2	16	1534	9.32	0	0	0	6860	2004-12-31	5631
+Q161254	Momento angolare	Fisica		Superiori	L'accelerazione		???	1	317	332	570074	16468	13	2	16	1534	9.32	0	0	0	6860	2004-12-31	5631
 Q25288	Forza peso	Fisica		Superiori	Vettori e forze		???	1	225	199	403621	7385	6	2	0	564	7.64	0	0	0	42080	2004-12-24	5638
 Q178192	Prodotto vettoriale	Fisica		Superiori	Vettori e forze		???	1	269	252	483752	23774	7	3	4	971	4.08	0	0	0	2411	2004-12-21	5641
 Q44528	Vettore (matematica)	Fisica		Superiori	Vettori e forze		???	1	203	166	364369	23550	3	7	4	1735	7.37	0	0	0	49941	2004-12-19	5643
 Q181404	Principio di Archimede	Fisica		Superiori	Equilibrio dei fluidi		???	1	500	449	898720	19472	6	4	5	358	1.84	1	0	0	8560	2004-12-15	5647
 Q181365	Prodotto scalare	Fisica		Superiori	Vettori e forze		???	1	254	251	456003	23244	5	4	6	1218	5.24	0	0	0	6485	2004-12-12	5650
 Q2035846	Moto rettilineo	Fisica		Superiori	La velocità		???	1	164	122	295171	15268	6	1	6	1930	12.64	0	0	0	4146	2004-12-04	5658
-#N/A	Cinematica	Fisica		Superiori	La velocità		???	1	94	77	169327	13318	10	1	1	382	2.87	0	0	0	7660	2004-11-22	5670
+Q11476	Cinematica	Fisica		Superiori	La velocità		???	1	94	77	169327	13318	10	1	1	382	2.87	0	0	0	7660	2004-11-22	5670
 Q181328	Equazione di Bernoulli	Fisica		Superiori	Grandezze e caratteristiche di un fluido		???	1	400	360	719226	11781	5	3	0	632	5.36	1	0	0	1729	2004-11-17	5675
-#N/A	Fluido	Fisica		Superiori	Grandezze e caratteristiche di un fluido		???	1	73	66	131526	5007	2	1	3	473	9.45	0	0	0	721	2004-10-04	5719
+Q102205	Fluido	Fisica		Superiori	Grandezze e caratteristiche di un fluido		???	1	73	66	131526	5007	2	1	3	473	9.45	0	0	0	721	2004-10-04	5719
 Q196538	Microscopio	Fisica		Superiori	La luce		???	1	209	194	376290	33812	2	13	22	2139	6.33	0	0	1	19499	2004-10-01	5722
 Q210546	Principio di equivalenza	Fisica		Superiori	La gravitazione		???	1	37	31	65644	9723	3	0	1	1777	18.28	1	0	0	5233	2004-09-30	5723
-#N/A	Area	Fisica		Superiori	Le grandezze fisiche		???	1	206	203	370231	5425	0	1	0	508	9.36	1	0	0	504	2004-09-26	5727
+Q11500	Area	Fisica		Superiori	Le grandezze fisiche		???	1	206	203	370231	5425	0	1	0	508	9.36	1	0	0	504	2004-09-26	5727
 Q46276	Energia cinetica	Fisica		Superiori	Il lavoro e l'energia		???	1	356	309	639878	13512	1	0	3	530	3.92	0	0	0	3248	2004-09-24	5729
 Q2297853	Energia potenziale gravitazionale	Fisica		Superiori	Il lavoro e l'energia		???	1	86	85	154669	7746	0	0	0	281	3.63	0	0	0	22471	2004-09-24	5729
-#N/A	Ottica	Fisica		Superiori	La luce		???	1	53	47	95632	10048	2	4	8	613	6.10	0	0	0	1113	2004-09-16	5737
-#N/A	Liquido	Fisica		Superiori	Equilibrio dei fluidi		???	1	65	58	117557	3590	1	1	1	112	3.12	0	0	0	539	2004-09-14	5739
+Q14620	Ottica	Fisica		Superiori	La luce		???	1	53	47	95632	10048	2	4	8	613	6.10	0	0	0	1113	2004-09-16	5737
+Q11435	Liquido	Fisica		Superiori	Equilibrio dei fluidi		???	1	65	58	117557	3590	1	1	1	112	3.12	0	0	0	539	2004-09-14	5739
 Q40164	Leva (fisica)	Fisica		Superiori	Equilibrio dei solidi		0	1	337	245	604726	9116	2	6	3	388	4.26	0	0	0	13246	2004-09-02	5751
 Q6485344	Flusso	Fisica		Superiori	Grandezze e caratteristiche di un fluido		???	1	119	123	213574	13422	3	2	8	947	7.06	0	0	0	6297	2004-08-28	5756
 Q219142	Notazione scientifica	Fisica		Superiori	Le grandezze fisiche		???	1	130	111	233335	5831	1	0	0	404	6.93	0	0	0	555	2004-08-28	5756
@@ -1045,7 +1045,7 @@ Q79	Egitto	Geografia			Africa	Egitto	???	1	908	906	1630841	71630	26	17	10	5423	7
 Q408	Australia	Geografia			Oceania e poli	Australia	???	1	1644	1460	2953774	116491	56	44	7	2067	1.77	0	1	0	63315	2004-01-10	5987
 Q794	Iran	Geografia			Asia	Iran	???	1	1022	805	1837105	178202	134	70	57	5531	3.10	0	2	0	67925	2003-12-27	6001
 Q218	Romania	Geografia			Europa	Romania	???	1	1180	1120	2120601	94566	54	55	8	1884	1.99	0	1	0	27665	2003-11-23	6035
-#N/A	Marocco	Geografia			Africa	Marocco	???	1	995	972	1788426	79132	54	40	7	4958	6.27	0	0	0	43075	2003-11-03	6055
+Q1028	Marocco	Geografia			Africa	Marocco	???	1	995	972	1788426	79132	54	40	7	4958	6.27	0	0	0	43075	2003-11-03	6055
 Q142	Francia	Geografia			Europa	Francia	???	1	2140	2038	3846359	157209	94	43	1	7384	4.70	0	0	0	32718	2003-10-30	6059
 Q30	Stati Uniti d'America	Geografia			Americhe	USA	???	1	4218	3854	7579567	194744	149	52	26	7455	3.83	0	2	0	136477	2003-10-30	6059
 Q347	Liechtenstein	Geografia			Europa	Liechtenstein	???	1	931	1363	1672394	39348	34	8	1	2506	6.37	0	1	0	6822	2003-10-13	6076
@@ -1058,7 +1058,7 @@ Q16	Canada	Geografia			Americhe	Canada	???	1	1629	1448	2926820	112952	94	48	12	8
 Q538	Oceania	Geografia			Oceania e poli	Oceania	???	1	548	538	984180	17717	3	6	1	1123	6.34	1	1	0	1514	2003-09-28	6091
 Q15	Africa	Geografia			Africa	Africa	???	1	1045	1071	1877135	61292	34	19	11	1163	1.90	0	0	0	10950	2003-09-26	6093
 Q11750	Stati del mondo	Geografia			Geografia politica ed economica	Stati del mondo	???	1	806	738	1448856	30929	7	3	0	539	1.74	0	0	0	2003-09-22	2003-09-22	6097
-#N/A	Fauna	Geografia			Geografia fisica	Fauna	???	1	85	72	152537	3183	0	1	0	271	8.51	0	0	0	2003-09-17	2003-09-17	6102
+Q104021	Fauna	Geografia			Geografia fisica	Fauna	???	1	85	72	152537	3183	0	1	0	271	8.51	0	0	0	2003-09-17	2003-09-17	6102
 Q18	America meridionale	Geografia			Americhe	America meridionale	???	1	286	417	513656	37076	11	14	3	3502	9.45	0	0	0	2908	2003-09-08	6111
 Q6583	Deserto del Sahara	Geografia			Africa	Sahara	???	1	325	312	583359	27206	24	10	0	762	2.80	0	0	0	8938	2003-09-08	6111
 Q828	America	Geografia			Americhe	Americhe	???	1	599	510	1076301	27236	8	5	2	7973	29.27	0	0	0	7934	2003-09-06	6113
@@ -1256,7 +1256,7 @@ Q3685155	Complemento di modo o maniera	Grammatica italiana			Analisi logica	comp
 Q161736	Virgola	Grammatica italiana			Punteggiatura	Virgola	???	1	71	68	126726	5159	1	2	0	468	9.07	1	0	0	0	2005-09-30	5358
 Q34698	Aggettivo	Grammatica italiana			Aggettivo	Aggettivi	???	1	173	135	310682	8930	11	0	5	428	4.79	1	0	2	1762	2005-08-21	5398
 Q38035	Consonante	Grammatica italiana			Fonologia, ortografia	Le consonanti	???	1	68	68	121509	7325	0	0	6	935	12.76	2	0	0	8044	2005-08-04	5415
-#N/A	Dittongo	Grammatica italiana			Fonologia, ortografia	Dittonghi	???	1	155	126	278135	10128	2	0	4	1263	12.47	1	0	0	1844	2005-07-28	5422
+Q102532	Dittongo	Grammatica italiana			Fonologia, ortografia	Dittonghi	???	1	155	126	278135	10128	2	0	4	1263	12.47	1	0	0	1844	2005-07-28	5422
 #N/A	Accento distintivo sui monosillabi	Grammatica italiana			Fonologia, ortografia	Accento	???	1	55	32	98308	37584	21	0	0	2311	6.15	0	0	0	9156	2005-07-20	5430
 Q41796	Frase	Grammatica italiana			Analisi logica	La frase	0.4	1	42	34	74629	7894	6	3	4	1706	21.61	0	0	0	0	2005-07-13	5437
 Q179080	Predicato	Grammatica italiana			Verbo	Funzioni dei verbi	???	1	103	92	184479	4500	0	0	0	3852	85.60	1	0	0	508	2005-07-09	5441
@@ -1424,7 +1424,7 @@ Q1091461	Overloading	Informatica		Superiori	Programmazione in C ed a oggetti		2	
 Q7247856	Software di produttività personale	Informatica		Superiori	Office automation		2	1	44	41	78495	3101	0	1	0	837	26.99	0	0	0	41	2005-08-16	5403
 Q254183	Realtà aumentata	Informatica		Superiori	Basi dell'informatica		2	1	138	107	248276	9039	14	1	1	631	6.98	0	0	0	9090	2005-08-10	5409
 Q624546	Modello E-R	Informatica		Superiori	Base di dati		2	1	126	130	225803	20980	2	2	4	1560	7.44	1	0	0	9540	2005-08-01	5418
-#N/A	Tupla	Informatica		Superiori	Base di dati		2	1	42	45	76325	1608	0	0	0	1215	75.56	3	0	0	41	2005-07-27	5423
+Q1000462	Tupla	Informatica		Superiori	Base di dati		2	1	42	45	76325	1608	0	0	0	1215	75.56	3	0	0	41	2005-07-27	5423
 Q13741	Integrated development environment	Informatica		Superiori	Programmazione		2	1	71	78	127696	6429	0	4	0	780	12.13	1	0	0	118	2005-07-22	5428
 Q3932296	Relational database management system	Informatica		Superiori	Base di dati		2	1	33	37	59247	5988	1	0	0	508	8.48	2	1	2	886	2005-07-19	5431
 Q211496	Linguaggio di programmazione ad alto livello	Informatica		Superiori	Programmazione		2	1	44	46	78951	11613	1	0	0	283	2.44	1	0	0	4174	2005-07-03	5447
@@ -1667,7 +1667,7 @@ Q3935840	Rimatori toscani di transizione	Letteratura italiana		Superiori	XIII se
 Q630832	Storie fiorentine	Letteratura italiana		Superiori	XVI Secolo	Francesco Guicciardini	2.3	1	6	5	10532	2044	0	0	1	179	8.76	1	0	0	931	2007-01-08	4893
 Q1754072	Novelle per un anno	Letteratura italiana		Superiori	Primo novecento	Luigi Pirandello	2.5	1	119	107	213282	21265	6	3	0	123	0.58	0	0	0	1413	2007-01-07	4894
 Q3612319	Alla sera	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	2.4	1	224	216	401871	19276	5	2	5	548	2.84	0	0	0	2897	2007-01-02	4899
-#N/A	Caccia (musica)	Letteratura italiana		Superiori	Secolo XIV	Forme letterarie	2.3	1	6	6	11423	3425	0	0	2	895	26.13	0	0	0	50	2006-12-30	4902
+Q1024999	Caccia (musica)	Letteratura italiana		Superiori	Secolo XIV	Forme letterarie	2.3	1	6	6	11423	3425	0	0	2	895	26.13	0	0	0	50	2006-12-30	4902
 Q3878016	Non chiederci la parola che squadri da ogni lato	Letteratura italiana		Superiori	Il secolo breve	Eugenio Montale	2.5	1	37	42	66517	2396	0	0	0	167	6.97	1	0	0	1000	2006-12-22	4910
 Q3832975	Lingua volgare	Letteratura italiana		Superiori	XI-XII Secolo	Origini della letteratura italiana	2.3	1	155	145	278286	8371	1	1	0	865	10.33	0	0	0	7931	2006-12-13	4919
 Q191890	Commedia dell'arte	Letteratura italiana		Superiori	XVIII Secolo	Coordinate generali	2.4	1	237	222	426418	69421	13	18	73	1921	2.77	1	0	0	28021	2006-12-12	4920
@@ -1723,7 +1723,7 @@ Q4489699	A Silvia	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopar
 Q18081	De vulgari eloquentia	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	148	159	265840	8342	3	2	2	582	6.98	0	0	0	2796	2006-07-20	5065
 Q3855153	Meriggiare pallido e assorto	Letteratura italiana		Superiori	Il secolo breve	Eugenio Montale	2.5	1	64	73	115457	4849	0	1	0	664	13.69	1	0	0	681	2006-07-16	5069
 Q774625	Giacomo Lubrano	Letteratura italiana		Superiori	XVII Secolo	Autori minori	2.4	1	4	8	8008	25550	0	0	1	808	3.16	0	0	0	50	2006-07-15	5070
-#N/A	Delio Tessa	Letteratura italiana		Superiori	Il secolo breve	Autori minori	2.5	1	8	8	14103	10120	2	1	12	1	0.01	0	0	0	1377	2006-07-07	5078
+Q1081300	Delio Tessa	Letteratura italiana		Superiori	Il secolo breve	Autori minori	2.5	1	8	8	14103	10120	2	1	12	1	0.01	0	0	0	1377	2006-07-07	5078
 Q492173	Miracolo economico italiano	Letteratura italiana		Superiori	Dopoguerra	Coordinate generali	???	1	264	256	474943	39827	2	6	5	661	1.66	1	8	0	3470	2006-06-19	5096
 Q963619	Letteratura medievale	Letteratura italiana		Superiori	XIII secolo	Coordinate generali	2.3	1	59	56	105866	21523	3	5	0	1203	5.59	0	0	0	1349	2006-06-02	5113
 Q3772477	Glossario di Monza	Letteratura italiana		Superiori	XI-XII Secolo	Origini della letteratura italiana	2.3	1	2	2	3543	1776	0	0	4	1021	57.49	1	0	0	50	2006-05-30	5116
@@ -1731,13 +1731,13 @@ Q3678183	Ciro di Pers	Letteratura italiana		Superiori	XVII Secolo	Autori minori	
 Q2465530	Orlando innamorato	Letteratura italiana		Superiori	XV Secolo	Matteo Maria Boiardo	2.3	1	143	126	257456	70017	2	2	0	1175	1.68	1	0	0	2875	2006-05-26	5120
 Q134221	Monarchia (Dante)	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	89	93	160452	30045	3	1	0	997	3.32	1	0	0	3552	2006-05-20	5126
 Q3822884	La luna e i falò	Letteratura italiana		Superiori	Dopoguerra	Cesare Pavese	2.5	1	193	199	346139	12116	6	0	2	369	3.05	0	0	0	7263	2006-05-17	5129
-#N/A	Boccaccio	Letteratura italiana		Superiori	Secolo XIV	Boccaccio	???	1	26	17	47503	32	0	0	0	29	90.63	0	0	0	0	2006-05-16	5130
-#N/A	Secondo dopoguerra	Letteratura italiana		Superiori	Dopoguerra	Coordinate generali	2.5	1	28	31	49770	40	0	0	0	37	92.50	0	0	0	0	2006-05-04	5142
+Q1402	Boccaccio	Letteratura italiana		Superiori	Secolo XIV	Boccaccio	???	1	26	17	47503	32	0	0	0	29	90.63	0	0	0	0	2006-05-16	5130
+Q3954040	Secondo dopoguerra	Letteratura italiana		Superiori	Dopoguerra	Coordinate generali	2.5	1	28	31	49770	40	0	0	0	37	92.50	0	0	0	0	2006-05-04	5142
 Q3762204	Giacomo Noventa	Letteratura italiana		Superiori	Il secolo breve	Autori minori	2.5	1	9	12	16630	13777	6	1	22	0	0.00	0	0	0	50	2006-04-24	5152
 Q641651	Sei personaggi in cerca d'autore	Letteratura italiana		Superiori	Primo novecento	Luigi Pirandello	2.5	1	239	229	429685	8379	0	1	0	677	8.08	0	0	0	760	2006-04-22	5154
 Q521191	Alberto Arbasino	Letteratura italiana		Superiori	Anni 60-63	Autori minori	2.5	1	100	59	178948	34937	29	6	57	462	1.32	0	0	0	7285	2006-04-18	5158
 Q210854	Ars nova	Letteratura italiana		Superiori	Secolo XIV	Forme letterarie	2.3	1	39	35	70913	6786	0	0	2	1324	19.51	0	0	0	2942	2006-04-06	5170
-#N/A	Giuseppe Pontiggia	Letteratura italiana		Superiori	Dagli anni 80 in poi	Autori vari	2.5	1	41	43	73857	16180	14	4	23	72	0.44	0	0	0	2920	2006-04-03	5173
+Q1179618	Giuseppe Pontiggia	Letteratura italiana		Superiori	Dagli anni 80 in poi	Autori vari	2.5	1	41	43	73857	16180	14	4	23	72	0.44	0	0	0	2920	2006-04-03	5173
 Q1618027	Rosso Malpelo	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	2.4	1	487	464	874542	7523	3	1	6	317	4.21	0	0	0	564	2006-03-28	5179
 Q3937297	Ritmo bellunese	Letteratura italiana		Superiori	XI-XII Secolo	Origini della letteratura italiana	2.3	1	4	5	7391	1782	0	0	1	1137	63.80	1	0	0	557	2006-03-21	5186
 Q16323364	Ernesto	Letteratura italiana		Superiori	Il secolo breve	Umberto Saba	2.5	1	18	14	31793	11057	9	6	4	3	0.03	0	0	0	0	2006-03-10	5197
@@ -1746,7 +1746,7 @@ Q3607564	Al cor gentil rempaira sempre amore	Letteratura italiana		Superiori	XII
 Q317142	Leonardo Sciascia	Letteratura italiana		Superiori	Anni 60-58	Leonardo Sciascia	2.5	1	476	556	855272	94416	53	13	67	1215	1.29	1	1	0	11980	2006-02-13	5222
 Q5977111	Letteratura romantica	Letteratura italiana		Superiori	Primo Ottocento	Coordinate generali	2.4	1	46	39	83302	29194	1	15	6	737	2.52	0	0	0	50	2006-02-08	5227
 Q780989	Alessandro Verri	Letteratura italiana		Superiori	XVIII Secolo	Illuminismo italiano	2.4	1	28	22	50223	11757	6	2	22	2	0.02	0	0	0	4714	2006-02-02	5233
-#N/A	Se una notte d'inverno un viaggiatore	Letteratura italiana		Superiori	Anni 60-49	Italo Calvino	2.5	1	161	146	289833	17540	1	0	1	837	4.77	0	0	0	883	2006-02-02	5233
+Q1032190	Se una notte d'inverno un viaggiatore	Letteratura italiana		Superiori	Anni 60-49	Italo Calvino	2.5	1	161	146	289833	17540	1	0	1	837	4.77	0	0	0	883	2006-02-02	5233
 Q389380	Il visconte dimezzato	Letteratura italiana		Superiori	Anni 60-53	Italo Calvino	2.5	1	259	241	465726	10762	2	1	0	982	9.12	0	0	0	125	2006-01-31	5235
 Q2450161	Il barone rampante	Letteratura italiana		Superiori	Anni 60-52	Italo Calvino	2.5	1	354	340	635891	12580	2	1	0	647	5.14	0	0	0	1348	2006-01-29	5237
 Q604448	Antonio Pucci (poeta)	Letteratura italiana		Superiori	Secolo XIV	Autori minori	2.3	1	6	5	9895	3206	0	0	23	3	0.09	1	0	0	50	2006-01-21	5245
@@ -1757,28 +1757,28 @@ Q3233315	Gli indifferenti	Letteratura italiana		Superiori	Il secolo breve	Albert
 Q4024389	Zibaldone	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	166	168	298210	15803	9	1	23	285	1.80	0	0	0	726	2006-01-09	5257
 #N/A	Il sentiero dei nidi di ragno	Letteratura italiana		Superiori	Anni 60-54	Italo Calvino	2.5	1	401	367	721151	32874	9	1	4	510	1.55	0	0	0	7988	2006-01-08	5258
 Q1394860	Pier della Vigna	Letteratura italiana		Superiori	XIII secolo - Scuola siciliana	Scuola siciliana	2.3	1	111	104	198604	10385	4	1	51	191	1.84	0	0	0	2441	2006-01-08	5258
-#N/A	Guido Gozzano	Letteratura italiana		Superiori	Primo novecento	Crepuscolarismo	2.5	1	190	176	340736	37116	26	10	16	1486	4.00	0	0	0	8191	2006-01-07	5259
+Q1131281	Guido Gozzano	Letteratura italiana		Superiori	Primo novecento	Crepuscolarismo	2.5	1	190	176	340736	37116	26	10	16	1486	4.00	0	0	0	8191	2006-01-07	5259
 Q550318	Pietro Verri	Letteratura italiana		Superiori	XVIII Secolo	Illuminismo italiano	2.4	1	89	86	160597	25335	16	8	26	3	0.01	0	0	0	2234	2006-01-03	5263
 Q14378	Neoclassicismo	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Coordinate generali	2.4	1	450	419	809348	19399	5	12	5	975	5.03	0	2	0	5434	2005-12-31	5266
 Q256922	Estetismo	Letteratura italiana		Superiori	Secondo Ottocento	Coordinate generali	2.4	1	245	223	439670	14486	7	9	0	1925	13.29	0	0	0	50	2005-12-10	5287
-#N/A	Il deserto dei Tartari	Letteratura italiana		Superiori	Dopoguerra	Dino Buzzati	2.5	1	22	2	38900	11297	2	0	16	344	3.05	0	0	0	2514	2005-12-08	5289
-#N/A	La meglio gioventù	Letteratura italiana		Superiori	Dopoguerra	Pier Paolo Pasolini	2.5	1	263	232	472236	34680	5	1	0	509	1.47	0	0	0	2345	2005-11-27	5300
+Q1216707	Il deserto dei Tartari	Letteratura italiana		Superiori	Dopoguerra	Dino Buzzati	2.5	1	22	2	38900	11297	2	0	16	344	3.05	0	0	0	2514	2005-12-08	5289
+Q1217941	La meglio gioventù	Letteratura italiana		Superiori	Dopoguerra	Pier Paolo Pasolini	2.5	1	263	232	472236	34680	5	1	0	509	1.47	0	0	0	2345	2005-11-27	5300
 Q2249636	Il sistema periodico	Letteratura italiana		Superiori	Dopoguerra	Primo Levi	2.5	1	124	152	221963	8118	4	1	9	130	1.60	0	0	0	619	2005-11-20	5307
 Q3724493	Emilio Praga	Letteratura italiana		Superiori	Secondo Ottocento	Scapigliatura	2.4	1	32	32	57970	10085	0	2	3	193	1.91	0	0	0	50	2005-11-16	5311
 Q666014	Convivio	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	150	145	270049	10271	3	1	5	350	3.41	1	0	0	3367	2005-11-08	5319
 Q3828598	Le ceneri di Gramsci	Letteratura italiana		Superiori	Dopoguerra	Pier Paolo Pasolini	2.5	1	35	33	62921	10075	2	1	9	465	4.62	0	0	0	1015	2005-11-05	5322
-#N/A	Canzoniere	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	22	16	39543	5100	3	0	0	1858	36.43	0	0	0	41	2005-11-03	5324
-#N/A	Goffredo Parise	Letteratura italiana		Superiori	Anni 60-62	Autori minori	2.5	1	103	97	184226	25907	7	3	11	1	0.00	0	0	0	3005	2005-10-23	5335
-#N/A	Letteratura cavalleresca	Letteratura italiana		Superiori	XIII secolo	Coordinate generali	2.3	1	91	88	162752	14248	2	2	0	587	4.12	1	0	0	2993	2005-10-22	5336
+Q11690026	Canzoniere	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	22	16	39543	5100	3	0	0	1858	36.43	0	0	0	41	2005-11-03	5324
+Q1132008	Goffredo Parise	Letteratura italiana		Superiori	Anni 60-62	Autori minori	2.5	1	103	97	184226	25907	7	3	11	1	0.00	0	0	0	3005	2005-10-23	5335
+Q1159457	Letteratura cavalleresca	Letteratura italiana		Superiori	XIII secolo	Coordinate generali	2.3	1	91	88	162752	14248	2	2	0	587	4.12	1	0	0	2993	2005-10-22	5336
 Q28730	Saul	Letteratura italiana		Superiori	XVIII Secolo	Vittorio Alfieri	2.4	1	102	93	183322	9663	10	2	4	446	4.62	0	0	0	414	2005-10-22	5336
 Q193217	Madrigale	Letteratura italiana		Superiori	Secolo XIV	Forme letterarie	2.3	1	150	156	268746	12753	0	1	5	1016	7.97	0	0	0	12150	2005-10-05	5353
-#N/A	Le città invisibili	Letteratura italiana		Superiori	Anni 60-50	Italo Calvino	2.5	1	238	243	428552	11564	3	0	6	191	1.65	0	0	0	1574	2005-10-04	5354
-#N/A	La locandiera	Letteratura italiana		Superiori	XVIII Secolo	Carlo Goldoni	2.4	1	322	297	578640	13192	2	1	0	656	4.97	1	0	0	911	2005-10-03	5355
+Q1219705	Le città invisibili	Letteratura italiana		Superiori	Anni 60-50	Italo Calvino	2.5	1	238	243	428552	11564	3	0	6	191	1.65	0	0	0	1574	2005-10-04	5354
+Q1232053	La locandiera	Letteratura italiana		Superiori	XVIII Secolo	Carlo Goldoni	2.4	1	322	297	578640	13192	2	1	0	656	4.97	1	0	0	911	2005-10-03	5355
 Q509504	Franco Fortini	Letteratura italiana		Superiori	Anni 60-65	Autori minori	2.5	1	64	64	114718	84336	6	1	14	131	0.16	1	0	0	4317	2005-09-21	5367
 Q836036	Se questo è un uomo	Letteratura italiana		Superiori	Dopoguerra	Primo Levi	2.5	1	590	584	1060293	29131	20	3	11	830	2.85	0	0	0	7186	2005-09-10	5378
 Q2238230	A ciascuno il suo (romanzo)	Letteratura italiana		Superiori	Anni 60-56	Leonardo Sciascia	2.5	1	2	0	5621	5621	2	0	3	495	8.81	0	0	0	254	2005-09-09	5379
 Q650906	Giovanni Della Casa	Letteratura italiana		Superiori	XVI Secolo	Autori minori	2.3	1	59	57	105681	10236	2	6	4	119	1.16	0	0	0	3505	2005-09-07	5381
-#N/A	Pietro Giordani	Letteratura italiana		Superiori	Primo Ottocento	Autori Minori	2.4	1	68	41	122641	16228	3	2	0	1	0.01	0	0	0	950	2005-09-05	5383
+Q1092339	Pietro Giordani	Letteratura italiana		Superiori	Primo Ottocento	Autori Minori	2.4	1	68	41	122641	16228	3	2	0	1	0.01	0	0	0	950	2005-09-05	5383
 Q3221445	Il cinque maggio	Letteratura italiana		Superiori	Primo Ottocento	Alessandro Manzoni	2.4	1	376	339	676475	20898	20	5	14	528	2.53	0	0	0	4261	2005-08-25	5394
 Q2641504	Indovinello veronese	Letteratura italiana		Superiori	XI-XII Secolo	Origini della letteratura italiana	2.3	1	192	210	344485	13756	5	1	19	1987	14.44	1	0	0	8266	2005-08-23	5396
 Q641668	Mamma Roma	Letteratura italiana		Superiori	Dopoguerra	Pier Paolo Pasolini	2.5	1	119	96	214019	11487	6	2	3	407	3.54	1	0	0	282	2005-08-23	5396
@@ -2065,7 +2065,7 @@ Q845060	Massimo e minimo di una funzione	Matematica		Superiori	Studio di funzion
 #N/A	Metodi per il calcolo della radice quadrata	Matematica		Medie	Aritmetica	Radici quadrate	1.2	1	49	33	87966	27658	0	0	0	223	0.81	1	0	0	795	2005-12-02	5295
 Q3064604	Fascio di rette	Matematica		Superiori	Geometria	Rette	2.1	1	35	40	62769	3318	0	2	0	229	6.90	1	0	0	40	2005-11-29	5298
 Q191884	Funzione inversa	Matematica		Superiori	Funzioni	Tipi di funzione	2.3	1	68	56	122057	14966	0	6	0	939	6.27	1	0	0	40	2005-11-28	5299
-#N/A	Limite notevole	Matematica		Superiori	Studio di funzioni	Limiti	2.5	1	79	61	142672	12417	0	0	0	383	3.08	1	0	0	3805	2005-11-09	5318
+Q1022111	Limite notevole	Matematica		Superiori	Studio di funzioni	Limiti	2.5	1	79	61	142672	12417	0	0	0	383	3.08	1	0	0	3805	2005-11-09	5318
 Q212794	Punto di flesso	Matematica		Superiori	Studio di funzioni	Derivate	2.5	1	96	90	171935	6951	0	3	1	438	6.30	1	0	0	2978	2005-11-09	5318
 Q601053	Radicale (matematica)	Matematica		Superiori	Aritmetica	Radicali	2.2	1	76	58	135837	16591	1	0	0	830	5.00	1	0	0	737	2005-11-01	5326
 Q3730872	Equazione fratta	Matematica		Superiori	Algebra	Equazioni lineari	2.1	1	14	17	24659	3260	2	0	3	402	12.33	0	0	0	40	2005-10-31	5327
@@ -2105,22 +2105,22 @@ Q32043	Addizione	Matematica		Elementari	Le quattro operazioni	Addizione	0.2	1	96
 Q177239	Limite (matematica)	Matematica		Superiori	Studio di funzioni	Limiti	2.5	1	163	144	293436	8452	1	0	7	656	7.76	0	0	0	7493	2005-07-07	5443
 Q189136	Teorema di Lagrange	Matematica		Superiori	Studio di funzioni	Derivate	2.5	1	245	251	440181	14442	3	1	2	673	4.66	0	0	0	1052	2005-07-07	5443
 Q322666	Regola di Cramer	Matematica		Superiori	Aritmetica	Sistemi lineari	2.2	1	114	110	204212	17237	0	1	4	543	3.15	0	0	0	3416	2005-06-28	5452
-#N/A	Coseno	Matematica		Superiori	Trigonometria	Funzioni base	2.4	1	166	156	298656	16399	15	5	6	1409	8.59	0	0	0	7328	2005-06-25	5455
-#N/A	Tangente (matematica)	Matematica		Superiori	Trigonometria	Funzioni base	2.4	1	281	262	504368	9545	11	3	15	718	7.52	0	0	0	1769	2005-06-25	5455
+Q1256164	Coseno	Matematica		Superiori	Trigonometria	Funzioni base	2.4	1	166	156	298656	16399	15	5	6	1409	8.59	0	0	0	7328	2005-06-25	5455
+Q1129196	Tangente (matematica)	Matematica		Superiori	Trigonometria	Funzioni base	2.4	1	281	262	504368	9545	11	3	15	718	7.52	0	0	0	1769	2005-06-25	5455
 Q2704282	Regola di Ruffini	Matematica		Superiori	Algebra	Polinomi	2.1	1	187	183	336074	12632	2	0	6	432	3.42	1	0	0	3497	2005-06-24	5456
 Q47306354	Funzione esponenziale	Matematica		Superiori	Funzioni	Funzione esponenziale	2.4	1	209	170	375083	23512	9	4	1	1104	4.70	0	0	0	7802	2005-06-22	5458
-#N/A	Disequazione	Matematica		Superiori	Algebra	Disequazioni lineari	2.1	1	59	62	105196	6057	4	0	5	904	14.92	0	0	0	2178	2005-06-09	5471
-#N/A	Triangolo equilatero	Matematica		Elementari	Geometria	Triangoli	0.5	1	188	141	337219	4192	1	2	0	1630	38.88	1	0	0	40	2005-06-08	5472
-#N/A	Triangolo rettangolo	Matematica		Elementari	Geometria	Triangoli	0.5	1	257	255	460952	6278	2	7	0	1136	18.09	0	0	0	1140	2005-06-08	5472
-#N/A	Primitiva (matematica)	Matematica		Superiori	Studio di funzioni	Integrali	2.5	1	75	68	135353	5327	2	1	3	722	13.55	0	0	0	1085	2005-05-31	5480
+Q165309	Disequazione	Matematica		Superiori	Algebra	Disequazioni lineari	2.1	1	59	62	105196	6057	4	0	5	904	14.92	0	0	0	2178	2005-06-09	5471
+Q157002	Triangolo equilatero	Matematica		Elementari	Geometria	Triangoli	0.5	1	188	141	337219	4192	1	2	0	1630	38.88	1	0	0	40	2005-06-08	5472
+Q158688	Triangolo rettangolo	Matematica		Elementari	Geometria	Triangoli	0.5	1	257	255	460952	6278	2	7	0	1136	18.09	0	0	0	1140	2005-06-08	5472
+Q114326	Primitiva (matematica)	Matematica		Superiori	Studio di funzioni	Integrali	2.5	1	75	68	135353	5327	2	1	3	722	13.55	0	0	0	1085	2005-05-31	5480
 Q50708	Divisore	Matematica		Elementari	Le quattro operazioni	Divisione	0.2	1	74	61	132718	13194	0	0	0	914	6.93	1	0	0	2517	2005-05-29	5482
 Q3760348	Geometria piana	Matematica		Superiori	Geometria	Geometria piana	2.1	1	16	13	28937	3274	0	0	0	121	3.70	2	0	0	277	2005-05-29	5482
-#N/A	Potenza di due	Matematica		Medie	Aritmetica	Potenze	1.1	1	116	123	209225	13903	0	0	0	449	3.23	1	0	0	40	2005-05-24	5487
-#N/A	Massimo comun divisore	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	232	187	417654	10417	1	0	1	1196	11.48	0	0	0	1277	2005-05-22	5489
+Q1136880	Potenza di due	Matematica		Medie	Aritmetica	Potenze	1.1	1	116	123	209225	13903	0	0	0	449	3.23	1	0	0	40	2005-05-24	5487
+Q131752	Massimo comun divisore	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	232	187	417654	10417	1	0	1	1196	11.48	0	0	0	1277	2005-05-22	5489
 Q181658	Parallelepipedo	Matematica		Medie	Geometria	I solidi	1.3	1	175	138	314712	3975	0	3	0	372	9.36	0	0	0	40	2005-05-17	5494
 Q180544	Prisma	Matematica		Medie	Geometria	I solidi	1.3	1	169	120	303476	3553	0	4	0	245	6.90	0	1	0	40	2005-05-17	5494
 Q735660	Sistema di equazioni	Matematica		Medie	Aritmetica	Algebra	1.3	1	53	42	95049	9313	0	1	0	440	4.72	0	0	0	155	2005-05-06	5505
-#N/A	Criteri di congruenza dei triangoli	Matematica		Superiori	Geometria	Triangoli	2.1	1	161	111	288618	8753	3	1	0	404	4.62	0	0	0	7655	2005-04-26	5515
+Q10955875	Criteri di congruenza dei triangoli	Matematica		Superiori	Geometria	Triangoli	2.1	1	161	111	288618	8753	3	1	0	404	4.62	0	0	0	7655	2005-04-26	5515
 Q3358290	Piramide (geometria)	Matematica		Medie	Geometria	I solidi	1.3	1	97	63	175136	6380	1	3	0	595	9.33	0	0	0	8020	2005-04-22	5519
 Q37555	Poligono	Matematica		Elementari	Geometria	Poligoni	0.5	1	348	254	624605	6871	0	3	0	553	8.05	0	0	0	13110	2005-04-22	5519
 Q203066	Relazione (matematica)	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	44	44	79558	4320	0	0	1	106	2.45	1	0	0	40	2005-04-16	5525
@@ -2130,24 +2130,24 @@ Q36810	Quadrilatero	Matematica		Elementari	Geometria	Quadrilatero	0.5	1	164	137	
 Q845118	Ordine delle operazioni	Matematica		Medie	Aritmetica	Algebra	1.3	1	210	131	377285	3600	0	0	0	2369	65.81	1	0	0	1871	2005-03-20	5552
 Q812880	Cubo	Matematica		Medie	Geometria	I solidi	1.3	1	100	79	179644	7689	0	7	0	929	12.08	0	0	0	15242	2005-03-11	5561
 Q182003	Funzione iniettiva	Matematica		Superiori	Funzioni	Tipi di funzione	2.3	1	172	165	308429	10886	7	4	5	731	6.72	0	0	0	7639	2005-02-13	5587
-#N/A	Relazione binaria	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	23	22	40744	3959	2	0	2	337	8.51	0	0	0	40	2005-02-07	5593
+Q130901	Relazione binaria	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	23	22	40744	3959	2	0	2	337	8.51	0	0	0	40	2005-02-07	5593
 Q3997732	Trasformazione geometrica piana	Matematica		Superiori	Funzioni	Trasformazioni	2.3	1	13	9	23194	4371	0	2	0	1384	31.66	1	0	0	292	2005-01-28	5603
 Q33456	Potenza (matematica)	Matematica		Medie	Aritmetica	Potenze	1.1	1	193	132	346140	10244	0	1	0	1001	9.77	1	0	0	2348	2005-01-21	5610
 #N/A	Numero di Eulero	Matematica		Superiori	Funzioni	Funzione esponenziale	2.4	1	6	4	11375	1182	0	0	1	1054	89.17	0	0	0	0	2005-01-16	5615
 Q193623	Binomio	Matematica		Medie	Aritmetica	Algebra	1.2	1	48	35	86748	2692	4	1	5	296	11.00	0	0	0	326	2005-01-11	5620
-#N/A	Logaritmo	Matematica		Superiori	Funzioni	Funzione logaritmica	2.4	1	443	320	795423	20016	1	3	1	1478	7.38	0	0	0	529	2005-01-11	5620
+Q11197	Logaritmo	Matematica		Superiori	Funzioni	Funzione logaritmica	2.4	1	443	320	795423	20016	1	3	1	1478	7.38	0	0	0	529	2005-01-11	5620
 Q275447	Coefficiente angolare	Matematica		Superiori	Aritmetica	Piano cartesiano	2.2	1	170	118	305194	3273	0	1	0	2654	81.09	1	0	0	1028	2004-12-21	5641
-#N/A	Teorema del coseno	Matematica		Superiori	Trigonometria	Formule trigonometriche	2.4	1	219	101	394079	3717	0	1	1	563	15.15	1	0	0	40	2004-12-16	5646
+Q164321	Teorema del coseno	Matematica		Superiori	Trigonometria	Formule trigonometriche	2.4	1	219	101	394079	3717	0	1	1	563	15.15	1	0	0	40	2004-12-16	5646
 Q48297	Parabola (geometria)	Matematica		Superiori	Aritmetica	Equazioni di II grado	2.2	1	232	159	417394	28227	1	10	0	686	2.43	0	0	0	6049	2004-12-07	5655
-#N/A	Segmento	Matematica		Medie	Geometria	Enti fondamentali	1.1	1	69	50	124657	2647	0	4	0	815	30.79	1	0	0	1880	2004-11-30	5662
+Q166154	Segmento	Matematica		Medie	Geometria	Enti fondamentali	1.1	1	69	50	124657	2647	0	4	0	815	30.79	1	0	0	1880	2004-11-30	5662
 Q81365	Sistema numerico decimale	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	89	76	159910	2193	0	0	2	407	18.56	2	1	0	2691	2004-11-27	5665
 Q177051	Triangolo di Tartaglia	Matematica		Superiori	Algebra	Polinomi	2.1	1	151	142	271040	21169	6	3	2	583	2.75	0	0	0	7859	2004-11-14	5678
-#N/A	Sistema di equazioni lineari	Matematica		Superiori	Aritmetica	Sistemi lineari	2.2	1	73	66	130930	12152	7	0	5	504	4.15	0	0	0	1089	2004-11-06	5686
+Q11203	Sistema di equazioni lineari	Matematica		Superiori	Aritmetica	Sistemi lineari	2.2	1	73	66	130930	12152	7	0	5	504	4.15	0	0	0	1089	2004-11-06	5686
 Q3250296	Angolo acuto	Matematica		Medie	Geometria	Angoli	1.1	1	68	40	123070	1511	0	1	0	569	37.66	1	0	0	40	2004-11-02	5690
 Q2802178	Angolo ottuso	Matematica		Medie	Geometria	Angoli	1.1	1	79	55	142336	1100	0	1	0	509	46.27	1	0	0	40	2004-11-02	5690
 Q3650501	Calcolo combinatorio	Matematica		Superiori	Calcolo combinatorio	Calcolo combinatiorio	2.4	1	232	211	416573	10498	0	0	0	1007	9.59	0	0	0	2531	2004-11-01	5691
 Q19821	Triangolo	Matematica		Elementari	Geometria	Triangoli	0.5	1	251	199	451266	16815	0	8	1	62	0.37	0	0	0	6164	2004-10-27	5696
-#N/A	Miliardo	Matematica		Elementari	Aritmetica	Milioni&miliardi	0.5	1	151	151	271239	2119	0	0	0	929	43.84	0	0	0	40	2004-10-18	5705
+Q16021	Miliardo	Matematica		Elementari	Aritmetica	Milioni&miliardi	0.5	1	151	151	271239	2119	0	0	0	929	43.84	0	0	0	40	2004-10-18	5705
 Q170008	Progressione aritmetica	Matematica		Superiori	Funzioni	Successioni	2.3	1	72	64	129266	3575	0	0	0	376	10.52	0	0	0	683	2004-10-03	5720
 Q174728	Centimetro	Matematica		Elementari	Unità di misura	Lungezza	0.2	1	45	28	81174	42	0	0	0	39	92.86	0	0	0	40	2004-09-28	5725
 Q44946	Punto (geometria)	Matematica		Medie	Geometria	Enti fondamentali	1.1	1	119	92	213374	4348	0	0	0	406	9.34	1	0	0	620	2004-09-28	5725
@@ -2197,7 +2197,7 @@ Q238231	Cerchio	Matematica		Elementari	Geometria	Cerchio	0.5	1	286	208	513053	15
 Q484298	Superficie	Matematica		Superiori	Geometria	Superfici equivalenti	2.2	1	78	71	139875	18633	2	39	0	1390	7.46	0	0	0	4156	2004-04-26	5880
 Q541961	Punto di discontinuità	Matematica		Superiori	Studio di funzioni	Funzioni continue	2.5	1	62	56	111772	8211	4	3	0	1763	21.47	0	0	0	1948	2004-04-15	5891
 Q36161	Insieme	Matematica		Superiori	Insiemi e logica	Insiemi	1.3	1	204	167	366211	11579	0	6	4	715	6.17	0	0	0	5386	2004-03-30	5907
-#N/A	Minimo comune multiplo	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	313	219	562793	7381	1	0	1	804	10.89	0	0	0	2233	2004-03-28	5909
+Q102761	Minimo comune multiplo	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	313	219	562793	7381	1	0	1	804	10.89	0	0	0	2233	2004-03-28	5909
 #N/A	Angolo	Matematica		Medie	Geometria	Angoli	1.1	1	192	129	345319	30574	1	8	0	2140	7.00	2	0	1	27456	2004-03-24	5913
 Q243723	Monomio	Matematica		Medie	Aritmetica	Algebra	1.2	1	142	113	255190	12101	11	0	11	1121	9.26	0	0	0	1132	2004-03-16	5921
 #N/A	Funzione continua	Matematica		Superiori	Studio di funzioni	Funzioni continue	2.5	1	126	112	227066	28154	9	9	7	1305	4.64	0	0	0	3440	2004-02-17	5949
@@ -2251,7 +2251,7 @@ Q5113	Aves	Scienze		Medie	Essere vivente		1	1	264	242	475075	55739	22	48	0	2761	
 Q26513	Feto	Scienze		Medie	Riproduzione		1	1	60	69	107917	27762	37	4	19	497	1.79	0	0	0	11932	2006-11-22	4940
 Q192995	Vaccinazione	Scienze		Medie	Corpo umano		1	1	176	157	316010	43225	48	13	4	4584	10.60	0	0	0	23663	2006-11-22	4940
 Q34740	Genere (tassonomia)	Scienze		Medie	Essere vivente		1	1	114	112	204893	1693	0	0	4	1288	76.08	1	0	0	4227	2006-11-16	4946
-#N/A	Acqua dolce	Scienze		Medie	Sistema Terra		1	1	74	75	132230	14964	6	3	1	777	5.19	0	0	0	3042	2006-05-23	5123
+Q102192	Acqua dolce	Scienze		Medie	Sistema Terra		1	1	74	75	132230	14964	6	3	1	777	5.19	0	0	0	3042	2006-05-23	5123
 Q2632167	Energie non rinnovabili	Scienze		Medie	Energia		1	1	147	131	264794	3524	1	0	0	658	18.67	2	0	0	789	2006-05-20	5126
 Q192627	Mimetismo	Scienze		Medie	Vivere insieme		1	1	70	64	126341	12411	10	12	6	1830	14.74	0	0	1	37	2006-05-18	5128
 Q179635	Trasmissione del calore	Scienze		Medie	Temperatura, calore e i loro effetti		1	1	145	117	259918	8812	4	1	4	591	6.71	0	0	0	2777	2006-05-04	5142
@@ -2498,7 +2498,7 @@ Q577	Anno	Storia		Elementari	Prima elementare	[anno]	0.2	1	167	178	300640	10613	
 #N/A	Abbasidi	Storia		Superiori	Alto medioevo		???	1	95	97	170242	20308	5	11	5	1859	9.15	0	0	0	5137	???	#VALUE!
 Q2853205	Abolizionismo negli Stati Uniti d'America	Storia		Superiori	XVIII-XIX secolo	movimento abolizionista schiavitù	???	1	16	23	28210	90878	90	19	45	3814	4.20	0	0	0	2819	???	#VALUE!
 Q4029560	Accadi	Storia		Superiori	Antichità	Gli accadi	???	1	68	73	122679	5633	9	0	2	1286	22.83	0	0	0	57	???	#VALUE!
-#N/A	Acciaio	Storia		Superiori	XVIII-XIX secolo	Acciaio	???	1	707	664	1270554	55152	9	15	4	1490	2.70	0	0	0	21228	2004-06-06	5839
+Q11427	Acciaio	Storia		Superiori	XVIII-XIX secolo	Acciaio	???	1	707	664	1270554	55152	9	15	4	1490	2.70	0	0	0	21228	2004-06-06	5839
 Q211674	Accordo Sykes-Picot	Storia		Superiori	XX-XXI secolo	la spartizione del medio oriente	???	1	82	59	147393	9652	2	8	1	891	9.23	1	0	0	2338	???	#VALUE!
 #N/A	Acquedotto romano	Storia		Superiori	Roma	Acquedotti romani	???	1	142	147	255241	35066	30	8	17	2605	7.43	0	1	0	1080	???	#VALUE!
 Q352	Adolf Hitler	Storia		Superiori	XX-XXI secolo	Adolf Hitler	???	1	2410	2168	4330364	188055	116	60	37	5661	3.01	0	0	0	57036	2004-02-09	5957
@@ -2580,7 +2580,7 @@ Q455037	Catena di montaggio	Storia		Superiori	XX-XXI secolo	catena di montaggio	
 #N/A	Cattività avignonese	Storia		Superiori	Basso medioevo	Cattività avignonese	???	1	239	283	430184	21954	6	5	5	319	1.45	0	0	0	1804	???	#VALUE!
 Q102083	Cavaliere	Storia		Superiori	Alto medioevo	I cavalieri feudali	???	1	54	53	97744	66365	60	18	38	2820	4.25	0	0	0	2056	???	#VALUE!
 Q35966	Celti	Storia		Superiori	Grecia e Italia preromana	Celti	???	1	534	544	959117	80636	80	20	15	1968	2.44	0	0	0	55956	2004-09-04	5749
-#N/A	Cenozoico	Storia		Elementari	Terza elementare	Le ere più recenti	0.3	1	98	96	176867	5468	4	2	0	438	8.01	0	0	0	3946	???	#VALUE!
+Q102416	Cenozoico	Storia		Elementari	Terza elementare	Le ere più recenti	0.3	1	98	96	176867	5468	4	2	0	438	8.01	0	0	0	3946	???	#VALUE!
 #N/A	Cento giorni	Storia		Superiori	XVIII-XIX secolo	la fine di Napoleone	???	1	68	128	122010	29946	24	28	8	1522	5.08	0	0	0	399	???	#VALUE!
 Q3664678	Centrismo in Italia	Storia		Superiori	XX-XXI secolo	fuori la sinistra dal governo	???	1	28	36	51051	18641	11	0	0	555	2.98	0	0	0	151	???	#VALUE!
 Q3664681	Centro-sinistra "organico"	Storia		Superiori	XX-XXI secolo	Centro-sinistra	???	1	24	28	42657	13206	2	1	0	652	4.94	1	0	0	1940	???	#VALUE!
@@ -3241,13 +3241,13 @@ Q272777	Villa Adriana	Storia dell'arte		Superiori	Arte romana		???	1	244	249	438
 Q186202	Giambattista Tiepolo	Storia dell'arte		Superiori	Il Settecento		???	1	151	140	270950	55306	27	17	18	697	1.26	0	0	0	7550	2005-09-06	5382
 Q42195	Incisioni rupestri	Storia dell'arte		Superiori	La Preistoria		???	1	80	77	144264	41249	19	25	9	1585	3.84	0	0	0	6772	2005-08-31	5388
 Q835309	Tomba di Tutankhamon	Storia dell'arte		Superiori	Le civiltà fluviali		???	1	225	207	404626	106585	162	95	29	2223	2.09	0	0	0	22421	2005-08-21	5398
-#N/A	Caspar David Friedrich	Storia dell'arte		Superiori	L'Ottocento		???	1	274	266	492319	46236	56	29	12	484	1.05	0	0	0	4390	2005-08-08	5411
+Q104884	Caspar David Friedrich	Storia dell'arte		Superiori	L'Ottocento		???	1	274	266	492319	46236	56	29	12	484	1.05	0	0	0	4390	2005-08-08	5411
 Q46825	Gotico	Storia dell'arte		Superiori	Il Gotico		???	1	334	362	600257	25396	8	11	4	2323	9.15	0	0	0	928	2005-08-08	5411
 Q1796098	Pala di Brera	Storia dell'arte		Superiori	Il Quattrocento		???	1	149	159	268053	15295	1	1	4	743	4.86	0	0	0	2136	2005-07-18	5432
 Q753683	Pittura metafisica	Storia dell'arte		Superiori	Il primo Novecento		???	1	158	155	283364	11799	0	3	7	1107	9.38	1	0	0	417	2005-07-15	5435
 Q1413460	Tecnica edilizia romana	Storia dell'arte		Superiori	Arte romana		???	1	74	62	132285	7824	0	1	12	592	7.57	0	0	0	703	2005-07-14	5436
 Q208208	Secessione viennese	Storia dell'arte		Superiori	L'Ottocento		???	1	150	165	268776	9942	3	5	8	1993	20.05	0	2	0	1820	2005-07-10	5440
-#N/A	Arte informale	Storia dell'arte		Superiori	Arte contemporanea		???	1	80	77	143115	3888	0	0	14	1361	35.01	1	0	0	2608	2005-06-22	5458
+Q1054254	Arte informale	Storia dell'arte		Superiori	Arte contemporanea		???	1	80	77	143115	3888	0	0	14	1361	35.01	1	0	0	2608	2005-06-22	5458
 Q309579	Skopas	Storia dell'arte		Superiori	Arte greca		???	1	38	35	67554	19478	16	3	5	384	1.97	0	0	0	1417	2005-06-22	5458
 Q7751	Giuseppe Arcimboldo	Storia dell'arte		Superiori	Il Cinquecento		???	1	237	198	426387	15485	3	12	10	473	3.05	0	0	0	4028	2005-06-05	5475
 Q39427	Surrealismo	Storia dell'arte		Superiori	Il primo Novecento		???	1	446	367	801753	9076	1	2	1	1182	13.02	0	0	0	2588	2005-06-03	5477
@@ -3272,7 +3272,7 @@ Q30755	Auguste Rodin	Storia dell'arte		Superiori	L'Ottocento		???	1	124	104	2234
 Q6034	Dadaismo	Storia dell'arte		Superiori	Il primo Novecento		???	1	517	445	928590	40499	6	2	18	1024	2.53	1	0	0	2382	2005-02-10	5590
 Q15792	Duccio di Buoninsegna	Storia dell'arte		Superiori	Il Gotico		???	1	89	94	160819	33208	5	13	0	979	2.95	0	0	0	1539	2005-02-07	5593
 Q206285	Metopa	Storia dell'arte		Superiori	Arte greca		???	1	76	71	136109	1355	0	2	0	992	73.21	0	0	0	46	2005-02-05	5595
-#N/A	Partenone	Storia dell'arte		Superiori	Arte greca		???	1	532	528	955706	24999	8	19	2	681	2.72	1	0	0	6343	2005-02-05	5595
+Q10288	Partenone	Storia dell'arte		Superiori	Arte greca		???	1	532	528	955706	24999	8	19	2	681	2.72	1	0	0	6343	2005-02-05	5595
 Q34636	Art Nouveau	Storia dell'arte		Superiori	L'Ottocento		2.5	1	593	477	1064872	39807	20	18	26	1319	3.31	0	0	0	21541	2005-02-04	5596
 Q34618	Gustave Courbet	Storia dell'arte		Superiori	L'Ottocento		???	1	214	204	384520	26387	12	13	9	446	1.69	0	0	0	2095	2005-01-30	5601
 Q2245489	Gotico italiano	Storia dell'arte		Superiori	Il Gotico		???	1	104	107	187622	12096	0	12	1	2107	17.42	0	0	0	2828	2005-01-29	5602

@@ -165,14 +165,46 @@ function dv1(year,the_subject) {
 
                 content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td></tr>"
 
+                // avg daily visits
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
-                
                 if (year == 2021){
-                	content += "<br/>" + d.avg_pv_prev.toLocaleString()
+                	if (d.avg_pv > d.avg_pv_prev){
+                		content += "<br/><span class='decrease'>(-" + (d.avg_pv-d.avg_pv_prev).toLocaleString() + ")</span>" // d.avg_pv_prev.toLocaleString()
+                	}
+                	else {
+                		content += "<br/><span class='increase'>(+" + (d.avg_pv_prev-d.avg_pv).toLocaleString() + ")</span>"
+                	}
                 }
                 content += "</td></tr>"
 
-                content += "<tr><td class='label'>dimensione (in byte)</td><td class='value'>" + d.size.toLocaleString() + "</td></tr>"
+                //size
+                content += "<tr><td class='label'>dimensione (in byte)</td><td class='value'>" + d.size.toLocaleString()
+                if (year == 2021){
+                	if (d.size > d.size_prev){
+                		content += "<br/><span class='decrease'>(-" + (d.size-d.size_prev).toLocaleString() + ")</span>"
+                	}
+                	else {
+                		content += "<br/><span class='increase'>(+" + (d.size_prev-d.size).toLocaleString() + ")</span>"
+                	}
+                }
+                content += "</td></tr>"
+
+
+
+
+
+
+                // content += "<tr><td class='label'>dimensione (in byte)</td><td class='value'>" + d.size.toLocaleString() + "</td></tr>"
+                // if (year == 2021){
+                // 	if (d.size > d.size_prev){
+                // 		content += "<br/><span class='decrease'>(-" + (d.size-d.size_prev).toLocaleString() + ")</span>"
+                // 	}
+                // 	else {
+                // 		content += "<br/><span class='increase'>(+" + (d.size_prev-d.size).toLocaleString() + ")</span>"
+                // 	}
+                // }
+                // content += "</td></tr>"
+
                 content += "<tr><td class='label'>discussione (in byte)</td><td class='value'>" + d.discussion_size.toLocaleString() + "</td></tr>"
                 content += "<tr><td class='label'>incipit (in byte)</td><td class='value'>" + d.incipit_size.toLocaleString() + "</td></tr>"
                 content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString() + "</td></tr>"
