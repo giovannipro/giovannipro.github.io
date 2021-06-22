@@ -75,7 +75,7 @@ function dv1(year,the_subject) {
 		console.log(subject_group)
 		
 		visit_sort = subject_articles.sort(function(x, y){
-			return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
+			return d3.descending(+x.avg_pv, +y.avg_pv);
 		})
 
 		filter_data = visit_sort.filter(function(x,y){ 
@@ -89,7 +89,7 @@ function dv1(year,the_subject) {
 		filtered_data.forEach(function (d,i) {
 			total += 1
 			d.discussion_size = +d.discussion_size
-			d.average_daily_visit = +d.average_daily_visit
+			d.avg_pv = +d.avg_pv
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
 			d.images = +d.images
@@ -98,7 +98,7 @@ function dv1(year,the_subject) {
 		
 		// scale
 		let y_max = d3.max(filtered_data, function(d) { 
-			return +d.average_daily_visit;
+			return +d.avg_pv;
 		})
 
 		let r_max = d3.max(filtered_data, function(d) { 
@@ -165,10 +165,10 @@ function dv1(year,the_subject) {
 
                 content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td></tr>"
 
-                content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.average_daily_visit.toLocaleString()
+                content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
                 
                 if (year == 2021){
-                	content += "<br/>" + d.average_daily_visit_prev_year.toLocaleString()
+                	content += "<br/>" + d.avg_pv_prev.toLocaleString()
                 }
                 content += "</td></tr>"
 
@@ -198,7 +198,7 @@ function dv1(year,the_subject) {
 				return i
 			})
 			.attr("transform", function(d,i){
-				return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
+				return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
 			})
 			.on("mouseover", tooltip.show) 
 			.on("mouseout", tooltip.hide)
@@ -365,7 +365,7 @@ function dv1(year,the_subject) {
 			// console.log(subject_articles)
 			
 			visit_sort = subject_articles.sort(function(x, y){
-				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
+				return d3.descending(+x.avg_pv, +y.avg_pv);
 			})
 
 			filter_data = visit_sort.filter(function(x,y){ 
@@ -380,7 +380,7 @@ function dv1(year,the_subject) {
 				total += 1
 				d.id = +d.id
 				d.discussion_size = +d.discussion_size
-				d.average_daily_visit = +d.average_daily_visit
+				d.avg_pv = +d.avg_pv
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
 			})
@@ -388,7 +388,7 @@ function dv1(year,the_subject) {
 
 			// scale
 			y_max = d3.max(filtered_data, function(d) { 
-				return +d.average_daily_visit;
+				return +d.avg_pv;
 			})
 			// console.log(y_max);
 
@@ -498,27 +498,27 @@ function dv1(year,the_subject) {
 				})
 				.attr("transform", function(d,i){
 					if (the_sort == 1) { // "article"
-							return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
+							return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
 						}
 						else if (the_sort == 2){ // "publication"
-							return "translate(" + (x(+d.days)+50) + "," + y(+d.average_daily_visit) + ")"
+							return "translate(" + (x(+d.days)+50) + "," + y(+d.avg_pv) + ")"
 						}
 						else if (the_sort == 3){ // "size"
-							return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
+							return "translate(" + (x(+d.size)+50) + "," + y(+d.avg_pv) + ")"
 						}
 						else if (the_sort == 4) { // "discussion"
-							return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
+							return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.avg_pv) + ")"
 						}
 						else if (the_sort == 5){
-							return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
+							return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.avg_pv) + ")"
 						}
 						else if (the_sort == 6){ // "issue"
-							return "translate(" + (x(+d.issues)+50) + "," + y(+d.average_daily_visit) + ")"
+							return "translate(" + (x(+d.issues)+50) + "," + y(+d.avg_pv) + ")"
 						}
 						else if (the_sort == 7){ // "images"
-							return "translate(" + (x(+d.images)+50) + "," + y(+d.average_daily_visit) + ")"
+							return "translate(" + (x(+d.images)+50) + "," + y(+d.avg_pv) + ")"
 						}
-					// return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
+					// return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
 				})
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
@@ -632,7 +632,7 @@ function dv1(year,the_subject) {
 			// console.log(subject_articles)
 			
 			visit_sort = subject_articles.sort(function(x, y){
-				return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
+				return d3.descending(+x.avg_pv, +y.avg_pv);
 			})
 
 			filter_data = visit_sort.filter(function(x,y){ 
@@ -647,7 +647,7 @@ function dv1(year,the_subject) {
 				total += 1
 				d.id = +d.id
 				d.discussion_size = +d.discussion_size
-				d.average_daily_visit = +d.average_daily_visit
+				d.avg_pv = +d.avg_pv
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
 			})
@@ -743,25 +743,25 @@ function dv1(year,the_subject) {
 				.transition()
 				.attr("transform", function(d,i){
 					if (the_sort == 1) { // "article"
-						return "translate(" + (x(i)+50) + "," + y(+d.average_daily_visit) + ")"
+						return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
 					}
 					else if (the_sort == 2){ // "publication"
-						return "translate(" + (x(+d.days)+50) + "," + y(+d.average_daily_visit) + ")"
+						return "translate(" + (x(+d.days)+50) + "," + y(+d.avg_pv) + ")"
 					}
 					else if (the_sort == 3){
-						return "translate(" + (x(+d.size)+50) + "," + y(+d.average_daily_visit) + ")"
+						return "translate(" + (x(+d.size)+50) + "," + y(+d.avg_pv) + ")"
 					}
 					else if (the_sort == 4) {
-						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.average_daily_visit) + ")"
+						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.avg_pv) + ")"
 					}
 					else if (the_sort == 5){
-						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.average_daily_visit) + ")"
+						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.avg_pv) + ")"
 					}
 					else if (the_sort == 6){
-						return "translate(" + (x(+d.issues)+50) + "," + y(+d.average_daily_visit) + ")"
+						return "translate(" + (x(+d.issues)+50) + "," + y(+d.avg_pv) + ")"
 					}
 					else if (the_sort == 7){
-						return "translate(" + (x(+d.images)+50) + "," + y(+d.average_daily_visit) + ")"
+						return "translate(" + (x(+d.images)+50) + "," + y(+d.avg_pv) + ")"
 					}
 				})
 		}
