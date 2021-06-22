@@ -52,9 +52,7 @@ function dv1(the_subject) {
 		let subject_group = d3.nest()
 			.key(d => d.subject)
 			.entries(data)
-		// console.log(subject_group)
 	
-		// for (const [d,c] of Object.entries(subject_group)) {
 		for (const [d,c] of Object.entries(subject_group)) {
 
 			// all subjects
@@ -74,7 +72,6 @@ function dv1(the_subject) {
 				}
 			}
 		}
-		// console.log(subject_articles)
 		
 		visit_sort = subject_articles.sort(function(x, y){
 			return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
@@ -96,13 +93,11 @@ function dv1(the_subject) {
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
 		})
-		// console.log(filtered_data
 		
 		// scale
 		let y_max = d3.max(filtered_data, function(d) { 
 			return +d.average_daily_visit;
 		})
-		// console.log(y_max)
 
 		let r_max = d3.max(filtered_data, function(d) { 
 			return Math.sqrt(+d.size/3.14);
@@ -114,8 +109,7 @@ function dv1(the_subject) {
 
 		let x = d3.scaleLinear()
 			.domain([0,total])
-			.range([0,width-100]) //width-margin.right-margin.left]) 
-		// console.log(0,total)
+			.range([0,width-100])
 
 		let r = d3.scaleLinear()
 			.range([0, 20])
@@ -127,7 +121,6 @@ function dv1(the_subject) {
 			.attr("transform", "translate(-1," + margin.top*2 + ")")
 			.call(make_y_gridlines()
           		.tickSize(-width-margin.left-margin.right-60)
-          		// .tickFormat("")
           	)
 
 		let plot = svg.append("g")
@@ -168,13 +161,13 @@ function dv1(the_subject) {
 			.html(function(d) {
                 let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
-                content += "<tr><th>pubblicazione</th><th>" + format_date(d.first_edit) + "</th></tr>"
-                content += "<tr><th>visite giornaliere</th><th>" + d.average_daily_visit.toLocaleString() + "</th></tr>"
-                content += "<tr><th>dimensione</th><th>" + d.size.toLocaleString() + " byte</th></tr>"
-                content += "<tr><th>discussione</th><th>" + d.discussion_size.toLocaleString() + " byte</th></tr>"
-                content += "<tr><th>incipit</th><th>" + d.incipit_size.toLocaleString() + " byte</th></tr>"
-                content += "<tr><th>avvisi</th><th>" + d.issues.toLocaleString() + "</th></tr>"
-                content += "<tr><th>immagini</th><th>" + d.images.toLocaleString() + "</th></tr>"
+                content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td></tr>"
+                content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.average_daily_visit.toLocaleString() + "</td></tr>"
+                content += "<tr><td class='label'>dimensione (in byte)</td><td class='value'>" + d.size.toLocaleString() + "</td></tr>"
+                content += "<tr><td class='label'>discussione (in byte)</td><td class='value'>" + d.discussion_size.toLocaleString() + "</td></tr>"
+                content += "<tr><td class='label'>incipit (in byte)</td><td class='value'>" + d.incipit_size.toLocaleString() + "</td></tr>"
+                content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString() + "</td></tr>"
+                content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString() + "</td></tr>"
 
 
 	            content += "</table>"

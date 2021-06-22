@@ -146,7 +146,7 @@ header a
 		margin: 0 auto
 		
 		#select_year .value
-			width: 60%
+			width: 90%
 
 		@media only screen and (max-width: $tablet-v) 
 			width: 100%
@@ -335,30 +335,56 @@ footer
 
 /* ------- tooltip ------- */
 
+// .tooltip
+// 	line-height: 1em
+// 	padding: 6px
+// 	background-color: rgba(255, 255, 255, 1)
+// 	color: black
+// 	border: 1px solid rgb(140,140,140)
+// 	border-radius: 4px
+// 	font-size: 12px
+// 	max-width: 180px
+// 	text-align: left
+// 	font-weight: normal
+
 .tooltip
-	line-height: 1em
-	padding: 6px
-	background-color: rgba(255, 255, 255, 1)
-	color: black
-	border: 1px solid rgb(140,140,140)
-	border-radius: 4px
-	font-size: 12px
-	max-width: 180px
-	text-align: left
+	position: absolute			
+	text-align: left		
+	padding: 6px	
+	background-color: #fff	
+	border: 1px solid #fff	
+	color: #222
+	border-radius: 2px		
+	pointer-events: none
+	white-space: nowrap
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	pointer-events: none
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4)
+	font-size: 0.8em
 	font-weight: normal
+
 
 	p
 		line-height: 1.4em
 
 	table 
-		tr
-			height: 10px
 
-		th
+		td
 			font-weight: normal
-			padding: 0 0px 8px 0
+			//padding: 0 0px 8px 0
 			text-align: left
 			vertical-align: top
+
+		.label
+			min-width: 30px
+			text-align: left
+
+		.value
+			min-width: 40px
+			text-align: right
 
 #tooltip_dv1
 	th:nth-child(1)

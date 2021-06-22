@@ -17,7 +17,7 @@ let c_issues = '#EC4C4E',
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-if (window_w <= 768) {
+if (window_w <= 768){
 	reduction = 10;
 }
 else {
@@ -223,10 +223,10 @@ function dv2(the_subject) {
 			.html(function(d) {
 	            let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
-	            content += "<tr><th>avvisi</th><th>" + d.issues.toLocaleString() + "</th></tr>"
-	            content += "<tr><th>riferimenti bibliografici</th><th>" + d.references.toLocaleString() + "</th></tr>"
-	            content += "<tr><th>note</th><th>" + d.notes.toLocaleString() + "</th></tr>"
-	            content += "<tr><th>immagini</th><th>" + d.images.toLocaleString() + "</th></tr>"
+	            content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString() + "</td></tr>"
+	            content += "<tr><td class='label'>riferimenti bibliografici</td><td class='value'>" + d.references.toLocaleString() + "</td></tr>"
+	            content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString() + "</td></tr>"
+	            content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString() + "</td></tr>"
 
 	            content += "</table>"
 	            return content;
