@@ -40,7 +40,7 @@ const features_height = height/2.1;
 const ticksAmount = 10;
 
 function dv2(the_subject) {
-	d3.tsv("../assets/data/voci.tsv").then(loaded)
+	d3.tsv("../assets/data/voci_2020.tsv").then(loaded)
 
 	function loaded(data) {
 		// console.log(data)
@@ -90,7 +90,6 @@ function dv2(the_subject) {
 	
 		filtered_data.forEach(function (d,i) {
 			total += 1
-			d.id = +d.id
 			d.discussion_size = +d.discussion_size
 			d.average_daily_visit = +d.average_daily_visit
 			d.article = d.article.replace(/_/g," ")
@@ -202,7 +201,6 @@ function dv2(the_subject) {
 			.attr('id', 'tooltip_dv2')
 			.direction(function (d,i) {
 				return 'n'
-
 				// if (i <= filtered_data.length/2) {
 				// 	return 'e'
 				// }
@@ -212,7 +210,6 @@ function dv2(the_subject) {
 			})
 			.offset(function (d,i){
 				return [-20,0]
-
 				// if (i <= filtered_data.length/2) {
 				// 	return [0,10]
 				// }
@@ -244,6 +241,9 @@ function dv2(the_subject) {
 	  				return d3.descending(a.issues, b.issues);
 			})
 			.attr("class","article")
+			.attr("data-title", function(d,i){
+				return d.article
+			})
 			.attr("transform", function(d,i){
 				return "translate(" + x(i) + "," + 0 + ")"
 			})

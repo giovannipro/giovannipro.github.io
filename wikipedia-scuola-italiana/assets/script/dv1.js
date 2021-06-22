@@ -20,7 +20,7 @@ const wiki_link = "https://it.wikipedia.org/wiki/";
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-if (window_w <= 768) {
+if (window_w <= 768){
 	reduction = 20;
 }
 else {
@@ -37,9 +37,9 @@ let svg = d3.select(container)
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
 
-function dv1(the_subject) {
-	d3.tsv("assets/data/voci.tsv").then(loaded)
-	// console.log(the_subject)
+function dv1(year,the_subject) {
+	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
+	console.log(year,the_subject)
 
 	function loaded(data) {
 
@@ -72,6 +72,7 @@ function dv1(the_subject) {
 				}
 			}
 		}
+		console.log(subject_group)
 		
 		visit_sort = subject_articles.sort(function(x, y){
 			return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
@@ -87,12 +88,13 @@ function dv1(the_subject) {
 	
 		filtered_data.forEach(function (d,i) {
 			total += 1
-			d.id = +d.id
 			d.discussion_size = +d.discussion_size
 			d.average_daily_visit = +d.average_daily_visit
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
+			d.images = +d.images
 		})
+		console.log(filtered_data);
 		
 		// scale
 		let y_max = d3.max(filtered_data, function(d) { 
@@ -174,7 +176,6 @@ function dv1(the_subject) {
                 return content;
             });
        	plot.call(tooltip);
-		// console.log(the_sort);
 
 		// plot data
 		let articles = plot.append("g")	
@@ -207,6 +208,9 @@ function dv1(the_subject) {
 			
 		let article_text = article.append("g")
 			.attr("class","article_text")
+			.attr("data-title", function(d,i){
+				return d.title
+			})
 			
 		let circles = article_circles.append("circle")
 			.transition()
@@ -757,12 +761,30 @@ function dv1(the_subject) {
 	}
 }
 
+function get_year(){
+	$("#year").change(function() {
+		let year = parseInt(this.value);
+		let subject = String($("#subjects option:selected").val());
+
+		$("#d3_plot").remove();
+		$("#grid").remove();
+
+		dv1(year,subject);
+	});
+}
+
+function getRandomIntInclusive(min, max) {
+  	min = Math.ceil(min);
+  	max = Math.floor(max);
+  	return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 $(document).ready(function() {
-	const random_subject = (Math.floor(Math.random() * 18) + 0) + 1
+	const random_subject = getRandomIntInclusive(1,17); //(Math.floor(Math.random() * 18) + 0) + 1
 	document.getElementById("subjects").selectedIndex = random_subject;
+	// console.log(document.getElementById("subjects")[17]);
 
-	dv1(subjects[random_subject]);
-	// dv1("all")
+	dv1(2020,subjects[random_subject]);
+	get_year();
 });
 
