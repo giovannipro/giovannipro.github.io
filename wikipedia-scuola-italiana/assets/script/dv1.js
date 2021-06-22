@@ -164,7 +164,14 @@ function dv1(year,the_subject) {
                 let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
                 content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td></tr>"
-                content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.average_daily_visit.toLocaleString() + "</td></tr>"
+
+                content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.average_daily_visit.toLocaleString()
+                
+                if (year == 2021){
+                	content += "<br/>" + d.average_daily_visit_prev_year.toLocaleString()
+                }
+                content += "</td></tr>"
+
                 content += "<tr><td class='label'>dimensione (in byte)</td><td class='value'>" + d.size.toLocaleString() + "</td></tr>"
                 content += "<tr><td class='label'>discussione (in byte)</td><td class='value'>" + d.discussion_size.toLocaleString() + "</td></tr>"
                 content += "<tr><td class='label'>incipit (in byte)</td><td class='value'>" + d.incipit_size.toLocaleString() + "</td></tr>"
