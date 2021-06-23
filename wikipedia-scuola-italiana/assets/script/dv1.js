@@ -163,47 +163,41 @@ function dv1(year,the_subject) {
 			.html(function(d) {
                 let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
-                content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td></tr>"
+                content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td><td></td></tr>"
 
                 // avg daily visits
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
                 if (year == 2021){
-                	if (d.avg_pv > d.avg_pv_prev){
-                		content += "<br/><span class='decrease'>(-" + (d.avg_pv-d.avg_pv_prev).toLocaleString() + ")</span>" // d.avg_pv_prev.toLocaleString()
+                	let diff = d.avg_pv - d.avg_pv_prev
+                	if (diff > 0){
+                		let diff_perc = 100 - Math.floor(d.avg_pv_prev*100/d.avg_pv)
+                		content += "<td class='value increase'>(" + d.avg_pv_prev + " +" + diff_perc + "%)</td></tr>"
+                	}
+                	else if (diff == 0){
+                		content += "<td class='value'>-</td></tr>"
                 	}
                 	else {
-                		content += "<br/><span class='increase'>(+" + (d.avg_pv_prev-d.avg_pv).toLocaleString() + ")</span>"
+                		let diff_perc = 100 - Math.floor(d.avg_pv*100/d.avg_pv_prev)
+                		content += "<td class='value decrease'>(" + d.avg_pv_prev + " -" + diff_perc + "%)</td></tr>"
                 	}
                 }
-                content += "</td></tr>"
 
                 //size
-                content += "<tr><td class='label'>dimensione (in byte)</td><td class='value'>" + d.size.toLocaleString()
+                content += "<tr><td class='label'>dimension (in byte)</td><td class='value'>" + d.size.toLocaleString()
                 if (year == 2021){
-                	if (d.size > d.size_prev){
-                		content += "<br/><span class='decrease'>(-" + (d.size-d.size_prev).toLocaleString() + ")</span>"
+                	let diff = d.size - d.size_prev
+                	if (diff > 0){
+                		let diff_perc = 100 - Math.floor(d.size_prev*100/d.size)
+                		content += "<td class='value increase'>(" + d.size_prev + " +" + diff_perc + "%)</td></tr>"
+                	}
+                	else if (diff == 0){
+                		content += "<td class='value'>-</td></tr>"
                 	}
                 	else {
-                		content += "<br/><span class='increase'>(+" + (d.size_prev-d.size).toLocaleString() + ")</span>"
+                		let diff_perc = 100 - Math.floor(d.size*100/d.size_prev)
+                		content += "<td class='value decrease'>(" + d.size_prev + " -" + diff_perc + "%)</td></tr>"
                 	}
                 }
-                content += "</td></tr>"
-
-
-
-
-
-
-                // content += "<tr><td class='label'>dimensione (in byte)</td><td class='value'>" + d.size.toLocaleString() + "</td></tr>"
-                // if (year == 2021){
-                // 	if (d.size > d.size_prev){
-                // 		content += "<br/><span class='decrease'>(-" + (d.size-d.size_prev).toLocaleString() + ")</span>"
-                // 	}
-                // 	else {
-                // 		content += "<br/><span class='increase'>(+" + (d.size_prev-d.size).toLocaleString() + ")</span>"
-                // 	}
-                // }
-                // content += "</td></tr>"
 
                 content += "<tr><td class='label'>discussione (in byte)</td><td class='value'>" + d.discussion_size.toLocaleString() + "</td></tr>"
                 content += "<tr><td class='label'>incipit (in byte)</td><td class='value'>" + d.incipit_size.toLocaleString() + "</td></tr>"
