@@ -89,10 +89,12 @@ function dv1(year,the_subject) {
 		filtered_data.forEach(function (d,i) {
 			total += 1
 			d.discussion_size = +d.discussion_size
-			d.avg_pv = +d.avg_pv
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
 			d.images = +d.images
+
+			d.avg_pv = +d.avg_pv
+			d.avg_pv_prev = +d.avg_pv_prev
 		})
 		console.log(filtered_data);
 		
@@ -303,6 +305,29 @@ function dv1(year,the_subject) {
 			.attr("r", function(d,i){
 				return r(Math.sqrt(d.discussion_size/3.14))
 			})
+
+		// line between 2020-2021
+		let variation = article.append("line")
+			.attr("stroke","black")
+			.attr("x1", function(d,i){
+				return 0
+			})
+			.attr("y1", function(d,i){
+				return 0
+			})
+			.attr("x2", function(d,i){
+				return 0
+			})
+			.attr("y2", function(d,i){
+				console.log(d.article,d.avg_pv,d.avg_pv_prev)
+				if (d.avg_pv>d.avg_pv_prev){
+					return y(d.avg_pv-d.avg_pv_prev)
+				}
+				else{
+					return y(d.avg_pv_prev-d.avg_pv)
+				}
+			})
+
 
 		// let label = article_text.append("text")
 		// 	.text(function(d,i){
@@ -544,7 +569,6 @@ function dv1(year,the_subject) {
 						else if (the_sort == 7){ // "images"
 							return "translate(" + (x(+d.images)+50) + "," + y(+d.avg_pv) + ")"
 						}
-					// return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
 				})
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
@@ -619,6 +643,28 @@ function dv1(year,the_subject) {
 				.duration(500) 
 				.attr("r", function(d,i){
 					return r(Math.sqrt(d.discussion_size/3.14))
+				})
+
+			// line between 2020-2021
+			let variation = article.append("line")
+				.attr("stroke","black")
+				.attr("x1", function(d,i){
+					return 0
+				})
+				.attr("y1", function(d,i){
+					return 0
+				})
+				.attr("x2", function(d,i){
+					return 0
+				})
+				.attr("y2", function(d,i){
+					console.log(d.article,d.avg_pv,d.avg_pv_prev)
+					if (d.avg_pv>d.avg_pv_prev){
+						return y(d.avg_pv-d.avg_pv_prev)
+					}
+					else{
+						return y(d.avg_pv_prev-d.avg_pv)
+					}
 				})
 		}
 
