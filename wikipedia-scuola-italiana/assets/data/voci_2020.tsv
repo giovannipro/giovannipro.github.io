@@ -220,10 +220,10 @@ Q102500	Simbolo chimico	Chimica		Superiori	Teoria atomica		2	1	48	39	86186	2411	
 Q79529	Sostanza pura	Chimica		Superiori	Sistemi, miscele, sostanze		2	1	91	84	163267	3913	3	0	2	300	7.67	0	0	0	91	2005-10-21	5337
 Q169336	Miscela	Chimica		Superiori	Sistemi, miscele, sostanze		2	1	99	87	177315	6556	1	0	1	644	9.82	0	0	0	1029	2005-10-14	5344
 Q320388	Sistema isolato	Chimica		Superiori	Sistemi, miscele, sostanze		2	1	37	37	66222	1585	3	0	4	1066	67.26	0	0	0	37	2005-10-05	5353
-#N/A	Prodotto	Chimica		Superiori	Reazioni chimiche		2	1	15	11	27179	1063	0	0	0	0	0.00	0	0	0	0	2005-09-24	5364
+Q542929	Prodotto (chimica)	Chimica	ex Prodotto	Superiori	Reazioni chimiche		2	1	15	11	27179	1063	0	0	0	0	0.00	0	0	0	0	2005-09-24	5364
 Q484152	Stato di ossidazione	Chimica		Superiori	Nomenclatura dei composti		2	1	190	192	341541	6025	2	1	9	685	11.37	0	0	0	2344	2005-09-20	5368
 Q230937	Funzione di stato	Chimica		Superiori	Termodinamica		2	1	79	75	142423	16914	1	0	0	1541	9.11	2	0	0	1552	2005-09-16	5372
-#N/A	Quantità di sostanza	Chimica		Superiori	Quantitò chimica		2	1	70	76	125473	4378	0	0	0	1008	23.02	0	0	0	37	2005-09-06	5382
+Q104946	Quantità di sostanza	Chimica		Superiori	Quantitò chimica		2	1	70	76	125473	4378	0	0	0	1008	23.02	0	0	0	37	2005-09-06	5382
 Q3840065	Massa atomica	Chimica		Superiori	Teoria atomica		2	1	130	151	233176	15997	4	0	0	2932	18.33	2	0	0	93	2005-08-29	5390
 Q200286	Teoria cinetica dei gas	Chimica		Superiori	Leggi dei gas		2	1	122	123	219014	13415	8	3	0	1304	9.72	0	0	0	1067	2005-07-30	5420
 Q911437	Struttura di Lewis	Chimica		Superiori	Elettronica degli atomi		2	1	89	77	159148	5306	2	1	1	1177	22.18	0	0	0	3087	2005-07-29	5421
@@ -242,7 +242,7 @@ Q191785	Equazione di stato dei gas perfetti	Chimica		Superiori	Leggi dei gas		2	
 Q162908	Elettrolita	Chimica		Superiori	Soluzioni		2	1	163	124	293418	5841	2	2	2	370	6.33	0	0	0	1262	2005-06-10	5470
 Q171407	Valenza (chimica)	Chimica		Superiori	Nomenclatura dei composti		2	1	111	99	199059	3490	1	0	1	303	8.68	0	0	0	302	2005-06-05	5475
 Q2366155	Composto ionico	Chimica		Superiori	I legami chimici		2	1	73	64	131138	4380	0	0	0	3560	81.28	1	0	0	37	2005-05-30	5481
-#N/A	Soluto	Chimica		Superiori	Soluzioni		2	1	56	38	99996	3009	2	1	2	875	29.08	0	0	0	59	2005-05-27	5484
+Q1079788	Soluto	Chimica		Superiori	Soluzioni		2	1	56	38	99996	3009	2	1	2	875	29.08	0	0	0	59	2005-05-27	5484
 Q134856	Acidi carbossilici	Chimica		Superiori	Dai gruppi funzionali ai polimeri		2	1	266	216	477610	14959	2	2	2	738	4.93	0	0	0	275	2005-05-24	5487
 Q167198	Ammine	Chimica		Superiori	Dai gruppi funzionali ai polimeri		2	1	193	174	346938	11098	3	6	2	296	2.67	0	1	0	1875	2005-05-24	5487
 Q101487	Esteri	Chimica		Superiori	Dai gruppi funzionali ai polimeri		2	1	251	219	451863	8703	1	1	0	1271	14.60	0	0	0	37	2005-05-24	5487
@@ -345,32 +345,32 @@ Q133235	Combustione	Chimica		Superiori	Termodinamica		2	1	295	282	529733	10121	2
 Q23809	Numero atomico	Chimica		Superiori	Teoria atomica		2	1	289	248	519771	5505	4	2	0	1219	22.14	0	0	0	337	2003-07-03	6178
 Q41088690	Isomeria	Chimica		Superiori	Organica: dal carbonio agli idrocarburi		2	1	216	180	387598	10418	5	5	2	409	3.93	0	0	0	5141	2003-04-03	6269
 -	John Dalton	Chimica	ex Modello atomico di Dalton	Superiori	Teoria atomica		2	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Corte costituzionale della Repubblica Italiana	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	513	549	922000	41	0	0	7	38	92.68	0	0	0	0	2020-05-24	8
+Q981005	Corte costituzionale (Italia)	Cittadinanza e costituzione	ex Corte costituzionale della Repubblica Italiana	Superiori	La Costituzione e l'ordinamento italiano		0	1	513	549	922000	41	0	0	7	38	92.68	0	0	0	0	2020-05-24	8
 Q748720	Istituzioni dell'Unione europea	Cittadinanza e costituzione		Superiori	Comunità internazionale		0	1	8	4	13694	39986	51	10	3	620	1.55	0	0	0	890	2020-02-24	98
 Q60837604	Diritto allo studio in Italia	Cittadinanza e costituzione		Medie	Secondo anno		1.2	1	14	41	25165	12331	13	0	3	193	1.57	0	0	0	157	2018-09-14	626
 Q3487980	Società della conoscenza	Cittadinanza e costituzione		Superiori	Cittadini e mondo digitale		0	1	4	9	6913	19327	15	0	12	1353	7.00	0	0	0	10278	2017-10-26	949
-#N/A	Regolamento generale sulla protezione dei dati	Cittadinanza e costituzione		Superiori	Cittadini e mondo digitale		0	1	438	724	786873	62054	41	0	0	2381	3.84	0	0	0	4224	2016-05-01	1492
+Q1172506	Regolamento generale sulla protezione dei dati	Cittadinanza e costituzione		Superiori	Cittadini e mondo digitale		0	1	438	724	786873	62054	41	0	0	2381	3.84	0	0	0	4224	2016-05-01	1492
 Q497743	Economia circolare	Cittadinanza e costituzione		Superiori	Cittadini e ambiente		0	1	117	197	209619	11149	8	1	0	462	4.14	1	0	0	3875	2015-10-28	1678
 Q7649586	Obiettivi di sviluppo sostenibile	Cittadinanza e costituzione		Superiori	Cittadini e ambiente		0	1	90	175	161921	57435	77	19	0	3179	5.53	0	1	0	10774	2015-10-02	1704
 Q20823810	Raccolta differenziata in Italia	Cittadinanza e costituzione		Superiori	Cittadini e ambiente		0	1	33	54	59053	21039	27	1	0	202	0.96	0	2	2	4220	2015-08-16	1751
 Q21193084	Codice della strada (Italia)	Cittadinanza e costituzione		Medie	Secondo anno		1.2	1	25	39	45641	32846	12	6	0	185	0.56	0	0	0	3264	2015-06-02	1826
 Q21192987	Diritto del lavoro in Italia	Cittadinanza e costituzione		Medie	Terzo anno		0	1	42	43	74589	12345	1	0	4	114	0.92	0	0	0	134	2014-12-20	1990
-#N/A	Uguaglianza di genere	Cittadinanza e costituzione		Medie	Primo anno		1.1	1	54	79	97293	7378	4	1	3	648	8.78	1	0	0	113	2014-07-11	2152
+Q113453	Uguaglianza di genere	Cittadinanza e costituzione		Medie	Primo anno		1.1	1	54	79	97293	7378	4	1	3	648	8.78	1	0	0	113	2014-07-11	2152
 Q223569	Diritti delle donne	Cittadinanza e costituzione		Medie	Primo anno		1.1	1	143	225	256562	186413	237	52	62	2258	1.21	0	0	0	15595	2013-12-23	2352
 Q16482934	Sistema elettorale italiano	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	241	283	432196	55619	93	13	3	2336	4.20	0	0	0	3995	2013-04-29	2590
-#N/A	Integrazione europea	Cittadinanza e costituzione		Medie	Secondo anno		1.2	1	27	37	49071	7057	6	1	3	333	4.72	1	0	0	1120	2012-10-31	2770
+Q1048268	Integrazione europea	Cittadinanza e costituzione		Medie	Secondo anno		1.2	1	27	37	49071	7057	6	1	3	333	4.72	1	0	0	1120	2012-10-31	2770
 Q598854	Statuto albertino	Cittadinanza e costituzione		Superiori	Storia della Costituzione Italiana		???	1	22	17	39104	29	0	0	0	26	89.66	0	0	0	0	2012-01-10	3065
 Q3709055	Diritti inviolabili	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	52	94	92754	10146	1	0	0	838	8.26	1	0	0	2270	2011-11-04	3132
 Q3714733	Doveri inderogabili	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	17	20	30603	999	4	0	0	686	68.67	1	0	0	57	2011-01-22	3418
 Q262525	Diritto d'asilo nell'Unione europea	Cittadinanza e costituzione		Superiori	Comunità internazionale		0	1	9	9	15958	8166	9	0	4	1181	14.46	0	0	0	2374	2010-12-19	3452
-#N/A	Ente territoriale (Italia)	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	28	28	50136	1838	0	0	0	334	18.17	0	0	0	57	2010-11-24	3477
+Q107047419	Ente territoriale (Italia)	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	28	28	50136	1838	0	0	0	334	18.17	0	0	0	57	2010-11-24	3477
 Q2426831	Cittadinanza digitale	Cittadinanza e costituzione		Superiori	Cittadini e mondo digitale		0	1	16	25	28452	4338	4	0	3	279	6.43	0	0	0	305	2010-01-09	3796
 Q3624391	Articolo 36 della Costituzione italiana	Cittadinanza e costituzione		Superiori	Lavoro nella costituzione		0	1	46	41	82417	2064	3	0	2	230	11.14	0	0	0	549	2009-12-09	3827
 Q536814	Libertà negativa	Cittadinanza e costituzione		Superiori	Definizioni		0	1	30	34	53904	7326	12	2	4	1733	23.66	0	0	0	4497	2009-04-26	4054
 Q3885626	Organi costituzionali italiani	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	133	130	239545	17565	23	0	0	147	0.84	0	0	0	4083	2008-06-20	4364
 Q170075	Consiglio Economico e Sociale delle Nazioni Unite	Cittadinanza e costituzione		Superiori	Organizzazioni internazionali		0	1	2	2	3718	63	0	0	0	60	95.24	0	0	0	0	2008-02-26	4479
 Q981005	Corte costituzionale (Italia)	Cittadinanza e costituzione		Medie	Terzo anno		1.3	1	3	0	4809	89763	53	3	16	1567	1.75	1	0	0	30789	2008-02-05	4500
-#N/A	Divisione Nord-Sud	Cittadinanza e costituzione		Medie	Terzo anno		1.3	1	12	27	21860	30318	12	12	4	805	2.66	0	0	0	4032	2008-01-30	4506
+Q1203182	Divisione Nord-Sud	Cittadinanza e costituzione		Medie	Terzo anno		1.3	1	12	27	21860	30318	12	12	4	805	2.66	0	0	0	4032	2008-01-30	4506
 Q7813	Dichiarazione universale dei diritti umani	Cittadinanza e costituzione		Medie	Primo anno		0	1	472	546	847544	9948	8	3	1	716	7.20	0	0	0	876	2007-12-03	4564
 Q3687301	Consiglio comunale giovani	Cittadinanza e costituzione		Medie	Secondo anno		1.2	1	7	10	11853	4909	5	0	1	2428	49.46	0	0	0	1945	2007-09-27	4631
 Q2717283	Offerta di lavoro	Cittadinanza e costituzione		Superiori	Lavoro nella costituzione		0	1	27	29	47816	5354	0	3	3	378	7.06	0	0	0	107	2007-09-07	4651
@@ -466,7 +466,7 @@ Q178803	Commercio internazionale	Diritto e Economia		Superiori	Relazioni economi
 Q18288972	Riforma del lavoro Fornero	Diritto e Economia		Superiori	Mercato del lavoro		2.1	1	63	66	113769	4161	6	0	0	329	7.91	1	0	0	1138	2014-09-04	2097
 Q16605989	Sicurezza sul lavoro in Italia	Diritto e Economia		Superiori	Mercato del lavoro		2.1	1	127	136	227842	36388	4	1	14	121	0.33	1	6	0	3884	2013-09-08	2458
 Q3984773	Territorio (diritto)	Diritto e Economia		Superiori	Stato, Costituzone e relazioni internazionali		2.1	1	22	22	38672	1817	0	0	0	1419	78.10	3	0	0	49	2013-01-06	2703
-#N/A	NATO	Diritto e Economia		Superiori	Le istituzioni locali, europee e internazionali		2.1	1	161	156	289528	63	0	0	0	60	95.24	0	0	0	0	2011-12-12	3094
+Q7184	Organizzazione del Trattato dell'Atlantico del Nord	Diritto e Economia	ex Nato	Superiori	Le istituzioni locali, europee e internazionali		2.1	1	161	156	289528	63	0	0	0	60	95.24	0	0	0	0	2011-12-12	3094
 Q6093518	Stato sociale (Italia)	Diritto e Economia		Superiori	Organizzazione dello stato italiano		2.1	1	15	18	26351	12892	0	0	1	100	0.78	2	2	0	90	2011-05-11	3309
 Q3831756	Libertà personale	Diritto e Economia		Superiori	Costituzione e cittadinanza: libertà, diritti e doveri		2.1	1	37	35	66002	1682	0	0	0	337	20.04	1	0	0	49	2010-10-05	3527
 Q3030513	Scomparsa	Diritto e Economia		Superiori	Soggetti del diritto		2.1	1	13	10	24124	2494	0	0	1	570	22.85	1	0	0	49	2010-07-16	3608
@@ -512,7 +512,7 @@ Q4530482	Sviluppo economico	Diritto e Economia		Superiori	Economia e il sistema 
 Q305186	Mercato del lavoro	Diritto e Economia		Superiori	Mercato del lavoro		0	1	50	50	90178	8144	0	0	4	296	3.63	0	0	0	1284	2006-07-01	5084
 Q22688	Libertà di stampa	Diritto e Economia		Superiori	Costituzione e cittadinanza: libertà, diritti e doveri		2.1	1	84	71	151489	44487	16	2	3	1937	4.35	0	0	0	6578	2006-06-29	5086
 Q2029841	Organizzazione aziendale	Diritto e Economia		Superiori	I soggetti economici		2.1	1	245	205	440574	31529	0	0	8	183	0.58	1	0	0	2109	2006-06-26	5089
-#N/A	Servizi	Diritto e Economia		Superiori	Economia e il sistema economico		2.1	1	9	8	16864	21	0	0	0	18	85.71	0	0	0	0	2006-06-25	5090
+-	Servizi	Diritto e Economia		Superiori	Economia e il sistema economico		2.1	1	9	8	16864	21	0	0	0	18	85.71	0	0	0	0	2006-06-25	5090
 Q3802136	Principio di irretroattività (ordinamento italiano)	Diritto e Economia		Superiori	La società e ordinamento giuridico		2.1	1	44	87	78706	10732	7	0	6	922	8.59	0	0	0	2438	2006-06-22	5093
 Q205665	Norma (scienze sociali)	Diritto e Economia		Superiori	La società e ordinamento giuridico		2.1	1	25	27	45146	5707	0	0	1	374	6.55	1	0	0	773	2006-06-14	5101
 Q2674302	Libertà individuali	Diritto e Economia		Superiori	Costituzione e cittadinanza: libertà, diritti e doveri		0	1	25	29	44247	2166	2	0	0	1891	87.30	1	0	0	92	2006-06-03	5112
@@ -527,7 +527,7 @@ Q41171	Disoccupazione	Diritto e Economia		Superiori	Mercato del lavoro		2.1	1	10
 Q190258	Bisogno	Diritto e Economia		Superiori	Economia e il sistema economico		2.1	1	242	242	434443	5526	0	1	3	570	10.31	1	0	0	2184	2006-01-09	5257
 Q6881511	Impresa	Diritto e Economia		Superiori	Soggetti del diritto		2.1	1	230	193	413601	13304	6	1	0	712	5.35	2	0	0	1732	2006-01-08	5258
 Q2424752	Prodotto (economia)	Diritto e Economia		Superiori	Le regole del mercato e le sue forme		2.1	1	46	42	81982	9737	1	0	0	477	4.90	1	0	0	459	2006-01-08	5258
-#N/A	Borsa valori	Diritto e Economia		Superiori	Mercato della moneta		2.1	1	233	191	419138	16101	11	7	7	812	5.04	0	1	1	2243	2006-01-05	5261
+Q11691	Borsa valori	Diritto e Economia		Superiori	Mercato della moneta		2.1	1	233	191	419138	16101	11	7	7	812	5.04	0	1	1	2243	2006-01-05	5261
 Q32098	Sanzione	Diritto e Economia		Superiori	La società e ordinamento giuridico		2.1	1	76	67	136142	7359	0	0	4	323	4.39	0	0	0	49	2006-01-01	5265
 Q192796	Bilancia commerciale	Diritto e Economia		Superiori	Relazioni economiche itnernazionali		2.1	1	72	63	130163	2299	0	1	0	421	18.31	2	0	0	1029	2005-12-23	5274
 Q1415187	Soggetto economico	Diritto e Economia		Superiori	Economia e il sistema economico		2.1	1	38	33	68200	3966	0	0	0	500	12.61	1	0	0	49	2005-12-19	5278
@@ -562,14 +562,14 @@ Q1054168	Consiglio superiore della magistratura	Diritto e Economia		Superiori	Or
 -	Legge delega (ordinamento italiano)	Diritto e Economia		Superiori	Organizzazione dello stato italiano		2.1	1	1	0	5311	5311	1	0	2	330	6.21	0	0	0	304	2005-05-30	5481
 Q182985	Sistema elettorale	Diritto e Economia		Superiori	Costituzione e cittadinanza: libertà, diritti e doveri		2.1	1	187	155	335418	30462	9	0	3	340	1.12	0	0	0	16092	2005-05-18	5493
 Q1053947	Codice civile italiano	Diritto e Economia		Superiori	La società e ordinamento giuridico		2.1	1	221	330	396354	15025	4	0	0	616	4.10	0	0	0	3761	2005-04-26	5515
-#N/A	Presidente della Repubblica Italiana	Diritto e Economia		Superiori	Organizzazione dello stato italiano		0	1	1429	1496	2567566	40053	22	19	11	1427	3.56	0	0	0	23181	2005-04-24	5517
+-	Presidente della Repubblica Italiana	Diritto e Economia		Superiori	Organizzazione dello stato italiano		0	1	1429	1496	2567566	40053	22	19	11	1427	3.56	0	0	0	23181	2005-04-24	5517
 Q3832507	Limiti alla revisione costituzionale	Diritto e Economia		Superiori	Organizzazione dello stato italiano		2.1	1	84	86	150545	13076	5	0	0	532	4.07	1	0	0	5726	2005-03-18	5554
 Q783794	Società (diritto)	Diritto e Economia		Superiori	Soggetti del diritto		2.1	1	207	193	371770	19858	5	0	2	360	1.81	0	0	0	6697	2005-03-04	5568
 Q7270	Repubblica	Diritto e Economia		Superiori	Stato, Costituzone e relazioni internazionali		2.1	1	344	314	618809	12111	7	7	1	1319	10.89	2	0	0	5897	2005-02-25	5575
 Q7278	Partito politico	Diritto e Economia		Superiori	Costituzione e cittadinanza: libertà, diritti e doveri		2.1	1	139	149	249144	33964	6	1	32	642	1.89	2	2	0	4814	2005-02-13	5587
 Q160151	Prezzo	Diritto e Economia		Superiori	Le regole del mercato e le sue forme		2.1	1	83	64	148998	12064	1	0	2	912	7.56	1	0	0	49	2005-02-13	5587
 Q2542563	Liberismo	Diritto e Economia		Superiori	Economia e il sistema economico		2.1	1	361	439	648017	31452	9	0	9	1123	3.57	2	5	0	25941	2005-01-26	5605
-#N/A	Oligopolio	Diritto e Economia		Superiori	Le regole del mercato e le sue forme		2.1	1	90	76	161145	4368	0	0	0	537	12.29	0	0	0	2666	2005-01-21	5610
+Q103639	Oligopolio	Diritto e Economia		Superiori	Le regole del mercato e le sue forme		2.1	1	90	76	161145	4368	0	0	0	537	12.29	0	0	0	2666	2005-01-21	5610
 Q43637	Monopolio	Diritto e Economia		Superiori	Le regole del mercato e le sue forme		2.1	1	161	131	288515	14349	2	1	1	586	4.08	0	0	0	2099	2005-01-20	5611
 Q3968632	Stato liberale	Diritto e Economia		Superiori	Stato, Costituzone e relazioni internazionali		???	1	155	169	278722	10746	3	1	0	1037	9.65	0	0	0	730	2004-12-28	5634
 Q4290	Investimento	Diritto e Economia		Superiori	I soggetti economici		2.1	1	108	101	193478	6974	0	0	0	1140	16.35	0	0	0	219	2004-12-07	5655
@@ -583,11 +583,11 @@ Q319622	Risparmio	Diritto e Economia		Superiori	I soggetti economici		2.1	1	47	4
 Q582577	Politica economica	Diritto e Economia		Superiori	I soggetti economici		2.1	1	87	100	156233	25360	2	8	5	1096	4.32	0	0	0	6806	2004-09-17	5736
 Q188485	Commercio equo e solidale	Diritto e Economia		Superiori	Relazioni economiche itnernazionali		2.1	1	123	122	220413	44780	25	2	8	1086	2.43	1	1	0	22168	2004-09-04	5749
 Q159810	Economia	Diritto e Economia		Superiori	Economia e il sistema economico		2.1	1	348	306	626191	33401	8	7	5	1171	3.51	0	1	0	83020	2004-08-17	5767
-#N/A	Economia dello sviluppo	Diritto e Economia		Superiori	Relazioni economiche itnernazionali		2.1	1	17	16	30476	16137	1	0	13	282	1.75	1	0	0	1613	2004-06-30	5815
+Q1127188	Economia dello sviluppo	Diritto e Economia		Superiori	Relazioni economiche itnernazionali		2.1	1	17	16	30476	16137	1	0	13	282	1.75	1	0	0	1613	2004-06-30	5815
 Q216200	Norma giuridica	Diritto e Economia		Superiori	La società e ordinamento giuridico		0	1	274	268	491797	9778	2	0	0	378	3.87	0	0	0	5019	2004-05-23	5853
 Q37654	Mercato	Diritto e Economia		Superiori	Le regole del mercato e le sue forme		2.1	1	126	104	226365	11324	0	4	0	434	3.83	1	0	0	812	2004-05-14	5862
 Q796897	Presidente del Consiglio dei ministri della Repubblica Italiana	Diritto e Economia		Superiori	Organizzazione dello stato italiano		0	1	1153	974	2071502	14757	9	4	2	2702	18.31	1	0	0	3255	2004-04-16	5890
-#N/A	Simboli europei	Diritto e Economia		Superiori	Le istituzioni locali, europee e internazionali		2.1	1	27	23	48180	10281	4	1	0	1128	10.97	0	0	0	2223	2004-04-10	5896
+Q1123840	Simboli europei	Diritto e Economia		Superiori	Le istituzioni locali, europee e internazionali		2.1	1	27	23	48180	10281	4	1	0	1128	10.97	0	0	0	2223	2004-04-10	5896
 Q178476	Politica monetaria	Diritto e Economia		Superiori	Mercato della moneta		2.1	1	101	95	181006	4457	1	0	5	284	6.37	1	0	0	1640	2004-03-22	5915
 Q43109	Referendum	Diritto e Economia		Superiori	Organizzazione dello stato italiano		2.1	1	325	212	584143	17568	13	2	0	494	2.81	0	0	0	13008	2004-03-16	5921
 Q35865	Inflazione	Diritto e Economia		Superiori	Mercato della moneta		2.1	1	583	686	1047359	51961	20	2	4	1671	3.22	3	1	0	42465	2004-02-19	5947
@@ -604,12 +604,12 @@ Q7748	Diritto	Diritto e Economia		Superiori	La società e ordinamento giuridico	
 Q271855	Bilancio dello Stato	Diritto e Economia		Superiori	I soggetti economici		???	1	139	146	248965	9806	2	0	0	689	7.03	1	0	0	3577	2005-05-27	5484
 Q81329802	Decreto-legge	Diritto e Economia		Superiori	Organizzazione dello stato italiano		???	1	460	463	825825	18635	20	0	5	1127	6.05	0	0	0	3247	2007-05-07	4774
 Q3242046	Diritti economici, sociali e culturali	Diritto e Economia		Superiori	Costituzione e cittadinanza: libertà, diritti e doveri		sociali e culturali	1	19	24	34600	20636	12	1	8	2342	11.35	0	1	0	105	sociali e culturali	#VALUE!
-#N/A	Famiglia (operatore economico)	Diritto e Economia		Superiori	I soggetti economici		2.1	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Famiglia (operatore economico)	Diritto e Economia		Superiori	I soggetti economici		2.1	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q3797511	Inabilitazione	Diritto e Economia		Superiori	Soggetti del diritto		???	1	7	0	4428	4428	7	0	0	731	16.51	0	0	0	5503	???	#VALUE!
-#N/A	Integrazione internazionale	Diritto e Economia		Superiori	Relazioni economiche itnernazionali		2.1	1	31	33	55762	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Licenziamento (diritto italiano)	Diritto e Economia		Superiori	Mercato del lavoro		2.1	1	15	32	26129	62500	21	0	0	240	0.38	0	0	0	0	matching	#VALUE!
-#N/A	Operatore economico	Diritto e Economia		Superiori	I soggetti economici		2.1	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Procedimento legislativo (Italia)	Diritto e Economia		Superiori	Organizzazione dello stato italiano		0	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Integrazione internazionale	Diritto e Economia		Superiori	Relazioni economiche itnernazionali		2.1	1	31	33	55762	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+Q685744	Licenziamento (ordinamento italiano)	Diritto e Economia	ex Licenziamento (diritto italiano)	Superiori	Mercato del lavoro		2.1	1	15	32	26129	62500	21	0	0	240	0.38	0	0	0	0	matching	#VALUE!
+-	Operatore economico	Diritto e Economia		Superiori	I soggetti economici		2.1	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Procedimento legislativo	Diritto e Economia	ex Procedimento legislativo (Italia)	Superiori	Organizzazione dello stato italiano		0	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 #N/A	Stato (operatore economico)	Diritto e Economia		Superiori	I soggetti economici		2.1	0				0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q3796473	Illuminismo in Germania	Filosofia		Superiori	Illuminismo		???	1	16	9	28664	7763	8	0	4	781	10.06	0	0	0	39	2011-10-27	3140
 Q2142166	Paradosso di Achille e la tartaruga	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	238	259	426899	6903	5	1	1	238	3.45	0	0	0	1367	2008-12-15	4186
@@ -1252,15 +1252,15 @@ Q2990574	Complemento oggetto	Grammatica italiana			Analisi logica	complemento og
 Q3685169	Complemento predicativo del soggetto	Grammatica italiana			Analisi logica	Il soggetto	0.4	1	130	96	232933	2863	1	0	1	422	14.74	0	0	0	0	2005-11-03	5324
 Q3685154	Complemento di mezzo o strumento	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	52	50	93982	949	0	0	0	732	77.13	1	0	0	34	2005-10-05	5353
 Q3685155	Complemento di modo o maniera	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	79	79	141374	2686	1	0	1	156	5.81	0	0	0	0	2005-10-05	5353
-#N/A	Complemento (linguistica)	Grammatica italiana			Analisi logica	I complementi	0.4	1	90	95	161172	10491	5	0	2	740	7.05	0	0	0	1931	2005-10-03	5355
+Q1051175	Complemento (linguistica)	Grammatica italiana			Analisi logica	I complementi	0.4	1	90	95	161172	10491	5	0	2	740	7.05	0	0	0	1931	2005-10-03	5355
 Q161736	Virgola	Grammatica italiana			Punteggiatura	Virgola	???	1	71	68	126726	5159	1	2	0	468	9.07	1	0	0	0	2005-09-30	5358
 Q34698	Aggettivo	Grammatica italiana			Aggettivo	Aggettivi	???	1	173	135	310682	8930	11	0	5	428	4.79	1	0	2	1762	2005-08-21	5398
 Q38035	Consonante	Grammatica italiana			Fonologia, ortografia	Le consonanti	???	1	68	68	121509	7325	0	0	6	935	12.76	2	0	0	8044	2005-08-04	5415
 Q102532	Dittongo	Grammatica italiana			Fonologia, ortografia	Dittonghi	???	1	155	126	278135	10128	2	0	4	1263	12.47	1	0	0	1844	2005-07-28	5422
-#N/A	Accento distintivo sui monosillabi	Grammatica italiana			Fonologia, ortografia	Accento	???	1	55	32	98308	37584	21	0	0	2311	6.15	0	0	0	9156	2005-07-20	5430
+Q1100446	Accento distintivo sui monosillabi	Grammatica italiana			Fonologia, ortografia	Accento	???	1	55	32	98308	37584	21	0	0	2311	6.15	0	0	0	9156	2005-07-20	5430
 Q41796	Frase	Grammatica italiana			Analisi logica	La frase	0.4	1	42	34	74629	7894	6	3	4	1706	21.61	0	0	0	0	2005-07-13	5437
 Q179080	Predicato	Grammatica italiana			Verbo	Funzioni dei verbi	???	1	103	92	184479	4500	0	0	0	3852	85.60	1	0	0	508	2005-07-09	5441
-#N/A	Numero (linguistica)	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	1	9	8	15774	2386	1	0	0	223	9.35	1	0	0	0	2005-07-05	5445
+Q104083	Numero (linguistica)	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	1	9	8	15774	2386	1	0	0	223	9.35	1	0	0	0	2005-07-05	5445
 Q11169	Punto interrogativo	Grammatica italiana			Punteggiatura	Punto interrogativo	???	1	117	132	210629	4524	2	3	0	401	8.86	0	0	0	1039	2005-07-05	5445
 Q162378	Genere (linguistica)	Grammatica italiana			Sostantivo	Genere dei sostantivi	???	1	23	20	41717	25214	3	0	0	1791	7.10	1	1	0	986	2005-07-04	5446
 Q184932	Modo (linguistica)	Grammatica italiana			Verbo	Modi verbali	???	1	26	22	45913	1683	1	0	0	1256	74.63	1	0	0	0	2005-07-04	5446
@@ -1276,30 +1276,30 @@ Q650250	Elisione	Grammatica italiana			Fonologia, ortografia	Elisione (apostrofo
 Q750663	Iato	Grammatica italiana			Fonologia, ortografia	Iati	???	1	142	121	255005	4949	5	0	0	347	7.01	0	0	0	2487	2004-09-12	5741
 Q147276	Nome proprio	Grammatica italiana			Sostantivo	Nomi propri	???	1	49	38	87551	3081	3	0	0	2023	65.66	1	0	0	0	2004-09-07	5746
 Q112154	Apocope	Grammatica italiana			Fonologia, ortografia	Troncamento	???	1	108	87	194750	18508	13	0	1	1143	6.18	1	0	0	36475	2004-07-11	5804
-#N/A	Articolo (linguistica)	Grammatica italiana			Articolo	Articolo	???	1	71	59	127884	16882	13	1	0	924	5.47	0	0	0	3497	2004-02-26	5940
+Q103184	Articolo (linguistica)	Grammatica italiana			Articolo	Articolo	???	1	71	59	127884	16882	13	1	0	924	5.47	0	0	0	3497	2004-02-26	5940
 Q178890	Accento grafico	Grammatica italiana			Fonologia, ortografia	Accento	???	1	61	40	110104	3813	1	0	0	208	5.46	1	0	0	18742	2004-01-08	5989
-#N/A	Ordine alfabetico	Grammatica italiana			Fonologia, ortografia	L'alfabeto	???	1	471	505	846741	3194	0	0	0	223	6.98	2	0	0	1634	2002-12-01	6392
-#N/A	Articolo determinativo	Grammatica italiana			Articolo	Articolo determinativo	???	0				57	0	0	1	54	94.74	0	0	0	0	???	#VALUE!
-#N/A	Articolo indeterminativo	Grammatica italiana			Articolo	Articolo indeterminativo	???	0				59	0	0	0	56	94.92	0	0	0	0	???	#VALUE!
-#N/A	Avverbi di giudizio	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Avverbi di luogo	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Avverbi di modo	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Avverbi di quantità	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Avverbi di tempo	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+Q10925	Ordine alfabetico	Grammatica italiana			Fonologia, ortografia	L'alfabeto	???	1	471	505	846741	3194	0	0	0	223	6.98	2	0	0	1634	2002-12-01	6392
+-	Articolo determinativo	Grammatica italiana			Articolo	Articolo determinativo	???	0				57	0	0	1	54	94.74	0	0	0	0	???	#VALUE!
+-	Articolo indeterminativo	Grammatica italiana			Articolo	Articolo indeterminativo	???	0				59	0	0	0	56	94.92	0	0	0	0	???	#VALUE!
+-	Avverbi di giudizio	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Avverbi di luogo	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Avverbi di modo	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Avverbi di quantità	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Avverbi di tempo	Grammatica italiana			Avverbio	Classificazione degli avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q207509	Copula (linguistica)	Grammatica italiana			Verbo	Funzioni dei verbi	???	1	85	66	153054	3731	1	0	1	600	16.08	0	0	1	0	2009-11-19	3847
 Q30894408	Frase nucleare	Grammatica italiana			Analisi logica	La frase	???	1	6	8	10042	1298	1	0	0	1039	80.05	1	0	0	0	???	#VALUE!
 Q179230	Infinito (modo)	Grammatica italiana			Verbo	Modi verbali	???	1	16	10	28430	1141	0	0	0	0	0.00	0	0	0	1593	2006-12-01	4931
-#N/A	Nome astratto	Grammatica italiana			Sostantivo	Nomi astratti/concreti	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Nome collettivo	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	59	0	0	0	56	94.92	0	0	0	0	???	#VALUE!
-#N/A	Nome concreto	Grammatica italiana			Sostantivo	Nomi astratti/concreti	???	0	5	5	9029	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Nome individuale	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Nome invariabile	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	41	0	0	0	38	92.68	0	0	0	0	???	#VALUE!
-#N/A	Nome non numerabile	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Nome astratto	Grammatica italiana			Sostantivo	Nomi astratti/concreti	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Nome collettivo	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	59	0	0	0	56	94.92	0	0	0	0	???	#VALUE!
+-	Nome concreto	Grammatica italiana			Sostantivo	Nomi astratti/concreti	???	0	5	5	9029	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Nome individuale	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Nome invariabile	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	41	0	0	0	38	92.68	0	0	0	0	???	#VALUE!
+-	Nome non numerabile	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q1520033	Nome numerabile	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Nome proprio di luogo	Grammatica italiana			Sostantivo	Nomi propri	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Nome sovrabbondante	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	43	0	0	0	40	93.02	0	0	0	0	???	#VALUE!
-#N/A	Particelle pronominali	Grammatica italiana			Pronome	Pronomi personali	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Pronomi riflessivi	Grammatica italiana			Pronome	Pronomi personali	???	0	0	0	0	0	0	0	3	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Nome proprio di luogo	Grammatica italiana			Sostantivo	Nomi propri	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Nome sovrabbondante	Grammatica italiana			Sostantivo	Numero dei sostantivi	???	0	0	0	0	43	0	0	0	40	93.02	0	0	0	0	???	#VALUE!
+-	Particelle pronominali	Grammatica italiana			Pronome	Pronomi personali	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Pronomi riflessivi	Grammatica italiana			Pronome	Pronomi personali	???	0	0	0	0	0	0	0	3	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q48801296	Comparativo e superlativo degli aggettivi latini	Grammatica latina		Superiori	Flessione dell'aggettivo	Grado degli aggettivi	2.1	1	9	19	15554	6462	0	0	4	383	5.93	1	0	0	47	2017-07-01	1066
 Q19819479	Quarta coniugazione latina	Grammatica latina		Superiori	Verbi	Le IV coniugazioni	2.1	1	8	12	14226	7117	0	0	1	253	3.55	0	0	0	47	2015-04-08	1881
 Q20009493	Terza coniugazione latina	Grammatica latina		Superiori	Verbi	Le IV coniugazioni	2.1	1	15	23	27295	8251	0	0	1	314	3.81	0	0	0	47	2015-03-31	1889
@@ -1354,10 +1354,10 @@ Q128234	Caso (linguistica)	Grammatica latina		Superiori	Flessione del sostantivo
 Q146233	Genitivo	Grammatica latina		Superiori	Flessione del sostantivo	I casi	2.1	1	50	50	90689	3223	0	0	0	873	27.09	1	0	0	574	2004-10-25	5698
 Q131105	Nominativo	Grammatica latina		Superiori	Flessione del sostantivo	I casi	2.1	1	29	28	52783	4000	1	0	1	701	17.53	1	0	0	175	2004-10-25	5698
 Q397	Lingua latina	Grammatica latina		Superiori	Generalità	Generalità	2.1	1	542	601	974541	35105	11	5	17	1456	4.15	1	0	0	20926	2004-02-26	5940
-#N/A	Aggettivi possessivi latini	Grammatica latina		Superiori	Flessione dell'aggettivo	Tipi di aggettivi	???	0	0	0	0	0	0	0	1	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Aggettivi pronominali latini	Grammatica latina		Superiori	Flessione dell'aggettivo	Tipi di aggettivi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Avverbi latini	Grammatica latina		Superiori	Parti invariabili del discorso	Avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Preposizioni latine	Grammatica latina		Superiori	Parti invariabili del discorso	Preposizioni	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Aggettivi possessivi latini	Grammatica latina		Superiori	Flessione dell'aggettivo	Tipi di aggettivi	???	0	0	0	0	0	0	0	1	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Aggettivi pronominali latini	Grammatica latina		Superiori	Flessione dell'aggettivo	Tipi di aggettivi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Avverbi latini	Grammatica latina		Superiori	Parti invariabili del discorso	Avverbi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Preposizioni latine	Grammatica latina		Superiori	Parti invariabili del discorso	Preposizioni	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q70235	Verbo irregolare	Grammatica latina		Superiori	Verbi	Particolairtà del verbo	???	1	3	0	9675	9675	3	0	0	1712	17.70	0	0	0	203	2013-12-12	2363
 Q18845397	Windows 10 Mobile	Informatica		Superiori	Dispositivi mobili		2	1	35	31	62943	7174	6	0	0	456	6.36	0	0	0	1162	2015-11-06	1669
 Q275131	Scratch (informatica)	Informatica		Superiori	Programmazione		2	1	126	134	226021	9523	5	2	0	669	7.03	0	0	0	1612	2013-12-11	2364
@@ -1376,7 +1376,7 @@ Q3220391	Servizio di rete sociale	Informatica		Superiori	Reti e internet		2	1	98
 Q442781	Webinar	Informatica		Medie	Dispositivi mobili		1	1	159	109	284852	1640	0	0	0	1383	84.33	2	0	0	4401	2009-10-02	3895
 Q846324	Scacchiera di Polibio	Informatica		Superiori	Informatica applicata alla matematica		2	1	12	13	22228	4845	1	0	0	542	11.19	0	0	0	76	2009-08-25	3933
 Q3951866	Scheda elettronica	Informatica		Superiori	Hardware		2	1	40	36	71247	9452	1	8	0	498	5.27	1	0	0	41	2009-07-03	3986
-#N/A	Mobile Internet Device	Informatica		Superiori	Dispositivi mobili		2	1	15	8	26236	8675	0	0	0	293	3.38	1	0	0	1037	2008-10-22	4240
+Q1140685	Mobile Internet Device	Informatica		Superiori	Dispositivi mobili		2	1	15	8	26236	8675	0	0	0	293	3.38	1	0	0	1037	2008-10-22	4240
 Q48493	iOS	Informatica		Medie	Dispositivi mobili		2	1	206	222	371050	128156	200	5	4	3143	2.45	0	2	0	14667	2008-07-31	4323
 Q186885	Marca temporale	Informatica		Superiori	Reti e internet		2	1	28	27	49940	9168	1	0	0	1063	11.59	2	0	0	652	2008-06-11	4373
 Q483639	Cloud computing	Informatica		Superiori	Reti e internet		2	1	400	381	718479	15901	12	3	1	2718	17.09	0	0	0	6523	2008-04-10	4435
@@ -1396,7 +1396,7 @@ Q3960106	Sicurezza e vulnerabilità delle reti	Informatica		Superiori	Reti e int
 Q620615	Applicazione mobile	Informatica		Medie	Dispositivi mobili		2	1	82	76	147932	9800	7	1	0	625	6.38	0	0	0	3416	2007-03-09	4833
 Q182270	Grafica raster	Informatica		Superiori	Basi dell'informatica		2	1	77	70	138991	7030	1	1	0	583	8.29	1	0	0	903	2007-02-07	4863
 Q3909444	Posta elettronica certificata	Informatica		Superiori	Reti e internet		2	1	393	401	705571	41160	26	0	0	846	2.06	4	1	1	60587	2007-01-20	4881
-#N/A	Programmazione procedurale	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	28	30	51088	2938	0	0	0	550	18.72	1	0	0	555	2006-12-17	4915
+-	Programmazione procedurale	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	28	30	51088	2938	0	0	0	550	18.72	1	0	0	555	2006-12-17	4915
 Q1069090	Metodo di Gauss-Seidel	Informatica		Superiori	Informatica applicata alla matematica		2	1	15	16	27443	3751	0	0	0	236	6.29	1	0	0	1354	2006-11-18	4944
 Q224055	Astrazione (informatica)	Informatica		Superiori	Programmazione		2	1	24	25	42692	20571	0	0	0	257	1.25	1	0	0	41	2006-10-29	4964
 Q5254619	Algoritmo iterativo	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	16	14	29161	7616	0	0	0	470	6.17	1	0	0	41	2006-07-27	5058
@@ -1928,7 +1928,7 @@ Q2778917	L'isola di Arturo (romanzo)	Letteratura italiana		Superiori	Dopoguerra	
 Q2279483	La storia (romanzo)	Letteratura italiana		Superiori	Dopoguerra	Elsa Morante	???	1	2	0	17488	17488	2	0	9	1434	8.20	0	0	0	2263	???	#VALUE!
 Q3824693	La tregua (Primo Levi)	Letteratura italiana		Superiori	Dopoguerra	Primo Levi	???	1	4	1	29979	29983	4	1	0	798	2.66	0	0	0	2196	???	#VALUE!
 Q3831189	Lettre à Monsieur Chauvet sur l'unité de temps et de lieu dans la tragédie	Letteratura italiana		Superiori	Primo Ottocento	Alessandro Manzoni	???	1	9	10	16646	3387	0	1	0	472	13.94	1	0	0	50	???	#VALUE!
-#N/A	Lingua occitana	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	???	1	214	239	384469	187041	163	15	0	3133	1.68	0	4	0	30553	2005-01-13	5618
+Q14185	Lingua occitana	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	???	1	214	239	384469	187041	163	15	0	3133	1.68	0	4	0	30553	2005-01-13	5618
 Q177854	Lorenzo de' Medici	Letteratura italiana		Superiori	XV Secolo	Lorenzo de' Medici	2.3	1	2054	2920	3690434	121199	191	29	20	3261	2.69	0	0	0	28631	2007-10-04	4624
 Q48900	Ludovico Ariosto	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	1	422	364	757464	21084	11	7	15	516	2.45	0	0	0	15013	2006-12-09	4923
 #N/A	Luigi Pirandello	Letteratura italiana		Superiori	Primo novecento	Luigi Pirandello	2.5	1	1513	1414	2719380	96450	73	19	29	509	0.53	0	0	0	124284	2008-04-08	4437
@@ -2337,28 +2337,28 @@ Q3748186	Formazione della Terra	Scienze della Terra		Superiori	Formazione della 
 Q42045	Roccia magmatica	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	152	130	273436	15974	1	13	2	645	4.04	1	0	0	4123	2007-03-20	4822
 Q81659	Piega (geologia)	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	23	20	41177	10631	1	7	3	2381	22.40	1	0	0	693	2007-03-19	4823
 Q3866557	Movimenti della Terra	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	205	176	367543	2994	1	1	0	439	14.66	1	0	0	7746	2007-02-09	4861
-#N/A	Esosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	43	44	76608	1955	2	0	0	1200	61.38	2	0	0	316	2007-02-08	4862
-#N/A	Sistema eliocentrico	Scienze della Terra		Superiori	Il sistema solare		???	1	226	225	405600	11808	6	4	0	1387	11.75	0	0	0	4685	2007-01-28	4873
+Q170332	Esosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	43	44	76608	1955	2	0	0	1200	61.38	2	0	0	316	2007-02-08	4862
+Q103983	Sistema eliocentrico	Scienze della Terra		Superiori	Il sistema solare		???	1	226	225	405600	11808	6	4	0	1387	11.75	0	0	0	4685	2007-01-28	4873
 Q26388	Fasi lunari	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	524	495	940784	8646	3	4	2	597	6.90	0	0	0	4443	2006-11-21	4941
 Q826582	Cristallografia a raggi X	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	26	28	46949	4185	0	1	0	3597	85.95	1	0	0	115	2006-11-11	4951
 Q241284	Geosfera	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	15	13	27555	2430	1	1	4	609	25.06	1	0	0	49	2006-10-14	4979
 Q3230	Atmosfera terrestre	Scienze della Terra		Superiori	Atmosfera e clima		2	1	327	286	587729	28626	9	3	1	887	3.10	0	3	0	2914	2006-10-06	4987
 Q25257	Precipitazione (meteorologia)	Scienze della Terra		Superiori	Atmosfera e clima		2	1	73	63	130597	13863	3	3	1	530	3.82	0	0	0	1124	2006-09-08	5015
-#N/A	Stratosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	89	103	159604	2102	0	1	0	1672	79.54	1	0	0	49	2006-08-13	5041
-#N/A	Degradazione meteorica (meteorizzazione)	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	4	1	6399	28035	13	7	4	760	2.71	0	0	0	4887	2006-08-09	5045
-#N/A	Silicato	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	117	118	209821	8906	4	6	1	612	6.87	0	0	0	49	2006-07-18	5067
-#N/A	Superficie della Luna	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	48	72	86399	2029	0	2	0	1755	86.50	0	0	0	49	2006-07-10	5075
+Q108376	Stratosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	89	103	159604	2102	0	1	0	1672	79.54	1	0	0	49	2006-08-13	5041
+Q179177	Degradazione meteorica (meteorizzazione)	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	4	1	6399	28035	13	7	4	760	2.71	0	0	0	4887	2006-08-09	5045
+Q178977	Silicato	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	117	118	209821	8906	4	6	1	612	6.87	0	0	0	49	2006-07-18	5067
+Q1037499	Superficie della Luna	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	48	72	86399	2029	0	2	0	1755	86.50	0	0	0	49	2006-07-10	5075
 Q380971	Metamorfismo	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		2	1	35	30	63550	33662	4	3	6	462	1.37	0	0	0	49	2006-07-06	5079
-#N/A	Acqua di mare	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	108	95	193368	4866	0	1	0	403	8.28	1	0	0	1595	2006-06-20	5095
-#N/A	Ionosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	54	49	96331	8821	0	3	0	760	8.62	0	0	1	49	2006-06-11	5104
-#N/A	Orogenesi	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	120	97	216163	6494	2	3	0	606	9.33	1	0	0	1823	2006-05-31	5115
+Q184395	Acqua di mare	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	108	95	193368	4866	0	1	0	403	8.28	1	0	0	1595	2006-06-20	5095
+Q162219	Ionosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	54	49	96331	8821	0	3	0	760	8.62	0	0	1	49	2006-06-11	5104
+Q184554	Orogenesi	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	120	97	216163	6494	2	3	0	606	9.33	1	0	0	1823	2006-05-31	5115
 Q188719	Isostasia	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	45	36	80182	2521	1	0	0	333	13.21	1	0	0	49	2006-05-27	5119
 Q742139	Facies	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		2	1	32	33	57999	6678	2	0	0	621	9.30	0	0	0	552	2006-03-24	5183
-#N/A	Corso d'acqua	Scienze della Terra		Superiori	Acque continentali		2	1	4	3	7202	19	0	0	0	16	84.21	0	0	0	0	2006-03-04	5203
+Q4022	Fiume	Scienze della Terra	Corso d'acqua	Superiori	Acque continentali		2	1	4	3	7202	19	0	0	0	16	84.21	0	0	0	0	2006-03-04	5203
 Q47069	Roccia metamorfica	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		2	1	109	104	195005	36977	3	0	5	1190	3.22	0	0	0	71	2006-02-14	5221
 Q191218	Faglia di Sant'Andrea	Scienze della Terra		Superiori	Terremoti		2	1	282	309	506538	8990	0	3	0	1262	14.04	0	0	0	2889	2006-01-25	5241
 Q186167	Onde sismiche	Scienze della Terra		Superiori	Terremoti		2	1	155	117	277996	16986	0	7	3	738	4.34	0	0	0	7169	2006-01-25	5241
-#N/A	Umidità	Scienze della Terra		Superiori	Atmosfera e clima		2	1	186	168	333839	13336	5	7	0	186	1.39	0	0	0	5267	2006-01-19	5247
+Q180600	Umidità	Scienze della Terra		Superiori	Atmosfera e clima		2	1	186	168	333839	13336	5	7	0	186	1.39	0	0	0	5267	2006-01-19	5247
 Q891130	Glaciazione	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	120	126	215574	14677	11	4	1	1643	11.19	0	3	0	40529	2005-12-21	5276
 Q7692360	Eruzione vulcanica	Scienze della Terra		Superiori	I vulcani		2	1	173	153	310624	13523	0	3	1	735	5.44	0	0	0	226	2005-11-18	5309
 #N/A	Lapilli	Scienze della Terra		Superiori	I vulcani		2	1	3	3	5318	21	0	0	0	18	85.71	0	0	0	0	2005-11-13	5314
@@ -2591,9 +2591,9 @@ Q623164	Cinque giornate di Milano	Storia		Superiori	XVIII-XIX secolo	Cinque gior
 #N/A	Civiltà araba	Storia		Superiori	XX-XXI secolo	Civiltà araba	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q47690	Civiltà babilonese	Storia		Superiori	Antichità	I babilonesi	???	1	241	269	432913	13963	0	2	2	2188	15.67	2	0	0	2384	???	#VALUE!
 Q42534	Civiltà della valle dell'Indo	Storia		Superiori	Antichità	Le civiltà dell'Indo	???	1	161	152	288916	27087	9	10	1	996	3.68	1	0	0	3208	???	#VALUE!
-#N/A	Civiltà micenea	Storia		Superiori	Antichità	I micenei	???	1	342	343	614891	56449	27	15	15	2295	4.07	1	2	0	7040	???	#VALUE!
-#N/A	Civiltà minoica	Storia		Superiori	Antichità	I cretesi	???	1	306	298	549734	98256	68	19	57	1044	1.06	0	22	0	3106	???	#VALUE!
-#N/A	Civiltà nuragica	Storia		Superiori	Grecia e Italia preromana	Nuragici	???	1	247	255	444352	104935	99	51	24	2744	2.61	0	0	0	32621	???	#VALUE!
+Q181264	Civiltà micenea	Storia		Superiori	Antichità	I micenei	???	1	342	343	614891	56449	27	15	15	2295	4.07	1	2	0	7040	???	#VALUE!
+Q134178	Civiltà minoica	Storia		Superiori	Antichità	I cretesi	???	1	306	298	549734	98256	68	19	57	1044	1.06	0	22	0	3106	???	#VALUE!
+Q1421436	Civiltà nuragica	Storia		Superiori	Grecia e Italia preromana	Nuragici	???	1	247	255	444352	104935	99	51	24	2744	2.61	0	0	0	32621	???	#VALUE!
 Q151060	Codice napoleonico	Storia		Superiori	XVIII-XIX secolo	Codice civile francese	???	1	41	56	74469	8651	1	3	0	873	10.09	0	0	0	6631	???	#VALUE!
 Q1134177	Coesistenza pacifica	Storia		Superiori	XX-XXI secolo	Coesistenza pacifica	???	1	6	9	11559	10291	14	1	5	984	9.56	0	0	0	36	???	#VALUE!
 Q7167	Colonialismo	Storia		Superiori	XX-XXI secolo	Colonialismo	???	1	281	250	504917	44343	10	3	10	966	2.18	1	3	0	10207	???	#VALUE!
