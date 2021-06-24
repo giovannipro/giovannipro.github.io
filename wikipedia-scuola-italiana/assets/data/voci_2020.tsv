@@ -855,7 +855,7 @@ Q82580	Attrito	Fisica		Superiori	Vettori e forze		???	1	350	292	629651	22693	8	3
 Q2642081	Teorema dell'energia cinetica	Fisica		Superiori	Il lavoro e l'energia		???	1	107	119	192776	14502	9	0	0	587	4.05	0	0	0	7037	2004-06-04	5841
 #N/A	Interazione gravitazionale	Fisica		Superiori	La gravitazione		???	1	263	256	472930	31597	14	8	0	1360	4.30	2	0	0	61022	2004-05-24	5852
 Q17996169	Radiazione solare	Fisica		Superiori	La luce		???	1	120	121	216007	9175	1	3	0	1394	15.19	1	0	0	754	2004-05-18	5858
-#N/A	Piano inclinato	Fisica		Superiori	Equilibrio dei solidi		???	1	89	78	159773	11025	9	4	0	712	6.46	0	0	0	656	2004-05-03	5873
+Q161462	Piano inclinato	Fisica		Superiori	Equilibrio dei solidi		???	1	89	78	159773	11025	9	4	0	712	6.46	0	0	0	656	2004-05-03	5873
 Q20702	Pendolo	Fisica		Superiori	I moti nel piano		???	1	158	134	283102	12369	1	1	0	1213	9.81	0	0	0	159	2004-04-30	5876
 #N/A	Grandezza fisica	Fisica		Superiori	Le grandezze fisiche		???	1	194	170	348588	20647	12	0	0	590	2.86	0	0	0	4716	2004-04-15	5891
 Q181175	Grandezza scalare	Fisica		Superiori	Vettori e forze		???	1	97	87	174756	3577	5	0	8	719	20.10	0	0	0	2140	2004-04-15	5891
@@ -2548,31 +2548,31 @@ Q856544	Biblioteca di Assurbanipal	Storia		Superiori	Antichità	la Biblioteca di
 Q3639759	Biennio rosso in Europa	Storia		Superiori	XX-XXI secolo		???	1	32	36	57862	17676	17	1	27	730	4.13	0	0	0	1081	???	#VALUE!
 Q391511	Biennio rosso in Italia	Storia		Superiori	XX-XXI secolo	Biennio rosso	???	1	251	261	450200	90314	171	8	32	2194	2.43	0	0	0	28691	???	#VALUE!
 Q219447	Bill of Rights	Storia		Superiori	XVI-XVII secolo	Bill of Rights	???	1	144	164	259380	5494	3	1	4	278	5.06	0	0	0	3076	???	#VALUE!
-#N/A	Blocco occidentale	Storia		Superiori	XX-XXI secolo	Gli USA come superpotenza	???	1	28	27	49460	3309	1	3	0	337	10.18	0	0	0	36	???	#VALUE!
-#N/A	Blocco orientale	Storia		Superiori	XX-XXI secolo	URSS come superpotenza	???	1	62	68	111546	6212	0	3	0	1108	17.84	1	0	0	1960	???	#VALUE!
+Q1507074	Blocco occidentale	Storia		Superiori	XX-XXI secolo	Gli USA come superpotenza	???	1	28	27	49460	3309	1	3	0	337	10.18	0	0	0	36	???	#VALUE!
+Q170541	Blocco orientale	Storia		Superiori	XX-XXI secolo	URSS come superpotenza	???	1	62	68	111546	6212	0	3	0	1108	17.84	1	0	0	1960	???	#VALUE!
 Q52090	Borghesia	Storia		Superiori	Basso medioevo	Borghesia	???	1	217	216	390436	9576	11	0	0	623	6.51	0	0	0	3438	???	#VALUE!
-#N/A	Boston Tea Party	Storia		Superiori	XVIII-XIX secolo	il Boston Tea Party	???	1	113	115	203688	15997	11	2	2	493	3.08	1	0	0	1629	???	#VALUE!
+Q19024	Boston Tea Party	Storia		Superiori	XVIII-XIX secolo	il Boston Tea Party	???	1	113	115	203688	15997	11	2	2	493	3.08	1	0	0	1629	???	#VALUE!
 Q915425	Brigantaggio	Storia		Superiori	XVIII-XIX secolo	Brigantaggio	???	1	223	206	401164	89231	94	22	28	2402	2.69	0	2	0	290188	???	#VALUE!
-#N/A	Caccia alle streghe	Storia		Superiori	XVI-XVII secolo	La caccia alle streghe	???	1	251	253	450962	52792	68	6	11	1775	3.36	0	0	0	84575	???	#VALUE!
+Q188494	Caccia alle streghe	Storia		Superiori	XVI-XVII secolo	La caccia alle streghe	???	1	251	253	450962	52792	68	6	11	1775	3.36	0	0	0	84575	???	#VALUE!
 Q608613	Caduta dell'Impero romano d'Occidente	Storia		Superiori	Alto medioevo	Caduta dell'impero romano d'occidente	???	1	544	502	977972	133623	117	15	8	544	0.41	0	0	0	6509	2009-09-21	3906
 Q3649503	Caduta della Repubblica Sociale Italiana	Storia		Superiori	XX-XXI secolo		???	1	23	25	40801	15618	5	1	1	218	1.40	2	8	0	2052	???	#VALUE!
-#N/A	Calendario	Storia		Elementari	Prima elementare	Calendario	0.1	1	157	143	282095	10901	0	4	0	523	4.80	0	0	0	11568	???	#VALUE!
-#N/A	Califfato dei Rashidun	Storia		Superiori	Alto medioevo		???	1	36	42	64108	31754	13	6	3	1201	3.78	0	0	0	3339	???	#VALUE!
+Q12132	Calendario	Storia		Elementari	Prima elementare	Calendario	0.1	1	157	143	282095	10901	0	4	0	523	4.80	0	0	0	11568	???	#VALUE!
+Q12490507	Califfato dei Rashidun	Storia		Superiori	Alto medioevo		???	1	36	42	64108	31754	13	6	3	1201	3.78	0	0	0	3339	???	#VALUE!
 Q8575586	Califfato omayyade	Storia		Superiori	Alto medioevo		???	1	17	41	30550	74051	88	15	44	4227	5.71	0	1	0	94	???	#VALUE!
-#N/A	Camillo Benso, conte di Cavour	Storia		Superiori	XVIII-XIX secolo	Cavour	???	1	600	614	1078607	99112	117	58	15	1790	1.81	0	0	0	66157	2002-04-26	6611
+Q166092	Camillo Benso, conte di Cavour	Storia		Superiori	XVIII-XIX secolo	Cavour	???	1	600	614	1078607	99112	117	58	15	1790	1.81	0	0	0	66157	2002-04-26	6611
 Q253684	Campagna d'Egitto	Storia		Superiori	XVIII-XIX secolo	Campagna d'Egitto	???	1	80	79	144224	22288	12	16	1	2352	10.55	0	1	0	65	???	#VALUE!
 Q699511	Campagna d'Italia (1796-1797)	Storia		Superiori	XVIII-XIX secolo	Campagna d'Italia	???	1	141	138	254208	83084	100	22	6	3255	3.92	0	0	0	40744	???	#VALUE!
-#N/A	Campagna dei Balcani	Storia		Superiori	XX-XXI secolo	Fronte balcanico	???	1	22	22	39002	27269	22	11	8	823	3.02	0	0	0	565	???	#VALUE!
+Q162362	Campagna dei Balcani	Storia		Superiori	XX-XXI secolo	Fronte balcanico	???	1	22	22	39002	27269	22	11	8	823	3.02	0	0	0	565	???	#VALUE!
 Q218678	Campagna del Nordafrica	Storia		Superiori	XX-XXI secolo	Fronte libico-egiziano	???	1	115	118	206692	175419	288	73	19	5970	3.40	0	0	0	4528	???	#VALUE!
-#N/A	Campagna dell'Africa Orientale Italiana	Storia		Superiori	XX-XXI secolo	Fronte etiope	???	1	66	68	118980	41466	42	21	7	3980	9.60	0	0	0	2597	???	#VALUE!
-#N/A	Campagna di Francia	Storia		Superiori	XX-XXI secolo	Invasione della Francia	???	1	178	181	320184	45467	18	10	0	5344	11.75	0	0	0	4520	???	#VALUE!
-#N/A	Campagna di Polonia	Storia		Superiori	XX-XXI secolo	Invasione della Polonia	???	1	184	192	329889	107880	111	44	28	2847	2.64	0	0	0	38156	???	#VALUE!
-#N/A	Campagna di Russia	Storia		Superiori	XVIII-XIX secolo	Campagna di Russia	???	1	222	195	398790	152406	224	63	12	2577	1.69	0	0	0	791	???	#VALUE!
-#N/A	Camuni	Storia		Superiori	Grecia e Italia preromana	Camuni	???	1	107	113	192357	20755	18	6	3	1699	8.19	0	0	0	22939	???	#VALUE!
+Q1052120	Campagna dell'Africa Orientale Italiana	Storia		Superiori	XX-XXI secolo	Fronte etiope	???	1	66	68	118980	41466	42	21	7	3980	9.60	0	0	0	2597	???	#VALUE!
+Q151340	Campagna di Francia	Storia		Superiori	XX-XXI secolo	Invasione della Francia	???	1	178	181	320184	45467	18	10	0	5344	11.75	0	0	0	4520	???	#VALUE!
+Q150812	Campagna di Polonia	Storia		Superiori	XX-XXI secolo	Invasione della Polonia	???	1	184	192	329889	107880	111	44	28	2847	2.64	0	0	0	38156	???	#VALUE!
+Q179250	Campagna di Russia	Storia		Superiori	XVIII-XIX secolo	Campagna di Russia	???	1	222	195	398790	152406	224	63	12	2577	1.69	0	0	0	791	???	#VALUE!
+Q1031802	Camuni	Storia		Superiori	Grecia e Italia preromana	Camuni	???	1	107	113	192357	20755	18	6	3	1699	8.19	0	0	0	22939	???	#VALUE!
 Q8137	Capitale (economia)	Storia		Superiori	XVIII-XIX secolo	formazione del capitale	???	1	118	106	212227	10825	2	0	2	1350	12.47	1	0	0	36	???	#VALUE!
 Q670484	Capitolare di Quierzy	Storia		Superiori	Alto medioevo	Capitolare di Kiersy	???	1	100	102	180170	7869	0	0	5	1828	23.23	0	0	0	36	???	#VALUE!
 Q3658348	Carcere dell'Asinara	Storia		Superiori	XX-XXI secolo	Carcere dell'Asinara	???	1	141	130	253284	9765	12	3	2	280	2.87	0	0	0	666	???	#VALUE!
-#N/A	Carlo Cattaneo	Storia		Superiori	XVIII-XIX secolo	Cattaneo	???	1	129	150	232358	27476	20	5	70	258	0.94	0	0	0	14036	???	#VALUE!
+Q1042024	Carlo Cattaneo	Storia		Superiori	XVIII-XIX secolo	Cattaneo	???	1	129	150	232358	27476	20	5	70	258	0.94	0	0	0	14036	???	#VALUE!
 Q3044	Carlo Magno	Storia		Superiori	Alto medioevo	Carlo Magno	???	1	1335	1320	2398272	154574	152	28	35	1852	1.20	0	0	0	24567	2003-07-13	6168
 Q32500	Carlo V d'Asburgo	Storia		Superiori	XVI-XVII secolo	Carlo V	???	1	787	880	1414520	125569	95	70	59	5346	4.26	0	0	0	75606	2005-05-19	5492
 #N/A	Casa del Popolo	Storia		Superiori	XVIII-XIX secolo	Casa del popolo	???	1	18	19	31813	5669	0	1	0	703	12.40	1	0	0	2162	???	#VALUE!
