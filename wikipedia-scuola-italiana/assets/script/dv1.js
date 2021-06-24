@@ -169,40 +169,36 @@ function dv1(year,the_subject) {
 
                 // avg daily visits
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
-                if (year == 2021){
-                	let diff = d.avg_pv - d.avg_pv_prev
-                	if (diff > 0){
-                		let diff_perc = 100 - Math.floor(d.avg_pv_prev*100/d.avg_pv)
-                		content += "<td class='value increase'>(" + d.avg_pv_prev + " +" + diff_perc + "%)</td></tr>"
-                	}
-                	else if (diff == 0){
-                		content += "<td class='value'>-</td></tr>"
-                	}
-                	else {
-                		let diff_perc = 100 - Math.floor(d.avg_pv*100/d.avg_pv_prev)
-                		content += "<td class='value decrease'>(" + d.avg_pv_prev + " -" + diff_perc + "%)</td></tr>"
-                	}
+            	let diff_pv = d.avg_pv - d.avg_pv_prev
+            	if (diff_pv > 0){
+            		let diff_pv_perc = 100 - Math.floor(d.avg_pv_prev*100/d.avg_pv)
+            		content += "<td class='value increase'>(" + d.avg_pv_prev + " +" + diff_pv_perc + "%)</td></tr>"
+            	}
+            	else if (diff_pv == 0){
+            		content += "<td class='value'>-</td></tr>"
+            	}
+            	else {
+            		let diff_pv_perc = 100 - Math.floor(d.avg_pv*100/d.avg_pv_prev)
+            		content += "<td class='value decrease'>(" + d.avg_pv_prev + " -" + diff_pv_perc + "%)</td></tr>"
                 }
 
                 //size
-                content += "<tr><td class='label'>dimension (in byte)</td><td class='value'>" + d.size.toLocaleString()
-                if (year == 2021){
-                	let diff = d.size - d.size_prev
-                	if (diff > 0){
-                		let diff_perc = 100 - Math.floor(d.size_prev*100/d.size)
-                		content += "<td class='value increase'>(" + d.size_prev + " +" + diff_perc + "%)</td></tr>"
-                	}
-                	else if (diff == 0){
-                		content += "<td class='value'>-</td></tr>"
-                	}
-                	else {
-                		let diff_perc = 100 - Math.floor(d.size*100/d.size_prev)
-                		content += "<td class='value decrease'>(" + d.size_prev + " -" + diff_perc + "%)</td></tr>"
-                	}
-                }
+                content += "<tr><td class='label'>dimensioni</td><td class='value'>" + d.size.toLocaleString()
+            	let diff_size = d.size - d.size_prev
+            	if (diff_size > 0){
+            		let diff_size_perc = 100 - Math.floor(d.size_prev*100/d.size)
+            		content += "<td class='value increase'>(" + d.size_prev + " +" + diff_size_perc + "%)</td></tr>"
+            	}
+            	else if (diff_size == 0){
+            		content += "<td class='value'>-</td></tr>"
+            	}
+            	else {
+            		let diff_size_perc = 100 - Math.floor(d.size*100/d.size_prev)
+            		content += "<td class='value decrease'>(" + d.size_prev + " -" + diff_size_perc + "%)</td></tr>"
+            	}
 
-                content += "<tr><td class='label'>discussione (in byte)</td><td class='value'>" + d.discussion_size.toLocaleString() + "</td></tr>"
-                content += "<tr><td class='label'>incipit (in byte)</td><td class='value'>" + d.incipit_size.toLocaleString() + "</td></tr>"
+                content += "<tr><td class='label'>discussione</td><td class='value'>" + d.discussion_size.toLocaleString() + "</td></tr>"
+                content += "<tr><td class='label'>incipit</td><td class='value'>" + d.incipit_size.toLocaleString() + "</td></tr>"
                 content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString() + "</td></tr>"
                 content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString() + "</td></tr>"
 
@@ -226,13 +222,16 @@ function dv1(year,the_subject) {
 				return i
 			})
 			.attr("transform", function(d,i){
-				return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
+				return "translate(" + (x(i)+50) + ",0)"
 			})
 			.on("mouseover", tooltip.show) 
 			.on("mouseout", tooltip.hide)
 
 		let article_circles = article.append("g")
 			.attr("class","article_circles")
+			.attr("transform",function (d,i) {
+				return "translate(" + 0 + "," + y(+d.avg_pv) + ")"
+			})	
 			.on("mouseover", handleMouseOver) 
 			.on("mouseout", handleMouseOut)
 			.append("a")
@@ -240,13 +239,7 @@ function dv1(year,the_subject) {
 				return wiki_link + d.article
 			})
 			.attr("target","_blank")
-			
-		let article_text = article.append("g")
-			.attr("class","article_text")
-			.attr("data-title", function(d,i){
-				return d.title
-			})
-			
+
 		let circles = article_circles.append("circle")
 			.transition()
 			.duration(500)
@@ -254,7 +247,7 @@ function dv1(year,the_subject) {
 				return i * 2
 			})
 			.attr("cx",0)
-			.attr("cy",0)
+			.attr("cy",0)	
 			.attr("fill", function(d,i){
 				return apply_color(d.subject)
 			})
@@ -306,9 +299,18 @@ function dv1(year,the_subject) {
 				return r(Math.sqrt(d.discussion_size/3.14))
 			})
 
-		// line between 2020-2021
-		let variation = article.append("line")
-			.attr("stroke","black")
+		// variation 2020-2021
+		let variation = article.append("g")
+			.attr("class","variation")
+			.attr("transform",function (d,i) {
+				return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+			})
+
+		let variation_line = variation.append("line")
+			.attr("stroke", function(d,i){
+				return apply_color(d.subject)
+			})
+			.style("stroke-dasharray", ("3, 3")) 
 			.attr("x1", function(d,i){
 				return 0
 			})
@@ -319,28 +321,17 @@ function dv1(year,the_subject) {
 				return 0
 			})
 			.attr("y2", function(d,i){
-				console.log(d.article,d.avg_pv,d.avg_pv_prev)
-				if (d.avg_pv>d.avg_pv_prev){
-					return y(d.avg_pv-d.avg_pv_prev)
-				}
-				else{
-					return y(d.avg_pv_prev-d.avg_pv)
-				}
+				return y(d.avg_pv)-y(d.avg_pv_prev)
 			})
 
-
-		// let label = article_text.append("text")
-		// 	.text(function(d,i){
-		// 		return d.article // + " " + (+d.discussion_size)
-		// 	}) 
-		// 	.attr("x",0)
-		// 	.attr("y",-height-50)
-		// 	.attr("text-anchor","middle")
-		// 	.attr("fill","black")
-		// 	.attr("font-size",font_size)
-		// 	.attr("class","text")
-		// 	.attr("opacity",0)
-		// 	.attr("data-radius",function(d,i){
+		// for debug
+		// let variation_circle = variation.append("circle")
+		// 	.attr("cx",0)
+		// 	.attr("cy",0)
+		// 	.attr("stroke", "red")
+		// 	.attr("fill","transparent")
+		// 	.attr("opacity",0.5)
+		// 	.attr("r", function(d,i){
 		// 		return r(Math.sqrt(d.size/3.14))
 		// 	})
 
@@ -360,10 +351,8 @@ function dv1(year,the_subject) {
 		$("#subjects").change(function() {
 			let subject = this.value;
 			new_sort =  $("#sort option:selected").val();
-			// new_sort =  $("#sort option:selected").val();
 
 			update_subject(subject,new_sort);
-			// console.log(subject,new_sort);
 		});
 
 		$("#sort").change(function() {
@@ -374,8 +363,6 @@ function dv1(year,the_subject) {
 		});
 
 		function update_subject(the_subject,the_sort){
-			// console.log(the_subject)
-
 			d3.select("#articles").remove();
 
 			d3.selectAll("circle")
@@ -395,8 +382,6 @@ function dv1(year,the_subject) {
 				.entries(data)
 		
 			for (const [d,c] of Object.entries(subject_group)) {
-
-				// all subjects
 				if (the_subject == "all"){
 
 					if (c.key !== "-"){
@@ -413,7 +398,6 @@ function dv1(year,the_subject) {
 					}
 				}
 			}
-			// console.log(subject_articles)
 			
 			visit_sort = subject_articles.sort(function(x, y){
 				return d3.descending(+x.avg_pv, +y.avg_pv);
@@ -435,13 +419,11 @@ function dv1(year,the_subject) {
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
 			})
-			// console.log(filtered_data)
 
 			// scale
 			y_max = d3.max(filtered_data, function(d) { 
 				return +d.avg_pv;
 			})
-			// console.log(y_max);
 
 			y = d3.scaleLinear()
 				.domain([0,y_max+(y_max/100*10)]) 
@@ -549,32 +531,35 @@ function dv1(year,the_subject) {
 				})
 				.attr("transform", function(d,i){
 					if (the_sort == 1) { // "article"
-							return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
-						}
-						else if (the_sort == 2){ // "publication"
-							return "translate(" + (x(+d.days)+50) + "," + y(+d.avg_pv) + ")"
-						}
-						else if (the_sort == 3){ // "size"
-							return "translate(" + (x(+d.size)+50) + "," + y(+d.avg_pv) + ")"
-						}
-						else if (the_sort == 4) { // "discussion"
-							return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.avg_pv) + ")"
-						}
-						else if (the_sort == 5){
-							return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.avg_pv) + ")"
-						}
-						else if (the_sort == 6){ // "issue"
-							return "translate(" + (x(+d.issues)+50) + "," + y(+d.avg_pv) + ")"
-						}
-						else if (the_sort == 7){ // "images"
-							return "translate(" + (x(+d.images)+50) + "," + y(+d.avg_pv) + ")"
-						}
+						return "translate(" + (x(i)+50) + "," + 0 + ")"
+					}
+					else if (the_sort == 2){ // "publication"
+						return "translate(" + (x(+d.days)+50) + "," + 0 + ")"
+					}
+					else if (the_sort == 3){ // "size"
+						return "translate(" + (x(+d.size)+50) + "," + 0 + ")"
+					}
+					else if (the_sort == 4) { // "discussion"
+						return "translate(" + (x(+d.discussion_size)+50) + "," + 0 + ")"
+					}
+					else if (the_sort == 5){
+						return "translate(" + (x(+d.incipit_size)+50) + "," + 0 + ")"
+					}
+					else if (the_sort == 6){ // "issue"
+						return "translate(" + (x(+d.issues)+50) + "," + 0 + ")"
+					}
+					else if (the_sort == 7){ // "images"
+						return "translate(" + (x(+d.images)+50) + "," + 0 + ")"
+					}
 				})
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
 
 			let article_circles = article.append("g")
 				.attr("class","article_circles")
+				.attr("transform",function (d,i) {
+					return "translate(" + 0 + "," + y(+d.avg_pv) + ")"
+				})	
 				.on("mouseover", handleMouseOver)
 				.on("mouseout", handleMouseOut)
 				.append("a")
@@ -583,9 +568,6 @@ function dv1(year,the_subject) {
 				})
 				.attr("target","_blank")
 				
-			let article_text = article.append("g")
-				.attr("class","article_text")
-
 			let circles = article_circles.append("circle")
 				.transition()
 				.duration(500)
@@ -645,27 +627,41 @@ function dv1(year,the_subject) {
 					return r(Math.sqrt(d.discussion_size/3.14))
 				})
 
-			// line between 2020-2021
-			let variation = article.append("line")
-				.attr("stroke","black")
-				.attr("x1", function(d,i){
-					return 0
-				})
-				.attr("y1", function(d,i){
-					return 0
-				})
-				.attr("x2", function(d,i){
-					return 0
-				})
-				.attr("y2", function(d,i){
-					console.log(d.article,d.avg_pv,d.avg_pv_prev)
-					if (d.avg_pv>d.avg_pv_prev){
-						return y(d.avg_pv-d.avg_pv_prev)
-					}
-					else{
-						return y(d.avg_pv_prev-d.avg_pv)
-					}
-				})
+				// variation 2020-2021
+				let variation = article.append("g")
+					.attr("class","variation")
+					.attr("transform",function (d,i) {
+						return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+					})
+
+				let variation_line = variation.append("line")
+					.attr("stroke", function(d,i){
+						return apply_color(d.subject)
+					})
+					.style("stroke-dasharray", ("3, 3")) 
+					.attr("x1", function(d,i){
+						return 0
+					})
+					.attr("y1", function(d,i){
+						return 0
+					})
+					.attr("x2", function(d,i){
+						return 0
+					})
+					.attr("y2", function(d,i){
+						return y(d.avg_pv)-y(d.avg_pv_prev)
+					})
+
+				// for debug
+				// let variation_circle = variation.append("circle")
+				// 	.attr("cx",0)
+				// 	.attr("cy",0)
+				// 	.attr("stroke", "red")
+				// 	.attr("fill","transparent")
+				// 	.attr("opacity",0.5)
+				// 	.attr("r", function(d,i){
+				// 		return r(Math.sqrt(d.size/3.14))
+				// 	})
 		}
 
 		function update_sort(the_subject,the_sort){
@@ -683,8 +679,6 @@ function dv1(year,the_subject) {
 				.entries(data)
 		
 			for (const [d,c] of Object.entries(subject_group)) {
-
-				// all subjects
 				if (the_subject == "all"){
 
 					if (c.key !== "-"){
@@ -701,7 +695,6 @@ function dv1(year,the_subject) {
 					}
 				}
 			}
-			// console.log(subject_articles)
 			
 			visit_sort = subject_articles.sort(function(x, y){
 				return d3.descending(+x.avg_pv, +y.avg_pv);
@@ -723,7 +716,6 @@ function dv1(year,the_subject) {
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
 			})
-			// console.log(filtered_data)
 			
 			let max = 0;
 			let min = 0;
@@ -794,7 +786,6 @@ function dv1(year,the_subject) {
 				// 	return +d.size;
 				// })
 			}
-			// console.log(min,max)
 
 			x = d3.scaleLinear()
 				.domain([min,max])
@@ -815,25 +806,25 @@ function dv1(year,the_subject) {
 				.transition()
 				.attr("transform", function(d,i){
 					if (the_sort == 1) { // "article"
-						return "translate(" + (x(i)+50) + "," + y(+d.avg_pv) + ")"
+						return "translate(" + (x(i)+50) + "," + 0 + ")"
 					}
 					else if (the_sort == 2){ // "publication"
-						return "translate(" + (x(+d.days)+50) + "," + y(+d.avg_pv) + ")"
+						return "translate(" + (x(+d.days)+50) + "," + 0 + ")"
 					}
 					else if (the_sort == 3){
-						return "translate(" + (x(+d.size)+50) + "," + y(+d.avg_pv) + ")"
+						return "translate(" + (x(+d.size)+50) + "," + 0 + ")"
 					}
 					else if (the_sort == 4) {
-						return "translate(" + (x(+d.discussion_size)+50) + "," + y(+d.avg_pv) + ")"
+						return "translate(" + (x(+d.discussion_size)+50) + "," + 0+ ")"
 					}
 					else if (the_sort == 5){
-						return "translate(" + (x(+d.incipit_size)+50) + "," + y(+d.avg_pv) + ")"
+						return "translate(" + (x(+d.incipit_size)+50) + "," + 0 + ")"
 					}
 					else if (the_sort == 6){
-						return "translate(" + (x(+d.issues)+50) + "," + y(+d.avg_pv) + ")"
+						return "translate(" + (x(+d.issues)+50) + "," + 0 + ")"
 					}
 					else if (the_sort == 7){
-						return "translate(" + (x(+d.images)+50) + "," + y(+d.avg_pv) + ")"
+						return "translate(" + (x(+d.images)+50) + "," + 0 + ")"
 					}
 				})
 		}
