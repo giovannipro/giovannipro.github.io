@@ -184,17 +184,19 @@ function dv1(year,the_subject) {
 
                 //size
                 content += "<tr><td class='label'>dimensioni</td><td class='value'>" + d.size.toLocaleString()
-            	let diff_size = d.size - d.size_prev
-            	if (diff_size > 0){
-            		let diff_size_perc = 100 - Math.floor(d.size_prev*100/d.size)
-            		content += "<td class='value increase'>(" + d.size_prev + " +" + diff_size_perc + "%)</td></tr>"
-            	}
-            	else if (diff_size == 0){
-            		content += "<td class='value'>-</td></tr>"
-            	}
-            	else {
-            		let diff_size_perc = 100 - Math.floor(d.size*100/d.size_prev)
-            		content += "<td class='value decrease'>(" + d.size_prev + " -" + diff_size_perc + "%)</td></tr>"
+            	if(year == 2021){
+            		let diff_size = d.size - d.size_prev
+	            	if (diff_size > 0){
+	            		let diff_size_perc = 100 - Math.floor(d.size_prev*100/d.size)
+	            		content += "<td class='value increase'>(" + d.size_prev + " +" + diff_size_perc + "%)</td></tr>"
+	            	}
+	            	else if (diff_size == 0){
+	            		content += "<td class='value'>-</td></tr>"
+	            	}
+	            	else {
+	            		let diff_size_perc = 100 - Math.floor(d.size*100/d.size_prev)
+	            		content += "<td class='value decrease'>(" + d.size_prev + " -" + diff_size_perc + "%)</td></tr>"
+	            	}
             	}
 
                 content += "<tr><td class='label'>discussione</td><td class='value'>" + d.discussion_size.toLocaleString() + "</td></tr>"
@@ -339,12 +341,21 @@ function dv1(year,the_subject) {
 			d3.selectAll(".article_circles")
 				.attr("opacity",0.2)
 
+			d3.selectAll(".variation").select("line")
+				.attr("opacity",0.2)
+
 			d3.select(this)
+				.attr("opacity",1)
+
+			d3.select(this.nextSibling).select("line")
 				.attr("opacity",1)
 		}
 
 	    function handleMouseOut(){
-			d3.selectAll(".article_circles")
+			d3.selectAll(".article_circles",".variation")
+				.attr("opacity",1)
+
+			d3.selectAll(".variation").select("line")
 				.attr("opacity",1)
 	    }
 
