@@ -232,14 +232,14 @@ function dv1(year,the_subject,sort) {
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
             	let diff_pv = d.avg_pv - d.avg_pv_prev
             	if (diff_pv > 0){
-            		let diff_pv_perc = 100 - Math.floor(d.avg_pv_prev*100/d.avg_pv)
+            		let diff_pv_perc = Math.floor(((d.avg_pv/d.avg_pv_prev)-1)*100); //100 - Math.floor(d.avg_pv_prev*100/d.avg_pv)
             		content += "<td class='value increase'>(" + d.avg_pv_prev + " +" + diff_pv_perc + "%)</td></tr>"
             	}
             	else if (diff_pv == 0){
             		content += "<td class='value'>-</td></tr>"
             	}
             	else {
-            		let diff_pv_perc = 100 - Math.floor(d.avg_pv*100/d.avg_pv_prev)
+            		let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev) //100 - Math.floor(d.avg_pv*100/d.avg_pv_prev)
             		content += "<td class='value decrease'>(" + d.avg_pv_prev + " -" + diff_pv_perc + "%)</td></tr>"
                 }
 
