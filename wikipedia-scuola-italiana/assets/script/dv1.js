@@ -136,42 +136,50 @@ function dv1(year,the_subject,sort) {
 			min = 0
 		}
 		else if (sort == 2){
-			max = d3.max(filtered_data, function(d) { 
+			max = d3.min(filtered_data, function(d) { 
 				return d.days;
 			})
-			min = d3.min(filtered_data, function(d) { 
+			min = d3.max(filtered_data, function(d) { 
 				return d.days;
 			})
 		}
 		else if (sort == 3){
+			min = d3.min(filtered_data, function(d) { 
+				return d.size;
+			})
 			max = d3.max(filtered_data, function(d) { 
 				return d.size;
 			})
-			min = 0
 		}
 		else if (sort == 4){
+			min = d3.min(filtered_data, function(d) { 
+				return d.discussion_size;
+			})
 			max = d3.max(filtered_data, function(d) { 
 				return d.discussion_size;
 			})
-			min = 0
 		}
 		else if (sort == 5){
+			min = d3.min(filtered_data, function(d) { 
+				return d.incipit_size;
+			})
 			max = d3.max(filtered_data, function(d) { 
 				return d.incipit_size;
 			})
-			min = 0
 		}
 		else if (sort == 6){
+			min = 0;
 			max = d3.max(filtered_data, function(d) { 
 				return d.issues;
 			})
-			min = 0;
 		}
 		else if (sort == 7){
+			min = d3.min(filtered_data, function(d) { 
+				return d.images;
+			})
 			max = d3.max(filtered_data, function(d) { 
 				return d.images;
 			})
-			min = 0
 		}
        	
        	x = d3.scaleLinear()
@@ -538,10 +546,10 @@ function dv1(year,the_subject,sort) {
 				min = 0
 			}
 			else if (the_sort == 2){
-				max = d3.min(filtered_data, function(d) { 
+				min = d3.max(filtered_data, function(d) { 
 					return d.days;
 				})
-				min = d3.max(filtered_data, function(d) { 
+				max = d3.min(filtered_data, function(d) { 
 					return d.days;
 				})
 			}

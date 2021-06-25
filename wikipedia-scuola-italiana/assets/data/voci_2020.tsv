@@ -1223,7 +1223,7 @@ Q3685171	Complemento predicativo dell'oggetto	Grammatica italiana			Analisi logi
 Q174565	Parentesi	Grammatica italiana			Punteggiatura	Parentesi	???	1	129	120	231137	16278	3	6	8	581	3.57	0	0	0	726	2006-09-01	5022
 Q190212	Asterisco	Grammatica italiana			Punteggiatura	Asterisco	???	1	46	44	82015	5107	1	3	0	396	7.75	1	0	0	0	2006-08-20	5034
 Q32518	Punti di sospensione	Grammatica italiana			Punteggiatura	Puntini di sospensione	???	1	91	76	163225	5179	5	1	0	511	9.87	0	0	0	1689	2006-08-18	5036
-#N/A	Punto e virgola	Grammatica italiana			Punteggiatura	Punto e virgola	???	1	131	137	235156	3953	1	1	2	315	7.97	0	0	0	0	2006-08-18	5036
+Q104394	Punto e virgola	Grammatica italiana			Punteggiatura	Punto e virgola	???	1	131	137	235156	3953	1	1	2	315	7.97	0	0	0	0	2006-08-18	5036
 Q166764	Punto esclamativo	Grammatica italiana			Punteggiatura	Punto esclamativo	???	1	136	136	243782	19214	8	5	0	945	4.92	0	0	1	2569	2006-08-18	5036
 Q3685150	Complemento di causa	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	48	45	86041	1779	1	0	1	163	9.16	0	0	0	0	2006-07-14	5071
 Q3685151	Complemento di causa efficiente	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	68	62	121708	2125	2	0	1	311	14.64	0	0	0	0	2006-07-14	5071
@@ -1489,7 +1489,7 @@ Q5300	CPU	Informatica		Superiori	Hardware		2	1	470	440	844001	27761	3	4	1	1649	5
 Q185092	Diagramma di flusso	Informatica		Superiori	Programmazione		2	1	185	182	332268	5735	0	7	0	1175	20.49	1	0	0	4376	2004-05-25	5851
 Q170130	Grafica vettoriale	Informatica		Superiori	Basi dell'informatica		2	1	146	128	263065	16145	15	3	10	906	5.61	0	0	0	4607	2004-05-16	5860
 Q80006	Programmazione (informatica)	Informatica		Medie	Coding e pensiero computazionale		0	1	99	96	177563	22477	0	8	1	1105	4.92	1	0	0	3693	2004-05-16	5860
-#N/A	Copia e incolla	Informatica		Medie	Introduzione		1	1	92	46	165577	10343	0	1	0	2034	19.67	0	0	0	1848	2004-05-15	5861
+Q1058748	Copia e incolla	Informatica		Medie	Introduzione		1	1	92	46	165577	10343	0	1	0	2034	19.67	0	0	0	1848	2004-05-15	5861
 Q37045	Linguaggio di markup	Informatica		Superiori	Programmazione		2	1	70	64	125485	4077	0	0	0	466	11.43	1	0	0	41	2004-05-11	5865
 Q1189238	Storia dell'informatica	Informatica		Medie	Introduzione		1	1	39	40	70970	29854	29	18	34	763	2.56	0	0	0	3225	2004-05-11	5865
 Q121117	Supercomputer	Informatica		Medie	Introduzione		1	1	76	68	136554	46240	16	8	0	400	0.87	1	1	0	10574	2004-05-11	5865
@@ -1610,7 +1610,7 @@ Q3684237	Comedia delle ninfe fiorentine	Letteratura italiana		Superiori	Secolo X
 Q1473417	Lo cunto de li cunti	Letteratura italiana		Superiori	XVII Secolo	Giambattista Basile	2.4	1	153	109	274118	12573	4	1	1	936	7.44	0	0	0	821	2008-04-07	4438
 Q3713933	Donna de Paradiso	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Iacopone da Todi	2.3	1	38	42	68164	5560	0	1	0	1085	19.51	1	0	0	50	2008-04-06	4439
 Q3730666	Epistole (Dante Alighieri)	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	19	18	34953	5079	1	1	1	133	2.62	0	0	0	50	2008-04-05	4440
-#N/A	Cuore (romanzo)	Letteratura italiana		Superiori	Secondo Ottocento	Letteratura per ragazzi	???	1	369	290	663050	39157	23	4	4	695	1.77	2	2	1	8258	2008-03-09	4467
+Q11336	Cuore (romanzo)	Letteratura italiana		Superiori	Secondo Ottocento	Letteratura per ragazzi	???	1	369	290	663050	39157	23	4	4	695	1.77	2	2	1	8258	2008-03-09	4467
 Q19287983	Classicismo (letteratura)	Letteratura italiana		Superiori	XVI Secolo	Coordinate generali	???	1	55	53	99225	4092	2	3	0	544	13.29	0	0	0	71	2008-03-07	4469
 Q3831119	Letteratura futurista	Letteratura italiana		Superiori	Primo novecento	Futurismo	2.5	1	89	76	159298	6556	2	2	0	340	5.19	0	0	0	295	2008-03-01	4475
 Q3902076	Pianto antico	Letteratura italiana		Superiori	Secondo Ottocento	Giosuè Carducci	2.4	1	170	152	305526	10267	9	2	11	201	1.96	0	0	0	2835	2008-02-21	4484
@@ -1649,7 +1649,7 @@ Q83174	Eugenio Montale	Letteratura italiana		Superiori	Il secolo breve	Eugenio M
 Q3602853	A Zacinto	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	2.4	1	438	476	786812	12267	6	2	1	858	6.99	0	0	0	2307	2007-04-23	4788
 Q3210444	La casa in collina	Letteratura italiana		Superiori	Dopoguerra	Cesare Pavese	2.5	1	82	80	146456	8896	8	0	2	263	2.96	0	0	0	4332	2007-04-12	4799
 Q3793899	Il fanciullino	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Pascoli	2.4	1	166	158	298872	4362	1	1	0	643	14.74	0	0	0	517	2007-04-06	4805
-#N/A	Quaderni del carcere	Letteratura italiana		Superiori	Il secolo breve	Antonio Gramsci	2.5	1	48	49	86878	71339	41	13	4	2157	3.02	0	0	0	1037	2007-04-03	4808
+Q1113267	Quaderni del carcere	Letteratura italiana		Superiori	Il secolo breve	Antonio Gramsci	2.5	1	48	49	86878	71339	41	13	4	2157	3.02	0	0	0	1037	2007-04-03	4808
 Q165534	Carlo Goldoni	Letteratura italiana		Superiori	XVIII Secolo	Carlo Goldoni	2.4	1	476	455	856131	85740	16	9	26	128	0.15	2	1	0	40887	2007-03-28	4814
 Q1457297	Sidereus Nuncius	Letteratura italiana		Superiori	XVII Secolo	Galileo Galilei	2.4	1	63	68	113414	17119	13	3	7	214	1.25	0	1	0	5180	2007-03-16	4826
 Q3866233	Moti rivoluzionari	Letteratura italiana		Superiori	Primo Ottocento	Coordinate generali	2.4	1	81	76	146448	8560	0	0	0	423	4.94	0	0	0	50	2007-03-11	4831
@@ -1711,7 +1711,7 @@ Q4501	Bernart de Ventadorn	Letteratura italiana		Superiori	XI-XII Secolo	Origini
 Q311674	Francesco Landini	Letteratura italiana		Superiori	Secolo XIV	Autori minori	2.3	1	16	14	29313	12923	10	2	5	217	1.68	0	3	0	744	2006-10-21	4972
 Q3388095	Pietro Borsieri	Letteratura italiana		Superiori	Primo Ottocento	Autori Minori	2.4	1	6	6	10457	8077	1	3	12	156	1.93	0	0	0	127	2006-10-20	4973
 Q32833	Teofilo Folengo	Letteratura italiana		Superiori	XVI Secolo	Autori minori	2.3	1	38	36	67498	10718	3	2	6	100	0.93	0	0	0	3803	2006-10-14	4979
-#N/A	Lingua d'oil	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	2	1	3016	67	0	0	33	59	88.06	0	0	0	0	2006-10-06	4987
+Q35222	Lingua francese antica	Letteratura italiana	ex Lingua d'oil	Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	2	1	3016	67	0	0	33	59	88.06	0	0	0	0	2006-10-06	4987
 Q714946	Giovanni Pontano	Letteratura italiana		Superiori	XV Secolo	Autori Minori	2.3	1	19	18	33840	6050	1	2	0	310	5.12	0	0	0	1048	2006-09-25	4998
 Q1377174	Sergio Corazzini	Letteratura italiana		Superiori	Primo novecento	Crepuscolarismo	2.5	1	30	29	54239	9097	0	1	1	3	0.03	0	0	0	4165	2006-08-26	5028
 Q901417	Dictatus papae	Letteratura italiana		Superiori	XI-XII Secolo	Origini della letteratura italiana	2.3	1	80	87	144194	9503	3	1	3	470	4.95	0	0	0	881	2006-08-24	5030
@@ -1755,7 +1755,7 @@ Q37560	Latino volgare	Letteratura italiana		Superiori	XI-XII Secolo	Origini dell
 Q2250271	Epistolario	Letteratura italiana		Superiori	XV Secolo	Machiavelli	2.3	1	19	15	34689	1413	0	1	0	213	15.07	1	0	0	1009	2006-01-11	5255
 Q3233315	Gli indifferenti	Letteratura italiana		Superiori	Il secolo breve	Alberto Moravia	2.5	1	134	130	239937	7207	1	0	0	417	5.79	0	0	0	1779	2006-01-10	5256
 Q4024389	Zibaldone	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	166	168	298210	15803	9	1	23	285	1.80	0	0	0	726	2006-01-09	5257
-#N/A	Il sentiero dei nidi di ragno	Letteratura italiana		Superiori	Anni 60-54	Italo Calvino	2.5	1	401	367	721151	32874	9	1	4	510	1.55	0	0	0	7988	2006-01-08	5258
+Q1135521	Il sentiero dei nidi di ragno	Letteratura italiana		Superiori	Anni 60-54	Italo Calvino	2.5	1	401	367	721151	32874	9	1	4	510	1.55	0	0	0	7988	2006-01-08	5258
 Q1394860	Pier della Vigna	Letteratura italiana		Superiori	XIII secolo - Scuola siciliana	Scuola siciliana	2.3	1	111	104	198604	10385	4	1	51	191	1.84	0	0	0	2441	2006-01-08	5258
 Q1131281	Guido Gozzano	Letteratura italiana		Superiori	Primo novecento	Crepuscolarismo	2.5	1	190	176	340736	37116	26	10	16	1486	4.00	0	0	0	8191	2006-01-07	5259
 Q550318	Pietro Verri	Letteratura italiana		Superiori	XVIII Secolo	Illuminismo italiano	2.4	1	89	86	160597	25335	16	8	26	3	0.01	0	0	0	2234	2006-01-03	5263
@@ -1798,18 +1798,18 @@ Q3794211	Il giorno della civetta	Letteratura italiana		Superiori	Anni 60-57	Leon
 Q3743412	Valerio Magrelli	Letteratura italiana		Superiori	Dagli anni 80 in poi	Autori vari	2.5	1	35	36	63243	13831	22	2	11	1	0.01	0	0	0	1072	2005-05-29	5482
 Q47783	Postmodernismo	Letteratura italiana		Superiori	Dagli anni 80 in poi	Coordinate generali	2.5	1	154	149	277142	99739	151	7	62	2451	2.46	0	0	0	5091	2005-05-21	5490
 Q2641199	Federico De Roberto	Letteratura italiana		Superiori	Secondo Ottocento	Naturalismo&Verismo	2.4	1	67	70	119803	27022	4	7	24	3	0.01	2	0	0	5363	2005-05-10	5501
-#N/A	Carlo Porta	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Autori minori	2.4	1	40	37	72720	15718	3	4	5	63	0.40	0	0	0	50	2005-05-07	5504
+Q1248697	Carlo Porta	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Autori minori	2.4	1	40	37	72720	15718	3	4	5	63	0.40	0	0	0	50	2005-05-07	5504
 Q3676454	Ciclo dei Vinti	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	2.4	1	200	193	359155	12279	2	1	0	1606	13.08	1	2	0	1335	2005-05-07	5504
 Q468662	Luigi Capuana	Letteratura italiana		Superiori	Secondo Ottocento	Naturalismo&Verismo	2.4	1	105	105	189315	44299	13	12	12	1	0.00	0	1	0	244	2005-05-07	5504
 Q3982439	Tecnica narrativa di Giovanni Verga	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	2.4	1	191	190	343823	34282	23	0	0	474	1.38	0	0	0	16912	2005-05-07	5504
 Q3231688	Le confessioni d'un italiano	Letteratura italiana		Superiori	Primo Ottocento	Ippolito Nievo	2.4	1	68	83	122770	18627	2	1	7	642	3.45	0	0	0	3290	2005-05-04	5507
 Q4003208	Ultime lettere di Jacopo Ortis	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	2.4	1	379	363	681231	21061	24	1	1	975	4.63	0	0	0	8827	2005-05-04	5507
 Q444143	Edoardo Sanguineti	Letteratura italiana		Superiori	Anni 60-67	Autori minori	2.5	1	75	69	135296	59631	11	2	56	2	0.00	0	1	0	6308	2005-03-17	5555
-#N/A	Neorealismo	Letteratura italiana		Superiori	Dopoguerra	Coordinate generali	2.5	1	72	20	129944	789	0	0	0	747	94.68	0	0	0	1493	2005-03-12	5560
+Q1179737	Neorealismo	Letteratura italiana		Superiori	Dopoguerra	Coordinate generali	2.5	1	72	20	129944	789	0	0	0	747	94.68	0	0	0	1493	2005-03-12	5560
 Q3869127	Myricae	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Pascoli	2.4	1	173	186	310833	9431	3	3	0	1571	16.66	2	0	0	477	2005-03-08	5564
-#N/A	Ermetismo	Letteratura italiana		Superiori	Il secolo breve	Salvatore Quasimodo	2.5	1	10	6	17677	394	0	0	0	267	67.77	0	0	0	50	2005-03-02	5570
+Q1195304	Ermetismo	Letteratura italiana		Superiori	Il secolo breve	Salvatore Quasimodo	2.5	1	10	6	17677	394	0	0	0	267	67.77	0	0	0	50	2005-03-02	5570
 Q191850	Tommaso Campanella	Letteratura italiana		Superiori	XVII Secolo	Autori minori	2.4	1	161	152	289297	49028	26	8	2	2	0.00	0	0	0	9148	2005-03-01	5571
-#N/A	Ruzante	Letteratura italiana		Superiori	XVI Secolo	Autori minori	2.3	1	54	49	96339	12846	1	3	2	750	5.84	0	1	0	2819	2005-02-28	5572
+Q1055609	Ruzante	Letteratura italiana		Superiori	XVI Secolo	Autori minori	2.3	1	54	49	96339	12846	1	3	2	750	5.84	0	1	0	2819	2005-02-28	5572
 Q73880	Marino Moretti	Letteratura italiana		Superiori	Primo novecento	Crepuscolarismo	2.5	1	50	55	88973	36868	11	2	0	1	0.00	0	1	0	50	2005-02-27	5573
 Q6502703	Pinocchio	Letteratura italiana		Superiori	Secondo Ottocento	Letteratura per ragazzi	2.4	1	326	349	586308	45122	25	9	7	334	0.74	0	0	0	5789	2005-02-25	5575
 Q510621	Jacopo Sannazaro	Letteratura italiana		Superiori	XV Secolo	Autori Minori	2.3	1	42	43	74922	15101	4	4	8	397	2.63	0	0	0	2520	2005-02-16	5584
@@ -1819,7 +1819,7 @@ Q745578	Pier Vittorio Tondelli	Letteratura italiana		Superiori	Dagli anni 80 in 
 Q268166	Lorenzo Da Ponte	Letteratura italiana		Superiori	XVIII Secolo	Autori minori	2.4	1	60	53	107154	17953	6	2	9	204	1.14	0	0	1	4821	2005-01-26	5605
 Q1632269	Il fu Mattia Pascal	Letteratura italiana		Superiori	Primo novecento	Luigi Pirandello	2.5	1	687	699	1235027	32277	4	2	2	431	1.34	0	0	0	5486	2005-01-24	5607
 Q185427	Chanson de Roland	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	229	232	411873	14741	3	2	0	688	4.67	0	1	0	1439	2005-01-23	5608
-#N/A	Ciclo bretone	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	23	18	41626	31	0	0	0	28	90.32	0	0	0	0	2005-01-23	5608
+Q507738	Materia di Bretagna	Letteratura italiana	ex Ciclo bretone	Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	23	18	41626	31	0	0	0	28	90.32	0	0	0	0	2005-01-23	5608
 Q4302	Chrétien de Troyes	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	73	73	130492	7960	4	2	4	1	0.01	0	0	0	50	2005-01-22	5609
 Q471523	Francesco De Sanctis	Letteratura italiana		Superiori	Secondo Ottocento	Autori minori	2.4	1	99	94	177940	37806	6	2	10	113	0.30	1	0	0	1776	2005-01-21	5610
 Q638094	Placiti cassinesi	Letteratura italiana		Superiori	XI-XII Secolo	Origini della letteratura italiana	2.3	1	134	162	239955	13244	0	1	6	1140	8.61	4	0	0	5768	2005-01-19	5612
@@ -2433,7 +2433,7 @@ Q598854	Statuto Albertino	Storia		Superiori	XVIII-XIX secolo	Statuto Albertino	?
 Q2604547	Presa di Roma	Storia		Superiori	XVIII-XIX secolo	Conquista di Roma	???	1	473	495	850404	57518	47	13	11	972	1.69	1	1	0	30564	2007-03-10	4832
 Q6534	Rivoluzione francese	Storia		Superiori	XVIII-XIX secolo	Rivoluzione francese	???	1	1376	1290	2472582	151134	170	36	37	1723	1.14	1	0	0	11581	2007-02-28	4842
 Q5442839	Femminismo in Italia	Storia		Superiori	XX-XXI secolo	Movimento per la liberazione della donna	???	1	19	30	33294	23642	25	11	10	1317	5.57	0	0	0	3526	2007-02-17	4853
-#N/A	Fenici	Storia		Superiori	Antichità	I fenici	???	1	489	477	879020	55217	10	16	11	2340	4.24	1	0	0	15229	2007-02-17	4853
+Q1048468	Fenici	Storia		Superiori	Antichità	I fenici	???	1	489	477	879020	55217	10	16	11	2340	4.24	1	0	0	15229	2007-02-17	4853
 Q40949	Guerra d'indipendenza americana	Storia		Superiori	XVIII-XIX secolo	Guerra di indipendenza USA	???	1	597	574	1072858	192106	154	138	3	8389	4.37	1	0	0	24585	2007-02-01	4869
 Q466887	Belle Époque	Storia		Superiori	XX-XXI secolo	Belle Époque	???	1	609	600	1093516	11697	3	4	0	1102	9.42	1	0	0	1882	2007-01-25	4876
 Q217200	Seconda rivoluzione industriale	Storia		Superiori	XVIII-XIX secolo	Seconda rivoluzione industriale	???	1	630	625	1132353	38948	19	15	5	2098	5.39	0	0	0	3426	2007-01-09	4892
@@ -3084,7 +3084,7 @@ Q35355	Sumeri	Storia		Superiori	Antichità	I sumeri	???	1	576	594	1034190	82959	
 Q5983857	Sviluppo marittimo iberico (1400-1600)	Storia		Superiori	XVI-XVII secolo	Lo sviluppo navale	???	1	1	1	1635	29874	27	9	31	2407	8.06	0	0	0	36	???	#VALUE!
 Q3978557	Svolta di Salerno	Storia		Superiori	XX-XXI secolo	Svolta di Salerno	???	1	87	100	156199	13181	13	1	5	1136	8.62	0	0	0	3335	???	#VALUE!
 Q659991	Teatro africano della prima guerra mondiale	Storia		Superiori	XX-XXI secolo		???	1	17	17	30533	10718	2	3	1	1016	9.48	0	0	0	2237	???	#VALUE!
-#N/A	Teatro dell'Asia e del Pacifico della prima guerra mondiale	Storia		Superiori	XX-XXI secolo		???	1	11	8	20005	10440	1	2	2	769	7.37	1	0	0	148	???	#VALUE!
+Q1047682	Teatro dell'Asia e del Pacifico della prima guerra mondiale	Storia		Superiori	XX-XXI secolo		???	1	11	8	20005	10440	1	2	2	769	7.37	1	0	0	148	???	#VALUE!
 Q189072	Teatro greco	Storia		Superiori	Grecia e Italia preromana	teatro greco	???	1	243	258	436237	24406	22	6	10	1021	4.18	0	0	0	4521	???	#VALUE!
 Q1765465	Teatro mediorientale della prima guerra mondiale	Storia		Superiori	XX-XXI secolo	Da Grande Guerra a Guerra mondiale	???	1	27	27	48277	55343	21	24	1	3553	6.42	2	8	0	1169	???	#VALUE!
 Q6987428	Telegrafo	Storia		Superiori	XVIII-XIX secolo	Telegrafo senza fili	???	1	213	227	381877	28595	14	9	6	829	2.90	0	0	0	6161	???	#VALUE!
