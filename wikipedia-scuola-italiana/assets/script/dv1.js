@@ -232,14 +232,14 @@ function dv1(year,the_subject,sort) {
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
             	let diff_pv = d.avg_pv - d.avg_pv_prev
             	if (diff_pv > 0){
-            		let diff_pv_perc = (((d.avg_pv/d.avg_pv_prev)-1)*100).toFixed(1);
+            		let diff_pv_perc = Math.floor(((d.avg_pv/d.avg_pv_prev)-1)*100).toLocaleString();
             		content += "<td class='value increase'>(" + d.avg_pv_prev + " +" + diff_pv_perc + "%)</td></tr>"
             	}
             	else if (diff_pv == 0){
             		content += "<td class='value'>-</td></tr>"
             	}
             	else {
-            		let diff_pv_perc = (100-(d.avg_pv*100)/d.avg_pv_prev).toFixed(1);
+            		let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
             		content += "<td class='value decrease'>(" + d.avg_pv_prev + " -" + diff_pv_perc + "%)</td></tr>"
                 }
 
@@ -248,14 +248,14 @@ function dv1(year,the_subject,sort) {
             	if(year == 2021){
             		let diff_size = d.size - d.size_prev
 	            	if (diff_size > 0){
-	            		let diff_size_perc = (((d.size/d.size_prev)-1)*100).toFixed(1);
+	            		let diff_size_perc = Math.floor(((d.size/d.size_prev)-1)*100).toLocaleString();
 	            		content += "<td class='value increase'>(" + d.size_prev + " +" + diff_size_perc + "%)</td></tr>"
 	            	}
 	            	else if (diff_size == 0){
 	            		content += "<td class='value'>-</td></tr>"
 	            	}
 	            	else {
-	            		let diff_size_perc = (100-(d.size*100)/d.size_prev).toFixed(1);
+	            		let diff_size_perc = Math.floor(100-(d.size*100)/d.size_prev).toLocaleString();
 	            		content += "<td class='value decrease'>(" + d.size_prev + " -" + diff_size_perc + "%)</td></tr>"
 	            	}
             	}

@@ -988,7 +988,7 @@ Q720362	Selvicoltura	Geografia			Geografia politica ed economica	sfruttamento de
 Q114	Kenya	Geografia			Africa	Kenya	???	1	434	433	780367	27606	14	9	0	2393	8.67	1	2	0	4052	2005-02-27	5573
 Q1019	Madagascar	Geografia			Africa	Madagascar	???	1	692	648	1242777	60004	31	20	1	3015	5.02	0	2	0	9271	2005-02-26	5574
 Q851	Arabia Saudita	Geografia			Asia	Arabia Saudita	???	1	748	700	1343963	48796	35	14	12	4040	8.28	0	0	0	7423	2005-02-06	5594
-#N/A	Niger	Geografia			Africa	Niger	???	1	221	207	397777	37012	34	10	1	2231	6.03	0	0	1	6134	2005-02-06	5594
+Q1032	Niger	Geografia			Africa	Niger	???	1	221	207	397777	37012	34	10	1	2231	6.03	0	0	1	6134	2005-02-06	5594
 Q2472587	Popolo	Geografia			Geografia politica ed economica	Popolo	???	1	64	64	114414	7418	12	1	0	1121	15.11	0	0	0	2005-01-29	2005-01-29	5602
 Q403	Serbia	Geografia			Europa	Serbia	???	1	684	649	1228603	74434	47	49	6	2811	3.78	2	1	0	20529	2005-01-22	5609
 Q974	Repubblica Democratica del Congo	Geografia			Africa	Repubblica Democratica del Congo	???	1	526	577	945848	48002	26	20	2	3359	7.00	0	1	0	5191	2005-01-11	5620
@@ -1229,7 +1229,7 @@ Q3685150	Complemento di causa	Grammatica italiana			Analisi logica	complementi i
 Q3685151	Complemento di causa efficiente	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	68	62	121708	2125	2	0	1	311	14.64	0	0	0	0	2006-07-14	5071
 Q3685153	Complemento di compagnia o unione	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	53	45	94721	1773	1	0	1	347	19.57	0	0	0	0	2006-07-14	5071
 Q83034	Interiezione	Grammatica italiana			Interiezioni	Interiezioni	???	1	81	72	145085	2809	0	0	1	292	10.40	0	0	0	65	2006-07-10	5075
-#N/A	Pronome relativo	Grammatica italiana			Pronome	Pronomi relativi	???	1	239	216	428783	6558	1	0	2	1454	22.17	1	0	0	306	2006-07-06	5079
+Q1050744	Pronome relativo	Grammatica italiana			Pronome	Pronomi relativi	???	1	239	216	428783	6558	1	0	2	1454	22.17	1	0	0	306	2006-07-06	5079
 Q3631250	Avverbio (lingua italiana)	Grammatica italiana			Avverbio	Avverbi	???	1	211	147	380039	5373	0	0	0	456	8.49	1	0	0	0	2006-07-05	5080
 Q4833830	Preposizione	Grammatica italiana			Preposizioni	Preposizioni	???	1	182	154	327096	6024	2	0	0	762	12.65	0	0	0	0	2006-07-03	5082
 Q3685168	Complemento partitivo	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	57	31	102878	1643	1	0	1	130	7.91	0	0	0	1506	2006-06-21	5094
@@ -1242,7 +1242,7 @@ Q1122094	Proposizione subordinata	Grammatica italiana			Analisi del periodo	Prop
 Q36224	Pronome	Grammatica italiana			Pronome	Pronomi	???	1	220	174	394793	9498	6	0	3	1863	19.61	0	0	0	809	2006-03-23	5184
 Q82622	Punteggiatura	Grammatica italiana			Punteggiatura	Punteggiatura	???	1	104	100	186772	7324	6	5	5	961	13.12	1	0	0	48	2006-03-12	5195
 Q2511733	Complemento di agente	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	105	115	188128	2016	2	0	1	223	11.06	0	0	0	0	2006-02-06	5229
-#N/A	Sostantivo	Grammatica italiana			Sostantivo	Sostantivi (nomi)	???	1	275	204	494617	8856	2	0	0	804	9.08	1	0	0	3328	2005-12-26	5271
+Q1084	Sostantivo	Grammatica italiana			Sostantivo	Sostantivi (nomi)	???	1	275	204	494617	8856	2	0	0	804	9.08	1	0	0	3328	2005-12-26	5271
 Q560570	Verbo servile	Grammatica italiana			Verbo	Funzioni dei verbi	???	1	40	35	72126	2641	0	0	0	1156	43.77	2	0	0	0	2005-12-16	5281
 Q3685160	Complemento di specificazione	Grammatica italiana			Analisi logica	complementi indiretti	0.4	1	146	129	262822	3186	0	0	0	400	12.55	1	0	0	253	2005-11-19	5308
 Q3899904	Periodo (linguistica)	Grammatica italiana			Analisi del periodo	il periodo	0.4	1	62	60	111112	3885	0	0	3	624	16.06	1	0	0	1000	2005-11-14	5313
@@ -1404,10 +1404,10 @@ Q215206	NP-completo	Informatica		Superiori	Teoria della cmputazione		2	1	34	39	6
 Q13166	WordPress	Informatica		Superiori	Reti e internet		2	1	148	132	266674	23868	29	2	1	531	2.22	1	0	0	3547	2006-06-04	5111
 Q173212	Architettura dei calcolatori	Informatica		Superiori	Hardware		2	1	11	12	19165	4252	0	4	0	577	13.57	1	0	0	41	2006-06-02	5113
 Q300914	Libreria standard del C	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	44	46	78437	14230	4	0	4	351	2.47	0	0	0	2946	2006-05-21	5125
-#N/A	Logica booleana	Informatica		Superiori	Basi dell'informatica		2	1	9	9	16349	30	0	0	0	27	90.00	0	0	0	0	2006-05-05	5141
+Q173183	Algebra di Boole	Informatica	ex Algebra di Boole	Superiori	Basi dell'informatica		2	1	9	9	16349	30	0	0	0	27	90.00	0	0	0	0	2006-05-05	5141
 Q1753097	Ago di Buffon	Informatica		Superiori	Informatica applicata alla matematica		2	1	16	16	28339	7147	0	1	0	689	9.64	1	0	0	41	2006-04-27	5149
 Q1049476	Costruttore (informatica)	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	14	19	24413	5686	0	0	1	442	7.77	0	0	0	286	2006-04-21	5155
-#N/A	Calcolo numerico	Informatica		Superiori	Informatica applicata alla matematica		2	1	2	2	3659	30	0	0	2	27	90.00	0	0	0	0	2006-02-02	5233
+Q11216	Analisi numerica	Informatica	ex Calcolo numerico	Superiori	Informatica applicata alla matematica		2	1	2	2	3659	30	0	0	2	27	90.00	0	0	0	0	2006-02-02	5233
 Q46441	CSS	Informatica		Superiori	Reti e internet		2	1	125	118	224535	26658	6	1	2	828	3.11	1	2	0	5939	2006-01-01	5265
 Q838119	Ciclo for	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	56	51	100108	7073	1	0	20	2538	35.88	0	0	0	1218	2005-12-09	5288
 Q3962	Computer portatile	Informatica		Medie	Introduzione		1	1	126	113	226742	31106	22	8	1	610	1.96	0	0	0	6440	2005-12-02	5295
@@ -1536,10 +1536,10 @@ Q8513	Base di dati	Informatica		Superiori	Base di dati		???	1	203	170	363995	362
 Q75	Internet	Informatica		Superiori	Reti e internet		2	1	765	758	1375244	53766	27	15	5	2743	5.10	0	1	0	25913	2003-06-05	6206
 Q163310	Macchina di Turing	Informatica		Superiori	Informatica applicata alla matematica		2	1	275	218	494354	51644	22	3	9	1177	2.28	1	0	0	7522	2003-05-23	6219
 Q52	Wikipedia	Informatica		Medie	Competenze digitali con il PC		1	1	3107	1573	5582990	73715	61	13	28	1245	1.69	0	1	0	40475	2003-05-04	6238
-#N/A	Web	Informatica		Superiori	Reti e internet		2	1	32	28	57685	29	0	0	0	24	82.76	0	0	0	0	2003-04-30	6242
+Q466	World Wide Web	Informatica	ex Web	Superiori	Reti e internet		2	1	32	28	57685	29	0	0	0	24	82.76	0	0	0	0	2003-04-30	6242
 Q9135	Sistema operativo	Informatica		Medie	Introduzione		2	1	431	407	773814	36487	2	22	3	886	2.43	0	0	0	54655	2003-04-29	6243
 Q9143	Linguaggio di programmazione	Informatica		Medie	Coding e pensiero computazionale		2	1	274	247	492082	39973	2	3	3	734	1.84	1	1	0	34059	2003-03-07	6296
-#N/A	Firmware	Informatica		Superiori	Hardware		2	1	220	156	394634	4271	1	0	0	408	9.55	1	0	0	521	2003-02-28	6303
+Q104851	Firmware	Informatica		Superiori	Hardware		2	1	220	156	394634	4271	1	0	0	408	9.55	1	0	0	521	2003-02-28	6303
 Q3966	Hardware	Informatica		Superiori	Hardware		2	1	304	262	546600	6796	1	5	0	546	8.03	1	0	0	1592	2003-02-28	6303
 Q5295	RAM	Informatica		Medie	Introduzione		2	1	463	436	832079	13001	0	5	0	556	4.28	1	0	0	1910	2003-02-28	6303
 Q160710	Read Only Memory	Informatica		Medie	Introduzione		2	1	185	179	332524	16293	3	3	0	1098	6.74	1	0	0	1161	2003-02-28	6303
@@ -1555,11 +1555,11 @@ Q201339	Crittografia asimmetrica	Informatica		Superiori	Informatica applicata al
 Q180943	Cifrario di Cesare	Informatica		Superiori	Informatica applicata alla matematica		2	1	95	92	171483	10562	2	3	1	635	6.01	1	0	0	1850	2002-06-17	6559
 Q8811	HTML	Informatica		Superiori	Reti e internet		2	1	327	308	587571	21792	11	1	3	1512	6.94	0	0	0	12402	2002-06-03	6573
 Q86670010	Umanesimo volgare	Letteratura italiana		Superiori	XV Secolo	Coordinate generali	2.3	1	1	4	1920	10327	13	3	5	523	5.06	0	0	0	50	2020-01-07	146
-#N/A	Ad Angelo Mai	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	0	0	0	0	51	0	0	0	48	94.12	0	0	0	0	2018-01-28	855
+-	Ad Angelo Mai	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	0	0	0	0	51	0	0	0	48	94.12	0	0	0	0	2018-01-28	855
 Q28669829	Cigola la carrucola del pozzo	Letteratura italiana		Superiori	Il secolo breve	Eugenio Montale	2.5	1	6	9	11213	1769	2	0	1	118	6.67	0	0	0	50	2016-07-12	1420
 Q20630333	Canto notturno di un pastore errante dell'Asia	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	91	108	164402	16745	8	3	3	503	3.00	0	0	0	50	2015-06-21	1807
 Q964699	Influenza culturale di Dante Alighieri	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	31	28	54902	105791	130	19	54	2353	2.22	0	0	0	12199	2015-06-12	1816
-#N/A	Il giorno	Letteratura italiana		Superiori	XVIII Secolo	Giuseppe Parini	2.4	1	1	1	2303	20	0	0	1	17	85.00	0	0	0	0	2015-05-26	1833
+-	Il giorno	Letteratura italiana		Superiori	XVIII Secolo	Giuseppe Parini	2.4	1	1	1	2303	20	0	0	1	17	85.00	0	0	0	0	2015-05-26	1833
 Q19622368	Menzogna e sortilegio	Letteratura italiana		Superiori	Dopoguerra	Elsa Morante	2.5	1	30	31	53873	7687	4	0	8	1095	14.24	1	0	0	50	2014-12-20	1990
 Q18590159	La sera del dì di festa	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	53	60	95403	11837	6	3	8	474	4.00	0	0	0	1507	2014-11-19	2021
 Q16619154	Ultimo canto di Saffo	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	39	37	70049	15462	9	2	2	119	0.77	0	0	0	214	2014-03-17	2268
@@ -1568,11 +1568,11 @@ Q3822967	La malora	Letteratura italiana		Superiori	Dopoguerra	Beppe Fenoglio	2.5
 Q3795657	Il sabato del villaggio	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	204	254	366103	12201	5	3	0	535	4.38	0	0	0	412	2012-11-27	2743
 Q3821715	La cavalla storna	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Pascoli	2.4	1	91	96	163747	1211	0	1	2	585	48.31	1	0	0	292	2012-10-05	2796
 Q3823759	La quiete dopo la tempesta	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	73	78	131587	11765	6	3	9	685	5.82	0	0	0	50	2012-05-16	2938
-#N/A	Una vita	Letteratura italiana		Superiori	Il secolo breve	Italo Svevo	2.5	1	10	7	17929	673	0	0	0	0	0.00	0	0	0	0	2011-10-16	3151
+Q4004472	Una vita (Svevo)	Letteratura italiana	ex Una vita	Superiori	Il secolo breve	Italo Svevo	2.5	1	10	7	17929	673	0	0	0	0	0.00	0	0	0	0	2011-10-16	3151
 Q3731066	Erano i capei d'oro a l'aura sparsi	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	87	135	156566	8930	3	2	0	359	4.02	0	0	0	50	2011-02-12	3397
-#N/A	Novelle rusticane	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	2.4	1	12	10	21956	65	0	0	2	62	95.38	0	0	0	0	2010-10-09	3523
+-	Novelle rusticane	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	2.4	1	12	10	21956	65	0	0	2	62	95.38	0	0	0	0	2010-10-09	3523
 Q328747	Jean de Joinville	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	8	12	15189	9857	4	3	4	1	0.01	0	0	0	104	2010-10-08	3524
-#N/A	Trobadorismo	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	0	0	261	41	0	0	0	38	92.68	0	0	0	0	2010-08-26	3567
+Q2457695	Lirica galiziano-portoghese	Letteratura italiana	ex Trobadorismo	Superiori	XI-XII Secolo	Origini delle letterature europee	2.3	1	0	0	261	41	0	0	0	38	92.68	0	0	0	0	2010-08-26	3567
 Q3880609	Oboe sommerso	Letteratura italiana		Superiori	Il secolo breve	Salvatore Quasimodo	2.5	1	11	10	19514	897	0	0	0	191	21.29	2	0	0	50	2010-05-09	3676
 Q133641	Età delle scoperte	Letteratura italiana		Superiori	XVI Secolo	Coordinate generali	2.3	1	5	5	9059	6399	0	1	0	2701	42.21	0	0	0	50	2010-04-24	3691
 Q3664263	Celio Magno	Letteratura italiana		Superiori	XVI Secolo	Autori minori	2.3	1	1	1	2014	1948	0	0	2	1	0.05	0	0	0	50	2010-02-15	3759
@@ -1614,7 +1614,7 @@ Q3730666	Epistole (Dante Alighieri)	Letteratura italiana		Superiori	XIII secolo 
 Q19287983	Classicismo (letteratura)	Letteratura italiana		Superiori	XVI Secolo	Coordinate generali	???	1	55	53	99225	4092	2	3	0	544	13.29	0	0	0	71	2008-03-07	4469
 Q3831119	Letteratura futurista	Letteratura italiana		Superiori	Primo novecento	Futurismo	2.5	1	89	76	159298	6556	2	2	0	340	5.19	0	0	0	295	2008-03-01	4475
 Q3902076	Pianto antico	Letteratura italiana		Superiori	Secondo Ottocento	Giosuè Carducci	2.4	1	170	152	305526	10267	9	2	11	201	1.96	0	0	0	2835	2008-02-21	4484
-#N/A	Mass media	Letteratura italiana		Superiori	Il secolo breve	Coordinate generali	2.5	1	45	39	81703	45	0	0	0	42	93.33	0	0	0	0	2008-02-18	4487
+Q11033	Mezzo di comunicazione di massa	Letteratura italiana	ex Mass media	Superiori	Il secolo breve	Coordinate generali	2.5	1	45	39	81703	45	0	0	0	42	93.33	0	0	0	0	2008-02-18	4487
 Q3817893	L'allegria	Letteratura italiana		Superiori	Il secolo breve	Giuseppe Ungaretti	2.5	1	91	107	164383	5242	10	1	3	670	12.78	0	0	0	827	2008-02-07	4498
 Q3884062	Opere della giovinezza di Giovanni Boccaccio	Letteratura italiana		Superiori	Secolo XIV	Boccaccio	2.3	1	12	10	21599	9120	0	0	7	109	1.20	1	0	0	50	2008-02-04	4501
 Q3790944	I limoni	Letteratura italiana		Superiori	Il secolo breve	Eugenio Montale	2.5	1	108	98	194197	7928	0	0	10	104	1.31	1	0	0	50	2008-01-20	4516
@@ -1624,7 +1624,7 @@ Q805130	Ballata (musica)	Letteratura italiana		Superiori	Secolo XIV	Forme letter
 Q3964389	Solo et pensoso i più deserti campi	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	48	52	85376	6364	2	0	0	176	2.77	1	0	0	115	2007-12-18	4549
 Q3935126	Ricordi politici e civili	Letteratura italiana		Superiori	XVI Secolo	Francesco Guicciardini	2.3	1	19	17	33653	4963	1	1	2	881	17.75	0	0	0	50	2007-12-17	4550
 Q924424	Discorsi sopra la prima Deca di Tito Livio	Letteratura italiana		Superiori	XV Secolo	Machiavelli	2.3	1	55	57	99179	6559	4	2	0	1140	17.38	0	0	0	50	2007-11-29	4568
-#N/A	Struttura del Decameron	Letteratura italiana		Superiori	Secolo XIV	Boccaccio	2.3	1	179	169	321352	56989	2	1	7	1764	3.10	0	0	0	50	2007-11-22	4575
+Q1045266	Struttura del Decameron	Letteratura italiana		Superiori	Secolo XIV	Boccaccio	2.3	1	179	169	321352	56989	2	1	7	1764	3.10	0	0	0	50	2007-11-22	4575
 Q3801281	Io voglio del ver la mia donna laudare	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guido Guinizelli	2.3	1	25	29	45011	2428	0	0	0	649	26.73	1	0	0	50	2007-11-12	4585
 Q3686204	Concezione romantica della storia	Letteratura italiana		Superiori	Primo Ottocento	Coordinate generali	2.4	1	13	10	23322	14982	7	4	8	572	3.82	0	0	0	631	2007-11-01	4596
 Q3797326	In morte del fratello Giovanni	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	2.4	1	163	138	293605	14996	6	1	2	89	0.59	0	0	0	2075	2007-10-29	4599
@@ -1657,12 +1657,12 @@ Q83038	Salvatore Quasimodo	Letteratura italiana		Superiori	Il secolo breve	Salva
 Q3204179	L'infinito	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	761	1060	1368115	15515	7	3	4	2663	17.16	0	0	0	9122	2007-02-18	4852
 Q1766450	Morgante (poema)	Letteratura italiana		Superiori	XV Secolo	Luigi Pulci	2.3	1	75	69	134548	12802	3	2	10	907	7.08	0	0	0	1198	2007-02-17	4853
 Q3884075	Opere di Giacomo Leopardi	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	1	225	255	404420	72443	11	1	17	252	0.35	0	0	0	5936	2007-02-15	4855
-#N/A	Prose della volgar lingua	Letteratura italiana		Superiori	XVI Secolo	Pietro Bembo	2.3	1	5	3	8200	62	0	0	0	59	95.16	0	0	0	0	2007-02-08	4862
+Q3924076	Prose nelle quali si ragiona della volgar lingua	Letteratura italiana	ex Prose della volgar lingua	Superiori	XVI Secolo	Pietro Bembo	2.3	1	5	3	8200	62	0	0	0	59	95.16	0	0	0	0	2007-02-08	4862
 Q3821511	La bufera e altro	Letteratura italiana		Superiori	Il secolo breve	Eugenio Montale	2.5	1	28	29	51173	3753	0	0	2	2221	59.18	1	0	0	50	2007-01-26	4875
 Q655618	Francesco Berni	Letteratura italiana		Superiori	XVI Secolo	Autori minori	2.3	1	17	16	30611	20721	16	1	2	68	0.33	0	0	0	50	2007-01-21	4880
 Q995950	Epistole	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	35	35	62513	2997	0	1	0	999	33.33	1	0	0	50	2007-01-17	4884
-#N/A	I Trionfi	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	48	48	85899	5275	1	4	3	779	14.77	0	0	0	50	2007-01-17	4884
-#N/A	Secretum	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	83	81	149270	4782	1	1	1	298	6.23	0	0	0	50	2007-01-17	4884
+Q1094908	I Trionfi	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	48	48	85899	5275	1	4	3	779	14.77	0	0	0	50	2007-01-17	4884
+Q1094598	Secretum	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	1	83	81	149270	4782	1	1	1	298	6.23	0	0	0	50	2007-01-17	4884
 Q3935840	Rimatori toscani di transizione	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Fasi	2.3	1	12	14	21999	1762	0	0	0	1484	84.22	1	0	0	50	2007-01-16	4885
 Q630832	Storie fiorentine	Letteratura italiana		Superiori	XVI Secolo	Francesco Guicciardini	2.3	1	6	5	10532	2044	0	0	1	179	8.76	1	0	0	931	2007-01-08	4893
 Q1754072	Novelle per un anno	Letteratura italiana		Superiori	Primo novecento	Luigi Pirandello	2.5	1	119	107	213282	21265	6	3	0	123	0.58	0	0	0	1413	2007-01-07	4894
@@ -1684,8 +1684,8 @@ Q3895154	Paralipomeni della Batracomiomachia	Letteratura italiana		Superiori	Pri
 Q835520	Scuola siciliana	Letteratura italiana		Superiori	XIII secolo - Scuola siciliana	Scuola siciliana	2.3	1	251	250	451492	27709	12	4	16	1424	5.14	1	0	0	13562	2006-12-08	4924
 Q18084	Vita nuova	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	232	224	416222	28871	21	5	9	411	1.42	0	0	0	12950	2006-12-08	4924
 Q131719	Il principe	Letteratura italiana		Superiori	XV Secolo	Machiavelli	2.3	1	108	288	193380	79614	6	10	1	1538	1.93	1	0	0	13916	2006-12-06	4926
-#N/A	Gerusalemme liberata	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	2.3	1	306	286	549527	72219	21	17	4	2368	3.28	0	0	0	953	2006-12-04	4928
-#N/A	Le Rime	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	52	44	93360	8012	1	1	1	518	6.47	0	0	0	50	2006-12-04	4928
+Q1053313	Gerusalemme liberata	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	2.3	1	306	286	549527	72219	21	17	4	2368	3.28	0	0	0	953	2006-12-04	4928
+Q1092462	Le Rime	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	52	44	93360	8012	1	1	1	518	6.47	0	0	0	50	2006-12-04	4928
 Q29473	Pietro Metastasio	Letteratura italiana		Superiori	XVIII Secolo	Autori minori	2.4	1	147	124	264002	32908	3	6	14	55	0.17	0	0	0	10637	2006-12-04	4928
 Q723643	Vincenzo Monti	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Autori minori	2.4	1	111	110	200305	72647	83	19	36	393	0.54	0	0	0	2347	2006-12-04	4928
 Q3687261	Considerazioni sui Discorsi del Machiavelli	Letteratura italiana		Superiori	XVI Secolo	Francesco Guicciardini	2.3	1	12	26	21796	1435	0	0	0	751	52.33	1	0	0	1470	2006-12-03	4929
@@ -1698,7 +1698,7 @@ Q28491	I promessi sposi	Letteratura italiana		Superiori	Primo Ottocento	Alessand
 Q3884093	Opere e poetica di Giovanni Verga	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	2.4	1	177	144	317193	37981	16	7	0	113	0.30	0	0	0	10140	2006-11-30	4932
 Q3884066	Opere di Alessandro Manzoni	Letteratura italiana		Superiori	Primo Ottocento	Alessandro Manzoni	2.4	1	125	108	225268	42501	10	11	0	264	0.62	0	0	0	2385	2006-11-29	4933
 Q580462	Crepuscolarismo	Letteratura italiana		Superiori	Primo novecento	Crepuscolarismo	2.5	1	167	168	300687	8884	1	0	0	111	1.25	0	0	0	1351	2006-11-28	4934
-#N/A	La Mandragola	Letteratura italiana		Superiori	XV Secolo	Machiavelli	2.3	1	6	6	11220	33	0	0	0	30	90.91	0	0	0	0	2006-11-27	4935
+Q1245589	Mandragola (commedia)	Letteratura italiana	ex La Mandragola	Superiori	XV Secolo	Machiavelli	2.3	1	6	6	11220	33	0	0	0	30	90.91	0	0	0	0	2006-11-27	4935
 Q51178	Dei sepolcri	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	2.4	1	332	301	596053	32187	10	8	0	1873	5.82	1	0	0	1871	2006-11-21	4941
 Q1768303	Dialogo sopra i due massimi sistemi del mondo	Letteratura italiana		Superiori	XVII Secolo	Galileo Galilei	2.4	1	186	186	334419	40080	21	2	2	1721	4.29	0	0	0	37660	2006-11-21	4941
 Q3884085	Opere di Ugo Foscolo	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	2.4	1	103	91	185472	28663	5	3	14	304	1.06	1	0	0	2093	2006-11-19	4943
