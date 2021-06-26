@@ -1853,7 +1853,7 @@ Q186162	La traviata	Letteratura italiana		Superiori	Primo Ottocento	Giuseppe Ver
 Q3473948	Satire	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	1	4	2	6839	476	0	0	0	403	84.66	0	0	0	0	2004-05-09	5867
 Q216582	Filippo Tommaso Marinetti	Letteratura italiana		Superiori	Primo novecento	Futurismo	2.5	1	407	538	730966	47512	13	24	19	142	0.30	0	0	0	21869	2004-04-22	5884
 Q368206	Aldo Busi	Letteratura italiana		Superiori	Dagli anni 80 in poi	Autori vari	2.5	1	153	144	274158	30224	26	2	5	28	0.09	0	0	0	4754	2004-04-11	5895
-#N/A	Naturalismo	Letteratura italiana		Superiori	Secondo Ottocento	Naturalismo&Verismo	2.4	1	7	5	12390	555	0	0	0	415	74.77	0	0	0	0	2004-04-09	5897
+Q55996	Naturalismo (letteratura)	Letteratura italiana	ex Naturalismo (letteratura)	Superiori	Secondo Ottocento	Naturalismo&Verismo	2.4	1	7	5	12390	555	0	0	0	415	74.77	0	0	0	0	2004-04-09	5897
 Q685342	Aldo Palazzeschi	Letteratura italiana		Superiori	Primo novecento	Futurismo	2.5	1	149	142	266884	43289	35	9	1	243	0.56	0	0	0	1720	2004-04-06	5900
 Q585401	Camillo Sbarbaro	Letteratura italiana		Superiori	Primo novecento	Espressionismo	2.5	1	59	55	106881	20188	7	3	1	2	0.01	0	0	0	3465	2004-03-17	5920
 Q1983009	Manifesto del Futurismo	Letteratura italiana		Superiori	Primo novecento	Futurismo	2.5	1	182	268	326168	15680	6	2	10	402	2.56	0	0	1	3754	2004-02-29	5937
@@ -1863,22 +1863,22 @@ Q296244	Vittorio Alfieri	Letteratura italiana		Superiori	XVIII Secolo	Vittorio A
 Q199588	Carlo Collodi	Letteratura italiana		Superiori	Secondo Ottocento	Letteratura per ragazzi	2.4	1	408	539	732423	21764	18	4	67	129	0.59	0	0	0	8369	2003-09-26	6093
 Q25106	Fabrizio De André	Letteratura italiana		Superiori	Anni 60-59	Autori minori	2.5	1	3187	3961	5727501	152075	211	33	125	4458	2.93	0	1	0	156277	2003-08-24	6126
 Q7791	Storia d'Italia	Letteratura italiana		Superiori	XVI Secolo	Francesco Guicciardini	2.3	1	324	289	581362	267855	97	85	24	5114	1.91	0	1	1	121655	2003-08-06	6144
-#N/A	Umberto Eco	Letteratura italiana		Superiori	Dagli anni 80 in poi	Autori vari	2.5	1	959	771	1723881	63532	48	14	1	1827	2.88	0	1	0	20684	2003-07-04	6177
+Q12807	Umberto Eco	Letteratura italiana		Superiori	Dagli anni 80 in poi	Autori vari	2.5	1	959	771	1723881	63532	48	14	1	1827	2.88	0	1	0	20684	2003-07-04	6177
 Q161933	Alberto Moravia	Letteratura italiana		Superiori	Il secolo breve	Alberto Moravia	2.5	1	421	465	755873	44886	20	3	39	618	1.38	1	1	0	6653	2003-06-14	6197
 Q309786	Emilio Salgari	Letteratura italiana		Superiori	Secondo Ottocento	Letteratura per ragazzi	2.4	1	285	259	512583	40637	28	10	39	624	1.54	0	0	0	11675	2003-05-03	6239
 Q16438	Decameron	Letteratura italiana		Superiori	Secolo XIV	Boccaccio	2.3	1	641	530	1151359	51893	12	10	65	2059	3.97	0	0	0	25013	2002-05-04	6603
 Q40185	Divina Commedia	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	1202	1065	2160864	148218	74	20	14	6362	4.29	0	0	0	30575	2002-01-31	6696
 Q378658	Adelchi (Manzoni)	Letteratura italiana		Superiori	Primo Ottocento	Alessandro Manzoni	???	1	197	183	354461	11000	9	1	0	450	4.09	0	0	0	50	2008-05-27	4388
 Q2827083	Agostino (romanzo)	Letteratura italiana		Superiori	Il secolo breve	Alberto Moravia	???	1	0	1	5773	5773	0	1	0	87	1.51	0	0	0	50	???	#VALUE!
-#N/A	Alessandro Manzoni	Letteratura italiana		Superiori	Primo Ottocento	Alessandro Manzoni	2.4	1	1581	1263	2841940	149246	282	41	66	2739	1.84	0	0	0	59196	2003-05-03	6239
+Q1064	Alessandro Manzoni	Letteratura italiana		Superiori	Primo Ottocento	Alessandro Manzoni	2.4	1	1581	1263	2841940	149246	282	41	66	2739	1.84	0	0	0	59196	2003-05-03	6239
 Q471831	Aminta (Tasso)	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	1	80	79	143066	7100	6	1	0	675	9.51	0	0	0	279	???	#VALUE!
 Q470067	Antonio Fogazzaro	Letteratura italiana		Superiori	Secondo Ottocento	Antonio Fogazzaro	2.4	1	114	117	205276	71631	12	18	28	215	0.30	1	0	0	2867	???	#VALUE!
 Q83003	Antonio Gramsci	Letteratura italiana		Superiori	Il secolo breve	Antonio Gramsci	2.5	1	845	933	1518875	182733	145	35	60	919	0.50	0	1	0	30452	2006-03-10	5197
-#N/A	Baldassare Castiglione	Letteratura italiana		Superiori	XVI Secolo	Baldassarre Castiglione	???	1	4	3	6961	36	0	0	0	33	91.67	0	0	0	370	???	#VALUE!
+-	Baldassare Castiglione	Letteratura italiana		Superiori	XVI Secolo	Baldassarre Castiglione	???	1	4	3	6961	36	0	0	0	33	91.67	0	0	0	370	???	#VALUE!
 Q232913	Beatrice Portinari	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	???	1	2	4	9525	9525	2	4	3	213	2.24	0	0	0	954	???	#VALUE!
 Q15221996	Becchin'amor! - Che vuo', falso tradito?	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Cecco Angiolieri	-	1	4	4	8032	2139	0	0	2	106	4.96	0	0	0	50	-	#VALUE!
 Q823002	Bernardo Dovizi da Bibbiena	Letteratura italiana		Superiori	XVI Secolo	Autori minori	???	1	1	11	7957	7957	1	11	0	2	0.03	1	0	0	211	???	#VALUE!
-#N/A	Burchiello (poeta)	Letteratura italiana		Superiori	XV Secolo	Autori Minori	???	1	6	2	9297	9297	6	2	9	1	0.01	0	0	0	377	???	#VALUE!
+Q1058842	Burchiello (poeta)	Letteratura italiana		Superiori	XV Secolo	Autori Minori	???	1	6	2	9297	9297	6	2	9	1	0.01	0	0	0	377	???	#VALUE!
 Q3655711	Canti (Giacomo Leopardi)	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	???	1	0	2	8583	8583	0	2	1	118	1.37	0	0	0	1342	???	#VALUE!
 Q378645	Carlo Emilio Gadda	Letteratura italiana		Superiori	Il secolo breve	Carlo Emilio Gadda	2.5	1	212	201	381237	39548	17	2	9	1	0.00	0	0	0	12876	2006-01-08	5258
 Q660359	Cecco Angiolieri	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Cecco Angiolieri	2.3	1	213	202	383472	21594	6	0	16	1	0.00	0	0	0	10419	2006-12-05	4927
@@ -1886,10 +1886,10 @@ Q187998	Cesare Borgia	Letteratura italiana		Superiori	XV Secolo	Machiavelli	???	
 Q2022	Cesare Pavese	Letteratura italiana		Superiori	Dopoguerra	Cesare Pavese	2.5	1	604	679	1085083	60854	24	10	35	132	0.22	0	0	0	16764	2004-01-04	5993
 Q779955	Chiare, fresche et dolci acque	Letteratura italiana		Superiori	Secolo XIV	Petrarca	-	1	97	102	175026	6659	4	2	0	473	7.10	0	0	0	4965	-	#VALUE!
 Q736348	Cino da Pistoia	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Cino da Pistoia	2.3	1	44	38	79719	12421	7	4	3	2	0.02	0	0	0	4130	???	#VALUE!
-#N/A	Dante Alighieri	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	1974	1762	3546968	160050	198	33	67	2074	1.30	0	0	0	20496	2003-06-08	6203
+Q1067	Dante Alighieri	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	2.3	1	1974	1762	3546968	160050	198	33	67	2074	1.30	0	0	0	20496	2003-06-08	6203
 Q242095	Dino Buzzati	Letteratura italiana		Superiori	Dopoguerra	Dino Buzzati	2.5	1	325	330	583315	56227	32	5	2	724	1.29	0	0	0	4180	2004-03-23	5914
-#N/A	Discorso di un italiano intorno alla poesia romantica	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	-	#VALUE!
-#N/A	Duello di Rodomonte e Ruggero	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	-	#VALUE!
+-	Discorso di un italiano intorno alla poesia romantica	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	2.4	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	-	#VALUE!
+-	Duello di Rodomonte e Ruggero	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	-	#VALUE!
 Q921273	Egloghe (Dante Alighieri)	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	???	1	0	1	3469	3469	0	1	1	2351	67.77	0	0	0	0	???	#VALUE!
 Q275979	Elsa Morante	Letteratura italiana		Superiori	Dopoguerra	Elsa Morante	2.5	1	350	358	628432	36282	8	3	51	2	0.01	0	0	0	4121	2005-05-16	5495
 Q504	Émile Zola	Letteratura italiana		Superiori	Secondo Ottocento	Naturalismo&Verismo	???	1	384	428	690227	94521	140	25	17	1	0.00	0	0	0	11277	2006-12-27	4905
@@ -1909,12 +1909,12 @@ Q529146	Giuseppe Parini	Letteratura italiana		Superiori	XVIII Secolo	Giuseppe Pa
 Q213482	Giuseppe Tomasi di Lampedusa	Letteratura italiana		Superiori	Dopoguerra	Giuseppe Tomasi di Lampedusa	2.5	1	180	218	324348	20112	7	8	32	554	2.75	0	0	0	975	2004-01-08	5989
 Q311802	Giuseppe Ungaretti	Letteratura italiana		Superiori	Il secolo breve	Giuseppe Ungaretti	2.5	1	1095	1113	1966840	36553	26	8	4	1	0.00	0	0	0	24821	2006-12-03	4929
 Q316876	Guido Cavalcanti	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guido Cavalcanti	2.3	1	185	181	332880	11878	3	3	1	2	0.02	0	0	0	7059	2006-12-05	4927
-#N/A	Guido Guinizzelli	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guido Guinizelli	???	1	36	13	65075	28	0	0	13	25	89.29	0	0	0	0	???	#VALUE!
+-	Guido Guinizzelli	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guido Guinizelli	???	1	36	13	65075	28	0	0	13	25	89.29	0	0	0	0	???	#VALUE!
 Q19984772	Guido, i' vorrei che tu e Lapo ed io	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Dante Alighieri	???	1	127	116	227494	5425	5	1	0	479	8.83	0	0	0	841	???	#VALUE!
-#N/A	Guittone d'Arezzo	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guittone d'Arezzo	2.3	1	64	62	115338	10603	2	2	7	88	0.83	0	0	0	4732	???	#VALUE!
+Q1246333	Guittone d'Arezzo	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guittone d'Arezzo	2.3	1	64	62	115338	10603	2	2	7	88	0.83	0	0	0	4732	???	#VALUE!
 Q3791396	I ventitré giorni della città di Alba	Letteratura italiana		Superiori	Dopoguerra	Beppe Fenoglio	???	1	33	33	59022	9998	2	0	0	5727	57.28	2	0	0	1090	???	#VALUE!
 Q317267	Iacopone da Todi	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Iacopone da Todi	???	1	3	4	5845	28	0	0	0	25	89.29	0	0	0	0	???	#VALUE!
-#N/A	Il Caffè (Verri)	Letteratura italiana		Superiori	XVIII Secolo	Illuminismo italiano	???	1	1	1	10850	10850	1	1	1	663	6.11	1	0	0	1315	???	#VALUE!
+Q3792578	Il Caffè (1764-1766)	Letteratura italiana	ex Il Caffè (Verri)	Superiori	XVIII Secolo	Illuminismo italiano	???	1	1	1	10850	10850	1	1	1	663	6.11	1	0	0	1315	???	#VALUE!
 Q2541435	Il combattimento di Tancredi e Clorinda	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	1	26	24	46469	3066	0	1	11	1494	48.73	0	0	0	0	???	#VALUE!
 Q3209720	Il partigiano Johnny (romanzo)	Letteratura italiana		Superiori	Dopoguerra	Beppe Fenoglio	???	1	2	0	17540	17540	2	0	2	675	3.85	0	0	0	50	???	#VALUE!
 Q3795119	Il piacere (romanzo)	Letteratura italiana		Superiori	Primo novecento	Gabriele D'Annunzio	???	1	32	11	35765	35765	32	11	3	2015	5.63	0	2	0	3160	???	#VALUE!
@@ -2300,16 +2300,16 @@ Q283	Acqua	Scienze		Medie	Sistema Terra		1	1	818	760	1469962	115563	137	36	55	34
 Q60186	Meteorite	Scienze		Medie	Corpi celesti		1	1	141	140	254165	25189	20	12	4	1006	3.99	0	1	0	14634	2003-12-26	6002
 Q3559	Cometa	Scienze		Medie	Corpi celesti		1	1	192	177	344703	54041	44	11	3	1644	3.04	2	0	0	9760	2003-12-23	6005
 #N/A	Corrente elettrica	Scienze		Medie	Aspetti chimici della materia		1	1	414	410	744430	27978	19	6	4	620	2.22	0	0	0	9066	2003-12-21	6007
-#N/A	Frutto	Scienze		Medie	Essere vivente		1	1	172	160	308323	12260	0	7	0	1142	9.31	0	0	0	2509	2003-11-27	6031
+Q1364	Frutto	Scienze		Medie	Essere vivente		1	1	172	160	308323	12260	0	7	0	1142	9.31	0	0	0	2509	2003-11-27	6031
 Q7377	Mammalia	Scienze		Medie	Essere vivente		1	1	357	365	641883	63058	5	23	6	1434	2.27	0	0	0	3137	2003-08-29	6121
 Q3863	Asteroide	Scienze		Medie	Corpi celesti		1	1	185	198	331762	23468	8	5	0	1486	6.33	0	0	0	3459	2003-08-17	6133
-#N/A	Energia	Scienze		Medie	Energia		2	1	527	491	946410	26574	18	5	11	2087	7.85	0	0	0	113975	2003-08-17	6133
+Q11379	Energia	Scienze		Medie	Energia		2	1	527	491	946410	26574	18	5	11	2087	7.85	0	0	0	113975	2003-08-17	6133
 Q36732	Regno (biologia)	Scienze		Medie	Essere vivente		1	1	146	142	261473	8464	0	0	10	3302	39.01	0	0	0	1873	2003-08-07	6143
 Q7239	Organismo vivente	Scienze		Medie	Essere vivente		1	1	173	152	310580	27840	29	8	9	1033	3.71	0	0	0	33949	2003-08-03	6147
-#N/A	Fusto	Scienze		Medie	Essere vivente		1	1	119	93	213569	15388	0	2	0	905	5.88	1	1	0	37	2003-07-27	6154
+Q134267	Fusto	Scienze		Medie	Essere vivente		1	1	119	93	213569	15388	0	2	0	905	5.88	1	1	0	37	2003-07-27	6154
 Q9121	Atomo	Scienze		Medie	Aspetti chimici della materia		2	1	580	477	1041589	30456	25	8	3	1146	3.76	0	0	0	1102	2003-04-10	6262
 Q37868	Alga	Scienze		Medie	Essere vivente		1	1	135	126	241914	11976	2	2	9	3274	27.34	0	0	0	390	2003-02-15	6316
-#N/A	Scienze dell'atmosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	0	0	144	34	0	0	0	31	91.18	0	0	0	0	2018-12-30	519
+-	Scienze dell'atmosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	0	0	144	34	0	0	0	31	91.18	0	0	0	0	2018-12-30	519
 Q2623458	Collisione continentale	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	5	6	8768	6724	0	2	5	1163	17.30	0	0	0	1307	2017-11-06	938
 -	Rischio vulcanico	Scienze della Terra		Superiori	I vulcani		2	1	10	11	17869	2167	0	0	0	1555	71.76	2	0	0	49	2015-11-12	1663
 Q210539	Orbita della Luna	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	107	109	191752	18916	14	7	1	1973	10.43	0	0	0	2074	2014-02-06	2307
@@ -2318,21 +2318,21 @@ Q577185	Regressione marina	Scienze della Terra		Superiori	Processo sedimentario 
 Q437882	Figura della Terra	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	41	43	73581	20039	5	1	4	2748	13.71	0	0	0	1101	2012-08-03	2859
 Q162167	Mesosfera (atmosfera)	Scienze della Terra	ex Mesosfera	Superiori	Atmosfera e clima		2	1	8	9	14848	264	0	0	0	231	87.50	0	0	0	0	2011-02-23	3386
 Q752112	Acque di superficie	Scienze della Terra		Superiori	Acque continentali		2	1	5	5	9830	476	0	0	0	290	60.92	1	0	0	49	2010-04-03	3712
-#N/A	Espansione della Terra	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	4	3	7444	9263	10	2	1	809	8.73	1	0	0	3896	2010-03-11	3735
+Q1384267	Espansione della Terra	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	4	3	7444	9263	10	2	1	809	8.73	1	0	0	3896	2010-03-11	3735
 Q301920	Trasgressione marina	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	6	6	11586	4818	1	1	1	239	4.96	0	0	0	92	2009-06-22	3997
-#N/A	Espansione metrica dello spazio	Scienze della Terra		Superiori	L'universo		2	1	26	26	47504	28696	13	5	1	1278	4.45	0	0	0	4803	2009-03-22	4089
-#N/A	Cosmologia	Scienze della Terra		Superiori	L'universo		2	1	19	9	33806	506	0	0	0	401	79.25	0	0	0	0	2009-01-13	4157
+Q1129469	Espansione metrica dello spazio	Scienze della Terra		Superiori	L'universo		2	1	26	26	47504	28696	13	5	1	1278	4.45	0	0	0	4803	2009-03-22	4089
+Q338	Cosmologia	Scienze della Terra		Superiori	L'universo		2	1	19	9	33806	506	0	0	0	401	79.25	0	0	0	0	2009-01-13	4157
 Q3983121	Temperatura dell'aria	Scienze della Terra		Superiori	Atmosfera e clima		2	1	50	44	89947	21366	6	3	0	969	4.54	1	0	0	49	2008-08-29	4294
-#N/A	Spazio intergalattico	Scienze della Terra		Superiori	L'universo		2	1	22	23	39851	3642	6	0	0	1008	27.68	0	0	0	1099	2008-06-02	4382
-#N/A	Isolamento sismico	Scienze della Terra		Superiori	Terremoti		2	1	5	4	8440	3377	0	1	0	1300	38.50	1	0	0	1315	2008-03-13	4463
-#N/A	Diagramma QAPF	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	15	15	26352	3530	1	2	3	1447	40.99	0	0	0	1020	2007-12-09	4558
+Q167287	Spazio intergalattico	Scienze della Terra		Superiori	L'universo		2	1	22	23	39851	3642	6	0	0	1008	27.68	0	0	0	1099	2008-06-02	4382
+Q16531303	Isolamento sismico	Scienze della Terra		Superiori	Terremoti		2	1	5	4	8440	3377	0	1	0	1300	38.50	1	0	0	1315	2008-03-13	4463
+Q1247570	Diagramma QAPF	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	15	15	26352	3530	1	2	3	1447	40.99	0	0	0	1020	2007-12-09	4558
 Q674775	Vulcano sottomarino	Scienze della Terra		Superiori	I vulcani		2	1	35	36	63137	14764	5	4	0	179	1.21	0	0	0	1209	2007-11-26	4571
-#N/A	Flysh	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		2	1	0	0	346	19	0	0	0	16	84.21	0	0	0	0	2007-11-20	4577
-#N/A	Zona umida	Scienze della Terra		Superiori	Acque continentali		2	1	21	25	38577	5258	1	1	0	238	4.53	0	0	0	212	2007-11-17	4580
+Q756914	Flysch	Scienze della Terra	ex Flysh	Superiori	Processo metamorfico e rocce metamorfiche		2	1	0	0	346	19	0	0	0	16	84.21	0	0	0	0	2007-11-20	4577
+Q170321	Zona umida	Scienze della Terra		Superiori	Acque continentali		2	1	21	25	38577	5258	1	1	0	238	4.53	0	0	0	212	2007-11-17	4580
 Q544	Sistema solare	Scienze della Terra		Superiori	Il sistema solare		2	1	1269	1145	2279871	76093	95	26	0	2374	3.12	0	0	0	58037	2007-09-13	4645
-#N/A	Eustatismo	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	10	12	17197	1805	0	0	0	1452	80.44	2	0	0	620	2007-09-11	4647
+Q1378741	Eustatismo	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	10	12	17197	1805	0	0	0	1452	80.44	2	0	0	620	2007-09-11	4647
 Q491689	Evaporite	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	25	21	44514	5098	0	1	0	316	6.20	0	0	0	626	2007-07-30	4690
-#N/A	Termosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	47	51	84740	2222	1	1	0	1919	86.36	0	0	0	188	2007-06-11	4739
+Q178043	Termosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	47	51	84740	2222	1	1	0	1919	86.36	0	0	0	188	2007-06-11	4739
 Q3748186	Formazione della Terra	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	80	99	144543	5247	0	1	0	4850	92.43	1	0	0	49	2007-05-19	4762
 Q42045	Roccia magmatica	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	152	130	273436	15974	1	13	2	645	4.04	1	0	0	4123	2007-03-20	4822
 Q81659	Piega (geologia)	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	23	20	41177	10631	1	7	3	2381	22.40	1	0	0	693	2007-03-19	4823
@@ -2409,8 +2409,8 @@ Q405	Luna	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	991	1044	17
 Q7946	Minerale	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	236	206	424897	43072	45	8	5	438	1.02	0	0	0	8457	2003-12-15	6013
 Q321	Via Lattea	Scienze della Terra		Superiori	Il sistema solare		2	1	499	494	896288	67988	73	15	26	2746	4.04	0	0	0	15919	2003-11-10	6048
 Q318	Galassia	Scienze della Terra		Superiori	L'universo		2	1	324	314	581729	98713	110	36	18	4213	4.27	0	0	0	12623	2003-11-05	6053
-#N/A	Ciclo litogenetico	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	51	42	91808	4946	0	1	0	612	12.37	0	0	0	413	2003-09-04	6115
-#N/A	Crosta terrestre	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	190	163	342255	5890	0	2	0	469	7.96	1	0	0	71	2003-09-02	6117
+Q1164398	Ciclo litogenetico	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	51	42	91808	4946	0	1	0	612	12.37	0	0	0	413	2003-09-04	6115
+Q15316	Crosta terrestre	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	190	163	342255	5890	0	2	0	469	7.96	1	0	0	71	2003-09-02	6117
 Q523	Stella	Scienze della Terra		Superiori	L'universo		2	1	449	426	806059	171485	173	38	29	4227	2.46	0	0	0	27731	2003-08-31	6119
 Q40157	Lava	Scienze della Terra		Superiori	I vulcani		2	1	118	108	212381	5635	4	4	0	544	9.65	0	0	0	3581	2003-08-25	6125
 Q43533	Cristallo	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	149	142	267230	9740	10	5	2	2367	24.30	0	0	0	555	2003-08-19	6131
@@ -2420,10 +2420,10 @@ Q36477	Longitudine	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	18
 Q525	Sole	Scienze della Terra		Superiori	Il sistema solare		2	1	963	904	1730757	157617	169	36	31	4953	3.14	0	0	0	65665	2003-05-09	6233
 Q5690	Sparta	Storia		Superiori	Grecia e Italia preromana	Sparta	???	1	568	533	1021581	54274	44	9	9	802	1.48	1	1	0	1853	2014-03-24	2261
 Q3922436	Proclamazione del Regno d'Italia	Storia		Superiori	XVIII-XIX secolo	Unità d'Italia	???	1	232	346	417310	7761	11	2	0	890	11.47	0	0	0	1576	2011-02-24	3385
-#N/A	Piramidi egizie	Storia		Superiori	Antichità	Piramidi	???	1	367	336	659635	171362	296	64	27	924	0.54	0	0	0	3824	2008-08-01	4322
+Q175582	Piramidi egizie	Storia		Superiori	Antichità	Piramidi	???	1	367	336	659635	171362	296	64	27	924	0.54	0	0	0	3824	2008-08-01	4322
 Q24384	Stagione	Storia		Elementari	Prima elementare	Stagioni	0.1	1	417	427	750021	11368	2	2	0	2138	18.81	1	0	0	4363	2008-04-24	4421
-#N/A	Guelfi e ghibellini	Storia		Superiori	Basso medioevo	Guelfi e ghibellini	???	1	535	568	961909	81088	63	46	4	2172	2.68	2	0	0	11504	2008-03-13	4463
-#N/A	Giochi olimpici antichi	Storia		Superiori	Grecia e Italia preromana	Olimpiadi antiche	???	1	411	311	739319	16735	18	1	4	559	3.34	1	0	0	8020	2008-03-02	4474
+Q187742	Guelfi e ghibellini	Storia		Superiori	Basso medioevo	Guelfi e ghibellini	???	1	535	568	961909	81088	63	46	4	2172	2.68	2	0	0	11504	2008-03-13	4463
+Q188468	Giochi olimpici antichi	Storia		Superiori	Grecia e Italia preromana	Olimpiadi antiche	???	1	411	311	739319	16735	18	1	4	559	3.34	1	0	0	8020	2008-03-02	4474
 Q37739	Feudalesimo	Storia		Superiori	Alto medioevo	La nascita del feudalesimo	???	1	432	419	777123	34287	17	2	8	1251	3.65	1	0	0	55895	2008-02-21	4484
 Q2289594	Moti del 1820-1821	Storia		Superiori	XVIII-XIX secolo	I moti del 1820-21	???	1	181	161	324477	24419	7	8	1	2186	8.95	0	0	0	1410	2007-12-01	4566
 Q6206	Capitalismo	Storia		Superiori	XVIII-XIX secolo	capitalismo	???	1	439	455	788946	36899	6	0	16	1167	3.16	1	0	0	30931	2007-07-15	4705
@@ -2442,7 +2442,7 @@ Q4692	Rinascimento	Storia		Superiori	XVI-XVII secolo	Il Rinascimento	???	1	1131	
 Q846933	Umanesimo	Storia		Superiori	Basso medioevo	Umanesimo	???	1	406	299	729081	114726	143	36	64	2876	2.51	0	0	0	18676	2006-12-07	4925
 Q2269	Rivoluzione industriale	Storia		Superiori	XVIII-XIX secolo	Rivoluzione industriale	???	1	1029	1021	1848823	36075	6	2	7	2637	7.31	1	0	0	27085	2006-12-06	4926
 Q319891	Suffragio universale	Storia		Superiori	XX-XXI secolo	suffragio universale	???	1	582	643	1045840	14209	8	2	1	651	4.58	1	1	0	4029	2006-12-06	4926
-#N/A	Trattato di Versailles (1919)	Storia		Superiori	XX-XXI secolo	il Trattato di Versailles	???	1	429	450	770203	28855	11	7	8	1996	6.92	1	0	0	5681	2006-10-24	4969
+Q8736	Trattato di Versailles	Storia	ex Trattato di Versailles (1919)	Superiori	XX-XXI secolo	il Trattato di Versailles	???	1	429	450	770203	28855	11	7	8	1996	6.92	1	0	0	5681	2006-10-24	4969
 Q426853	Stampa a caratteri mobili	Storia		Superiori	Basso medioevo	La stampa	???	1	215	192	386241	21666	28	5	9	306	1.41	0	0	0	9750	2006-10-23	4970
 Q267304	Giacomo Matteotti	Storia		Superiori	XX-XXI secolo	Assassinio di Matteotti	???	1	566	666	1016683	100721	120	22	45	1483	1.47	1	0	0	119199	2006-10-19	4974
 Q8698	Grande depressione	Storia		Superiori	XX-XXI secolo		???	1	615	619	1105747	41152	22	7	4	1728	4.20	1	1	0	7727	2006-09-14	5009

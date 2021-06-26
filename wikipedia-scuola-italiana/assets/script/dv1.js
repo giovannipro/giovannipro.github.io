@@ -10,6 +10,22 @@ function format_date(date){
 	}
 }
 
+function variation_perc(now,prev,parameter){
+	let variation = now - prev;
+	let output;
+    if (variation > 0){
+		output = "+" + Math.floor(((now/prev)-1)*100).toLocaleString() + "%";
+	}
+	else if (Math.floor(((now/prev)-1)*100) < 0.5 && Math.floor(((now/prev)-1)*100) > -0.5){
+		output = "-"
+	}
+	else {
+		output = "-" + Math.floor(100-(now*100)/prev).toLocaleString() + "%";
+    }
+    return output;
+}
+console.log(variation_perc(100,101,"cocco"))
+
 const container = "#dv1";
 const font_size = 10;
 const filter_item = 120; // 130;
@@ -83,24 +99,6 @@ function dv1(year,the_subject,sort) {
 		// sort
 		filtered_data = filter_data.sort(function(a, b){
 			return d3.ascending(a.article, b.article);
-			// if (sort == 1) {
-			// 	return d3.ascending(a.article, b.article);
-			// }
-			// else if (sort == 2) {
-			// 	return d3.descending(+a.days, +b.days);
-			// }
-			// else if (sort == 3) {
-			// 	return d3.ascending(+b.size, +a.size);
-			// }
-			// else if (sort == 5) {
-			// 	return d3.ascending(+b.incipit_size, +a.incipit_size);
-			// }
-			// else if (sort == 6) {
-			// 	return d3.ascending(+b.issues, +a.issues);
-			// }
-			// else if (sort == 7) {
-			// 	return d3.ascending(+b.images, +a.images);
-			// }
 		})
 	
 		filtered_data.forEach(function (d,i) {
@@ -240,15 +238,14 @@ function dv1(year,the_subject,sort) {
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
             	let diff_pv = d.avg_pv - d.avg_pv_prev
             	if (diff_pv > 0){
-            		let diff_pv_perc = Math.floor(((d.avg_pv/d.avg_pv_prev)-1)*100).toLocaleString();
-            		content += "<td class='value increase'>(" + d.avg_pv_prev + " +" + diff_pv_perc + "%)</td></tr>"
+            		content += "<td class='value increase'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
             	}
             	else if (diff_pv == 0){
             		content += "<td class='value'>-</td></tr>"
             	}
             	else {
             		let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
-            		content += "<td class='value decrease'>(" + d.avg_pv_prev + " -" + diff_pv_perc + "%)</td></tr>"
+            		content += "<td class='value decrease'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
                 }
 
                 //size
@@ -256,15 +253,10 @@ function dv1(year,the_subject,sort) {
             	if(year == 2021){
             		let diff_size = d.size - d.size_prev
 	            	if (diff_size > 0){
-	            		let diff_size_perc = Math.floor(((d.size/d.size_prev)-1)*100).toLocaleString();
-	            		content += "<td class='value increase'>(" + d.size_prev + " +" + diff_size_perc + "%)</td></tr>"
-	            	}
-	            	else if (diff_size == 0){
-	            		content += "<td class='value'>-</td></tr>"
+	            		content += "<td class='value increase'>(" + d.size_prev + " +" + variation_perc(d.size,d.size_prev,"visits") + "%)</td></tr>"
 	            	}
 	            	else {
-	            		let diff_size_perc = Math.floor(100-(d.size*100)/d.size_prev).toLocaleString();
-	            		content += "<td class='value decrease'>(" + d.size_prev + " -" + diff_size_perc + "%)</td></tr>"
+	            		content += "<td class='value decrease'>(" + d.size_prev + " -" + variation_perc(d.size,d.size_prev,"visits") + "%)</td></tr>"
 	            	}
             	}
 
@@ -806,33 +798,10 @@ function dv1(year,the_subject,sort) {
 			visit_sort = subject_articles.sort(function(x, y){
 				return d3.descending(+x.avg_pv, +y.avg_pv);
 			})
-			// console.log(visit_sort.length)
 
 			filter_data = visit_sort.filter(function(x,y){ 
 				return y < filter_item 
 			})
-			// console.log(filter_data.length)
-
-			// filtered_data = filter_data.sort(function(a, b){
-			// 	return d3.ascending(a.article, b.article);
-			// })
-
-			// 	else if (the_sort == 2) {
-			// 		return d3.descending(+a.days, +b.days);
-			// 	}
-			// 	else if (the_sort == 3) {
-			// 		return d3.ascending(+b.size, +a.size);
-			// 	}
-			// 	else if (the_sort == 5) {
-			// 		return d3.ascending(+b.incipit_size, +a.incipit_size);
-			// 	}
-			// 	else if (the_sort == 6) {
-			// 		return d3.ascending(+b.issues, +a.issues);
-			// 	}
-			// 	else if (the_sort == 7) {
-			// 		return d3.ascending(+b.images, +a.images);
-			// 	}
-			// })
 		
 			filtered_data.forEach(function (d,i) {
 				total += 1
