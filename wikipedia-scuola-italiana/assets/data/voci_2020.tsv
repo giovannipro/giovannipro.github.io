@@ -2133,7 +2133,7 @@ Q182003	Funzione iniettiva	Matematica		Superiori	Funzioni	Tipi di funzione	2.3	1
 Q130901	Relazione binaria	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	23	22	40744	3959	2	0	2	337	8.51	0	0	0	40	2005-02-07	5593
 Q3997732	Trasformazione geometrica piana	Matematica		Superiori	Funzioni	Trasformazioni	2.3	1	13	9	23194	4371	0	2	0	1384	31.66	1	0	0	292	2005-01-28	5603
 Q33456	Potenza (matematica)	Matematica		Medie	Aritmetica	Potenze	1.1	1	193	132	346140	10244	0	1	0	1001	9.77	1	0	0	2348	2005-01-21	5610
-#N/A	Numero di Eulero	Matematica		Superiori	Funzioni	Funzione esponenziale	2.4	1	6	4	11375	1182	0	0	1	1054	89.17	0	0	0	0	2005-01-16	5615
+Q82435	e (costante matematica)	Matematica	ex Numero di Eulero	Superiori	Funzioni	Funzione esponenziale	2.4	1	6	4	11375	1182	0	0	1	1054	89.17	0	0	0	0	2005-01-16	5615
 Q193623	Binomio	Matematica		Medie	Aritmetica	Algebra	1.2	1	48	35	86748	2692	4	1	5	296	11.00	0	0	0	326	2005-01-11	5620
 Q11197	Logaritmo	Matematica		Superiori	Funzioni	Funzione logaritmica	2.4	1	443	320	795423	20016	1	3	1	1478	7.38	0	0	0	529	2005-01-11	5620
 Q275447	Coefficiente angolare	Matematica		Superiori	Aritmetica	Piano cartesiano	2.2	1	170	118	305194	3273	0	1	0	2654	81.09	1	0	0	1028	2004-12-21	5641
@@ -2200,26 +2200,26 @@ Q36161	Insieme	Matematica		Superiori	Insiemi e logica	Insiemi	1.3	1	204	167	3662
 Q102761	Minimo comune multiplo	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	313	219	562793	7381	1	0	1	804	10.89	0	0	0	2233	2004-03-28	5909
 Q11352	Angolo	Matematica		Medie	Geometria	Angoli	1.1	1	192	129	345319	30574	1	8	0	2140	7.00	2	0	1	27456	2004-03-24	5913
 Q243723	Monomio	Matematica		Medie	Aritmetica	Algebra	1.2	1	142	113	255190	12101	11	0	11	1121	9.26	0	0	0	1132	2004-03-16	5921
-#N/A	Funzione continua	Matematica		Superiori	Studio di funzioni	Funzioni continue	2.5	1	126	112	227066	28154	9	9	7	1305	4.64	0	0	0	3440	2004-02-17	5949
+Q170058	Funzione continua	Matematica		Superiori	Studio di funzioni	Funzioni continue	2.5	1	126	112	227066	28154	9	9	7	1305	4.64	0	0	0	3440	2004-02-17	5949
 Q38918	Sistema di numerazione romano	Matematica		Elementari	Aritmetica	Numeri romani	0.5	1	575	489	1033613	24299	7	3	0	376	1.55	0	0	0	5710	2004-01-21	5976
 Q828224	Chilometro	Matematica		Elementari	Unità di misura	Lungezza	0.2	1	78	77	139447	2799	0	2	0	955	34.12	1	0	0	2583	2003-12-19	6009
-#N/A	Chilogrammo	Matematica		Elementari	Unità di misura	Peso	0.2	1	272	242	487916	20622	20	2	1	2213	10.73	0	0	0	6718	2003-12-18	6010
-#N/A	Secondo	Matematica		Elementari	Unità di misura	Tempo	0.2	1	152	147	272515	7088	2	1	0	859	12.12	0	0	0	722	2003-12-18	6010
-#N/A	Metro	Matematica		Elementari	Unità di misura	Lungezza	0.2	1	603	591	1083834	12618	8	4	3	1449	11.48	0	0	0	5110	2003-12-17	6011
+Q11570	Chilogrammo	Matematica		Elementari	Unità di misura	Peso	0.2	1	272	242	487916	20622	20	2	1	2213	10.73	0	0	0	6718	2003-12-18	6010
+Q11574	Secondo	Matematica		Elementari	Unità di misura	Tempo	0.2	1	152	147	272515	7088	2	1	0	859	12.12	0	0	0	722	2003-12-18	6010
+Q11573	Metro	Matematica		Elementari	Unità di misura	Lungezza	0.2	1	603	591	1083834	12618	8	4	3	1449	11.48	0	0	0	5110	2003-12-17	6011
 Q202805	Combinazione	Matematica		Superiori	Calcolo combinatorio	Calcolo combinatiorio	2.4	1	106	110	191083	26698	0	0	2	1061	3.97	0	0	0	2659	2003-11-28	6030
 Q43260	Polinomio	Matematica		Medie	Aritmetica	Algebra	1.2	1	147	116	264390	20690	3	4	2	1470	7.10	0	0	0	3108	2003-11-13	6045
 Q226183	Insieme vuoto	Matematica		Superiori	Insiemi e logica	Insiemi	2.1	1	43	41	77597	12789	1	0	1	607	4.75	0	0	0	4967	2003-11-09	6049
 Q185837	Intersezione (insiemistica)	Matematica		Superiori	Insiemi e logica	Insiemi	2.1	1	61	62	109386	4306	0	2	1	488	11.33	0	0	0	40	2003-11-09	6049
 Q185359	Unione (insiemistica)	Matematica		Superiori	Insiemi e logica	Insiemi	2.1	1	53	45	94362	3637	0	2	0	567	15.59	1	0	0	1496	2003-11-09	6049
-#N/A	Successione (matematica)	Matematica		Superiori	Funzioni	Successioni	2.3	1	87	64	157198	18435	0	0	5	1592	8.64	0	0	0	17265	2003-11-06	6052
+Q133250	Successione (matematica)	Matematica		Superiori	Funzioni	Successioni	2.3	1	87	64	157198	18435	0	0	5	1592	8.64	0	0	0	17265	2003-11-06	6052
 Q29175	Derivata	Matematica		Superiori	Studio di funzioni	Derivate	2.5	1	360	300	647788	31438	7	6	7	1323	4.21	0	0	0	9302	2003-10-05	6084
-#N/A	Permutazione	Matematica		Superiori	Calcolo combinatorio	Calcolo combinatiorio	2.4	1	102	105	183877	8741	0	0	0	322	3.68	1	0	2	350	2003-10-05	6084
+Q161519	Permutazione	Matematica		Superiori	Calcolo combinatorio	Calcolo combinatiorio	2.4	1	102	105	183877	8741	0	0	0	322	3.68	1	0	2	350	2003-10-05	6084
 Q40112	Ellisse	Matematica		Superiori	Funzioni	Funzioni quadratiche	2.3	1	238	204	427836	30389	5	12	1	2206	7.26	1	0	0	9609	2003-08-08	6142
-#N/A	Relazione di equivalenza	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	71	74	128183	16859	5	1	1	172	1.02	0	0	0	1877	2003-08-04	6146
+Q130998	Relazione di equivalenza	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	71	74	128183	16859	5	1	1	172	1.02	0	0	0	1877	2003-08-04	6146
 Q49008	Numero primo	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	738	645	1325550	88734	98	17	28	2126	2.40	0	0	0	79417	2003-05-26	6216
-#N/A	Funzione (matematica)	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	396	347	710826	19196	5	1	8	644	3.35	0	0	0	16356	2003-04-12	6260
+Q11348	Funzione (matematica)	Matematica		Superiori	Insiemi e logica	Relazioni	2.1	1	396	347	710826	19196	5	1	8	644	3.35	0	0	0	16356	2003-04-12	6260
 Q36253	Lunghezza	Matematica		Elementari	Unità di misura	Lungezza	0.2	1	73	71	131268	2928	1	0	0	1493	50.99	0	0	0	2075	2003-04-10	6262
-#N/A	Teorema di Pitagora	Matematica		Medie	Geometria	Pitagora	1.2	1	923	937	1659298	25727	10	15	3	491	1.91	0	0	0	9869	2003-02-11	6320
+Q11518	Teorema di Pitagora	Matematica		Medie	Geometria	Pitagora	1.2	1	923	937	1659298	25727	10	15	3	491	1.91	0	0	0	9869	2003-02-11	6320
 #N/A	Radice quadrata	Matematica		Medie	Aritmetica	Radici quadrate	1.2	1	180	173	323229	14214	0	1	0	942	6.63	0	0	0	6613	2002-06-24	6552
 Q188804	Fattorizzazione	Matematica		Medie	Aritmetica	Decimali&frazioni	1.1	1	62	64	112300	5196	0	1	1	734	14.13	1	0	0	9021	2002-06-18	6558
 #N/A	Sfera	Matematica		Medie	Geometria	I solidi	1.3	1	335	224	602506	13721	3	3	2	699	5.09	0	0	0	2665	2002-06-11	6565
@@ -2467,10 +2467,10 @@ Q2260521	Nascita della Repubblica Italiana	Storia		Superiori	XX-XXI secolo	Refer
 Q11409	Apartheid	Storia		Superiori	XX-XXI secolo	Sudafrica e apartheid	???	1	609	591	1095262	14838	9	3	4	781	5.26	1	0	0	40222	2005-05-16	5495
 Q257758	Sessantotto	Storia		Superiori	XX-XXI secolo	il 1968	???	1	411	403	739211	125973	45	18	45	1500	1.19	4	2	0	19478	2005-05-15	5496
 Q706633	Resistenza italiana	Storia		Superiori	XX-XXI secolo	Partigiani e resistenza	???	1	685	699	1231622	209440	275	54	21	3473	1.66	1	1	0	139385	2005-05-01	5510
-#N/A	Etruschi	Storia		Superiori	Grecia e Italia preromana	Etruschi	???	1	693	638	1244621	143495	59	18	24	1305	0.91	1	0	0	46592	2005-04-30	5511
+Q17161	Etruschi	Storia		Superiori	Grecia e Italia preromana	Etruschi	???	1	693	638	1244621	143495	59	18	24	1305	0.91	1	0	0	46592	2005-04-30	5511
 Q468804	Camorra	Storia		Superiori	XX-XXI secolo	Camorra	???	1	580	579	1042893	141619	154	3	64	1149	0.81	9	1	0	130024	2005-04-12	5529
-#N/A	Totalitarismo	Storia		Superiori	XX-XXI secolo	Stato totalitario	???	1	364	365	654716	27813	24	2	26	1660	5.97	0	0	0	9160	2005-04-12	5529
-#N/A	Lenin	Storia		Superiori	XX-XXI secolo	Vladimir Lenin	???	1	712	699	1278868	122943	129	35	44	4502	3.66	2	0	0	31742	2005-04-04	5537
+Q128135	Totalitarismo	Storia		Superiori	XX-XXI secolo	Stato totalitario	???	1	364	365	654716	27813	24	2	26	1660	5.97	0	0	0	9160	2005-04-12	5529
+Q1394	Lenin	Storia		Superiori	XX-XXI secolo	Vladimir Lenin	???	1	712	699	1278868	122943	129	35	44	4502	3.66	2	0	0	31742	2005-04-04	5537
 Q8463	Schiavismo	Storia		Superiori	XVI-XVII secolo	Lo schiavismo	???	1	195	171	350700	77935	105	11	21	1061	1.36	0	0	0	66364	2005-01-08	5623
 Q8409	Alessandro Magno	Storia		Superiori	Grecia e Italia preromana	Alessandro Magno	???	1	1372	1274	2465680	156638	249	28	69	4546	2.90	1	2	0	37145	2004-12-25	5637
 Q18550	Mafia	Storia		Superiori	XX-XXI secolo	Mafia	???	1	830	846	1490823	44000	50	3	10	3212	7.30	1	0	1	79721	2004-12-15	5647
@@ -2478,21 +2478,21 @@ Q6186	Comunismo	Storia		Superiori	XX-XXI secolo	Il comunismo	???	1	950	1188	1706
 Q11768	Antico Egitto	Storia		Superiori	Antichità	Gli egizi	???	1	716	695	1286038	164778	120	52	43	3917	2.38	1	0	1	50766	2004-12-04	5658
 Q133132	Comune di Parigi (1871)	Storia		Superiori	XVIII-XIX secolo	Comune di Parigi	???	1	191	219	342378	155558	240	46	67	1830	1.18	0	0	0	13132	2004-12-04	5658
 Q12562	Riforma protestante	Storia		Superiori	XVI-XVII secolo	Il Protestantesimo	???	1	462	391	831055	23930	4	2	7	753	3.15	1	0	0	29270	2004-10-11	5712
-#N/A	Irredentismo	Storia		Superiori	XX-XXI secolo	Irredentismo	???	1	201	214	361665	30805	19	7	6	1069	3.47	0	1	0	36207	2004-10-05	5718
-#N/A	Storia dell'universo	Storia		Elementari	Terza elementare	L'origine dell'Universo	0.3	1	138	133	248328	21317	4	5	4	1729	8.11	0	0	0	19454	2004-09-23	5730
+Q182274	Irredentismo	Storia		Superiori	XX-XXI secolo	Irredentismo	???	1	201	214	361665	30805	19	7	6	1069	3.47	0	1	0	36207	2004-10-05	5718
+Q136407	Storia dell'universo	Storia		Elementari	Terza elementare	L'origine dell'Universo	0.3	1	138	133	248328	21317	4	5	4	1729	8.11	0	0	0	19454	2004-09-23	5730
 Q747081	Storia del fascismo italiano	Storia		Superiori	XX-XXI secolo	il regime fascista	???	1	308	500	553174	149415	95	18	30	749	0.50	3	15	3	98077	2004-08-19	5765
 Q193270	Patti Lateranensi	Storia		Superiori	XX-XXI secolo	Patti Lateranensi	???	1	635	713	1141872	35554	29	5	1	658	1.85	1	0	0	17235	2004-08-10	5774
 Q7727	Minuto	Storia		Elementari	Seconda elementare	Minuti	0.2	1	64	55	114668	3036	1	1	0	156	5.14	0	0	0	1027	2004-07-28	5787
 Q25235	Ora	Storia		Elementari	Seconda elementare	Ore	0.2	1	55	61	99352	3307	2	1	0	476	14.39	0	0	0	1164	2004-07-28	5787
 Q23387	Settimana	Storia		Elementari	Prima elementare	La settimana	0.2	1	78	66	141012	10720	2	1	3	1159	10.81	0	0	0	2145	2004-07-21	5794
 Q9068	Voltaire	Storia		Superiori	XVIII-XIX secolo	Voltaire	???	1	443	498	796810	164497	263	32	10	3087	1.88	0	0	0	38818	2004-07-16	5799
-#N/A	Assolutismo monarchico	Storia		Superiori	XVI-XVII secolo	Monarca assoluto	???	1	217	219	390259	11793	13	2	2	1289	10.93	0	0	0	2391	2004-07-04	5811
+Q184558	Assolutismo monarchico	Storia		Superiori	XVI-XVII secolo	Monarca assoluto	???	1	217	219	390259	11793	13	2	2	1289	10.93	0	0	0	2391	2004-07-04	5811
 Q223723	Cesare Beccaria	Storia		Superiori	XVIII-XIX secolo	Beccaria	???	1	329	339	590434	40378	24	7	119	1171	2.90	0	0	0	2944	2004-04-24	5882
-#N/A	Illuminismo	Storia		Superiori	XVIII-XIX secolo	Illuminismo	???	1	924	872	1659858	68779	83	15	40	2681	3.90	0	0	0	78030	2004-02-18	5948
+Q12539	Illuminismo	Storia		Superiori	XVIII-XIX secolo	Illuminismo	???	1	924	872	1659858	68779	83	15	40	2681	3.90	0	0	0	78030	2004-02-18	5948
 Q9061	Karl Marx	Storia		Superiori	XVIII-XIX secolo	Marx	???	1	866	789	1556713	173009	130	35	38	4760	2.75	0	0	0	12815	2004-01-17	5980
 Q51122	Risorgimento	Storia		Superiori	XVIII-XIX secolo	RIsorgimento	???	1	799	718	1435786	263835	294	63	48	1932	0.73	0	0	0	206338	2004-01-02	5995
-#N/A	Tempo	Storia		Elementari	Seconda elementare	Contemporaneamente	0.2	1	304	272	545428	47613	17	4	10	655	1.38	0	0	0	21020	2003-12-20	6008
-#N/A	Organizzazione delle Nazioni Unite	Storia		Superiori	XX-XXI secolo	Le Nazioni Unite	???	1	1365	1437	2452581	133511	202	24	0	5345	4.00	0	0	0	18086	2003-11-05	6053
+Q11471	Tempo	Storia		Elementari	Seconda elementare	Contemporaneamente	0.2	1	304	272	545428	47613	17	4	10	655	1.38	0	0	0	21020	2003-12-20	6008
+Q7809	Organizzazione delle Nazioni Unite	Storia		Superiori	XX-XXI secolo	Le Nazioni Unite	???	1	1365	1437	2452581	133511	202	24	0	5345	4.00	0	0	0	18086	2003-11-05	6053
 Q573	Giorno	Storia		Elementari	Prima elementare	Le parti della giornata	0.2	1	131	105	235677	10230	3	1	0	360	3.52	0	0	0	4642	2003-05-04	6238
 Q577	Anno	Storia		Elementari	Prima elementare	[anno]	0.2	1	167	178	300640	10613	5	2	0	1558	14.68	0	0	0	1527	2003-03-31	6272
 Q12536	Abbasidi	Storia		Superiori	Alto medioevo		???	1	95	97	170242	20308	5	11	5	1859	9.15	0	0	0	5137	???	#VALUE!

@@ -42,6 +42,7 @@ const font_size = 10;
 const filter_item = 120; // 130;
 const shiftx_article = 30;
 const wiki_link = "https://it.wikipedia.org/wiki/";
+const variation_line_opacity = 0.7;
 
 // let multiply = 1;
 let window_w = $(container).outerWidth();
@@ -330,6 +331,7 @@ function dv1(year,the_subject,sort) {
 
 		let variation_line = variation.append("line")
 			.attr("class","line_prev")
+			.attr("opacity",variation_line_opacity)
 			.attr("stroke", function(d,i){
 				return apply_color(d.subject)
 			})
@@ -474,7 +476,7 @@ function dv1(year,the_subject,sort) {
 				.attr("opacity",0)
 
 			d3.selectAll(".variation").select(".line_prev")
-				.attr("opacity",1)
+				.attr("opacity",variation_line_opacity)
 	    }
 
 		$("#subjects").change(function() {
@@ -684,6 +686,7 @@ function dv1(year,the_subject,sort) {
 				})
 
 			let variation_line = variation.append("line")
+				.attr("opacity",variation_line_opacity)
 				.attr("class","line_prev")
 				.attr("stroke", function(d,i){
 					return apply_color(d.subject)
@@ -977,7 +980,7 @@ $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17); //(Math.floor(Math.random() * 18) + 0) + 1
 	document.getElementById("subjects").selectedIndex = random_subject;
 
-	dv1(2020,subjects[random_subject],parseInt(1));
+	dv1(2021,subjects[random_subject],parseInt(1));
 	get_year();
 });
 
