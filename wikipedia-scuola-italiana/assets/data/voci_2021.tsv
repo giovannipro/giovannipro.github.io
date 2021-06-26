@@ -87,9 +87,9 @@ Q1058842	Burchiello (poeta)	Letteratura italiana	14	6	9601	9297	6	2	2	9	297	3.09
 Q1059	Sistema immunitario	Biologia	280	#N/A	107365	#N/A	119	12	#N/A	#N/A	3408	3.17	#N/A	0	#N/A	0	0	9485	#N/A	2006-11-23	5304	604912	-10	0	0	Immune system	
 Q105985	Potere giudiziario	Cittadinanza e costituzione	142	142	10007	9850	4	1	0	7	429	4.29	289	0	0	0	0	57	57	2005-07-11	5804	308013	1	0	0	Judiciaries	
 Q106016	Genotipo	Biologia	117	117	12411	12421	0	6	6	6	1255	10.11	1255	1	1	0	0	2115	2115	2005-07-11	5804	252168	0	0	0	Genotypes	
-Q106032	Epicentro	#N/A	63	#N/A	2925	#N/A	4	1	#N/A	#N/A	551	18.84	#N/A	0	#N/A	0	0	49	#N/A	2005-04-23	5883	136995	-7	0	0	Epicenters	
+Q106032	Epicentro	Scienze della Terra	63	65	2925	2918	4	1	1	0	551	18.84	551	0	0	0	0	49	49	2005-04-23	5883	136995	-7	0	0	Epicenters	
 Q1061030	Decreto dell'Alhambra	Storia	29	28	6697	6421	5	5	5	0	1064	15.89	1064	0	0	0	0	36	36	2009-08-17	4306	62814	3	0	0	Alhambra Decree	
-Q1061693	La gaia scienza	#N/A	67	#N/A	13401	#N/A	12	2	#N/A	#N/A	1161	8.66	#N/A	0	#N/A	0	0	39	#N/A	2007-07-08	5077	144313	2	0	0		Die fröhliche Wissenschaft
+Q1061693	La gaia scienza	Filosofia	67	66	13401	13370	12	2	2	2	1161	8.66	1161	0	0	0	0	39	39	2007-07-08	5077	144313	2	0	0		Die fröhliche Wissenschaft
 Q106227	Locus genico	Biologia	65	68	1436	1430	0	1	#N/A	0	1209	84.19	#N/A	1	#N/A	0	0	1137	#N/A	2005-12-10	5652	140830	-12	0	0	Locus (genetics)	
 Q1062677	Web 3.0	Informatica	58	60	8926	8888	2	0	0	0	590	6.61	560	0	0	0	0	782	782	2007-08-30	5024	125863	-11	0	0		
 Q1062932	Equazione esponenziale	#N/A	17	#N/A	3695	#N/A	0	1	#N/A	#N/A	216	5.85	#N/A	0	#N/A	0	0	40	#N/A	2006-03-14	5558	36115	1	0	0		
@@ -110,20 +110,20 @@ Q1070421	Script	Informatica	93	99	18979	18976	0	8	8	0	464	2.44	474	0	0	0	0	997	9
 Q107047419	Ente territoriale (Italia)	Cittadinanza e costituzione	28	28	1838	1838	0	0	0	0	334	18.17	334	0	0	0	0	57	57	2010-11-24	3842	59659	-2	0	0		
 Q107087885	Sistema nervoso umano	Biologia	130	142	6798	6811	1	1	1	5	433	6.37	435	1	1	0	0	2675	2675	2003-08-22	6493	281600	-55	0	0		
 Q107087895	Bene (economia)	Diritto e Economia	83	84	4289	4290	0	0	0	0	336	7.83	336	1	1	0	0	281	281	2006-05-03	5508	179928	-4	0	0		
-Q107099	Cenere vulcanica	#N/A	22	#N/A	7939	#N/A	1	3	#N/A	#N/A	1388	17.48	#N/A	0	#N/A	0	0	256	#N/A	2005-11-03	5689	47079	10	0	0	Volcanic ash	Volcanic ash
+Q107099	Cenere vulcanica	Scienze della Terra	22	20	7939	7939	1	3	3	0	1388	17.48	1388	0	0	0	0	256	256	2005-11-03	5689	47079	10	0	0	Volcanic ash	Volcanic ash
 Q1071270	Integrazione per sostituzione	Matematica	25	25	8953	8021	2	0	0	4	414	4.62	309	3	1	0	0	40	40	2004-08-30	6119	53371	-2	0	0		
 Q1072140	Repubblica Romana (1849)	Storia	187	177	88790	88553	17	28	28	15	2581	2.91	2538	0	0	2	0	37671	37671	2007-01-23	5243	404143	52	0	0	Roman Republic (1849)	Autore:Repubblica Romana (1849)
 Q1072751	Arte mesopotamica	Storia dell'arte	35	33	9171	9108	5	1	1	2	506	5.52	506	0	0	0	0	3473	3473	2006-09-25	5363	75986	10	0	0	Art of Mesopotamia	
 Q107342	Sillogismo	Filosofia	316	326	31541	31526	4	49	49	18	1580	5.01	1580	1	1	0	0	7645	7645	2005-05-04	5872	682844	-47	0	0	Syllogisms	
 Q1074	Pelle	Scienze	311	328	21968	20963	9	6	6	1	1366	6.22	1370	0	0	0	0	4488	4488	2005-06-29	5816	672124	-84	0	0	Skin	
-Q107410	Ipocentro	#N/A	58	#N/A	4559	#N/A	6	1	#N/A	#N/A	372	8.16	#N/A	0	#N/A	0	0	49	#N/A	2005-05-04	5872	125698	-24	0	0	Hypocenters	
+Q107410	Ipocentro	Scienze della Terra	58	63	4559	4559	6	1	1	2	372	8.16	372	0	0	0	0	49	49	2005-05-04	5872	125698	-24	0	0	Hypocenters	
 Q107425	Paesaggio	Geografia	88	90	34074	34296	3	11	11	40	1204	3.53	1204	3	3	0	0	10552	-	2005-04-19	5887	190153	-11	0	0	Landscapes	Landscape
 Q10749030	Impresa di Fiume	Storia	351	331	48587	48222	31	9	6	17	1158	2.38	1047	0	0	1	0	69683	69683	2007-02-28	5207	758615	98	0	0		
 Q10764194	Meno (matematica)	#N/A	14	#N/A	2905	#N/A	0	2	#N/A	#N/A	350	12.05	#N/A	1	#N/A	0	0	500	#N/A	2006-08-19	5400	30815	-2	0	0		
 Q107715	Grandezza fisica	Fisica	204	194	20773	20647	12	5	0	0	714	3.44	590	0	0	0	0	4716	4716	2004-04-15	6256	440376	48	0	0	Physical quantities	
 Q1079788	Soluto	Chimica	52	56	3009	3009	2	1	1	2	875	29.08	875	0	0	0	0	59	59	2005-05-27	5849	113012	-16	0	0		
 Q1079958	Regole di derivazione	#N/A	66	#N/A	16360	#N/A	0	0	#N/A	#N/A	327	2.00	#N/A	1	#N/A	0	0	1073	#N/A	2005-08-31	5753	143302	-25	0	0		
-Q10806	Attentati dell'11 settembre 2001	#N/A	1326	#N/A	238784	#N/A	375	30	#N/A	#N/A	4424	1.85	#N/A	0	#N/A	0	0	55027	#N/A	2003-02-28	6668	2866134	96	0	0	September 11 attacks	
+Q10806	Attentati dell'11 settembre 2001	Storia	1326	1307	238784	238003	375	30	30	62	4424	1.85	4271	0	0	0	0	55027	46888	2003-02-28	6668	2866134	96	0	0	September 11 attacks	
 Q1080711	Guerre ottomano-ungheresi	Storia	11	11	29075	28985	9	17	17	4	3101	10.67	3101	0	0	0	0	36	36	2010-08-13	3945	22808	0	0	0		
 Q10811	Reptilia	Biologia	195	194	18752	18793	6	23	23	0	1628	8.68	1125	0	0	0	0	1190	1190	2003-07-12	6534	421874	7	0	0	Reptilia	Reptilia
 Q1081300	Delio Tessa	Letteratura italiana	8	8	10120	10120	2	1	1	12	1	0.01	1	0	0	0	0	1377	1377	2006-07-07	5443	17350	1	0	0		
@@ -131,7 +131,7 @@ Q108376	Stratosfera	Scienze della Terra	88	89	2184	2102	0	1	1	0	299	13.69	1672	1
 Q1084	Sostantivo	Grammatica italiana	253	275	8723	8856	2	0	0	0	580	6.65	804	1	1	0	0	3411	3328	2005-12-26	5636	546975	-109	0	0		
 Q10858537	Scala di riduzione	Geografia	66	58	4415	4370	0	0	0	0	444	10.06	423	0	0	0	0	0	-	2009-07-16	4338	143029	39	0	0	Scales (ratio)	
 Q10859	Guerra civile spagnola	Storia	648	623	278497	149260	289	90	52	14	7792	2.80	9218	0	0	0	0	56402	54809	2004-02-28	6303	1400318	125	0	0	Spanish Civil War	Spanish Civil War
-Q10872	Archaea	#N/A	137	#N/A	13907	#N/A	4	1	#N/A	#N/A	1656	11.91	#N/A	1	#N/A	8	0	2052	#N/A	2005-12-17	5645	296544	34	0	0	Archaea	
+Q10872	Archaea	Scienze	137	130	13907	13748	4	1	1	0	1656	11.91	1326	1	1	8	0	2052	2052	2005-12-17	5645	296544	34	0	0	Archaea	
 Q10876	Bacteria	Biologia	370	375	30304	29741	3	2	2	1	1240	4.09	1250	1	1	0	0	2545	2545	2004-05-04	6237	800383	-24	0	0	Bacteria	
 Q10892	Protista	Biologia	221	219	5661	5657	0	1	1	0	953	16.83	953	1	1	0	0	803	803	2004-05-04	6237	477312	9	0	0	Protista	
 Q10908	Amphibia	Biologia	222	223	14510	14374	3	2	2	0	1087	7.49	1046	0	0	0	0	1273	1273	2003-07-12	6534	480064	-4	0	0	Amphibia	
@@ -151,12 +151,12 @@ Q11019	Macchina	Tecnologia	78	79	15808	15811	1	2	2	1	728	4.61	728	0	0	0	0	1126	1
 Q11030584	Entscheidungsproblem	Informatica	23	24	1992	1957	2	0	0	0	780	39.16	779	1	0	0	0	2508	2508	2007-04-10	5166	50047	-4	0	0		
 Q11033	Mezzo di comunicazione di massa	Letteratura italiana	227	45	51998	45	34	1	0	0	2809	5.40	42	1	0	9	1	31240	0	2004-03-18	6284	491272	26	0	0	Mass media	
 Q11053	RNA	Biologia	415	373	47437	47182	73	8	8	18	1831	3.86	1849	0	0	0	0	14825	14825	2003-08-02	6513	897369	206	0	0	RNA	RNA
-Q11068	Apparato circolatorio	#N/A	476	#N/A	52868	#N/A	68	16	#N/A	#N/A	2284	4.32	#N/A	0	#N/A	0	0	22890	22154	2006-12-19	5278	1030071	-20	1	0	Cardiovascular system	
-Q11078	Apparato endocrino	#N/A	174	#N/A	8183	#N/A	0	6	#N/A	#N/A	445	5.44	#N/A	1	#N/A	0	0	4325	#N/A	2005-08-14	5770	376498	-15	0	0	Endocrine system	Endocrine system
+Q11068	Apparato circolatorio	Biologia	476	#N/A	52868	#N/A	68	16	#N/A	#N/A	2284	4.32	#N/A	0	#N/A	0	0	22890	22154	2006-12-19	5278	1030071	-20	1	0	Cardiovascular system	
+Q11078	Apparato endocrino	Biologia	174	#N/A	8183	#N/A	0	6	#N/A	#N/A	445	5.44	#N/A	1	#N/A	0	0	4325	#N/A	2005-08-14	5770	376498	-15	0	0	Endocrine system	Endocrine system
 Q110786	Singolare	Grammatica italiana	3	3	810	810	0	0	0	0	626	77.28	626	1	1	0	0	83	0	2006-09-23	5365	5770	-1	0	0		
 Q1108445	Rus' di Kiev	Storia	103	93	60341	60275	28	28	28	5	3364	5.57	3358	0	0	0	0	3589	3209	2004-06-15	6195	221774	49	0	0	Kievan Rus	
 Q1109552	Operaismo	Storia	19	18	7809	7642	1	1	1	10	840	10.76	840	0	0	0	0	36	36	2008-07-26	4693	41935	6	0	0		
-Q11101	Organi di senso	#N/A	125	#N/A	10034	#N/A	1	5	#N/A	#N/A	745	7.42	#N/A	0	#N/A	0	0	1498	#N/A	2006-01-16	5615	270036	-38	0	0	Sensory system	
+Q11101	Organi di senso	Scienze	125	133	10034	10022	1	5	5	0	745	7.42	733	0	0	0	0	1498	1498	2006-01-16	5615	270036	-38	0	0	Sensory system	
 Q1111	Carica elettrica	#N/A	191	#N/A	11348	#N/A	8	3	#N/A	#N/A	1253	11.04	#N/A	0	#N/A	0	0	8990	#N/A	2004-03-10	6292	413102	-18	0	0	Electric charge	
 Q1112860	Apparato escretore	Biologia	81	#N/A	3693	#N/A	0	2	#N/A	#N/A	502	13.59	#N/A	1	#N/A	0	0	60	60	2006-08-16	5403	175375	11	0	0		
 Q1113267	Quaderni del carcere	Letteratura italiana	50	48	71345	71339	41	13	13	4	2157	3.02	2157	0	0	0	0	1037	1037	2007-04-03	5173	108922	11	0	0	Quaderni del carcere	
@@ -165,7 +165,7 @@ Q1114493	Esercito romano	Storia	223	219	186423	186013	244	86	86	37	2057	1.10	207
 Q11158	Acido	Chimica	204	208	11816	11648	10	1	1	2	1841	15.58	1841	0	0	0	0	6762	5191	2004-09-17	6101	440562	-20	0	0	Acids	
 Q11169	Punto interrogativo	Grammatica italiana	118	117	4524	4524	2	3	3	0	401	8.86	401	0	0	0	0	1073	1039	2005-07-05	5810	254510	3	0	0	Question marks	Question mark
 Q11173	Composto chimico	Chimica	123	121	6098	6084	1	1	1	1	958	15.71	958	1	1	0	0	4449	4449	2004-03-16	6286	266714	12	0	0	Chemical compounds	
-Q1117578	Parlamento italiano	#N/A	116	#N/A	54505	#N/A	26	8	#N/A	#N/A	618	1.13	#N/A	1	#N/A	0	0	20595	#N/A	2004-03-18	6284	251360	461	0	0	Parliaments of Italy	Autore:Parlamento italiano
+Q1117578	Parlamento italiano	Cittadinanza e costituzione	116	805	54505	53530	26	8	8	0	618	1.13	1396	1	1	0	0	20595	20594	2004-03-18	6284	251360	461	0	0	Parliaments of Italy	Autore:Parlamento italiano
 Q1118145	Pellegrinaggio cristiano	Storia	37	35	11365	11365	0	3	3	0	412	3.63	412	1	1	0	0	1343	1343	2007-06-04	5111	79713	7	0	0		
 Q11188	Popolazione mondiale	#N/A	1066	#N/A	65129	#N/A	55	8	#N/A	#N/A	903	1.39	#N/A	0	#N/A	8	0	15631	#N/A	2008-09-23	4634	2304548	274	0	0	World population statistics	
 Q11193	Base (chimica)	Chimica	148	149	7762	7436	5	1	0	2	858	11.05	785	0	0	0	0	2572	1860	2004-09-17	6101	320647	-2	0	0	Bases	
@@ -235,7 +235,7 @@ Q11465	Velocità	Fisica	215	216	18340	18482	7	2	2	4	1889	10.30	1889	0	0	0	0	1731
 Q11466	Temperatura	Fisica	335	344	52736	52386	16	5	5	7	1017	1.93	1016	0	0	2	0	19513	18757	2003-12-21	6372	723913	-47	0	0	Temperature	
 Q11469	Vetro	Tecnologia	565	588	66061	65855	38	25	24	12	3641	5.51	3640	0	0	2	1	20083	20083	2005-03-21	5916	1221769	-114	0	0	Glass	Glass
 Q11471	Tempo	Storia	301	304	47876	47613	18	5	4	10	605	1.26	655	1	0	0	0	21020	21020	2003-12-20	6373	650417	-12	0	0	Time	
-Q114717	Assedio di Pavia (773-774)	#N/A	4	#N/A	9589	#N/A	10	1	#N/A	#N/A	912	9.51	#N/A	1	#N/A	0	1	1408	#N/A	2018-12-27	887	8730	8	0	0		
+Q114717	Assedio di Pavia (773-774)	Storia	4	3	9589	9174	10	1	1	4	912	9.51	912	1	1	0	1	1408	1408	2018-12-27	887	8730	8	0	0		
 Q11472	Carta	Tecnologia	473	472	48617	47121	15	15	15	5	287	0.59	287	0	0	0	0	4640	4640	2005-03-24	5913	1023125	8	0	0	Paper	Paper
 Q11473	Termodinamica	Chimica	293	298	25366	25349	13	3	3	16	1801	7.10	1770	0	0	0	0	8393	7436	2003-08-22	6493	633661	-24	0	0	Thermodynamics	Thermodynamics
 Q11474	Materie plastiche	Tecnologia	392	394	25877	25633	12	14	14	9	1178	4.55	975	0	0	0	2	6443	6443	2004-02-23	6308	847109	-12	0	0	Plastics	
@@ -257,7 +257,7 @@ Q1159675	Luddismo	Storia	138	136	27532	27477	20	2	2	10	1501	5.45	1501	0	0	0	0	25
 Q1164398	Ciclo litogenetico	Scienze della Terra	54	51	4950	4946	0	1	1	0	612	12.36	612	0	0	0	0	413	413	2003-09-04	6480	116780	15	0	0		
 Q11651	Corrente elettrica	#N/A	414	#N/A	28110	#N/A	19	6	#N/A	#N/A	620	2.21	#N/A	0	#N/A	0	0	9066	#N/A	2003-12-21	6372	894520	-1	0	0	Electric current	
 Q11660	Intelligenza artificiale	Informatica	302	283	65131	60620	60	2	2	10	1450	2.23	1450	1	1	0	0	26700	26700	2003-07-03	6543	653384	93	0	0	Artificial intelligence	
-Q11663	Tempo (meteorologia)	#N/A	31	#N/A	6010	#N/A	2	3	#N/A	#N/A	777	12.93	#N/A	1	#N/A	0	0	49	#N/A	2005-11-07	5685	66603	6	0	0	Weather	
+Q11663	Tempo (meteorologia)	Scienze della Terra	31	30	6010	5932	2	3	3	0	777	12.93	724	1	1	0	0	49	49	2005-11-07	5685	66603	6	0	0	Weather	
 Q11690026	Canzoniere	Letteratura italiana	23	22	5374	5100	3	1	0	0	2045	38.05	1858	0	0	0	0	41	41	2005-11-03	5689	49528	4	0	0	Chansonniers	
 Q11691	Borsa valori	Diritto e Economia	221	233	18913	16101	11	8	7	7	2062	10.90	812	0	0	2	0	2243	2243	2006-01-05	5626	478389	-58	0	0	Stock exchanges	Stock exchange
 Q11698	Costituzione degli Stati Uniti d'America	Storia	497	442	45544	41548	12	7	7	13	2774	6.09	1074	0	0	0	0	6252	4869	2004-04-19	6252	1075485	279	0	0	United States Constitution	Costituzione degli Stati Uniti d'America
@@ -278,7 +278,7 @@ Q1187484	Omaggio feudale	Storia	32	29	5357	5357	3	2	2	0	1117	20.85	1117	0	0	0	0	
 Q1189238	Storia dell'informatica	Informatica	41	39	29819	29854	29	18	18	34	733	2.46	763	0	0	0	0	3225	3225	2004-05-11	6230	88134	6	0	0	History of computing	
 Q1191320	Rivoluzione copernicana	Filosofia	83	79	3887	3887	1	0	0	4	544	14.00	544	0	0	0	0	120	120	2007-01-19	5247	180300	22	0	0		
 Q1192894	Fuga a Varennes	Storia	41	37	49644	49626	13	8	8	27	889	1.79	823	1	1	0	0	2132	2132	2015-09-20	2081	88046	20	0	0	Flight to Varennes	
-Q1193736	Il Gattopardo	#N/A	523	#N/A	25449	#N/A	8	3	#N/A	#N/A	840	3.30	#N/A	0	#N/A	0	0	8158	#N/A	2005-06-21	5824	1129834	-40	0	0	Il Gattopardo	
+Q1193736	Il Gattopardo	Letteratura italiana	523	531	25449	24336	8	3	3	8	840	3.30	840	0	0	0	0	8158	8158	2005-06-21	5824	1129834	-40	0	0	Il Gattopardo	
 Q1194697	Diatesi passiva	Grammatica italiana	13	13	11143	11036	0	0	0	0	1641	14.73	1640	1	1	2	0	1119	1035	2007-07-27	5058	28795	3	0	0		
 Q1195304	Ermetismo	Letteratura italiana	9	10	328	394	0	0	0	0	230	70.12	267	0	0	0	0	50	50	2005-03-02	5935	19119	-5	0	0		
 Q1197114	Metodi per il calcolo della radice quadrata	#N/A	47	#N/A	27676	#N/A	0	0	#N/A	#N/A	223	0.81	#N/A	1	#N/A	0	0	795	#N/A	2005-12-02	5660	100834	-12	0	0		
@@ -350,7 +350,7 @@ Q1247570	Diagramma QAPF	Scienze della Terra	15	15	3530	3530	1	2	2	3	1447	40.99	1
 Q124794	Gusto	#N/A	181	#N/A	22781	#N/A	13	1	#N/A	#N/A	2437	10.70	#N/A	0	#N/A	0	0	3529	#N/A	2006-01-20	5611	390635	-5	0	0	Taste	
 Q1248697	Carlo Porta	Letteratura italiana	41	40	15861	15718	3	4	4	5	63	0.40	63	0	0	0	0	50	50	2005-05-07	5869	89272	4	0	0	Carlo Porta	Autore:Carlo Porta
 Q1248722	Terza guerra d'indipendenza italiana	Storia	277	263	78844	78084	97	32	32	6	2674	3.39	2477	0	0	1	0	17692	17692	2005-11-06	5686	598234	67	0	0	Third Italian War of Independence	Categoria:Terza guerra di indipendenza italiana
-Q1248980	Fisica aristotelica	#N/A	36	#N/A	19847	#N/A	20	3	#N/A	#N/A	1091	5.50	#N/A	0	#N/A	0	0	79	#N/A	2008-06-21	4728	78501	6	0	0		
+Q1248980	Fisica aristotelica	Filosofia	36	35	19847	19847	20	3	3	4	1091	5.50	1091	0	0	0	0	79	79	2008-06-21	4728	78501	6	0	0		
 Q12490507	Califfato dei Rashidun	Storia	37	36	31843	31754	13	6	6	3	1254	3.94	1201	0	0	0	0	3339	3339	2008-09-05	4652	81002	9	0	0	Rashidun Caliphate	
 Q124988	Guerre puniche	Storia	409	404	20519	20503	1	3	3	0	749	3.65	749	0	0	0	0	1262	1068	2005-03-13	5924	884720	29	0	0	Punic Wars	
 Q1250	Friuli-Venezia Giulia	Geografia	1029	1009	120207	121229	59	114	112	0	6235	5.19	6054	2	2	1	0	173258	170638	2003-02-27	6669	2223737	100	0	0	Friuli-Venezia Giulia	Autore:Regione Friuli-Venezia Giulia
@@ -433,7 +433,7 @@ Q131013	Acropoli di Atene	Storia dell'arte	259	265	9351	9343	7	5	5	2	562	6.01	56
 Q131015	Positivismo	Filosofia	482	482	25164	25126	20	4	4	6	1391	5.53	1391	0	0	0	0	7085	7085	2006-03-08	5564	1042766	2	0	0	Positivism	
 Q131105	Nominativo	Grammatica latina	28	29	4062	4000	1	0	0	1	702	17.28	701	1	1	0	0	175	175	2004-10-25	6063	60358	-7	0	0		
 Q131117	Maria Montessori	Filosofia	723	667	85764	76967	84	35	36	11	2	0.00	368	0	0	0	0	17095	17095	2005-07-07	5808	1562382	275	0	0	Maria Montessori	
-Q131123	Inquinamento atmosferico	#N/A	311	#N/A	43687	#N/A	10	6	#N/A	#N/A	1196	2.74	#N/A	0	#N/A	0	0	6308	#N/A	2005-06-06	5839	672606	114	0	0	Air pollution	
+Q131123	Inquinamento atmosferico	Scienze della Terra	311	288	43687	43834	10	6	5	1	1196	2.74	1333	0	0	0	0	6308	5733	2005-06-06	5839	672606	114	0	0	Air pollution	
 Q13116	Benelux	Geografia	122	122	13386	12371	1	11	10	0	1545	11.54	1472	0	0	0	0	932	932	2004-04-25	6246	263372	0	0	0	Benelux	
 Q131164	Web 2.0	Informatica	158	174	26	11914	0	0	0	0	23	88.46	277	0	1	0	0	5149	5149	2005-10-23	5700	341997	-76	0	0	Web 2.0	
 Q131201	Sviluppo sostenibile	Cittadinanza e costituzione	388	339	52960	52859	9	3	3	0	1376	2.60	1375	0	0	0	0	13454	13454	2005-06-17	5828	837801	242	0	0	Sustainable development	
@@ -472,7 +472,7 @@ Q134237	Radice quadrata	#N/A	189	#N/A	14214	#N/A	0	1	#N/A	#N/A	942	6.63	#N/A	0	#
 Q134267	Fusto	Scienze	114	119	15533	15388	0	3	2	0	905	5.83	905	1	1	1	0	37	37	2003-07-27	6519	246685	-23	0	0	Plant stems	Plant stems
 Q13468437	Anni ruggenti	Storia	128	125	9408	9408	1	2	2	13	1433	15.23	1433	0	0	0	0	392	392	2009-10-20	4242	277606	19	0	0		
 Q13475484	Verbo riflessivo	Grammatica italiana	33	29	2148	2124	0	0	0	0	706	32.87	706	1	1	0	0	460	0	2012-05-05	3314	71078	18	0	0		
-Q134783	Stratigrafia (geologia)	#N/A	36	#N/A	7324	#N/A	0	3	#N/A	#N/A	392	5.35	#N/A	0	#N/A	0	0	1962	#N/A	2005-04-06	5900	78722	-4	0	0	Stratigraphy	
+Q134783	Stratigrafia (geologia)	Scienze della Terra	36	37	7324	7324	0	3	3	0	392	5.35	392	0	0	0	0	1962	1962	2005-04-06	5900	78722	-4	0	0	Stratigraphy	
 Q134840	Trattato di Verdun	Storia	71	67	2799	2814	0	1	2	0	232	8.29	344	0	0	0	0	36	36	2004-03-22	6280	152929	17	0	0	Treaty of Verdun	
 Q134856	Acidi carbossilici	Chimica	261	266	14712	14959	2	2	#N/A	#N/A	664	4.51	738	0	0	0	0	1132	275	2005-05-24	5852	564336	-23	0	0	Carboxylic acids	
 Q1348910	Terremoto di Messina del 1908	Storia	360	378	76167	65228	39	24	25	23	1926	2.53	1959	0	0	0	0	18728	18684	2004-05-25	6216	777431	-91	0	0	1908 Messina earthquake	
@@ -493,24 +493,24 @@ Q13741	Integrated development environment	Informatica	72	71	7045	6429	3	4	4	0	82
 Q1377174	Sergio Corazzini	Letteratura italiana	31	30	9323	9097	0	1	1	1	4	0.04	3	0	0	0	0	4165	4165	2006-08-26	5393	66551	3	0	0	Sergio Corazzini	Autore:Sergio Corazzini
 Q1378456	Conteggio delle vittime della prima guerra mondiale	Storia	233	222	48071	48071	89	14	14	26	1993	4.15	1993	0	0	0	0	5198	5198	2014-03-17	2633	503421	53	0	0	Casualties of World War I	
 Q1378741	Eustatismo	Scienze della Terra	9	10	1805	1805	0	0	0	0	1452	80.44	1452	2	2	0	0	620	620	2007-09-11	5012	19725	-2	0	0		
-Q1379344	Criterio di Cartesio	#N/A	24	#N/A	2823	#N/A	1	0	#N/A	#N/A	248	8.78	#N/A	0	#N/A	0	0	249	#N/A	2006-12-11	5286	52055	7	0	0		
+Q1379344	Criterio di Cartesio	Matematica	24	23	2823	2719	1	0	0	0	248	8.78	248	0	0	0	0	249	249	2006-12-11	5286	52055	7	0	0		
 Q138246	Pluralia tantum	Grammatica latina	44	42	4023	3415	1	0	0	0	1261	31.34	685	0	0	0	0	298	298	2006-07-13	5437	94829	10	0	0		
 Q1384267	Espansione della Terra	Scienze della Terra	4	4	9263	9263	10	2	2	1	809	8.73	809	1	1	0	0	3896	3896	2010-03-11	4100	8730	0	0	0	Expanding Earth	
 Q1385607	Proposizione eccettuativa	Grammatica italiana	13	14	1401	1401	0	0	0	2	790	56.39	790	0	0	0	0	49	0	2007-11-22	4940	29154	-2	0	0		
-Q1390924	Commedia togata	#N/A	17	#N/A	2573	#N/A	0	1	#N/A	#N/A	421	16.36	#N/A	1	#N/A	0	0	169	#N/A	2006-02-23	5577	37184	5	0	0		
+Q1390924	Commedia togata	Letteratura latina	17	16	2573	2531	0	1	0	2	421	16.36	421	1	1	0	0	169	169	2006-02-23	5577	37184	5	0	0		
 Q1394	Lenin	Storia	725	712	124581	122943	131	36	35	44	4682	3.76	4502	2	2	0	0	32439	31742	2003-12-16	6377	1567310	67	0	0	Vladimir Lenin	Autore:Lenin
 Q1394847	Giacomo da Lentini	Letteratura italiana	118	113	10501	10127	10	2	2	6	223	2.12	223	0	0	0	0	7274	7274	2006-12-08	5289	255791	27	0	0		Autore:Giacomo da Lentini
 Q1394860	Pier della Vigna	Letteratura italiana	119	111	10861	10385	5	1	1	51	191	1.76	191	0	0	0	0	2441	2441	2006-01-08	5623	256591	40	0	0	Pietro della Vigna	Autore:Pier della Vigna
 Q1399	Niccolò Machiavelli	Filosofia	797	760	85963	85726	46	17	16	15	2115	2.46	1904	0	0	6	0	49567	49567	2006-12-06	5291	1723552	184	0	0	Niccolò Machiavelli	Autore:Niccolò Machiavelli
-Q1401	Francesco Petrarca	#N/A	1011	#N/A	139318	#N/A	194	31	#N/A	#N/A	1253	0.90	#N/A	0	#N/A	0	0	37466	#N/A	2002-11-22	6766	2184857	102	0	1	Francesco Petrarca	Autore:Francesco Petrarca
+Q1401	Francesco Petrarca	Letteratura italiana	1011	36	139318	32	194	31	0	0	1253	0.90	29	0	0	0	0	37466	0	2002-11-22	6766	2184857	102	0	1	Francesco Petrarca	Autore:Francesco Petrarca
 Q1401935	Disposizione	#N/A	41	#N/A	19301	#N/A	0	5	#N/A	#N/A	944	4.89	#N/A	0	#N/A	0	0	642	#N/A	2005-09-11	5742	89232	-1	0	0		
 Q1402	Giovanni Boccaccio	Letteratura italiana	695	26	136546	32	191	22	0	0	2595	1.90	29	0	0	0	0	68346	0	2002-05-04	6968	1503455	64	0	1	Giovanni Boccaccio	Autore:Giovanni Boccaccio
 Q1402059	Proposizione relativa	Grammatica italiana	103	101	4399	3115	2	0	0	0	436	9.91	2403	1	0	0	0	49	0	2007-05-01	5145	222513	11	0	0	Relative clauses	
 Q1402912	Filostrato (Boccaccio)	Letteratura italiana	34	2	4184	3507	3	1	1	0	1282	30.64	2188	1	1	0	0	50	50	2008-03-22	4819	74333	6	0	0	Il Filostrato	
-Q1403	Luigi Pirandello	#N/A	1470	#N/A	99753	#N/A	76	20	#N/A	#N/A	510	0.51	#N/A	1	#N/A	0	0	124284	#N/A	2008-04-08	4802	3178439	-207	0	0	Luigi Pirandello	Autore:Luigi Pirandello
+Q1403	Luigi Pirandello	Letteratura italiana	1470	1513	99753	96450	76	20	19	29	510	0.51	509	1	0	0	0	124284	124284	2008-04-08	4802	3178439	-207	0	0	Luigi Pirandello	Autore:Luigi Pirandello
 Q1403517	Incertezza di misura	Fisica	101	94	14788	14784	12	1	1	4	1929	13.04	1929	0	0	0	0	1102	1102	2006-10-02	5356	218384	34	0	0	Measurement uncertainty	
 Q1404472	Rinascimento italiano	Storia dell'arte	228	214	24655	24648	19	7	7	9	2359	9.57	2633	0	0	0	0	3966	3966	2007-01-13	5253	492334	70	0	0	Renaissance in Italy	
-Q1405	Augusto	#N/A	1122	#N/A	160491	#N/A	162	47	#N/A	#N/A	5833	3.63	#N/A	0	#N/A	0	0	21753	#N/A	2003-09-08	6476	2425715	575	0	1	Augustus	Autore:Augusto
+Q1405	Augusto	Storia	1122	1006	160491	158082	162	47	47	44	5833	3.63	4643	0	0	0	0	21753	21458	2003-09-08	6476	2425715	575	0	1	Augustus	Autore:Augusto
 Q1406	Microsoft Windows	Informatica	373	346	42277	43291	20	24	25	0	716	1.69	699	1	1	2	0	18056	18056	2003-02-27	6669	806238	134	0	0	Microsoft Windows	Microsoft Windows
 Q140694	Alexis de Tocqueville	Filosofia	101	98	33535	33554	26	5	5	3	389	1.16	389	0	0	0	0	3054	3054	2006-03-21	5551	217519	12	0	0	Alexis de Tocqueville	Autore:Alexis de Tocqueville
 Q1410	Gibilterra	#N/A	511	#N/A	33268	#N/A	15	20	#N/A	#N/A	2106	6.33	#N/A	0	#N/A	1	0	4742	#N/A	2004-01-14	6348	1105350	-34	0	0	Gibraltar	Gibraltar
@@ -529,7 +529,7 @@ Q1422116	Isole dell'Italia	Geografia	222	219	21906	21848	8	45	46	1	1112	5.08	114
 Q1426186	Memoria di massa	Informatica	157	157	8242	8027	1	5	1	0	599	7.27	600	1	1	0	0	67	67	2005-02-14	5951	340217	2	0	0		
 Q1430	Marco Aurelio	Filosofia	576	551	123964	123997	230	39	39	83	4854	3.92	4835	0	0	0	0	18802	18802	2004-03-23	6279	1244468	123	0	1	Marcus Aurelius	Autore:Marco Aurelio
 Q1431376	Letteratura barocca	Letteratura italiana	105	102	15689	15691	6	1	1	1	422	2.69	422	0	0	0	0	4813	4813	2006-12-12	5285	226550	13	0	0		
-Q1435490	Casa del Popolo	#N/A	18	#N/A	6419	#N/A	1	1	#N/A	#N/A	703	10.95	#N/A	1	#N/A	0	0	2162	#N/A	2008-07-08	4711	38723	1	0	0	People's Houses	
+Q1435490	Casa del Popolo	Storia	18	18	6419	5669	1	1	1	0	703	10.95	703	1	1	0	0	2162	2162	2008-07-08	4711	38723	1	0	0	People's Houses	
 Q1436	Pertinace	Storia	113	108	22051	22065	30	12	12	17	2270	10.29	2288	0	0	0	0	196	196	2004-03-29	6273	243663	24	0	0	Pertinax	Pertinax
 Q14373	Pesca (attività)	Geografia	57	58	2608	2450	0	4	4	0	626	24.00	608	1	1	1	0	0	-	2006-09-28	5360	123824	-4	0	0	Fishing	Fishing
 Q14378	Neoclassicismo	Letteratura italiana	466	450	19565	19399	5	12	12	5	1050	5.37	975	0	0	2	0	5787	5434	2005-12-31	5631	1007028	77	0	0	Neoclassicism	
@@ -621,7 +621,7 @@ Q154278	Pulizia etnica	Storia	40	40	3878	3737	4	0	0	0	288	7.43	288	0	0	0	0	17916
 Q154340	Francis Bacon (pittore)	Storia dell'arte	134	138	13898	10147	5	2	2	1	3266	23.50	1	0	0	0	0	3573	3573	2006-03-23	5549	288902	-23	0	0	Francis Bacon (artist)	
 Q154439	Concordato di Worms	Storia	126	123	4232	4179	1	1	1	0	463	10.94	463	1	1	0	0	463	463	2004-11-28	6029	273160	16	0	0		
 Q154611	Periodo interbellico	Letteratura italiana	62	3	25945	24495	3	1	1	0	287	1.11	296	6	6	0	0	4095	4095	2009-04-24	4421	134518	1	0	0	Interwar period	
-Q154720	Battaglia d'Inghilterra	#N/A	219	#N/A	63865	#N/A	38	17	#N/A	#N/A	3747	5.87	#N/A	1	#N/A	0	0	5693	#N/A	2004-07-29	6151	473837	23	0	0	Battle of Britain	Battle of Britain
+Q154720	Battaglia d'Inghilterra	Storia	219	215	63865	62499	38	17	17	17	3747	5.87	3834	1	1	0	0	5693	5227	2004-07-29	6151	473837	23	0	0	Battle of Britain	Battle of Britain
 Q154751	Nicola Cusano	Filosofia	122	122	59590	57542	21	17	17	26	574	0.96	2	1	1	0	0	7364	6668	2005-05-02	5874	262981	-1	0	0	Nicholas of Cusa	Autore:Nicola Cusano
 Q154756	Italo Calvino	Letteratura italiana	1048	1063	75251	73674	48	8	8	4	1354	1.80	1354	0	0	0	0	41072	41072	2006-02-07	5593	2265789	-73	0	0	Italo Calvino	Autore:Italo Calvino
 Q154764	Lotta per le investiture	Storia	236	216	81137	11892	139	23	2	3	3250	4.01	898	0	0	0	0	8817	6417	2006-12-01	5296	509331	96	1	0		
@@ -635,7 +635,7 @@ Q155972	Tablet computer	Informatica	54	54	12982	13599	14	3	3	0	652	5.02	701	0	0	
 Q156	Alcoli	Chimica	256	256	16647	14941	2	4	4	2	646	3.88	646	0	0	0	1	1560	1560	2004-01-20	6342	554110	3	0	0	Alcohols	
 Q156312	Storia della Terra	Storia	287	285	102705	102116	100	14	14	48	3286	3.20	3267	0	0	2	0	6021	5275	2009-04-12	4433	621047	12	0	0	History of earth science	
 Q156733	Lanzichenecchi	#N/A	275	#N/A	16488	#N/A	2	6	#N/A	#N/A	871	5.28	#N/A	0	#N/A	0	0	198	#N/A	2005-02-27	5938	593525	10	0	0	Landsknechts	Landsknecht
-Q1569011	Storia dell'urbanistica	Geografia	33	33	32687	32666	19	25	25	5	579	1.77	579	0	0	0	0	1204	2011-01-29	2011-01-29	3776	71373	0	0	0	History by city	
+Q1569011	Storia dell'urbanistica	Geografia	33	33	32687	32666	19	25	25	5	579	1.77	579	0	0	0	0	1204	-	2011-01-29	3776	71373	0	0	0	History by city	
 Q156986	Ablativo	Grammatica latina	64	63	5321	5781	3	0	0	0	487	9.15	493	0	0	0	0	196	196	2005-04-10	5896	138704	7	0	0		
 Q157002	Triangolo equilatero	Matematica	175	188	4192	4192	1	2	2	0	1630	38.88	1630	1	1	0	0	40	40	2005-06-08	5837	378086	-63	0	0	Equilateral triangles	
 Q1570124	Portogallo nell'era delle grandi scoperte	Storia	34	33	10970	10969	0	4	4	0	682	6.22	682	0	0	0	0	694	694	2007-01-26	5240	73589	7	0	0	Portuguese discoveries	
@@ -660,7 +660,7 @@ Q15978631	Homo sapiens	Storia	842	814	110170	105216	91	26	26	12	3332	3.02	3462	0
 Q159810	Economia	Diritto e Economia	343	348	35317	33401	10	13	7	5	2041	5.78	1171	0	0	1	0	83020	83020	2004-08-17	6132	741776	-26	0	0	Economy	
 Q159905	Ipparco di Nicea	Filosofia	33	33	13135	13157	21	2	2	3	399	3.04	399	0	0	0	0	1628	1628	2003-07-27	6519	71090	0	0	0	Hipparchus	Autore:Ipparco di Nicea
 Q16	Canada	Geografia	1601	1629	115405	112952	96	48	48	12	8344	7.23	8341	0	0	1	0	17235	15729	2003-09-28	6456	3461589	-131	0	0	Canada	Canada
-Q160077	Assedio di Costantinopoli (1453)	#N/A	206	#N/A	31768	#N/A	17	12	#N/A	#N/A	2450	7.71	#N/A	0	#N/A	3	0	5504	#N/A	2006-10-23	5335	446390	67	0	0	Fall of Constantinople (1453)	
+Q160077	Assedio di Costantinopoli (1453)	Storia	206	193	31768	31459	17	12	13	19	2450	7.71	2525	0	0	3	0	5504	5504	2006-10-23	5335	446390	67	0	0	Fall of Constantinople (1453)	
 Q160091	Pianura	Geografia	117	120	3085	3060	3	2	2	0	645	20.91	631	1	1	0	0	1001	-	2006-01-03	5628	252319	-16	0	0	Plains	
 Q160149	Mark Rothko	Storia dell'arte	139	140	8032	6602	2	3	3	0	111	1.38	112	0	1	0	0	821	46	2005-03-14	5923	300039	-4	0	0	Mark Rothko	
 Q160151	Prezzo	Diritto e Economia	79	83	12077	12064	1	0	0	2	912	7.55	912	1	1	0	0	49	49	2005-02-13	5952	170347	-20	0	0		
@@ -714,12 +714,12 @@ Q1645075	Immunità adattativa	Biologia	54	#N/A	6639	#N/A	1	1	#N/A	#N/A	608	9.16	
 Q1645406	Punto medio	Matematica	25	25	1988	1717	0	1	1	0	486	24.45	495	1	1	0	0	65	65	2007-03-18	5189	53364	-4	0	0		
 Q164573	Soggetto (linguistica)	Grammatica italiana	41	43	2450	2450	1	0	0	0	230	9.39	230	2	2	0	0	564	480	2005-06-18	5827	89154	-6	0	0		
 Q16482934	Sistema elettorale italiano	Cittadinanza e costituzione	271	241	56070	55619	93	13	13	3	2336	4.17	2336	0	0	0	0	4191	3995	2013-04-29	2955	586543	153	0	0		
-Q165	Mare	#N/A	279	#N/A	12314	#N/A	5	14	#N/A	#N/A	718	5.83	#N/A	0	#N/A	0	0	1166	#N/A	2004-07-30	6150	603855	-63	0	0	Seas	Atlas of the Oceans
+Q165	Mare	Scienze della Terra	279	292	12314	8753	5	14	7	0	718	5.83	668	0	0	0	0	1166	1166	2004-07-30	6150	603855	-63	0	0	Seas	Atlas of the Oceans
 Q165005	Ordine francescano	Storia	170	172	12487	12306	9	3	3	0	1618	12.96	1534	0	0	0	0	11263	11263	2005-10-28	5695	368111	-5	0	0	Franciscans	
 Q165301	Iperbole (geometria)	Matematica	169	175	11308	10382	1	2	2	0	265	2.34	265	0	0	0	0	40	40	2004-07-26	6154	366268	-26	0	0	Hyperbolas	
 Q165309	Disequazione	Matematica	59	59	6057	6057	4	0	0	5	904	14.92	904	0	0	0	0	2178	2178	2005-06-09	5836	127948	3	0	0	Inequalities (mathematics)	
 Q16531303	Isolamento sismico	Scienze della Terra	5	5	3377	3377	0	1	1	0	1300	38.50	1300	1	1	0	0	1315	1315	2008-03-13	4828	9758	-1	0	0		
-Q165425	Battaglia di Lepanto	#N/A	582	#N/A	68535	#N/A	62	29	#N/A	#N/A	5062	7.39	#N/A	0	#N/A	0	0	47999	#N/A	2004-01-27	6335	1259010	-14	0	0	Battle of Lepanto	
+Q165425	Battaglia di Lepanto	Storia	582	586	68535	64010	62	29	27	24	5062	7.39	3870	0	0	0	0	47999	47630	2004-01-27	6335	1259010	-14	0	0	Battle of Lepanto	
 Q16543336	Complemento di quantità	Grammatica italiana	20	19	1699	1699	0	0	0	0	368	21.66	368	1	1	0	0	83	0	2010-02-02	4137	42585	4	0	0		
 Q165474	Commutatività	Matematica	25	26	4401	4401	0	0	0	0	591	13.43	591	1	1	0	0	40	40	2004-09-02	6116	54150	-7	0	0	Commutativity	
 Q165534	Carlo Goldoni	Letteratura italiana	478	476	86386	85740	16	9	9	26	128	0.15	128	2	2	1	0	40887	40887	2003-06-16	6560	1033531	9	0	0	Carlo Goldoni	Autore:Carlo Goldoni
@@ -727,7 +727,7 @@ Q165589	Leucippo	Filosofia	17	16	11166	11166	7	1	1	0	44	0.39	44	0	0	0	0	3612	361
 Q1656724	Città ideale	Storia dell'arte	122	121	42944	42321	28	16	16	0	1872	4.36	1838	0	0	0	0	12012	12012	2005-04-25	5881	264267	7	0	0	Ideal city	
 Q165725	Guerre balcaniche	Storia	108	103	10456	7968	0	10	3	4	5512	52.72	4303	0	0	0	0	2014	2014	2005-12-30	5632	233556	25	0	0	Balkan Wars	
 Q16577084	Matrimonio (ordinamento italiano)	#N/A	2	#N/A	18200	#N/A	10	1	#N/A	#N/A	246	1.35	#N/A	0	#N/A	0	0	6698	#N/A	2005-12-28	5634	4357	10	0	0		
-Q165848	Onda marina	#N/A	98	#N/A	12481	#N/A	1	6	#N/A	#N/A	437	3.50	#N/A	0	#N/A	0	0	49	#N/A	2004-08-03	6146	211154	-5	0	0	Ocean surface waves	
+Q165848	Onda marina	Scienze della Terra	98	99	12481	12096	1	6	6	0	437	3.50	437	0	0	0	0	49	49	2004-08-03	6146	211154	-5	0	0	Ocean surface waves	
 Q16592298	Primo teorema sull'angolo esterno	Matematica	7	8	1746	1746	0	1	1	0	100	5.73	100	1	1	0	0	40	40	2014-03-17	2633	15958	-4	0	0		
 Q165939	Riflessione (fisica)	Fisica	87	91	6071	6073	0	6	6	7	1288	21.22	1288	0	0	0	0	1424	1424	2005-08-22	5762	188939	-18	0	0	Reflections	
 Q16605989	Sicurezza sul lavoro in Italia	Diritto e Economia	120	127	41758	36388	6	1	1	14	121	0.29	121	1	1	6	0	3884	3884	2013-09-08	2823	258375	-36	0	0		
@@ -745,21 +745,21 @@ Q166955	Sofistica	Filosofia	250	240	27427	27404	26	6	6	1	2669	9.73	2651	0	0	0	0	
 Q167	Pi greco	Matematica	850	865	56823	56801	37	6	6	7	1480	2.60	1459	0	0	0	0	40583	40583	2004-06-01	6209	1838563	-67	0	0	Pi	
 Q167198	Ammine	Chimica	191	#N/A	11098	11098	3	6	6	2	296	2.67	#N/A	0	0	2	0	1875	1875	2005-05-24	5852	413595	-8	0	0	Amines	Amine
 Q167287	Spazio intergalattico	Scienze della Terra	22	22	3656	3642	6	0	0	0	1020	27.90	1008	0	0	0	0	1099	1099	2008-06-02	4747	47822	0	0	0		
-Q167336	Gas serra	Biologia	209	#N/A	24217	23082	21	8	#N/A	0	909	3.75	#N/A	1	1	0	0	4133	4133	2005-05-16	5860	452671	43	0	0	Greenhouse gases	
+Q167336	Gas serra	Biologia	209	#N/A	24217	23082	21	8	6	0	909	3.75	#N/A	1	1	0	0	4133	4133	2005-05-16	5860	452671	43	0	0	Greenhouse gases	
 Q167466	Zona temperata	Geografia	156	155	12110	11947	1	2	2	1	1257	10.38	1154	1	1	0	0	150	-	2005-05-29	5847	338159	8	0	0	Temperate climate	
 Q1675084	Emigrazione italiana	Storia	540	538	132185	130763	111	37	37	19	2282	1.73	2300	0	0	0	0	22844	22844	2006-11-19	5308	1168418	12	0	0	Italian diaspora	Categoria:Canti dell'emigrazione
-Q167751	Ciclo del carbonio	#N/A	81	#N/A	16069	#N/A	2	4	#N/A	1	1461	9.09	#N/A	0	0	0	0	2995	2995	2006-09-12	5376	175900	27	0	0	Carbon cycle	
-Q167903	Frana	#N/A	74	#N/A	27829	#N/A	3	9	#N/A	#N/A	1764	6.34	#N/A	0	#N/A	0	0	4043	#N/A	2005-06-07	5838	160108	2	0	0	Landslides	Landslide
-Q16817	Carsismo	#N/A	247	#N/A	16145	#N/A	2	17	#N/A	#N/A	1531	9.48	#N/A	0	#N/A	0	0	2175	#N/A	2005-10-30	5693	533542	16	0	0	Karst	
+Q167751	Ciclo del carbonio	Biologia	81	#N/A	16069	#N/A	2	4	#N/A	1	1461	9.09	#N/A	0	0	0	0	2995	2995	2006-09-12	5376	175900	27	0	0	Carbon cycle	
+Q167903	Frana	Scienze della Terra	74	74	27829	27585	3	9	9	6	1764	6.34	2288	0	0	0	0	4043	4043	2005-06-07	5838	160108	2	0	0	Landslides	Landslide
+Q16817	Carsismo	Scienze della Terra	247	244	16145	15383	2	17	16	0	1531	9.48	1531	0	0	0	0	2175	2175	2005-10-30	5693	533542	16	0	0	Karst	
 Q168182	Mezzogiorno (parte del giorno)	Storia	16	16	1763	1716	1	1	1	0	425	24.11	425	1	1	0	0	1208	1208	2008-10-24	4603	34661	1	0	0	Noon	
 Q168210	Forum (Internet)	Informatica	76	76	13831	13828	1	0	0	0	1391	10.06	1391	1	1	0	0	3544	3544	2005-02-05	5960	165015	0	0	0	Internet forums	
 Q168691	Vittorio Emanuele II di Savoia	Storia	604	569	87251	87741	53	61	73	9	725	0.83	611	0	0	0	0	79240	79240	2004-01-02	6360	1305970	174	0	0	Victor Emmanuel II of Italy	Autore:Vittorio Emanuele II di Savoia
 Q168962	Torquato Tasso	Letteratura italiana	408	411	105094	113361	133	22	22	4	383	0.36	383	0	0	0	0	15047	15047	2004-03-10	6292	882996	-14	0	0	Torquato Tasso	Autore:Torquato Tasso
 Q169243	Protagora	Filosofia	124	118	17992	16521	13	1	1	15	700	3.89	2	0	0	0	0	2310	2310	2004-04-01	6270	268919	31	0	0	Protagoras	Autore:Protagora
-Q169324	Legame a idrogeno	Biologia	270	#N/A	5177	5177	2	3	#N/A	1	725	14.00	#N/A	0	0	0	0	3479	3479	2005-05-31	5845	583229	73	0	0	Hydrogen bonding	
-Q169336	Miscela	Chimica	97	#N/A	7064	6556	2	3	0	1	948	13.42	#N/A	0	0	0	0	1029	1029	2005-10-14	5709	210321	-6	0	0	Chemical mixtures	
+Q169324	Legame a idrogeno	Biologia	270	255	5177	5177	2	3	#N/A	1	725	14.00	#N/A	0	0	0	0	3479	3479	2005-05-31	5845	583229	73	0	0	Hydrogen bonding	
+Q169336	Miscela	Chimica	97	99	7064	6556	2	3	0	1	948	13.42	#N/A	0	0	0	0	1029	1029	2005-10-14	5709	210321	-6	0	0	Chemical mixtures	
 Q169759	Dichiarazione dei diritti dell'uomo e del cittadino	Storia	227	206	4638	4710	0	1	1	0	817	17.62	887	0	0	0	0	4397	4397	2006-01-11	5620	491087	107	0	0	Declaration of the Rights of Man and of the Citizen	
-Q169953	Sistema nervoso periferico	#N/A	131	#N/A	2368	#N/A	0	1	#N/A	2	682	28.80	#N/A	1	1	0	0	866	866	2006-04-11	5530	283204	-11	0	0	Peripheral nervous system	
+Q169953	Sistema nervoso periferico	Biologia	131	133	2368	#N/A	0	1	#N/A	2	682	28.80	#N/A	1	1	0	0	866	866	2006-04-11	5530	283204	-11	0	0	Peripheral nervous system	
 Q17	Giappone	Geografia	1764	1782	195463	197852	212	57	57	16	3939	2.02	3839	0	0	0	0	58626	56023	2006-11-24	5303	3813266	-85	0	0	Japan	日本
 Q170008	Progressione aritmetica	Matematica	70	72	3575	3575	0	0	0	0	376	10.52	376	0	0	0	0	683	683	2004-10-03	6085	151441	-9	0	0	Progression	
 Q170058	Funzione continua	Matematica	133	126	28202	28154	9	9	9	7	1321	4.68	1305	0	0	0	0	3440	3440	2004-02-17	6314	287415	33	0	0	Continuity (functions)	Continuous function
@@ -772,10 +772,10 @@ Q170196	Energia idroelettrica	#N/A	223	#N/A	12193	#N/A	10	2	#N/A	#N/A	481	3.94	#
 Q170239	Onomatopea	Grammatica italiana	294	304	8176	8176	5	1	1	1	635	7.77	635	1	1	0	0	9504	9398	2007-11-24	4938	635392	-48	0	0	Onomatopoeia	
 Q170321	Zona umida	Scienze della Terra	22	21	5261	5258	1	1	1	0	238	4.52	238	0	0	0	0	212	212	2007-11-17	4945	46659	0	0	0	Wetlands	
 Q170332	Esosfera	Scienze della Terra	43	43	2189	1955	2	1	0	0	1379	63.00	1200	2	2	0	0	316	316	2007-02-08	5227	92508	1	0	0		
-Q170350	Scala Mercalli	#N/A	245	#N/A	12849	#N/A	10	1	#N/A	#N/A	624	4.86	#N/A	0	#N/A	0	0	5464	#N/A	2004-11-25	6032	530278	-98	0	0	Mercalli scale	
+Q170350	Scala Mercalli	Scienze della Terra	245	265	12849	12742	10	1	0	0	624	4.86	526	0	0	0	0	5464	5464	2004-11-25	6032	530278	-98	0	0	Mercalli scale	
 Q1703635	Asse ipotalamo-ipofisi-tiroide	#N/A	20	#N/A	2128	#N/A	1	1	#N/A	#N/A	1172	55.08	#N/A	0	#N/A	0	0	93	#N/A	2014-04-20	2599	43770	-3	0	0		
 Q170409	Gruppo funzionale	Chimica	226	#N/A	7385	6954	9	1	0	2	1133	15.34	#N/A	0	0	0	0	285	285	2004-10-02	6086	489233	12	0	0	Functional groups	Functional groups
-Q170430	Predazione	#N/A	43	#N/A	18550	#N/A	0	23	#N/A	#N/A	561	3.02	#N/A	0	#N/A	0	0	974	#N/A	2006-01-18	5613	92549	-2	0	0	Predation	
+Q170430	Predazione	Scienze	43	43	18550	18648	0	23	23	2	561	3.02	561	0	0	0	0	974	974	2006-01-18	5613	92549	-2	0	0	Predation	
 Q170472	Origene	Filosofia	89	88	61435	54491	75	2	2	42	1528	2.49	1519	1	1	0	0	13480	11312	2005-05-12	5864	193287	6	0	0	Origen	Autore:Origene
 Q170519	Realtà virtuale	Informatica	121	120	22619	20314	13	3	3	5	434	1.92	435	1	1	1	0	1451	1451	2005-06-28	5817	261473	4	0	0	Virtual reality	
 Q170541	Blocco orientale	Storia	65	62	6155	6212	0	2	3	0	1163	18.90	1108	1	1	0	0	1960	1960	2006-10-03	5355	140422	14	0	0	Eastern Europe	
@@ -809,7 +809,7 @@ Q173212	Architettura dei calcolatori	Informatica	12	11	4240	4252	0	4	4	0	559	13.
 Q173285	Digitale (informatica)	Informatica	120	119	5800	5121	2	1	1	0	288	4.97	288	1	1	0	0	8178	8178	2004-04-11	6260	258791	4	0	0		
 Q173523	Progressione geometrica	Matematica	85	83	4544	4544	0	1	1	0	711	15.65	711	1	1	0	0	2172	2172	2005-09-17	5736	184476	11	0	0		
 Q173527	Cnosso	Storia dell'arte	251	249	10581	10536	1	5	5	0	854	8.07	870	1	1	0	0	2542	2542	2005-01-12	5984	542077	7	0	0	Knossos	
-Q173710	Esofago	#N/A	206	#N/A	29931	#N/A	13	6	#N/A	#N/A	2424	8.10	#N/A	0	#N/A	0	0	131	#N/A	2006-11-24	5303	444963	3	0	0	Esophagus	Esophagus
+Q173710	Esofago	Biologia	206	205	29931	29696	13	6	6	9	2424	8.10	2424	0	#N/A	0	0	131	#N/A	2006-11-24	5303	444963	3	0	0	Esophagus	Esophagus
 Q173817	Raggio (geometria)	Matematica	60	63	5479	5482	0	3	3	0	1117	20.39	1117	1	1	0	0	123	123	2005-10-19	5704	129277	-16	0	0		Radius
 Q174211	Composto organico	Chimica	142	#N/A	3754	3666	2	1	0	0	1349	35.94	#N/A	0	0	0	0	6736	6736	2003-08-16	6499	307814	-7	0	0	Organic compounds	
 Q174306	Repubblica di Genova	Storia	195	187	46860	30643	34	22	13	5	5062	10.80	1684	0	0	0	0	12436	12436	2004-02-24	6307	422439	44	0	0	Republic of Genoa	Autore:Repubblica di Genova
@@ -829,7 +829,7 @@ Q1753902	Zang Tumb Tumb	Letteratura italiana	72	67	1491	1491	0	1	1	0	901	60.43	9
 Q1754072	Novelle per un anno	Letteratura italiana	122	119	21699	21265	6	3	3	0	123	0.57	123	0	0	0	0	1413	1413	2007-01-07	5259	263152	15	0	0		
 Q1754940	Concezione del tempo	Storia	78	78	25463	23427	26	7	5	0	455	1.79	440	0	0	0	0	2192	2192	2005-12-26	5636	169265	3	0	0	Philosophy of time	
 Q175582	Piramidi egizie	Storia	373	367	171495	171362	296	64	64	27	824	0.48	924	0	0	0	0	3824	3824	2008-08-01	4687	806308	30	0	0	Pyramids of Egypt	
-Q175974	Legge di Boyle-Mariotte	Chimica	129	#N/A	7368	7355	4	4	#N/A	2	1115	15.13	1115	0	0	0	0	3286	3286	2004-12-14	6013	277845	3	0	0		
+Q175974	Legge di Boyle-Mariotte	Chimica	129	128	7368	7355	4	4	4	2	1115	15.13	1115	0	0	0	0	3286	3286	2004-12-14	6013	277845	3	0	0		
 Q176165	Database management system	Informatica	111	111	18758	18539	0	3	0	0	509	2.71	1544	1	1	0	0	1870	1870	2004-10-01	6087	240965	3	0	0	Database management systems	
 Q17628883	Disequazione intera	Matematica	5	5	9728	7927	0	6	6	3	734	7.55	730	0	0	0	0	40	40	2014-07-05	2523	10718	1	0	0		
 Q176483	Architettura gotica	Storia dell'arte	279	286	20988	20996	3	6	6	6	396	1.89	388	0	0	0	0	297	297	2004-10-14	6074	604221	-32	0	0	Gothic architecture	Gothic architecture
@@ -843,7 +843,7 @@ Q177302	Fidia	Storia dell'arte	150	147	11574	11600	16	2	2	4	1357	11.72	1357	0	0	
 Q177449	Due punti	Grammatica italiana	73	71	4038	4023	2	1	1	0	436	10.80	442	0	0	0	0	49	0	2006-05-09	5502	158787	12	0	0	Colons	
 Q1775415	Femminile	Grammatica italiana	9	9	973	973	0	0	0	0	594	61.05	594	1	1	0	0	1348	1264	2007-09-15	5008	18484	-4	0	0		
 Q177567	Amazzonia	Geografia	335	342	45409	40668	40	41	41	5	602	1.33	611	0	0	0	0	16543	16543	2006-11-28	5299	725108	-32	0	0	Amazon Rainforest	
-Q177625	Campo elettromagnetico	Chimica	135	#N/A	45936	45592	33	2	2	11	754	1.64	564	0	0	0	0	1359	1359	2003-07-09	6537	292830	13	0	0	Electromagnetic field	
+Q177625	Campo elettromagnetico	Chimica	135	133	45936	45592	33	2	2	11	754	1.64	564	0	0	0	0	1359	1359	2003-07-09	6537	292830	13	0	0	Electromagnetic field	
 Q177646	Inclusione	Matematica	120	123	4956	4943	1	2	2	0	2151	43.40	2138	0	0	0	0	88	88	2005-12-18	5644	258445	-16	0	0	Subsets	
 Q177691	Tempo (linguistica)	Grammatica italiana	16	14	1474	1474	1	0	0	1	814	55.22	814	1	1	0	0	83	0	2005-06-24	5821	33742	8	0	0		
 Q177692	Andrea Palladio	Storia dell'arte	316	324	44554	44572	24	19	18	21	1067	2.39	1067	0	0	0	0	23747	23747	2004-02-20	6311	683708	-38	0	0	Andrea Palladio	Autore:Andrea Palladio
@@ -851,7 +851,7 @@ Q177819	Antico Regno (Egitto)	Storia	23	17	5737	5592	6	2	0	4	437	7.62	437	0	0	0	
 Q177854	Lorenzo de' Medici	Letteratura italiana	1910	2054	121439	121199	191	29	29	20	3308	2.72	3261	0	0	0	0	28631	28631	2006-12-01	5296	4130470	-702	0	1	Lorenzo de' Medici	Autore:Lorenzo de' Medici
 Q1778604	Rotta delle spezie	Storia	24	24	3333	3333	0	1	1	0	525	15.75	525	0	0	0	0	36	36	2005-05-10	5866	52816	2	0	0	Spice trade	
 Q177918	Prima guerra balcanica	Storia	82	79	107808	108282	88	34	48	1	3416	3.17	4137	0	0	0	0	4879	4879	2006-03-20	5552	177482	14	0	1	First Balkan War	
-Q177935	Teoria cellulare	Biologia	83	77	10285	10301	11	2	#N/A	4	355	3.45	#N/A	0	0	0	0	38	#N/A	2008-01-08	4893	179322	27	0	0		
+Q177935	Teoria cellulare	Biologia	83	77	10285	10301	11	2	2	4	355	3.45	355	0	0	0	0	38	#N/A	2008-01-08	4893	179322	27	0	0		
 Q178043	Termosfera	Scienze della Terra	48	47	2553	2222	1	2	1	0	314	12.30	1919	0	0	0	0	188	188	2007-06-11	5104	102713	2	0	0		
 Q178048	Bus (informatica)	Informatica	181	176	15575	13361	1	1	1	0	586	3.76	531	1	1	0	0	2029	2029	2005-03-20	5917	391996	25	0	0	Computer buses	
 Q1780774	Proposizione comparativa	Grammatica italiana	21	21	1751	1499	2	0	0	0	1601	91.43	1349	0	0	0	0	49	0	2007-11-22	4940	44777	-2	0	0		
@@ -861,11 +861,11 @@ Q1783714	Proposizione concessiva	Grammatica italiana	88	88	1907	1907	0	0	0	0	159
 Q178476	Politica monetaria	Diritto e Economia	98	101	4462	4457	1	0	0	5	284	6.36	284	1	1	0	0	1640	1640	2004-03-22	6280	211617	-14	0	0	Monetary policies	
 Q178540	Presocratici	Filosofia	87	85	20004	19620	15	0	0	13	255	1.27	254	0	0	0	0	1543	1543	2004-03-10	6292	187061	9	0	0	Presocratic philosophers	
 Q178605	Deriva dei continenti	Scienze	195	196	12257	10219	4	6	6	7	2476	20.20	469	0	0	0	0	8288	8288	2006-12-04	5293	422468	-1	0	0		
-Q1786087	Ossidazione	Chimica	242	254	4009	4010	2	4	#N/A	2	342	8.53	342	0	0	0	0	807	807	2004-10-15	6073	523573	-59	0	0	Oxidations	
+Q1786087	Ossidazione	Chimica	242	254	4009	4010	2	4	4	2	342	8.53	342	0	0	0	0	807	807	2004-10-15	6073	523573	-59	0	0	Oxidations	
 Q178648	Periferica	Informatica	106	104	8797	8857	1	10	10	0	554	6.30	866	1	1	0	0	422	422	2004-05-10	6231	228429	7	0	0	Computer peripherals	
 Q178668	Atomismo	Filosofia	64	62	43717	43059	17	1	0	15	509	1.16	317	0	0	0	0	2790	2790	2004-08-28	6121	137724	6	0	0		
-Q178694	Ereditarietà genetica	Biologia	88	91	10942	10796	0	3	#N/A	#N/A	521	4.76	479	1	#N/A	0	0	38	#N/A	2006-06-09	5471	189297	-16	0	0	Heredity	
-Q178697	Dispersione (chimica)	Chimica	39	40	3837	3459	0	1	#N/A	0	805	20.98	453	0	0	0	0	37	37	2005-06-22	5823	85281	0	0	0		
+Q178694	Ereditarietà genetica	Biologia	88	91	10942	10796	0	3	0	0	521	4.76	479	1	#N/A	0	0	38	#N/A	2006-06-09	5471	189297	-16	0	0	Heredity	
+Q178697	Dispersione (chimica)	Chimica	39	40	3837	3459	0	1	0	0	805	20.98	453	0	0	0	0	37	37	2005-06-22	5823	85281	0	0	0		
 Q178709	Giambattista Vico	Filosofia	208	207	70123	67381	56	8	8	5	2284	3.26	2	0	0	0	0	16041	16041	2008-10-30	4597	449925	4	0	0	Giambattista Vico	Autore:Giambattista Vico
 Q178733	Forza centrifuga	Fisica	194	200	8949	8952	0	1	1	0	655	7.32	658	0	0	0	0	2340	2340	2005-06-29	5816	419853	-28	0	0	Centrifugal force	
 Q178790	Sindacato	Storia	235	234	8864	8342	0	1	1	9	130	1.47	136	1	1	0	0	5221	5221	2005-02-07	5958	508774	8	0	0	Trade unionism	Trade unions
@@ -878,7 +878,7 @@ Q179073	Protezionismo	Diritto e Economia	149	146	93714	76761	83	8	6	8	3610	3.85	
 Q179080	Predicato	Grammatica italiana	99	103	4555	4500	0	0	0	0	3897	85.55	3852	1	1	0	0	592	508	2005-07-09	5806	214129	-18	0	0		
 Q179164	Stato unitario	Storia	64	61	5697	5698	6	3	3	0	971	17.04	972	1	1	0	0	1061	1061	2008-03-06	4835	137304	14	0	0		
 Q179177	Degradazione meteorica (meteorizzazione)	Scienze della Terra	8	4	28169	28035	13	7	7	4	760	2.70	760	0	0	0	0	4887	4887	2006-08-09	5410	16945	21	0	0	Weathering	Weathering
-Q179217	Coagulazione	Biologia	37	#N/A	17529	17654	2	1	#N/A	#N/A	460	2.62	519	1	#N/A	0	0	978	#N/A	2006-04-23	5518	80640	73	0	0	Coagulation	
+Q179217	Coagulazione	Biologia	37	346	17529	17654	2	1	1	1	460	2.62	519	1	#N/A	0	0	978	#N/A	2006-04-23	5518	80640	73	0	0	Coagulation	
 Q179230	Infinito (modo)	Grammatica italiana	92	16	6581	1141	8	0	0	0	1075	16.33	0	0	0	0	0	1677	1593	2006-12-01	5296	199732	-15	0	0		
 Q179235	Fenomenologia	Filosofia	157	155	27031	26482	12	2	2	27	1020	3.77	1019	0	0	0	0	5166	4477	2004-03-29	6273	339106	7	0	0	Phenomenology	
 Q179250	Campagna di Russia	Storia	227	222	152591	152406	224	63	63	12	2545	1.67	2577	0	0	0	0	791	791	2007-02-22	5213	490264	24	0	0	French invasion of Russia	
@@ -899,7 +899,7 @@ Q179997	Tredici colonie	Storia	225	214	10208	6603	5	5	7	5	2857	27.99	840	0	0	0	0
 Q18	America meridionale	Geografia	298	286	74854	37076	66	52	14	3	3484	4.65	3502	0	0	0	0	2908	2908	2003-09-08	6476	643204	58	0	0	South America	Sudamérica - América do Sul
 Q180081	Marco Porcio Catone	#N/A	213	#N/A	21564	#N/A	9	3	#N/A	#N/A	4	0.02	#N/A	0	#N/A	0	0	3991	#N/A	2006-04-14	5527	460947	56	0	0	Cato Major	Autore:Marco Porcio Catone
 Q180107	Prezzo di mercato	Diritto e Economia	13	14	957	957	0	0	0	0	702	73.35	702	1	1	0	0	49	49	2008-03-18	4823	28016	-3	0	0		
-Q180184	Sedimento	#N/A	34	#N/A	11527	#N/A	0	3	#N/A	#N/A	2142	18.58	#N/A	0	#N/A	0	0	5168	#N/A	2004-09-05	6113	74218	-5	0	0	Sediments	
+Q180184	Sedimento	Scienze della Terra	34	35	11527	11501	0	3	3	2	2142	18.58	2129	0	0	0	0	5168	5168	2004-09-05	6113	74218	-5	0	0	Sediments	
 Q180309	Tratto d'unione	Grammatica italiana	26	24	4024	3991	0	1	1	0	301	7.48	319	1	1	0	0	1855	1805	2008-02-15	4855	56016	7	0	0	Hyphens	
 Q180388	Gestione dei rifiuti	Cittadinanza e costituzione	140	#N/A	84574	36729	58	5	5	3	1159	1.37	1159	2	2	0	0	100482	97682	2006-11-01	5326	302607	17	0	0	Waste management	Waste management
 Q180544	Prisma	Matematica	158	169	3553	3553	0	4	4	0	245	6.90	245	0	0	1	0	40	40	2005-05-17	5859	340579	-56	0	0	Prisms (geometry)	
@@ -947,7 +947,7 @@ Q183197	Foglio elettronico	Informatica	77	76	7745	7648	2	6	5	0	396	5.11	396	0	0	
 Q183225	Tolleranza	Storia	76	76	15388	15399	14	4	4	4	1203	7.82	1223	0	0	0	0	1254	1254	2005-06-21	5824	164171	0	0	0	Tolerance	
 Q183384	Concorrenza perfetta	Diritto e Economia	136	135	8476	8454	0	2	2	0	918	10.83	896	1	1	0	0	49	49	2005-07-16	5799	294946	5	0	0	Perfect competition	
 Q183427	Funzione di hash	Informatica	24	10	13781	13679	23	1	1	2	614	4.46	544	0	0	0	0	6750	6750	2004-03-25	6277	51011	68	0	0		
-Q183725	Associazione internazionale dei lavoratori	#N/A	94	#N/A	17362	#N/A	4	3	#N/A	#N/A	1037	5.97	#N/A	0	#N/A	0	0	1669	#N/A	2005-06-09	5836	203419	10	0	0	International Workingmen's Association	
+Q183725	Associazione internazionale dei lavoratori	Storia	94	92	17362	16190	4	3	3	13	1037	5.97	1037	0	0	0	0	1669	1669	2005-06-09	5836	203419	10	0	0	International Workingmen's Association	
 Q184	Bielorussia	Geografia	612	520	47315	45438	28	22	22	5	2950	6.23	4760	0	0	1	2	21564	20261	2004-06-13	6197	1323711	456	0	0	Belarus	Беларусь
 Q184183	Seconda guerra balcanica	Storia	47	46	8526	8462	0	9	9	0	1801	21.12	1753	0	0	0	0	36	36	2008-04-05	4805	102581	9	0	0	Second Balkan War	
 Q184226	Gilles Deleuze	Filosofia	112	107	24428	24849	10	1	0	0	1614	6.61	1614	0	0	0	0	1379	1379	2005-11-06	5686	242272	24	0	0	Gilles Deleuze	
@@ -1073,7 +1073,7 @@ Q191850	Tommaso Campanella	Letteratura italiana	163	161	49972	49028	27	9	8	2	505
 Q191884	Funzione inversa	Matematica	67	68	14966	14966	0	6	6	0	939	6.27	939	1	1	0	0	40	40	2005-11-28	5664	145877	-2	0	0	Inverse functions	
 Q191890	Commedia dell'arte	Letteratura italiana	240	237	69863	69421	13	18	18	73	2363	3.38	1921	1	1	0	0	28021	28021	2006-12-12	5285	518308	12	0	0	Commedia dell'arte	
 Q191934	Commensalismo	Scienze	55	56	5407	5404	3	2	2	0	872	16.13	872	0	0	2	0	80	80	2005-08-23	5761	117942	-8	0	0	Commensalism	
-Q192050	Attentato di Sarajevo	#N/A	345	#N/A	81213	#N/A	85	33	#N/A	#N/A	2205	2.72	#N/A	0	#N/A	0	1	3493	#N/A	2007-03-09	5198	745768	48	0	0	Sarajevo assassination	
+Q192050	Attentato di Sarajevo	Storia	345	335	81213	81042	85	33	33	7	2205	2.72	2199	0	0	0	1	3493	1575	2007-03-09	5198	745768	48	0	0	Sarajevo assassination	
 Q192222	Lisippo	Storia dell'arte	70	69	13831	13818	18	4	4	4	662	4.79	662	0	0	0	0	4430	4430	2005-03-09	5928	151804	5	0	0	Lysippos	
 Q192270	Consumo	Diritto e Economia	44	#N/A	11756	11757	7	0	0	3	910	7.74	910	1	1	0	0	49	49	2004-11-18	6039	95837	-5	0	0	Consumption	
 Q192292	Filosofia medievale	Filosofia	59	59	50651	46159	27	20	20	19	1240	2.45	1240	0	0	0	0	2641	2641	2004-03-29	6273	127618	0	0	0	Medieval philosophy	
@@ -1149,7 +1149,7 @@ Q199820	Conferenza di pace di Parigi (1919)	Storia	159	152	40823	40098	36	6	6	9	
 Q19984772	Guido, i' vorrei che tu e Lapo ed io	Letteratura italiana	136	127	5402	5425	5	1	1	0	479	8.87	479	0	0	0	0	841	841	2015-05-02	2222	293596	45	0	0		
 Q19985151	Secondo teorema dell'angolo esterno	Matematica	31	30	1220	1220	0	2	2	0	341	27.95	341	2	2	0	0	40	40	2015-02-05	2308	66142	1	0	0		
 Q1998646	Scetticismo filosofico	Filosofia	137	#N/A	26661	26618	17	0	0	18	366	1.37	366	0	0	0	0	2696	2434	2006-10-13	5345	295923	6	0	0		
-Q199955	Cento giorni	#N/A	69	#N/A	30004	#N/A	24	28	#N/A	#N/A	1512	5.04	#N/A	0	#N/A	0	0	399	#N/A	2006-11-06	5321	148456	4	0	0		
+Q199955	Cento giorni	Storia	69	68	30004	29946	24	28	28	8	1512	5.04	1522	0	0	0	0	399	399	2006-11-06	5321	148456	4	0	0		
 Q2	Terra	Scienze della Terra	1053	1072	130795	123271	92	17	17	25	3805	2.91	3915	0	0	0	0	36786	33915	2003-05-12	6595	2277132	-86	0	1	Earth	Earth
 Q20	Norvegia	Geografia	1169	1197	53089	51949	22	43	43	0	4871	9.18	4649	0	0	0	0	10408	10408	2004-03-19	6283	2527382	-134	0	0	Norway	Norge
 Q200034	Puntinismo	Storia dell'arte	151	151	2956	2940	3	1	1	1	507	17.15	515	1	1	0	0	644	644	2006-05-17	5494	325523	-2	0	0	Pointillism	
@@ -1174,7 +1174,7 @@ Q2022	Cesare Pavese	Letteratura italiana	635	604	61789	60854	24	10	10	35	132	0.2
 Q202207	Pianura Padana	Geografia	351	334	56239	47406	68	21	20	1	1501	2.67	1050	0	0	0	0	46155	-	2005-07-12	5803	759223	85	0	0	Pianura Padana	
 Q2022868	Impatto ambientale	#N/A	30	#N/A	3012	2888	2	1	#N/A	#N/A	1875	62.25	#N/A	0	#N/A	0	0	38	#N/A	2006-07-27	5423	64345	30	0	0	Environmental impact	
 Q202444	Prenome	Grammatica italiana	228	1	5513	19	9	0	0	2	473	8.58	16	1	0	0	0	1382	0	2010-01-16	4154	492160	-45	0	0	Given names	
-Q202558	Cattività avignonese	#N/A	243	#N/A	21880	#N/A	6	5	#N/A	#N/A	319	1.46	#N/A	0	#N/A	0	0	1804	#N/A	2005-05-09	5867	524589	16	0	0	Avignon Papacy	
+Q202558	Cattività avignonese	Storia	243	239	21880	21954	6	5	5	5	319	1.46	319	0	0	0	0	1804	1804	2005-05-09	5867	524589	16	0	0	Avignon Papacy	
 Q202805	Combinazione	Matematica	105	106	26750	26698	0	0	0	2	1061	3.97	1061	1	0	0	0	2659	2659	2003-11-28	6395	226931	-7	0	0	Combinations (combinatorics)	
 Q2029841	Organizzazione aziendale	Diritto e Economia	240	#N/A	32010	31529	0	0	0	8	163	0.51	183	1	1	0	0	2307	2109	2006-06-26	5454	518794	-25	0	0		
 Q203066	Relazione (matematica)	Matematica	45	44	4320	4320	0	0	0	1	106	2.45	106	1	1	0	0	40	40	2005-04-16	5890	96304	1	0	0	Relations (mathematics)	
@@ -1223,27 +1223,27 @@ Q210189	Antifascismo	Storia	92	91	33362	33443	13	5	5	52	511	1.53	561	0	0	0	0	856
 Q210539	Orbita della Luna	Scienze della Terra	106	107	18961	18916	14	7	7	1	1982	10.45	1973	0	0	0	0	2074	2074	2014-02-06	2672	229651	-2	0	0		
 Q210546	Principio di equivalenza	Fisica	37	37	9920	9723	3	0	0	1	1778	17.92	1777	1	1	0	0	5233	5233	2004-09-30	6088	79081	0	0	0		
 Q210854	Ars nova	Letteratura italiana	41	39	6857	6786	0	1	0	2	1330	19.40	1324	0	0	0	0	2942	2942	2006-04-06	5535	88955	9	0	0	Medieval music	
-Q210947	Fattore produttivo	#N/A	79	#N/A	5113	5113	0	0	0	0	454	8.88	454	1	1	2	0	833	833	2005-11-29	5663	171393	0	0	0	Factors of production	
+Q210947	Fattore produttivo	#N/A	79	79	5113	5113	0	0	0	0	454	8.88	454	1	1	2	0	833	833	2005-11-29	5663	171393	0	0	0	Factors of production	
 Q211	Lettonia	Geografia	431	444	48430	47251	30	14	14	8	2150	4.44	2149	0	0	0	0	6681	6681	2003-04-25	6612	931758	-65	0	0	Latvia	Latvija
-Q21100485	Meiosi	Biologia	480	#N/A	10327	10311	1	1	#N/A	#N/A	1339	12.97	1378	0	#N/A	0	0	4003	4003	2005-03-03	5934	1038487	-3	0	0	Meiosis	
+Q21100485	Meiosi	Biologia	480	481	10327	10311	1	1	1	3	1339	12.97	1378	0	#N/A	0	0	4003	4003	2005-03-03	5934	1038487	-3	0	0	Meiosis	
 Q2110225	Storia dell'industria italiana	Storia	17	16	11621	11512	1	0	0	10	1	0.01	1	1	1	0	0	36	36	2008-06-15	4734	35784	3	0	0		
 Q211101	Diatesi	Grammatica italiana	56	57	8402	8549	1	0	0	0	1930	22.97	1979	2	3	0	0	83	0	2007-06-02	5113	120499	-8	0	0		
 Q211459	Traslazione (geometria)	Matematica	72	79	4847	4847	0	2	2	0	1340	27.65	1340	1	1	0	0	229	229	2005-10-24	5699	156281	-32	0	0	Translation (geometry)	
 Q211496	Linguaggio di programmazione ad alto livello	Informatica	46	44	11643	11613	1	0	0	0	283	2.43	283	1	1	0	0	4174	4174	2005-07-03	5812	99065	9	0	0		
 Q2116320	Guerra civile romana (44-31 a.C.)	Storia	90	82	33820	33751	18	22	22	14	1272	3.76	1250	0	0	0	0	5871	5871	2009-08-27	4296	194069	37	0	0		
 Q211674	Accordo Sykes-Picot	Storia	78	82	9834	9652	2	8	8	1	891	9.06	891	1	1	0	0	3110	2338	2006-09-02	5386	169352	-18	0	0	Sykes-Picot Agreement	
-Q211675	Ricombinazione genetica	Biologia	47	#N/A	3666	#N/A	0	2	#N/A	#N/A	510	13.91	#N/A	2	#N/A	0	0	38	#N/A	2007-03-24	5183	101909	1	0	0	Genetic recombination	
+Q211675	Ricombinazione genetica	Biologia	47	47	3666	3466	0	2	0	0	510	13.91	#N/A	2	#N/A	0	0	38	#N/A	2007-03-24	5183	101909	1	0	0	Genetic recombination	
 Q21192549	Iscrizione della catacomba di Commodilla	Letteratura italiana	17	16	4831	4831	0	0	0	3	442	9.15	442	0	0	0	0	50	50	2009-06-08	4376	36787	7	0	0		Iscrizione della catacomba di Commodilla
-Q21192987	Diritto del lavoro in Italia	Cittadinanza e costituzione	42	#N/A	12586	12345	1	1	0	#N/A	340	2.70	114	0	#N/A	0	0	134	134	2014-12-20	2355	91263	4	0	0		
-Q21193084	Codice della strada (Italia)	Cittadinanza e costituzione	32	#N/A	35549	32846	12	10	6	#N/A	185	0.52	185	0	#N/A	0	0	3264	3264	2015-06-02	2191	70241	35	0	0		
-Q211935	Sintesi proteica	Biologia	373	#N/A	17845	17813	1	2	#N/A	#N/A	623	3.49	623	1	#N/A	0	0	1456	1230	2004-10-08	6080	807014	29	0	0	Protein biosynthesis	
+Q21192987	Diritto del lavoro in Italia	Cittadinanza e costituzione	42	42	12586	12345	1	1	0	4	340	2.70	114	0	#N/A	0	0	134	134	2014-12-20	2355	91263	4	0	0		
+Q21193084	Codice della strada (Italia)	Cittadinanza e costituzione	32	25	35549	32846	12	10	6	0	185	0.52	185	0	#N/A	0	0	3264	3264	2015-06-02	2191	70241	35	0	0		
+Q211935	Sintesi proteica	Biologia	373	368	17845	17813	1	2	2	1	623	3.49	623	1	#N/A	0	0	1456	1230	2004-10-08	6080	807014	29	0	0	Protein biosynthesis	
 Q21198	Informatica	Informatica	346	346	52640	54879	23	32	32	12	1871	3.55	1867	0	0	0	0	61991	61991	2003-11-14	6409	747924	1	0	0	Computer science	
 Q21199	Numero naturale	Matematica	335	336	15352	15267	2	3	3	2	778	5.07	784	1	1	0	0	3612	3612	2004-06-01	6209	724329	-6	0	0	Natural numbers	
 Q212	Ucraina	Geografia	865	864	74773	72052	36	48	44	11	5507	7.36	5418	0	0	0	0	19001	17941	2004-07-09	6171	1870740	11	0	0	Ukraine	Україна
 Q212079	Secondo triumvirato	Storia	149	141	39179	38977	12	18	17	11	455	1.16	455	0	0	0	0	610	610	2004-01-21	6341	321290	38	0	0	Second Triumvirate	
-Q212114	Storia dell'integrazione europea	Cittadinanza e costituzione	47	#N/A	63273	70439	2	8	8	#N/A	158	0.25	159	1	#N/A	0	0	10253	10253	2005-07-15	5800	101769	-2	0	0	History of the European Union	
-Q212126	Interazione apparente	Fisica	10	#N/A	6447	6421	0	0	0	0	2715	42.11	2715	0	0	0	0	2513	2513	2006-02-20	5580	21532	25	0	0		
-Q212141	Unione economica e monetaria dell'Unione europea	Cittadinanza e costituzione	91	#N/A	24891	2630	21	1	0	#N/A	1060	4.26	385	1	#N/A	0	0	7022	7022	2003-01-21	6706	197748	-10	0	0		
+Q212114	Storia dell'integrazione europea	Cittadinanza e costituzione	47	48	63273	70439	2	8	8	26	158	0.25	159	1	#N/A	0	0	10253	10253	2005-07-15	5800	101769	-2	0	0	History of the European Union	
+Q212126	Interazione apparente	Fisica	10	5	6447	6421	0	0	0	0	2715	42.11	2715	0	0	0	0	2513	2513	2006-02-20	5580	21532	25	0	0		
+Q212141	Unione economica e monetaria dell'Unione europea	Cittadinanza e costituzione	91	94	24891	2630	21	1	0	0	1060	4.26	385	1	#N/A	0	0	7022	7022	2003-01-21	6706	197748	-10	0	0		
 Q2121876	Pittura illusionistica	Storia dell'arte	27	26	7216	7177	0	13	13	0	1034	14.33	1034	0	0	0	0	1062	1062	2008-02-03	4867	59050	8	0	0	Baroque frescos in Italy	
 Q21235336	Regioni d'Italia	Geografia	1127	1075	33421	33223	9	156	158	2	1143	3.42	1145	0	0	0	0	1237	1237	2015-06-08	2185	2437638	262	0	0	Regions of Italy	
 Q212542	Ereditarietà (informatica)	Informatica	22	21	26276	26258	1	0	0	0	1371	5.22	1371	1	1	0	1	2785	2785	2005-09-24	5729	46831	5	0	0		
@@ -1251,35 +1251,35 @@ Q212616	La zattera della Medusa	Storia dell'arte	349	331	52377	51609	62	15	15	0	
 Q212667	Gneo Nevio	Letteratura latina	45	42	15283	10891	19	0	1	8	1028	6.73	2	1	0	0	0	3353	3353	2006-03-25	5547	97248	13	0	0		Autore:Gneo Nevio
 Q212794	Punto di flesso	Matematica	99	96	6960	6951	0	3	3	1	447	6.42	438	1	1	0	0	3548	2978	2005-11-09	5683	213873	16	0	0	Inflection points	
 Q213	Repubblica Ceca	Geografia	717	741	67481	58168	21	17	18	1	2861	4.24	2818	1	1	1	2	36688	36688	2004-05-06	6235	1551219	-112	0	0	Czech Republic	Česko
-Q213185	Stechiometria	Chimica	115	#N/A	9417	9287	4	1	0	#N/A	1288	13.68	1172	0	#N/A	0	0	7564	7564	2004-07-05	6175	247584	-19	0	0		
+Q213185	Stechiometria	Chimica	115	118	9417	9287	4	1	0	0	1288	13.68	1172	0	#N/A	0	0	7564	7564	2004-07-05	6175	247584	-19	0	0		
 Q213449	Alimentazione	Scienze	217	213	10928	10937	15	1	1	1	1244	11.38	1262	0	0	0	0	10285	10285	2007-03-12	5195	468678	17	0	0	Eating	
 Q213457	Beat Generation	Letteratura italiana	278	275	33801	31301	30	7	7	26	1359	4.02	1266	1	1	0	0	4660	4660	2005-06-06	5839	600380	14	0	0	Beat Generation	
 Q213482	Giuseppe Tomasi di Lampedusa	Letteratura italiana	184	180	19467	20112	7	8	8	32	360	1.85	554	0	0	0	0	975	975	2004-01-08	6354	396993	15	0	0	Giuseppe Tomasi di Lampedusa	
 Q214	Slovacchia	Geografia	520	537	41208	40596	22	11	11	1	4272	10.37	4315	1	0	3	0	26992	26992	2004-04-10	6261	1125058	-81	0	0	Slovakia	Slovensko
 Q214078	Rivoluzione scientifica	Letteratura italiana	151	133	66857	66063	67	20	20	20	740	1.11	740	0	0	0	0	9136	8362	2006-08-08	5411	327492	89	0	0		
 Q214100	Sogno americano	Storia	124	119	14775	14504	0	3	2	0	797	5.39	797	1	1	0	0	1040	1040	2006-06-28	5452	267151	25	0	0		
-Q214115	Lorenzo Valla	Filosofia	77	#N/A	17329	17300	6	1	1	19	69	0.40	69	0	0	0	0	1253	1253	2005-03-30	5907	166755	9	0	0	Lorenzo Valla	Autore:Lorenzo Valla
-Q2142166	Paradosso di Achille e la tartaruga	Filosofia	248	#N/A	6972	6903	5	1	1	1	238	3.41	238	0	0	0	0	1367	1367	2008-12-15	4551	536559	54	0	0		
-Q2142347	Fattori ambientali	Biologia	57	#N/A	4004	#N/A	1	1	#N/A	#N/A	626	15.63	300	1	#N/A	0	0	38	38	2006-05-15	5496	122838	-12	0	0		
+Q214115	Lorenzo Valla	Filosofia	77	75	17329	17300	6	1	1	19	69	0.40	69	0	0	0	0	1253	1253	2005-03-30	5907	166755	9	0	0	Lorenzo Valla	Autore:Lorenzo Valla
+Q2142166	Paradosso di Achille e la tartaruga	Filosofia	248	238	6972	6903	5	1	1	1	238	3.41	238	0	0	0	0	1367	1367	2008-12-15	4551	536559	54	0	0		
+Q2142347	Fattori ambientali	Biologia	57	59	4004	3178	1	1	#N/A	#N/A	626	15.63	300	1	#N/A	0	0	38	38	2006-05-15	5496	122838	-12	0	0		
 Q214609	Materiale	Tecnologia	68	70	5827	5765	0	5	5	2	562	9.64	562	1	1	0	0	1719	1719	2007-08-25	5029	146235	-10	0	0	Materials	
-Q214816	Pierre Bayle	Filosofia	23	#N/A	14517	14517	3	1	1	4	973	6.70	973	0	0	0	0	39	39	2004-09-29	6089	50089	-2	0	0	Pierre Bayle	Autore:Pierre Bayle
+Q214816	Pierre Bayle	Filosofia	23	24	14517	14517	3	1	1	4	973	6.70	973	0	0	0	0	39	39	2004-09-29	6089	50089	-2	0	0	Pierre Bayle	Autore:Pierre Bayle
 Q215	Slovenia	Geografia	782	799	46456	42312	24	12	12	1	2841	6.12	2894	1	1	0	0	9770	9770	2003-06-10	6566	1691052	-82	0	0	Slovenia	Slovenija
 Q215007	Equazione del moto	#N/A	58	#N/A	12175	#N/A	2	1	#N/A	#N/A	483	3.97	#N/A	0	#N/A	0	0	665	#N/A	2005-12-20	5642	125172	-4	0	0		
 Q215198	Verismo	Letteratura italiana	432	432	11757	11628	13	1	0	0	2379	20.23	2309	0	0	0	0	8524	8524	2006-12-01	5296	933636	2	0	0		
 Q215206	NP-completo	Informatica	35	34	15697	15735	0	1	1	10	1654	10.54	1654	1	1	0	0	1849	1849	2006-06-11	5469	76177	4	0	0		
 Q215382	Disgiunzione	Matematica	13	14	2468	2468	0	0	0	0	348	14.10	348	1	1	0	0	40	40	2005-09-26	5727	28844	-3	0	0	Disjoint sets	
 Q216042	Accento acuto	Grammatica italiana	93	94	4225	4180	1	0	0	0	589	13.94	589	0	0	0	0	341	291	2009-01-28	4507	200220	-8	0	0		
-Q216200	Norma giuridica	Diritto e Economia	288	#N/A	10139	9778	1	1	0	0	453	4.47	378	0	0	0	0	4771	5019	2004-05-23	6218	622215	70	0	0	Instructions	
+Q216200	Norma giuridica	Diritto e Economia	288	274	10139	9778	1	1	0	0	453	4.47	378	0	0	0	0	4771	5019	2004-05-23	6218	622215	70	0	0	Instructions	
 Q216320	Fluidodinamica	Fisica	84	87	12469	12081	0	15	15	1	664	5.33	595	0	0	0	0	36	36	2004-08-04	6145	182333	-11	0	0	Fluid dynamics	
 Q2164653	Pittura romana	Storia dell'arte	52	51	22973	22492	8	19	19	4	1453	6.32	1452	0	0	0	0	715	715	2008-04-18	4792	111832	1	0	0	Ancient Roman paintings	Painting (Roman)
 Q216478	Italo Svevo	Letteratura italiana	656	658	67426	64832	30	8	8	1	1217	1.80	1	0	0	0	0	32103	32103	2006-01-09	5622	1418151	-9	0	0	Italo Svevo	Autore:Italo Svevo
 Q216582	Filippo Tommaso Marinetti	Letteratura italiana	404	407	48018	47512	13	24	24	19	142	0.30	142	0	0	0	0	21869	21869	2004-04-22	6249	873996	-10	0	0	Filippo Tommaso Marinetti	Autore:Filippo Tommaso Marinetti
 Q216601	Oggetto (informatica)	Informatica	47	45	14297	14263	0	0	0	0	223	1.56	223	1	1	0	0	1874	1874	2004-04-02	6269	102262	10	0	0		
 Q21670147	Pensiero e poetica di Alessandro Manzoni	Letteratura italiana	66	61	79998	79488	103	13	13	41	1077	1.35	1077	0	0	0	0	3138	2642	2015-12-05	2005	141905	21	1	0		
-Q216818	Radiazione adattativa	#N/A	16	#N/A	2711	#N/A	1	1	#N/A	#N/A	1910	70.45	#N/A	1	#N/A	0	0	535	#N/A	2007-11-24	4938	33795	0	0	0	Adaptive radiation	
+Q216818	Radiazione adattativa	Biologia	16	#N/A	2711	2632	1	1	0	2	1910	70.45	1838	1	#N/A	0	0	535	#N/A	2007-11-24	4938	33795	0	0	0	Adaptive radiation	
 Q216989	Geografia dell'Italia	Geografia	327	335	37381	35655	29	21	20	4	1477	3.95	1345	0	0	0	0	52258	-	2005-11-05	5687	706263	-40	0	0	Geography of Italy	
 Q217	Moldavia	Geografia	785	765	54096	51406	29	16	15	2	4198	7.76	3653	1	1	0	0	55280	54036	2004-09-09	6109	1698012	103	0	0	Moldova	Moldova
-Q217113	Analisi dimensionale	Fisica	42	#N/A	31321	31330	3	0	0	2	664	2.12	682	0	0	0	0	2460	2460	2006-10-12	5346	90273	1	0	0		
+Q217113	Analisi dimensionale	Fisica	42	42	31321	31330	3	0	0	2	664	2.12	682	0	0	0	0	2460	2460	2006-10-12	5346	90273	1	0	0		
 Q217175	Ordine architettonico	Storia dell'arte	174	171	14798	15195	2	3	3	0	740	5.00	740	0	0	0	0	1468	1468	2004-12-20	6007	377040	16	0	0	Columns	
 Q217196	Regno di Castiglia e León	Storia	33	31	49582	49572	0	41	41	5	1982	4.00	1982	0	0	0	0	304	304	2007-01-25	5241	71616	10	0	0	Crown of Castile	
 Q217200	Seconda rivoluzione industriale	Storia	650	630	39160	38948	19	15	15	5	2111	5.39	2098	0	0	0	0	3426	3426	2007-01-09	5257	1404438	102	0	0	Industrial revolution	
@@ -1289,7 +1289,7 @@ Q2185042	Pittura fiamminga	Storia dell'arte	188	189	29363	29367	5	9	9	6	452	1.54
 Q218678	Campagna del Nordafrica	Storia	120	115	174696	175419	287	68	73	19	5629	3.22	5970	0	0	0	0	4528	4528	2005-09-17	5736	259198	24	0	0	World War II in North Africa	North African campaign
 Q219	Bulgaria	Geografia	618	626	109050	107583	72	27	27	7	5186	4.76	4961	0	0	0	0	15149	15149	2004-02-16	6315	1336398	-35	0	0	Bulgaria	България
 Q219060	Stato di Palestina	Geografia	704	549	147483	142722	182	29	29	24	4617	3.13	4233	0	0	0	0	32404	30490	2008-11-24	4572	1522129	765	0	0	State of Palestine	
-Q219142	Notazione scientifica	Fisica	121	#N/A	6330	5831	1	4	0	0	846	13.36	404	0	0	0	0	555	555	2004-08-28	6121	262494	-41	0	0		
+Q219142	Notazione scientifica	Fisica	121	130	6330	5831	1	4	0	0	846	13.36	404	0	0	0	0	555	555	2004-08-28	6121	262494	-41	0	0		
 Q2192	Graphics Interchange Format	Informatica	122	126	8316	8261	6	4	4	1	464	5.58	421	0	0	2	0	41	41	2003-11-09	6414	263960	-17	0	0	GIF file format	
 Q219207	Trasformazione galileiana	Fisica	27	#N/A	5061	5053	0	2	2	0	357	7.05	349	0	0	0	0	36	36	2005-01-22	5974	58079	11	0	0	Galilean transformation	
 Q219447	Bill of Rights	Storia	166	144	5803	5494	3	1	1	4	278	4.79	278	0	0	0	0	3076	3076	2008-10-22	4605	358693	106	0	0	English Bill of Rights of 1689	
@@ -2019,9 +2019,9 @@ Q3828908	Le occasioni	Letteratura italiana	34	34	3064	2925	1	0	0	4	555	18.11	555
 Q3829715	Legge Coppino	Storia	74	76	5609	5350	6	0	0	2	415	7.40	415	0	0	0	0	393	393	2007-06-27	5088	160465	-7	0	0		
 Q3829739	Legge costituzionale	Diritto e Economia	230	223	14324	14066	3	1	1	0	915	6.39	915	0	0	2	1	1181	1181	2004-11-26	6031	496681	34	0	0		
 Q3829748	Legge delega	Diritto e Economia	67	1	5459	5311	1	0	0	2	330	6.05	330	0	0	0	0	304	304	2005-05-30	5846	144013	-47	0	0		
-Q3829749	Legge dell'assortimento indipendente	Biologia	77	77	4510	#N/A	0	2	#N/A	#N/A	1599	35.45	#N/A	1	1	0	0	1456	#N/A	2006-11-28	5299	167438	1	0	0		
-Q3829752	Legge della conservazione della massa (chimica)	Chimica	143	122	6155	#N/A	2	1	#N/A	#N/A	331	5.38	297	1	1	0	0	161	#N/A	2009-05-27	4388	309901	107	0	0		
-Q3829757	Legge della segregazione	Biologia	83	83	3224	#N/A	0	1	#N/A	#N/A	600	18.61	#N/A	1	1	0	0	38	#N/A	2007-06-07	5108	179051	-1	0	0		
+Q3829749	Legge dell'assortimento indipendente	Biologia	77	77	4510	4355	0	2	0	3	1599	35.45	1509	1	1	0	0	1456	#N/A	2006-11-28	5299	167438	1	0	0		
+Q3829752	Legge della conservazione della massa (chimica)	Chimica	143	122	6155	5966	2	1	0	0	331	5.38	297	1	1	0	0	161	#N/A	2009-05-27	4388	309901	107	0	0		
+Q3829757	Legge della segregazione	Biologia	83	83	3224	3224	0	1	1	1	600	18.61	600	1	1	0	0	38	#N/A	2007-06-07	5108	179051	-1	0	0		
 Q3831119	Letteratura futurista	Letteratura italiana	87	89	6556	6556	2	2	2	0	340	5.19	340	0	0	0	0	295	295	2008-03-01	4840	187949	-8	0	0		
 Q3831189	Lettre à Monsieur Chauvet sur l'unité de temps et de lieu dans la tragédie	Letteratura italiana	10	9	3387	3387	0	1	1	0	472	13.94	472	1	1	0	0	50	50	2007-02-21	5214	21160	2	0	0		
 Q3831756	Libertà personale	Diritto e Economia	38	37	1682	1682	0	0	0	0	337	20.04	337	1	1	0	0	49	49	2010-10-05	3892	82838	8	0	0		
@@ -2030,7 +2030,7 @@ Q3832975	Lingua volgare	Letteratura italiana	161	155	8429	8371	1	1	1	0	907	10.76
 Q3833332	Scuola toscana	Letteratura italiana	20	17	5102	5101	0	0	0	0	187	3.67	187	2	2	0	0	50	50	2006-12-01	5296	43636	17	0	0		
 Q38370	Enrico VIII d'Inghilterra	Storia	1279	1189	47827	47381	13	21	21	15	1100	2.30	1101	0	0	0	0	6128	5801	2005-02-25	5940	2765644	444	0	0	Henry VIII of England	Henry VIII of England
 Q383973	Produzione di energia elettrica	Tecnologia	99	99	18855	18833	15	9	9	0	798	4.23	793	1	1	0	0	2250	2250	2004-10-22	6066	213893	-2	0	0	Electric power generation	
-Q3840065	Massa atomica	Chimica	143	130	16791	#N/A	4	1	#N/A	#N/A	3870	23.05	2932	2	2	0	0	93	#N/A	2005-08-29	5755	310131	68	0	0		
+Q3840065	Massa atomica	Chimica	143	130	16791	15997	4	1	0	0	3870	23.05	2932	2	2	0	0	93	#N/A	2005-08-29	5755	310131	68	0	0		
 Q384014	Diritto di famiglia	Diritto e Economia	73	72	8345	8346	1	0	0	3	159	1.91	159	0	0	0	0	2093	2093	2006-03-03	5569	157588	3	0	0	Family law	
 Q38433	Principi della dinamica	Fisica	380	40	34076	172	9	3	0	0	1079	3.17	153	0	0	0	3	7645	2971	2005-05-19	5857	822284	4	0	0	Newton's laws of motion	
 Q385239	Sistema monetario europeo	Storia	89	89	9868	9702	2	1	1	3	2446	24.79	2449	0	0	0	0	217	217	2006-02-16	5584	193458	4	0	0		
@@ -2062,37 +2062,37 @@ Q3884076	Opere di Gabriele D'Annunzio	Letteratura italiana	127	122	53167	88936	1
 Q3884085	Opere di Ugo Foscolo	Letteratura italiana	108	103	28720	28663	5	3	3	14	304	1.06	304	1	1	0	0	2093	2093	2006-11-19	5308	233666	24	0	0		
 Q3884093	Opere e poetica di Giovanni Verga	Letteratura italiana	186	177	37971	37981	16	7	7	0	113	0.30	113	0	0	0	0	10140	10140	2006-11-30	5297	402078	47	0	0		
 Q3884099	Operette morali	Letteratura italiana	154	148	82020	82017	55	25	25	19	3222	3.93	3222	0	0	0	0	14621	14621	2007-06-17	5098	332757	32	0	0	Books by Giacomo Leopardi	Opera:Operette morali
-Q3885112	Ordinamento giudiziario in Italia	Cittadinanza e costituzione	66	#N/A	43662	42867	10	4	0	#N/A	488	1.12	448	0	0	0	0	3988	3988	2005-09-19	5734	143561	2	0	0		
-Q3885626	Organi costituzionali italiani	Cittadinanza e costituzione	140	#N/A	18101	17565	23	7	#N/A	#N/A	211	1.17	147	0	0	0	0	4083	4083	2008-06-20	4729	303294	35	0	0		
+Q3885112	Ordinamento giudiziario in Italia	Cittadinanza e costituzione	66	66	43662	42867	10	4	0	5	488	1.12	448	0	0	0	0	3988	3988	2005-09-19	5734	143561	2	0	0		
+Q3885626	Organi costituzionali italiani	Cittadinanza e costituzione	140	133	18101	17565	23	7	0	0	211	1.17	147	0	0	0	0	4083	4083	2008-06-20	4729	303294	35	0	0		
 Q3885695	Organizzazioni armate di estrema destra in Italia	Storia	19	17	6802	6561	0	4	0	0	5324	78.27	5144	1	1	0	0	4998	4998	2006-04-22	5519	41503	13	0	0		
 Q3885696	Organizzazioni armate di sinistra in Italia	Storia	33	32	19931	19956	0	6	6	0	17279	86.69	17304	1	1	0	0	2417	2417	2005-12-21	5641	71722	7	0	0		
-Q3886299	Ortografia della lingua italiana	Grammatica italiana	44	#N/A	83916	83865	40	0	0	5	438	0.52	438	2	2	0	0	22307	22257	2008-12-03	4563	94855	-11	0	0		
+Q3886299	Ortografia della lingua italiana	Grammatica italiana	44	46	83916	83865	40	0	0	5	438	0.52	438	2	2	0	0	22307	22257	2008-12-03	4563	94855	-11	0	0		
 Q3886794	Ossi di seppia	Letteratura italiana	212	206	17426	17170	3	1	0	8	116	0.67	116	1	1	0	0	1210	1210	2004-09-01	6117	457340	28	0	0		
 Q38918	Sistema di numerazione romano	Matematica	562	575	24943	24299	7	3	3	0	379	1.52	376	0	0	0	0	5710	5710	2004-01-21	6341	1215964	-61	0	0	Roman numerals	
 Q389380	Il visconte dimezzato	Letteratura italiana	259	259	10802	10762	2	1	1	0	982	9.09	982	0	0	0	0	125	125	2006-01-31	5600	560073	0	0	0		
 Q3895154	Paralipomeni della Batracomiomachia	Letteratura italiana	63	64	4407	4441	1	2	2	0	956	21.69	967	0	0	1	0	50	50	2006-12-08	5289	136597	-2	0	0		
-Q3896644	Participio latino	Grammatica latina	149	#N/A	12507	11964	1	0	0	0	303	2.42	306	0	0	1	0	47	47	2008-08-12	4676	322101	-44	0	0		
+Q3896644	Participio latino	Grammatica latina	149	158	12507	11964	1	0	0	0	303	2.42	306	0	0	1	0	47	47	2008-08-12	4676	322101	-44	0	0		
 Q3896851	Partito di massa	Storia	40	36	3589	3522	0	0	0	2	482	13.43	471	1	0	0	0	229	36	2006-03-29	5543	85519	17	0	0		
-Q3897842	Patrizia Valduga	Letteratura italiana	33	#N/A	17904	16956	14	1	1	9	639	3.57	1	0	0	0	0	5095	5095	2007-06-09	5106	70474	13	0	0	Patrizia Valduga	
+Q3897842	Patrizia Valduga	Letteratura italiana	33	30	17904	16956	14	1	1	9	639	3.57	1	0	0	0	0	5095	5095	2007-06-09	5106	70474	13	0	0	Patrizia Valduga	
 Q389813	Radice quadrata di 2	Matematica	95	94	12779	12804	0	2	2	0	1268	9.92	1292	0	0	0	0	209	209	2008-01-16	4885	204416	0	0	0	Square root of 2	
-Q38994	Indice di sviluppo umano	Geografia	350	#N/A	12726	11124	4	4	2	0	2399	18.85	2136	0	0	0	0	4565	-	2004-10-28	6060	757267	68	0	0	Human Development Index	UN Human Development Index
-Q3899885	Perifrastica passiva	Grammatica latina	86	#N/A	6668	6668	2	0	0	0	3178	47.66	3178	0	0	0	0	3514	3514	2007-04-11	5165	186161	19	0	0		
-Q3899904	Periodo (linguistica)	Grammatica italiana	63	#N/A	3974	3885	0	0	0	3	715	17.99	624	1	1	0	0	1051	1000	2005-11-14	5678	136179	6	0	0		
-Q3899915	Periodo ipotetico indipendente latino	Grammatica latina	17	#N/A	1673	1673	0	0	0	0	1366	81.65	1366	0	0	0	0	47	47	2008-04-20	4790	36246	35	0	0		
-Q39	Svizzera	Geografia	1867	#N/A	250467	248012	189	118	117	3	8977	3.58	8980	0	0	0	3	80086	77980	2003-06-10	6566	4036944	-202	0	0	Switzerland	Autore:Confederazione Svizzera
-Q3902076	Pianto antico	Letteratura italiana	174	#N/A	10267	10267	9	2	2	11	201	1.96	201	0	0	0	0	2835	2835	2008-02-21	4849	375332	18	0	0		
+Q38994	Indice di sviluppo umano	Geografia	350	337	12726	11124	4	4	2	0	2399	18.85	2136	0	0	0	0	4565	-	2004-10-28	6060	757267	68	0	0	Human Development Index	UN Human Development Index
+Q3899885	Perifrastica passiva	Grammatica latina	86	82	6668	6668	2	0	0	0	3178	47.66	3178	0	0	0	0	3514	3514	2007-04-11	5165	186161	19	0	0		
+Q3899904	Periodo (linguistica)	Grammatica italiana	63	62	3974	3885	0	0	0	3	715	17.99	624	1	1	0	0	1051	1000	2005-11-14	5678	136179	6	0	0		
+Q3899915	Periodo ipotetico indipendente latino	Grammatica latina	17	10	1673	1673	0	0	0	0	1366	81.65	1366	0	0	0	0	47	47	2008-04-20	4790	36246	35	0	0		
+Q39	Svizzera	Geografia	1867	1909	250467	248012	189	118	117	3	8977	3.58	8980	0	0	0	3	80086	77980	2003-06-10	6566	4036944	-202	0	0	Switzerland	Autore:Confederazione Svizzera
+Q3902076	Pianto antico	Letteratura italiana	174	170	10267	10267	9	2	2	11	201	1.96	201	0	0	0	0	2835	2835	2008-02-21	4849	375332	18	0	0		
 Q3902653	Piccolo mondo antico (romanzo)	Letteratura italiana	80	0	17524	17360	0	1	1	21	743	4.24	742	2	0	0	0	50	50	2006-01-17	5614	172820	2	0	0		Opera:Piccolo mondo antico
 Q3902654	Piccolo mondo moderno	Letteratura italiana	12	12	5814	5754	2	0	0	5	86	1.48	86	0	0	0	0	564	564	2006-01-17	5614	26410	1	0	0		Opera:Piccolo mondo moderno
-Q390557	Multi-touch	Informatica	16	#N/A	10655	10655	10	2	2	0	1139	10.69	1139	0	0	0	0	1032	1032	2007-12-23	4909	33658	-5	0	0	Multi-touch	
-Q3906988	Poeta vate	Letteratura italiana	131	#N/A	2855	2501	3	0	0	0	2262	79.23	2142	1	1	0	0	50	50	2007-10-25	4968	283869	1	0	0		
+Q390557	Multi-touch	Informatica	16	16	10655	10655	10	2	2	0	1139	10.69	1139	0	0	0	0	1032	1032	2007-12-23	4909	33658	-5	0	0	Multi-touch	
+Q3906988	Poeta vate	Letteratura italiana	131	131	2855	2501	3	0	0	0	2262	79.23	2142	1	1	0	0	50	50	2007-10-25	4968	283869	1	0	0		
 Q3906998	Poetica del frammento	Letteratura italiana	14	0	3041	3041	0	0	0	0	577	18.97	577	1	1	0	0	50	50	2005-03-08	5929	31154	4	0	0		
 Q3907003	Pensiero e poetica di Giacomo Leopardi	Letteratura italiana	298	292	99561	98374	164	7	7	36	3162	3.18	3162	0	0	0	0	20791	20088	2010-04-18	4062	645005	33	0	0		
 Q3907449	Politica interna italiana alla fine del XIX secolo	Storia	4	4	7277	7216	1	3	3	0	301	4.14	299	1	0	0	0	36	36	2009-01-10	4525	9527	1	0	0		
-Q3909444	Posta elettronica certificata	Informatica	390	#N/A	44168	41160	25	0	0	0	768	1.74	846	4	4	2	0	60795	60587	2007-01-20	5246	842168	-15	0	0		
+Q3909444	Posta elettronica certificata	Informatica	390	393	44168	41160	25	0	0	0	768	1.74	846	4	4	2	0	60795	60587	2007-01-20	5246	842168	-15	0	0		
 Q3909466	Postilla Amiatina	Letteratura italiana	11	10	3337	3337	0	0	0	0	955	28.62	955	0	0	0	0	50	50	2006-11-10	5317	23042	2	0	0		Cartula del Monte Amiata
-Q3910094	Predicato nominale	Grammatica italiana	209	#N/A	2373	2373	2	0	0	1	264	11.13	264	0	0	0	0	391	306	2007-01-16	5250	451560	106	0	0		
-Q3911174	Pressione arteriosa sistemica	#N/A	397	#N/A	15476	#N/A	10	1	#N/A	#N/A	688	4.45	#N/A	0	0	0	0	12019	12019	2006-12-02	5295	858938	-226	0	0		
-Q3913	Sistema numerico binario	Informatica	416	#N/A	6689	6689	0	0	0	0	858	12.83	858	0	0	0	0	4415	4415	2003-12-16	6377	899149	-18	0	0	Binary numeral system	
+Q3910094	Predicato nominale	Grammatica italiana	209	187	2373	2373	2	0	0	1	264	11.13	264	0	0	0	0	391	306	2007-01-16	5250	451560	106	0	0		
+Q3911174	Pressione arteriosa sistemica	Biologia	397	443	15476	15475	10	1	1	0	688	4.45	688	0	0	0	0	12019	12019	2006-12-02	5295	858938	-226	0	0		
+Q3913	Sistema numerico binario	Informatica	416	420	6689	6689	0	0	0	0	858	12.83	858	0	0	0	0	4415	4415	2003-12-16	6377	899149	-18	0	0	Binary numeral system	
 Q391511	Biennio rosso in Italia	Storia	258	251	90665	90314	171	8	8	32	2133	2.35	2194	0	0	0	0	29408	28691	2005-12-16	5646	557858	38	0	0		
 Q3921569	Prima Repubblica (Italia)	Storia	232	228	38557	38475	36	5	5	18	928	2.41	928	0	0	0	0	4447	4447	2006-10-27	5331	501997	20	0	0		
 Q3921587	Prima coniugazione	Grammatica italiana	55	60	9665	9635	2	0	0	0	598	6.19	572	0	0	0	0	1087	1003	2009-10-31	4231	119764	-20	0	0		
@@ -2135,7 +2135,7 @@ Q3929379	Ragazzi di vita	Letteratura italiana	153	156	18058	18061	1	1	1	3	127	0.
 Q39297	Volume	Fisica	194	202	8124	7350	1	9	8	1	962	11.84	962	0	0	0	0	768	84	2004-01-27	6335	418702	-41	0	0	Volumes	
 Q3930234	Rapporti tra 'ndrangheta e politica	Storia	9	6	91159	89018	161	1	1	0	530	0.58	530	1	1	0	0	8459	7304	2008-12-27	4539	18581	10	0	0		
 Q3930272	Rappresentazione dei numeri complessi	Matematica	37	39	6927	6927	1	1	1	2	512	7.39	512	0	0	0	0	40	40	2006-04-27	5514	79635	-12	0	0		
-Q3931202	Reazioni di sintesi	#N/A	13	13	1383	#N/A	0	1	#N/A	#N/A	683	49.39	#N/A	1	1	0	0	37	37	2009-05-03	4412	27846	2	0	0		
+Q3931202	Reazioni di sintesi	Chimica	13	13	1383	#N/A	0	1	#N/A	#N/A	683	49.39	#N/A	1	1	0	0	37	37	2009-05-03	4412	27846	2	0	0		
 Q3931574	Referendum abrogativi in Italia del 1981	#N/A	12	#N/A	17077	#N/A	3	0	#N/A	#N/A	128	0.75	#N/A	0	#N/A	0	0	2166	#N/A	2006-06-06	5474	25443	58	0	0		
 Q3931588	Referendum abrogativo in Italia del 1974	#N/A	22	#N/A	15698	#N/A	12	4	#N/A	#N/A	438	2.79	#N/A	0	#N/A	0	0	84	#N/A	2006-06-03	5477	47847	109	0	0	Italian divorce referendum	
 Q3932296	Relational database management system	Informatica	34	33	5984	5988	1	0	0	0	504	8.42	508	2	2	1	2	886	886	2005-07-19	5796	74273	7	0	0		
@@ -2494,7 +2494,7 @@ Q494603	Piccola circolazione	Scienze	134	128	2025	2024	0	1	1	0	1731	85.48	1730	1
 Q4948	Repubblica di Venezia	Storia	605	592	121501	118178	167	41	36	19	5549	4.57	4519	0	0	0	0	114235	114188	2004-08-16	6133	1309056	70	0	0	Republic of Venice	Autore:Repubblica di Venezia
 Q4951	Corte di giustizia dell'Unione europea	Cittadinanza e costituzione	179	184	23630	22643	9	1	1	0	1299	5.50	1153	0	0	0	0	544	544	2004-04-24	6247	386108	-26	0	0	Court of Justice of the European Union	Autore:Corte di Giustizia Europea
 Q495300	Andrea Zanzotto	Letteratura italiana	67	67	97290	97222	67	4	5	27	542	0.56	542	0	0	0	2	10837	10101	2004-09-23	6095	145099	3	0	0	Andrea Zanzotto	
-Q495423	Lapillo	#N/A	29	#N/A	1322	#N/A	0	1	#N/A	#N/A	1021	77.23	#N/A	1	#N/A	0	0	49	#N/A	2005-11-13	5679	61787	-2	0	0	Lapilli	
+Q495423	Lapillo	Scienze della Terra	29	3	1322	21	0	1	0	0	1021	77.23	18	1	0	0	0	49	0	2005-11-13	5679	61787	-2	0	0	Lapilli	
 Q497173	Ossiacidi	#N/A	91	86	5887	5770	2	15	#N/A	0	1188	20.18	1188	1	1	0	0	790	790	2004-05-30	6211	196889	23	0	0	Oxoacids	
 Q497743	Economia circolare	Cittadinanza e costituzione	138	117	18742	11149	16	1	1	0	1916	10.22	462	1	1	0	0	5533	3875	2015-10-28	2043	298356	105	0	0	Circular economy	
 Q499327	Maschile	Grammatica italiana	7	7	1214	1214	0	0	0	0	902	74.30	902	0	0	0	0	83	0	2007-08-28	5026	14495	-1	0	0		
@@ -2504,7 +2504,7 @@ Q50380212	Galleggiante (fisica)	Fisica	4	4	1258	986	1	1	0	0	895	71.14	788	1	1	0	
 Q504	Émile Zola	Letteratura italiana	392	384	96171	94521	140	24	25	17	1714	1.78	1	0	0	0	0	11277	11277	2005-05-04	5872	848314	42	0	0	Émile Zola	Autore:Émile Zola
 Q5043	Cristianesimo	Storia	802	797	51137	50681	27	14	15	27	1026	2.01	1025	0	0	0	0	57822	57563	2003-08-18	6497	1734794	28	0	0	Christianity	
 Q5051	Aggettivo possessivo	Grammatica italiana	112	122	1503	1538	0	0	0	1	1277	84.96	1349	0	0	0	0	1586	1507	2007-04-03	5173	242119	-47	0	0		
-Q5055020	Disuguaglianza economica	Geografia	74	68	59084	57173	54	4	4	43	1222	2.07	1222	0	0	8	0	8084	2012-07-07	2012-07-07	3251	159907	28	0	0	Economic inequality	
+Q5055020	Disuguaglianza economica	Geografia	74	68	59084	57173	54	4	4	43	1222	2.07	1222	0	0	8	0	8084	-	2012-07-07	3251	159907	28	0	0	Economic inequality	
 Q506	Fiore	Scienze	263	276	11188	11195	1	5	5	0	1804	16.12	1811	0	0	0	0	4790	4790	2005-04-22	5884	569022	-62	0	0	Flowers	Flowers
 Q506623	Polarità	#N/A	274	273	4257	4257	0	2	#N/A	1	1686	39.61	#N/A	0	0	0	0	3121	3121	2008-12-08	4558	592867	5	0	0		
 Q50695	Funzione quadratica	Matematica	15	13	12829	12828	3	6	6	1	1874	14.61	1874	0	0	0	0	4053	4053	2010-10-21	3876	33061	9	0	0	Quadratic functions	

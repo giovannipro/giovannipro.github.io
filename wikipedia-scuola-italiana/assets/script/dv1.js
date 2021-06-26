@@ -21,7 +21,7 @@ function variation_perc(now,prev,parameter){
 		perc = (100-(now*100)/prev)
 	}
 
-	if (perc < 1 && perc >-1){
+	if (perc <= 0.5 && perc >=-0.5){
 		output = perc.toFixed(1) + "%";
 	}
 	else {
@@ -302,10 +302,10 @@ function dv1(year,the_subject,sort) {
             	if(year != 2020){
             		let diff_issues = d.issues - d.issues_prev
 	            	if (diff_issues > 0){
-	            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+	            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
 	            	}
 	            	else {
-	            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+	            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
 	            	}
             	}
 

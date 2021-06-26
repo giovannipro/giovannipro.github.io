@@ -442,7 +442,7 @@ Q8880	Commissione europea	Cittadinanza e costituzione		Superiori	Comunità inter
 Q8886	Consiglio europeo	Cittadinanza e costituzione		Superiori	Comunità internazionale		0	1	281	350	504619	29080	14	38	2	1423	4.89	0	0	0	32731	2004-04-20	5886
 Q8889	Parlamento europeo	Cittadinanza e costituzione		Superiori	Comunità internazionale		???	1	740	1165	1330588	110233	127	12	12	4513	4.09	0	1	1	8662	2004-04-20	5886
 Q187	Il Canto degli Italiani	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		???	1	837	703	1503737	97229	155	23	4	1941	2.00	0	0	0	152574	2004-03-22	5915
-#N/A	Parlamento della Repubblica Italiana	Cittadinanza e costituzione		Superiori	La Costituzione e l'ordinamento italiano		0	1	805	973	1446253	53530	29	8	0	1396	2.61	1	0	0	20594	2004-03-18	5919
+Q1117578	Parlamento italiano	Cittadinanza e costituzione	ex Parlamento della Repubblica Italiana	Superiori	La Costituzione e l'ordinamento italiano		0	1	805	973	1446253	53530	29	8	0	1396	2.61	1	0	0	20594	2004-03-18	5919
 Q1307214	Forma di governo	Cittadinanza e costituzione		Superiori	Stato e Costituzione		0	1	325	272	583250	16078	2	1	0	527	3.28	0	0	0	3577	2004-03-14	5923
 Q7184	Organizzazione del Trattato dell'Atlantico del Nord	Cittadinanza e costituzione		Medie	Terzo anno		0	1	843	795	1515165	42413	18	13	1	2006	4.73	1	0	0	11024	2004-01-26	5971
 Q7178	Croce Rossa e Mezzaluna Rossa Internazionale	Cittadinanza e costituzione		Medie	Terzo anno		1.3	1	128	112	230469	18961	7	16	2	837	4.41	0	0	0	742	2004-01-10	5987
@@ -616,12 +616,12 @@ Q2142166	Paradosso di Achille e la tartaruga	Filosofia		Superiori	Filosofia nell
 Q2733908	Empiriocriticismo	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	10	10	17658	9948	9	0	5	633	6.36	0	0	0	792	2008-11-05	4226
 Q178709	Giambattista Vico	Filosofia		Superiori	Illuminismo		???	1	207	193	372838	67381	49	8	5	2	0.00	0	0	0	16041	2008-10-30	4232
 Q264592	Neohegelismo	Filosofia		Superiori	Novecento		???	1	11	13	20000	6391	2	0	3	497	7.78	0	0	0	39	2008-08-19	4304
-#N/A	Fisica aristotelica	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	35	32	63382	19847	20	3	4	1091	5.50	0	0	0	79	2008-06-21	4363
+Q1248980	Fisica aristotelica	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	35	32	63382	19847	20	3	4	1091	5.50	0	0	0	79	2008-06-21	4363
 Q463846	Pierre Charron	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	2	2	4172	4489	0	2	5	1	0.02	0	0	0	39	2008-06-10	4374
 Q76516	Richard Avenarius	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	3	3	5512	21311	6	1	2	1	0.00	0	0	0	39	2008-05-24	4391
 Q2636432	Spiritualismo	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	39	39	69599	8107	8	1	1	2315	28.56	0	0	0	355	2008-05-16	4399
 Q264028	Giovanni di Salisbury	Filosofia		Superiori	Filosofia nell'età medievale		???	1	11	11	19206	8097	8	2	8	316	3.90	0	0	0	3554	2008-03-29	4447
-#N/A	La gaia scienza	Filosofia		Superiori	Tra settecento e ottocento		???	1	66	58	119064	13370	12	2	2	1161	8.68	0	0	0	39	2007-07-08	4712
+Q1061693	La gaia scienza	Filosofia		Superiori	Tra settecento e ottocento		???	1	66	58	119064	13370	12	2	2	1161	8.68	0	0	0	39	2007-07-08	4712
 Q160460	Al-Farabi	Filosofia		Superiori	Filosofia nell'età medievale		???	1	11	14	20568	13368	10	2	15	833	6.23	0	0	0	39	2007-06-11	4739
 Q3745515	Filosofia latina	Filosofia		Superiori	Filosofia latina		???	1	18	15	31470	17150	3	4	4	331	1.93	0	0	0	39	2007-04-09	4802
 Q190944	Jean Bodin	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	46	42	82642	10955	3	1	2	395	3.61	0	0	0	543	2007-04-05	4806
@@ -892,9 +892,9 @@ Q1987553	Stati del Nord America	Geografia			Americhe	Geografia politica	???	1	90
 Q912825	Stati dell'America meridionale	Geografia			Americhe		???	1	52	68	93992	5649	0	16	0	267	4.73	1	0	0	0	2014-07-29	2134
 Q101420429	Patrimoni dell'umanità d'Italia	Geografia			Penisola italiana	Patrimoni UNESCO in Italia	???	1	66	149	117790	65999	24	130	0	531	0.80	0	0	0	6672	2014-01-03	2341
 Q781650	Geografia dell'Africa	Geografia			Africa	Geografia fisica	???	1	155	116	277770	93335	51	37	11	4213	4.51	0	0	0	1170	2012-12-13	2727
-Q5055020	Disuguaglianza economica	Geografia			Geografia politica ed economica	Squilibri nello sviluppo	???	1	68	73	122725	57173	52	4	43	1222	2.14	0	4	0	2012-07-07	2012-07-07	2886
+Q5055020	Disuguaglianza economica	Geografia			Geografia politica ed economica	Squilibri nello sviluppo	???	1	68	73	122725	57173	52	4	43	1222	2.14	0	4	0	-	2012-07-07	2886
 Q228201	Stati dell'Africa	Geografia			Africa	Geografia politica	???	1	350	324	629111	20518	0	73	0	10820	52.73	0	0	0	3037	2011-12-13	3093
-Q1569011	Storia dell'urbanistica	Geografia			Geografia fisica	Evoluzione della città	???	1	33	24	59457	32666	19	25	5	579	1.77	0	0	0	2011-01-29	2011-01-29	3411
+Q1569011	Storia dell'urbanistica	Geografia			Geografia fisica	Evoluzione della città	???	1	33	24	59457	32666	19	25	5	579	1.77	0	0	0	-	2011-01-29	3411
 Q83356	Convenzione di Schengen	Geografia			Europa	Convenzione di Schengen	???	1	266	195	478847	17725	26	1	0	975	5.50	0	0	0	5584	2010-12-19	3452
 Q782287	Stati dell'Oceania	Geografia			Oceania e poli	Geografia politica	???	1	147	88	263965	12472	1	42	1	533	4.27	0	0	0	0	2010-09-18	3544
 Q958	Sudan del Sud	Geografia			Africa	Sudan del Sud	???	1	187	207	336584	31306	37	9	3	4061	12.97	0	0	0	19230	2010-03-20	3726
@@ -1485,7 +1485,7 @@ Q6661985	Elaborazione dati	Informatica		Medie	Introduzione		1	1	28	29	50733	2922
 Q174989	File system	Informatica		Superiori	Sistema operativo e software		2	1	154	144	277314	13471	1	3	0	564	4.19	1	0	0	1140	2004-06-09	5836
 Q189210	Applicazione web	Informatica		Superiori	Reti e internet		2	1	71	81	128401	21052	0	8	0	662	3.14	1	0	0	578	2004-06-06	5839
 Q5300	CPU	Informatica		Superiori	Hardware		2	1	470	440	844001	27761	3	4	1	1649	5.94	1	0	0	12509	2004-06-01	5844
-#N/A	Programmazione orientata agli oggetti	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	160	155	286663	21896	1	0	2	1032	4.71	2	0	1	4951	2004-05-30	5846
+-	Programmazione orientata agli oggetti	Informatica		Superiori	Programmazione in C ed a oggetti		2	1	160	155	286663	21896	1	0	2	1032	4.71	2	0	1	4951	2004-05-30	5846
 Q185092	Diagramma di flusso	Informatica		Superiori	Programmazione		2	1	185	182	332268	5735	0	7	0	1175	20.49	1	0	0	4376	2004-05-25	5851
 Q170130	Grafica vettoriale	Informatica		Superiori	Basi dell'informatica		2	1	146	128	263065	16145	15	3	10	906	5.61	0	0	0	4607	2004-05-16	5860
 Q80006	Programmazione (informatica)	Informatica		Medie	Coding e pensiero computazionale		0	1	99	96	177563	22477	0	8	1	1105	4.92	1	0	0	3693	2004-05-16	5860
@@ -1791,8 +1791,8 @@ Q2571696	Il cavaliere inesistente	Letteratura italiana		Superiori	Anni 60-51	Ita
 Q983263	Masuccio Salernitano	Letteratura italiana		Superiori	XV Secolo	Autori Minori	2.3	1	14	12	24348	4320	0	1	0	2	0.05	1	0	0	854	2005-07-05	5445
 Q704179	Giovanni Villani	Letteratura italiana		Superiori	Secolo XIV	Autori minori	2.3	1	29	30	52859	5433	0	1	0	123	2.26	0	0	1	1081	2005-07-03	5447
 Q670694	Giovanni Berchet	Letteratura italiana		Superiori	Primo Ottocento	Autori Minori	2.4	1	53	48	95329	7939	1	1	24	0	0.00	1	0	0	230	2005-06-25	5455
-#N/A	Rime	Letteratura italiana		Superiori	XV Secolo	Poliziano	2.3	1	3	1	4543	527	0	0	0	53	10.06	0	0	0	0	2005-06-23	5457
-#N/A	Il Gattopardo	Letteratura italiana		Superiori	Dopoguerra	Giuseppe Tomasi di Lampedusa	2.5	1	531	616	953955	24336	8	3	8	840	3.45	0	0	0	8158	2005-06-21	5459
+Q1092462	Le Rime	Letteratura italiana	ex Rime	Superiori	XV Secolo	Poliziano	2.3	1	3	1	4543	527	0	0	0	53	10.06	0	0	0	0	2005-06-23	5457
+Q1193736	Il Gattopardo	Letteratura italiana		Superiori	Dopoguerra	Giuseppe Tomasi di Lampedusa	2.5	1	531	616	953955	24336	8	3	8	840	3.45	0	0	0	8158	2005-06-21	5459
 Q213457	Beat Generation	Letteratura italiana		Superiori	Dopoguerra	Coordinate generali	2.5	1	275	253	494270	31301	30	7	26	1266	4.04	1	0	0	4660	2005-06-06	5474
 Q3794211	Il giorno della civetta	Letteratura italiana		Superiori	Anni 60-57	Leonardo Sciascia	2.5	1	335	343	602081	11845	5	0	3	1375	11.61	0	0	0	8130	2005-06-06	5474
 Q3743412	Valerio Magrelli	Letteratura italiana		Superiori	Dagli anni 80 in poi	Autori vari	2.5	1	35	36	63243	13831	22	2	11	1	0.01	0	0	0	1072	2005-05-29	5482
@@ -1931,26 +1931,26 @@ Q3831189	Lettre à Monsieur Chauvet sur l'unité de temps et de lieu dans la tra
 Q14185	Lingua occitana	Letteratura italiana		Superiori	XI-XII Secolo	Origini delle letterature europee	???	1	214	239	384469	187041	163	15	0	3133	1.68	0	4	0	30553	2005-01-13	5618
 Q177854	Lorenzo de' Medici	Letteratura italiana		Superiori	XV Secolo	Lorenzo de' Medici	2.3	1	2054	2920	3690434	121199	191	29	20	3261	2.69	0	0	0	28631	2007-10-04	4624
 Q48900	Ludovico Ariosto	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	1	422	364	757464	21084	11	7	15	516	2.45	0	0	0	15013	2006-12-09	4923
-#N/A	Luigi Pirandello	Letteratura italiana		Superiori	Primo novecento	Luigi Pirandello	2.5	1	1513	1414	2719380	96450	73	19	29	509	0.53	0	0	0	124284	2008-04-08	4437
+Q1403	Luigi Pirandello	Letteratura italiana		Superiori	Primo novecento	Luigi Pirandello	2.5	1	1513	1414	2719380	96450	73	19	29	509	0.53	0	0	0	124284	2008-04-08	4437
 Q631635	Luigi Pulci	Letteratura italiana		Superiori	XV Secolo	Luigi Pulci	2.3	1	47	41	83656	8100	1	1	36	4	0.05	0	0	0	1417	???	#VALUE!
 Q319557	Matteo Maria Boiardo	Letteratura italiana		Superiori	XV Secolo	Matteo Maria Boiardo	2.3	1	95	83	170732	17526	6	5	11	133	0.76	0	0	0	6581	???	#VALUE!
-#N/A	O papa Bonifazio	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Iacopone da Todi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	O papa Bonifazio	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Iacopone da Todi	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q3880858	Odi (Parini)	Letteratura italiana		Superiori	XVIII Secolo	Giuseppe Parini	???	1	41	39	73987	3585	0	0	0	295	8.23	1	0	0	1118	???	#VALUE!
-#N/A	Olindo e Sofronia	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Olindo e Sofronia	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q3884076	Opere di Gabriele D'Annunzio	Letteratura italiana		Superiori	Primo novecento	Gabriele D'Annunzio	???	1	122	120	219476	88936	18	25	0	205	0.23	0	1	0	50	???	#VALUE!
 Q21670147	Pensiero e poetica di Alessandro Manzoni	Letteratura italiana		Superiori	Primo Ottocento	Alessandro Manzoni	???	1	61	61	110381	79488	103	13	41	1077	1.35	0	0	0	2642	???	#VALUE!
 Q3907003	Pensiero e poetica di Giacomo Leopardi	Letteratura italiana		Superiori	Primo Ottocento	Giacomo Leopardi	???	1	292	275	524674	98374	162	7	36	3162	3.21	0	0	0	20088	2010-04-18	3697
 Q154611	Periodo interbellico	Letteratura italiana		Superiori	Il secolo breve	Coordinate generali	???	1	3	1	24495	24495	3	1	0	296	1.21	6	0	0	4095	???	#VALUE!
-#N/A	Petrarca	Letteratura italiana		Superiori	Secolo XIV	Petrarca	???	1	36	62	65429	32	0	0	0	29	90.63	0	0	0	0	???	#VALUE!
+Q1401	Francesco Petrarca	Letteratura italiana	ex Petrarca	Superiori	Secolo XIV	Petrarca	???	1	36	62	65429	32	0	0	0	29	90.63	0	0	0	0	???	#VALUE!
 Q3902653	Piccolo mondo antico (romanzo)	Letteratura italiana		Superiori	Secondo Ottocento	Antonio Fogazzaro	???	1	0	1	17360	17360	0	1	21	742	4.27	0	0	0	50	???	#VALUE!
 Q25120	Pier Paolo Pasolini	Letteratura italiana		Superiori	Dopoguerra	Pier Paolo Pasolini	2.5	1	1638	1355	2942876	159503	231	24	12	1009	0.63	0	0	0	63972	2005-02-11	5589
 Q334188	Pietro Bembo	Letteratura italiana		Superiori	XVI Secolo	Pietro Bembo	2.3	1	137	129	245808	69951	111	25	16	788	1.13	0	0	0	1643	???	#VALUE!
 Q3906998	Poetica del frammento	Letteratura italiana		Superiori	Primo novecento	Espressionismo	???	1	0	0	3041	3041	0	0	0	577	18.97	1	0	0	50	???	#VALUE!
 Q250414	Agnolo Poliziano	Letteratura italiana	ex Poliziano	Superiori	XV Secolo	Poliziano	???	1	7	5	12394	30	0	0	0	27	90.00	0	0	0	0	???	#VALUE!
 Q153670	Primo Levi	Letteratura italiana		Superiori	Dopoguerra	Primo Levi	2.5	1	1224	1473	2199139	45542	38	13	6	747	1.64	0	0	0	12069	2004-04-11	5895
-#N/A	Proemio dell'Orlando	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Proemio della Gerusalemme liberata	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Rime (Torquato Tasso)	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Proemio	Letteratura italiana	ex Proemio dell'Orlando	Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Proemio della Gerusalemme liberata	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Rime (Torquato Tasso)	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 #N/A	Rime di Guido Cavalcanti	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guido Cavalcanti	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 #N/A	Ritrovamento del senno di Orlando	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q19140289	S'i' fosse foco	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Cecco Angiolieri	???	1	6	1	10675	10675	6	1	3	273	2.56	0	0	0	50	???	#VALUE!
@@ -1978,7 +1978,7 @@ Q314677	Marco Pacuvio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori
 Q350781	Cecilio Stazio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori teatrali minori	2.3	1	17	17	30150	41782	40	6	42	1566	3.75	0	0	0	6042	2006-03-25	5182
 Q298729	Gaio Lucilio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	La satira latina	2.3	1	44	43	79608	8520	9	1	2	135	1.58	0	0	2	2118	2006-03-25	5182
 Q212667	Gneo Nevio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori arcaici	2.3	1	42	44	75964	10891	13	1	8	2	0.02	0	0	0	3353	2006-03-25	5182
-#N/A	Commedia togata	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Il teatro Romano arcaico	2.3	1	16	18	29161	2531	0	0	2	421	16.63	1	0	0	169	2006-02-23	5212
+Q1390924	Commedia togata	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Il teatro Romano arcaico	2.3	1	16	18	29161	2531	0	0	2	421	16.63	1	0	0	169	2006-02-23	5212
 Q47130	Quinto Ennio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori arcaici	2.3	1	79	81	141696	11226	11	2	0	185	1.65	0	0	0	8509	2006-02-07	5228
 Q2038843	Atellana	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Il teatro Romano arcaico	2.3	1	41	43	74066	3527	2	0	0	245	6.95	0	1	0	192	2005-11-15	5312
 Q266459	Poetae novi	Letteratura latina		Superiori	I sec. a.Ch.n.	Poetae novi	2.3	1	34	26	61163	8672	1	0	0	326	3.76	0	0	0	1183	2005-09-12	5376
@@ -2020,7 +2020,7 @@ Q206049	Tavola pitagorica	Matematica		Elementari	Tabelline	Tabelline	0.2	1	69	95
 #N/A	Retta nel piano cartesiano	Matematica		Superiori	Aritmetica	Piano cartesiano	2.2	1	76	52	136443	21193	0	8	0	157	0.74	1	0	0	40	2007-03-02	4840
 #N/A	Divisione dei polinomi	Matematica		Superiori	Algebra	Polinomi	2.1	1	31	30	56175	18656	3	0	0	1118	5.99	0	0	0	865	2007-02-08	4862
 #N/A	Seno (trigonometria)	Matematica		Superiori	Trigonometria	Funzioni base	2.4	1	11	9	19123	31	0	0	0	28	90.32	0	0	0	0	2007-02-02	4868
-#N/A	Criterio di Cartesio	Matematica		Superiori	Aritmetica	Equazioni di II grado	2.2	1	23	29	40843	2719	1	0	0	248	9.12	0	0	0	249	2006-12-11	4921
+Q1379344	Criterio di Cartesio	Matematica		Superiori	Aritmetica	Equazioni di II grado	2.2	1	23	29	40843	2719	1	0	0	248	9.12	0	0	0	249	2006-12-11	4921
 Q3983979	Teorema della permanenza del segno	Matematica		Superiori	Studio di funzioni	Limiti	2.5	1	42	32	76109	7977	0	1	0	408	5.11	0	0	0	818	2006-11-28	4934
 #N/A	Teorema del confronto	Matematica		Superiori	Studio di funzioni	Limiti	2.5	1	69	62	124652	6815	0	1	3	907	13.31	0	0	0	40	2006-11-27	4935
 Q3984062	Teorema di unicità del limite	Matematica		Superiori	Studio di funzioni	Limiti	2.5	1	28	21	50839	6154	2	0	4	352	5.72	0	0	0	40	2006-11-23	4939
@@ -2256,10 +2256,10 @@ Q2632167	Energie non rinnovabili	Scienze		Medie	Energia		1	1	147	131	264794	3524
 Q192627	Mimetismo	Scienze		Medie	Vivere insieme		1	1	70	64	126341	12411	10	12	6	1830	14.74	0	0	1	37	2006-05-18	5128
 Q179635	Trasmissione del calore	Scienze		Medie	Temperatura, calore e i loro effetti		1	1	145	117	259918	8812	4	1	4	591	6.71	0	0	0	2777	2006-05-04	5142
 Q97372079	Fattore Rh	Scienze		Medie	Corpo umano		1	1	306	309	550025	6056	3	0	1	726	11.99	1	0	0	92	2006-02-17	5218
-#N/A	Predazione	Scienze		Medie	Vivere insieme		1	1	43	44	77504	18648	0	23	2	561	3.01	0	0	0	974	2006-01-18	5248
+Q170430	Predazione	Scienze		Medie	Vivere insieme		1	1	43	44	77504	18648	0	23	2	561	3.01	0	0	0	974	2006-01-18	5248
 Q877674	Tatto	Scienze		Medie	Corpo umano		1	1	63	62	112686	3013	0	2	0	848	28.14	1	0	0	37	2006-01-18	5248
-#N/A	Organi di senso	Scienze		Medie	Corpo umano		1	1	133	114	238271	10022	1	5	0	733	7.31	0	0	0	1498	2006-01-16	5250
-#N/A	Archaea	Scienze		Medie	Essere vivente		1	1	130	137	234334	13748	4	1	0	1326	9.65	1	3	0	2052	2005-12-17	5280
+Q11101	Organi di senso	Scienze		Medie	Corpo umano		1	1	133	114	238271	10022	1	5	0	733	7.31	0	0	0	1498	2006-01-16	5250
+Q10872	Archaea	Scienze		Medie	Essere vivente		1	1	130	137	234334	13748	4	1	0	1326	9.65	1	3	0	2052	2005-12-17	5280
 #N/A	Energia idroelettrica	Scienze		Medie	Energia		1	1	216	203	388139	12193	10	2	1	481	3.94	1	0	0	1711	2005-10-28	5330
 Q9606	Midollo spinale	Scienze		Medie	Corpo umano		1	1	324	315	581652	58732	1	4	2	442	0.75	1	0	0	810	2005-10-15	5343
 #N/A	Energia geotermica	Scienze		Medie	Energia		1	1	290	255	521495	40663	32	6	3	3133	7.70	1	0	0	10578	2005-09-05	5383
@@ -2361,42 +2361,42 @@ Q186167	Onde sismiche	Scienze della Terra		Superiori	Terremoti		2	1	155	117	2779
 Q180600	Umidità	Scienze della Terra		Superiori	Atmosfera e clima		2	1	186	168	333839	13336	5	7	0	186	1.39	0	0	0	5267	2006-01-19	5247
 Q891130	Glaciazione	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	120	126	215574	14677	11	4	1	1643	11.19	0	3	0	40529	2005-12-21	5276
 Q7692360	Eruzione vulcanica	Scienze della Terra		Superiori	I vulcani		2	1	173	153	310624	13523	0	3	1	735	5.44	0	0	0	226	2005-11-18	5309
-#N/A	Lapilli	Scienze della Terra		Superiori	I vulcani		2	1	3	3	5318	21	0	0	0	18	85.71	0	0	0	0	2005-11-13	5314
-#N/A	Tempo (meteorologia)	Scienze della Terra		Superiori	Atmosfera e clima		2	1	30	23	53237	5932	2	3	0	724	12.20	1	0	0	49	2005-11-07	5320
-#N/A	Cenere vulcanica	Scienze della Terra		Superiori	I vulcani		2	1	20	17	35501	7939	1	3	0	1388	17.48	0	0	0	256	2005-11-03	5324
+Q495423	Lapillo	Scienze della Terra	ex Lapilli	Superiori	I vulcani		2	1	3	3	5318	21	0	0	0	18	85.71	0	0	0	0	2005-11-13	5314
+Q11663	Tempo (meteorologia)	Scienze della Terra		Superiori	Atmosfera e clima		2	1	30	23	53237	5932	2	3	0	724	12.20	1	0	0	49	2005-11-07	5320
+Q107099	Cenere vulcanica	Scienze della Terra		Superiori	I vulcani		2	1	20	17	35501	7939	1	3	0	1388	17.48	0	0	0	256	2005-11-03	5324
 Q81041	Ciclo dell'acqua	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	194	186	347981	12911	3	6	0	912	7.06	0	0	0	4624	2005-10-31	5327
-#N/A	Carsismo	Scienze della Terra		Superiori	Acque continentali		2	1	244	234	437828	15383	1	16	0	1531	9.95	0	0	0	2175	2005-10-30	5328
+Q16817	Carsismo	Scienze della Terra		Superiori	Acque continentali		2	1	244	234	437828	15383	1	16	0	1531	9.95	0	0	0	2175	2005-10-30	5328
 Q83169	Idrosfera	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	84	76	151574	4860	0	1	0	759	15.62	1	0	0	582	2005-09-23	5365
 Q83371	Sismologia	Scienze della Terra		Superiori	Terremoti		2	1	33	27	59650	44582	16	16	12	924	2.07	0	1	0	6768	2005-09-19	5369
 Q8094	Vento	Scienze della Terra		Superiori	Atmosfera e clima		2	1	284	265	509928	67357	96	21	20	836	1.24	2	0	0	5852	2005-08-24	5395
 Q777913	Roccia carbonatica	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	20	17	36697	2700	0	0	0	441	16.33	1	0	0	299	2005-06-26	5454
 Q47089	Faglia	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	158	110	284758	9418	0	7	2	899	9.55	1	0	0	49	2005-06-25	5455
 Q7937	Clima	Scienze della Terra		Superiori	Atmosfera e clima		2	1	249	235	447525	27344	1	13	1	1805	6.60	0	0	0	1948	2005-06-11	5469
-#N/A	Frana	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	74	67	132491	27585	3	9	6	2288	8.29	0	0	0	4043	2005-06-07	5473
-#N/A	Inquinamento atmosferico	Scienze della Terra		Superiori	Atmosfera e clima		2	1	288	332	518093	43834	10	5	1	1333	3.04	0	0	0	5733	2005-06-06	5474
-#N/A	Eclissi solare	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	239	206	430330	28874	12	9	12	1290	4.47	1	0	0	14088	2005-05-09	5502
+Q167903	Frana	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	74	67	132491	27585	3	9	6	2288	8.29	0	0	0	4043	2005-06-07	5473
+Q131123	Inquinamento atmosferico	Scienze della Terra		Superiori	Atmosfera e clima		2	1	288	332	518093	43834	10	5	1	1333	3.04	0	0	0	5733	2005-06-06	5474
+-	Eclissi solare	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	239	206	430330	28874	12	9	12	1290	4.47	1	0	0	14088	2005-05-09	5502
 Q8074	Nuvola	Scienze della Terra		Superiori	Atmosfera e clima		2	1	250	236	449322	22436	5	17	2	1158	5.16	0	0	0	2603	2005-05-06	5505
 Q80026	Erosione	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	91	87	164325	26190	3	12	6	1099	4.20	0	0	0	621	2005-05-05	5506
-#N/A	Ipocentro	Scienze della Terra		Superiori	Terremoti		2	1	63	45	113383	4559	6	1	2	372	8.16	0	0	0	49	2005-05-04	5507
+Q107410	Ipocentro	Scienze della Terra		Superiori	Terremoti		2	1	63	45	113383	4559	6	1	2	372	8.16	0	0	0	49	2005-05-04	5507
 Q40631	Troposfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	84	82	150552	5007	1	1	1	372	7.43	1	0	0	914	2005-04-30	5511
 Q208791	Falda acquifera	Scienze della Terra		Superiori	Acque continentali		2	1	121	114	217385	7951	1	1	0	480	6.04	1	0	0	49	2005-04-25	5516
 Q52109	Geomorfologia	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	41	35	74363	9448	0	3	4	743	7.86	0	0	0	49	2005-04-24	5517
-#N/A	Epicentro	Scienze della Terra		Superiori	Terremoti		2	1	65	53	116730	2918	4	1	0	551	18.88	0	0	0	49	2005-04-23	5518
+Q106032	Epicentro	Scienze della Terra		Superiori	Terremoti		2	1	65	53	116730	2918	4	1	0	551	18.88	0	0	0	49	2005-04-23	5518
 Q8063	Roccia	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	186	177	334403	12658	2	9	2	1540	12.17	0	1	0	71	2005-04-17	5524
 Q42278	Magma	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	149	127	267346	14533	0	1	1	815	5.61	1	0	0	319	2005-04-12	5529
 Q6999	Oggetto celeste	Scienze della Terra		Superiori	L'universo		2	1	56	65	101300	14116	6	1	3	1905	13.50	0	0	0	1840	2005-04-06	5535
-#N/A	Stratigrafia (geologia)	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		2	1	37	33	67217	7324	0	3	0	392	5.35	0	0	0	1962	2005-04-06	5535
+Q134783	Stratigrafia (geologia)	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		2	1	37	33	67217	7324	0	3	0	392	5.35	0	0	0	1962	2005-04-06	5535
 Q7950	Tettonica delle placche	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	434	346	780786	31047	0	16	5	343	1.10	1	0	0	39428	2005-02-19	5581
 Q40614	Fossile	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		0.3	1	160	158	287633	25034	8	17	6	1007	4.02	1	0	0	8678	2005-01-26	5605
 Q8070	Maremoto	Scienze della Terra		Superiori	Terremoti		2	1	265	231	475329	31409	12	6	9	1641	5.22	0	0	0	13106	2005-01-12	5619
-#N/A	Scala Mercalli	Scienze della Terra		Superiori	Terremoti		2	1	265	166	476867	12742	10	0	0	526	4.13	0	0	0	5464	2004-11-25	5667
+Q170350	Scala Mercalli	Scienze della Terra		Superiori	Terremoti		2	1	265	166	476867	12742	10	0	0	526	4.13	0	0	0	5464	2004-11-25	5667
 Q38768	Scala Richter	Scienze della Terra		Superiori	Terremoti		2	1	582	363	1045628	11988	5	2	0	361	3.01	1	0	0	38607	2004-11-25	5667
 Q9430	Oceano	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	288	236	517644	27138	9	0	1	303	1.12	1	0	1	10393	2004-11-15	5677
 Q23392	Ghiaccio	Scienze della Terra		Superiori	Acque continentali		2	1	147	160	263676	24560	16	9	0	569	2.32	0	0	0	9513	2004-10-14	5709
-#N/A	Sedimento	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	35	32	63726	11501	0	3	2	2129	18.51	0	0	0	5168	2004-09-05	5748
+Q180184	Sedimento	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	35	32	63726	11501	0	3	2	2129	18.51	0	0	0	5168	2004-09-05	5748
 Q82480	Roccia sedimentaria	Scienze della Terra		Superiori	Processo sedimentario e rocce sedimentarie		2	1	162	143	290492	16216	1	4	0	700	4.32	1	0	0	983	2004-08-14	5770
-#N/A	Onda marina	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	99	92	177350	12096	1	6	0	437	3.61	0	0	0	49	2004-08-03	5781
-#N/A	Mare	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	292	243	525211	8753	1	7	0	668	7.63	0	0	0	1166	2004-07-30	5785
+Q165848	Onda marina	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	99	92	177350	12096	1	6	0	437	3.61	0	0	0	49	2004-08-03	5781
+Q165	Mare	Scienze della Terra		Superiori	Idrosfera e le acque oceaniche		2	1	292	243	525211	8753	1	7	0	668	7.63	0	0	0	1166	2004-07-30	5785
 Q22656	Petrolio	Scienze della Terra		Superiori	Processo metamorfico e rocce metamorfiche		???	1	718	711	1290465	53244	17	16	2	769	1.44	1	2	0	23573	2004-07-01	5814
 Q25261	Meteorologia	Scienze della Terra		Superiori	Atmosfera e clima		2	1	148	156	265582	15569	4	12	2	1872	12.02	1	0	0	7545	2004-05-18	5858
 Q323	Big Bang	Scienze della Terra		Superiori	L'universo		0.3	1	524	478	941131	106325	97	9	19	2295	2.16	1	1	0	47180	2004-04-25	5881
@@ -2518,27 +2518,27 @@ Q305176	Armistizio di Villafranca	Storia		Superiori	XVIII-XIX secolo	Armistizio 
 Q3624106	Arte barocca	Storia		Superiori	XVI-XVII secolo		???	1	197	156	353896	37463	2	30	7	370	0.99	0	0	0	36	???	#VALUE!
 Q3624124	Arte della Controriforma	Storia		Superiori	XVI-XVII secolo		???	1	39	33	69968	9156	0	3	3	418	4.57	0	0	0	36	???	#VALUE!
 Q3624153	Arte medievale	Storia		Superiori	Basso medioevo	Arte nel medioevo	???	1	63	57	112741	16239	9	5	8	404	2.49	0	0	0	741	???	#VALUE!
-#N/A	Assedio di Costantinopoli (1453)	Storia		Superiori	Basso medioevo	La caduta di Costantinopoli	???	1	193	181	347000	31459	17	13	19	2525	8.03	0	2	0	5504	???	#VALUE!
+Q160077	Assedio di Costantinopoli (1453)	Storia		Superiori	Basso medioevo	La caduta di Costantinopoli	???	1	193	181	347000	31459	17	13	19	2525	8.03	0	2	0	5504	???	#VALUE!
 Q456993	Assedio di Gerusalemme (1099)	Storia		Superiori	Basso medioevo	Assedio di Gerusalemme	???	1	40	41	71923	26568	10	12	9	372	1.40	0	0	0	457	???	#VALUE!
-#N/A	Assedio di Pavia (773-774)	Storia		Superiori	Alto medioevo	Saccheggio di Pavia	???	1	3	6	4538	9174	8	1	4	912	9.94	1	0	0	1408	???	#VALUE!
+Q114717	Assedio di Pavia (773-774)	Storia		Superiori	Alto medioevo	Saccheggio di Pavia	???	1	3	6	4538	9174	8	1	4	912	9.94	1	0	0	1408	???	#VALUE!
 Q41137	Assiria	Storia		Superiori	Antichità	Gli assiri	???	1	215	213	386813	41248	5	9	18	1261	3.06	0	0	0	4383	???	#VALUE!
 Q3627284	Associazione di tipo mafioso	Storia		Superiori	XX-XXI secolo	Legge La Torre	???	1	88	92	158720	5830	0	0	0	436	7.48	0	0	0	1237	???	#VALUE!
-#N/A	Associazione internazionale dei lavoratori	Storia		Superiori	XVIII-XIX secolo	Prima internazionale	???	1	92	103	165739	16190	3	3	13	1037	6.41	0	0	0	1669	???	#VALUE!
+Q183725	Associazione internazionale dei lavoratori	Storia		Superiori	XVIII-XIX secolo	Prima internazionale	???	1	92	103	165739	16190	3	3	13	1037	6.41	0	0	0	1669	???	#VALUE!
 Q844930	Atene (città antica)	Storia		Superiori	Grecia e Italia preromana	Atene	???	1	168	182	301808	28209	7	2	5	997	3.53	1	0	0	1710	???	#VALUE!
 Q52418	Attacco di Pearl Harbor	Storia		Superiori	XX-XXI secolo	Pearl Harbor	???	1	889	742	1598279	122781	152	28	17	4390	3.58	0	0	0	36473	2005-11-12	5315
-#N/A	Attentati dell'11 settembre 2001	Storia		Superiori	XX-XXI secolo	Attentati 11 settembre	???	1	1307	1492	2348403	238003	376	30	62	4271	1.79	0	0	0	46888	2005-05-13	5498
-#N/A	Attentato di Sarajevo	Storia		Superiori	XX-XXI secolo	Assassinio di Franz Ferdinand	???	1	335	360	602643	81042	85	33	7	2199	2.71	0	0	0	1575	???	#VALUE!
+Q10806	Attentati dell'11 settembre 2001	Storia		Superiori	XX-XXI secolo	Attentati 11 settembre	???	1	1307	1492	2348403	238003	376	30	62	4271	1.79	0	0	0	46888	2005-05-13	5498
+Q192050	Attentato di Sarajevo	Storia		Superiori	XX-XXI secolo	Assassinio di Franz Ferdinand	???	1	335	360	602643	81042	85	33	7	2199	2.71	0	0	0	1575	???	#VALUE!
 Q622649	Atto unico europeo	Storia		Superiori	XX-XXI secolo	Atto Unico del 1987	???	1	59	64	106902	8810	3	0	2	551	6.25	0	0	0	1003	???	#VALUE!
-#N/A	Augusto	Storia		Superiori	Roma	Ottaviano Augusto	???	1	1006	976	1807631	158082	160	47	44	4643	2.94	0	0	0	21458	2003-09-08	6111
+Q1405	Augusto	Storia		Superiori	Roma	Ottaviano Augusto	???	1	1006	976	1807631	158082	160	47	44	4643	2.94	0	0	0	21458	2003-09-08	6111
 Q103237	Australopithecus	Storia		Elementari	Terza elementare	Le prime scimmie antropomorfe	0.3	1	235	243	422276	18622	13	7	5	1462	7.85	0	0	0	15232	???	#VALUE!
 Q2413988	Aviazione nella prima guerra mondiale	Storia		Superiori	XX-XXI secolo		???	1	72	60	130271	92448	73	24	46	1629	1.76	0	1	1	4633	???	#VALUE!
 Q5684	Babilonia	Storia		Superiori	Antichità	Babilonia	???	1	446	419	800886	51107	73	10	21	2370	4.64	0	0	0	7784	2005-06-04	5476
-#N/A	Battaglia d'Inghilterra	Storia		Superiori	XX-XXI secolo	Battaglia d'Inghilterra	???	1	215	205	385937	62499	37	17	17	3834	6.13	1	0	0	5227	???	#VALUE!
+Q154720	Battaglia d'Inghilterra	Storia		Superiori	XX-XXI secolo	Battaglia d'Inghilterra	???	1	215	205	385937	62499	37	17	17	3834	6.13	1	0	0	5227	???	#VALUE!
 Q698178	Battaglia delle Alpi Occidentali	Storia		Superiori	XX-XXI secolo	Italia scende in guerra	???	1	60	77	108324	68547	95	8	16	2058	3.00	0	0	2	7560	???	#VALUE!
 Q830626	Battaglia di Bouvines	Storia		Superiori	Basso medioevo	Battaglia di Bouvines	???	1	80	87	144063	12975	2	14	7	1846	14.23	1	2	0	1523	???	#VALUE!
 Q242644	Battaglia di Caporetto	Storia		Superiori	XX-XXI secolo	la disfatta di Caporetto	???	1	779	656	1399155	107151	86	26	13	3123	2.91	0	0	0	46366	2005-06-28	5452
 Q283364	Battaglia di Legnano	Storia		Superiori	Basso medioevo	Battaglia di Legnano	???	1	184	205	330809	95956	203	28	15	2367	2.47	0	0	0	93490	???	#VALUE!
-#N/A	Battaglia di Lepanto	Storia		Superiori	XVI-XVII secolo	Battaglia di Lepanto	???	1	586	709	1052332	64010	53	27	24	3870	6.05	0	0	0	47630	2004-01-27	5970
+Q165425	Battaglia di Lepanto	Storia		Superiori	XVI-XVII secolo	Battaglia di Lepanto	???	1	586	709	1052332	64010	53	27	24	3870	6.05	0	0	0	47630	2004-01-27	5970
 Q48800454	Battaglia di Normandia	Storia		Superiori	XX-XXI secolo		???	1	84	135	150244	104512	114	31	17	4568	4.37	0	0	0	30081	???	#VALUE!
 Q48314	Battaglia di Waterloo	Storia		Superiori	XVIII-XIX secolo		???	1	522	499	938649	151823	303	54	20	2899	1.91	0	0	0	24219	2005-05-30	5481
 Q23559	Benito Mussolini	Storia		Superiori	XX-XXI secolo	Benito Mussolini	???	1	2608	2598	4686373	287350	305	90	64	5092	1.77	0	13	9	74650	2007-04-30	4781
@@ -2575,20 +2575,20 @@ Q3658348	Carcere dell'Asinara	Storia		Superiori	XX-XXI secolo	Carcere dell'Asina
 Q1042024	Carlo Cattaneo	Storia		Superiori	XVIII-XIX secolo	Cattaneo	???	1	129	150	232358	27476	20	5	70	258	0.94	0	0	0	14036	???	#VALUE!
 Q3044	Carlo Magno	Storia		Superiori	Alto medioevo	Carlo Magno	???	1	1335	1320	2398272	154574	152	28	35	1852	1.20	0	0	0	24567	2003-07-13	6168
 Q32500	Carlo V d'Asburgo	Storia		Superiori	XVI-XVII secolo	Carlo V	???	1	787	880	1414520	125569	95	70	59	5346	4.26	0	0	0	75606	2005-05-19	5492
-#N/A	Casa del Popolo	Storia		Superiori	XVIII-XIX secolo	Casa del popolo	???	1	18	19	31813	5669	0	1	0	703	12.40	1	0	0	2162	???	#VALUE!
+Q1435490	Casa del Popolo	Storia		Superiori	XVIII-XIX secolo	Casa del popolo	???	1	18	19	31813	5669	0	1	0	703	12.40	1	0	0	2162	???	#VALUE!
 Q455037	Catena di montaggio	Storia		Superiori	XX-XXI secolo	catena di montaggio	???	1	105	101	188925	4618	1	2	1	1087	23.54	0	0	0	3526	???	#VALUE!
-#N/A	Cattività avignonese	Storia		Superiori	Basso medioevo	Cattività avignonese	???	1	239	283	430184	21954	6	5	5	319	1.45	0	0	0	1804	???	#VALUE!
+Q202558	Cattività avignonese	Storia		Superiori	Basso medioevo	Cattività avignonese	???	1	239	283	430184	21954	6	5	5	319	1.45	0	0	0	1804	???	#VALUE!
 Q102083	Cavaliere	Storia		Superiori	Alto medioevo	I cavalieri feudali	???	1	54	53	97744	66365	60	18	38	2820	4.25	0	0	0	2056	???	#VALUE!
 Q35966	Celti	Storia		Superiori	Grecia e Italia preromana	Celti	???	1	534	544	959117	80636	80	20	15	1968	2.44	0	0	0	55956	2004-09-04	5749
 Q102416	Cenozoico	Storia		Elementari	Terza elementare	Le ere più recenti	0.3	1	98	96	176867	5468	4	2	0	438	8.01	0	0	0	3946	???	#VALUE!
-#N/A	Cento giorni	Storia		Superiori	XVIII-XIX secolo	la fine di Napoleone	???	1	68	128	122010	29946	24	28	8	1522	5.08	0	0	0	399	???	#VALUE!
+Q199955	Cento giorni	Storia		Superiori	XVIII-XIX secolo	la fine di Napoleone	???	1	68	128	122010	29946	24	28	8	1522	5.08	0	0	0	399	???	#VALUE!
 Q3664678	Centrismo in Italia	Storia		Superiori	XX-XXI secolo	fuori la sinistra dal governo	???	1	28	36	51051	18641	11	0	0	555	2.98	0	0	0	151	???	#VALUE!
 Q3664681	Centro-sinistra "organico"	Storia		Superiori	XX-XXI secolo	Centro-sinistra	???	1	24	28	42657	13206	2	1	0	652	4.94	1	0	0	1940	???	#VALUE!
 Q82708	Chiesa anglicana	Storia		Superiori	XVI-XVII secolo	la Chiesa anglicana	???	1	221	214	397914	7904	0	3	1	2834	35.86	1	0	0	4295	???	#VALUE!
 Q3677192	Cinema delle attrazioni	Storia		Superiori	XVIII-XIX secolo	Cinema	???	1	16	14	28056	15977	4	3	4	381	2.38	0	0	0	1108	???	#VALUE!
 Q623164	Cinque giornate di Milano	Storia		Superiori	XVIII-XIX secolo	Cinque giornate di Milano	???	1	296	392	532008	37420	48	17	4	1158	3.09	0	1	0	10947	???	#VALUE!
-#N/A	Città e colonie fenicie	Storia		Superiori	Antichità	le colonie fenicie	???	0	0	0	0	0	0	0	12	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Civiltà araba	Storia		Superiori	XX-XXI secolo	Civiltà araba	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Città e colonie fenicie	Storia		Superiori	Antichità	le colonie fenicie	???	0	0	0	0	0	0	0	12	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Civiltà araba	Storia		Superiori	XX-XXI secolo	Civiltà araba	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q47690	Civiltà babilonese	Storia		Superiori	Antichità	I babilonesi	???	1	241	269	432913	13963	0	2	2	2188	15.67	2	0	0	2384	???	#VALUE!
 Q42534	Civiltà della valle dell'Indo	Storia		Superiori	Antichità	Le civiltà dell'Indo	???	1	161	152	288916	27087	9	10	1	996	3.68	1	0	0	3208	???	#VALUE!
 Q181264	Civiltà micenea	Storia		Superiori	Antichità	I micenei	???	1	342	343	614891	56449	27	15	15	2295	4.07	1	2	0	7040	???	#VALUE!
@@ -2603,7 +2603,7 @@ Q5775114	Colonizzazione dell'Australia	Storia		Superiori	XVIII-XIX secolo	Coloni
 Q828047	Colonizzazione greca	Storia		Superiori	Grecia e Italia preromana	Le colonie greche	???	1	138	133	248562	10909	8	1	8	361	3.31	2	1	0	2855	???	#VALUE!
 Q547858	Comitato di Liberazione Nazionale	Storia		Superiori	XX-XXI secolo	il CLN	???	1	181	186	326051	17842	14	2	10	1449	8.12	0	1	0	7648	???	#VALUE!
 Q724922	Comitato di salute pubblica	Storia		Superiori	XVIII-XIX secolo	Comitato di salute pubblica	???	1	60	57	107593	16981	3	3	0	2119	12.48	0	0	0	36	???	#VALUE!
-#N/A	Commercio triangolare	Storia		Superiori	XVI-XVII secolo	il commercio triangolare	???	0	0	0	0	69	0	0	0	66	95.65	0	0	0	0	???	#VALUE!
+-	Commercio triangolare	Storia		Superiori	XVI-XVII secolo	il commercio triangolare	???	0	0	0	0	69	0	0	0	66	95.65	0	0	0	0	???	#VALUE!
 Q2989771	Compagnia di ventura	Storia		Superiori	Basso medioevo	Le compagnie di ventura	???	1	37	32	66645	13904	1	3	8	534	3.84	0	0	0	152	???	#VALUE!
 Q52847	Comunità economica europea	Storia		Superiori	XX-XXI secolo	Cee	???	1	231	355	414801	14006	0	0	0	1104	7.88	0	0	0	2681	???	#VALUE!
 Q161549	Comunità europea del carbone e dell'acciaio	Storia		Superiori	XX-XXI secolo	Comunità del carbone e dell'acciaio	???	1	179	203	321698	12052	1	3	1	1942	16.11	0	0	0	882	???	#VALUE!
@@ -2628,7 +2628,7 @@ Q273120	Contestazione	Storia		Superiori	XX-XXI secolo	la contestazione giovanile
 Q4115173	Contributo islamico all'Europa medievale	Storia		Superiori	Alto medioevo	Innovazioni degli arabi	???	1	39	39	69851	52503	92	25	20	766	1.46	0	0	0	6722	???	#VALUE!
 Q428	Corano	Storia		Superiori	Alto medioevo	Il Corano	???	1	463	322	832601	65492	48	6	64	2904	4.43	0	0	0	27190	2004-05-13	5863
 Q170161	Corporazioni delle arti e mestieri	Storia		Superiori	Basso medioevo	Corporazioni comunali	???	1	117	120	210445	21245	17	8	5	403	1.90	0	0	0	761	???	#VALUE!
-#N/A	Corruzione in Italia	Storia		Superiori	XX-XXI secolo	Corruzione in Italia	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+#N/A	Corruzione	Storia	ex Corruzione in Italia	Superiori	XX-XXI secolo	Corruzione in Italia	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q273182	Corsa all'oro	Storia		Superiori	XVIII-XIX secolo	Febbre dell'oro	???	1	50	63	89501	3934	0	1	1	749	19.04	0	0	0	36	???	#VALUE!
 Q4763720	Corsa anglo-tedesca agli armamenti navali	Storia		Superiori	XX-XXI secolo	Riarmo tedesco	???	1	2	4	2828	33837	16	8	19	2286	6.76	0	0	0	36	???	#VALUE!
 Q899359	Corsari barbareschi	Storia		Superiori	Basso medioevo	Pirateria nel Mediterraneo	???	1	45	47	80018	20934	12	6	14	1189	5.68	0	0	0	8587	???	#VALUE!
