@@ -627,9 +627,9 @@ Q3745515	Filosofia latina	Filosofia		Superiori	Filosofia latina		???	1	18	15	314
 Q190944	Jean Bodin	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	46	42	82642	10955	3	1	2	395	3.61	0	0	0	543	2007-04-05	4806
 Q190279	Scuola di Mileto	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	35	41	62128	3965	2	4	3	1884	47.52	1	0	0	655	2007-02-24	4846
 Q744738	Enciclopedista	Filosofia		Superiori	Illuminismo		???	1	8	8	14442	5691	2	0	0	717	12.60	0	0	0	901	2007-01-26	4875
-#N/A	Rivoluzione copernicana	Filosofia		Superiori	Tra cinquecente e seicento		???	1	79	76	141896	3887	1	0	4	544	14.00	0	0	0	120	2007-01-19	4882
+Q1191320	Rivoluzione copernicana	Filosofia		Superiori	Tra cinquecente e seicento		???	1	79	76	141896	3887	1	0	4	544	14.00	0	0	0	120	2007-01-19	4882
 Q3796476	Illuminismo in Italia	Filosofia		Superiori	Illuminismo		???	1	98	92	176677	10781	9	3	7	372	3.45	0	0	0	1892	2007-01-16	4885
-#N/A	Niccolò Machiavelli	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		2.3	1	760	766	1366322	85726	45	16	15	1904	2.22	0	2	0	49567	2006-12-06	4926
+Q1399	Niccolò Machiavelli	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		2.3	1	760	766	1366322	85726	45	16	15	1904	2.22	0	2	0	49567	2006-12-06	4926
 Q182128	Giovanni Pico della Mirandola	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	244	240	438567	34431	25	11	26	94	0.27	0	0	0	9188	2006-12-01	4931
 Q6527	Jean-Jacques Rousseau	Filosofia		Superiori	Illuminismo		???	1	557	772	1001633	151257	223	23	16	4603	3.04	0	0	0	32492	2006-11-29	4933
 Q2236965	Strutturalismo (filosofia)	Filosofia		Superiori	Novecento		???	1	104	124	186724	6030	3	0	0	1103	18.29	1	0	0	1753	2006-10-28	4965
@@ -648,23 +648,23 @@ Q1541	Marco Tullio Cicerone	Filosofia		Superiori	Filosofia latina		???	1	673	575
 Q47154	Tito Lucrezio Caro	Filosofia		Superiori	Filosofia latina		2.3	1	138	139	247757	46003	53	9	28	1643	3.57	0	0	0	11464	2006-04-11	5165
 Q60080	Wilhelm Dilthey	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	25	25	44255	11111	0	1	8	41	0.37	0	1	0	1036	2006-04-06	5170
 Q192313	Pirrone	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	24	23	43343	6667	3	2	11	778	11.67	0	0	0	196	2006-03-25	5182
-#N/A	Alexis de Tocqueville	Filosofia		Superiori	Tra settecento e ottocento		???	1	98	97	176214	33554	26	5	3	389	1.16	0	0	0	3054	2006-03-21	5186
-#N/A	Positivismo	Filosofia		Superiori	Tra settecento e ottocento		2.4	1	482	506	866576	25126	20	4	6	1391	5.54	0	0	0	7085	2006-03-08	5199
+Q140694	Alexis de Tocqueville	Filosofia		Superiori	Tra settecento e ottocento		???	1	98	97	176214	33554	26	5	3	389	1.16	0	0	0	3054	2006-03-21	5186
+Q131015	Positivismo	Filosofia		Superiori	Tra settecento e ottocento		2.4	1	482	506	866576	25126	20	4	6	1391	5.54	0	0	0	7085	2006-03-08	5199
 Q160590	Utilitarismo	Filosofia		Superiori	Tra settecento e ottocento		???	1	117	112	209527	47098	5	5	48	291	0.62	1	0	0	812	2006-03-06	5201
-#N/A	William James	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	79	97	142043	15756	4	2	8	2	0.01	0	0	0	995	2006-03-01	5206
+Q125249	William James	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	79	97	142043	15756	4	2	8	2	0.01	0	0	0	995	2006-03-01	5206
 Q310916	Giamblico	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	21	22	38031	11486	2	1	5	2	0.02	0	0	0	289	2006-02-21	5214
-#N/A	La Repubblica (dialogo)	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	178	171	320351	51484	40	7	3	3453	6.71	0	0	0	2110	2006-02-08	5227
+Q123397	La Repubblica (dialogo)	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	178	171	320351	51484	40	7	3	3453	6.71	0	0	0	2110	2006-02-08	5227
 Q174929	Tertulliano	Filosofia		Superiori	Patristica		???	1	85	84	151942	17925	14	2	10	371	2.07	0	0	0	3866	2006-02-07	5228
 Q82778	Plinio il Vecchio	Filosofia		Superiori	Filosofia latina		???	1	205	209	367808	15650	14	3	0	2023	12.93	0	0	0	889	2006-02-03	5232
 Q192374	Marsilio Ficino	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	109	111	195745	33402	42	7	4	2	0.01	0	0	0	2248	2006-02-02	5233
-#N/A	John Dewey	Filosofia		Superiori	Novecento		???	1	169	225	304021	17390	4	4	7	329	1.89	0	0	0	2127	2006-01-23	5243
+Q131805	John Dewey	Filosofia		Superiori	Novecento		???	1	169	225	304021	17390	4	4	7	329	1.89	0	0	0	2127	2006-01-23	5243
 Q43746	Bonaventura da Bagnoregio	Filosofia		Superiori	Filosofia nell'età medievale		???	1	85	80	152151	31885	5	9	23	1221	3.83	0	1	0	4315	2006-01-21	5245
 Q2236765	Res cogitans e res extensa	Filosofia		Superiori	Tra cinquecente e seicento		???	1	74	77	132342	3091	2	0	0	607	19.64	0	0	0	1358	2006-01-19	5247
 Q314488	Leonardo Bruni	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		2.3	1	31	28	56194	7545	2	4	4	1	0.01	0	0	0	212	2006-01-15	5251
-#N/A	Mosè Maimonide	Filosofia		Superiori	Filosofia nell'età medievale		???	1	56	83	100394	65581	50	21	18	1422	2.17	0	0	0	2483	2005-12-04	5293
+Q127398	Mosè Maimonide	Filosofia		Superiori	Filosofia nell'età medievale		???	1	56	83	100394	65581	50	21	18	1422	2.17	0	0	0	2483	2005-12-04	5293
 Q435006	Berengario di Tours	Filosofia		Superiori	Filosofia nell'età medievale		???	1	7	8	13385	8134	7	1	6	2	0.02	1	0	0	39	2005-11-21	5306
 Q315357	Marsilio da Padova	Filosofia		Superiori	Filosofia nell'età medievale		???	1	26	30	47330	15842	0	3	11	4	0.03	1	0	0	651	2005-11-13	5314
-#N/A	Emmanuel Lévinas	Filosofia		Superiori	Novecento		???	1	55	63	99245	39867	54	6	51	20	0.05	0	0	0	2417	2005-11-08	5319
+Q153034	Emmanuel Lévinas	Filosofia		Superiori	Novecento		???	1	55	63	99245	39867	54	6	51	20	0.05	0	0	0	2417	2005-11-08	5319
 Q317098	Lanfranco di Canterbury	Filosofia		Superiori	Filosofia nell'età medievale		???	1	7	6	11774	10070	2	3	5	4	0.04	1	1	0	667	2005-11-08	5319
 Q184226	Gilles Deleuze	Filosofia		Superiori	Novecento		???	1	107	114	192769	24849	10	0	0	1614	6.50	0	0	0	1379	2005-11-06	5321
 Q258369	Pier Damiani	Filosofia		Superiori	Filosofia nell'età medievale		???	1	38	37	68365	38045	24	10	13	427	1.12	0	1	0	3270	2005-10-23	5335
@@ -676,7 +676,7 @@ Q43939	Anselmo d'Aosta	Filosofia		Superiori	Filosofia nell'età medievale		???	1
 Q93113	Coluccio Salutati	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	35	28	63684	65877	96	10	13	1854	2.81	0	0	0	379	2005-07-19	5431
 Q184500	Giovanni Scoto Eriugena	Filosofia		Superiori	Patristica		???	1	30	28	53198	18027	5	1	17	2	0.01	1	0	0	39	2005-07-18	5432
 Q254982	Panta rhei	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	375	600	673696	2954	4	1	0	861	29.15	0	0	0	216	2005-07-08	5442
-#N/A	Maria Montessori	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	667	778	1199005	76967	73	36	11	368	0.48	0	0	0	17095	2005-07-07	5443
+Q131117	Maria Montessori	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	667	778	1199005	76967	73	36	11	368	0.48	0	0	0	17095	2005-07-07	5443
 Q171677	Ruggero Bacone	Filosofia		Superiori	Filosofia nell'età medievale		???	1	51	73	91530	16198	4	3	8	696	4.30	0	0	0	1637	2005-06-22	5458
 Q378706	Vincenzo Gioberti	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	82	76	147538	16734	6	3	20	3	0.02	0	0	0	210	2005-06-21	5459
 Q50020	John Stuart Mill	Filosofia		Superiori	Tra settecento e ottocento		???	1	113	108	203333	21671	3	5	24	2	0.01	0	0	0	174	2005-06-16	5464
@@ -688,9 +688,9 @@ Q839475	Metodo socratico	Filosofia		Superiori	Filosofia nella Grecia classica		?
 Q39837	Averroè	Filosofia		Superiori	Filosofia nell'età medievale		???	1	131	128	235308	23636	17	7	10	2	0.01	0	0	0	2477	2005-05-26	5485
 Q192447	Socialismo utopico	Filosofia		Superiori	Tra settecento e ottocento		???	1	39	62	70151	4287	0	1	11	606	14.14	0	0	0	2482	2005-05-24	5487
 Q170472	Origene	Filosofia		Superiori	Patristica		???	1	88	101	158557	54491	62	2	42	1519	2.79	1	0	0	11312	2005-05-12	5499
-#N/A	Pragmatismo	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	175	121	313767	9290	10	1	0	1087	11.70	0	0	0	2008	2005-05-12	5499
-#N/A	Sillogismo	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	326	284	584950	31526	4	49	18	1580	5.01	1	0	0	7645	2005-05-04	5507
-#N/A	Nicola Cusano	Filosofia		Superiori	Filosofia nell'età medievale		???	1	122	112	219064	57542	19	17	26	2	0.00	1	0	0	6668	2005-05-02	5509
+Q126692	Pragmatismo	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	175	121	313767	9290	10	1	0	1087	11.70	0	0	0	2008	2005-05-12	5499
+Q107342	Sillogismo	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	326	284	584950	31526	4	49	18	1580	5.01	1	0	0	7645	2005-05-04	5507
+Q154751	Nicola Cusano	Filosofia		Superiori	Filosofia nell'età medievale		???	1	122	112	219064	57542	19	17	26	2	0.00	1	0	0	6668	2005-05-02	5509
 Q93996	Ernst Mach	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	34	36	61587	11859	2	4	3	168	1.42	0	0	0	847	2005-04-27	5514
 Q59138	Diogene Laerzio	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	53	52	94364	8135	10	2	2	170	2.09	0	0	0	196	2005-04-26	5515
 Q48235	Stoicismo	Filosofia		Superiori	Filosofia e scienza nell'età ellenistica		???	1	539	573	968368	33703	24	5	23	2768	8.21	0	0	0	7804	2005-04-26	5515
@@ -698,7 +698,7 @@ Q160362	Teofrasto	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	42
 Q37160	David Hume	Filosofia		Superiori	Tra seicento e settecento		???	1	179	236	320801	27818	14	2	16	193	0.69	0	0	0	3826	2005-04-19	5522
 Q334154	Giovanni Battista Della Porta	Filosofia		Superiori	Tra cinquecente e seicento		???	1	26	24	47466	19771	6	5	15	1	0.01	0	0	0	1309	2005-04-14	5527
 Q214115	Lorenzo Valla	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		2.3	1	75	77	135425	17300	6	1	19	69	0.40	0	0	0	1253	2005-03-30	5542
-#N/A	Jean Baptiste Le Rond d'Alembert	Filosofia		Superiori	Illuminismo		???	1	36	35	64328	26929	6	6	2	2	0.01	0	0	0	39	2005-03-04	5568
+Q153232	Jean Baptiste Le Rond d'Alembert	Filosofia		Superiori	Illuminismo		???	1	36	35	64328	26929	6	6	2	2	0.01	0	0	0	39	2005-03-04	5568
 Q179785	Gorgia	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	118	122	212559	15331	9	2	7	218	1.42	0	0	0	1140	2005-03-01	5571
 Q166955	Sofistica	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	240	244	430800	27404	26	6	1	2651	9.67	0	0	0	3283	2005-02-28	5572
 Q602201	Antonio Genovesi	Filosofia		Superiori	Illuminismo		???	1	34	34	60953	14426	6	3	17	1	0.01	0	0	0	473	2005-02-20	5580
@@ -724,7 +724,7 @@ Q40591	Manifesto del Partito Comunista	Filosofia		Superiori	Tra settecento e ott
 Q38193	Arthur Schopenhauer	Filosofia		Superiori	Tra settecento e ottocento		???	1	535	498	961874	57591	25	8	108	3791	6.58	0	0	0	18862	2004-07-11	5804
 Q9235	Georg Wilhelm Friedrich Hegel	Filosofia		Superiori	Tra settecento e ottocento		???	1	383	369	687668	90179	82	4	9	4173	4.63	0	0	0	38284	2004-07-11	5804
 Q42544	Tommaso Moro	Filosofia		Superiori	Umanesimo, rinascimento e rifoma		???	1	271	280	486426	25018	3	9	51	948	3.79	1	3	0	4412	2004-07-05	5810
-#N/A	Auguste Comte	Filosofia		Superiori	Tra settecento e ottocento		???	1	172	204	309409	57294	62	13	11	1220	2.13	0	0	0	5062	2004-06-18	5827
+Q12718	Auguste Comte	Filosofia		Superiori	Tra settecento e ottocento		???	1	172	204	309409	57294	62	13	11	1220	2.13	0	0	0	5062	2004-06-18	5827
 Q44272	Michel Foucault	Filosofia		Superiori	Novecento		???	1	283	354	508608	43061	15	2	32	2013	4.67	0	1	0	4719	2004-06-18	5827
 Q4295	Pietro Abelardo	Filosofia		Superiori	Filosofia nell'età medievale		???	1	85	105	152949	43910	6	3	3	2584	5.88	1	2	0	3221	2004-06-17	5828
 Q868	Aristotele	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	728	697	1308462	96098	87	9	22	717	0.75	0	0	0	98568	2004-06-02	5843
@@ -800,8 +800,8 @@ Q829564	Sistema di riferimento non inerziale	Fisica		Superiori	I principi della 
 Q186300	Accelerazione angolare	Fisica		Superiori	L'accelerazione		???	1	62	50	111638	4063	1	0	1	1291	31.77	0	1	0	522	2006-02-23	5212
 Q212126	Interazione apparente	Fisica		Superiori	I principi della dinamica e la relatività galileiana		???	1	5	9	8683	6421	0	0	0	2715	42.28	0	0	0	2513	2006-02-20	5215
 Q79782	Moto (fisica)	Fisica		Superiori	La velocità		???	1	87	76	157048	3697	1	3	0	660	17.85	0	0	0	478	2006-01-22	5244
-#N/A	Moto rettilineo uniformemente accelerato	Fisica		Superiori	L'accelerazione		???	1	6	6	10990	70	0	0	0	67	95.71	0	0	0	0	2006-01-22	5244
-#N/A	Principio di inerzia	Fisica		Superiori	I principi della dinamica e la relatività galileiana		???	1	40	39	71511	172	0	0	0	153	88.95	0	0	0	2971	2006-01-12	5254
+-	Moto rettilineo uniformemente accelerato	Fisica		Superiori	L'accelerazione		???	1	6	6	10990	70	0	0	0	67	95.71	0	0	0	0	2006-01-22	5244
+Q38433	Principi della dinamica	Fisica	ex Principio di inerzia	Superiori	I principi della dinamica e la relatività galileiana		???	1	40	39	71511	172	0	0	0	153	88.95	0	0	0	2971	2006-01-12	5254
 Q558066	Campo gravitazionale	Fisica		Superiori	La gravitazione		???	1	74	67	133529	6770	0	1	3	787	11.62	0	0	0	34151	2005-12-17	5280
 Q101965	Esperimento	Fisica		Superiori	La misura		???	1	37	36	66362	7100	0	0	0	782	11.01	1	0	0	8184	2005-11-18	5309
 Q192788	Corpo rigido	Fisica		Superiori	Equilibrio dei solidi		???	1	57	51	103043	10806	0	0	0	341	3.16	1	0	0	36	2005-10-26	5332
@@ -853,26 +853,26 @@ Q487756	Calore specifico	Fisica		Superiori	La termologia		???	1	479	414	860166	1
 Q394	Metrologia	Fisica		Superiori	La misura		???	1	44	41	79052	6957	5	4	1	510	7.33	0	0	0	1970	2004-07-09	5806
 Q82580	Attrito	Fisica		Superiori	Vettori e forze		???	1	350	292	629651	22693	8	3	2	687	3.03	0	0	0	6446	2004-06-15	5830
 Q2642081	Teorema dell'energia cinetica	Fisica		Superiori	Il lavoro e l'energia		???	1	107	119	192776	14502	9	0	0	587	4.05	0	0	0	7037	2004-06-04	5841
-#N/A	Interazione gravitazionale	Fisica		Superiori	La gravitazione		???	1	263	256	472930	31597	14	8	0	1360	4.30	2	0	0	61022	2004-05-24	5852
+Q11412	Interazione gravitazionale	Fisica		Superiori	La gravitazione		???	1	263	256	472930	31597	14	8	0	1360	4.30	2	0	0	61022	2004-05-24	5852
 Q17996169	Radiazione solare	Fisica		Superiori	La luce		???	1	120	121	216007	9175	1	3	0	1394	15.19	1	0	0	754	2004-05-18	5858
 Q161462	Piano inclinato	Fisica		Superiori	Equilibrio dei solidi		???	1	89	78	159773	11025	9	4	0	712	6.46	0	0	0	656	2004-05-03	5873
 Q20702	Pendolo	Fisica		Superiori	I moti nel piano		???	1	158	134	283102	12369	1	1	0	1213	9.81	0	0	0	159	2004-04-30	5876
-#N/A	Grandezza fisica	Fisica		Superiori	Le grandezze fisiche		???	1	194	170	348588	20647	12	0	0	590	2.86	0	0	0	4716	2004-04-15	5891
+Q107715	Grandezza fisica	Fisica		Superiori	Le grandezze fisiche		???	1	194	170	348588	20647	12	0	0	590	2.86	0	0	0	4716	2004-04-15	5891
 Q181175	Grandezza scalare	Fisica		Superiori	Vettori e forze		???	1	97	87	174756	3577	5	0	8	719	20.10	0	0	0	2140	2004-04-15	5891
 Q44432	Calore	Fisica		Superiori	La termologia		???	1	225	191	404333	13247	4	0	2	491	3.71	1	0	0	30249	2004-04-14	5892
 Q190070	Moto armonico	Fisica		Superiori	I moti nel piano		???	1	225	174	404698	19672	3	8	8	1959	9.96	0	0	0	2136	2004-03-15	5922
 Q715746	Moto circolare	Fisica		Superiori	L'accelerazione		???	1	147	109	264851	13889	0	3	0	1023	7.37	1	0	0	6157	2004-03-15	5922
-#N/A	Velocità angolare	Fisica		Superiori	L'accelerazione		???	1	299	214	536749	6655	1	2	0	1080	16.23	0	0	0	4274	2004-03-14	5923
+Q161635	Velocità angolare	Fisica		Superiori	L'accelerazione		???	1	299	214	536749	6655	1	2	0	1080	16.23	0	0	0	4274	2004-03-14	5923
 Q83219	Leggi di Keplero	Fisica		Superiori	La gravitazione		???	1	412	364	739783	11159	1	5	4	700	6.27	0	0	0	7822	2004-03-08	5929
 Q29539	Densità	Fisica		Superiori	Le grandezze fisiche		???	1	579	463	1041195	10332	9	0	5	1693	16.39	0	0	0	7062	2004-01-27	5970
 Q39297	Volume	Fisica		Superiori	Le grandezze fisiche		1.3	1	202	162	363111	7350	1	8	1	962	13.09	0	0	0	84	2004-01-27	5970
 Q185357	Transizione di fase	Fisica		Superiori	La termologia		???	1	66	58	118081	26024	2	3	7	1883	7.24	0	0	0	2742	2004-01-23	5974
 Q39552	Pressione	Fisica		Superiori	Equilibrio dei fluidi		???	1	509	384	915049	8935	5	1	1	737	8.25	0	0	0	3232	2004-01-07	5990
-#N/A	Forza	Fisica		Superiori	Vettori e forze		???	1	313	239	561694	17223	4	5	1	1414	8.21	0	0	0	3632	2004-01-06	5991
+Q11402	Forza	Fisica		Superiori	Vettori e forze		???	1	313	239	561694	17223	4	5	1	1414	8.21	0	0	0	3632	2004-01-06	5991
 Q42213	Lavoro (fisica)	Fisica		Superiori	Il lavoro e l'energia		???	1	371	307	666183	17687	3	2	2	1475	8.34	0	0	0	20199	2003-12-22	6006
-#N/A	Massa (fisica)	Fisica		Superiori	Le grandezze fisiche		0.2	1	341	319	612697	61752	34	9	22	4670	7.56	0	0	0	61476	2003-12-21	6007
-#N/A	Temperatura	Fisica		Superiori	La termologia		???	1	344	276	618888	52386	16	5	7	1016	1.94	0	2	0	18757	2003-12-21	6007
-#N/A	Sistema internazionale di unità di misura	Fisica		Superiori	Le grandezze fisiche		0.2	1	745	640	1339589	34199	23	3	13	1850	5.41	0	0	0	56033	2003-12-16	6012
+Q11423	Massa (fisica)	Fisica		Superiori	Le grandezze fisiche		0.2	1	341	319	612697	61752	34	9	22	4670	7.56	0	0	0	61476	2003-12-21	6007
+Q11466	Temperatura	Fisica		Superiori	La termologia		???	1	344	276	618888	52386	16	5	7	1016	1.94	0	2	0	18757	2003-12-21	6007
+Q12457	Sistema internazionale di unità di misura	Fisica		Superiori	Le grandezze fisiche		0.2	1	745	640	1339589	34199	23	3	13	1850	5.41	0	0	0	56033	2003-12-16	6012
 Q47574	Unità di misura	Fisica		Superiori	Le grandezze fisiche		0.2	1	332	261	596032	10993	1	1	1	1066	9.70	0	0	0	4833	2003-12-16	6012
 Q9128	Luce	Fisica		Superiori	La luce		???	1	293	264	526460	16340	2	4	0	2132	13.05	1	0	0	1828	2003-12-14	6014
 Q4213	Telescopio	Fisica		Superiori	La luce		???	1	119	100	213590	24966	5	13	6	1102	4.41	0	0	0	9395	2003-11-15	6043
@@ -2814,11 +2814,11 @@ Q3708094	Impero selgiuchide	Storia		Superiori	Basso medioevo	la minaccia dei Tur
 Q80702	Impero spagnolo	Storia		Superiori	XVI-XVII secolo	Impero coloniale spagnolo	???	1	150	147	269408	39243	6	24	2	4970	12.66	1	0	0	22979	???	#VALUE!
 Q43287	Impero tedesco	Storia		Superiori	XVIII-XIX secolo	Nascita del Secondo Reich	???	1	371	361	666176	43301	9	25	8	6260	14.46	0	0	0	8098	???	#VALUE!
 Q10749030	Impresa di Fiume	Storia		Superiori	XX-XXI secolo	Questione fiumana	???	1	331	533	595339	48222	31	6	17	1047	2.17	0	2	0	69683	???	#VALUE!
-#N/A	Indipendenze africane	Storia		Superiori	XX-XXI secolo	Le indipendenze africane	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Indipendenze africane	Storia		Superiori	XX-XXI secolo	Le indipendenze africane	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q44777	Indulgenza	Storia		Superiori	XVI-XVII secolo	la vendita delle indulgenze	???	1	360	225	647232	22884	5	0	1	407	1.78	0	0	0	702	???	#VALUE!
 Q540912	Industria alimentare	Storia		Superiori	XVIII-XIX secolo	industria alimentare	???	1	69	66	124666	16760	1	4	0	1042	6.22	2	0	0	183	???	#VALUE!
 Q15212432	Industrializzazione dell'Unione Sovietica	Storia		Superiori	XX-XXI secolo	l'industrializzazione dell'URSS	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Ingresso degli Stati Uniti nella prima guerra mondiale	Storia		Superiori	XX-XXI secolo	USA entrano nel conflitto	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Ingresso degli Stati Uniti nella prima guerra mondiale	Storia		Superiori	XX-XXI secolo	USA entrano nel conflitto	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q2553591	Inquisizione medievale	Storia		Superiori	Basso medioevo	l'Inquisizione	???	1	51	51	90860	29570	1	5	7	441	1.49	1	2	0	3688	???	#VALUE!
 Q965842	Inquisizione portoghese	Storia		Superiori	XVI-XVII secolo		???	1	4	4	6406	4578	1	1	0	309	6.75	2	0	0	36	???	#VALUE!
 Q184725	Inquisizione spagnola	Storia		Superiori	XVI-XVII secolo		???	1	124	119	222483	18529	2	4	13	664	3.58	1	1	0	3724	???	#VALUE!

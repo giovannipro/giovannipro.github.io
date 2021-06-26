@@ -114,7 +114,7 @@ Q107099	Cenere vulcanica	#N/A	22	#N/A	7939	#N/A	1	3	#N/A	1388	17.48	0	#N/A	0	0	2
 Q1071270	Integrazione per sostituzione	Matematica	25	25	8953	8021	2	0	4	414	4.62	3	1	0	0	40	2004-08-30	6119	53371	-2	0	0		
 Q1072140	Repubblica Romana (1849)	Storia	187	177	88790	88553	17	28	15	2581	2.91	0	0	2	0	37671	2007-01-23	5243	404143	52	0	0	Roman Republic (1849)	Autore:Repubblica Romana (1849)
 Q1072751	Arte mesopotamica	Storia dell'arte	35	33	9171	9108	5	1	2	506	5.52	0	0	0	0	3473	2006-09-25	5363	75986	10	0	0	Art of Mesopotamia	
-Q107342	Sillogismo	#N/A	316	#N/A	31541	#N/A	4	49	#N/A	1580	5.01	1	#N/A	0	0	7645	2005-05-04	5872	682844	-47	0	0	Syllogisms	
+Q107342	Sillogismo	Filosofia	316	326	31541	31526	4	49	18	1580	5.01	1	1	0	0	7645	2005-05-04	5872	682844	-47	0	0	Syllogisms	
 Q1074	Pelle	#N/A	311	#N/A	21968	#N/A	9	6	#N/A	1366	6.22	0	#N/A	0	0	4488	2005-06-29	5816	672124	-84	0	0	Skin	
 Q107410	Ipocentro	#N/A	58	#N/A	4559	#N/A	6	1	#N/A	372	8.16	0	#N/A	0	0	49	2005-05-04	5872	125698	-24	0	0	Hypocenters	
 Q107425	Paesaggio	Geografia	88	90	34074	34296	3	11	40	1204	3.53	3	3	0	0	10552	2005-04-19	5887	190153	-11	0	0	Landscapes	Landscape
@@ -276,7 +276,7 @@ Q1186690	Ricchezza nazionale	Diritto e Economia	6	5	24651	24651	2	17	0	1568	6.36
 Q1187312	Ieri	Storia	4	5	516	473	0	0	0	321	62.21	0	0	0	0	36	2006-08-07	5412	9177	-2	0	0		
 Q1187484	Omaggio feudale	Storia	32	29	5357	5357	3	2	0	1117	20.85	0	0	0	0	85	2007-11-26	4936	68233	11	0	0	Homage	
 Q1189238	Storia dell'informatica	Informatica	41	39	29819	29854	29	18	34	733	2.46	0	0	0	0	3225	2004-05-11	6230	88134	6	0	0	History of computing	
-Q1191320	Rivoluzione copernicana	#N/A	83	#N/A	3887	#N/A	1	0	#N/A	544	14.00	0	#N/A	0	0	120	2007-01-19	5247	180300	22	0	0		
+Q1191320	Rivoluzione copernicana	Filosofia	83	79	3887	3887	1	0	4	544	14.00	0	0	0	0	120	2007-01-19	5247	180300	22	0	0		
 Q1192894	Fuga a Varennes	Storia	41	37	49644	49626	13	8	27	889	1.79	1	1	0	0	2132	2015-09-20	2081	88046	20	0	0	Flight to Varennes	
 Q1193736	Il Gattopardo	#N/A	523	#N/A	25449	#N/A	8	3	#N/A	840	3.30	0	#N/A	0	0	8158	2005-06-21	5824	1129834	-40	0	0	Il Gattopardo	
 Q1194697	Diatesi passiva	Grammatica italiana	13	13	11143	11036	0	0	0	1641	14.73	1	1	2	0	1119	2007-07-27	5058	28795	3	0	0		
@@ -323,7 +323,7 @@ Q1230918	Miles gloriosus	#N/A	95	#N/A	12266	#N/A	0	1	#N/A	920	7.50	0	#N/A	0	0	47
 Q123150	Francesco Borromini	Storia dell'arte	209	208	28218	27730	21	26	34	182	0.64	0	0	0	0	20051	2004-07-31	6149	450949	4	0	0	Francesco Borromini	Francesco Borromini
 Q1232053	La locandiera	Letteratura italiana	335	322	14168	13192	25	1	0	652	4.60	0	1	0	0	911	2005-10-03	5720	724736	66	0	0	La locandiera	
 Q1233645	Andria (Terenzio)	#N/A	17	#N/A	3068	#N/A	1	1	#N/A	259	8.44	1	#N/A	0	0	163	2009-11-22	4209	37738	9	0	0		
-Q123397	La Repubblica (dialogo)	#N/A	184	#N/A	52390	#N/A	40	7	#N/A	3536	6.75	0	#N/A	0	0	2110	2006-02-08	5592	397829	29	0	0	Republic (Plato)	
+Q123397	La Repubblica (dialogo)	Filosofia	184	178	52390	51484	40	7	3	3536	6.75	0	0	0	0	2110	2006-02-08	5592	397829	29	0	0	Republic (Plato)	
 Q1234585	Aulularia	#N/A	108	#N/A	23936	#N/A	0	1	#N/A	395	1.65	1	#N/A	0	0	859	2006-11-10	5317	234491	22	0	0		
 Q1234617	Futuro anteriore	Grammatica italiana	72	75	5647	5776	0	0	2	309	5.47	0	0	0	0	83	2006-12-17	5280	155552	-15	0	0		
 Q123619	Acidi nucleici	Biologia	159	151	7940	7627	2	4	#N/A	1105	13.92	0	0	0	0	338	2003-08-02	6513	343632	38	0	0	Nucleic acids	
@@ -359,7 +359,7 @@ Q1250322	Immagine digitale	Informatica	32	32	6595	6572	2	0	0	485	7.35	1	1	0	0	30
 Q12507	Sfera	#N/A	302	#N/A	13749	#N/A	3	3	#N/A	699	5.08	0	#N/A	0	0	2665	2002-06-11	6930	652460	-165	0	0	Spheres	Sphere
 Q1250763	Storia della Sicilia islamica	Storia	139	137	62044	60266	47	13	29	494	0.80	0	0	0	0	39043	2005-07-28	5787	299656	7	0	0	Emirate of Sicily	
 Q12519	Magna Carta	Storia	504	449	91856	88543	191	13	66	2592	2.82	0	0	0	0	10013	2005-01-09	5987	1090089	274	0	0	Magna Carta	Magna Carta
-Q125249	William James	#N/A	80	#N/A	17407	#N/A	4	2	#N/A	1603	9.21	0	#N/A	0	0	995	2006-03-01	5571	173308	6	0	0	William James (psychologist)	Autore:William James
+Q125249	William James	Filosofia	80	79	17407	15756	4	2	8	1603	9.21	0	0	0	0	995	2006-03-01	5571	173308	6	0	0	William James (psychologist)	Autore:William James
 Q12536	Abbasidi	Storia	97	95	20677	20308	5	13	5	2086	10.09	0	0	0	0	5137	2006-11-25	5302	209904	12	0	0	Abbasid Caliphate	
 Q12539	Illuminismo	#N/A	951	#N/A	70168	#N/A	85	15	#N/A	2657	3.79	0	#N/A	0	0	78030	2004-02-18	6313	2055580	135	0	0	Age of Enlightenment	
 Q12544	Impero bizantino	Storia	756	750	150298	152444	105	32	169	6639	4.42	0	0	0	0	118537	2004-02-19	6312	1634408	30	0	0	Byzantine Empire	Byzantine Empire
@@ -381,17 +381,17 @@ Q126065	Rivoluzione iraniana	Storia	149	150	17458	17044	5	25	5	1422	8.15	0	0	0	0
 Q1261544	Palazzo Te	Storia dell'arte	244	256	19510	19484	6	19	1	519	2.66	0	0	0	0	2333	2006-02-22	5578	527950	-56	0	0	Palazzo Te (Mantua)	Palazzo Te
 Q126236	Conquistadores	Storia	110	103	9092	9085	1	2	0	536	5.90	0	0	0	0	2676	2006-04-18	5523	237319	33	0	0	Conquistadors	Conquistador
 Q1263	Emilia-Romagna	Geografia	1169	1157	95642	95047	56	77	2	3432	3.59	0	0	0	0	57927	2003-02-26	6670	2526683	59	0	0	Emilia-Romagna	Emilia-Romagna
-Q126692	Pragmatismo	#N/A	165	#N/A	9412	#N/A	10	1	#N/A	1136	12.07	0	#N/A	0	0	2008	2005-05-12	5864	357210	-46	0	0	Pragmatism	
+Q126692	Pragmatismo	Filosofia	165	175	9412	9290	10	1	0	1136	12.07	0	0	0	0	2008	2005-05-12	5864	357210	-46	0	0	Pragmatism	
 Q1269827	Pittura rupestre	Storia dell'arte	127	119	4481	2901	3	2	1	316	7.05	1	1	0	0	46	2004-07-14	6166	274838	41	0	0	Rock paintings	
 Q127006	Contrazione muscolare	Biologia	250	#N/A	9867	9867	0	1	#N/A	401	4.06	0	#N/A	0	0	1626	2006-08-19	5400	540050	55	0	0		
 Q127013	Soluzione finale della questione ebraica	Storia	185	181	13280	12879	2	2	2	641	4.83	1	0	0	0	3849	2004-03-10	6292	400512	22	0	0	The Holocaust	
 Q12705	Fonti di energia rinnovabile	#N/A	174	#N/A	91272	#N/A	73	16	#N/A	774	0.85	1	#N/A	1	0	52487	2005-02-11	5954	376799	398	0	0	Renewable energy	
 Q12707	Grandi Pianure	Geografia	53	52	9356	9147	0	2	8	420	4.49	0	0	0	0	0	2007-02-03	5232	114782	4	0	0	Great Plains	
 Q12713481	Operaio	Storia	64	68	7112	7109	2	5	1	463	6.51	0	0	0	0	1061	2005-08-15	5769	139357	-18	0	0	Workers	
-Q12718	Auguste Comte	#N/A	173	#N/A	57395	#N/A	62	13	#N/A	1238	2.16	0	#N/A	0	0	5062	2004-06-18	6192	374622	6	0	0	Auguste Comte	Autore:Auguste Comte
+Q12718	Auguste Comte	Filosofia	173	172	57395	57294	62	13	11	1238	2.16	0	0	0	0	5062	2004-06-18	6192	374622	6	0	0	Auguste Comte	Autore:Auguste Comte
 Q12725	Elettricità	Storia	238	242	25781	25821	0	4	0	1443	5.60	1	1	0	0	1024	2006-03-31	5541	513782	-19	0	0	Electricity	
 Q1273	Toscana	Geografia	1097	1090	156199	151998	43	98	4	4437	2.84	0	0	0	0	39931	2003-02-26	6670	2372484	40	0	0	Tuscany	
-Q127398	Mosè Maimonide	#N/A	54	#N/A	65634	#N/A	50	21	#N/A	1422	2.17	0	#N/A	0	0	2483	2005-12-04	5658	116300	-10	0	0	Moshe ben Maimon	Autore:Mosè Maimonide
+Q127398	Mosè Maimonide	Filosofia	54	56	65634	65581	50	21	18	1422	2.17	0	0	0	0	2483	2005-12-04	5658	116300	-10	0	0	Moshe ben Maimon	Autore:Mosè Maimonide
 Q1274327	Cittadinanza italiana	Cittadinanza e costituzione	215	225	29032	28407	3	2	0	448	1.54	1	0	0	0	4082	2006-04-17	5524	464758	-47	0	0		
 Q12760	Motore a vapore	Storia	169	169	11156	11132	0	7	1	405	3.63	0	0	0	0	332	2005-07-08	5807	364493	-3	0	0	Steam engines	
 Q1279	Marche	Geografia	897	882	142985	141725	132	102	6	10528	7.36	1	1	0	0	45311	2003-02-27	6669	1940158	77	0	0	Marche	
@@ -430,9 +430,9 @@ Q130796	Patto Molotov-Ribbentrop	Storia	274	267	36335	32550	26	6	14	1696	4.67	0	
 Q130901	Relazione binaria	Matematica	23	23	3959	3959	2	0	2	337	8.51	0	0	0	0	40	2005-02-07	5958	49559	1	0	0		
 Q130998	Relazione di equivalenza	#N/A	72	#N/A	16859	#N/A	5	1	#N/A	172	1.02	0	#N/A	0	0	1877	2003-08-04	6511	155999	4	0	0	Equivalence relations	
 Q131013	Acropoli di Atene	Storia dell'arte	259	265	9351	9343	7	5	2	562	6.01	0	0	0	0	4578	2006-11-24	5303	560014	-27	0	0	Acropolis of Athens	
-Q131015	Positivismo	#N/A	482	#N/A	25164	#N/A	20	4	#N/A	1391	5.53	0	#N/A	0	0	7085	2006-03-08	5564	1042766	2	0	0	Positivism	
+Q131015	Positivismo	Filosofia	482	482	25164	25126	20	4	6	1391	5.53	0	0	0	0	7085	2006-03-08	5564	1042766	2	0	0	Positivism	
 Q131105	Nominativo	Grammatica latina	28	29	4062	4000	1	0	1	702	17.28	1	1	0	0	175	2004-10-25	6063	60358	-7	0	0		
-Q131117	Maria Montessori	#N/A	723	#N/A	85764	#N/A	84	35	#N/A	2	0.00	0	#N/A	0	0	17095	2005-07-07	5808	1562382	275	0	0	Maria Montessori	
+Q131117	Maria Montessori	Filosofia	723	667	85764	76967	84	35	11	2	0.00	0	0	0	0	17095	2005-07-07	5808	1562382	275	0	0	Maria Montessori	
 Q131123	Inquinamento atmosferico	#N/A	311	#N/A	43687	#N/A	10	6	#N/A	1196	2.74	0	#N/A	0	0	6308	2005-06-06	5839	672606	114	0	0	Air pollution	
 Q13116	Benelux	Geografia	122	122	13386	12371	1	11	0	1545	11.54	0	0	0	0	932	2004-04-25	6246	263372	0	0	0	Benelux	
 Q131164	Web 2.0	Informatica	158	174	26	11914	0	0	0	23	88.46	0	1	0	0	5149	2005-10-23	5700	341997	-76	0	0	Web 2.0	
@@ -446,7 +446,7 @@ Q131683	Embriologia	Biologia	37	39	22656	22327	0	3	#N/A	1784	7.87	0	0	0	0	3086	2
 Q131719	Il principe	Letteratura italiana	168	108	80448	79614	7	10	1	1702	2.12	2	1	0	0	13916	2006-12-06	5291	364240	301	0	0	Il Principe	Opera:Il Principe
 Q131752	Massimo comun divisore	Matematica	231	232	10410	10417	1	0	1	1197	11.50	0	0	0	0	1277	2005-05-22	5854	499467	-6	0	0	Greatest common divisor	
 Q1317831	Diatesi attiva	Grammatica italiana	4	4	1065	1065	0	0	0	890	83.57	1	1	0	0	83	2010-12-17	3819	8344	-1	0	0		
-Q131805	John Dewey	#N/A	173	#N/A	20959	#N/A	7	4	#N/A	329	1.57	0	#N/A	0	0	2127	2006-01-23	5608	374850	22	0	0	John Dewey	Autore:John Dewey
+Q131805	John Dewey	Filosofia	173	169	20959	17390	7	4	7	329	1.57	0	0	0	0	2127	2006-01-23	5608	374850	22	0	0	John Dewey	Autore:John Dewey
 Q131808	Manierismo	Letteratura italiana	417	406	29636	29756	10	10	20	638	2.15	0	0	0	0	19457	2004-11-07	6050	902538	58	0	0	Mannerism	Mannerism
 Q1318388	Climi in Europa	Geografia	90	0	2383	2383	0	1	0	2298	96.43	0	0	0	0	0	2010-01-10	4160	194858	12	0	0	Weather and climate of Europe	
 Q1321131	Storia della misurazione del tempo	Storia	22	9	84576	84170	101	24	39	3922	4.64	0	0	0	0	1111	2019-05-19	744	47699	66	0	0	History of clocks	
@@ -501,7 +501,7 @@ Q1390924	Commedia togata	#N/A	17	#N/A	2573	#N/A	0	1	#N/A	421	16.36	1	#N/A	0	0	16
 Q1394	Lenin	#N/A	725	#N/A	124581	#N/A	131	36	#N/A	4682	3.76	2	#N/A	0	0	32439	2003-12-16	6377	1567310	67	0	0	Vladimir Lenin	Autore:Lenin
 Q1394847	Giacomo da Lentini	Letteratura italiana	118	113	10501	10127	10	2	6	223	2.12	0	0	0	0	7274	2006-12-08	5289	255791	27	0	0		Autore:Giacomo da Lentini
 Q1394860	Pier della Vigna	Letteratura italiana	119	111	10861	10385	5	1	51	191	1.76	0	0	0	0	2441	2006-01-08	5623	256591	40	0	0	Pietro della Vigna	Autore:Pier della Vigna
-Q1399	Niccolò Machiavelli	#N/A	797	#N/A	85963	#N/A	46	17	#N/A	2115	2.46	0	#N/A	6	0	49567	2006-12-06	5291	1723552	184	0	0	Niccolò Machiavelli	Autore:Niccolò Machiavelli
+Q1399	Niccolò Machiavelli	Filosofia	797	760	85963	85726	46	17	15	2115	2.46	0	0	6	0	49567	2006-12-06	5291	1723552	184	0	0	Niccolò Machiavelli	Autore:Niccolò Machiavelli
 Q1401	Francesco Petrarca	#N/A	1011	#N/A	139318	#N/A	194	31	#N/A	1253	0.90	0	#N/A	0	0	37466	2002-11-22	6766	2184857	102	0	1	Francesco Petrarca	Autore:Francesco Petrarca
 Q1401935	Disposizione	#N/A	41	#N/A	19301	#N/A	0	5	#N/A	944	4.89	0	#N/A	0	0	642	2005-09-11	5742	89232	-1	0	0		
 Q1402	Giovanni Boccaccio	Letteratura italiana	695	26	136546	32	191	22	0	2595	1.90	0	0	0	0	68346	2002-05-04	6968	1503455	64	0	1	Giovanni Boccaccio	Autore:Giovanni Boccaccio
@@ -512,7 +512,7 @@ Q1403517	Incertezza di misura	Fisica	101	94	14788	14784	12	1	4	1929	13.04	0	0	0	
 Q1404472	Rinascimento italiano	Storia dell'arte	228	214	24655	24648	19	7	9	2359	9.57	0	0	0	0	3966	2007-01-13	5253	492334	70	0	0	Renaissance in Italy	
 Q1405	Augusto	#N/A	1122	#N/A	160491	#N/A	162	47	#N/A	5833	3.63	0	#N/A	0	0	21753	2003-09-08	6476	2425715	575	0	1	Augustus	Autore:Augusto
 Q1406	Microsoft Windows	Informatica	373	346	42277	43291	20	24	0	716	1.69	1	1	2	0	18056	2003-02-27	6669	806238	134	0	0	Microsoft Windows	Microsoft Windows
-Q140694	Alexis de Tocqueville	#N/A	101	#N/A	33535	#N/A	26	5	#N/A	389	1.16	0	#N/A	0	0	3054	2006-03-21	5551	217519	12	0	0	Alexis de Tocqueville	Autore:Alexis de Tocqueville
+Q140694	Alexis de Tocqueville	Filosofia	101	98	33535	33554	26	5	3	389	1.16	0	0	0	0	3054	2006-03-21	5551	217519	12	0	0	Alexis de Tocqueville	Autore:Alexis de Tocqueville
 Q1410	Gibilterra	#N/A	511	#N/A	33268	#N/A	15	20	#N/A	2106	6.33	0	#N/A	1	0	4742	2004-01-14	6348	1105350	-34	0	0	Gibraltar	Gibraltar
 Q1410539	Terramare	Storia	83	82	31831	13135	38	23	8	587	1.84	0	0	0	0	2144	2004-12-12	6015	179164	5	0	0	Terramare culture	
 Q1411112	Mario Schifano	Storia dell'arte	137	131	39659	39091	16	1	34	1081	2.73	0	0	0	0	4347	2005-10-04	5719	295637	30	0	0		
@@ -606,9 +606,9 @@ Q152415	Seno (matematica)	#N/A	226	#N/A	13128	#N/A	9	5	#N/A	971	7.40	0	#N/A	0	0	
 Q152509	Colazione sull'erba (Manet)	Storia dell'arte	199	193	15850	15826	9	5	6	172	1.09	0	0	0	0	4485	2007-05-28	5118	430534	31	0	0	Le Déjeuner sur l'herbe by Manet	
 Q152989	Fronte occidentale (1914-1918)	Storia	114	106	130497	130472	150	40	17	3403	2.61	0	0	0	0	8299	2006-06-03	5477	247103	43	0	1	Western Front theatre of World War I	
 Q1530280	Equilibrio (biologia)	Biologia	17	40	1819	#N/A	1	1	0	391	21.50	1	#N/A	0	0	38	2016-04-17	1871	36079	10	0	0	Challenges to physical balance	
-Q153034	Emmanuel Lévinas	#N/A	57	#N/A	39867	#N/A	54	6	#N/A	20	0.05	0	#N/A	0	0	2417	2005-11-08	5684	122405	7	0	0	Emmanuel Levinas	
+Q153034	Emmanuel Lévinas	Filosofia	57	55	39867	39867	54	6	51	20	0.05	0	0	0	0	2417	2005-11-08	5684	122405	7	0	0	Emmanuel Levinas	
 Q15316	Crosta terrestre	#N/A	189	#N/A	6049	#N/A	0	4	#N/A	469	7.75	1	#N/A	0	0	71	2003-09-02	6482	408387	-7	0	0	Structure of the Earth	
-Q153232	Jean Baptiste Le Rond d'Alembert	#N/A	36	#N/A	30034	#N/A	6	7	#N/A	589	1.96	0	#N/A	0	0	39	2005-03-04	5933	77829	1	0	0	Jean Le Rond d'Alembert	Autore:Jean Baptiste Le Rond d'Alembert
+Q153232	Jean Baptiste Le Rond d'Alembert	Filosofia	36	36	30034	26929	6	7	2	589	1.96	0	0	0	0	39	2005-03-04	5933	77829	1	0	0	Jean Le Rond d'Alembert	Autore:Jean Baptiste Le Rond d'Alembert
 Q153650	Guerra austro-prussiana	Storia	88	85	20842	21643	7	39	1	2707	12.99	0	0	0	0	4188	2006-11-26	5301	190686	19	0	0	Austro-Prussian War	
 Q153660	Repubblica Sociale Italiana	Storia	613	592	143324	142407	116	54	51	12506	8.73	1	1	5	0	238666	2003-02-23	6673	1325399	103	0	0	Repubblica Sociale Italiana	Autore:Repubblica Sociale Italiana
 Q153670	Primo Levi	Letteratura italiana	1305	1224	47751	45542	40	13	6	1673	3.50	0	0	0	0	61282	2004-04-11	6260	2821066	405	0	0	Primo Levi	Autore:Primo Levi
@@ -622,7 +622,7 @@ Q154340	Francis Bacon (pittore)	Storia dell'arte	134	138	13898	10147	5	2	1	3266	
 Q154439	Concordato di Worms	Storia	126	123	4232	4179	1	1	0	463	10.94	1	1	0	0	463	2004-11-28	6029	273160	16	0	0		
 Q154611	Periodo interbellico	Letteratura italiana	62	3	25945	24495	3	1	0	287	1.11	6	6	0	0	4095	2009-04-24	4421	134518	1	0	0	Interwar period	
 Q154720	Battaglia d'Inghilterra	#N/A	219	#N/A	63865	#N/A	38	17	#N/A	3747	5.87	1	#N/A	0	0	5693	2004-07-29	6151	473837	23	0	0	Battle of Britain	Battle of Britain
-Q154751	Nicola Cusano	#N/A	122	#N/A	59590	#N/A	21	17	#N/A	574	0.96	1	#N/A	0	0	7364	2005-05-02	5874	262981	-1	0	0	Nicholas of Cusa	Autore:Nicola Cusano
+Q154751	Nicola Cusano	Filosofia	122	122	59590	57542	21	17	26	574	0.96	1	1	0	0	7364	2005-05-02	5874	262981	-1	0	0	Nicholas of Cusa	Autore:Nicola Cusano
 Q154756	Italo Calvino	Letteratura italiana	1048	1063	75251	73674	48	8	4	1354	1.80	0	0	0	0	41072	2006-02-07	5593	2265789	-73	0	0	Italo Calvino	Autore:Italo Calvino
 Q154764	Lotta per le investiture	Storia	236	216	81137	11892	139	23	3	3250	4.01	0	0	0	0	8817	2006-12-01	5296	509331	96	1	0		
 Q154954	Persona fisica	Diritto e Economia	66	66	1706	1707	0	0	0	115	6.74	1	1	0	0	49	2005-08-02	5782	141629	-1	0	0		
@@ -2032,7 +2032,7 @@ Q38370	Enrico VIII d'Inghilterra	Storia	1279	1189	47827	47381	13	21	15	1100	2.30
 Q383973	Produzione di energia elettrica	Tecnologia	99	99	18855	18833	15	9	0	798	4.23	1	1	0	0	2250	2004-10-22	6066	213893	-2	0	0	Electric power generation	
 Q3840065	Massa atomica	Chimica	143	130	16791	#N/A	4	1	#N/A	3870	23.05	2	2	0	0	93	2005-08-29	5755	310131	68	0	0		
 Q384014	Diritto di famiglia	Diritto e Economia	73	72	8345	8346	1	0	3	159	1.91	0	0	0	0	2093	2006-03-03	5569	157588	3	0	0	Family law	
-Q38433	Principi della dinamica	Fisica	380	380	34076	34099	9	3	10	1079	3.17	0	1	0	3	7645	2005-05-19	5857	822284	4	0	0	Newton's laws of motion	
+Q38433	Principi della dinamica	Fisica	380	40	34076	172	9	3	0	1079	3.17	0	0	0	3	7645	2005-05-19	5857	822284	4	0	0	Newton's laws of motion	
 Q385239	Sistema monetario europeo	Storia	89	89	9868	9702	2	1	3	2446	24.79	0	0	0	0	217	2006-02-16	5584	193458	4	0	0		
 Q38526	Milione	Matematica	133	134	2849	2742	1	1	1	1284	45.07	0	0	0	0	40	2004-06-04	6206	286610	-5	0	0	1000000 (number)	
 Q3853760	Medicina del XIX secolo	Storia	13	12	13236	13232	4	3	0	993	7.50	1	1	0	0	79	2008-10-16	4611	28015	3	0	0		
@@ -2358,7 +2358,7 @@ Q442781	Webinar	Informatica	178	159	2906	1640	4	0	0	1680	57.81	2		0	0	4401	2009-
 Q44311	Jihād	#N/A	117	#N/A	45822	#N/A	11	1	#N/A	1249	2.73	1		3	0	14341	2004-05-17	6224	253531	53	0	0	Jihad	
 Q4439	Disco rigido	Informatica	334	335	36813	36710	9	12	1	2125	5.77	1		0	0	9777	2004-04-04	6267	721961	-5	0	0	Hard disks	Hard disk
 Q444143	Edoardo Sanguineti	Letteratura italiana	76	75	61288	59631	11	2	56	2	0.00	0		1	0	6308	2005-03-17	5920	164906	5	0	0	Edoardo Sanguineti	
-Q44424	Legame chimico	#N/A	250	246	13900	#N/A	3	3	1	1598	11.50	1		0	0	3687	2004-08-28	6121	540345	22	0	0	Chemical bonding	Chemical bond
+Q44424	Legame chimico	Chimica	250	246	13900	#N/A	3	3	1	1598	11.50	1		0	0	3687	2004-08-28	6121	540345	22	0	0	Chemical bonding	Chemical bond
 Q44432	Calore	Fisica	214	225	13589	13247	4	1	2	762	5.61	1		0	0	30249	2004-04-14	6257	463405	-52	0	0	Heat	
 Q44528	Vettore (matematica)	Fisica	203	203	23550	23550	3	7	4	1735	7.37	0		0	0	50026	2004-12-19	6008	439318	3	0	0	Vectors	
 Q44601	Francesco Guicciardini	Letteratura italiana	131	127	27787	26978	6	6	7	407	1.46	1		0	0	1754	2006-12-03	5294	282911	18	0	0	Francesco Guicciardini	Autore:Francesco Guicciardini
@@ -2372,13 +2372,13 @@ Q448	Denis Diderot	Letteratura italiana	136	#N/A	76661	76210	100	18	4	1789	2.33	
 Q4489699	A Silvia	Letteratura italiana	277	#N/A	12129	12150	6	3	2	345	2.84	0		0	0	33373	2006-07-20	5430	598427	45	0	0		
 Q44946	Punto (geometria)	Matematica	114	119	4348	4348	0	0	0	406	9.34	1		0	0	620	2004-09-28	6090	245461	-26	0	0	Points (mathematics)	
 Q45	Portogallo	Geografia	1027	#N/A	65580	64023	17	25	0	2563	3.91	1		0	0	8196	2003-07-02	6544	2220989	-139	0	0	Portugal	
-Q45003	Entropia	#N/A	758	#N/A	39347	#N/A	8	4	15	1741	4.42	0		0	0	36942	2004-07-15	6165	1638780	-8	0	0	Entropy	
+Q45003	Entropia	Chimica	758	#N/A	39347	#N/A	8	4	15	1741	4.42	0		0	0	36942	2004-07-15	6165	1638780	-8	0	0	Entropy	
 Q4501	Bernart de Ventadorn	Letteratura italiana	22	#N/A	15881	15591	8	1	16	296	1.86	0		0	0	1201	2006-10-22	5336	47286	5	0	0	Bernard de Ventadour	
 Q451312	Umberto Saba	Letteratura italiana	439	441	29954	27707	10	6	93	65	0.22	0		0	0	10891	2006-12-03	5294	948267	-11	0	0	Umberto Saba	Autore:Umberto Saba
-Q452421	Contrattazione collettiva	#N/A	60	#N/A	5092	#N/A	0	1	1	1021	20.05	0		0	0	367	2006-11-29	5298	130685	5	0	0		
+Q452421	Contrattazione collettiva	Cittadinanza e costituzione	60	#N/A	5092	#N/A	0	1	1	1021	20.05	0		0	0	367	2006-11-29	5298	130685	5	0	0		
 Q4530482	Sviluppo economico	Diritto e Economia	38	#N/A	4352	#N/A	0	0	2	532	12.22	1		0	0	49	2006-08-14	5405	81820	8	0	0	Economic development	
 Q45315	Berberi	Storia	279	284	20192	33688	11	11	12	1771	8.77	0		0	0	2332	2005-08-30	5754	602758	-27	0	0	Berber people	
-Q454	Pace	#N/A	110	#N/A	64428	#N/A	20	20	1	3311	5.14	3		12	4	22000	2003-03-19	6649	238874	-16	0	0	Peace	Peace
+Q454	Pace	Cittadinanza e costituzione	110	#N/A	64428	#N/A	20	20	1	3311	5.14	3		12	4	22000	2003-03-19	6649	238874	-16	0	0	Peace	Peace
 Q455037	Catena di montaggio	Storia	108	105	4620	4618	1	2	1	1087	23.53	0		0	0	3526	2007-02-15	5220	234078	16	0	0	Assembly lines	
 Q45670	Regno del Portogallo	Storia	57	55	10344	10203	0	6	2	2972	28.73	0		0	0	36	2007-03-25	5182	123759	11	0	0		
 Q456993	Assedio di Gerusalemme (1099)	Storia	43	40	27417	26568	11	12	9	1335	4.87	0		0	0	457	2006-06-14	5466	92489	14	0	0	Siege of Jerusalem 1099	
