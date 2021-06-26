@@ -12,19 +12,30 @@ function format_date(date){
 
 function variation_perc(now,prev,parameter){
 	let variation = now - prev;
+	let perc; 
 	let output;
     if (variation > 0){
-		output = "+" + Math.floor(((now/prev)-1)*100).toLocaleString() + "%";
-	}
-	else if (Math.floor(((now/prev)-1)*100) < 0.5 && Math.floor(((now/prev)-1)*100) > -0.5){
-		output = "-"
+    	perc = (((now/prev)-1)*100)
 	}
 	else {
-		output = "-" + Math.floor(100-(now*100)/prev).toLocaleString() + "%";
-    }
+		perc = (100-(now*100)/prev)
+	}
+
+	if (perc < 1 && perc >-1){
+		output = perc.toFixed(1) + "%";
+	}
+	else {
+		output = Math.floor(perc).toLocaleString() + "%";
+	}
+
+	if (variation > 0){
+		output = "+" + output; 
+	}
+	else {
+		output = "-" + output; 
+	}
     return output;
 }
-console.log(variation_perc(100,101,"cocco"))
 
 const container = "#dv1";
 const font_size = 10;
@@ -240,9 +251,6 @@ function dv1(year,the_subject,sort) {
             	if (diff_pv > 0){
             		content += "<td class='value increase'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
             	}
-            	else if (diff_pv == 0){
-            		content += "<td class='value'>-</td></tr>"
-            	}
             	else {
             		let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
             		content += "<td class='value decrease'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
@@ -253,10 +261,10 @@ function dv1(year,the_subject,sort) {
             	if(year == 2021){
             		let diff_size = d.size - d.size_prev
 	            	if (diff_size > 0){
-	            		content += "<td class='value increase'>(" + d.size_prev + " +" + variation_perc(d.size,d.size_prev,"visits") + "%)</td></tr>"
+	            		content += "<td class='value increase'>(" + d.size_prev + " " + variation_perc(d.size,d.size_prev,"visits") + ")</td></tr>"
 	            	}
 	            	else {
-	            		content += "<td class='value decrease'>(" + d.size_prev + " -" + variation_perc(d.size,d.size_prev,"visits") + "%)</td></tr>"
+	            		content += "<td class='value decrease'>(" + d.size_prev + " " + variation_perc(d.size,d.size_prev,"visits") + ")</td></tr>"
 	            	}
             	}
 
@@ -313,6 +321,49 @@ function dv1(year,the_subject,sort) {
 			.on("mouseover", tooltip.show) 
 			.on("mouseout", tooltip.hide)
 
+				// variation 2020-2021
+		let variation = article.append("g")
+			.attr("class","variation")
+			.attr("transform",function (d,i) {
+				return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+			})
+
+		let variation_line = variation.append("line")
+			.attr("class","line_prev")
+			.attr("stroke", function(d,i){
+				return apply_color(d.subject)
+			})
+			.style("stroke-dasharray", ("3, 3")) 
+			.attr("x1", function(d,i){
+				return 0
+			})
+			.attr("y1", function(d,i){
+				return 0
+			})
+			.attr("x2", function(d,i){
+				return 0
+			})
+			.attr("y2", function(d,i){
+				return y(d.avg_pv)-y(d.avg_pv_prev)
+			})
+
+		let variation_circle = variation.append("circle")
+			.attr("cx",0)
+			.attr("cy", function(d,i){
+				return y(d.avg_pv)-y(d.avg_pv_prev)
+			})
+			.attr("class","circle_prev")
+			.attr("opacity",0)
+			.attr("stroke", function(d,i){
+				return apply_color(d.subject)
+			})
+			.style("stroke-dasharray", ("3, 3")) 
+			.attr("fill","transparent")
+			.attr("r", function(d,i){
+				return r(Math.sqrt(d.size_prev/3.14))
+			})
+
+		// articles
 		let article_circles = article.append("g")
 			.attr("class","article_circles")
 			.attr("transform",function (d,i) {
@@ -391,61 +442,38 @@ function dv1(year,the_subject,sort) {
 				return r(Math.sqrt(d.discussion_size/3.14))
 			})
 
-		// variation 2020-2021
-		let variation = article.append("g")
-			.attr("class","variation")
-			.attr("transform",function (d,i) {
-				return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
-			})
-
-		let variation_line = variation.append("line")
-			.attr("stroke", function(d,i){
-				return apply_color(d.subject)
-			})
-			.style("stroke-dasharray", ("3, 3")) 
-			.attr("x1", function(d,i){
-				return 0
-			})
-			.attr("y1", function(d,i){
-				return 0
-			})
-			.attr("x2", function(d,i){
-				return 0
-			})
-			.attr("y2", function(d,i){
-				return y(d.avg_pv)-y(d.avg_pv_prev)
-			})
-
-		// for debug
-		// let variation_circle = variation.append("circle")
-		// 	.attr("cx",0)
-		// 	.attr("cy",0)
-		// 	.attr("stroke", "red")
-		// 	.attr("fill","transparent")
-		// 	.attr("opacity",0.5)
-		// 	.attr("r", function(d,i){
-		// 		return r(Math.sqrt(d.size/3.14))
-		// 	})
-
 	    function handleMouseOver(){
+	    	// hide circles
 			d3.selectAll(".article_circles")
 				.attr("opacity",0.2)
 
-			d3.selectAll(".variation").select("line")
+			d3.selectAll(".variation").select(".line_prev")
 				.attr("opacity",0.2)
 
+			d3.selectAll(".variation").select(".circle_prev")
+				.attr("opacity",0)
+
+			// highlight
 			d3.select(this)
 				.attr("opacity",1)
 
-			d3.select(this.nextSibling).select("line")
+			d3.select(this.previousSibling).select(".circle_prev")
 				.attr("opacity",1)
+
+			d3.select(this.previousSibling).select(".line_prev")
+				.attr("opacity",1)
+
+			console.log("fire")
 		}
 
 	    function handleMouseOut(){
-			d3.selectAll(".article_circles",".variation")
+			d3.selectAll(".article_circles")
 				.attr("opacity",1)
 
-			d3.selectAll(".variation").select("line")
+			d3.selectAll(".variation").select(".circle_prev")
+				.attr("opacity",0)
+
+			d3.selectAll(".variation").select(".line_prev")
 				.attr("opacity",1)
 	    }
 
@@ -648,6 +676,49 @@ function dv1(year,the_subject,sort) {
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
 
+			// variation 2020-2021
+			let variation = article.append("g")
+				.attr("class","variation")
+				.attr("transform",function (d,i) {
+					return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+				})
+
+			let variation_line = variation.append("line")
+				.attr("class","line_prev")
+				.attr("stroke", function(d,i){
+					return apply_color(d.subject)
+				})
+				.style("stroke-dasharray", ("3, 3")) 
+				.attr("x1", function(d,i){
+					return 0
+				})
+				.attr("y1", function(d,i){
+					return 0
+				})
+				.attr("x2", function(d,i){
+					return 0
+				})
+				.attr("y2", function(d,i){
+					return y(d.avg_pv)-y(d.avg_pv_prev)
+				})
+
+			let variation_circle = variation.append("circle")
+				.attr("class","circle_prev")
+				.attr("opacity",0)
+				.attr("cx",0)
+				.attr("cy", function(d,i){
+					return y(d.avg_pv)-y(d.avg_pv_prev)
+				})
+				.attr("stroke", function(d,i){
+					return apply_color(d.subject)
+				})
+				.style("stroke-dasharray", ("3, 3")) 
+				.attr("fill","transparent")
+				.attr("r", function(d,i){
+					return r(Math.sqrt(d.size_prev/3.14))
+				})
+
+			// articles
 			let article_circles = article.append("g")
 				.attr("class","article_circles")
 				.attr("transform",function (d,i) {
@@ -725,42 +796,6 @@ function dv1(year,the_subject,sort) {
 				.attr("r", function(d,i){
 					return r(Math.sqrt(d.discussion_size/3.14))
 				})
-
-				// variation 2020-2021
-				let variation = article.append("g")
-					.attr("class","variation")
-					.attr("transform",function (d,i) {
-						return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
-					})
-
-				let variation_line = variation.append("line")
-					.attr("stroke", function(d,i){
-						return apply_color(d.subject)
-					})
-					.style("stroke-dasharray", ("3, 3")) 
-					.attr("x1", function(d,i){
-						return 0
-					})
-					.attr("y1", function(d,i){
-						return 0
-					})
-					.attr("x2", function(d,i){
-						return 0
-					})
-					.attr("y2", function(d,i){
-						return y(d.avg_pv)-y(d.avg_pv_prev)
-					})
-
-				// for debug
-				// let variation_circle = variation.append("circle")
-				// 	.attr("cx",0)
-				// 	.attr("cy",0)
-				// 	.attr("stroke", "red")
-				// 	.attr("fill","transparent")
-				// 	.attr("opacity",0.5)
-				// 	.attr("r", function(d,i){
-				// 		return r(Math.sqrt(d.size/3.14))
-				// 	})
 		}
 
 		function update_sort(the_subject,the_sort){
