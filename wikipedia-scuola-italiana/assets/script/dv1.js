@@ -10,39 +10,6 @@ function format_date(date){
 	}
 }
 
-function variation_perc(now,prev,parameter){
-	let variation = now - prev;
-	let perc; 
-	let output;
-    if (variation > 0){
-    	perc = (((now/prev)-1)*100)
-	}
-	else {
-		perc = (100-(now*100)/prev)
-	}
-
-	if (perc <= 0.5 && perc >=-0.5){
-		output = perc.toFixed(1) + "%";
-	}
-	else if (variation == 0){
-		output = "-"
-	}
-	else {
-		output = Math.floor(perc).toLocaleString() + "%";
-	}
-
-	if (variation > 0){
-		output = "+" + output; 
-	}
-	else if (variation == 0){
-		output = output
-	}
-	else {
-		output = "-" + output; 
-	}
-    return output;
-}
-
 const container = "#dv1";
 const font_size = 10;
 const filter_item = 120; // 130;
@@ -1031,7 +998,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 $(document).ready(function() {
-	const random_subject = getRandomIntInclusive(1,17); //(Math.floor(Math.random() * 18) + 0) + 1
+	const random_subject = getRandomIntInclusive(1,17);
 	document.getElementById("subjects").selectedIndex = random_subject;
 
 	dv1(2021,subjects[random_subject],parseInt(1));

@@ -14,6 +14,8 @@ let c_issues = '#EC4C4E',
 	c_days = '#9e9e9e',
 	c_line = '#9E9E9E';
 
+const stroke_dash = "2,2"
+
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
@@ -39,8 +41,8 @@ const features_height = height/2.1;
 
 const ticksAmount = 10;
 
-function dv2(the_subject) {
-	d3.tsv("../assets/data/voci_2020.tsv").then(loaded)
+function dv2(year,the_subject,sort) {
+	d3.tsv("../assets/data/voci_" + year + ".tsv").then(loaded)
 
 	function loaded(data) {
 		// console.log(data)
@@ -101,13 +103,11 @@ function dv2(the_subject) {
 
 			d.features = d.references + d.notes + d.images;
 		})
-		// console.log(filtered_data)
 
 		// scale
 		let issues_max = d3.max(filtered_data, function(d) { 
 				return d.issues
 			})
-		// console.log(issues_max)
 
 		let max_features = d3.max(filtered_data, function(d) {
 				return +d.features
@@ -201,27 +201,27 @@ function dv2(the_subject) {
 			.attr('id', 'tooltip_dv2')
 			.direction(function (d,i) {
 				return 'n'
-				// if (i <= filtered_data.length/2) {
-				// 	return 'e'
-				// }
-				// else {
-				// 	return 'w'
-				// }
 			})
 			.offset(function (d,i){
 				return [-20,0]
-				// if (i <= filtered_data.length/2) {
-				// 	return [0,10]
-				// }
-				// else {
-				// 	return [0,-10]
-				// }
 			})
 			.html(function(d) {
 	            let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
+	            // issues
+                content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
+            	let diff_issues = d.issues - d.issues_prev
+            	if (diff_issues > 0){
+            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+            	}
+            	else {
+            		let diff_pv_perc = Math.floor(100-(d.issues*100)/d.avg_pv_prev).toLocaleString();
+            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+                }
+
+
 	            content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString() + "</td></tr>"
-	            content += "<tr><td class='label'>riferimenti bibliografici</td><td class='value'>" + d.references.toLocaleString() + "</td></tr>"
+	            content += "<tr><td class='label'>riferimenti bibl.</td><td class='value'>" + d.references.toLocaleString() + "</td></tr>"
 	            content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString() + "</td></tr>"
 	            content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString() + "</td></tr>"
 
@@ -232,7 +232,7 @@ function dv2(the_subject) {
 
 		// article box
 		let article = plot.append("g")	
-			.attr("class","articles")
+			.attr("id","articles")
 			.selectAll("g")
 			.data(filtered_data)
 			.enter()
@@ -259,7 +259,6 @@ function dv2(the_subject) {
 
 		// article circle
 		let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
-		// console.log(total,article_width,h_space)
 
 		let article_circle = article.append("circle")
 			.attr("cx", article_width/2)
@@ -341,6 +340,56 @@ function dv2(the_subject) {
 				return y_features(d.references)
 			})
 
+		// variation 2020-2021
+		if (year == 2021){			
+			let variation = article.append("g")
+				.attr("class","variation")
+				.attr("data-2020",function (d,i) {
+					let feat_2020 = (+d.references_prev) + (+d.notes_prev) + (+d.images_prev);
+					let feat_2021 = +d.references + (+d.notes) + (+d.images);
+					return feat_2020;
+				})
+
+			let issue_prev = variation.append("line")
+				.attr("opacity",1)
+				.attr("class","issue_prev")
+				.attr("stroke", "black")
+				.style("stroke-dasharray", (stroke_dash))
+				.attr("x1", function(d,i){
+					return 0
+				})
+				.attr("y1", function(d,i){
+					return y_issues(issues_max - d.issues_prev)
+				})
+				.attr("x2", function(d,i){
+					return article_width
+				})
+				.attr("y2", function(d,i){
+					return y_issues(issues_max - d.issues_prev)
+				})
+
+			let features_prev = variation.append("line")
+				.attr("opacity",1)
+				.attr("class","features_prev")
+				.attr("stroke", "black")
+				.style("stroke-dasharray", (stroke_dash)) 
+				.attr("transform", function(d,i){
+					return "translate(" + 0 + "," + ((height/2)+v_shift) + ")"
+				}) 
+				.attr("x1", function(d,i){
+					return 0
+				})
+				.attr("y1", function(d,i){
+					return y_features((+d.references_prev) + (+d.notes_prev) + (+d.images_prev))
+				})
+				.attr("x2", function(d,i){
+					return article_width
+				})
+				.attr("y2", function(d,i){
+					return y_features((+d.references_prev) + (+d.notes_prev) + (+d.images_prev))
+				})
+		}
+
    		// mouse hover
 		function handleMouseOver(){
 			d3.selectAll(".article")
@@ -355,8 +404,6 @@ function dv2(the_subject) {
 				.attr("opacity",1)
 	    }
 
-		// sort
-		let new_sort;
 		$("#subjects").change(function() {
 			let subject = this.value;
 			new_sort =  $("#sort_article option:selected").val();
@@ -364,16 +411,17 @@ function dv2(the_subject) {
 			update_subject(subject,new_sort);
 		});
 
+		// sort
+		let new_sort;
 		$("#sort_article").change(function() {
 			new_sort = parseInt(this.value);
 			let subject = $("#subjects option:selected").val();
 
 			update_sort(subject,new_sort);
-			// console.log(subject,new_sort)
 		});
 
 		function update_subject(the_subject,the_sort){
-			// console.log(the_subject,the_sort);
+			console.log("fire");
 
 			d3.select("#articles").remove();
 
@@ -424,10 +472,6 @@ function dv2(the_subject) {
 					}
 				}
 			}
-			
-			// visit_sort = subject_articles.sort(function(x, y){
-			// 	return d3.descending(+x.average_daily_visit, +y.average_daily_visit);
-			// })
 
 			filtered_data_ = subject_articles.filter(function(x,y){ 
 				return x.issues > 0
@@ -466,12 +510,6 @@ function dv2(the_subject) {
 					return d3.descending(+a.images, +b.images);
 				})
 			}
-			// console.log(filtered_data[0].article,filtered_data[0].references)
-			// console.log(filtered_data[1].article,filtered_data[2].references)
-
-			// filtered_data = filter_data.sort(function(a, b){
-			// 	return d3.descending(a.issues, b.issues);
-			// })
 		
 			filtered_data.forEach(function (d,i) {
 				total += 1
@@ -519,7 +557,7 @@ function dv2(the_subject) {
 
 			// plot data
 			let article = plot.append("g")	
-				.attr("class","articles")
+				.attr("id","articles")
 				.selectAll("g")
 				.data(filtered_data)
 				.enter()
@@ -594,9 +632,6 @@ function dv2(the_subject) {
 			let notes = features.append("rect")
 				.attr("x",0)
 				.attr("y",0)
-				// function(d,i){
-				// 	return y_features(d.references)
-				// })
 				.attr("width",article_width)
 				.attr("fill",c_note)
 				.attr("class", function(d,i){
@@ -623,6 +658,55 @@ function dv2(the_subject) {
 				.attr("height", function(d,i){
 					return y_features(d.references)
 				})
+
+			// variation 2020-2021
+			if (year == 2021){			
+				let variation = article.append("g")
+					.attr("class","variation")
+					.attr("data-variation",function (d,i) {
+						let feat_2020 = (+d.references_prev) + (+d.notes_prev) + (+d.images_prev);
+						let feat_2021 = +d.references + (+d.notes) + (+d.images);
+					})
+
+				let issue_prev = variation.append("line")
+					.attr("opacity",1)
+					.attr("class","issue_prev")
+					.attr("stroke", "black")
+					.style("stroke-dasharray", (stroke_dash))
+					.attr("x1", function(d,i){
+						return 0
+					})
+					.attr("y1", function(d,i){
+						return y_issues(issues_max - d.issues_prev)
+					})
+					.attr("x2", function(d,i){
+						return article_width
+					})
+					.attr("y2", function(d,i){
+						return y_issues(issues_max - d.issues_prev)
+					})
+
+				let features_prev = variation.append("line")
+					.attr("opacity",1)
+					.attr("class","features_prev")
+					.attr("stroke", "black")
+					.style("stroke-dasharray", (stroke_dash)) 
+					.attr("transform", function(d,i){
+						return "translate(" + 0 + "," + ((height/2)+v_shift) + ")"
+					}) 
+					.attr("x1", function(d,i){
+						return 0
+					})
+					.attr("y1", function(d,i){
+						return y_features((+d.references_prev) + (+d.notes_prev) + (+d.images_prev))
+					})
+					.attr("x2", function(d,i){
+						return article_width
+					})
+					.attr("y2", function(d,i){
+						return y_features((+d.references_prev) + (+d.notes_prev) + (+d.images_prev))
+					})
+			}
 
 			// update axis
 			d3.select("#yAxis_issues")
@@ -765,13 +849,29 @@ function dv2(the_subject) {
 	}
 }
 
-$(document).ready(function() {
-	let random_subject = (Math.floor(Math.random() * 17) + 0) + 1
-	if (random_subject == 12 || random_subject == 17){
-		random_subject = 11
-	}
+function get_year(){
+	$("#year").change(function() {
+		let year = parseInt(this.value);
+		let subject = String($("#subjects option:selected").val());
+		let sort =  parseInt($("#sort option:selected").val());
 
+		$("#d3_plot").remove();
+		$("#axis_grid").remove();
+
+		dv2(year,subject,sort);
+	});
+}
+
+function getRandomIntInclusive(min, max) {
+  	min = Math.ceil(min);
+  	max = Math.floor(max);
+  	return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+$(document).ready(function() {
+	const random_subject = getRandomIntInclusive(1,17);
 	document.getElementById("subjects").selectedIndex = random_subject;
 
-	dv2(subjects[random_subject]);
-});
+	dv2(2021,subjects[random_subject],parseInt(1));
+	get_year();
+})

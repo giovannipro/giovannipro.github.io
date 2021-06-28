@@ -16,6 +16,39 @@ function apply_color(subject){
 	return color;
 }
 
+function variation_perc(now,prev,parameter){
+	let variation = now - prev;
+	let perc; 
+	let output;
+    if (variation > 0){
+    	perc = (((now/prev)-1)*100)
+	}
+	else {
+		perc = (100-(now*100)/prev)
+	}
+
+	if (perc <= 0.5 && perc >=-0.5){
+		output = perc.toFixed(1) + "%";
+	}
+	else if (variation == 0){
+		output = "-"
+	}
+	else {
+		output = Math.floor(perc).toLocaleString() + "%";
+	}
+
+	if (variation > 0){
+		output = "+" + output; 
+	}
+	else if (variation == 0){
+		output = output
+	}
+	else {
+		output = "-" + output; 
+	}
+    return output;
+}
+
 const subjects = [
 	"Tutte le materie",
 	"Biologia",
