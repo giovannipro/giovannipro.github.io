@@ -131,6 +131,8 @@ function dv1(year,the_subject,sort) {
 			d.days = +d.days
 			d.avg_pv = +d.avg_pv
 			d.avg_pv_prev = +d.avg_pv_prev
+
+			console.log(d.article,d.subject,d.avg_pv,d.discussion_size,d.issues,d.images);
 		})
 		console.log(filtered_data);
 		
@@ -602,6 +604,8 @@ function dv1(year,the_subject,sort) {
 				d.avg_pv = +d.avg_pv
 				d.avg_pv_prev = +d.avg_pv_prev
 				d.issues = +d.issues
+
+				console.log(d.article,d.avg_pv,d.discussion_size,d.issues,d.images);
 			})
 
 			// scale
