@@ -40,7 +40,7 @@ let svg = d3.select(container)
 
 function dv1(year,the_subject,sort) {
 	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
-	console.log(year,the_subject,sort)
+	// console.log(year,the_subject,sort)
 
 	function loaded(data) {
 
@@ -99,9 +99,9 @@ function dv1(year,the_subject,sort) {
 			d.avg_pv = +d.avg_pv
 			d.avg_pv_prev = +d.avg_pv_prev
 
-			console.log(d.article,d.subject,d.avg_pv,d.discussion_size,d.issues,d.images);
+			// console.log(d.article,d.subject,d.avg_pv,d.discussion_size,d.issues,d.images);
 		})
-		console.log(filtered_data);
+		// console.log(filtered_data);
 		
 		// scale
 		let y_max = d3.max(filtered_data, function(d) { 
@@ -170,7 +170,7 @@ function dv1(year,the_subject,sort) {
        	x = d3.scaleLinear()
 			.domain([min,max])
 			.range([0,width-100])
-		console.log(min,max)
+		// console.log(min,max)
 
 		let r = d3.scaleLinear()
 			.range([0, 20])
@@ -572,7 +572,7 @@ function dv1(year,the_subject,sort) {
 				d.avg_pv_prev = +d.avg_pv_prev
 				d.issues = +d.issues
 
-				console.log(d.article,d.avg_pv,d.discussion_size,d.issues,d.images);
+				// console.log(d.article,d.avg_pv,d.discussion_size,d.issues,d.images);
 			})
 
 			// scale
