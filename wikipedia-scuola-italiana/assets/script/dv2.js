@@ -212,18 +212,34 @@ function dv2(year,the_subject,sort) {
                 content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
             	let diff_issues = d.issues - d.issues_prev
             	if (diff_issues > 0){
-            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
             	}
             	else {
-            		let diff_pv_perc = Math.floor(100-(d.issues*100)/d.avg_pv_prev).toLocaleString();
-            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
                 }
 
+                // references
+                content += "<tr><td class='label'>riferimenti bibl.</td><td class='value'>" + d.references.toLocaleString()
+            	
+            	// notes
+            	content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString()
+            	let diff_notes = d.notes - d.notes_prev
+            	if (diff_notes > 0){
+            		content += "<td class='value increase'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+            	}
+            	else {
+            		content += "<td class='value decrease'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+                }
 
-	            content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString() + "</td></tr>"
-	            content += "<tr><td class='label'>riferimenti bibl.</td><td class='value'>" + d.references.toLocaleString() + "</td></tr>"
-	            content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString() + "</td></tr>"
-	            content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString() + "</td></tr>"
+                // images
+                content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
+            	let diff_images = d.images - d.images_prev
+            	if (diff_images > 0){
+            		content += "<td class='value increase'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+            	}
+            	else {
+            		content += "<td class='value decrease'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+                }
 
 	            content += "</table>"
 	            return content;
@@ -421,7 +437,6 @@ function dv2(year,the_subject,sort) {
 		});
 
 		function update_subject(the_subject,the_sort){
-			console.log("fire");
 
 			d3.select("#articles").remove();
 
@@ -451,7 +466,6 @@ function dv2(year,the_subject,sort) {
 			let subject_group = d3.nest()
 				.key(d => d.subject)
 				.entries(data)
-			// console.log(subject_group)
 		
 			for (const [d,c] of Object.entries(subject_group)) {
 
