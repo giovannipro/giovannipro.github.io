@@ -870,6 +870,7 @@ function get_year(){
 		let sort =  parseInt($("#sort option:selected").val());
 
 		$("#d3_plot").remove();
+		$("#tooltip_dv2").remove();
 		$("#axis_grid").remove();
 
 		dv2(year,subject,sort);
