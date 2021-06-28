@@ -24,12 +24,18 @@ function variation_perc(now,prev,parameter){
 	if (perc <= 0.5 && perc >=-0.5){
 		output = perc.toFixed(1) + "%";
 	}
+	else if (variation == 0){
+		output = "-"
+	}
 	else {
 		output = Math.floor(perc).toLocaleString() + "%";
 	}
 
 	if (variation > 0){
 		output = "+" + output; 
+	}
+	else if (variation == 0){
+		output = output
 	}
 	else {
 		output = "-" + output; 
