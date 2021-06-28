@@ -610,7 +610,7 @@ Q3797511	Inabilitazione	Diritto e Economia		Superiori	Soggetti del diritto		???	
 Q685744	Licenziamento (ordinamento italiano)	Diritto e Economia	ex Licenziamento (diritto italiano)	Superiori	Mercato del lavoro		2.1	1	15	32	26129	62500	21	0	0	240	0.38	0	0	0	0	matching	#VALUE!
 -	Operatore economico	Diritto e Economia		Superiori	I soggetti economici		2.1	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 -	Procedimento legislativo	Diritto e Economia	ex Procedimento legislativo (Italia)	Superiori	Organizzazione dello stato italiano		0	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
-#N/A	Stato (operatore economico)	Diritto e Economia		Superiori	I soggetti economici		2.1	0				0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Stato (operatore economico)	Diritto e Economia		Superiori	I soggetti economici		2.1	0				0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q3796473	Illuminismo in Germania	Filosofia		Superiori	Illuminismo		???	1	16	9	28664	7763	8	0	4	781	10.06	0	0	0	39	2011-10-27	3140
 Q2142166	Paradosso di Achille e la tartaruga	Filosofia		Superiori	Filosofia nella Grecia classica		???	1	238	259	426899	6903	5	1	1	238	3.45	0	0	0	1367	2008-12-15	4186
 Q2733908	Empiriocriticismo	Filosofia		Superiori	Filosofia tra ottocento e novecento		???	1	10	10	17658	9948	9	0	5	633	6.36	0	0	0	792	2008-11-05	4226
@@ -1951,28 +1951,28 @@ Q153670	Primo Levi	Letteratura italiana		Superiori	Dopoguerra	Primo Levi	2.5	1	1
 -	Proemio	Letteratura italiana	ex Proemio dell'Orlando	Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 -	Proemio della Gerusalemme liberata	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 -	Rime (Torquato Tasso)	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Rime di Guido Cavalcanti	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guido Cavalcanti	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Ritrovamento del senno di Orlando	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+-	Rime di Guido Cavalcanti	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guido Cavalcanti	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Ritrovamento del senno di Orlando	Letteratura italiana		Superiori	XVI Secolo	Ludovico Ariosto	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q19140289	S'i' fosse foco	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Cecco Angiolieri	???	1	6	1	10675	10675	6	1	3	273	2.56	0	0	0	50	???	#VALUE!
 Q168962	Torquato Tasso	Letteratura italiana		Superiori	XVI Secolo	Torquato Tasso	2.3	1	411	410	739438	113361	133	22	4	383	0.34	0	0	0	15047	2007-03-21	4821
 Q15402102	Tutt'or ch'eo dirò "gioi", gioiva cosa	Letteratura italiana		Superiori	XIII secolo - Scuola toscana	Guittone d'Arezzo	???	1	0	0	2261	2261	0	0	1	104	4.60	0	0	0	50	???	#VALUE!
 Q166234	Ugo Foscolo	Letteratura italiana		Superiori	Fra XVIII e XIX sec.	Ugo Foscolo	2.4	1	1010	930	1815770	102848	167	17	30	2292	2.23	0	0	0	46395	2007-04-19	4792
 Q451312	Umberto Saba	Letteratura italiana		Superiori	Il secolo breve	Umberto Saba	2.5	1	441	432	792564	27707	8	6	93	65	0.23	0	0	0	10891	2006-12-03	4929
 Q4004349	Una questione privata (Fenoglio)	Letteratura italiana		Superiori	Dopoguerra	Beppe Fenoglio	???	1	2	0	10185	10185	2	0	2	369	3.62	0	0	0	1616	???	#VALUE!
-#N/A	Va, pensiero	Letteratura italiana		Superiori	Primo Ottocento	Giuseppe Verdi	-	1	305	231	548740	10452	6	1	0	654	6.26	0	0	0	9718	2006-06-21	5094
-#N/A	Vita dei campi	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	???	1	5	1	3349	3349	5	1	1	160	4.78	0	0	0	50	???	#VALUE!
-#N/A	Voi ch'ascoltate in rime sparse il suono	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
+Q1352178	Va, pensiero	Letteratura italiana		Superiori	Primo Ottocento	Giuseppe Verdi	-	1	305	231	548740	10452	6	1	0	654	6.26	0	0	0	9718	2006-06-21	5094
+Q1328015	Vita dei campi	Letteratura italiana		Superiori	Secondo Ottocento	Giovanni Verga	???	1	5	1	3349	3349	5	1	1	160	4.78	0	0	0	50	???	#VALUE!
+-	Voi ch'ascoltate in rime sparse il suono	Letteratura italiana		Superiori	Secolo XIV	Petrarca	2.3	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	matching	#VALUE!
 Q3974136	Storia della letteratura latina (240 - 78 a.C.)	Letteratura latina		Superiori	III - II sec. a.Ch.n.	contesto	2.3	1	23	16	41462	84010	94	37	52	408	0.49	0	0	0	159	2011-07-31	3228
-#N/A	Andria (Terenzio)	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Terenzio	2.3	1	16	16	28276	3068	1	1	0	259	8.44	1	0	0	163	2009-11-22	3844
+Q1233645	Andria (Terenzio)	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Terenzio	2.3	1	16	16	28276	3068	1	1	0	259	8.44	1	0	0	163	2009-11-22	3844
 Q678909	Heautontimorumenos	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Terenzio	2.3	1	51	58	91860	6619	0	1	0	204	3.08	1	0	0	397	2009-03-30	4081
 Q204058	Origines	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Catone	2.3	1	14	14	26047	8001	7	1	2	159	1.99	0	0	0	161	2009-02-25	4114
-#N/A	De agri cultura	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Catone	2.3	1	22	22	39491	8904	3	1	6	4751	53.36	0	0	0	0	2008-03-12	4464
+Q1180565	De agri cultura	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Catone	2.3	1	22	22	39491	8904	3	1	6	4751	53.36	0	0	0	0	2008-03-12	4464
 Q3950773	Satira latina	Letteratura latina		Superiori	III - II sec. a.Ch.n.	La satira latina	2.3	1	57	48	103285	7495	0	0	3	129	1.72	1	0	0	863	2007-01-26	4875
 Q861986	De rerum natura	Letteratura latina		Superiori	I sec. a.Ch.n.	Lucrezio	2.3	1	166	166	298851	42384	12	5	30	1505	3.55	0	0	0	1339	2007-01-17	4884
-#N/A	Miles gloriosus	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Plauto	2.3	1	94	84	169042	12244	0	1	1	920	7.51	0	0	0	473	2006-11-22	4940
+Q1230918	Miles gloriosus	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Plauto	2.3	1	94	84	169042	12244	0	1	1	920	7.51	0	0	0	473	2006-11-22	4940
 Q475025	Anfitrione (Plauto)	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Plauto	2.3	1	88	104	157989	7373	0	0	0	984	13.35	0	0	0	314	2006-11-17	4945
-#N/A	Aulularia	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Plauto	2.3	1	104	92	186932	23936	0	1	0	395	1.65	1	0	0	859	2006-11-10	4952
-#N/A	Teatro nell'antica Roma	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Il teatro Romano arcaico	2.3	1	27	52	48849	32423	8	8	3	1149	3.54	0	0	0	11489	2006-04-28	5148
+Q1234585	Aulularia	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Plauto	2.3	1	104	92	186932	23936	0	1	0	395	1.65	1	0	0	859	2006-11-10	4952
+Q1203607	Teatro nell'antica Roma	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Il teatro Romano arcaico	2.3	1	27	52	48849	32423	8	8	3	1149	3.54	0	0	0	11489	2006-04-28	5148
 Q172048	Publio Terenzio Afro	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Terenzio	2.3	1	106	107	190901	18951	14	3	4	321	1.69	0	0	0	4117	2006-04-17	5159
 Q314677	Marco Pacuvio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori teatrali minori	2.3	1	17	20	29842	15326	20	0	21	74	0.48	0	0	0	1905	2006-04-09	5167
 Q350781	Cecilio Stazio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori teatrali minori	2.3	1	17	17	30150	41782	40	6	42	1566	3.75	0	0	0	6042	2006-03-25	5182
@@ -1986,10 +1986,10 @@ Q1469987	Palliata	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Il teatro 
 Q611895	Carthago delenda est	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Catone	2.3	1	164	165	293940	4318	7	1	0	538	12.46	0	0	0	0	2005-07-11	5439
 Q311287	Lucio Accio	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori teatrali minori	2.3	1	14	14	25979	6336	11	0	4	1	0.02	0	0	0	433	2004-04-11	5895
 Q193058	Livio Andronico	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Autori arcaici	2.3	1	80	78	144103	36416	44	8	17	1739	4.78	0	0	0	1899	2004-04-10	5896
-#N/A	Atomismo di Lucrezio	Letteratura latina		Superiori	I sec. a.Ch.n.	Lucrezio	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
-#N/A	Quinto Licinio Catone	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Catone	???	1	16	12	29019	2223	0	0	0	1863	83.81	0	0	0	0	2018-09-17	623
+Q178668	Atomismo	Letteratura latina	ex Atomismo di Lucrezio	Superiori	I sec. a.Ch.n.	Lucrezio	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Quinto Licinio Catone	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Catone	???	1	16	12	29019	2223	0	0	0	1863	83.81	0	0	0	0	2018-09-17	623
 Q184890	Letteratura Latina	Letteratura latina		Superiori	Generalità		???	1	57	65	101807	31	0	0	21	28	90.32	0	0	0	0	???	#VALUE!
-#N/A	Lucrezio	Letteratura latina		Superiori	I sec. a.Ch.n.	Lucrezio	???	1	21	30	37405	32	0	0	0	29	90.63	0	0	0	0	???	#VALUE!
+Q47154	Tito Lucrezio Caro	Letteratura latina	ex Lucrezio	Superiori	I sec. a.Ch.n.	Lucrezio	???	1	21	30	37405	32	0	0	0	29	90.63	0	0	0	0	???	#VALUE!
 #N/A	Plauto	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Plauto	???	1	22	17	38701	31	0	0	0	28	90.32	0	0	0	0	???	#VALUE!
 Q7559698	Simbolo di percentuale	Matematica		Elementari	Aritmetica	Percentuale	0.5	1	13	30	23890	15943	23	6	1	299	1.88	0	0	0	1056	2018-01-19	864
 Q19985151	Secondo teorema dell'angolo esterno	Matematica		Superiori	Geometria	Triangoli	2.1	1	30	33	54467	1220	0	2	0	341	27.95	2	0	0	40	2015-02-05	1943
@@ -2968,8 +2968,8 @@ Q178354	Ragione	Storia		Superiori	XVIII-XIX secolo	Ragione	???	1	74	74	133830	51
 Q3930234	Rapporti tra 'ndrangheta e politica	Storia		Superiori	XX-XXI secolo		???	1	6	9	11529	89018	159	1	0	530	0.60	1	0	0	7304	???	#VALUE!
 Q718909	Razza ariana	Storia		Superiori	XX-XXI secolo	Popolo ariano	???	1	388	409	696500	69971	75	17	22	2426	3.47	0	0	0	33097	???	#VALUE!
 Q79791	Reconquista	Storia		Superiori	XVI-XVII secolo	Reconquista completata	???	1	199	203	357993	51194	0	21	14	1557	3.04	0	0	0	36	???	#VALUE!
-#N/A	Referendum abrogativi del 1981 in Italia	Storia		Superiori	XX-XXI secolo		???	1	55	52	99431	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
-#N/A	Referendum abrogativo del 1974 in Italia	Storia		Superiori	XX-XXI secolo		???	1	103	97	185419	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
+#N/A	Referendum abrogativi del 1981 in Italia	Storia	-	Superiori	XX-XXI secolo		???	1	55	52	99431	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
+#N/A	Referendum abrogativo del 1974 in Italia	Storia	-	Superiori	XX-XXI secolo		???	1	103	97	185419	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
 Q2946	Reggia di Versailles	Storia		Superiori	XVI-XVII secolo	Reggia di Versailles	???	1	609	620	1094752	59158	28	31	28	2566	4.34	0	0	0	7773	2005-01-23	5608
 Q193547	Regime del Terrore	Storia		Superiori	XVIII-XIX secolo	Il Terrore	???	1	215	197	386520	62942	45	26	8	1386	2.20	0	0	0	1369	???	#VALUE!
 Q5402094	Regni romano-germanici	Storia		Superiori	Alto medioevo	I regni romano-barbarici	???	1	41	106	72830	32169	5	8	6	1893	5.88	2	0	0	329	???	#VALUE!
@@ -2998,7 +2998,7 @@ Q62825	Repubbliche marinare	Storia		Superiori	Basso medioevo	le repubbliche mari
 Q6540361	Resa del Giappone	Storia		Superiori	XX-XXI secolo	Fine della guerra nel Pacifico	???	1	74	74	133052	97648	154	20	25	1041	1.07	0	2	0	4897	???	#VALUE!
 Q668645	Resa di Caserta	Storia		Superiori	XX-XXI secolo		???	1	38	40	68746	13743	1	4	1	1467	10.67	1	1	0	4766	???	#VALUE!
 Q30890756	Ricostruzione (Italia)	Storia		Superiori	XX-XXI secolo	Ricostruzione	???	1	13	17	24197	9310	15	1	0	992	10.66	0	0	0	2239	???	#VALUE!
-#N/A	Riforma della scuola media in Italia	Storia		Superiori	XX-XXI secolo	la riforma della scuola media	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
+-	Riforma della scuola media in Italia	Storia		Superiori	XX-XXI secolo	la riforma della scuola media	???	0	0	0	0	0	0	0	0	0	#DIV/0!	0	0	0	0	???	#VALUE!
 Q3935349	Riforma del diritto di famiglia italiano del 1975	Storia		Superiori	XX-XXI secolo	Riforma del diritto di famiglia	???	1	47	50	84617	2021	1	0	12	286	14.15	1	0	0	1081	???	#VALUE!
 Q1605411	Riforma dell'XI secolo	Storia		Superiori	Basso medioevo	le riforme di Gregorio VII	???	1	63	63	113804	53139	5	0	0	1865	3.51	0	0	0	6320	???	#VALUE!
 Q104057283	Rinascita dell'anno Mille	Storia		Superiori	Basso medioevo	Rinascita dell’anno Mille	???	1	136	112	245037	47884	39	13	12	2128	4.44	0	0	0	2005	???	#VALUE!
@@ -3096,7 +3096,7 @@ Q1248722	Terza guerra d'indipendenza italiana	Storia		Superiori	XVIII-XIX secolo
 Q622099	Tesi di aprile	Storia		Superiori	XX-XXI secolo	Tesi di aprile	???	1	64	63	115121	6265	0	1	2	502	8.01	1	0	0	36	???	#VALUE!
 Q15733698	Tetrarchia di Diocleziano	Storia		Superiori	Roma		???	1	147	168	263503	25391	11	4	15	159	0.63	0	0	0	1524	???	#VALUE!
 Q183225	Tolleranza	Storia		Superiori	XVIII-XIX secolo	Tolleranza	???	1	76	72	136487	15399	14	4	4	1223	7.94	0	0	0	1254	???	#VALUE!
-#N/A	Tratta atlantica degli schiavi africani	Storia		Superiori	XVI-XVII secolo	la tratta degli schiavi	???	1	203	203	364208	28573	37	4	10	1835	6.42	0	0	0	3771	???	#VALUE!
+Q10701282	Tratta atlantica degli schiavi africani	Storia		Superiori	XVI-XVII secolo	la tratta degli schiavi	???	1	203	203	364208	28573	37	4	10	1835	6.42	0	0	0	3771	???	#VALUE!
 Q122371	Trattato di Brest-Litovsk	Storia		Superiori	XX-XXI secolo	Pace di Brest Litovsk	???	1	136	144	245250	15224	3	4	1	906	5.95	0	0	0	421	???	#VALUE!
 Q134840	Trattato di Verdun	Storia		Superiori	Alto medioevo	Trattato di Verdun	???	1	67	71	120990	2814	0	2	0	344	12.22	0	0	0	36	???	#VALUE!
 Q179997	Tredici colonie	Storia		Superiori	XVIII-XIX secolo	le 13 colonie	???	1	214	208	385423	6603	1	7	5	840	12.72	0	0	0	254	???	#VALUE!
