@@ -72,6 +72,7 @@ function dv1(year,the_subject,sort) {
 				}
 			}
 		}
+		console.log(subject_group);
 		
 		visit_sort = subject_articles.sort(function(x, y){
 			return d3.descending(+x.avg_pv, +y.avg_pv);
@@ -97,7 +98,10 @@ function dv1(year,the_subject,sort) {
 
 			d.days = +d.days
 			d.avg_pv = +d.avg_pv
-			d.avg_pv_prev = +d.avg_pv_prev
+
+			if (d.avg_pv_prev !== "-"){
+				d.avg_pv_prev = +d.avg_pv_prev
+			}
 
 			// console.log(d.article,d.subject,d.avg_pv,d.discussion_size,d.issues,d.images);
 		})
@@ -227,14 +231,16 @@ function dv1(year,the_subject,sort) {
 
                 // avg daily visits
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
-            	let diff_pv = d.avg_pv - d.avg_pv_prev
-            	if (diff_pv > 0){
-            		content += "<td class='value increase'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
-            	}
-            	else {
-            		let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
-            		content += "<td class='value decrease'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
-                }
+            	if (d.avg_pv_prev !== "-"){
+	            	let diff_pv = d.avg_pv - d.avg_pv_prev
+	            	if (diff_pv > 0){
+	            		content += "<td class='value increase'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
+	            	}
+	            	else {
+	            		let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
+	            		content += "<td class='value decrease'>(" + d.avg_pv_prev + " " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + ")</td></tr>"
+	                }
+           		}
 
                 //size
                 content += "<tr><td class='label'>dimensioni</td><td class='value'>" + d.size.toLocaleString()
@@ -343,48 +349,63 @@ function dv1(year,the_subject,sort) {
 			.on("mouseover", tooltip.show) 
 			.on("mouseout", tooltip.hide)
 
-				// variation 2020-2021
-		let variation = article.append("g")
-			.attr("class","variation")
-			.attr("transform",function (d,i) {
-				return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
-			})
+			// variation 2020-2021
+			let variation = article.append("g")
+				.attr("class","variation")
+				.attr("transform",function (d,i) {
+					if (d.avg_pv_prev !== "-"){
+						return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+					}
+					else {
+						return "translate(0,0)" 
+					}
+				})
 
-		let variation_line = variation.append("line")
-			.attr("class","line_prev")
-			.attr("opacity",variation_line_opacity)
-			.attr("stroke", function(d,i){
-				return apply_color(d.subject)
-			})
-			.style("stroke-dasharray", ("3, 3")) 
-			.attr("x1", function(d,i){
-				return 0
-			})
-			.attr("y1", function(d,i){
-				return 0
-			})
-			.attr("x2", function(d,i){
-				return 0
-			})
-			.attr("y2", function(d,i){
-				return y(d.avg_pv)-y(d.avg_pv_prev)
-			})
+			let variation_line = variation.append("line")
+				.attr("class","line_prev")
+				.attr("opacity",variation_line_opacity)
+				.attr("stroke", function(d,i){
+					return apply_color(d.subject)
+				})
+				.style("stroke-dasharray", ("3, 3")) 
+				.attr("x1", function(d,i){
+					return 0
+				})
+				.attr("y1", function(d,i){
+					return 0
+				})
+				.attr("x2", function(d,i){
+					return 0
+				})
+				.attr("y2", function(d,i){
+					if (d.avg_pv_prev !== "-"){
+						return y(d.avg_pv)-y(d.avg_pv_prev)
+					}
+					else {
+						return 0
+					}
+				})
 
-		let variation_circle = variation.append("circle")
-			.attr("cx",0)
-			.attr("cy", function(d,i){
-				return y(d.avg_pv)-y(d.avg_pv_prev)
-			})
-			.attr("class","circle_prev")
-			.attr("opacity",0)
-			.attr("stroke", function(d,i){
-				return apply_color(d.subject)
-			})
-			.style("stroke-dasharray", ("3, 3")) 
-			.attr("fill","transparent")
-			.attr("r", function(d,i){
-				return r(Math.sqrt(d.size_prev/3.14))
-			})
+			let variation_circle = variation.append("circle")
+				.attr("cx",0)
+				.attr("cy", function(d,i){
+					if (d.avg_pv_prev !== "-"){
+						return y(d.avg_pv)-y(d.avg_pv_prev)
+					}
+					else {
+						return 0
+					}
+				})
+				.attr("class","circle_prev")
+				.attr("opacity",0)
+				.attr("stroke", function(d,i){
+					return apply_color(d.subject)
+				})
+				.style("stroke-dasharray", ("3, 3")) 
+				.attr("fill","transparent")
+				.attr("r", function(d,i){
+					return r(Math.sqrt(d.size_prev/3.14))
+				})
 
 		// articles
 		let article_circles = article.append("g")
@@ -568,10 +589,14 @@ function dv1(year,the_subject,sort) {
 				d.size = +d.size
 				d.images = +d.images
 
-				d.avg_pv = +d.avg_pv
-				d.avg_pv_prev = +d.avg_pv_prev
 				d.issues = +d.issues
+				d.avg_pv = +d.avg_pv
 
+				d.incipit_size = +d.incipit_size
+
+				if (d.avg_pv_prev !== "-"){
+					d.avg_pv_prev = +d.avg_pv_prev
+				}
 				// console.log(d.article,d.avg_pv,d.discussion_size,d.issues,d.images);
 			})
 
@@ -703,12 +728,17 @@ function dv1(year,the_subject,sort) {
 			let variation = article.append("g")
 				.attr("class","variation")
 				.attr("transform",function (d,i) {
-					return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+					if (d.avg_pv_prev !== "-"){
+						return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+					}
+					else {
+						return "translate(0,0)" 
+					}
 				})
 
 			let variation_line = variation.append("line")
-				.attr("opacity",variation_line_opacity)
 				.attr("class","line_prev")
+				.attr("opacity",variation_line_opacity)
 				.attr("stroke", function(d,i){
 					return apply_color(d.subject)
 				})
@@ -723,16 +753,26 @@ function dv1(year,the_subject,sort) {
 					return 0
 				})
 				.attr("y2", function(d,i){
-					return y(d.avg_pv)-y(d.avg_pv_prev)
+					if (d.avg_pv_prev !== "-"){
+						return y(d.avg_pv)-y(d.avg_pv_prev)
+					}
+					else {
+						return 0
+					}
 				})
 
 			let variation_circle = variation.append("circle")
-				.attr("class","circle_prev")
-				.attr("opacity",0)
 				.attr("cx",0)
 				.attr("cy", function(d,i){
-					return y(d.avg_pv)-y(d.avg_pv_prev)
+					if (d.avg_pv_prev !== "-"){
+						return y(d.avg_pv)-y(d.avg_pv_prev)
+					}
+					else {
+						return 0
+					}
 				})
+				.attr("class","circle_prev")
+				.attr("opacity",0)
 				.attr("stroke", function(d,i){
 					return apply_color(d.subject)
 				})
