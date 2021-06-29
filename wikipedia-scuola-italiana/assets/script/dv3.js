@@ -1,6 +1,6 @@
 const wiki_link = "https://it.wikipedia.org/wiki/";
 const ws_it_author_link = "https://it.wikisource.org/wiki/Autore:"
-const ws_la_author_link = "https://it.wikisource.org/wiki/Scriptor:"
+const ws_la_author_link = "https://la.wikisource.org/wiki/Scriptor:"
 const ws_it_publication_link = "https://it.wikisource.org/wiki/"
 const ws_la_publication_link = "https://la.wikisource.org/wiki/"
 
@@ -10,17 +10,16 @@ const filter_item = 120;
 const shiftx_author = 0;
 const circle_size = 4.5;
 const circle_opacity = 0.7;
-// const v_shift = 16;
 
 const wiki_color = "blue";
 const ws_it_color = "red";
 const ws_la_color = "rgb(255, 182, 0)";
 
-const it_authors = 147;
-const la_authors = 61;
+const it_authors = 146;
+const la_authors = 57;
 
-const italian_height = it_authors * 20; // 2300;
-const latin_height = la_authors * 20; // 910
+const italian_height = it_authors * 20;
+const latin_height = la_authors * 20;
 
 const it_h = 0.97;
 const la_h = 0.97;
@@ -39,7 +38,7 @@ let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
 
-if (window_w <= 768) {
+if (window_w <= 768) {
 	reduction = 10;
 }
 else {
@@ -54,15 +53,7 @@ let svg = d3.select(container)
 	.append("svg")
 	.attr("width", width + (margin.right + margin.right))
 	.attr("height", italian_height)
-		// function(d,i) {
-		// if (literature_ == "it") {
-		// 	return italian_height + 40
-		// }
-		// else {
-		// 	return latin_height + 40
-		// })
 	.attr("id", "svg")
-	// .attr("height",height + (margin.top + margin.bottom))
 
 function dv3(the_literature) {
 	Promise.all([
@@ -72,7 +63,6 @@ function dv3(the_literature) {
 	.then(loaded);
 
 	function loaded(data) {
-		// console.log(data[0],data[1])
 
 		let publications_authors = [];
 		let author_group = [];
@@ -85,7 +75,6 @@ function dv3(the_literature) {
 		    }
 		    return e;
 		});
-		// console.log(merged_data);
 
 		// filter by source (it or la)
 		merged_data.forEach(function (val,i) {
@@ -93,7 +82,6 @@ function dv3(the_literature) {
 				publications_authors.push(val)
 			}
 		})
-		// console.log(publications_authors)
 
 		// nest by author
 		author_group = d3.nest()
@@ -114,17 +102,12 @@ function dv3(the_literature) {
 			
 			val.values[0].tot_publ = (val.values.length - empty_publ)
 			val.values[0].id = +val.values[0].id
-			// console.log(val.values.length,empty_publ,val.values.length - empty_publ)
 		})
 	
 		author_group.sort(function(a, b) {
 	  		return d3.ascending(a.values[0].surname, b.values[0].surname); // a, b.key
-			// return a.values[0].surname - b.values[0].surname
 		}) 
 
-		// let max_publication = d3.max(author_group, function(d) {
-		// 		return d.values.length
-		// 	})
 		let max_publication = 21;
 
 		// grid
@@ -137,6 +120,7 @@ function dv3(the_literature) {
 			the_height = latin_height + reset_height_la;
 			v_shift = la_h;
 		}
+		// console.log(the_height,v_shift)
 
 		let y = d3.scaleLinear()
 			.domain([0,author_group.length]) 
@@ -154,9 +138,9 @@ function dv3(the_literature) {
 			if(i % 3 == 0 && i !== 0){ // i == i
 	       		v_grid.append('line')
 					.attr('x1', 0)
-					.attr('y1', y(i * v_shift)) // i* (v_shift*1))  
+					.attr('y1', y(i * v_shift)) 
 					.attr('x2', width + margin.left + margin.right)
-					.attr('y2', y(i * v_shift)) // i* (v_shift*1) )
+					.attr('y2', y(i * v_shift))
 					.attr('stroke',"#e9e4e4")
 					.attr('stroke-width',1)
 	    	}
@@ -198,8 +182,8 @@ function dv3(the_literature) {
 
 		// tooltips
 		let tooltip_wikipedia = d3.tip()
-			.attr('class', 'tooltip')
-			.attr('id', 'tooltip_wikipedia')
+			.attr("class", "tooltip")
+			.attr("id", 'tooltip_wikipedia')
 			.direction(function (d,i) {
 				return 'n'
 			})
@@ -277,7 +261,7 @@ function dv3(the_literature) {
 				return i + "_" + d.values[0].surname
 			})
 			.attr("transform", function(d,i){
-				return "translate(" + 0 + "," + y(i * v_shift) + ")" // ((i)*v_shift)
+				return "translate(" + 0 + "," + y(i * v_shift) + ")"
 			})
 			.on("mouseover", handleMouseOver)
 			.on("mouseout", handleMouseOut)
@@ -299,15 +283,15 @@ function dv3(the_literature) {
 			.attr("class","author_box")
 			.append("a")
 			.attr("xlink:href", function(d,i){
-				if (d.values[0].source == "it") {
-					if (d.values[0].author_ws_it !== "©" && d.values[0].author_ws_it !== "-") {
+				if (the_literature == "it") {
+					if (d.values[0].author_ws_it !== "©" && d.values[0].author_ws_it !== "-") {
 						return ws_it_author_link + d.values[0].author_ws_it.replace("Testi_di_","")
 					}
 					else {
 						return wiki_link + d.values[0].author_w
 					}
 				}
-				else if (d.values[0].source == "la") {
+				else {
 					if (d.values[0].author_ws_la !== "-") {
 						return ws_la_author_link + d.values[0].author_ws_la
 					}
@@ -320,7 +304,7 @@ function dv3(the_literature) {
 
 		let author_name = author_box.append("text")
 			.text(function(d,i){
-				return d.values[0].surname + " " + d.values[0].name //+ " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
+				return d.values[0].surname + " " + d.values[0].name;
 			})
 			.attr("font-size",font_size)
 
@@ -450,12 +434,9 @@ function dv3(the_literature) {
 			let literature_select = $("#literature option:selected").val();
 
 			update_sort(literature_select,new_sort);
-			// console.log(literature_select,new_sort)
 		});
 
 		function update_literature(the_literature,the_sort){
-			// console.log(the_literature,the_sort);
-
 			if (the_literature == "la"){
 				d3.select("svg")
 					.attr("height",latin_height)
@@ -473,7 +454,6 @@ function dv3(the_literature) {
 				.attr("r",0)
 
 			let publications_authors = [];
-			// let author_group = [];
 
 			// filter by source (it or la)
 			merged_data.forEach(function (val,i) {
@@ -481,13 +461,11 @@ function dv3(the_literature) {
 					publications_authors.push(val)
 				}
 			})
-			// console.log(publications_authors)
 
 			// nest by author
 			author_group = d3.nest()
 				.key(d => d.surname)
 				.entries(publications_authors)
-			// console.log(author_group)
 
 			author_group.forEach(function (val,i) {
 				let period = +val.values[0].period
@@ -503,16 +481,12 @@ function dv3(the_literature) {
 				
 				val.values[0].tot_publ = (val.values.length - empty_publ)
 				val.values[0].id = +val.values[0].id
-				// console.log(val.values.length,empty_publ,val.values.length - empty_publ)
 			})
-			// console.log(author_group)
-			// console.log(author_group.length)
 
 			// sort
 			if (the_sort == 1) {
 				author_group.sort(function(a, b) {
 	  				return d3.ascending(a.values[0].surname, b.values[0].surname);
-	  				// return d3.ascending(a.key, a.key);
 				})
 			}
 			else if (the_sort == 2){
@@ -523,11 +497,8 @@ function dv3(the_literature) {
 			else if (the_sort == 3){ 
 				author_group.sort(function(a, b) {
 	  				return d3.descending(a.values[0].tot_publ, b.values[0].tot_publ);
-					// return b.values.length - a.values.length
-
 				})
 			}
-			// console.log(the_sort)
 
 			let the_height = 0;
 			if (the_literature == "it") {
@@ -538,7 +509,6 @@ function dv3(the_literature) {
 				the_height = latin_height + reset_height_la;
 				v_shift = la_h;
 			}
-			// console.log(literature_,the_height)
 
 			let y = d3.scaleLinear()
 				.domain([0,author_group.length]) 
@@ -546,7 +516,7 @@ function dv3(the_literature) {
 
 			let authors = plot.append("g")	
 				.attr("id","authors")
-				.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")	
+				.attr("transform","translate(" + shiftx_author + "," + (margin.top) + ")")
 
 			let author = authors.selectAll("g")
 				.data(author_group)
@@ -557,7 +527,7 @@ function dv3(the_literature) {
 					return i + "_" + d.values[0].surname
 				})
 				.attr("transform", function(d,i){
-					return "translate(" + 0 + "," + y(i*v_shift) + ")" // ((i)*v_shift)
+					return "translate(" + 0 + "," + y(i * v_shift) + ")"
 				})
 				.on("mouseover", handleMouseOver)
 				.on("mouseout", handleMouseOut)
@@ -566,15 +536,15 @@ function dv3(the_literature) {
 				.attr("class","author_box")
 				.append("a")
 				.attr("xlink:href", function(d,i){
-					if (d.values[0].source == "it") {
-						if (d.values[0].author_ws_it !== "©" && d.values[0].author_ws_it !== "-") {
+					if (the_literature == "it") {
+						if (d.values[0].author_ws_it !== "©" && d.values[0].author_ws_it !== "-") {
 							return ws_it_author_link + d.values[0].author_ws_it.replace("Testi_di_","")
 						}
 						else {
 							return wiki_link + d.values[0].author_w
 						}
 					}
-					else if (d.values[0].source == "la") {
+					else {
 						if (d.values[0].author_ws_la !== "-") {
 							return ws_la_author_link + d.values[0].author_ws_la
 						}
@@ -587,7 +557,7 @@ function dv3(the_literature) {
 
 			let author_name = author_box.append("text")
 				.text(function(d,i){
-					return d.values[0].surname + " " + d.values[0].name //+ " " + d.values[0].period // d.key.replace(/_/g," ") // (i+1) + "-" + 
+					return d.values[0].surname + " " + d.values[0].name;
 				})
 				.attr("font-size",font_size)
 
@@ -616,7 +586,7 @@ function dv3(the_literature) {
 				})
 				.attr("cy",0)
 				.attr("r",function(d,i){
-					if (d.pubb_w !== "-"){ //   || d.pubb_w !== ""
+					if (d.pubb_w !== "-"){
 						return circle_size
 					}
 					else {
@@ -642,7 +612,7 @@ function dv3(the_literature) {
 				})
 				.attr("cy",0)
 				.attr("r",function(d,i){
-					if (d.pubbl_it !== "-"){ //  || d.pubbl_it !== ""
+					if (d.pubbl_it !== "-") { 
 						return circle_size
 					}
 					else {
@@ -668,14 +638,14 @@ function dv3(the_literature) {
 				})
 				.attr("cy",0)
 				.attr("r",function(d,i){
-					if (d.pubbl_la !== "-"){ // || d.pubbl_la !== ""
+					if (d.pubbl_la !== "-"){
 						return circle_size
 					}
 					else {
 						return circle_size/6
 					}
 				})
-				.style("fill", ws_la_color) // #ffb600 
+				.style("fill", ws_la_color) 
 				.style("opacity",circle_opacity)
 				.attr("class",function(d,i){
 					return d.pubbl_la
@@ -685,7 +655,6 @@ function dv3(the_literature) {
 		}
 
 		function update_sort(literature,new_sort) {
-			// console.log(literature,new_sort)
 
 			// sort
 			if (new_sort == 1) {
@@ -704,27 +673,31 @@ function dv3(the_literature) {
 				})
 			}
 
+			// grid
 			let the_height = 0;
 			if (literature == "it") {
-				the_height = italian_height + reset_height_it
+				the_height = italian_height + reset_height_it;
+				v_shift = it_h;
 			}
 			else {
-				the_height = latin_height + reset_height_la
+				the_height = latin_height + reset_height_la;
+				v_shift = la_h;
 			}
+			// console.log(the_height,v_shift);
 
 			y.domain([0,author_group.length])
 				.range([0,the_height])
 
 			author_group.forEach(function(d,i){
 				d.values[0].new_id = i;
+				// console.log(d.key,i)
 			})
-
+			
 			svg.selectAll(".author")
 				.transition()
 				.attr("transform", function(d,i){
-					
-					let sort_y = +d.values[0].new_id
-					return "translate(" + 0 + "," + y(sort_y) +  ")" 
+					let new_i = +d.values[0].new_id;
+					return "translate(" + 0 + "," + y(new_i * v_shift) + ")";
 				})
 		}
 	}

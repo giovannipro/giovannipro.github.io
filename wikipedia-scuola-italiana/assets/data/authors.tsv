@@ -2,25 +2,25 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 1	Livio_Andronico	Livio	Andronico	Livio_Andronico	Livio_Andronico	Lucius_Livius_Andronicus	III - II sec. a.Ch.n.	-3	la	terzo liceo
 2	Gneo_Nevio	Gneo	Nevio	Gneo_Nevio	Gneo_Nevio	-	III - II sec. a.Ch.n.	-3	la	terzo liceo
 3	Quinto_Ennio	Quinto	Ennio	Quinto_Ennio	Quinto_Ennio	Quintus_Ennius	III - II sec. a.Ch.n.	-3	la	terzo liceo
-4	Plauto		Plauto	Plauto	Tito_Maccio_Plauto	Titus_Maccius_Plautus	III - II sec. a.C.	-3	la	terzo liceo
+4	Plauto	Titus Maccius	Plautus	Plauto	Tito_Maccio_Plauto	Titus_Maccius_Plautus	III - II sec. a.C.	-3	la	terzo liceo
 5	Publio_Terenzio_Afro	Publio	Terenzio Afro	Publio_Terenzio_Afro	Publio_Terenzio_Afro	Publio_Terenzio_Afro	III - II sec. a.C.	-3	la	terzo liceo
 6	Marco_Pacuvio	Marco	Pacuvio	Marco_Pacuvio	-	-	III - II sec. a.C.	-3	la	terzo liceo
 7	Lucio_Accio	Lucio	Accio	Lucio_Accio	Lucio_Accio	Lucius_Accius	III - II sec. a.C.	-3	la	terzo liceo
 8	Cecilio_Stazio	Cecilio	Stazio	Cecilio_Stazio	Cecilio_Stazio	Caecilius_Statius	III - II sec. a.C.	-3	la	terzo liceo
-9	Catone		Catone	Catone	Marco_Porcio_Catone	Marcus_Porcius_Cato	III - II sec. a.C.	-3	la	terzo liceo
+9	Catone	Catone	Marco Porcius	Catone	Marco_Porcio_Catone	Marcus_Porcius_Cato	III - II sec. a.C.	-3	la	terzo liceo
 10	Gaio_Lucilio	Gaio	Lucilio	Gaio_Lucilio	-	-	III - II sec. a.C.	-3	la	terzo liceo
-11	Lucrezio		Lucrezio	Lucrezio	-	-	I sec. a.C. - Età Cesarea/Ciceroniana	1	la	terzo liceo
+11	Lucrezio	Lucrezio	Tito Lucrezio	Tito Lucrezio Caro	-	-	I sec. a.C. - Età Cesarea/Ciceroniana	1	la	terzo liceo
 12	Quinto_Lutazio_Catulo	Quinto	Lutazio Catulo	Quinto_Lutazio_Catulo_(console_102_a.C.)	-	-	I sec. a.Ch.n. - Età Cesarea/Ciceroniana	1	la	terzo liceo
 13	Gaio Valerio Catullo	Gaio Valerio	Catullo	Gaio Valerio Catullo	Gaio_Valerio_Catullo	Gaius_Valerius_Catullus	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
 14	Marco_Terenzio_Varrone	Marco Terenzio	Varrone	Varrone Reatino	Marco_Terenzio_Varrone	Marcus_Terentius_Varro	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
 15	Cornelio Nepote	Cornelio	Nepote	Cornelio Nepote	Cornelio_Nepote	Cornelius_Nepos	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
 16	Tito_Pomponio_Attico	Tito	Pomponio Attico	Tito_Pomponio_Attico	-	-	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
-17	Cesare		Cesare	Cesare	Gaio_Giulio_Cesare	Gaius_Iulius_Caesar	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
-18	Sallustio		Sallustio	Sallustio	Gaio_Sallustio_Crispo	Gaius_Sallustius_Crispus	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
+17	Cesare	Gaio Giulio	Cesare	Gaio Giulio Cesare	Gaio_Giulio_Cesare	Gaius_Iulius_Caesar	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
+18	Gaio Sallustio Crispo		Sallustio	Gaio Sallustio Crispo	Gaio_Sallustio_Crispo	Gaius_Sallustius_Crispus	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
 19	Marco_Tullio_Cicerone	Marco Tullio	Cicerone	Marco_Tullio_Cicerone	Marco_Tullio_Cicerone	Marco_Tullio_Cicerone	I sec. a.C. - Età Cesarea/Ciceroniana	-1	la	terzo liceo
-20	Virgilio		Virgilio	Virgilio	Publio_Virgilio_Marone	Publius_Vergilius_Maro	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
-21	Orazio		Orazio	Orazio	Quinto_Orazio_Flacco	Quintus_Horatius_Flaccus	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
-22	Gaio_Cornelio_Gallo	Gaio Cornelio	Gallo	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	-	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
+20	Publio Virgilio Marone		Virgilio	Publio Virgilio Marone	Publio_Virgilio_Marone	Publius_Vergilius_Maro	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
+21	Quinto Orazio Flacco		Orazio	Orazio	Quinto_Orazio_Flacco	Quintus_Horatius_Flaccus	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
+22	Gaio Cornelio Gallo	Gaio Cornelio	Gallo	Gaio_Cornelio_Gallo	Gaio_Cornelio_Gallo	-	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
 23	Albio_Tibullo	Albio	Tibullo	Albio_Tibullo	Albio_Tibullo	Albius_Tibullus	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
 24	Sesto_Properzio	Sesto	Properzio	Sesto_Properzio	Sesto_Properzio	Sextus_Aurelius_Propertius	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
 25	Ovidio		Ovidio	Ovidio	Publio_Ovidio_Nasone	Publius_Ovidius_Naso	Età Augustea, 31 a.C.-14 d.C.	0	la	quarto liceo
@@ -54,11 +54,11 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 53	Simmaco		Simmaco	Simmaco	Quinto_Aurelio_Simmaco	Quintus_Aurelius_Symmachus	Età della decadenza, III-IV secolo	3	la	quinto liceo
 54	Sant'Ambrogio		Sant'Ambrogio	Sant'Ambrogio	Sant'Ambrogio	Ambrosius	Età della decadenza, III-IV secolo	3	la	quinto liceo
 55	Tertulliano		Tertulliano	Tertulliano	Quinto_Settimio_Fiorente_Tertulliano	Quintus_Septimius_Florens_Tertullianus	Età della decadenza, III-IV secolo	3	la	quinto liceo
-56	Claudiano		Claudiano	Claudiano	Claudio_Claudiano	Claudius_Claudianus	V secolo e post	5	la	quinto liceo
-57	Namaziano		Namaziano	Namaziano	Claudio_Rutilio_Namaziano	Claudius_Rutilius_Namatianus	V secolo e post	5	la	quinto liceo
-58	Sidonio Apollinare	Sidonio	Apollinare	Sidonio Apollinare	Gaio_Sollio_Sidonio_Apollinare	Sidonius_Apollinaris	V secolo e post	5	la	quinto liceo
+56	Claudiano	Claudio	Claudiano	Claudio Claudiano	Claudio_Claudiano	Claudius_Claudianus	V secolo e post	5	la	quinto liceo
+57	Namaziano	Claudio Rutilio	Namaziano	Claudio Rutilio Namaziano	Claudio_Rutilio_Namaziano	Claudius_Rutilius_Namatianus	V secolo e post	5	la	quinto liceo
+58	Gaio Sollio Sidonio Apollinare	Gaio Sollio Sidonio	Apollinare	Sidonio Apollinare	Gaio_Sollio_Sidonio_Apollinare	Sidonius_Apollinaris	V secolo e post	5	la	quinto liceo
 59	Agostino		Agostino	Agostino	Agostino_d'Ippona	Aurelius_Augustinus	V secolo e post	5	la	quinto liceo
-60	Boezio		Boezio	Boezio	Anicio_Manlio_Torquato_Severino_Boezio	Anicius_Manlius_Torquatus_Severinus_Boethius	V secolo e post	5	la	quinto liceo
+60	Boezio	Severino	Boezio	Severino Boezio	Anicio_Manlio_Torquato_Severino_Boezio	Anicius_Manlius_Torquatus_Severinus_Boethius	V secolo e post	5	la	quinto liceo
 61	Cassiodoro		Cassiodoro	Cassiodoro	Flavio_Magno_Aurelio_Cassiodoro	Flavius_Magnus_Aurelius_Cassiodorus_Senator	V secolo e post	5	la	quinto liceo
 62	Guittone d'Arezzo		Guittone d'Arezzo	Guittone d'Arezzo	Testi_di_Guittone_d'Arezzo	-	XIII secolo - Scuola toscana	13	it	-
 63	Guido Guinizelli	Guido	Guinizelli	Guido Guinizelli	Testi_di_Guido_Guinizzelli	-	XIII secolo - Scuola toscana	13	it	-
@@ -72,10 +72,10 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 71	Giovanni_Villani	Giovanni	Villani	Giovanni_Villani	Nuova_Cronica	-	Secolo XIV	14	it	-
 72	Antonio_Pucci_(poeta)	Antonio	Pucci	Antonio_Pucci_(poeta)	Testi_di_Antonio_Pucci	-	Secolo XIV	14	it	-
 73	Franco Sacchetti	Franco	Sacchetti	Franco Sacchetti	Testi_di_Franco_Sacchetti	-	Secolo XIV	14	it	-
-74	Petrarca		Petrarca	Petrarca	Testi_di_Francesco_Petrarca	-	Secolo XIV	14	it	-
-75	Boccaccio		Boccaccio	Boccaccio	Testi_di_Giovanni_Boccaccio	-	Secolo XIV	14	it	-
+74	Petrarca	Francesco	Petrarca	Francesco Petrarca	Testi_di_Francesco_Petrarca	-	Secolo XIV	14	it	-
+75	Boccaccio	Giovanni	Boccaccio	Giovanni Boccaccio	Testi_di_Giovanni_Boccaccio	-	Secolo XIV	14	it	-
 76	Lorenzo_Valla	Lorenzo	Valla	Lorenzo_Valla	-	-	XV Secolo	15	it	-
-77	Burchiello		Burchiello	Burchiello	-	-	XV Secolo	15	it	-
+77	Burchiello		Burchiello	Burchiello (poeta)	-	-	XV Secolo	15	it	-
 78	Giusto_de'_Conti	Giusto	De' Conti	Giusto_de'_Conti	-	-	XV Secolo	15	it	-
 79	Leon_Battista_Alberti	Leon Battista	Alberti	Leon_Battista_Alberti	Testi_di_Leon_Battista_Alberti	-	XV Secolo	15	it	-
 80	Leonardo_Bruni	Leonardo	Bruni	Leonardo_Bruni	Testi_di_Leonardo_Bruni	-	XV Secolo	15	it	-
@@ -86,16 +86,16 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 85	Lorenzo de' Medici		Lorenzo de' Medici	Lorenzo de' Medici	Testi_di_Lorenzo_de'_Medici	-	XV Secolo	15	it	-
 86	Luigi Pulci	Luigi	Pulci	Luigi Pulci	Testi_di_Luigi_Pulci	-	XV Secolo	15	it	-
 87	Matteo Maria Boiardo	Matteo Maria	Boiardo	Matteo Maria Boiardo	Testi_di_Matteo_Maria_Boiardo	-	XV Secolo	15	it	-
-88	Poliziano		Poliziano	Poliziano	Testi_di_Angelo_Poliziano	-	XV Secolo	15	it	-
-89	Machiavelli		Machiavelli	Machiavelli	Testi_di_Niccolò_Machiavelli	-	XV Secolo	15	it	-
-90	Pietro Bembo		Pietro Bembo	Pietro Bembo	Testi_di_Pietro_Bembo	-	XVI Secolo	16	it	-
+88	Poliziano	Agnolo	Poliziano	Agnolo Poliziano	Testi_di_Angelo_Poliziano	-	XV Secolo	15	it	-
+89	Niccolò Machiavelli	Niccolò	Machiavelli	Niccolò Machiavelli	Testi_di_Niccolò_Machiavelli	-	XV Secolo	15	it	-
+90	Pietro Bembo	Bembo	Pietro	Pietro Bembo	Testi_di_Pietro_Bembo	-	XVI Secolo	16	it	-
 91	Baldassarre Castiglione	Baldassarre	Castiglione	Baldassarre Castiglione	Testi_di_Baldassarre_Castiglione	-	XVI Secolo	16	it	-
 92	Gaspara_Stampa	Gaspara	Stampa	Gaspara_Stampa	Testi_di_Gaspara_Stampa	-	XVI Secolo	16	it	-
 93	Giovanni_Della_Casa	Giovanni	Della Casa	Giovanni_Della_Casa	Testi_di_Giovanni_Della_Casa	-	XVI Secolo	16	it	-
 94	Francesco_Berni	Francesco	Berni	Francesco_Berni	Testi_di_Francesco_Berni	-	XVI Secolo	16	it	-
 95	Agnolo_Firenzuola	Agnolo	Firenzuola	Agnolo_Firenzuola	Testi_di_Agnolo_Firenzuola	-	XVI Secolo	16	it	-
 96	Teofilo_Folengo	Teofilo	Folengo	Teofilo_Folengo	Testi_di_Teofilo_Folengo	-	XVI Secolo	16	it	-
-97	Bernardo_Dovizi	Bernardo	Dovizi	Bernardo_Dovizi	Testi_di_Bernardo_Dovizi_da_Bibbiena	-	XVI Secolo	16	it	-
+97	Bernardo_Dovizi	Bernardo	Dovizi	Bernardo Dovizi da Bibbiena	Testi_di_Bernardo_Dovizi_da_Bibbiena	-	XVI Secolo	16	it	-
 98	Pietro_Aretino	Pietro	Aretino	Pietro_Aretino	Testi_di_Pietro_Aretino	-	XVI Secolo	16	it	-
 99	Battista_Guarini	Battista	Guarini	Battista_Guarini	Testi_di_Battista_Guarini	-	XVI Secolo	16	it	-
 100	Benvenuto_Cellini	Benvenuto	Cellini	Benvenuto_Cellini	Testi_di_Benvenuto_Cellini	-	XVI Secolo	16	it	-
@@ -115,7 +115,7 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 114	Galileo Galilei	Galileo	Galilei	Galileo Galilei	Testi_di_Galileo_Galilei	-	XVII Secolo	17	it	-
 115	Giovan Battista Marino	Giovan Battista 	Marino	Giovan Battista Marino	Testi_di_Giovan_Battista_Marino	-	XVII Secolo	17	it	-
 116	Pietro_Metastasio	Pietro	Metastasio	Pietro_Metastasio	Testi_di_Pietro_Metastasio	-	XVIII Secolo	18	it	-
-117	G.B. Vico	G.B.	Vico	G.B. Vico	Testi_di_Giambattista_Vico	-	XVIII Secolo	18	it	-
+117	Giambattista Vico	Giambattista	Vico	Giambattista Vico	Testi_di_Giambattista_Vico	-	XVIII Secolo	18	it	-
 118	Lorenzo_Da_Ponte	Lorenzo	Da Ponte	Lorenzo_Da_Ponte	Testi_di_Lorenzo_Da_Ponte	-	XVIII Secolo	18	it	-
 119	Voltaire		Voltaire	Voltaire	Candido	-	XVIII Secolo	18	it	-
 120	Denis_Diderot	Denis	Diderot	Denis_Diderot	-	-	XVIII Secolo	18	it	-
@@ -140,7 +140,7 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 139	Arrigo_Boito	Arrigo	Boito	Arrigo_Boito	Testi_di_Arrigo_Boito	-	Secondo Ottocento	18.5	it	-
 140	Luigi_Capuana	Luigi	Capuana	Luigi_Capuana	Testi_di_Luigi_Capuana	-	Secondo Ottocento	18.5	it	-
 141	Federico_De_Roberto	Federico	De Roberto	Federico_De_Roberto	Testi_di_Federico_De_Roberto	-	Secondo Ottocento	18.5	it	-
-142	Emile_Zola	Emile	Zola	Emile_Zola	Testi_di_Emile_Zola	-	Secondo Ottocento	18.5	it	-
+142	Émile Zola	Émile	Zola	Emile_Zola	Testi_di_Emile_Zola	-	Secondo Ottocento	18.5	it	-
 143	Giovanni Verga	Giovanni	Verga	Giovanni Verga	Testi_di_Giovanni_Verga	-	Secondo Ottocento	18.5	it	-
 144	Igino_Ugo_Tarchetti	Igino	Tarchetti	Igino_Ugo_Tarchetti	Testi_di_Iginio_Ugo_Tarchetti	-	Secondo Ottocento	18.5	it	-
 145	Antonio Fogazzaro	Antonio	Fogazzaro	Antonio Fogazzaro	Testi_di_Antonio_Fogazzaro	-	Secondo Ottocento	18.5	it	-
@@ -182,28 +182,27 @@ id	author	name	surname	author_w	author_ws_it	author_ws_la	period_	period	source	
 182	Giuseppe_Tomasi_di_Lampedusa	Giuseppe	Tomasi di Lampedusa	Giuseppe_Tomasi_di_Lampedusa	©	-	Dopoguerra	19.5	it	-
 183	Primo Levi	Primo	Levi	Primo Levi	©	-	Dopoguerra	19.5	it	-
 184	Beppe Fenoglio	Beppe	Fenoglio	Beppe Fenoglio	©	-	Dopoguerra	19.5	it	-
-185	PPP		PPP	PPP	©	-	Dopoguerra	19.5	it	-
-186	Leonardo Sciascia	Leonardo	Sciascia	Biografia	©	-	Anni 60-70	19.6	it	-
-187	Edoardo_Sanguineti	Edoardo	Sanguineti	Edoardo_Sanguineti	©	-	Anni 60-70	19.6	it	-
-188	Mario_Luzi	Mario	Luzi	Mario_Luzi	©	-	Anni 60-70	19.6	it	-
-189	Franco_Fortini	Franco	Fortini	Franco_Fortini	©	-	Anni 60-70	19.6	it	-
-190	Andrea_Zanzotto	Andrea	Zanzotto	Andrea_Zanzotto	©	-	Anni 60-70	19.6	it	-
-191	Alberto_Arbasino	Alberto	Arbasino	Alberto_Arbasino	©	-	Anni 60-70	19.6	it	-
-192	Goffredo_Parise	Goffredo	Parise	Goffredo_Parise	©	-	Anni 60-70	19.6	it	-
-193	Paolo_Volponi	Paolo	Volponi	Paolo_Volponi	©	-	Anni 60-70	19.6	it	-
-194	Vittorio Sereni	Vittorio	Sereni	Vittorio Sereni	©	-	Anni 60-70	19.6	it	-
-195	Fabrizio_De_André	Fabrizio	De André	Fabrizio_De_André	©	-	Anni 60-70	19.6	it	-
-196	Italo Calvino	Italo	Calvino	Biografia	©	-	Anni 60-70	19.6	it	-
-197	Alda_Merini	Alda	Merini	Alda_Merini	©	-	Dagli anni 80 in poi	19.8	it	-
-198	Patrizia_Valduga	Patrizia	Valduga	Patrizia_Valduga	©	-	Dagli anni 80 in poi	19.8	it	-
-199	Valerio_Magrelli	Valerio	Magrelli	Valerio_Magrelli	©	-	Dagli anni 80 in poi	19.8	it	-
-200	Franco_Scataglini	Franco	Scataglini	Franco_Scataglini	©	-	Dagli anni 80 in poi	19.8	it	-
-201	Milo_De_Angelis	Milo	De Angelis	Milo_De_Angelis	©	-	Dagli anni 80 in poi	19.8	it	-
-202	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda	©	-	Dagli anni 80 in poi	19.8	it	-
-203	Umberto_Eco	Umberto	Eco	Umberto_Eco	©	-	Dagli anni 80 in poi	19.8	it	-
-204	Pier_Vittorio_Tondelli	Pier Vittorio	Tondelli	Pier_Vittorio_Tondelli	©	-	Dagli anni 80 in poi	19.8	it	-
-205	Antonio_Tabucchi	Antonio	Tabucchi	Antonio_Tabucchi	©	-	Dagli anni 80 in poi	19.8	it	-
-206	Aldo_Busi	Aldo	Busi	Aldo_Busi	©	-	Dagli anni 80 in poi	19.8	it	-
-207	Claudio_Magris	Claudio	Magris	Claudio_Magris	©	-	Dagli anni 80 in poi	19.8	it	-
-208	Giuseppe_Pontiggia	Giuseppe	Pontiggia	Giuseppe_Pontiggia	©	-	Dagli anni 80 in poi	19.8	it	-
-209	Silvia_Ballestra	Silvia	Ballestra	Silvia_Ballestra	©	-	Dagli anni 80 in poi	19.8	it	-
+185	Leonardo Sciascia	Leonardo	Sciascia	Biografia	©	-	Anni 60-70	19.6	it	-
+186	Edoardo_Sanguineti	Edoardo	Sanguineti	Edoardo_Sanguineti	©	-	Anni 60-70	19.6	it	-
+187	Mario_Luzi	Mario	Luzi	Mario_Luzi	©	-	Anni 60-70	19.6	it	-
+188	Franco_Fortini	Franco	Fortini	Franco_Fortini	©	-	Anni 60-70	19.6	it	-
+189	Andrea_Zanzotto	Andrea	Zanzotto	Andrea_Zanzotto	©	-	Anni 60-70	19.6	it	-
+190	Alberto_Arbasino	Alberto	Arbasino	Alberto_Arbasino	©	-	Anni 60-70	19.6	it	-
+191	Goffredo_Parise	Goffredo	Parise	Goffredo_Parise	©	-	Anni 60-70	19.6	it	-
+192	Paolo_Volponi	Paolo	Volponi	Paolo_Volponi	©	-	Anni 60-70	19.6	it	-
+193	Vittorio Sereni	Vittorio	Sereni	Vittorio Sereni	©	-	Anni 60-70	19.6	it	-
+194	Fabrizio_De_André	Fabrizio	De André	Fabrizio_De_André	©	-	Anni 60-70	19.6	it	-
+195	Italo Calvino	Italo	Calvino	Biografia	©	-	Anni 60-70	19.6	it	-
+196	Alda_Merini	Alda	Merini	Alda_Merini	©	-	Dagli anni 80 in poi	19.8	it	-
+197	Patrizia_Valduga	Patrizia	Valduga	Patrizia_Valduga	©	-	Dagli anni 80 in poi	19.8	it	-
+198	Valerio_Magrelli	Valerio	Magrelli	Valerio_Magrelli	©	-	Dagli anni 80 in poi	19.8	it	-
+199	Franco_Scataglini	Franco	Scataglini	Franco_Scataglini	©	-	Dagli anni 80 in poi	19.8	it	-
+200	Milo_De_Angelis	Milo	De Angelis	Milo_De_Angelis	©	-	Dagli anni 80 in poi	19.8	it	-
+201	Antonella_Anedda	Antonella	Anedda	Antonella_Anedda	©	-	Dagli anni 80 in poi	19.8	it	-
+202	Umberto_Eco	Umberto	Eco	Umberto_Eco	©	-	Dagli anni 80 in poi	19.8	it	-
+203	Pier_Vittorio_Tondelli	Pier Vittorio	Tondelli	Pier_Vittorio_Tondelli	©	-	Dagli anni 80 in poi	19.8	it	-
+204	Antonio_Tabucchi	Antonio	Tabucchi	Antonio_Tabucchi	©	-	Dagli anni 80 in poi	19.8	it	-
+205	Aldo_Busi	Aldo	Busi	Aldo_Busi	©	-	Dagli anni 80 in poi	19.8	it	-
+206	Claudio_Magris	Claudio	Magris	Claudio_Magris	©	-	Dagli anni 80 in poi	19.8	it	-
+207	Giuseppe_Pontiggia	Giuseppe	Pontiggia	Giuseppe_Pontiggia	©	-	Dagli anni 80 in poi	19.8	it	-
+208	Silvia_Ballestra	Silvia	Ballestra	Silvia_Ballestra	©	-	Dagli anni 80 in poi	19.8	it	-

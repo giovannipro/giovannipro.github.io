@@ -140,7 +140,7 @@ id	author	pubb_w	pubbl_it	pubbl_la
 139	Boccaccio	Filostrato	Il Filostrato	-
 140	Boccaccio	Comedia_delle_ninfe_fiorentine	Canto_di_Ameto	-
 141	Boccaccio	Decameron	Decameron	-
-142	Boccaccio	Struttura_del_Decameron		-
+142	Boccaccio	Struttura_del_Decameron	-	-
 143	Boccaccio	Il_Corbaccio	Il_Corbaccio	-
 144	Lorenzo de' Medici	Il_trionfo_di_Bacco_e_Arianna	Canzona di Bacco	-
 145	Luigi Pulci	Morgante_(poema)	Morgante_maggiore	-
@@ -149,7 +149,7 @@ id	author	pubb_w	pubbl_it	pubbl_la
 148	Poliziano	Rime	Ben_venga_maggio	-
 149	Machiavelli	Machiavellismo	-	-
 150	Machiavelli	Il_principe	Il_Principe	-
-151	Machiavelli	Cesare_Borgia (approfondimento al Principe)		-
+151	Machiavelli	Cesare_Borgia (approfondimento al Principe)	-	-
 152	Machiavelli	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	Discorsi_sopra_la_prima_Deca_di_Tito_Livio	-
 153	Machiavelli	Epistolario	Lettere_(Machiavelli)	-
 154	Machiavelli	La Mandragola	La_mandragola	-
@@ -192,7 +192,7 @@ id	author	pubb_w	pubbl_it	pubbl_la
 191	Ippolito Nievo	Le_confessioni_d'un_italiano	Le_confessioni_di_un_ottuagenario	-
 192	Giuseppe Verdi	La_traviata	La_Traviata	-
 193	Giuseppe Verdi	Va,_pensiero	Va,_pensiero	-
-194	Alessandro Manzoni	Pensiero_e_poetica		-
+194	Alessandro Manzoni	Pensiero_e_poetica	-	-
 195	Alessandro Manzoni	Opere_di_Alessandro_Manzoni		-
 196	Alessandro Manzoni	Inni_sacri	Inni_sacri	-
 197	Alessandro Manzoni	Il_cinque_maggio	Il_cinque_maggio	-
@@ -219,10 +219,10 @@ id	author	pubb_w	pubbl_it	pubbl_la
 218	Giacomo Leopardi	A_se_stesso	A_se_stesso	-
 219	Giacomo Leopardi	La_ginestra	La_ginestra	-
 220	Giacomo Leopardi	Operette_morali	Operette_morali	-
-221	Giacomo Leopardi	Analisi_delle_Operette_morali		-
-222	Giacomo Leopardi	Appendice_alle_Operette_morali		-
+221	Giacomo Leopardi	Analisi_delle_Operette_morali	-	-
+222	Giacomo Leopardi	Appendice_alle_Operette_morali	-	-
 223	Giacomo Leopardi	Paralipomeni_della_Batracomiomachia	Paralipomeni_della_Batracomiomachia	-
-224	Giovanni Verga	Tecnica_narrativa_di_Giovanni_Verga		-
+224	Giovanni Verga	Tecnica_narrativa_di_Giovanni_Verga	-	-
 225	Giovanni Verga	Opere_e_poetica_di_Giovanni_Verga		-
 226	Giovanni Verga	Vita_dei_campi (Novelle)	Vita_dei_campi	-
 227	Giovanni Verga	Rosso_Malpelo	Rosso_Malpelo	-
