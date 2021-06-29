@@ -1990,7 +1990,7 @@ Q178668	Atomismo	Letteratura latina	ex Atomismo di Lucrezio	Superiori	I sec. a.C
 -	Quinto Licinio Catone	Letteratura latina		Superiori	III - II sec. a.Ch.n.	Catone	???	1	16	12	29019	2223	0	0	0	1863	83.81	0	0	0	0	2018-09-17	623
 Q184890	Letteratura Latina	Letteratura latina		Superiori	Generalità		???	1	57	65	101807	31	0	0	21	28	90.32	0	0	0	0	???	#VALUE!
 Q47154	Tito Lucrezio Caro	Letteratura latina	ex Lucrezio	Superiori	I sec. a.Ch.n.	Lucrezio	???	1	21	30	37405	32	0	0	0	29	90.63	0	0	0	0	???	#VALUE!
-Q47160	Tito Maccio Plauto	Letteratura latina	ex Plauto	Superiori	III - II sec. a.Ch.n.	Plauto	???	1	22	17	38701	31	0	0	0	28	90.32	0	0	0	0	???	#VALUE!
+Q47160	Tito Maccio Plauto	Letteratura latina	ex Plauto	Superiori	III - II sec. a.Ch.n.	Plauto	???	1	22	17	38701	31	0	0	0	28	90.32	0	0	0	0	2006-04-01	5175
 Q7559698	Simbolo di percentuale	Matematica		Elementari	Aritmetica	Percentuale	0.5	1	13	30	23890	15943	23	6	1	299	1.88	0	0	0	1056	2018-01-19	864
 Q19985151	Secondo teorema dell'angolo esterno	Matematica		Superiori	Geometria	Triangoli	2.1	1	30	33	54467	1220	0	2	0	341	27.95	2	0	0	40	2015-02-05	1943
 Q17628883	Disequazione intera	Matematica		Superiori	Algebra	Disequazioni lineari	2.1	1	5	6	8604	7927	0	6	3	730	9.21	0	0	0	40	2014-07-05	2158
@@ -2309,7 +2309,7 @@ Q7239	Organismo vivente	Scienze		Medie	Essere vivente		1	1	173	152	310580	27840	
 Q134267	Fusto	Scienze		Medie	Essere vivente		1	1	119	93	213569	15388	0	2	0	905	5.88	1	1	0	37	2003-07-27	6154
 Q9121	Atomo	Scienze		Medie	Aspetti chimici della materia		2	1	580	477	1041589	30456	25	8	3	1146	3.76	0	0	0	1102	2003-04-10	6262
 Q37868	Alga	Scienze		Medie	Essere vivente		1	1	135	126	241914	11976	2	2	9	3274	27.34	0	0	0	390	2003-02-15	6316
--	Scienze dell'atmosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	0	0	144	34	0	0	0	31	91.18	0	0	0	0	2018-12-30	519
+Q757520	Scienze dell'atmosfera	Scienze della Terra		Superiori	Atmosfera e clima		2	1	0	0	144	34	0	0	0	31	91.18	0	0	0	0	2018-12-30	519
 Q2623458	Collisione continentale	Scienze della Terra		Superiori	Formazione della Terra, crosta terrestre e rimodellamento		2	1	5	6	8768	6724	0	2	5	1163	17.30	0	0	0	1307	2017-11-06	938
 -	Rischio vulcanico	Scienze della Terra		Superiori	I vulcani		2	1	10	11	17869	2167	0	0	0	1555	71.76	2	0	0	49	2015-11-12	1663
 Q210539	Orbita della Luna	Scienze della Terra		Superiori	La Terra e la sua Luna		2	1	107	109	191752	18916	14	7	1	1973	10.43	0	0	0	2074	2014-02-06	2307
@@ -2968,8 +2968,8 @@ Q178354	Ragione	Storia		Superiori	XVIII-XIX secolo	Ragione	???	1	74	74	133830	51
 Q3930234	Rapporti tra 'ndrangheta e politica	Storia		Superiori	XX-XXI secolo		???	1	6	9	11529	89018	159	1	0	530	0.60	1	0	0	7304	???	#VALUE!
 Q718909	Razza ariana	Storia		Superiori	XX-XXI secolo	Popolo ariano	???	1	388	409	696500	69971	75	17	22	2426	3.47	0	0	0	33097	???	#VALUE!
 Q79791	Reconquista	Storia		Superiori	XVI-XVII secolo	Reconquista completata	???	1	199	203	357993	51194	0	21	14	1557	3.04	0	0	0	36	???	#VALUE!
--	Referendum abrogativi del 1981 in Italia	Storia	-	Superiori	XX-XXI secolo		???	1	55	52	99431	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
--	Referendum abrogativo del 1974 in Italia	Storia	-	Superiori	XX-XXI secolo		???	1	103	97	185419	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
+Q3931574	Referendum abrogativi del 1981 in Italia	Storia		Superiori	XX-XXI secolo		???	1	55	52	99431	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
+Q3931588	Referendum abrogativo del 1974 in Italia	Storia		Superiori	XX-XXI secolo		???	1	103	97	185419	52	0	0	0	49	94.23	0	0	0	36	???	#VALUE!
 Q2946	Reggia di Versailles	Storia		Superiori	XVI-XVII secolo	Reggia di Versailles	???	1	609	620	1094752	59158	28	31	28	2566	4.34	0	0	0	7773	2005-01-23	5608
 Q193547	Regime del Terrore	Storia		Superiori	XVIII-XIX secolo	Il Terrore	???	1	215	197	386520	62942	45	26	8	1386	2.20	0	0	0	1369	???	#VALUE!
 Q5402094	Regni romano-germanici	Storia		Superiori	Alto medioevo	I regni romano-barbarici	???	1	41	106	72830	32169	5	8	6	1893	5.88	2	0	0	329	???	#VALUE!
