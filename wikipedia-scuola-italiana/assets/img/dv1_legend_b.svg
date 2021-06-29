@@ -3,14 +3,13 @@
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 128.1 60.9" style="enable-background:new 0 0 128.1 60.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{font-family:'OpenSans';}
+	.st0{font-family:Arial,sans-serif;}
 	.st1{font-size:5px;}
 	.st2{opacity:0.5;fill:#EF95C4;enable-background:new    ;}
 	.st3{opacity:0.5;fill:#008000;enable-background:new    ;}
 	.st4{opacity:0.5;fill:#00B2FF;enable-background:new    ;}
 	.st5{opacity:0.5;fill:#0000FF;enable-background:new    ;}
 </style>
-<text transform="matrix(1 0 0 1 297.6382 420.9452)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Scienze matematiche, fisiche e naturali</text>
 <text transform="matrix(1 0 0 1 17.1341 10.9595)" class="st0 st1">discipline umanistiche</text>
 <circle class="st2" cx="8.6" cy="9.5" r="4.9"/>
 <text transform="matrix(1 0 0 1 17.134 24.5222)" class="st0 st1">scienze matematiche, fisiche e naturali</text>
