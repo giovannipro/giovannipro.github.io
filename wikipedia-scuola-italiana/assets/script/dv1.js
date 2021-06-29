@@ -74,7 +74,7 @@ function dv1(year,the_subject,sort) {
 				}
 			}
 		}
-		console.log(subject_group);
+		// console.log(subject_group);
 		
 		visit_sort = subject_articles.sort(function(x, y){
 			return d3.descending(+x.avg_pv, +y.avg_pv);
