@@ -101,6 +101,10 @@ function dv2(year,the_subject,sort) {
 			d.notes = +d.notes
 			d.images = +d.images
 
+			if (d.issues_prev != "-"){
+				d.issues_prev = +d.issues_prev
+			}
+
 			d.features = d.references + d.notes + d.images;
 		})
 
@@ -210,36 +214,44 @@ function dv2(year,the_subject,sort) {
 
 	            // issues
                 content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
-            	let diff_issues = d.issues - d.issues_prev
-            	if (diff_issues > 0){
-            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
-            	}
-            	else {
-            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+                if (d.issues_prev !== "-"){
+	            	let diff_issues = d.issues - d.issues_prev;
+	            	if (diff_issues > 0){
+	            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+	            	}
+	            	else {
+	            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+	                }
                 }
 
                 // references
-                content += "<tr><td class='label'>riferimenti bibl.</td><td class='value'>" + d.references.toLocaleString()
+                if (d.references != "-"){
+                	content += "<tr><td class='label'>riferimenti bibl.</td><td class='value'>" + d.references.toLocaleString()
+                }
             	
             	// notes
             	content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString()
-            	let diff_notes = d.notes - d.notes_prev
-            	if (diff_notes > 0){
-            		content += "<td class='value increase'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+            	if (d.notes_prev !== "-"){
+	            	let diff_notes = d.notes - d.notes_prev;
+	            	if (diff_notes > 0){
+	            		content += "<td class='value increase'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+	            	}
+	            	else {
+	            		content += "<td class='value decrease'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+	                }
             	}
-            	else {
-            		content += "<td class='value decrease'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
-                }
 
                 // images
                 content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
-            	let diff_images = d.images - d.images_prev
-            	if (diff_images > 0){
-            		content += "<td class='value increase'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+            	if (d.images_prev !== "-"){
+	            	let diff_images = d.images - d.images_prev;
+	            	if (diff_images > 0){
+	            		content += "<td class='value increase'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+	            	}
+	            	else {
+	            		content += "<td class='value decrease'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+	                }
             	}
-            	else {
-            		content += "<td class='value decrease'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
-                }
 
 	            content += "</table>"
 	            return content;
@@ -367,7 +379,14 @@ function dv2(year,the_subject,sort) {
 				})
 
 			let issue_prev = variation.append("line")
-				.attr("opacity",1)
+				.attr("opacity",function(d,i){
+					if (d.issues_prev !== "-"){
+						return 1
+					}
+					else {
+						return 0
+					}
+				})
 				.attr("class","issue_prev")
 				.attr("stroke", "black")
 				.style("stroke-dasharray", (stroke_dash))
@@ -527,7 +546,6 @@ function dv2(year,the_subject,sort) {
 		
 			filtered_data.forEach(function (d,i) {
 				total += 1
-				d.id = +d.id
 				d.discussion_size = +d.discussion_size
 				d.average_daily_visit = +d.average_daily_visit
 				d.article = d.article.replace(/_/g," ")
@@ -536,6 +554,11 @@ function dv2(year,the_subject,sort) {
 				d.references = +d.references
 				d.notes = +d.notes
 				d.images = +d.images
+
+				if (d.issues_prev != "-"){
+					d.issues_prev = +d.issues_prev
+				}
+				console.log(d.article,d.issues_prev)
 
 				d.features = d.references + d.notes + d.images;
 			})
@@ -683,7 +706,14 @@ function dv2(year,the_subject,sort) {
 					})
 
 				let issue_prev = variation.append("line")
-					.attr("opacity",1)
+					.attr("opacity",function(d,i){
+						if (d.issues_prev !== "-"){
+							return 1
+						}
+						else {
+							return 0
+						}
+					})
 					.attr("class","issue_prev")
 					.attr("stroke", "black")
 					.style("stroke-dasharray", (stroke_dash))
