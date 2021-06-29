@@ -293,7 +293,7 @@ function dv1(year,the_subject,sort) {
             	}
 
 				// images
-				content += "<tr><td class='label'>images</td><td class='value'>" + d.images.toLocaleString()
+				content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
             	if(year != 2020){
             		let diff_images = d.images - d.images_prev
 	            	if (diff_images > 0){

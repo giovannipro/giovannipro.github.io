@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 92.5 60.8" style="enable-background:new 0 0 92.5 60.8;" xml:space="preserve">
+	 viewBox="0 0 128 89" style="enable-background:new 0 0 128 89;" xml:space="preserve">
 <style type="text/css">
 	.st0{font-family:'OpenSans';}
 	.st1{font-size:5px;}
@@ -9,6 +9,7 @@
 	.st3{fill:#A8D2A2;}
 	.st4{fill:#F5A3BD;}
 	.st5{fill:#EC4C4E;}
+	.st6{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:1,1;}
 </style>
 <text transform="matrix(1 0 0 1 19.6001 24.3234)" class="st0 st1">riferimenti bibliografici (stima)</text>
 <rect x="2.8" y="17.1" class="st2" width="11.9" height="11.9"/>
@@ -17,5 +18,8 @@
 <text transform="matrix(1 0 0 1 19.6001 54.0915)" class="st0 st1">immagini</text>
 <rect x="2.8" y="46.8" class="st4" width="11.9" height="11.9"/>
 <text transform="matrix(1 0 0 1 19.6001 9.5058)" class="st0 st1">avvisi</text>
+<text transform="matrix(1 0 0 1 19.6001 76.2262)" class="st0 st1">avvisi e numero totale di riferimenti,  </text>
+<text transform="matrix(1 0 0 1 19.6001 82.2262)" class="st0 st1">note e immagini l’anno precedente</text>
 <rect x="2.8" y="2.3" class="st5" width="11.9" height="11.9"/>
+<line class="st6" x1="2.8" y1="75" x2="14.7" y2="75"/>
 </svg>
