@@ -97,14 +97,28 @@ function dv2(year,the_subject,sort) {
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
 
-			d.references = +d.references
-			d.notes = +d.notes
-			d.images = +d.images
-
-			if (d.issues_prev != "-"){
+			if (d.issues_prev !== "-"){
 				d.issues_prev = +d.issues_prev
 			}
-
+			if (d.references !== "-"){
+				d.references = +d.references
+			}
+			if (d.references_prev !== "-"){
+				d.references_prev = +d.references_prev
+			}
+			if (d.notes !== "-"){
+				d.notes = +d.notes
+			}
+			if (d.notes_prev !== "-"){
+				d.notes_prev = +d.notes_prev
+			}
+			if (d.images !== "-"){
+				d.images = +d.images
+			}
+			if (d.images_prev !== "-"){
+				d.images_prev = +d.images_prev
+			}
+			
 			d.features = d.references + d.notes + d.images;
 		})
 
@@ -214,44 +228,50 @@ function dv2(year,the_subject,sort) {
 
 	            // issues
                 content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
-                if (d.issues_prev !== "-"){
-	            	let diff_issues = d.issues - d.issues_prev;
-	            	if (diff_issues > 0){
-	            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
-	            	}
-	            	else {
-	            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+                if(year != 2020){
+	                if (d.issues_prev !== "-"){
+		            	let diff_issues = d.issues - d.issues_prev;
+		            	if (diff_issues > 0){
+		            		content += "<td class='value decrease'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+		            	}
+		            	else {
+		            		content += "<td class='value increase'>(" + d.issues_prev + " " + variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
+		                }
 	                }
                 }
 
                 // references
-                if (d.references != "-"){
-                	content += "<tr><td class='label'>riferimenti bibl.</td><td class='value'>" + d.references.toLocaleString()
+                if (d.references !== "-"){
+                	content += "<tr><td class='label'>riferimenti bibliog.</td><td class='value'>" + d.references.toLocaleString()
                 }
             	
             	// notes
             	content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString()
-            	if (d.notes_prev !== "-"){
-	            	let diff_notes = d.notes - d.notes_prev;
-	            	if (diff_notes > 0){
-	            		content += "<td class='value increase'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+            	if(year != 2020){
+            		if (d.notes_prev !== "-"){
+		            	let diff_notes = d.notes - d.notes_prev;
+		            	if (diff_notes > 0){
+		            		content += "<td class='value increase'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+		            	}
+		            	else {
+		            		content += "<td class='value decrease'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
+		                }
 	            	}
-	            	else {
-	            		content += "<td class='value decrease'>(" + d.notes_prev + " " + variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
-	                }
-            	}
+	            }
 
                 // images
                 content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
-            	if (d.images_prev !== "-"){
-	            	let diff_images = d.images - d.images_prev;
-	            	if (diff_images > 0){
-	            		content += "<td class='value increase'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+            	if(year != 2020){
+            		if (d.images_prev !== "-"){
+		            	let diff_images = d.images - d.images_prev;
+		            	if (diff_images > 0){
+		            		content += "<td class='value increase'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+		            	}
+		            	else {
+		            		content += "<td class='value decrease'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
+		                }
 	            	}
-	            	else {
-	            		content += "<td class='value decrease'>(" + d.images_prev + " " + variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
-	                }
-            	}
+	            }
 
 	            content += "</table>"
 	            return content;
@@ -373,8 +393,8 @@ function dv2(year,the_subject,sort) {
 			let variation = article.append("g")
 				.attr("class","variation")
 				.attr("data-2020",function (d,i) {
-					let feat_2020 = (+d.references_prev) + (+d.notes_prev) + (+d.images_prev);
-					let feat_2021 = +d.references + (+d.notes) + (+d.images);
+					let feat_2020 = (d.references_prev) + (d.notes_prev) + (d.images_prev);
+					let feat_2021 = (d.references) + (d.notes) + (d.images);
 					return feat_2020;
 				})
 
@@ -551,14 +571,27 @@ function dv2(year,the_subject,sort) {
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
 
-				d.references = +d.references
-				d.notes = +d.notes
-				d.images = +d.images
-
-				if (d.issues_prev != "-"){
+				if (d.issues_prev !== "-"){
 					d.issues_prev = +d.issues_prev
 				}
-				// console.log(d.article,d.issues_prev)
+				if (d.references !== "-"){
+					d.references = +d.references
+				}
+				if (d.references_prev !== "-"){
+					d.references_prev = +d.references_prev
+				}
+				if (d.notes !== "-"){
+					d.notes = +d.notes
+				}
+				if (d.notes_prev !== "-"){
+					d.notes_prev = +d.notes_prev
+				}
+				if (d.images !== "-"){
+					d.images = +d.images
+				}
+				if (d.images_prev !== "-"){
+					d.images_prev = +d.images_prev
+				}
 
 				d.features = d.references + d.notes + d.images;
 			})
@@ -701,8 +734,9 @@ function dv2(year,the_subject,sort) {
 				let variation = article.append("g")
 					.attr("class","variation")
 					.attr("data-variation",function (d,i) {
-						let feat_2020 = (+d.references_prev) + (+d.notes_prev) + (+d.images_prev);
-						let feat_2021 = +d.references + (+d.notes) + (+d.images);
+						let feat_2020 = (d.references_prev) + (d.notes_prev) + (d.images_prev);
+						let feat_2021 = (d.references) + (d.notes) + (d.images);
+						return feat_2020
 					})
 
 				let issue_prev = variation.append("line")
