@@ -558,7 +558,7 @@ function dv2(year,the_subject,sort) {
 				if (d.issues_prev != "-"){
 					d.issues_prev = +d.issues_prev
 				}
-				console.log(d.article,d.issues_prev)
+				// console.log(d.article,d.issues_prev)
 
 				d.features = d.references + d.notes + d.images;
 			})

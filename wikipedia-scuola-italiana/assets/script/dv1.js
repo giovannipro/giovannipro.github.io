@@ -17,6 +17,8 @@ const shiftx_article = 30;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 const variation_line_opacity = 0.7;
 
+const stroke_dash = "3,3";
+
 // let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
@@ -367,7 +369,7 @@ function dv1(year,the_subject,sort) {
 				.attr("stroke", function(d,i){
 					return apply_color(d.subject)
 				})
-				.style("stroke-dasharray", ("3, 3")) 
+				.style("stroke-dasharray", (stroke_dash)) 
 				.attr("x1", function(d,i){
 					return 0
 				})
@@ -401,7 +403,7 @@ function dv1(year,the_subject,sort) {
 				.attr("stroke", function(d,i){
 					return apply_color(d.subject)
 				})
-				.style("stroke-dasharray", ("3, 3")) 
+				.style("stroke-dasharray", (stroke_dash)) 
 				.attr("fill","transparent")
 				.attr("r", function(d,i){
 					return r(Math.sqrt(d.size_prev/3.14))
@@ -742,7 +744,7 @@ function dv1(year,the_subject,sort) {
 				.attr("stroke", function(d,i){
 					return apply_color(d.subject)
 				})
-				.style("stroke-dasharray", ("3, 3")) 
+				.style("stroke-dasharray", (stroke_dash)) 
 				.attr("x1", function(d,i){
 					return 0
 				})
@@ -776,7 +778,7 @@ function dv1(year,the_subject,sort) {
 				.attr("stroke", function(d,i){
 					return apply_color(d.subject)
 				})
-				.style("stroke-dasharray", ("3, 3")) 
+				.style("stroke-dasharray", (stroke_dash)) 
 				.attr("fill","transparent")
 				.attr("r", function(d,i){
 					return r(Math.sqrt(d.size_prev/3.14))

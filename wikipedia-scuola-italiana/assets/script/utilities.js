@@ -2,7 +2,7 @@ function apply_color(subject){
 	let color;
 
 	if (subject == "Letteratura italiana"  || subject == "Letteratura latina" || subject == "Storia" || subject == "Storia dell'arte" || subject == "Filosofia" || subject == "Grammatica italiana" || subject == "Grammatica latina") {
-		color = "violet";
+		color = "#ef95c4"; //"#eeb4ee";
 	}
 	else if (subject == "Informatica" || subject == "Tecnologia"){
 		color = "blue";
