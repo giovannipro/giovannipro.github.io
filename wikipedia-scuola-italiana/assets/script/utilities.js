@@ -117,13 +117,13 @@ function mobile_filter() {
 		
 		if (open == false) {
 
-			if (path.indexOf("avvisi") == -1 || path.indexOf("autori") == -1){ 
-				the_path = "../";
+			if (path.indexOf("avvisi") == -1 && path.indexOf("autori") == -1){ 
+				the_path = path;
 			}
 			else {
-				the_path = "";
+				the_path = "../";
 			}
-			// console.log(the_path)
+			// console.log(path,the_path + "assets/img/arrow-up.svg")
 
 			$("#mobile_filter_icon").css("background","url(" + the_path + "assets/img/arrow-up.svg) center center no-repeat").css("background-size","55%");
 			$("#select_box").show()
@@ -147,11 +147,11 @@ function get_statistics(){
 			let path = window.location.pathname;
 			let year = parseInt($("#year option:selected").val());
 
-			if (path.indexOf("avvisi") == -1 || path.indexOf("autori") == -1){ 
-				the_path = "../";
+			if (path.indexOf("avvisi") == -1 && path.indexOf("autori") == -1){ 
+				the_path = "";
 			}
 			else {
-				the_path = "";
+				the_path = "../";
 			}
 
 			d3.tsv(the_path + "assets/data/voci_" + year + ".tsv").then(loaded)
