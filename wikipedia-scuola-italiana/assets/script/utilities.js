@@ -142,7 +142,7 @@ function get_statistics(){
 	window.addEventListener("keydown", function(e) {
 		
 		if(e.key == "s"){
-			console.log("statistics");
+			// console.log("statistics");
 
 			let path = window.location.pathname;
 			let year = parseInt($("#year option:selected").val());
@@ -157,7 +157,7 @@ function get_statistics(){
 			d3.tsv(the_path + "assets/data/voci_" + year + ".tsv").then(loaded)
 
 			function loaded(data) {
-				console.log(data)
+				// console.log(data);
 
 				let articles = 0;
 				data.forEach(function (d,i) {
