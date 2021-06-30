@@ -138,7 +138,134 @@ function mobile_filter() {
 	})
 }
 
+function get_statistics(){
+	window.addEventListener("keydown", function(e) {
+		
+		if(e.key == "s"){
+			console.log("statistics");
+
+			let path = window.location.pathname;
+			let year = parseInt($("#year option:selected").val());
+
+			if (path.indexOf("avvisi") == -1 || path.indexOf("autori") == -1){ 
+				the_path = "../";
+			}
+			else {
+				the_path = "";
+			}
+
+			d3.tsv(the_path + "assets/data/voci_" + year + ".tsv").then(loaded)
+
+			function loaded(data) {
+				console.log(data)
+
+				let articles = 0;
+				data.forEach(function (d,i) {
+					articles += 1;
+					d.size = +d.size;
+				})
+
+				let subject_group = d3.nest()
+					.key(d => d.subject)
+					.entries(data)
+
+				console.group();
+				console.log("articoli",articles)
+
+				subject_group = subject_group.sort(function(x, y){
+					return d3.descending(x.values.length, y.values.length);
+				})
+
+				subject_group.forEach(function (d,i) {
+					console.log(d.key,d.values.length)
+				})
+
+				// avg daily visit
+				let avg_pv = d3.mean(data, function(d) { 
+					return Math.round(d.avg_pv);
+				})
+
+				let avg_pv_prev = d3.mean(data, function(d) { 
+					return Math.round(d.avg_pv_prev);
+				})
+
+				// size
+				let avg_size = d3.mean(data, function(d) { 
+					return d.size;
+				})
+
+				let avg_size_prev = d3.mean(data, function(d) { 
+					return d.size_prev;
+				})
+
+				// incipit
+				let avg_incipit = d3.mean(data, function(d) { 
+					return d.incipit_size;
+				})
+
+				let avg_incipit_prev = d3.mean(data, function(d) { 
+					return d.incipit_prev;
+				})
+
+				// discussion
+				let avg_discussion = d3.mean(data, function(d) { 
+					return d.discussion_size;
+				})
+
+				let avg_discussion_prev = d3.mean(data, function(d) { 
+					return d.discussion_prev;
+				})
+
+				// issues
+				let avg_issues = d3.mean(data, function(d) { 
+					return d.issues;
+				})
+
+				let avg_issues_prev = d3.mean(data, function(d) { 
+					return d.issues_prev;
+				})
+
+				// notes
+				let avg_notes = d3.mean(data, function(d) { 
+					return d.notes;
+				})
+
+				let avg_notes_prev = d3.mean(data, function(d) { 
+					return d.notes_prev;
+				})
+
+				// images
+				let avg_images = d3.mean(data, function(d) { 
+					return d.images;
+				})
+
+				let avg_images_prev = d3.mean(data, function(d) { 
+					return d.images_prev;
+				})
+
+				console.log("media visite giornaliere", Math.round(avg_pv), variation_perc(avg_pv,avg_pv_prev,"avg_pv"));
+
+				console.log("media byte articolo", Math.round(avg_size), variation_perc(avg_size,avg_size_prev,"avg_size"));
+
+				console.log("media byte incipit ", Math.round(avg_incipit), variation_perc(avg_incipit,avg_incipit_prev,"avg_incipit"));
+
+				console.log("media byte pagina di discussione", Math.round(avg_discussion), variation_perc(avg_discussion,avg_discussion_prev,"avg_discussion"));
+
+				console.log("media avvisi", parseFloat(avg_issues.toFixed(3)), variation_perc(avg_issues,avg_issues_prev,"avg_issues"));				
+
+				console.log("media note", Math.round(avg_notes), variation_perc(avg_notes,avg_notes_prev,"avg_notes"));
+
+				console.log("media immagini", Math.round(avg_images), variation_perc(avg_images,avg_images_prev,"avg_images"));
+		
+				console.groupEnd();
+			}
+		}
+	})
+}
+
 $(document).ready(function() {
 	mobile_menu();
 	mobile_filter();
+
+	get_statistics();
 })

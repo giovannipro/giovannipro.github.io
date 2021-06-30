@@ -12,7 +12,7 @@ function format_date(date){
 
 const container = "#dv1";
 const font_size = 10;
-const filter_item = 120; // 130;
+const filter_item = 120;
 const shiftx_article = 30;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 const variation_line_opacity = 0.7;
