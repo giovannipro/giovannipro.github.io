@@ -16,6 +16,11 @@ function apply_color(subject){
 	return color;
 }
 
+function precentage(num,tot){
+	let perc = (num*100)/tot
+	return parseFloat(perc.toFixed(2)) + "%";
+}
+
 function variation_perc(now,prev,parameter){
 	let variation = now - prev;
 	let perc; 
@@ -177,7 +182,7 @@ function get_statistics(){
 				})
 
 				subject_group.forEach(function (d,i) {
-					console.log(d.key,d.values.length)
+					console.log(d.key,d.values.length,precentage(d.values.length,articles))
 				})
 
 				// avg daily visit
