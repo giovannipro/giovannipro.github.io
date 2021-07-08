@@ -77,6 +77,7 @@ function dv2(year,the_subject,sort) {
 				}
 			}
 		}
+		// console.log(subject_articles);
 
 		let filtered_data_ = subject_articles.filter(function(x,y){ 
 			return x.issues > 0
@@ -140,6 +141,7 @@ function dv2(year,the_subject,sort) {
 			
 			d.features = d.references + d.notes + d.images;
 		})
+		// console.log(filtered_data);
 
 		// scale
 		let issues_max = d3.max(filtered_data, function(d) { 
@@ -483,7 +485,7 @@ function dv2(year,the_subject,sort) {
 
 		$("#subjects").change(function() {
 			let subject = this.value;
-			new_sort =  $("#sort_article option:selected").val();
+			new_sort = parseInt($("#sort_article option:selected").val());
 
 			update_subject(subject,new_sort);
 		});
@@ -498,6 +500,7 @@ function dv2(year,the_subject,sort) {
 		});
 
 		function update_subject(the_subject,the_sort){
+			// console.log(the_subject,the_sort);
 
 			d3.select("#articles").remove();
 
@@ -547,6 +550,7 @@ function dv2(year,the_subject,sort) {
 					}
 				}
 			}
+			// console.log(subject_articles);
 
 			filtered_data_ = subject_articles.filter(function(x,y){ 
 				return x.issues > 0
@@ -637,6 +641,7 @@ function dv2(year,the_subject,sort) {
 				d.features = d.references + d.notes + d.images;
 				// console.log(d.article,d.features,d.references,d.notes,d.images)
 			})
+			// console.log(filtered_data);
 
 			// scale
 			issues_max = d3.max(filtered_data, function(d) { 
@@ -674,9 +679,6 @@ function dv2(year,the_subject,sort) {
 				.data(filtered_data)
 				.enter()
 				.append("g")
-				.sort(function(a, b) {
-	  				return d3.descending(a.issues, b.issues);
-				})
 				.attr("class","article")
 				.attr("transform", function(d,i){
 					return "translate(" + x(i) + "," + 0 + ")"
@@ -876,7 +878,6 @@ function dv2(year,the_subject,sort) {
 			let total = 0;
 			let subject_articles = [];
 			let filtered_data;
-			// let visit_sort;
 
 			let subject_group = d3.nest()
 				.key(d => d.subject)
@@ -962,8 +963,9 @@ function dv2(year,the_subject,sort) {
 				}
 				
 				d.features = d.references + d.notes + d.images;
-				// console.log(d.article,d.features,d.references,d.notes,d.images)
+				// console.log(d.article,d.features,d.references,d.notes,d.images);
 			})
+			// console.log(filtered_data);
 
 			// sort
 			if (new_sort == 1){
