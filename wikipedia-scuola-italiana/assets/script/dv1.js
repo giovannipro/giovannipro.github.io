@@ -40,6 +40,12 @@ let svg = d3.select(container)
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
 
+let improv_col = "black" //"#1ba51b"
+
+let triangle = d3.symbol()
+	.type(d3.symbolTriangle)
+	.size(25)
+
 function dv1(year,the_subject,sort) {
 	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
 	// console.log(year,the_subject,sort)
@@ -488,7 +494,66 @@ function dv1(year,the_subject,sort) {
 				return r(Math.sqrt(d.discussion_size/3.14))
 			})
 
+		// improvements
+		// let improvements = article_circles.append("circle")
+		// 	.attr("cx",0)
+		// 	.attr("cy",0)
+		// 	.attr("r", function(d,i) {
+		// 		return 20
+		// 	})
+		// 	.attr("class","improvement")
+		// 	.attr("fill","none")
+		// 	.attr("opacity",0.5)
+		// 	.attr("stroke", function(d,i) {
+		// 		if (d.issues < d.issues_prev) {
+		// 			return "green"
+		// 		}
+		// 		else {
+		// 			return "red"
+		// 		}
+		// 	})
+
+		let improvement_issue = article_circles.append("path")
+			.attr("d", triangle)
+			.attr("transform","translate(0,-20)")
+            .attr("stroke", "none")
+            .attr("fill", function (d,i) {
+            	if (d.issues < d.issues_prev) {
+            		return improv_col
+            	}
+            	else {
+            		return "none"
+            	}
+            })
+
+        let improvement_image = article_circles.append("path")
+			.attr("d", triangle)
+			.attr("transform","translate(0,-50)")
+            .attr("stroke", "none")
+            .attr("fill", function (d,i) {
+            	if (d.images < d.images_prev) {
+            		return improv_col
+            	}
+            	else {
+            		return "none"
+            	}
+            })
+
+        let improvement_incipit = article_circles.append("path")
+			.attr("d", triangle)
+			.attr("transform","translate(0,-50)")
+            .attr("stroke", "none")
+            .attr("fill", function (d,i) {
+            	if (d.incipit < d.incipit_prev) {
+            		return improv_col
+            	}
+            	else {
+            		return "none"
+            	}
+            })
+
 	    function handleMouseOver(){
+
 	    	// hide circles
 			d3.selectAll(".article_circles")
 				.attr("opacity",0.2)
@@ -862,6 +927,46 @@ function dv1(year,the_subject,sort) {
 				.attr("r", function(d,i){
 					return r(Math.sqrt(d.discussion_size/3.14))
 				})
+
+			let improvement_issue = article_circles.append("path")
+				.attr("d", triangle)
+				.attr("transform","translate(0,-20)")
+	            .attr("stroke", "none")
+	            .attr("fill", function (d,i) {
+	            	if (d.issues < d.issues_prev) {
+	            		return improv_col
+	            	}
+	            	else {
+	            		return "none"
+	            	}
+	            })
+
+	        let improvement_image = article_circles.append("path")
+				.attr("d", triangle)
+				.attr("transform","translate(0,-50)")
+	            .attr("stroke", "none")
+	            .attr("fill", function (d,i) {
+	            	if (d.images < d.images_prev) {
+	            		return improv_col
+	            	}
+	            	else {
+	            		return "none"
+	            	}
+	            })
+
+	        let improvement_incipit = article_circles.append("path")
+				.attr("d", triangle)
+				.attr("transform","translate(0,-50)")
+	            .attr("stroke", "none")
+	            .attr("fill", function (d,i) {
+	            	if (d.incipit < d.incipit_prev) {
+	            		return improv_col
+	            	}
+	            	else {
+	            		return "none"
+	            	}
+	            })
+
 		}
 
 		function update_sort(the_subject,the_sort){
