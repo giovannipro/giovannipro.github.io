@@ -5,7 +5,7 @@ function apply_color(subject){
 		color = "#ef95c4"; //"#eeb4ee";
 	}
 	else if (subject == "Informatica" || subject == "Tecnologia"){
-		color = "blue";
+		color = "#3a34e0"; // "blue";
 	}
 	else if (subject == "Geografia"  || subject == "Diritto e Economia" || subject == "Cittadinanza e costituzione"){
 		color = "#00b2ff";

@@ -12,7 +12,7 @@ function format_date(date){
 
 const container = "#dv1";
 const font_size = 10;
-const filter_item = 120;
+const filter_item = 120; // 120
 const shiftx_article = 30;
 const wiki_link = "https://it.wikipedia.org/wiki/";
 const variation_line_opacity = 0.7;
@@ -40,12 +40,44 @@ let svg = d3.select(container)
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
 
-let improv_col = "black"; //"#1ba51b";
-let triangle_size = 15;
+// improvements
+let improvements_defs = svg.append("defs")
+	.append("g")
+	.attr("id","icons")
 
-let triangle = d3.symbol()
-	.type(d3.symbolTriangle)
-	.size(triangle_size)
+let scale_icons = "0.5"
+
+let improv_one = improvements_defs.append("g")
+	.attr("id","improv_one")
+	.attr("transform","scale(" + scale_icons + "),translate(5,-10)")
+	.append("polygon")
+	.attr("points", "5 0 0 7 10 7 5 0" )
+
+let improv_two = improvements_defs.append("g")
+	.attr("id","improv_two")
+	.attr("transform","scale(" + scale_icons + "),translate(5,-17)")
+	
+	improv_two.append("polygon")
+		.attr("points", "5 0 0 7 10 7 5 0" )
+
+	improv_two.append("polygon")
+		.attr("points", "5 7 0 14 10 14 5 7" )
+
+let improv_three = improvements_defs.append("g")
+	.attr("id","improv_three")
+	.attr("transform","scale(" + scale_icons + "),translate(5,-24)")
+
+	improv_three.append("polygon")
+		.attr("points", "5 0 0 7 10 7 5 0" )
+
+	improv_three.append("polygon")
+		.attr("points", "5 7 0 14 10 14 5 7" )
+
+	improv_three.append("polygon")
+		.attr("points", "5 14 0 21 10 21 5 14" )
+
+let improv_col = "black"; //"#1ba51b";
+let improv_delay = 1800;
 
 function dv1(year,the_subject,sort) {
 	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
@@ -108,11 +140,29 @@ function dv1(year,the_subject,sort) {
 			d.days = +d.days
 			d.avg_pv = +d.avg_pv
 
+			d.issues_prev = +d.issues_prev
+			d.images_prev = +d.images_prev
+			d.incipit_prev = +d.incipit_prev
+
 			if (d.avg_pv_prev !== "-"){
 				d.avg_pv_prev = +d.avg_pv_prev
 			}
 
-			// console.log(d.article,d.subject,d.avg_pv,d.discussion_size,d.issues,d.images);
+			// improvements
+			d.improvements = 0;
+			if (d.issues < d.issues_prev) {
+				d.improvements += 1
+			}
+			if (d.images > d.images_prev) {
+        		d.improvements += 1
+        	}
+        	if (d.incipit_size > d.incipit_prev) {
+        		d.improvements += 1
+        	}
+
+        	if (d.improvements > 0) {
+				console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
+			}
 		})
 		// console.log(filtered_data);
 		
@@ -496,65 +546,55 @@ function dv1(year,the_subject,sort) {
 			})
 
 		// improvements
-		// let improvements = article_circles.append("circle")
+		let improvements_box = article_circles.append("g")
+			.attr("class","improvements")
+			.attr("data-improvements", function (d,i) {
+				return d.improvements
+			})
+
+		let improvements = improvements_box.append("g")
+			.append("use")
+			.attr("xlink:href", function(d,i){
+				if (d.improvements == 1){
+					return "#improv_one"
+				}
+				else if (d.improvements == 2){
+					return "#improv_two"
+				}
+				else if (d.improvements == 3){
+					return "#improv_three"
+				}
+			})
+			.attr("transform",function(d,i) {
+				return "translate(-5,-" + (r(Math.sqrt(d.size/3.14))) + ")"
+			})
+            .attr("stroke", "none")
+            .attr("fill", function (d,i) {
+            	if (d.improvements > 0) {
+            		return improv_col
+            	}
+            	else {
+            		return "none"
+            	}
+            })
+            .attr("opacity",0)
+			.transition()
+			.delay(improv_delay)
+			.attr("opacity",1)
+
+		// let improvement_debug = improvements_box.append("circle")
 		// 	.attr("cx",0)
 		// 	.attr("cy",0)
-		// 	.attr("r", function(d,i) {
-		// 		return 20
-		// 	})
-		// 	.attr("class","improvement")
-		// 	.attr("fill","none")
-		// 	.attr("opacity",0.5)
-		// 	.attr("stroke", function(d,i) {
-		// 		if (d.issues < d.issues_prev) {
-		// 			return "green"
-		// 		}
-		// 		else {
-		// 			return "red"
-		// 		}
-		// 	})
-
-		let improvements = article_circles.append("g")
-			.attr("class","improvements")
-
-		let improvement_issue = improvements.append("path")
-			.attr("d", triangle)
-			.attr("transform","translate(0,-" + triangle_size + ")")
-            .attr("stroke", "none")
-            .attr("fill", function (d,i) {
-            	if (d.issues < d.issues_prev) {
-            		return improv_col
-            	}
-            	else {
-            		return "none"
-            	}
-            })
-
-        let improvement_image = improvements.append("path")
-			.attr("d", triangle)
-			.attr("transform","translate(0,-" + (triangle_size*1.5) + ")")
-            .attr("stroke", "none")
-            .attr("fill", function (d,i) {
-            	if (d.images > d.images_prev) {
-            		return improv_col
-            	}
-            	else {
-            		return "none"
-            	}
-            })
-
-        let improvement_incipit = improvements.append("path")
-			.attr("d", triangle)
-			.attr("transform","translate(0,-" + (triangle_size*3) + ")")
-            .attr("stroke", "none")
-            .attr("fill", function (d,i) {
-            	if (d.incipit > d.incipit_prev) {
-            		return improv_col
-            	}
-            	else {
-            		return "none"
-            	}
-            })
+		// 	.attr("r",30)
+  //           .attr("fill", "none")
+  //           .attr("stroke", function (d,i) {
+  //           	if (d.improvements > 0) {
+  //           		return improv_col
+  //           	}
+  //           	else {
+  //           		return "none"
+  //           	}
+  //           })
 
 	    function handleMouseOver(){
 
@@ -655,20 +695,39 @@ function dv1(year,the_subject,sort) {
 		
 			filtered_data.forEach(function (d,i) {
 				total += 1
-				d.discussion_size = +d.discussion_size
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
+				d.discussion_size = +d.discussion_size
+				d.incipit_size = +d.incipit_size
+				d.issues = +d.issues
 				d.images = +d.images
 
-				d.issues = +d.issues
+				d.days = +d.days
 				d.avg_pv = +d.avg_pv
 
-				d.incipit_size = +d.incipit_size
+				d.issues_prev = +d.issues_prev
+				d.images_prev = +d.images_prev
+				d.incipit_prev = +d.incipit_prev
 
 				if (d.avg_pv_prev !== "-"){
 					d.avg_pv_prev = +d.avg_pv_prev
 				}
-				// console.log(d.article,d.avg_pv,d.discussion_size,d.issues,d.images);
+
+				// improvements
+				d.improvements = 0;
+				if (d.issues < d.issues_prev) {
+					d.improvements += 1
+				}
+				if (d.images > d.images_prev) {
+	        		d.improvements += 1
+	        	}
+	        	if (d.incipit_size > d.incipit_prev) {
+	        		d.improvements += 1
+	        	}
+
+	        	if (d.improvements > 0) {
+					console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
+				}
 			})
 
 			// scale
@@ -932,48 +991,56 @@ function dv1(year,the_subject,sort) {
 					return r(Math.sqrt(d.discussion_size/3.14))
 				})
 
-			let improvements = article_circles.append("g")
+			// improvements
+			let improvements_box = article_circles.append("g")
 				.attr("class","improvements")
+				.attr("data-improvements", function (d,i) {
+					return d.improvements
+				})
 
-			let improvement_issue = improvements.append("path")
-				.attr("d", triangle)
-				.attr("transform","translate(0,-" + triangle_size + ")")
+			let improvements = improvements_box.append("g")
+				.append("use")
+				.attr("xlink:href", function(d,i){
+					if (d.improvements == 1){
+						return "#improv_one"
+					}
+					else if (d.improvements == 2){
+						return "#improv_two"
+					}
+					else if (d.improvements == 3){
+						return "#improv_three"
+					}
+				})
+				.attr("transform",function(d,i) {
+					return "translate(-5,-" + (r(Math.sqrt(d.size/3.14))) + ")"
+				})
 	            .attr("stroke", "none")
 	            .attr("fill", function (d,i) {
-	            	if (d.issues < d.issues_prev) {
+	            	if (d.improvements > 0) {
 	            		return improv_col
 	            	}
 	            	else {
 	            		return "none"
 	            	}
 	            })
+	            .attr("opacity",0)
+				.transition()
+				.delay(improv_delay)
+				.attr("opacity",1)
 
-	        let improvement_image = improvements.append("path")
-				.attr("d", triangle)
-				.attr("transform","translate(0,-" + (triangle_size*1.5) + ")")
-	            .attr("stroke", "none")
-	            .attr("fill", function (d,i) {
-	            	if (d.images > d.images_prev) {
-	            		return improv_col
-	            	}
-	            	else {
-	            		return "none"
-	            	}
-	            })
-
-	        let improvement_incipit = improvements.append("path")
-				.attr("d", triangle)
-				.attr("transform","translate(0,-" + (triangle_size*3) + ")")
-	            .attr("stroke", "none")
-	            .attr("fill", function (d,i) {
-	            	if (d.incipit > d.incipit_prev) {
-	            		return improv_col
-	            	}
-	            	else {
-	            		return "none"
-	            	}
-	            })
-
+			// let improvement_debug = improvements_box.append("circle")
+			// 	.attr("cx",0)
+			// 	.attr("cy",0)
+			// 	.attr("r",30)
+	  //           .attr("fill", "none")
+	  //           .attr("stroke", function (d,i) {
+	  //           	if (d.improvements > 0) {
+	  //           		return improv_col
+	  //           	}
+	  //           	else {
+	  //           		return "none"
+	  //           	}
+	  //           })
 		}
 
 		function update_sort(the_subject,the_sort){
