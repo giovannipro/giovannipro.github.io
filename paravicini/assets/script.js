@@ -1,17 +1,20 @@
 // map
 let map_contaier = "my_map";
 let min_zoom = 9;
-// let fill_opacity = 1;
-// let opacity = 1;
-// let stroke_opacity = 1
-// let radius = 2;
 
 // markers
-// let color = "red";
+let myIcon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-markers
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
 
 function load_map(){
 	let map = L.map(map_contaier, {
-		center: [45.8081, 9.0852],
+		center: [46.081, 9.0852],
 		zoom: min_zoom
 	});
 
@@ -22,21 +25,29 @@ function load_map(){
 		tileSize: 256
 	}).addTo(map);
 
-	function append_markers(){
+	let category = "paravicini"
 
-		let min_lat = 45; 
+	// filter buildings
+	let filter = document.getElementById("filter");
+
+
+	function append_markers(category){
+
+		filter.addEventListener ("change", function () {
+			category = this.value;
+			console.log(category);
+
+	       	// document.getElementsByClassName('building')[0].remove();
+	       	document.querySelectorAll('.building').forEach(function(a){
+				a.remove()
+			})
+			append_markers(category)
+		});
+
+		let min_lat = 45.4; 
 		let max_lat = 46.5; 
 		let min_lon = 8.5; 
 		let max_lon = 9.5; 
-
-		let myIcon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-markers
-		    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-		    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		    iconSize: [25, 41],
-			iconAnchor: [12, 41],
-			popupAnchor: [1, -34],
-			shadowSize: [41, 41]
-		});
 
 		let bounds = [];
 
@@ -50,20 +61,19 @@ function load_map(){
 			let lon = Math.random() * (max_lon - min_lon) + min_lon;
 			let tooltip_text = "<span>" +
 				"<strong>" + name + "</strong>" + "<br/>" +
-				// description + "<br/>" + "<br/>" + 
 				ref + "<br/>" +
+				"<span class='help'>clicca per maggiori informazioni"
 				"<span>";
-			console.log(lat,lon) 
+			// console.log(lat,lon) 
 
 			let popup_text = "<div>" +
 				"<strong>" + name + "</strong>" + "<br/>" + 
 				"<a href=" + link + " title=" + name + ">" + "maggiori informazioni" + "</a>"
 				"</div>"
 
-			let place = L.marker([lat, lon], {
+			let building = L.marker([lat, lon], {
 				icon: myIcon,
-				className: "place",
-				id: "place_"
+				id:  markers
 			})
 			// .bindPopup(popup_text , {
 			// 	maxWidth: 300
@@ -76,14 +86,16 @@ function load_map(){
 			})
 			.addTo(map)
 			.on('click', onClick);
+			L.DomUtil.addClass( building._icon, "building" );
+			L.DomUtil.addClass( building._shadow, "building" );
 		
-			bounds.push([lat,lon])
+			// bounds.push([lat,lon])
 
-			map.fitBounds(bounds, {
-				"padding": [80, 80],
-				"animate": true,
-			    "duration": 2
-			});	
+			// map.fitBounds(bounds, {
+			// 	"padding": [80, 80],
+			// 	"animate": true,
+			//     "duration": 2
+			// });	
 			
 			function onClick(){
 				window.location = link; 
@@ -91,7 +103,7 @@ function load_map(){
 		}
 
 	}
-	append_markers();
+	append_markers(category);
 }
 
 
