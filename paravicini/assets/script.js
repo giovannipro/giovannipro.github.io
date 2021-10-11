@@ -29,8 +29,8 @@ function load_map(){
 		let min_lon = 8.5; 
 		let max_lon = 9.5; 
 
-		let myIcon_a = L.icon({
-		    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+		let myIcon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-markers
+		    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
 		    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
 		    iconSize: [25, 41],
 			iconAnchor: [12, 41],
@@ -38,52 +38,58 @@ function load_map(){
 			shadowSize: [41, 41]
 		});
 
-		let myIcon_b = L.icon({
-		    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-		    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		    iconSize: [25, 41],
-			iconAnchor: [12, 41],
-			popupAnchor: [1, -34],
-			shadowSize: [41, 41]
-		});
+		let bounds = [];
 
-		for (let markers = 0; markers < 300; markers++) {
+		for (let markers = 0; markers < 150; markers++) {
+			let name = "Castello di Trezzo";
+			let ref = "BAMi, S.P.II.217, quaderno 2, cc. 29, 30";
+			let description = "Disegni delle fortificazioni viscontee del castello di Trezzo datate «Trezzo, 3 settembre 1869»"
+			let link = "https://neorenaissance.supsi.ch/cms/2021/10/05/nome-edificio-neo-rinascimentale/";
+
 			let lat = Math.random() * (max_lat - min_lat) + min_lat;
 			let lon = Math.random() * (max_lon - min_lon) + min_lon;
-			let tooltip_text = markers.toString();
-			console.log(lat,lon)
+			let tooltip_text = "<span>" +
+				"<strong>" + name + "</strong>" + "<br/>" +
+				// description + "<br/>" + "<br/>" + 
+				ref + "<br/>" +
+				"<span>";
+			console.log(lat,lon) 
 
-			let icon = myIcon_a;
-			if (markers % 2 == 0){
-				icon = myIcon_a
-			}
-			else {
-				icon = myIcon_b
-			}
+			let popup_text = "<div>" +
+				"<strong>" + name + "</strong>" + "<br/>" + 
+				"<a href=" + link + " title=" + name + ">" + "maggiori informazioni" + "</a>"
+				"</div>"
 
 			let place = L.marker([lat, lon], {
-				icon: icon,
+				icon: myIcon,
 				className: "place",
-				id: "place_" + 1
+				id: "place_"
 			})
+			// .bindPopup(popup_text , {
+			// 	maxWidth: 300
+			// })
 		   	.bindTooltip( tooltip_text , {
 				permanent: false,
 				interactive: true,
-				noWrap: true,
-				opacity: 0.9
+				noWrap: false,
+				opacity: 0.9,
 			})
 			.addTo(map)
-			// .on('click', onClick);
+			.on('click', onClick);
+		
+			bounds.push([lat,lon])
 
-			// place.on('mouseover', mouseover);
-			// place.on('mouseout', mouseleave);
-
-			// map.fitBounds(bounds, {
-			// 	"padding": [80, 80],
-			// 	"animate": true,
-			//     "duration": 2
-			// });	
+			map.fitBounds(bounds, {
+				"padding": [80, 80],
+				"animate": true,
+			    "duration": 2
+			});	
+			
+			function onClick(){
+				window.location = link; 
+			}
 		}
+
 	}
 	append_markers();
 }
