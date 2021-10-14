@@ -4,6 +4,8 @@ body {
 	font-family:  Arial, sans-serif;
 }
 
+/* - - - - header - - - -*/
+
 header {
 	height: 40px;
 	background-color:  #62636D;
@@ -20,7 +22,21 @@ header a {
 	text-decoration: none;
 }
 
-/*map*/
+/* - - - - sidebar - - - -*/
+
+#info_bar {
+	background-color: #fff;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	bottom:  0;
+	padding: 1rem;
+	display: none;
+	transition: 1s;
+}
+
+
+/* - - - - map - - - -*/
 
 #my_map {
 	width:  100%;

@@ -12,9 +12,35 @@ let myIcon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-
 	shadowSize: [41, 41]
 });
 
-function load_map(){
+function tsvJSON(tsv) {
+	const lines = tsv.split('\n');
+	const headers = lines.slice(0, 1)[0].split('\t');
+	return lines.slice(1, lines.length).map(line => {
+	  const data = line.split('\t');
+	  return headers.reduce((obj, nextKey, index) => {
+	    obj[nextKey] = data[index];
+	    return obj;
+	  }, {});
+	});
+}
+
+
+// load data
+function load_data(){
+	fetch("assets/data.tsv")
+		.then(response => response.text())
+		.then((data) => {
+			load_map(data)
+	 	})
+}
+
+function load_map(data){
+
+	const buildings = tsvJSON(data);
+	console.log(buildings)
+
 	let map = L.map(map_contaier, {
-		center: [46.081, 9.0852],
+		center: [45.881, 8.9852],
 		zoom: min_zoom
 	});
 
@@ -30,14 +56,13 @@ function load_map(){
 	// filter buildings
 	let filter = document.getElementById("filter");
 
-
+	// append markers
 	function append_markers(category){
 
 		filter.addEventListener ("change", function () {
 			category = this.value;
-			console.log(category);
+			// console.log(category);
 
-	       	// document.getElementsByClassName('building')[0].remove();
 	       	document.querySelectorAll('.building').forEach(function(a){
 				a.remove()
 			})
@@ -51,29 +76,22 @@ function load_map(){
 
 		let bounds = [];
 
-		for (let markers = 0; markers < 150; markers++) {
-			let name = "Castello di Trezzo";
-			let ref = "BAMi, S.P.II.217, quaderno 2, cc. 29, 30";
-			let description = "Disegni delle fortificazioni viscontee del castello di Trezzo datate «Trezzo, 3 settembre 1869»"
-			let link = "https://neorenaissance.supsi.ch/cms/2021/10/05/nome-edificio-neo-rinascimentale/";
+		buildings.forEach(function(entry){
 
-			let lat = Math.random() * (max_lat - min_lat) + min_lat;
-			let lon = Math.random() * (max_lon - min_lon) + min_lon;
+			let name = entry.name;
+			let lat = entry.lat;
+			let lon = entry.lon;
+			let ref = entry.ref;
+			let cat = entry.category;
+			let link = entry.link;
+
 			let tooltip_text = "<span>" +
-				"<strong>" + name + "</strong>" + "<br/>" +
-				ref + "<br/>" +
-				"<span class='help'>clicca per maggiori informazioni"
+				"<strong>" + name + "</strong>" +
 				"<span>";
-			// console.log(lat,lon) 
-
-			let popup_text = "<div>" +
-				"<strong>" + name + "</strong>" + "<br/>" + 
-				"<a href=" + link + " title=" + name + ">" + "maggiori informazioni" + "</a>"
-				"</div>"
 
 			let building = L.marker([lat, lon], {
 				icon: myIcon,
-				id:  markers
+				id:  buildings
 			})
 			// .bindPopup(popup_text , {
 			// 	maxWidth: 300
@@ -98,16 +116,27 @@ function load_map(){
 			// });	
 			
 			function onClick(){
-				window.location = link; 
+				// window.location = link; 
+				open_sidebar(tooltip_text);
+
 			}
-		}
+		})
 
 	}
 	append_markers(category);
+
+	// sidebar
+	function open_sidebar(item){
+		const container = document.getElementById("info_bar");
+		const title = 
+
+		container.style.display = "block";
+		
+		container.innerHTML = "";
+		container.append(item)
+	}
 }
 
-
-
 document.addEventListener("DOMContentLoaded", function(){
-    load_map();
+    load_data();
 });
