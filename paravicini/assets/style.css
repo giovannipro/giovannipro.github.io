@@ -22,17 +22,52 @@ header a {
 	text-decoration: none;
 }
 
-/* - - - - sidebar - - - -*/
+/* - - - - filter - - - -*/
+
+#filter_box {
+	height: 40px;
+	background-color: #ededed;
+	line-height: 40px;
+	padding:  0 1rem;
+	z-index: 0;
+	border-bottom: 1px solid #cdc9c9;
+}
+
+#filter {
+	background-color: transparent;
+	width:  100%;
+	height:  40px;
+	border-color:  transparent;
+}
+
+
+/* - - - - info-bar - - - -*/
 
 #info_bar {
 	background-color: #fff;
+	border-top: #cdc9c9;
 	width: 100%;
 	height: 200px;
 	position: absolute;
 	bottom:  0;
-	padding: 1rem;
 	display: none;
 	transition: 1s;
+	grid-row-gap:  1rem;
+}
+
+.b_name {
+	font-weight: bold;
+}
+
+#info {
+	padding: 1rem;
+	width: 60%;
+}
+
+@media only screen and (max-width: 750px) {
+  #info {
+    width: auto;
+  }
 }
 
 
@@ -54,25 +89,18 @@ header a {
 	margin-top:  1rem;
 } 
 
-#filter_box {
-	height: 40px;
-	background-color: #ededed;
-	line-height: 40px;
-	padding:  0 1rem;
-	z-index: 0;
-	-webkit-box-shadow: #b7b7b7 0 10px 0px, 0px 7px 15px -2px rgba(142,138,140,0.15); 
-	box-shadow: #b7b7b7 0 6px 10px, 0px 7px 15px -2px rgba(142,138,140,0.15);
-}
-
-#filter {
-	background-color: transparent;
-	width:  100%;
-	height:  40px;
-	border-color:  transparent;
-}
 
 .leaflet-tooltip-pane div {
 	font-family:  Arial, sans-serif;
     display: flex;
     word-wrap: break-word;
 }
+
+.neorinascimentali {
+	display: none;
+}
+
+.popup_close {
+	display: none;
+}
+
