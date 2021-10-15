@@ -58,7 +58,7 @@ function load_map(data){
 	let category = "paravicini"
 
 	// filter buildings
-	let filter = document.getElementById("filter");
+	let filter = document.getElementById("filter_category");
 
 	// append markers
 	function append_markers(category){
