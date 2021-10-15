@@ -11,7 +11,7 @@ header {
 	background-color:  #62636D;
 	color:  white;
 	line-height: 40px;
-	padding:  0 1rem;
+	padding:  0 1rem 0 0;
 	display:  flex;
 	justify-content: space-between;
 	z-index: 1;
@@ -20,6 +20,30 @@ header {
 header a {
 	color:  white;
 	text-decoration: none;
+}
+
+#logo_line {
+	display: flex;
+}
+
+#logo {
+	padding-left: 1rem;	
+	background-color: white;
+	width: 100px;
+	padding: 5px 0.5rem 0 1rem;
+}
+
+#title_line {
+	padding: 0 0.5rem;
+}
+
+#logo:nth-child(2){
+	background-color: #62636d;
+}
+
+#logo img {
+	width: 100px;
+	height: auto;
 }
 
 /* - - - - filter - - - -*/
