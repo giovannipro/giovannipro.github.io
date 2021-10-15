@@ -75,6 +75,7 @@ function load_map(data){
 			let lat = entry.lat;
 			let lon = entry.lon;
 			let cat = entry.category;
+			let sub = entry.subcategory;
 
 			let tooltip_text = "<span>" +
 				"<strong>" + name + "</strong>" +
@@ -147,10 +148,13 @@ function load_map(data){
 		info_bar.style.display = "block";
 
 		let name = entry.name;
+		let des = entry.description;
 		let lat = entry.lat;
 		let lon = entry.lon;
 		let ref = entry.ref;
 		let cat = entry.category;
+		let sub = entry.subcategory;
+
 		let link = entry.link;
 
 		let the_link = "";
@@ -159,8 +163,9 @@ function load_map(data){
 		}
 
 		let output = "<div id='info'>" +
-			"<span class='b_name'>" + name + "</span><br/><br/>" + 
+			"<span class='b_name'>" + name + "</span><br/>" + 
 			ref + "<br/></br>" +
+			des + "<br/></br>" +
 			the_link + 
 			"</div>"
 		
