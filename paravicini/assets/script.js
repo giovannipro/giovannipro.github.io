@@ -55,10 +55,12 @@ function load_map(data){
 	})
 	.addTo(map);
 
-	let category = "paravicini"
+	let category = "paravicini";
+	let subcategory = "tutti";
 
 	// filter buildings
-	let filter = document.getElementById("filter_category");
+	const filter_main = document.getElementById("filter_category");
+	const filter_sub = document.getElementById("filter_subcategory");
 
 	// append markers
 	function append_markers(category){
@@ -85,21 +87,15 @@ function load_map(data){
 				icon: myIcon,
 				id:  buildings
 			})
-		 //   	.bindTooltip( tooltip_text , {
-			// 	permanent: false,
-			// 	interactive: true,
-			// 	noWrap: false,
-			// 	opacity: 0.9,
-			// })
 			.bindPopup(tooltip_text, {
 				"maxWidth": 200,
-				"className": "popup"
+				"className": "popup building " + cat + " " + sub
 			})
 			.addTo(map)
 			.on('click', onClick);
-			L.DomUtil.addClass( building._icon, "building " + cat);
-			L.DomUtil.addClass( building._shadow, "building " + cat);
-			L.DomUtil.addClass( building._icon, "building " + cat);
+			L.DomUtil.addClass( building._icon, "building " + cat + " " + sub);
+			L.DomUtil.addClass( building._shadow, "building " + cat + " " + sub);
+			L.DomUtil.addClass( building._icon, "building " + cat + " " + sub);
 
 			bounds.push([lat,lon])
 			map.fitBounds(bounds, {
@@ -110,34 +106,78 @@ function load_map(data){
 
 			function onClick(){
 				open_sidebar(entry);
-
-		  //       let theIcon = L.icon({
-		  //           iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-				// 	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-		  //       });
-		  //       this.setIcon(theIcon);
 			}
-
 		})
 
-		filter.addEventListener ("change", function () {
-			category = this.value;
-
+		function close_popup(){
 			document.querySelectorAll(".popup").forEach(function(a){
-				a.classList.toggle("popup_close");
+				// a.classList.toggle("popup_close");
+				if (a.style.opacity == 1) {
+					a.style.opacity = 0;
+				}
 			})
+		}
 
-	       	document.querySelectorAll('.building').forEach(function(a){
-	       		if (a.className.indexOf(category) !== -1){
-	       			a.style.display = "block";
-	       		}
-	       		else {
-	       			a.style.display = "none";
-	       		}
-			})
+		// main filter
+		filter_main.addEventListener ("change", function () {
+			category = this.value;
+			let subcategory = filter_sub.value;
+
+			// display buildings
+			if (subcategory == "tutti"){
+		       	document.querySelectorAll('.building').forEach(function(a){
+		       		if (a.className.indexOf(category) !== -1){
+		       			a.style.display = "block";
+					    console.log(category,subcategory);
+		       		}
+		       		else {
+		       			a.style.display = "none";
+		       		}
+				})
+			}
+			else {
+				document.querySelectorAll('.building').forEach(function(a){
+		       		if (a.className.indexOf(category) !== -1 && a.className.indexOf(subcategory) !== -1) {  
+		       			a.style.display = "block";
+		       			console.log(category,subcategory,name);
+		       		}
+		       		else {
+		       			a.style.display = "none";
+		       		}
+				})
+			}
 
 	       	info_bar.innerHTML = "<div id='info'>Seleziona un punto sulla mappa</div>";
+		})
 
+		// sub filter
+		filter_sub.addEventListener ("change", function () { 
+			subcategory = this.value;
+			category = filter_main.value;
+
+			// display buildings
+			if (subcategory == "tutti"){
+				document.querySelectorAll('.building').forEach(function(a){
+					if (a.className.indexOf(category) !== -1) {
+						a.style.display = "block";
+						console.log(category,subcategory);
+					}
+					else {
+			       		a.style.display = "none";
+			       	}
+				})
+			}
+			else {
+				document.querySelectorAll('.building').forEach(function(a){
+					if (a.className.indexOf(category) !== -1 && a.className.indexOf(subcategory) !== -1) {
+						a.style.display = "block";
+						console.log(category,subcategory);
+					}
+					else {
+			       		a.style.display = "none";
+			       	}
+				})
+			}
 		})
 	}
 	append_markers(category);
