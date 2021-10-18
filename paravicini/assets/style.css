@@ -115,6 +115,10 @@ header a {
 	width: 60%;
 }
 
+.not_selected {
+		color:  gray;
+}
+
 @media only screen and (max-width: 750px) {
   #info {
     width: auto;

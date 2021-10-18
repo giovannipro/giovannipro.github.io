@@ -1,6 +1,7 @@
 // map
 let map_contaier = "my_map";
 let min_zoom = 9;
+let max_zoom = 16;
 let map_center = [45.481, 8.9852];
 
 // markers
@@ -26,6 +27,10 @@ function tsvJSON(tsv) {
 	});
 }
 
+function isFloat(n) {
+    return n === +n && n !== (n|0);
+}
+
 // load data
 function load_data(){
 	fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrLjvEojUsJnXde5dY3KB9Mw8fSJZXsU9QGMq0-RNoLbcLyJlgYaUvU0DByCA78kpIYXDKmHc8dE3/pub?gid=0&single=true&output=tsv")
@@ -44,12 +49,12 @@ function load_map(data){
 
 	let map = L.map(map_contaier, {
 		center: map_center,
-		zoom: min_zoom
+		zoom: max_zoom
 	});
 
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-		maxZoom: 17,
+		maxZoom: max_zoom,
 		minZoom: min_zoom,
 		tileSize: 256
 	})
@@ -74,35 +79,39 @@ function load_map(data){
 		buildings.forEach(function(entry){
 
 			let name = entry.name;
-			let lat = entry.lat;
-			let lon = entry.lon;
+			let lat = parseFloat(entry.lat);
+			let lon = parseFloat(entry.lon);
 			let cat = entry.category;
 			let sub = entry.subcategory;
+			// console.log(lat,lon)
 
-			let tooltip_text = "<span>" +
-				"<strong>" + name + "</strong>" +
-				"<span>";
+			if (lat != "" && lon != "" && isFloat(lat) && isFloat(lon)){
+				let tooltip_text = "<span>" +
+					"<strong>" + name + "</strong>" +
+					"<span>";
 
-			let building = L.marker([lat, lon], {
-				icon: myIcon,
-				id:  buildings
-			})
-			.bindPopup(tooltip_text, {
-				"maxWidth": 200,
-				"className": "popup building " + cat + " " + sub
-			})
-			.addTo(map)
-			.on('click', onClick);
-			L.DomUtil.addClass( building._icon, "building " + cat + " " + sub);
-			L.DomUtil.addClass( building._shadow, "building " + cat + " " + sub);
-			L.DomUtil.addClass( building._icon, "building " + cat + " " + sub);
+				let building = L.marker([lat, lon], {
+					icon: myIcon,
+					id:  buildings
+				})
+				.bindPopup(tooltip_text, {
+					"maxWidth": 200,
+					"className": "popup b1 b2 " + cat + " " + sub
+				})
+				.addTo(map)
+				.on('click', onClick);
+				L.DomUtil.addClass( building._icon, "b1 b2 " + cat + " " + sub);
+				L.DomUtil.addClass( building._shadow, "b1 b2 " + cat + " " + sub);
+				L.DomUtil.addClass( building._icon, "b1 b2 " + cat + " " + sub);
 
-			bounds.push([lat,lon])
-			map.fitBounds(bounds, {
-				"padding": [140, 200],
-				"animate": true,
-			    "duration": 2
-			});	
+				bounds.push([lat,lon])
+				map.fitBounds(bounds, {
+					"padding": [140, 200],
+					"animate": true,
+				    "duration": 2
+				});	
+			}
+
 
 			function onClick(){
 				open_sidebar(entry);
@@ -125,10 +134,10 @@ function load_map(data){
 
 			// display buildings
 			if (subcategory == "tutti"){
-		       	document.querySelectorAll('.building').forEach(function(a){
+		       	document.querySelectorAll('.b1').forEach(function(a){
 		       		if (a.className.indexOf(category) !== -1){
-		       			a.style.display = "block";
-					    console.log(category,subcategory);
+		       			a.style.visibility = "block";
+					    // console.log(category,subcategory);
 		       		}
 		       		else {
 		       			a.style.display = "none";
@@ -136,10 +145,10 @@ function load_map(data){
 				})
 			}
 			else {
-				document.querySelectorAll('.building').forEach(function(a){
+				document.querySelectorAll('.b1').forEach(function(a){
 		       		if (a.className.indexOf(category) !== -1 && a.className.indexOf(subcategory) !== -1) {  
 		       			a.style.display = "block";
-		       			console.log(category,subcategory,name);
+		       			// console.log(category,subcategory,name);
 		       		}
 		       		else {
 		       			a.style.display = "none";
@@ -147,7 +156,7 @@ function load_map(data){
 				})
 			}
 
-	       	info_bar.innerHTML = "<div id='info'>Seleziona un punto sulla mappa</div>";
+	       	info_bar.innerHTML = "<div id='info' class='not_selected'>Seleziona un punto sulla mappa</div>";
 		})
 
 		// sub filter
@@ -157,10 +166,10 @@ function load_map(data){
 
 			// display buildings
 			if (subcategory == "tutti"){
-				document.querySelectorAll('.building').forEach(function(a){
+				document.querySelectorAll('.b2').forEach(function(a){
 					if (a.className.indexOf(category) !== -1) {
 						a.style.display = "block";
-						console.log(category,subcategory);
+						// console.log(category,subcategory);
 					}
 					else {
 			       		a.style.display = "none";
@@ -168,10 +177,10 @@ function load_map(data){
 				})
 			}
 			else {
-				document.querySelectorAll('.building').forEach(function(a){
+				document.querySelectorAll('.b2').forEach(function(a){
 					if (a.className.indexOf(category) !== -1 && a.className.indexOf(subcategory) !== -1) {
 						a.style.display = "block";
-						console.log(category,subcategory);
+						// console.log(category,subcategory);
 					}
 					else {
 			       		a.style.display = "none";
