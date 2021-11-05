@@ -85,10 +85,15 @@ function load_map(data){
 			let sub = entry.subcategory;
 			// console.log(lat,lon)
 
+
 			if (lat != "" && lon != "" && isFloat(lat) && isFloat(lon)){
 				let tooltip_text = "<span>" +
 					"<strong>" + name + "</strong>" +
 					"<span>";
+
+				if (cat == "rinascimentale"){
+					cat = "rinascimento"
+				}
 
 				let building = L.marker([lat, lon], {
 					icon: myIcon,
@@ -112,7 +117,6 @@ function load_map(data){
 				});	
 			}
 
-
 			function onClick(){
 				open_sidebar(entry);
 			}
@@ -120,10 +124,12 @@ function load_map(data){
 
 		function close_popup(){
 			document.querySelectorAll(".popup").forEach(function(a){
-				// a.classList.toggle("popup_close");
+				a.className = cat
+
 				if (a.style.opacity == 1) {
 					a.style.opacity = 0;
 				}
+				// a.classList.toggle("popup_close");
 			})
 		}
 
@@ -132,12 +138,16 @@ function load_map(data){
 			category = this.value;
 			let subcategory = filter_sub.value;
 
+			if (category == "rinascimentale"){
+				category = "rinascimento"
+			}
+
 			// display buildings
 			if (subcategory == "tutti"){
 		       	document.querySelectorAll('.b1').forEach(function(a){
 		       		if (a.className.indexOf(category) !== -1){
-		       			a.style.visibility = "block";
-					    // console.log(category,subcategory);
+		       			a.style.display = "block";
+		       			// a.classList.toggle = "invisible";
 		       		}
 		       		else {
 		       			a.style.display = "none";
@@ -147,14 +157,14 @@ function load_map(data){
 			else {
 				document.querySelectorAll('.b1').forEach(function(a){
 		       		if (a.className.indexOf(category) !== -1 && a.className.indexOf(subcategory) !== -1) {  
-		       			a.style.display = "block";
-		       			// console.log(category,subcategory,name);
+		       			a.style.display = "block";	
 		       		}
 		       		else {
 		       			a.style.display = "none";
 		       		}
 				})
 			}
+			console.log(category,subcategory,name);
 
 	       	info_bar.innerHTML = "<div id='info' class='not_selected'>Seleziona un punto sulla mappa</div>";
 		})
@@ -164,12 +174,15 @@ function load_map(data){
 			subcategory = this.value;
 			category = filter_main.value;
 
+			if (category == "rinascimentale"){
+				category = "rinascimento"
+			}
+
 			// display buildings
 			if (subcategory == "tutti"){
 				document.querySelectorAll('.b2').forEach(function(a){
 					if (a.className.indexOf(category) !== -1) {
-						a.style.display = "block";
-						// console.log(category,subcategory);
+						a.style.display = "block";	
 					}
 					else {
 			       		a.style.display = "none";
@@ -179,20 +192,22 @@ function load_map(data){
 			else {
 				document.querySelectorAll('.b2').forEach(function(a){
 					if (a.className.indexOf(category) !== -1 && a.className.indexOf(subcategory) !== -1) {
-						a.style.display = "block";
-						// console.log(category,subcategory);
+						a.style.display = "block";	
 					}
 					else {
 			       		a.style.display = "none";
 			       	}
 				})
 			}
+			console.log(category,subcategory,name);
 		})
 	}
 	append_markers(category);
 
+
 	// sidebar
 	function open_sidebar(entry){
+
 		info_bar.innerHTML = "";
 		info_bar.style.display = "block";
 
@@ -211,12 +226,24 @@ function load_map(data){
 			the_link = "<a href='" + link +"' title='" + name + "'>maggiori informazioni</a>"
 		}
 
-		let output = "<div id='info'>" +
-			"<span class='b_name'>" + name + "</span><br/>" + 
-			ref + "<br/></br>" +
-			des + "<br/></br>" +
-			the_link + 
+		if (cat == "paravicini"){
+			cat = "disegnato da Paravicini"
+		}
+
+		let cat_sub = "Edificio " + sub + " " + cat;
+
+		let output =  "<div class='b_name'>" + 
+			"<p>" + name + "</p>" +
+			"<p class='cat_sub'>" + cat_sub + "</p>" +
+			"</div>" + 
+
+			"<div class='b_text'>" + 
+			"<p>" + ref + "</p>" +
+			"<p>" + des + "</p>" +
+			"<p>" + the_link + "</p>" +
+			// "<p>" + cat + " - " + sub +"</p>" +
 			"</div>"
+
 		
 		info_bar.innerHTML = output;
 	}
