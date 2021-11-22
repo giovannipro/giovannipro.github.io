@@ -169,10 +169,6 @@ header a {
     word-wrap: break-word;
 }
 
-.rinascimento, .neorinascimentale {
-	display: none;
-}
-
 .popup_close {
 	display: none;
 }
