@@ -27,7 +27,7 @@
 		echo "\n";
 
 		while($row = $result_a->fetch_assoc()) {
-			echo $row["id"] . "\t" . $row["category"] . "\t" . $row["subcategory"] . "\t" . (float)$row["lat"] . "\t" . (float)$row["lon"] . "\t" . $row["name"] . "\t" . $row["ref"] . "\t" . $row["description"] . "\t" . $row["link"] . "\n";
+			echo (int)$row["id"] . "\t" . $row["category"] . "\t" . $row["subcategory"] . "\t" . (float)$row["lat"] . "\t" . (float)$row["lon"] . "\t" . $row["name"] . "\t" . $row["ref"] . "\t" . $row["description"] . "\t" . $row["link"] . "\n";
 		}
 	} 
 	else {

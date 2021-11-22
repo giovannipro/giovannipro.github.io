@@ -94,7 +94,7 @@ header a {
 	background-color: #fff;
 	border-top: 1px solid #cdc9c9;
 	width: 100%;
-	height: 200px;
+	height: 240px;
 	position: absolute;
 	bottom:  0!important;
 	display: none;
@@ -113,12 +113,7 @@ header a {
 
 .b_name p:first-child {
 	margin-bottom: 0px;
-}
-
-.cat_sub {
-	font-size: 0.7em;
-	font-weight: normal;
-	margin: 0.5rem 0;
+	margin-top: 0px;
 }
 
 .b_text {
@@ -126,14 +121,19 @@ header a {
 	padding: 0.8rem 1rem;
 }
 
-.b_text p {
-	margin:  0 0 1rem;
+.label {
+	font-size: 0.7em;
+	font-weight: normal;
+	margin: 0rem 0 0.2rem 0;
+}
+
+.value {
+	margin:  0 0 0.7rem;
 }
 
 .not_selected {
 		color:  gray;
 }
-
 
 @media only screen and (max-width: 750px) {
   #info {

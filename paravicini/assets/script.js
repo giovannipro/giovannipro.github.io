@@ -2,10 +2,10 @@
 let map_contaier = "my_map";
 let min_zoom = 9;
 let max_zoom = 16;
-let map_center = [45.481, 8.9852];
+let map_center = [45.981, 8.9852];
 
 function tsvJSON(tsv) {
-	const lines = tsv.split("\n");
+	const lines = tsv.split("\r"); // n  -  r
 	const headers = lines.slice(0, 1)[0].split("\t");
 	return lines.slice(1, lines.length).map(line => {
 	  const data = line.split("\t");
@@ -27,7 +27,7 @@ let myIcon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-
 	className: ""
 });
 
-let my_selection_icon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-markers
+let my_selection_icon = L.icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
     iconSize: [25, 41],
@@ -41,10 +41,12 @@ function isFloat(n) {
     return n === +n && n !== (n|0);
 }
 
+let no_selection = "<div id='info' class='b_text'><p>Si prega di selezionare un punto sulla mappa per visualizzare i dettagli.</p></div>";
+
 // load data
 function load_data(){
-	let data_link = "assets/php/get_data.php";
-	// let data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrLjvEojUsJnXde5dY3KB9Mw8fSJZXsU9QGMq0-RNoLbcLyJlgYaUvU0DByCA78kpIYXDKmHc8dE3/pub?gid=0&single=true&output=tsv";
+	// let data_link = "assets/php/get_data.php";
+	let data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrLjvEojUsJnXde5dY3KB9Mw8fSJZXsU9QGMq0-RNoLbcLyJlgYaUvU0DByCA78kpIYXDKmHc8dE3/pub?gid=0&single=true&output=tsv";
 
 	fetch(data_link)
 		.then(response => response.text())
@@ -55,7 +57,7 @@ function load_data(){
 
 function load_map(data){
 	const buildings = tsvJSON(data);
-	console.log(buildings)
+	console.log(buildings);
 
 	// filters
 	const filter_main = document.getElementById("filter_category");
@@ -83,8 +85,7 @@ function load_map(data){
 
 	// append markers
 	function append_markers(category,subcategory){
-		console.log(category,subcategory);
-		// console.log(buildings)
+		// console.log(category,subcategory);
 
 		let min_lat = 45.4; 
 		let max_lat = 46.5; 
@@ -108,13 +109,14 @@ function load_map(data){
 		// console.log(category,subcategory,filtered_items_b)
 		
 		filtered_items_b.forEach(function(entry){
+			let id = parseInt(entry.id);
 			let name = entry.name;
 			let lat = parseFloat(entry.lat);
 			let lon = parseFloat(entry.lon);
 			let cat = entry.category;
 			let sub = entry.subcategory;
 			let tooltip_text = "<span class='tooltip'>" + name + "</span>"
-			// console.log(name, lat, lon, cat, sub);
+			// console.log(id, name, lat, lon, cat, sub);
 
 			if (lat != "" && lon != "" && isFloat(lat) && isFloat(lon)){
 
@@ -132,7 +134,7 @@ function load_map(data){
 
 				bounds.push([lat,lon])
 				map.fitBounds(bounds, {
-					"padding": [140, 200],
+					"padding": [240, 300],
 					"animate": true,
 				    "duration": 2
 				});	
@@ -175,12 +177,18 @@ function load_map(data){
 
 		let output =  "<div class='b_name'>" + 
 			"<p>" + name + "</p>" +
-			"<p class='cat_sub'>" + cat_sub + "</p>" +
 			"</div>" + 
 
 			"<div class='b_text'>" + 
-			"<p>" + ref + "</p>" +
-			"<p>" + des + "</p>" +
+			"<p class='label'>tipologia</p>" +
+			"<p class='value'>" + cat_sub + "</p>" +
+
+			"<p class='label'>località</p>" +
+			"<p class='value'>" + ref + "</p>" +
+
+			"<p class='label'>descrizione</p>" +
+			"<p class='value'>" + des + "</p>" +
+
 			"<p>" + the_link + "</p>" +
 			"</div>";
 
@@ -199,12 +207,16 @@ function load_map(data){
 			}
 		})
 
+		info_bar.innerHTML = no_selection;
+
 		append_markers(category,subcategory);	
 	})
 
 	filter_sub.addEventListener ("change", function () { 
+		let previous_subcategory = subcategory;
 		subcategory = this.value;
 		category = filter_main.value;
+		console.log(previous_subcategory, subcategory)
 
 		// remove markers
 		map.eachLayer(function(layer){
@@ -212,6 +224,8 @@ function load_map(data){
 				map.removeLayer(layer);
 			}
 		})
+
+		info_bar.innerHTML = no_selection;
 
 		append_markers(category,subcategory);
 	})
