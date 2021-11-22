@@ -4,16 +4,6 @@ let min_zoom = 9;
 let max_zoom = 16;
 let map_center = [45.481, 8.9852];
 
-// markers
-let myIcon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-markers
-    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
-    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-    iconSize: [25, 41],
-	iconAnchor: [12, 41],
-	popupAnchor: [1, -34],
-	shadowSize: [41, 41]
-});
-
 function tsvJSON(tsv) {
 	const lines = tsv.split('\r');
 	const headers = lines.slice(0, 1)[0].split('\t');
@@ -26,6 +16,27 @@ function tsvJSON(tsv) {
 	  }, {});
 	});
 }
+
+// markers
+let myIcon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-markers
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41],
+	className: ""
+});
+
+let my_selection_icon = L.icon({ // red green  // https://github.com/pointhi/leaflet-color-markers
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41],
+	className: ""
+});
 
 function isFloat(n) {
     return n === +n && n !== (n|0);
@@ -52,6 +63,9 @@ function load_map(data){
 		zoom: max_zoom
 	});
 
+	let category = "";
+	let subcategory = "";
+
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 		maxZoom: max_zoom,
@@ -59,9 +73,6 @@ function load_map(data){
 		tileSize: 256
 	})
 	.addTo(map);
-
-	let category = "paravicini";
-	let subcategory = "tutti";
 
 	// filter buildings
 	const filter_main = document.getElementById("filter_category");
@@ -76,67 +87,104 @@ function load_map(data){
 		let max_lon = 9.5; 
 
 		let bounds = [];
-		buildings.forEach(function(entry){
 
-			let name = entry.name;
-			let lat = parseFloat(entry.lat);
-			let lon = parseFloat(entry.lon);
-			let cat = entry.category;
-			let sub = entry.subcategory;
-			// console.log(lat,lon)
-
-
-			if (lat != "" && lon != "" && isFloat(lat) && isFloat(lon)){
-				let tooltip_text = "<span>" +
-					"<strong>" + name + "</strong>" +
-					"<span>";
-
-				if (cat == "rinascimentale"){
-					cat = "rinascimento"
-				}
-
-				let building = L.marker([lat, lon], {
-					icon: myIcon,
-					id:  buildings
-				})
-				.bindPopup(tooltip_text, {
-					"maxWidth": 200,
-					"className": "popup b1 b2 " + cat + " " + sub
-				})
-				.addTo(map)
-				.on('click', onClick);
-				L.DomUtil.addClass( building._icon, "b1 b2 " + cat + " " + sub);
-				L.DomUtil.addClass( building._shadow, "b1 b2 " + cat + " " + sub);
-				L.DomUtil.addClass( building._icon, "b1 b2 " + cat + " " + sub);
-
-				bounds.push([lat,lon])
-				map.fitBounds(bounds, {
-					"padding": [140, 200],
-					"animate": true,
-				    "duration": 2
-				});	
-			}
-
-			function onClick(){
-				open_sidebar(entry);
-			}
+		// groups 
+		b_paravicini = buildings.filter(function(b){
+			return b.category == "paravicini"
+		})
+		b_rinascimento = buildings.filter(function(b){
+			return b.category == "rinascimentale"
+		})
+		b_neorinascimento = buildings.filter(function(b){
+			return b.category == "neorinascimentale"
 		})
 
-		function close_popup(){
-			document.querySelectorAll(".popup").forEach(function(a){
-				a.className = cat
+		function markers_group(data,g_name){
+			data.forEach(function(entry){
+				let name = entry.name;
+				let lat = parseFloat(entry.lat);
+				let lon = parseFloat(entry.lon);
+				let cat = entry.category;
+				let sub = entry.subcategory;
+				let tooltip_text = "<span class='tooltip'>" + name + "</span>"
+				// console.log(name, lat, lon, cat, sub);
 
-				if (a.style.opacity == 1) {
-					a.style.opacity = 0;
+				if (lat != "" && lon != "" && isFloat(lat) && isFloat(lon)){
+					if (cat == "rinascimentale"){
+						cat = "rinascimento"
+					}
+
+					myIcon.options.className = "b1 b2 " + cat + " " + sub
+
+					g_name = L.marker([lat, lon], {
+						icon: myIcon
+					})
+					.addTo(map)
+					.bindPopup(tooltip_text, {
+						"maxWidth": 200,
+						"className": "popup building " + cat + " " + sub
+					})
+					.on('click', onClick)
+
+					bounds.push([lat,lon])
+					map.fitBounds(bounds, {
+						"padding": [140, 200],
+						"animate": true,
+					    "duration": 2
+					});	
 				}
-				// a.classList.toggle("popup_close");
+
+				// let count = 0; 
+				function onClick(){
+					open_sidebar(entry);
+
+					// let category = filter_main.value;
+					// let className = this.options.icon.options.className;
+					// console.log(className)
+
+					// let count = 0
+					// map.eachLayer(function(layer) {
+					//    	if (layer instanceof L.Marker){
+					// 	   	if(layer.options.icon.options.className.indexOf(category) !== -1){
+					// 	   		console.log(layer.options.icon.options.className)
+					// 		    layer.setIcon(myIcon);
+					// 	    }
+					// 	    else if (layer instanceof L.Marker && layer.options.icon.options.className.indexOf("selected") !== -1){
+					// 	    	layer.options.icon.options.className.replace("selected","")
+					// 	    	layer.setIcon(myIcon);
+					// 	    }
+					    	
+					//     	count += 1;
+					//     	console.log(count,layer.options.icon.options.className);
+					// 	}
+					// });
+
+					// // make the selected icon red
+					// this.options.icon.options.className += " selected";
+					// this.setIcon(my_selection_icon);
+					// console.log(this)
+				}
 			})
 		}
+
+		markers_group(b_paravicini,"paravicini");
+		markers_group(b_rinascimento,"rinascimento");
+		markers_group(b_neorinascimento,"neorinascimento");
+
+		// function close_popup(){
+		// 	document.querySelectorAll(".popup").forEach(function(a){
+		// 		a.className = cat
+
+		// 		if (a.style.opacity == 1) {
+		// 			a.style.opacity = 0;
+		// 		}
+		// 	})
+		// }
 
 		// main filter
 		filter_main.addEventListener ("change", function () {
 			category = this.value;
-			let subcategory = filter_sub.value;
+			subcategory = filter_sub.value
 
 			if (category == "rinascimentale"){
 				category = "rinascimento"
@@ -166,7 +214,7 @@ function load_map(data){
 			}
 			console.log(category,subcategory,name);
 
-	       	info_bar.innerHTML = "<div id='info' class='not_selected'>Seleziona un punto sulla mappa</div>";
+	       	info_bar.innerHTML = "<div id='info' class='b_text'><p>Seleziona un punto sulla mappa</p></div>"; // not_selected
 		})
 
 		// sub filter

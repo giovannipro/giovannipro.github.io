@@ -159,6 +159,10 @@ header a {
 	margin-top:  1rem;
 } 
 
+.tooltip {
+	font-weight: bold;
+}
+
 .leaflet-tooltip-pane div {
 	font-family:  Arial, sans-serif;
     display: flex;
