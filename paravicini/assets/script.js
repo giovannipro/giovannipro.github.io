@@ -58,11 +58,11 @@ function load_data(){
 function load_map(data){
 	const buildings = tsvJSON(data);
 
-	buildings.forEach(function(entry){
-		if (entry.name != undefined){
-			console.log(entry);
-		}
-	})
+	// buildings.forEach(function(entry){
+	// 	if (entry.name != undefined){
+	// 		console.log(entry);
+	// 	}
+	// })
 
 	// filters
 	const filter_main = document.getElementById("filter_category");
@@ -113,36 +113,37 @@ function load_map(data){
 		
 		// display all
 		if (category == "tutti" && subcategory == "tutti"){
-			filtered_items_b = buildings
+			filtered_items_b = buildings;
+			filtered_items_b = buildings.filter(function(b){
+				return b.category !== undefined;
+			})
 		}
-		// console.log(category,subcategory,filtered_items_b)
-		console.log(filtered_items_b)
 		
 		filtered_items_b.forEach(function(entry){
-			let id = parseInt(entry.id);
-			let name = entry.name;
-			let lat = parseFloat(entry.lat);
-			let lon = parseFloat(entry.lon);
-			let cat = entry.category;
-			let sub = entry.subcategory;
-			let tooltip_text = "<span class='tooltip'>" + name + "</span>"
-			// console.log(id, name, lat, lon, cat, sub);
+			entry.id = parseInt(entry.id);
+			entry.lat = parseFloat(entry.lat);
+			entry.lon = parseFloat(entry.lon);
+		})
+		console.log(filtered_items_b)
 
-			if (lat != "" && lon != "" && isFloat(lat) && isFloat(lon)){
+		filtered_items_b.forEach(function(entry){
+			let tooltip_text = "<span class='tooltip'>" + entry.name + "</span>";
 
-				myIcon.options.className = "b1 b2 " + cat + " " + sub
+			if (entry.lat != "" && entry.lon != "" && isFloat(entry.lat) && isFloat(entry.lon)){
 
-				markers = L.marker([lat, lon], {
+				myIcon.options.className = "b1 b2 " + entry.category + " " + entry.subcategory;
+
+				markers = L.marker([entry.lat, entry.lon], {
 					icon: myIcon
 				})
 				.addTo(markerGroup)
 				.bindPopup(tooltip_text, {
 					"maxWidth": 200,
-					"className": "popup building " + cat + " " + sub
+					"className": "popup building " + entry.category + " " + entry.subcategory
 				})
 				.on('click', onClick)
 
-				bounds.push([lat,lon])
+				bounds.push([entry.lat,entry.lon])
 				map.fitBounds(bounds, {
 					"padding": [240, 300],
 					"animate": true,
@@ -233,7 +234,7 @@ function load_map(data){
 		let previous_subcategory = subcategory;
 		subcategory = this.value;
 		category = filter_main.value;
-		console.log(previous_subcategory, subcategory)
+		// console.log(previous_subcategory, subcategory)
 
 		// remove markers
 		map.eachLayer(function(layer){
