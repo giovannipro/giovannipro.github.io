@@ -57,7 +57,12 @@ function load_data(){
 
 function load_map(data){
 	const buildings = tsvJSON(data);
-	console.log(buildings);
+
+	buildings.forEach(function(entry){
+		if (entry.name != undefined){
+			console.log(entry);
+		}
+	})
 
 	// filters
 	const filter_main = document.getElementById("filter_category");
@@ -97,7 +102,6 @@ function load_map(data){
 		filtered_items_a = buildings.filter(function(b){
 			return b.category == category
 		})
-
 		if (subcategory == "tutti"){
 			filtered_items_b = filtered_items_a; 
 		}
@@ -106,7 +110,13 @@ function load_map(data){
 				return b.subcategory == subcategory
 			})
 		}
+		
+		// display all
+		if (category == "tutti" && subcategory == "tutti"){
+			filtered_items_b = buildings
+		}
 		// console.log(category,subcategory,filtered_items_b)
+		console.log(filtered_items_b)
 		
 		filtered_items_b.forEach(function(entry){
 			let id = parseInt(entry.id);
@@ -235,6 +245,13 @@ function load_map(data){
 		info_bar.innerHTML = no_selection;
 
 		append_markers(category,subcategory);
+	})
+
+	// display all
+	document.addEventListener("keydown", function(event) {
+		if (event.which == 65){ // a
+			append_markers("tutti","tutti");
+		}
 	})
 }
 
