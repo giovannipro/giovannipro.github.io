@@ -5,7 +5,7 @@ let max_zoom = 16;
 let map_center = [45.981, 8.9852];
 
 function tsvJSON(tsv) {
-	const lines = tsv.split("\n"); // n  -  r
+	const lines = tsv.split("\r"); // n: data from database; r: data from Google Spreadsheet
 	const headers = lines.slice(0, 1)[0].split("\t");
 	return lines.slice(1, lines.length).map(line => {
 	  const data = line.split("\t");
@@ -45,8 +45,8 @@ let no_selection = "<div id='info' class='b_text'><p>Si prega di selezionare un 
 
 // load data
 function load_data(){
-	let data_link = "assets/php/get_data.php";
-	// let data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrLjvEojUsJnXde5dY3KB9Mw8fSJZXsU9QGMq0-RNoLbcLyJlgYaUvU0DByCA78kpIYXDKmHc8dE3/pub?gid=0&single=true&output=tsv";
+	// let data_link = "assets/php/get_data.php";
+	let data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrLjvEojUsJnXde5dY3KB9Mw8fSJZXsU9QGMq0-RNoLbcLyJlgYaUvU0DByCA78kpIYXDKmHc8dE3/pub?gid=0&single=true&output=tsv";
 
 	fetch(data_link)
 		.then(response => response.text())
