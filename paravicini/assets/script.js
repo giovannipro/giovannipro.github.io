@@ -1,8 +1,8 @@
 // map
 let map_contaier = "my_map";
-let min_zoom = 9;
-let max_zoom = 16;
-let map_center = [45.981, 8.9852];
+let min_zoom = 5;
+let max_zoom = 18;
+let map_center = [42.593, 19.277]; // 45.981, 8.9852
 
 function tsvJSON(tsv) {
 	const lines = tsv.split("\r"); // n: data from database; r: data from Google Spreadsheet
@@ -92,12 +92,6 @@ function load_map(data){
 	function append_markers(category,subcategory){
 		// console.log(category,subcategory);
 
-		let min_lat = 45.4; 
-		let max_lat = 46.5; 
-		let min_lon = 8.5; 
-		let max_lon = 9.5; 
-		let bounds = [];
-
 		// filter buildings
 		filtered_items_a = buildings.filter(function(b){
 			return b.category == category
@@ -126,11 +120,12 @@ function load_map(data){
 		})
 		console.log(filtered_items_b)
 
+		let bounds = [];
 		filtered_items_b.forEach(function(entry){
+
 			let tooltip_text = "<span class='tooltip'>" + entry.name + "</span>";
 
 			if (entry.lat != "" && entry.lon != "" && isFloat(entry.lat) && isFloat(entry.lon)){
-
 				myIcon.options.className = "b1 b2 " + entry.category + " " + entry.subcategory;
 
 				markers = L.marker([entry.lat, entry.lon], {
@@ -142,20 +137,24 @@ function load_map(data){
 					"className": "popup building " + entry.category + " " + entry.subcategory
 				})
 				.on('click', onClick)
-
+				
 				bounds.push([entry.lat,entry.lon])
 				map.fitBounds(bounds, {
-					"padding": [240, 300],
+					"padding": [20, 20], // 260, 300
 					"animate": true,
 				    "duration": 2
 				});	
+
 			}
 
-			// let count = 0; 
 			function onClick(){
 				open_sidebar(entry);
 			}
 		})
+
+		// let zoomLev = map.getZoom();
+		// console.log(zoomLev);
+		// map.setView([40, 8], 4);
 	}
 	append_markers(category,subcategory);
 
@@ -169,7 +168,8 @@ function load_map(data){
 		let des = entry.description;
 		let lat = entry.lat;
 		let lon = entry.lon;
-		let ref = entry.ref;
+		let place = entry.place;
+		let ref = entry.reference;
 		let cat = entry.category;
 		let sub = entry.subcategory;
 
@@ -180,11 +180,14 @@ function load_map(data){
 			the_link = "<a href='" + link +"' title='" + name + "'>maggiori informazioni</a>";
 		}
 
+		let cat_sub = ""; 
 		if (cat == "paravicini"){
-			cat = "disegnato da Paravicini";
+			cat_ = "disegnato da Paravicini";
+			cat_sub = "Edificio " + sub + " " + cat_;
 		}
-
-		let cat_sub = "Edificio " + sub + " " + cat;
+		else {
+			cat_sub = "Edificio " + sub + " " + cat;
+		}
 
 		let output =  "<div class='b_name'>" + 
 			"<p>" + name + "</p>" +
@@ -194,8 +197,13 @@ function load_map(data){
 			"<p class='label'>tipologia</p>" +
 			"<p class='value'>" + cat_sub + "</p>";
 
-			if (ref !== ""){
+			if (place !== ""){
 				output += "<p class='label'>località</p>";
+				output += "<p class='value'>" + place + "</p>";
+			}
+
+			if (ref !== ""){
+				output += "<p class='label'>segnatura dei disegni</p>";
 				output += "<p class='value'>" + ref + "</p>";
 			}
 
@@ -234,7 +242,6 @@ function load_map(data){
 		let previous_subcategory = subcategory;
 		subcategory = this.value;
 		category = filter_main.value;
-		// console.log(previous_subcategory, subcategory)
 
 		// remove markers
 		map.eachLayer(function(layer){
