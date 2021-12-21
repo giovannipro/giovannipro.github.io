@@ -4,6 +4,10 @@ body {
 	font-family:  Arial, sans-serif;
 }
 
+p {
+	line-height: 1.1rem;
+}
+
 /* - - - - header - - - -*/
 
 header {
@@ -108,12 +112,23 @@ header a {
 .b_name {
 	font-weight: bold;
 	border-bottom:1px solid #cdc9c9;
+	background-color: #efefef;
 	padding: 0.6rem 1rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 .b_name p:first-child {
 	margin-bottom: 0px;
 	margin-top: 0px;
+}
+
+.b_name a:nth-child(2) {
+	text-decoration: none;
+}
+
+.b_name a:first-child:hover {
+	text-decoration: underline;
 }
 
 .b_text {
@@ -133,6 +148,21 @@ header a {
 
 .not_selected {
 		color:  gray;
+}
+
+/* The icon animation */
+@keyframes arrow_move {
+  0%	{right: 0px;}
+  25% {right: 20px;}
+  100% {right: 0px;}
+}
+
+/* The element to apply the animation to */
+#to_the_link {
+	position: relative;
+  animation-name: arrow_move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 @media only screen and (max-width: 750px) {

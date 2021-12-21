@@ -172,12 +172,22 @@ function load_map(data){
 		let ref = entry.reference;
 		let cat = entry.category;
 		let sub = entry.subcategory;
-
 		let link = entry.link;
 
-		let the_link = "";
+		let the_name = "";
+		let name_box = "";
+		let box = "";
 		if (link.length > 20){
-			the_link = "<a href='" + link +"' title='" + name + "'>maggiori informazioni</a>";
+			box = "<div class='b_name'>";
+			the_name = "<a href='" + link +"' title='" + name + "'>" + "<p>" + name + "</p></a>"
+			the_link = "<a href='" + link +"' title='" + name + "' id='to_the_link'>" + "&#x2192;" +"</a>"
+
+			box += the_name + the_link + "</div>";
+		}
+		else {
+			box = "<div class='b_name'>";
+			the_name = "<p>" + name + " " + name_box + "</p>";
+			box += the_name + "</div>";
 		}
 
 		let cat_sub = ""; 
@@ -189,10 +199,7 @@ function load_map(data){
 			cat_sub = "Edificio " + sub + " " + cat;
 		}
 
-		let output =  "<div class='b_name'>" + 
-			"<p>" + name + "</p>" +
-			"</div>" + 
-
+		let output = box +
 			"<div class='b_text'>" + 
 			"<p class='label'>tipologia</p>" +
 			"<p class='value'>" + cat_sub + "</p>";
@@ -210,10 +217,6 @@ function load_map(data){
 			if (des !== ""){
 				output += "<p class='label'>descrizione</p>";
 				output += "<p class='value'>" + des + "</p>";
-			}
-
-			if (the_link !== ""){
-				output += "<p>" + the_link + "</p>";
 			}
 
 			"</div>";
