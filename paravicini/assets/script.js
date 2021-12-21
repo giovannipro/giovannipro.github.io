@@ -178,16 +178,12 @@ function load_map(data){
 		let name_box = "";
 		let box = "";
 		if (link.length > 20){
-			box = "<div class='b_name'>";
-			the_name = "<a href='" + link +"' title='" + name + "'>" + "<p>" + name + "</p></a>"
-			the_link = "<a href='" + link +"' title='" + name + "' id='to_the_link'>" + "&#x2192;" +"</a>"
-
-			box += the_name + the_link + "</div>";
+			box = "<a href='" + link +"' title='" + name + "' id='linked'>" 
+			box += "<div class='b_name'>" + "<span>" + name + "</span>"
+			box += "<span>" + "&#x2192;" + "</span></div></a>"
 		}
 		else {
-			box = "<div class='b_name'>";
-			the_name = "<p>" + name + " " + name_box + "</p>";
-			box += the_name + "</div>";
+			box += "<div class='b_name'><span>" + name + "</span></div>"
 		}
 
 		let cat_sub = ""; 

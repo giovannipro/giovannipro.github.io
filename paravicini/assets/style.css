@@ -5,7 +5,7 @@ body {
 }
 
 p {
-	line-height: 1.1rem;
+	line-height: 1rem;
 }
 
 /* - - - - header - - - -*/
@@ -110,6 +110,7 @@ header a {
 }
 
 .b_name {
+	line-height: 1.5rem;
 	font-weight: bold;
 	border-bottom:1px solid #cdc9c9;
 	background-color: #efefef;
@@ -118,16 +119,20 @@ header a {
 	justify-content: space-between;
 }
 
+#linked:hover {
+	background-color: red;
+}	
+
 .b_name p:first-child {
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
 
-.b_name a:nth-child(2) {
+#info_bar a {
 	text-decoration: none;
 }
 
-.b_name a:first-child:hover {
+#info_bar a span:nth-child(1):hover {
 	text-decoration: underline;
 }
 
@@ -152,14 +157,15 @@ header a {
 
 /* The icon animation */
 @keyframes arrow_move {
-  0%	{right: 0px;}
-  25% {right: 20px;}
-  100% {right: 0px;}
+  0%	{left: 0px;}
+  25% {left: 20px;}
+  100% {left: 0px;}
 }
 
 /* The element to apply the animation to */
 #to_the_link {
 	position: relative;
+	margin-left: 20px;
   animation-name: arrow_move;
   animation-duration: 2s;
   animation-iteration-count: infinite;
