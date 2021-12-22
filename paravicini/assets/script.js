@@ -41,7 +41,11 @@ function isFloat(n) {
     return n === +n && n !== (n|0);
 }
 
-let no_selection = "<div id='info' class='b_text'><p>Si prega di selezionare un punto sulla mappa per visualizzare i dettagli.</p></div>";
+// no building selected
+let no_selection = "<div id='info' id='b_text'><p>Si prega di selezionare un punto sulla mappa per visualizzare i dettagli.</p></div>";
+
+// sidebar open
+let open = true;
 
 // load data
 function load_data(){
@@ -58,17 +62,14 @@ function load_data(){
 function load_map(data){
 	const buildings = tsvJSON(data);
 
-	// buildings.forEach(function(entry){
-	// 	if (entry.name != undefined){
-	// 		console.log(entry);
-	// 	}
-	// })
-
 	// filters
 	const filter_main = document.getElementById("filter_category");
 	const filter_sub = document.getElementById("filter_subcategory");
 
-	let info_bar = document.getElementById("info_bar");
+	let info_bar = document.getElementById("info");
+
+	let close_info_bar = document.getElementById("close_info_bar");
+	let close_info_bar_icon = document.getElementById("close_info_bar_icon");
 
 	let map = L.map(map_contaier, {
 		center: map_center,
@@ -149,12 +150,13 @@ function load_map(data){
 
 			function onClick(){
 				open_sidebar(entry);
+
+				// arrow icon
+				open = true;
+				close_info_bar_icon.classList.remove('open');
+				close_info_bar_icon.classList.add('close');
 			}
 		})
-
-		// let zoomLev = map.getZoom();
-		// console.log(zoomLev);
-		// map.setView([40, 8], 4);
 	}
 	append_markers(category,subcategory);
 
@@ -163,6 +165,7 @@ function load_map(data){
 
 		info_bar.innerHTML = "";
 		info_bar.style.display = "block";
+		close_info_bar.style.display = "block";
 
 		let name = entry.name;
 		let des = entry.description;
@@ -179,11 +182,11 @@ function load_map(data){
 		let box = "";
 		if (link.length > 20){
 			box = "<a href='" + link +"' title='" + name + "' id='linked'>" 
-			box += "<div class='b_name'>" + "<span>" + name + "</span>"
+			box += "<div id='b_name'>" + "<span>" + name + "</span>"
 			box += "<span>" + "&#x2192;" + "</span></div></a>"
 		}
 		else {
-			box += "<div class='b_name'><span>" + name + "</span></div>"
+			box += "<div id='b_name'><span>" + name + "</span></div>"
 		}
 
 		let cat_sub = ""; 
@@ -196,7 +199,7 @@ function load_map(data){
 		}
 
 		let output = box +
-			"<div class='b_text'>" + 
+			"<div id='b_text'>" + 
 			"<p class='label'>tipologia</p>" +
 			"<p class='value'>" + cat_sub + "</p>";
 
@@ -218,6 +221,26 @@ function load_map(data){
 			"</div>";
 
 		info_bar.innerHTML = output;
+		
+		close_info_bar.onclick = function(evt) {
+			close_sidebar();
+		}
+	}
+
+	// close_sidebar
+	function close_sidebar(){
+		if (open == true){
+			info_bar.style.display = "none";
+			close_info_bar_icon.classList.remove('close');
+			close_info_bar_icon.classList.add('open');
+			open = false;
+		}
+		else {
+			info_bar.style.display = "block";
+			close_info_bar_icon.classList.remove('open');
+			close_info_bar_icon.classList.add('close');
+			open = true;
+		}
 	}
 
 	// filter buildings
