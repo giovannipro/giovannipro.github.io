@@ -42,10 +42,12 @@ function isFloat(n) {
 }
 
 // no building selected
-let no_selection = "<div id='info' id='b_text'><p>Si prega di selezionare un punto sulla mappa per visualizzare i dettagli.</p></div>";
+const no_selection = " <div id='b_text'><p>Si prega di selezionare un punto sulla mappa per visualizzare i dettagli.</p></div>";
 
 // sidebar open
 let open = true;
+
+let bounds = [];
 
 // load data
 function load_data(){
@@ -79,15 +81,19 @@ function load_map(data){
 	let category = "paravicini";
 	let subcategory = "tutti";
 
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-		maxZoom: max_zoom,
-		minZoom: min_zoom,
-		tileSize: 256
-	})
-	.addTo(map);
+	let markerGroup;
 
-	let markerGroup = L.layerGroup().addTo(map);
+	function make_map(){
+
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+			maxZoom: max_zoom,
+			minZoom: min_zoom,
+			tileSize: 256
+		})
+		.addTo(map);
+		markerGroup = L.markerClusterGroup(); // L.layerGroup().addTo(map);
+	}
 
 	// append markers
 	function append_markers(category,subcategory){
@@ -121,7 +127,7 @@ function load_map(data){
 		})
 		console.log(filtered_items_b)
 
-		let bounds = [];
+		bounds = [];
 		filtered_items_b.forEach(function(entry){
 
 			let tooltip_text = "<span class='tooltip'>" + entry.name + "</span>";
@@ -130,22 +136,18 @@ function load_map(data){
 				myIcon.options.className = "b1 b2 " + entry.category + " " + entry.subcategory;
 
 				markers = L.marker([entry.lat, entry.lon], {
-					icon: myIcon
+					icon: myIcon,
+					id: "test"
 				})
-				.addTo(markerGroup)
 				.bindPopup(tooltip_text, {
 					"maxWidth": 200,
 					"className": "popup building " + entry.category + " " + entry.subcategory
 				})
-				.on('click', onClick)
-				
-				bounds.push([entry.lat,entry.lon])
-				map.fitBounds(bounds, {
-					"padding": [20, 20], // 260, 300
-					"animate": true,
-				    "duration": 2
-				});	
+				.on('click', onClick);
 
+				markerGroup.addLayer(markers);
+
+				bounds.push([entry.lat,entry.lon])
 			}
 
 			function onClick(){
@@ -157,8 +159,20 @@ function load_map(data){
 				close_info_bar_icon.classList.add('close');
 			}
 		})
+
 	}
+	make_map();
 	append_markers(category,subcategory);
+	set_map();
+
+	function set_map(){
+		map.addLayer(markerGroup);
+		map.fitBounds(bounds, {
+			"padding": [20, 20], // 260, 300
+			"animate": true,
+		    "duration": 2
+		});			
+	}
 
 	// sidebar
 	function open_sidebar(entry){
@@ -200,22 +214,22 @@ function load_map(data){
 
 		let output = box +
 			"<div id='b_text'>" + 
-			"<p class='label'>tipologia</p>" +
-			"<p class='value'>" + cat_sub + "</p>";
+			"<div><p class='label'>tipologia</p>" +
+			"<p class='value'>" + cat_sub + "</p></div>";
 
 			if (place !== ""){
-				output += "<p class='label'>località</p>";
-				output += "<p class='value'>" + place + "</p>";
+				output += "<div><p class='label'>località</p>";
+				output += "<p class='value'>" + place + "</p></div>";
 			}
 
 			if (ref !== ""){
-				output += "<p class='label'>segnatura dei disegni</p>";
-				output += "<p class='value'>" + ref + "</p>";
+				output += "<div><p class='label'>segnatura dei disegni</p>";
+				output += "<p class='value'>" + ref + "</p></div>";
 			}
 
 			if (des !== ""){
-				output += "<p class='label'>descrizione</p>";
-				output += "<p class='value'>" + des + "</p>";
+				output += "<div><p class='label'>descrizione</p>";
+				output += "<p class='value'>" + des + "</p></div>";
 			}
 
 			"</div>";
@@ -243,23 +257,24 @@ function load_map(data){
 		}
 	}
 
-	// filter buildings
+	// filter buildings for category
 	filter_main.addEventListener ("change", function () {
 		category = this.value;
 		subcategory = filter_sub.value;
 
 		// remove markers
 		map.eachLayer(function(layer){
-			if (layer instanceof L.Marker){
-				map.removeLayer(layer);
-			}
+			map.removeLayer(layer);
 		})
 
 		info_bar.innerHTML = no_selection;
 
+		make_map();
 		append_markers(category,subcategory);	
+		set_map();
 	})
 
+	// filter buildings for subcategory
 	filter_sub.addEventListener ("change", function () { 
 		let previous_subcategory = subcategory;
 		subcategory = this.value;
@@ -267,20 +282,21 @@ function load_map(data){
 
 		// remove markers
 		map.eachLayer(function(layer){
-			if (layer instanceof L.Marker){
-				map.removeLayer(layer);
-			}
+			map.removeLayer(layer);
 		})
 
 		info_bar.innerHTML = no_selection;
 
-		append_markers(category,subcategory);
+		make_map();
+		append_markers(category,subcategory);	
+		set_map();
 	})
 
 	// display all
 	document.addEventListener("keydown", function(event) {
 		if (event.which == 65){ // a
 			append_markers("tutti","tutti");
+			set_map();
 		}
 	})
 }
