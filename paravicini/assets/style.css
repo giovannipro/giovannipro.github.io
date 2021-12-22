@@ -109,7 +109,9 @@ header a {
 }
 
 #close_info_bar {
-	background-color: white;
+	background-color: #efefef;
+	border-top: 1px solid #cdc9c9;
+	border-left: 1px solid #cdc9c9;
 	position: relative;
 	left: calc(100% - 50px);
 	width: 50px;
@@ -121,7 +123,7 @@ header a {
 }
 
 #close_info_bar:hover {
-	background-color: #efefef;
+	background-color: white;
 }
 
 #info_bar a, #info_bar a:visited {
@@ -216,6 +218,11 @@ header a {
 
 
 /* - - - - map - - - -*/
+
+.leaflet-control-attribution {
+	position: relative;
+	right:  50px;
+}
 
 #my_map {
 	width:  100%;
