@@ -32,7 +32,7 @@ set plot
 ------------------------- */
 
 function water(data,value){
-	//console.log(data)
+	console.log(data)
 
 	var svg = d3.select("#svg_container")
 		.append("svg")
@@ -161,17 +161,20 @@ function get_data(param,cache){
 	var time = year + month + day + "T" + hour,
 		date = year + "-" + month + "-" + day + "&" + year + "-" + month + "-" + day,
 		request =  api_2 + "&parameter=" + param + "&from=" + date;
-		cors_request = cors_api + request; // cors_api cors
+		cors_request = request; // cors_api cors
 	   // console.log(cors_request);
+	   // req = oasi_proxy + request;
+	   req = "assets/data/data.json";
 
 	let headers = new Headers();
-	    // headers.append('Origin','x-requested-with'); // 'http://localhost:8000
-	    // headers.append('Access-Control-Allow-Credentials', true);
-	    // headers.append('Access-Control-Allow-Origin', '*');
-	   	// headers.append('Access-Control-Allow-Methods', 'GET');
+		headers.append("Access-Control-Allow-Origin","http://localhost:8000"); // https://www.oasi.ti.ch
+	    headers.append('Access-Control-Allow-Credentials', true);
+	    headers.append('Access-Control-Allow-Origin', '*');
+	   	headers.append('Access-Control-Allow-Methods', 'GET');
+	    headers.append('Origin','x-requested-with'); // 'http://localhost:8000
     // console.log(headers);
 
-    fetch(cors_request, {
+    fetch(req, {
 	        mode: 'cors',
 	        method: 'GET',
 	        headers: headers
