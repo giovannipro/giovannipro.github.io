@@ -164,7 +164,8 @@ function get_data(param,cache){
 		cors_request = request; // cors_api cors
 	   // console.log(cors_request);
 	   // req = oasi_proxy + request;
-	   req = "assets/data/data.json";
+	   // req = "assets/data/data.json";
+	   req = request;
 
 	let headers = new Headers();
 		headers.append("Access-Control-Allow-Origin","http://localhost:8000"); // https://www.oasi.ti.ch
