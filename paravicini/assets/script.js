@@ -5,7 +5,7 @@ let max_zoom = 18;
 let map_center = [42.593, 19.277]; // 45.981, 8.9852
 
 function tsvJSON(tsv) {
-	const lines = tsv.split("\r"); // n: data from database; r: data from Google Spreadsheet
+	const lines = tsv.split("\n"); // .slice(0, 100)  n: data from database; r: data from Google Spreadsheet
 	const headers = lines.slice(0, 1)[0].split("\t");
 	return lines.slice(1, lines.length).map(line => {
 	  const data = line.split("\t");
@@ -51,18 +51,20 @@ let bounds = [];
 
 // load data
 function load_data(){
-	// let data_link = "assets/php/get_data.php";
-	let data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrLjvEojUsJnXde5dY3KB9Mw8fSJZXsU9QGMq0-RNoLbcLyJlgYaUvU0DByCA78kpIYXDKmHc8dE3/pub?gid=0&single=true&output=tsv";
+	let data_link = "assets/php/get_data.php";
+	// let data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrLjvEojUsJnXde5dY3KB9Mw8fSJZXsU9QGMq0-RNoLbcLyJlgYaUvU0DByCA78kpIYXDKmHc8dE3/pub?gid=0&single=true&output=tsv";
 
 	fetch(data_link)
 		.then(response => response.text())
 		.then((data) => {
 			load_map(data);
+			// console.log(data)
 	 	})
 }
 
 function load_map(data){
 	const buildings = tsvJSON(data);
+	// console.log(buildings)
 
 	// filters
 	const filter_main = document.getElementById("filter_category");
@@ -103,6 +105,7 @@ function load_map(data){
 		filtered_items_a = buildings.filter(function(b){
 			return b.category == category
 		})
+
 		if (subcategory == "tutti"){
 			filtered_items_b = filtered_items_a; 
 		}
@@ -125,10 +128,11 @@ function load_map(data){
 			entry.lat = parseFloat(entry.lat);
 			entry.lon = parseFloat(entry.lon);
 		})
-		console.log(filtered_items_b)
+		// console.log(filtered_items_b)
 
 		bounds = [];
 		filtered_items_b.forEach(function(entry){
+			// console.log(entry.id, entry.name, entry.lat, entry.lon, entry.category, entry.link);
 
 			let tooltip_text = "<span class='tooltip'>" + entry.name + "</span>";
 
@@ -136,12 +140,11 @@ function load_map(data){
 				myIcon.options.className = "b1 b2 " + entry.category + " " + entry.subcategory;
 
 				markers = L.marker([entry.lat, entry.lon], {
-					icon: myIcon,
-					id: "test"
+					icon: myIcon
 				})
 				.bindPopup(tooltip_text, {
 					"maxWidth": 200,
-					"className": "popup building " + entry.category + " " + entry.subcategory
+					"className": "popup building " + entry.id + " " + entry.category + " " + entry.subcategory,
 				})
 				.on('click', onClick);
 
@@ -176,6 +179,7 @@ function load_map(data){
 
 	// sidebar
 	function open_sidebar(entry){
+		// console.log(entry.id, entry.link)
 
 		info_bar.innerHTML = "";
 		info_bar.style.display = "block";
@@ -194,7 +198,9 @@ function load_map(data){
 		let the_name = "";
 		let name_box = "";
 		let box = "";
-		if (link.length > 20){
+
+		// link
+		if (link !== undefined && link.length > 20){
 			box = "<a href='" + link +"' title='" + name + "' id='linked'>" 
 			box += "<div id='b_name'>" + "<span>" + name + "</span>"
 			box += "<span>" + "&#x2192;" + "</span></div></a>"
@@ -203,6 +209,7 @@ function load_map(data){
 			box += "<div id='b_name'><span>" + name + "</span></div>"
 		}
 
+		// sub-category
 		let cat_sub = ""; 
 		if (cat == "paravicini"){
 			cat_ = "disegnato da Paravicini";
@@ -217,17 +224,20 @@ function load_map(data){
 			"<div><p class='label'>tipologia</p>" +
 			"<p class='value'>" + cat_sub + "</p></div>";
 
-			if (place !== ""){
+			// place
+			if (place !== undefined && place !== ""){
 				output += "<div><p class='label'>località</p>";
 				output += "<p class='value'>" + place + "</p></div>";
 			}
 
-			if (ref !== ""){
+			// rederence
+			if (ref !== undefined && ref !== ""){
 				output += "<div><p class='label'>segnatura dei disegni</p>";
 				output += "<p class='value'>" + ref + "</p></div>";
 			}
 
-			if (des !== ""){
+			// description
+			if (des !== undefined && des !== ""){
 				output += "<div><p class='label'>descrizione</p>";
 				output += "<p class='value'>" + des + "</p></div>";
 			}
