@@ -25,8 +25,12 @@
 		
 		echo "id" . "\t" . "category" . "\t" . "subcategory" . "\t" . "lat" . "\t" . "lon" . "\t" . "name" . "\t" . "place" . "\t"  . "reference" . "\t" . "description" . "\t" . "link" . "\n";
 
+		// echo "id" . "\t" . "lat" . "\t" . "lon" . "\t" . "name" . "\t" . "link" . "\n";
+
 		while($row = $result_a->fetch_assoc()) {
 			echo (int)$row["id"] . "\t" . $row["category"] . "\t" . $row["subcategory"] . "\t" . (float)$row["lat"] . "\t" . (float)$row["lon"] . "\t" . $row["name"] . "\t" . $row["place"] . "\t" . $row["reference"] . "\t" . $row["description"] . "\t" . $row["link"] . "\n";
+
+			// echo (int)$row["id"] . "\t" . (float)$row["lat"] . "\t" . (float)$row["lon"] . "\t" . $row["name"] . "\t" . $row["link"] . "\n";
 		}
 	} 
 	else {

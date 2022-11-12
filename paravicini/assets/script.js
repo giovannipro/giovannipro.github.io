@@ -64,7 +64,7 @@ function load_data(){
 
 function load_map(data){
 	const buildings = tsvJSON(data);
-	// console.log(buildings)
+	console.log(buildings)
 
 	// filters
 	const filter_main = document.getElementById("filter_category");
@@ -127,11 +127,30 @@ function load_map(data){
 			entry.id = parseInt(entry.id);
 			entry.lat = parseFloat(entry.lat);
 			entry.lon = parseFloat(entry.lon);
+			
+			if(typeof entry.name !== "undefined"){
+				entry.name = entry.name.replace(/\r/g, '').replace(/\n/g, '');
+			}
+			if(typeof entry.place !== "undefined"){
+				entry.place = entry.place.replace(/\r/g, '').replace(/\n/g, '');
+			}
+			if(typeof entry.link !== "undefined"){
+				entry.link = entry.link.replace(/\r/g, '').replace(/\n/g, '');
+			}
+			if(typeof entry.reference !== "undefined"){
+				entry.reference = entry.reference.replace(/\r/g, '').replace(/\n/g, '');
+			}
+			if(typeof entry.description !== "undefined"){
+				entry.description = entry.description.replace(/\r/g, '').replace(/\n/g, '');
+			}
+
+			console.log(entry.id , entry.link);
 		})
-		// console.log(filtered_items_b)
+		console.log(filtered_items_b);
 
 		bounds = [];
 		filtered_items_b.forEach(function(entry){
+			// console.log(entry.id, entry.name, entry.link);
 			// console.log(entry.id, entry.name, entry.lat, entry.lon, entry.category, entry.link);
 
 			let tooltip_text = "<span class='tooltip'>" + entry.name + "</span>";
