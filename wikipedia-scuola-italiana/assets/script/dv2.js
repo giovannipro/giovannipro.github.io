@@ -43,9 +43,9 @@ const ticksAmount = 10;
 
 function dv2(year,the_subject,sort) {
 	d3.tsv("../assets/data/voci_" + year + ".tsv").then(loaded)
+	console.log(year)
 
 	function loaded(data) {
-		// console.log(data)
 
 		// load data
 		let total = 0;
@@ -416,7 +416,7 @@ function dv2(year,the_subject,sort) {
 		if (year != 2020){			
 			let variation = article.append("g")
 				.attr("class","variation")
-				.attr("data-2020",function (d,i) {
+				.attr("data-prev",function (d,i) {
 					let feat_prev = (d.references_prev) + (d.notes_prev) + (d.images_prev); //  2020
 					let feat_now = (d.references) + (d.notes) + (d.images); // 2021
 					return feat_prev;
@@ -1036,7 +1036,9 @@ function getRandomIntInclusive(min, max) {
 $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17);
 	document.getElementById("subjects").selectedIndex = random_subject;
+	
+	const starting_year = 2022;
 
-	dv2(2022,subjects[random_subject],parseInt(1));
+	dv2(starting_year,subjects[random_subject],parseInt(1));
 	get_year();
 })
