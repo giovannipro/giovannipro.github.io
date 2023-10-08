@@ -146,8 +146,8 @@ def update():
 		# -----
 		# references
 
-		df['references'] = '-'
-		df['references_prev'] = '-'
+		df['references'] = 0
+		df['references_prev'] = merged_1['references_0'].fillna(default_val) 
 
 		# # -----
 		# # incipit
@@ -202,10 +202,7 @@ def update():
 		# to do
 
 		# 1. remove the decimals in some numbers
-		# 2. aggiornare pagina 'voce con avvisi'
-
-		# 3. verificare dati delle pagine filtrate perchè mancavano dati
-		# 4. sono stati aggiunti nuovi articoli: Metalloide, Lotte in fabbrica
+		# 2. sono stati aggiunti nuovi articoli: Metalloide, Lotte in fabbrica
  
 
 		# --------------------------
