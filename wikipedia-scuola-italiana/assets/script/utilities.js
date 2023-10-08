@@ -32,10 +32,10 @@ function variation_perc(now,prev,parameter){
 		perc = (100-(now*100)/prev)
 	}
 
-	if (perc <= 0.5 && perc >=-0.5){
+	if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3){
 		output = perc.toFixed(1) + "%";
 	}
-	else if (variation == 0){
+	else if ( Math.abs(perc) <= 0.3 && Math.abs(perc) >= 0){
 		output = "-"
 	}
 	else {

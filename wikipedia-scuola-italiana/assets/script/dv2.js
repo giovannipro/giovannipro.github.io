@@ -412,14 +412,14 @@ function dv2(year,the_subject,sort) {
 				return y_features(d.references)
 			})
 
-		// variation 2020-2021
-		if (year == 2021){			
+		// variation
+		if (year != 2020){			
 			let variation = article.append("g")
 				.attr("class","variation")
 				.attr("data-2020",function (d,i) {
-					let feat_2020 = (d.references_prev) + (d.notes_prev) + (d.images_prev);
-					let feat_2021 = (d.references) + (d.notes) + (d.images);
-					return feat_2020;
+					let feat_prev = (d.references_prev) + (d.notes_prev) + (d.images_prev); //  2020
+					let feat_now = (d.references) + (d.notes) + (d.images); // 2021
+					return feat_prev;
 				})
 
 			let issue_prev = variation.append("line")
@@ -459,6 +459,7 @@ function dv2(year,the_subject,sort) {
 					return 0
 				})
 				.attr("y1", function(d,i){
+					console.log(+d.references_prev, +d.notes_prev, +d.images_prev)
 					return y_features((+d.references_prev) + (+d.notes_prev) + (+d.images_prev))
 				})
 				.attr("x2", function(d,i){
@@ -776,14 +777,15 @@ function dv2(year,the_subject,sort) {
 					return y_features(d.references)
 				})
 
-			// variation 2020-2021
-			if (year == 2021){			
+			// variation
+			if (year != 2020){			
 				let variation = article.append("g")
 					.attr("class","variation")
 					.attr("data-variation",function (d,i) {
-						let feat_2020 = (d.references_prev) + (d.notes_prev) + (d.images_prev);
-						let feat_2021 = (d.references) + (d.notes) + (d.images);
-						return feat_2020
+						let feat_prev = (d.references_prev) + (d.notes_prev) + (d.images_prev); // 2020
+						let feat_now = (d.references) + (d.notes) + (d.images); // 2021
+
+						return feat_prev
 					})
 
 				let issue_prev = variation.append("line")
@@ -1035,6 +1037,6 @@ $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17);
 	document.getElementById("subjects").selectedIndex = random_subject;
 
-	dv2(2021,subjects[random_subject],parseInt(1));
+	dv2(2022,subjects[random_subject],parseInt(1));
 	get_year();
 })
