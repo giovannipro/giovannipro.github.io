@@ -21,10 +21,16 @@ function precentage(num,tot){
 	return parseFloat(perc.toFixed(2)) + "%";
 }
 
+function variation_color(now,prev){
+	
+}
+
 function variation_perc(now,prev,parameter){
 	let variation = now - prev;
 	let perc; 
 	let output;
+
+	// variation percentage
     if (variation > 0){
     	perc = (((now/prev)-1)*100)
 	}
@@ -32,26 +38,37 @@ function variation_perc(now,prev,parameter){
 		perc = (100-(now*100)/prev)
 	}
 
-	if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3){
-		output = perc.toFixed(1) + "%";
-	}
-	else if ( Math.abs(perc) <= 0.3 && Math.abs(perc) >= 0){
-		output = "-"
-	}
-	else {
-		output = Math.floor(perc).toLocaleString() + "%";
-	}
-
+	// sign
 	if (variation > 0){
-		output = "+" + output; 
+		sign = "+"; 
 	}
 	else if (variation == 0){
-		output = output
+		sign = ''
 	}
 	else {
-		output = "-" + output; 
+		sign = "-"; 
 	}
-    return output;
+
+	// output
+	if (now == 0 && prev == 0) {
+		output = '';
+	}
+	// else if (now > 0 && prev == 0) {
+	// 	output = '';
+	// }
+	else {
+		if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3){
+			output = '(' + sign + perc.toFixed(1) + '%)';
+		}
+		else if ( Math.abs(perc) <= 0.3 && Math.abs(perc) >= 0){
+			output = '(-)' ;
+		}
+		else {
+			output = '(' + sign + Math.floor(perc).toLocaleString() + "%)";
+		}
+	}
+
+    return output; //  + ' ' + prev + ' '  + now;  
 }
 
 const subjects = [
