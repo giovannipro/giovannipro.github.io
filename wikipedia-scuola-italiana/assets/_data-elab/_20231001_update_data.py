@@ -32,9 +32,9 @@ default_val = '???'
 
 
 def update():
-	f_prev = folder + 'voci_2021.tsv'
-	f_curr = folder + '2022.tsv'
-	f_upda = folder + 'voci_2022.tsv'
+	f_prev = folder + 'data/voci_2021.tsv'
+	f_curr = folder + 'data/2022.tsv'
+	f_upda = folder + 'data/voci_2022.tsv'
 
 	with open(f_upda,'w+') as f1:
 
@@ -191,7 +191,7 @@ def update():
 		# df_1 = df.dropna(axis='columns')
 
 
-		missing_subject = merged_1[merged_1['subject'].isnull()].loc[:, ['id_wikidata','article','subject']]
+		missing_subject = merged_1[merged_1['subject'].isnull()].loc[:, ['id_wikidata','article','subject','avg_pv']]
 		print(missing_subject)
 
 
