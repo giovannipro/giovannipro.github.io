@@ -81,7 +81,7 @@ let improv_delay = 1800;
 
 function dv1(year,the_subject,sort) {
 	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
-	// console.log(year,the_subject,sort)
+	console.log(year,the_subject,sort)
 
 	function loaded(data) {
 
@@ -160,9 +160,11 @@ function dv1(year,the_subject,sort) {
         		d.improvements += 1
         	}
 
-        	if (d.improvements > 0) {
-				console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
-			}
+        	// if (d.improvements > 0) {
+			// 	// console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
+			// 	// console.log(d.article)
+			// 	console.log(d.article,d.avg_pv,d.avg_pv_prev, d.avg_pv - d.avg_pv_prev)
+			// }
 		})
 		// console.log(filtered_data);
 		
@@ -382,6 +384,9 @@ function dv1(year,the_subject,sort) {
 			.attr("data-article", function(d,i){
 				return d.article
 			})
+			.attr("data-subject", function(d,i){
+				return d.subject
+			})
 			.attr("transform", function(d,i){
 				if (sort == 1){
 					return "translate(" + (x(i)+50) + ",0)"
@@ -596,37 +601,47 @@ function dv1(year,the_subject,sort) {
   //           	}
   //           })
 
+		const duration = 0
 	    function handleMouseOver(){
 
-	    	// hide circles
-			d3.selectAll(".article_circles")
+	    	// d3.select(this)
+	    	// 	.attr('class','selected')
+	
+			// hide circles
+			d3.selectAll(".article_circles,.line_prev,.circle_prev")
+				// .filter(function() {
+      			// 	return !this.classList.contains('selected')
+    			// })
+				.transition()
+				.duration(duration)
 				.attr("opacity",0.2)
-
-			d3.selectAll(".variation").select(".line_prev")
-				.attr("opacity",0.2)
-
-			d3.selectAll(".variation").select(".circle_prev")
-				.attr("opacity",0)
 
 			// highlight
 			d3.select(this)
+				.transition()
+				.duration(duration)
 				.attr("opacity",1)
 
-			d3.select(this.previousSibling).select(".circle_prev")
-				.attr("opacity",1)
-
-			d3.select(this.previousSibling).select(".line_prev")
+			d3.select(this.previousSibling).select(".circle_prev,.line_prev")
+				.transition()
+				.duration(duration)
 				.attr("opacity",1)
 		}
 
 	    function handleMouseOut(){
 			d3.selectAll(".article_circles")
+				.transition()
+				.duration(duration)
 				.attr("opacity",1)
 
 			d3.selectAll(".variation").select(".circle_prev")
+				.transition()
+				.duration(duration)
 				.attr("opacity",0)
 
 			d3.selectAll(".variation").select(".line_prev")
+				.transition()
+				.duration(duration)
 				.attr("opacity",variation_line_opacity)
 	    }
 
@@ -652,7 +667,6 @@ function dv1(year,the_subject,sort) {
 				.duration(300)
 				.attr("r",0)
 
-			// load data
 			total = 0;
 
 			let subject_articles = [];
@@ -709,6 +723,12 @@ function dv1(year,the_subject,sort) {
 				d.images_prev = +d.images_prev
 				d.incipit_prev = +d.incipit_prev
 
+				d.avg_pv_prev = +d.avg_pv_prev
+
+				// console.log(d.article,d.subject, d.size, d.avg_pv_prev, d.avg_pv_prev,d.avg_pv - d.avg_pv_prev)
+				let diff = d.avg_pv - d.avg_pv_prev
+				console.log(d.article,d.subject, d.avg_pv_prev, d.avg_pv, diff)
+
 				if (d.avg_pv_prev !== "-"){
 					d.avg_pv_prev = +d.avg_pv_prev
 				}
@@ -725,9 +745,9 @@ function dv1(year,the_subject,sort) {
 	        		d.improvements += 1
 	        	}
 
-	        	if (d.improvements > 0) {
-					console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
-				}
+	        	// if (d.improvements > 0) {
+				// 	console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
+				// }
 			})
 
 			// scale
@@ -828,6 +848,9 @@ function dv1(year,the_subject,sort) {
 				.attr("data-article", function(d,i){
 					return d.article
 				})
+				.attr("data-subject", function(d,i){
+					return d.subject
+				})
 				.attr("transform", function(d,i){
 					if (the_sort == 1) { // "article"
 						return "translate(" + (x(i)+50) + "," + 0 + ")"
@@ -854,7 +877,7 @@ function dv1(year,the_subject,sort) {
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
 
-			// variation 2020-2021
+			// variations
 			let variation = article.append("g")
 				.attr("class","variation")
 				.attr("transform",function (d,i) {
@@ -1223,7 +1246,9 @@ $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17);
 	document.getElementById("subjects").selectedIndex = random_subject;
 
-	dv1(2021,subjects[random_subject],parseInt(1));
+	const starting_year = 2022;
+
+	dv1(starting_year,subjects[random_subject],parseInt(1));
 	get_year();
 });
 
