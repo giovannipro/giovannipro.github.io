@@ -33,8 +33,8 @@ default_val = '???'
 
 def update():
 	f_prev = folder + 'data/voci_2021.tsv'
-	f_curr = folder + 'data/2022.tsv'
-	f_upda = folder + 'data/voci_2022.tsv'
+	f_curr = folder + 'data/2022_06.tsv'
+	f_upda = folder + 'data/voci_2022_06.tsv'
 
 	with open(f_upda,'w+') as f1:
 
@@ -105,7 +105,7 @@ def update():
 		df['first_edit'] = merged_1['first_edit_x'].fillna(default_val)
 
 		differences = []
-		specific_date_str = '2022-01-01'
+		specific_date_str = '2022-06-01'
 		specific_date = datetime.strptime(specific_date_str, '%Y-%m-%d').date()
 		
 		for date_str in df['first_edit']:
