@@ -43,23 +43,37 @@ function variation_perc(now,prev,parameter){
 	// variation percentage
     if (variation > 0){
     	perc = (((now/prev)-1)*100)
+    	s = '+'
 	}
 	else {
 		perc = (100-(now*100)/prev)
+		s = '-'
 	}
 
-	// sign
-	if (perc > limit){
-		sign = '+'; 
-		style = 'increase';
+	// sign and style
+	if (perc > limit && s == '+'){
+		if (parameter == 'issues'){
+			sign = '+'; 
+			style = 'decrease';
+		}
+		else {
+			sign = '+'; 
+			style = 'increase';
+		}
 	}
 	else if (perc < limit && perc > -limit) {
 		sign = ''; 
 		style = 'stable';
 	}
 	else {
-		sign = "-"; 
-		style = 'decrease';
+		if (parameter == 'issues'){
+			sign = '-'; 
+			style = 'increase';
+		}
+		else {
+			sign = "-"; 
+			style = 'decrease';
+		}
 	}
 
 	// output
@@ -68,7 +82,15 @@ function variation_perc(now,prev,parameter){
 		style = 'stable';
 	}
 	else {
-		if (perc > limit){
+		// console.log(perc)
+		if (perc == Infinity){
+			output = '(' + sign + variation + ')';
+		}
+		// else if (perc == -Infinity){
+		// 	output = '(' + '-' + variation + ')';
+		// }
+
+		else if (perc > limit){
 			output = '(' + sign + perc.toFixed(1) + '%)';
 		}
 		else if (perc < limit && perc > -limit) {
@@ -82,6 +104,8 @@ function variation_perc(now,prev,parameter){
 	return [style, output]
     // return [style, output  + ' ' + prev + ' '  + now];
 }
+
+console.log(variation_perc(0,8,'images'))
 
 const subjects = [
 	"Tutte le materie",

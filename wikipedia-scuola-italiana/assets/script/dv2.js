@@ -492,7 +492,7 @@ function dv2(year,the_subject,sort) {
 					return 0
 				})
 				.attr("y1", function(d,i){
-					console.log(+d.references_prev, +d.notes_prev, +d.images_prev)
+					// console.log(+d.references_prev, +d.notes_prev, +d.images_prev)
 					return y_features((+d.references_prev) + (+d.notes_prev) + (+d.images_prev))
 				})
 				.attr("x2", function(d,i){
