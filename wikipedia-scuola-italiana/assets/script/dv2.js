@@ -245,53 +245,86 @@ function dv2(year,the_subject,sort) {
 				return [-20,0]
 			})
 			.html(function(d) {
-	            let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
+				let content = "<p style='margin: 0 0 8px 3px;'><span style='font-weight: bold;'>" + d.article + "</span><br/>";
+                content += "<span style='font-size: 0.8em;'>Creato il: " + format_date(d.first_edit) + "</span></p><table>"
+                // 
+	            // let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
 
 	            // issues
                 content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
                 if(year != 2020){
-	                if (d.issues_prev !== "-"){
-		            	let diff_issues = d.issues - d.issues_prev;
-		            	if (diff_issues > 0){
-		            		content += "<td class='value decrease'>(" + /* d.issues_prev + " " + */ variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
-		            	}
-		            	else {
-		            		content += "<td class='value increase'>(" + /* d.issues_prev + " " + */ variation_perc(d.issues,d.issues_prev,"issues") + ")</td></tr>"
-		                }
-	                }
+	                content += "<td class='value " + variation_perc(d.issues,d.issues_prev,"issues")[0] + "'>" + variation_perc(d.issues,d.issues_prev,"issues")[1] + "</td></tr>"
+	                // if (d.issues_prev !== "-"){
+
+		            	// let diff_issues = d.issues - d.issues_prev;
+		            	// let perc = (((d.issues/d.issues_prev)-1)*100);
+
+		            	// if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3) {
+		            	// 	content += "<td class='value' style='color: gray;'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
+		            	// }
+		            	// else {
+			            // 	if (diff_issues > 0){
+			            // 		content += "<td class='value decrease'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
+			            // 	}
+			            // 	else {
+			            // 		content += "<td class='value increase'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
+			            //     }
+		            	// }
+	                // }
                 }
 
                 // references
-                if (d.references !== "-"){
+                // if (d.references !== "-"){
+                if(year != 2020){
                 	content += "<tr><td class='label'>riferimenti bibliog.</td><td class='value'>" + d.references.toLocaleString()
                 }
             	
             	// notes
             	content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString()
             	if(year != 2020){
-            		if (d.notes_prev !== "-"){
-		            	let diff_notes = d.notes - d.notes_prev;
-		            	if (diff_notes > 0){
-		            		content += "<td class='value increase'>(" + /* d.notes_prev + " " + */ variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
-		            	}
-		            	else {
-		            		content += "<td class='value decrease'>(" + /* d.notes_prev + " " + */ variation_perc(d.notes,d.notes_prev,"notes") + ")</td></tr>"
-		                }
-	            	}
+            		
+            		content += "<td class='value " + variation_perc(d.notes,d.notes_prev,"notes")[0] + "'>" + variation_perc(d.notes,d.notes_prev,"notes")[1] + "</td></tr>"
+            		
+        			// console.log(variation_perc(d.notes,d.notes_prev,"images")[0])
+
+            		// if (d.notes_prev !== "-"){
+
+
+		            	// let diff_notes = d.notes - d.notes_prev;
+		            	// let perc = (((d.notes/d.notes_prev)-1)*100);
+
+		            	// if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3) { 
+		            	// 	content += "<td class='value' style='color: gray;'>" + variation_perc(d.notes,d.notes_prev,"notes") + "</td></tr>"
+		            	// }
+		            	// else {
+			            // 	if (diff_notes > 0){
+			            // 		content += "<td class='value increase'>" +  variation_perc(d.notes,d.notes_prev,"notes") + "</td></tr>"
+			            // 	}
+			            // 	else {
+			            // 		content += "<td class='value decrease'>" + variation_perc(d.notes,d.notes_prev,"notes") + "</td></tr>"
+			            //     }
+		            	// }
+	            	// }
 	            }
 
                 // images
                 content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
+            	
             	if(year != 2020){
-            		if (d.images_prev !== "-"){
-		            	let diff_images = d.images - d.images_prev;
-		            	if (diff_images > 0){
-		            		content += "<td class='value increase'>(" + /* d.images_prev + " " + */ variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
-		            	}
-		            	else {
-		            		content += "<td class='value decrease'>(" + /* d.images_prev + " " + */ variation_perc(d.images,d.images_prev,"images") + ")</td></tr>"
-		                }
-	            	}
+            		content += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
+
+            		// if (d.images_prev !== "-"){
+            			
+		            	
+
+		            	// let diff_images = d.images - d.images_prev;
+		            	// if (diff_images > 0){
+		            	// 	content += "<td class='value increase'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
+		            	// }
+		            	// else {
+		            	// 	content += "<td class='value decrease'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
+		                // }
+	            	// }
 	            }
 
 	            content += "</table>"

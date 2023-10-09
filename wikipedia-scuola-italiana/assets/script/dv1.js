@@ -1,15 +1,3 @@
-function format_date(date){
-	if (date != 0) {
-		const year = date.substring(0,4);
-		const month = date.substring(5,7);
-		const day = date.substring(8,10);
-		return day + "-" + month + "-" + year
-	}
-	else {
-		return "-"
-	}
-}
-
 const container = "#dv1";
 const font_size = 10;
 const filter_item = 120; // 120
@@ -286,81 +274,95 @@ function dv1(year,the_subject,sort) {
 			})
 			.offset([-10,0])
 			.html(function(d,i) {
-                let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article +"</p><table>";
+                let content = "<p style='margin: 0 0 8px 3px;'><span style='font-weight: bold;'>" + d.article + "</span><br/>";
+                content += "<span style='font-size: 0.8em;'>Creato il: " + format_date(d.first_edit) + "</span></p><table>"
 
-                content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td><td></td></tr>"
+                // content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td><td></td></tr>"
 
                 // avg daily visits
                 content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
             	if (d.avg_pv_prev !== "-"){
-	            	let diff_pv = d.avg_pv - d.avg_pv_prev
-	            	if (diff_pv > 0){
-	            		content += "<td class='value increase'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + "</td></tr>"
-	            	}
-	            	else {
-	            		let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
-	            		content += "<td class='value decrease'>" +  variation_perc(d.avg_pv,d.avg_pv_prev,"visits") + "</td></tr>"
-	                }
+            		content += "<td class='value " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[0] + "'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[1] + "</td></tr>"
+
+
+	            	// let diff_pv = d.avg_pv - d.avg_pv_prev
+	            	// if (diff_pv > 0){
+	            	// 	content += "<td class='value increase'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[1] + "</td></tr>"
+	            	// }
+	            	// else {
+	            	// 	let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
+	            	// 	content += "<td class='value decrease'>" +  variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[1] + "</td></tr>"
+	                // }
            		}
 
                 //size
                 content += "<tr><td class='label'>dimensioni</td><td class='value'>" + d.size.toLocaleString()
         		if(year != 2020){
-        			let diff_size = d.size - d.size_prev
-	            	if (diff_size > 0){
-	            		content += "<td class='value increase'>" + variation_perc(d.size,d.size_prev,"visits") + "</td></tr>"
-	            	}
-	            	else {
-	            		content += "<td class='value decrease'>" + variation_perc(d.size,d.size_prev,"visits") + "</td></tr>"
-	            	}
+        			content += "<td class='value " + variation_perc(d.size,d.size_prev,"visits")[0] + "'>" + variation_perc(d.size,d.size_prev,"visits")[1] + "</td></tr>"
+
+        			// let diff_size = d.size - d.size_prev
+	            	// if (diff_size > 0){
+	            	// 	content += "<td class='value increase'>" + variation_perc(d.size,d.size_prev,"visits") + "</td></tr>"
+	            	// }
+	            	// else {
+	            	// 	content += "<td class='value decrease'>" + variation_perc(d.size,d.size_prev,"visits") + "</td></tr>"
+	            	// }
 	            }
 
             	// discussion
             	content += "<tr><td class='label'>discussione</td><td class='value'>" + d.discussion_size.toLocaleString()
             	if(year != 2020){
-            		let diff_discussion = d.discussion_size - d.discussion_prev
-	            	if (diff_discussion > 0){
-	            		content += "<td class='value increase'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion") + "</td></tr>"
-	            	}
-	            	else {
-	            		content += "<td class='value decrease'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion") + "</td></tr>"
-	            	}
+            		content += "<td class='value " + variation_perc(d.discussion_size,d.discussion_prev,"discussion")[0] + "'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion")[1] + "</td></tr>"
+
+            		// let diff_discussion = d.discussion_size - d.discussion_prev
+	            	// if (diff_discussion > 0){
+	            	// 	content += "<td class='value increase'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion") + "</td></tr>"
+	            	// }
+	            	// else {
+	            	// 	content += "<td class='value decrease'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion") + "</td></tr>"
+	            	// }
             	}
 
             	// incipit
             	content += "<tr><td class='label'>incipit</td><td class='value'>" + d.incipit_size.toLocaleString()
             	if(year != 2020){
-            		let diff_incipit = d.incipit_size - d.incipit_prev
-	            	if (diff_incipit > 0){
-	            		content += "<td class='value increase'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit") + "</td></tr>"
-	            	}
-	            	else {
-	            		content += "<td class='value decrease'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit") + "</td></tr>"
-	            	}
+            		content += "<td class='value " + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[0] + "'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[1] + "</td></tr>"
+
+            		// let diff_incipit = d.incipit_size - d.incipit_prev
+	            	// if (diff_incipit > 0){
+	            	// 	content += "<td class='value increase'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit") + "</td></tr>"
+	            	// }
+	            	// else {
+	            	// 	content += "<td class='value decrease'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit") + "</td></tr>"
+	            	// }
             	}
 
             	// issues
             	content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
             	if(year != 2020){
-            		let diff_issues = d.issues - d.issues_prev
-	            	if (diff_issues > 0){
-	            		content += "<td class='value decrease'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
-	            	}
-	            	else {
-	            		content += "<td class='value increase'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
-	            	}
+            		content += "<td class='value " + variation_perc(d.issues,d.issues_prev,"issues")[0] + "'>" + variation_perc(d.issues,d.issues_prev,"issues")[1] + "</td></tr>"
+
+            		// let diff_issues = d.issues - d.issues_prev
+	            	// if (diff_issues > 0){
+	            	// 	content += "<td class='value decrease'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
+	            	// }
+	            	// else {
+	            	// 	content += "<td class='value increase'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
+	            	// }
             	}
 
 				// images
 				content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
             	if(year != 2020){
-            		let diff_images = d.images - d.images_prev
-	            	if (diff_images > 0){
-	            		content += "<td class='value increase'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
-	            	}
-	            	else {
-	            		content += "<td class='value decrease'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
-	            	}
+            		content += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
+
+            		// let diff_images = d.images - d.images_prev
+	            	// if (diff_images > 0){
+	            	// 	content += "<td class='value increase'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
+	            	// }
+	            	// else {
+	            	// 	content += "<td class='value decrease'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
+	            	// }
             	}
 
 	            content += "</table>"

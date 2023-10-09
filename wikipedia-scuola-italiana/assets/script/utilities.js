@@ -16,19 +16,29 @@ function apply_color(subject){
 	return color;
 }
 
+function format_date(date){
+	if (date != 0) {
+		const year = date.substring(0,4);
+		const month = date.substring(5,7);
+		const day = date.substring(8,10);
+		return day + "-" + month + "-" + year
+	}
+	else {
+		return "-"
+	}
+}
+
 function precentage(num,tot){
 	let perc = (num*100)/tot
 	return parseFloat(perc.toFixed(2)) + "%";
 }
 
-function variation_color(now,prev){
-	
-}
-
 function variation_perc(now,prev,parameter){
 	let variation = now - prev;
+	let limit = 0.5;
 	let perc; 
 	let output;
+	let style;
 
 	// variation percentage
     if (variation > 0){
@@ -39,36 +49,38 @@ function variation_perc(now,prev,parameter){
 	}
 
 	// sign
-	if (variation > 0){
-		sign = "+"; 
+	if (perc > limit){
+		sign = '+'; 
+		style = 'increase';
 	}
-	else if (variation == 0){
-		sign = ''
+	else if (perc < limit && perc > -limit) {
+		sign = ''; 
+		style = 'stable';
 	}
 	else {
 		sign = "-"; 
+		style = 'decrease';
 	}
 
 	// output
 	if (now == 0 && prev == 0) {
-		output = '';
+		output = '-' ;
+		style = 'stable';
 	}
-	// else if (now > 0 && prev == 0) {
-	// 	output = '';
-	// }
 	else {
-		if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3){
+		if (perc > limit){
 			output = '(' + sign + perc.toFixed(1) + '%)';
 		}
-		else if ( Math.abs(perc) <= 0.3 && Math.abs(perc) >= 0){
-			output = '(-)' ;
+		else if (perc < limit && perc > -limit) {
+			output = '-' ;
 		}
 		else {
-			output = '(' + sign + Math.floor(perc).toLocaleString() + "%)";
+			output = '(' + sign + perc.toFixed(1) + '%)';
 		}
 	}
 
-    return output; //  + ' ' + prev + ' '  + now;  
+	return [style, output]
+    // return [style, output  + ' ' + prev + ' '  + now];
 }
 
 const subjects = [
