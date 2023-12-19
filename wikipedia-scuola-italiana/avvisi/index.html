@@ -7,6 +7,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../assets/style/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/style/updates.css">
 
 		<!-- social sharing - facebook -->
 		<meta property="og:type" content="article">
@@ -37,21 +38,42 @@
 					</h1>
 				</div>
 			</div>
-			<nav id="menu">
-				<ul class="container">
-					<li><a href="../" class="noselect">Voci più viste</a></li>
-					<li><a href="../avvisi" style="color: #ccc" class="noselect">Voci con avvisi</a></li>
-					<li><a href="../autori" class="noselect">Autori e pubblicazioni</a></li>
-				</ul>
-			</nav>
+			<div id="menu_language">
+				<nav id="menu">
+					<ul class="container">
+						<li class="it"><a href="../?lang=it" class="noselect">Voci più viste</a></li>
+						<li class="en"><a href="../?lang=en" class="noselect">Most viewed articles</a></li>
+
+						<li class="it"><a href="../avvisi/?lang=it" style="color: #ccc" class="noselect">Voci con avvisi</a></li>
+						<li class="en"><a href="../avvisi/?lang=en" class="noselect">Articles with issues</a></li>
+
+						<li class="it"><a href="../autori/?lang=it" class="noselect">Autori e pubblicazioni</a></li>
+						<li class="en"><a href="../autori/?lang=en" class="noselect">Authors and publications</a></li>
+					</ul>
+				</nav>
+				<div id="language">
+					<div class="language_icon"></div>
+					<div class="language_name lang_switch" data-it="EN" data-en="IT">EN</div>
+				</div>
+			</div>
 			<div id="mobile_menu_icon"></div>
 		</header>
 		<div id="mobile_menu_box">
 			<nav id="mobile_menu">
-				<ul class="">
-					<li><a href="../">Voci più viste</a></li>
-					<li><a href="../avvisi" style="color: #ccc">Voci con avvisi</a></li>
-					<li><a href="../autori">Autori e pubblicazioni</a></li>
+				<ul class="menu">
+					<li class="it"><a href="../">Voci più viste</a></li>
+					<li class="en"><a href="../" class="noselect">Most viewed articles</a></li>
+
+					<li class="it"><a href="../avvisi" style="color: #ccc">Voci con avvisi</a></li>
+					<li class="en"><a href="../avvisi" style="color: #ccc" class="noselect">Articles with issues</a></li>
+
+					<li class="it"><a href="../autori">Autori e pubblicazioni</a></li>
+					<li class="en"><a href="../autori"  class="noselect">Authors and publications</a></li>
+
+					<li style="text-decoration: none; padding: 20px 10px; background-color: #efefef; display: flex;" id="language_mobile">
+						<div class="language_icon"></div>
+						<div class="language_name lang_switch" data-it="EN" data-en="IT">EN</div>
+					</li>
 				</ul>
 			</nav>
 		</div>

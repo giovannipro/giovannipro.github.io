@@ -426,15 +426,17 @@ function language() {
 		newURL = base_url + "?lang=" + lang
 		window.history.replaceState({}, '', newURL);
 
-		update_dv3_lang(lang)
+		path = window.location.pathname
+		if (path.indexOf('autori') != -1){
+			update_dv3_lang(lang)
+		}
 	}
 }
 
 $(document).ready(function() {
 
 	path = window.location.pathname
-	if (path.indexOf("autori") != -1){
-		// console.log("autori")
+	if (path.indexOf('autori') != -1 || path.indexOf('avvisi') != -1){
 		language();
 	}
 
