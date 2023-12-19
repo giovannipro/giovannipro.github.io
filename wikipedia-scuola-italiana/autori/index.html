@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="it">
 	<head>
-		<title>Autori e pubblicazioni| Wikipedia e scuola italiana</title>
+		<title>Autori e pubblicazioni | Wikipedia e scuola italiana</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../assets/style/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/style/updates.css">
 
 		<!-- social sharing - facebook -->
 		<meta property="og:type" content="article">
@@ -37,21 +38,42 @@
 					</h1>
 				</div>
 			</div>
-			<nav id="menu">
-				<ul class="container">
-					<li><a href="../" class="noselect">Voci più viste</a></li>
-					<li><a href="../avvisi" class="noselect">Voci con avvisi</a></li>
-					<li><a href="../autori" style="color: #ccc" class="noselect">Autori e pubblicazioni</a></li>
-				</ul>
-			</nav>
+			<div id="menu_language">
+				<nav id="menu">
+					<ul class="container">
+						<li class="it"><a href="../?lang=it" class="noselect">Voci più viste</a></li>
+						<li class="en"><a href="../?lang=en" class="noselect">Most viewed articles</a></li>
+
+						<li class="it"><a href="../avvisi/?lang=it" class="noselect">Voci con avvisi</a></li>
+						<li class="en"><a href="../avvisi/?lang=en" class="noselect">Articles with issues</a></li>
+
+						<li class="it"><a href="../autori/?lang=it" style="color: #ccc" class="noselect">Autori e pubblicazioni</a></li>
+						<li class="en"><a href="../autori/?lang=en" style="color: #ccc" class="noselect">Authors and publications</a></li>
+					</ul>
+				</nav>
+				<div id="language">
+					<div class="language_icon"></div>
+					<div class="language_name lang_switch" data-it="EN" data-en="IT">EN</div>
+				</div>
+			</div>
 			<div id="mobile_menu_icon"></div>
 		</header>
 		<div id="mobile_menu_box">
 			<nav id="mobile_menu">
-				<ul class="">
-					<li><a href="../">Voci più viste</a></li>
-					<li><a href="../avvisi">Voci con avvisi</a></li>
-					<li><a href="../autori" style="color: #ccc">Autori e pubblicazioni</a></li>
+				<ul class="menu">
+					<li class="it"><a href="../">Voci più viste</a></li>
+					<li class="en"><a href="../" class="noselect">Most viewed articles</a></li>
+
+					<li class="it"><a href="../avvisi">Voci con avvisi</a></li>
+					<li class="en"><a href="../avvisi" class="noselect">Articles with issues</a></li>
+
+					<li class="it"><a href="../autori" style="color: #ccc">Autori e pubblicazioni</a></li>
+					<li class="en"><a href="../autori" style="color: #ccc" class="noselect">Authors and publications</a></li>
+
+					<li style="text-decoration: none; padding: 20px 10px; background-color: #efefef; display: flex;" id="language_mobile">
+						<div class="language_icon"></div>
+						<div class="language_name lang_switch" data-it="EN" data-en="IT">EN</div>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -60,30 +82,30 @@
 				<div id="select_section_3">
 					<div id="filter_button">
 						<div class="filter">
-							<div class=container>
-								Filtra
-							</div>
+							<div class="container lang_switch" data-it="Filtra" data-en="Filter">Filtra</div>
 						</div>
 						<div id="mobile_filter_icon"></div>
 					</div>
 					<div class="select_box" id="select_box">
 						<div id="select_year" class="selector">
-							<p class="key noselect">Aggiornato al</p>
+							<p class="key noselect lang_switch" data-it="Aggiornato al" data-en="Updated">Aggiornato al</p>
 							<p class="value noselect">2021</p>
 						</div>
 						<div id="select_subject_author" class="selector">
-							<p class="key noselect">Lingua</p>
+							<p class="key noselect lang_switch" data-it="Lingua" data-en="Language">Lingua</p>
+
 							<select name="literature" id="literature" class="select value noselect">
-								<option value="it">Italiana</option>
-								<option value="la">Latina</option>
+								<option value="it" class="lang_switch" data-it="Italiana" data-en="Italian">Italiana</option>
+								<option value="la" class="lang_switch" data-it="Latina" data-en="Latin">Latina</option>
 							</select>
 						</div>
 						<div id="select_sort" class="selector">
-							<p class="key noselect">Ordina per</p>
+							<p class="key noselect lang_switch" data-it="Ordina per" data-en="Sort by">Ordina per</p>
+
 							<select name="sort" id="sort_publications" class="select value noselect">
-								<option name="author" value="1">autore</option>
-								<option name="period" value="2">periodo</option>
-								<option name="publication" value="3">numero di pubblicazioni</option>
+								<option name="author" value="1" class="lang_switch" data-it="autore" data-en="author">autore</option>
+								<option name="period" value="2" class="lang_switch" data-it="periodo" data-en="period">periodo</option>
+								<option name="publication" value="3" class="lang_switch" data-it="numero di pubblicazioni" data-en="number of publications">numero di pubblicazioni</option>
 							</select>
 						</div>
 					</div>
@@ -95,39 +117,43 @@
 			<section id="legend" class="container">
 				<div id="dv_infobox" class="row">
 					<div class="column_3">
-						<h2>Come leggere la visualizzazione</h2>
-						<p>
-							La visualizzazione mostra il numero di opere disponibili per ogni autore su Wikipedia, Wikisource in italiano e Wikisource in latino.<br/>
-							Alcuni autori fanno parte dei programmi della scuola ma non sono presenti opere nè su Wikipedia nè su Wikisource per vie del fatto che quest'ultime sono protette da copyright.
-							<br/><br/>
-							Scegli dal menu in alto la lingua e l'ordine di visualizzazione per ottenere maggiori informazioni.
+						<h2 class="lang_switch" data-it="Come leggere la visualizzazione" data-en="How to read the visualization">Come leggere la visualizzazione</h2>
+						<p class="it">
+							La visualizzazione mostra il numero di opere disponibili per ogni autore su Wikipedia, Wikisource in italiano e Wikisource in latino.<br/>Alcuni autori fanno parte dei programmi della scuola ma non sono presenti opere nè su Wikipedia nè su Wikisource per vie del fatto che quest'ultime sono protette da copyright. <br/><br/>Scegli dal menu in alto la lingua e l'ordine di visualizzazione per ottenere maggiori informazioni.
 						</p>
+						<p class="en">
+							The display shows the number of works available for each author on Wikipedia, Wikisource in Italian and Wikisource in Latin.<br/>Some authors are part of the school's programmes but there are no works on either Wikipedia or Wikisource due to the fact that the latter are copyrighted. <br/><br/>Choose the language and viewing order from the menu above to get more information.
+						</p>					
 					</div>
 					<div id="dv3_legend" class="column_3 legend">
-						<img src="../assets/img/dv3_legend.svg" width="250" height="100" alt="Il cerchio blu rappresenta la pagina dell'opera su Wikipedia, il cerchio rosso rappresenta la pagina dell'opera su Wikisource e il cerchio giallo rappresenta la pagina dell'opera su Vicifons.">
+						<img class="it" src="../assets/img/dv3_legend_it.svg" width="250" height="100" alt="Il cerchio blu rappresenta la pagina dell'opera su Wikipedia, il cerchio rosso rappresenta la pagina dell'opera su Wikisource e il cerchio giallo rappresenta la pagina dell'opera su Vicifons.">
+						<img class="en"src="../assets/img/dv3_legend_en.svg" width="250" height="100" alt="The blue circle represents the page of the publication on Wikipedia, the red circle represents the page of the publication on Wikisource and the yellow circle represents the page of the publication on Vicifons.">
 					</div>
 				</div>
 			</section>
 			<section class="container">
 				<div id="dv1_dataset" class="dataset">
 					<a href="../assets/data/autori/autori-e-pubblicazioni.zip" title="" style="font-size: 0.9em; margin-bottom: 30px; display: block;">
-						Scarica i dati <img src="../assets/img/download.svg" width="20" height="20" alt="Scarica i dati">
+						<span class="lang_switch" data-it="Scarica i dati" data-en="Download the dataset">
+							Scarica i dati 
+						</span>
+						<img src="../assets/img/download.svg" width="20" height="20" alt="Scarica i dati">
 					</a>
 				</div>
 			</section>
 			<footer>
 				<div id="colophon" class="container">
-					<h2>Crediti</h2>
+					<h2 class="lang_switch" data-it="Crediti" data-en="Credits">Crediti</h2>
 					<div class="row">
 						<div class="column_3">
 							<div class="section">
-								<h3>Ideazione e responsabile</h3>
+								<h3 class="lang_switch" data-it="Ideazione e responsabile" data-en="Ideation and responsible">Ideazione e responsabile</h3>
 								<p>
 									Iolanda Pensa
 								</p>
 							</div>
 							<div class="section">
-								<h3>Gruppo di lavoro</h3>
+								<h3 class="lang_switch" data-it="Gruppo di lavoro" data-en="Working group">Gruppo di lavoro</h3>
 								<p>
 									Federico Benvenuti<br/>
 									Valerio Iannucci<br/>
@@ -138,13 +164,13 @@
 						</div>
 						<div class="column_3">
 							<div class="section">
-								<h3>Web design e visualizzazione dei dati</h3>
+								<h3 class="lang_switch" data-it="Web design e visualizzazione dei dati" data-en="Web design and data visualization">Web design e visualizzazione dei dati</h3>
 								<p>
 									Giovanni Profeta
 								</p>
 							</div>
 							<div>
-								<h3>Sostegno e collaborazione</h3>
+								<h3 class="lang_switch" data-it="Sostegno e collaborazione" data-en="Support and collaborazion">Sostegno e collaborazione</h3>
 								<p>
 									<a href="https://www.wikimedia.it/" target="_blank">Wikimedia Italia</a>
 								</p>
@@ -156,12 +182,17 @@
 					<div class="container">
 						<p>
 							Wikipedia e scuola italiana |
-							<a href="https://meta.wikimedia.org/wiki/Wikipedia_e_scuola_italiana" target="_blank">Pagina Wikimedia del progetto</a>
+							<a href="https://meta.wikimedia.org/wiki/Wikipedia_e_scuola_italiana" target="_blank" class="lang_switch" data-it="Pagina Wikimedia del progetto" data-en="Wikimedia page of the project">Pagina Wikimedia del progetto</a>
 						</p>
-						<p>
+						<p class="it">
 							<span xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://itwiki-scuola-italiana.toolforge.org/">Questo lavoro</a> è rilasciato con licenza <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></span>
 							|
 							<span xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">I dati</span> sono rilasciati con licenza <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></span>
+						</p>
+						<p class="en">
+							<span xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://itwiki-scuola-italiana.toolforge.org/">This work</a> is realized under license <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></span>
+							|
+							<span xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">The data</span> are realized under licenze <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></span>
 						</p>
 					</div>
 				</div>

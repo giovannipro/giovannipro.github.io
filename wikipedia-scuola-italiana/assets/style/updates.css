@@ -1,0 +1,52 @@
+#menu {
+	width: 100%;
+	display: flex;
+}
+
+#menu ul li:nth-child(3)  {
+	width: 40%;
+}
+
+#language {
+	display: flex;
+	margin: 0; 
+	width: 3rem;
+	padding: 4px 10px 2px 4px; 
+	border-left: 1px solid #d6d5d5; 
+	text-align: center; 
+	background-color: #efefef; 
+	cursor: pointer;
+}
+
+.language_icon {
+	background: url(../../assets/img/language.svg) center center / 55% no-repeat;
+	width: 25px;
+}
+
+.language_name {
+	width: 33%;
+	text-align: right; 
+	font-size: .85rem;
+	padding-top: 0.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.language_name {
+		width: auto;
+		padding-top: 0rem;
+	}
+
+}
+
+.menu li {
+	border-bottom: 1px solid #d6d5d5;
+}
+
+#menu ul li {
+	text-align: center;
+}
+
+.en {
+	display: none;
+}

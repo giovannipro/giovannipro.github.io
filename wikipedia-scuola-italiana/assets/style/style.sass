@@ -81,6 +81,13 @@ header a
 
 /* ------- menu ------- */
 
+#menu_language
+	display: flex
+	width: 65%
+
+	@media only screen and (max-width: 768px)
+		display: none
+
 #menu
 	margin: 3px 0 0
 	width: 65%
@@ -185,7 +192,7 @@ header a
 			.value
 				font-size: 1.1em
 				margin: 5px 0 0 0
-				width: 90%
+				width: 60%
 				background-color: white
 
 				@media only screen and (max-width: $tablet-v) 
@@ -200,7 +207,7 @@ header a
 				left: -5px
 				border: none
 				position: relative
-				display: inline-block
+				//display: inline-block
 				width: 90%
 				top: -5px
 				border-bottom: 1px solid $light_gray
