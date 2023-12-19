@@ -146,17 +146,20 @@ function mobile_menu() {
 
 			let path = window.location.pathname;
 			
-			if (path.indexOf("autori") == -1 || path.indexOf("avvisi") == -1){
-				the_path = "../";
+			if (path.indexOf("autori") != -1 || path.indexOf("avvisi") != -1){
+				the_path = "../../";
 			}
-			// console.log(path,the_path)
+			else {
+				the_path = "";
+			}
+			console.log(path,the_path)
 
-			$("#mobile_menu_icon").css("background","url(" + the_path + "assets/img/close-menu.svg) center center no-repeat").css("background-size","55%");
+			$("#mobile_menu_icon").css("background","url(\'" + the_path + "assets/img/close-menu.svg\') center center no-repeat").css("background-size","55%");
 			$("#mobile_menu_box").show()
 			open = true;
 		}
 		else {
-			$("#mobile_menu_icon").css("background","url(" + the_path + "assets/img/mobile-menu.svg) center center no-repeat").css("background-size","55%");			
+			$("#mobile_menu_icon").css("background","url(\'" + the_path + "assets/img/mobile-menu.svg\') center center no-repeat").css("background-size","55%");			
 			$("#mobile_menu_box").hide()
 			open = false;
 		}
@@ -178,17 +181,16 @@ function mobile_filter() {
 			}
 			else {
 				the_path = "";
-				// console.log(0) // home
 			}
 			// console.log(path,the_path + "assets/img/arrow-up.svg")
 
-			$("#mobile_filter_icon").css("background","url(" + the_path + "assets/img/arrow-up.svg) center center no-repeat").css("background-size","55%");
+			$("#mobile_filter_icon").css("background","url(\'" + the_path + "assets/img/arrow-up.svg\') center center no-repeat").css("background-size","55%");
 			$("#select_box").show()
 			$("#select_box").css("display","flex")
 			open = true;
 		}
 		else {
-			$("#mobile_filter_icon").css("background","url(" + the_path + "assets/img/arrow-down.svg) center center no-repeat").css("background-size","55%");			
+			$("#mobile_filter_icon").css("background","url(\'" + the_path + "assets/img/arrow-down.svg\') center center no-repeat").css("background-size","55%");			
 			$("#select_box").hide()
 			open = false;
 		}
