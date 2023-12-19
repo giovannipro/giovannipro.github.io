@@ -1,3 +1,5 @@
+let lang;
+
 function apply_color(subject){
 	let color;
 
@@ -341,11 +343,11 @@ function language() {
 
 	lang_button.addEventListener("click", switch_language);
 	lang_button_mobile.addEventListener("click", switch_language);
-	
+
 	// url
 	const url = new URL(window.location.href);
-	let params = new URLSearchParams(window.location.search);
 	const base_url = location.protocol + '//' + location.host + location.pathname
+	let params = new URLSearchParams(window.location.search);
 
 	function language_onload() {
 		if (params.has('lang') == true) {
@@ -423,11 +425,13 @@ function language() {
 		params.set("lang", lang);
 		newURL = base_url + "?lang=" + lang
 		window.history.replaceState({}, '', newURL);
-		// console.log(lang)
+
+		update_dv3_lang(lang)
 	}
 }
 
 $(document).ready(function() {
+
 	path = window.location.pathname
 	if (path.indexOf("autori") != -1){
 		// console.log("autori")

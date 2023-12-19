@@ -62,6 +62,14 @@ function dv3(the_literature) {
 	])
 	.then(loaded);
 
+	// lang = new Proxy({ value: 'it' }, {
+	// 	set: function(target, key, value) {
+	// 		target[key] = value;
+	// 		console.log(value);
+	// 		return true;
+	// 	}
+	// });
+
 	function loaded(data) {
 
 		let publications_authors = [];
@@ -274,6 +282,8 @@ function dv3(the_literature) {
 				}
 			})
 			.attr("class","license")
+			.attr("data-it","Opere protette da copyright")
+			.attr("data-en","Copyrighted works")
 			.attr("font-size",font_size)
 			.attr("text-anchor","end")
 			.attr("transform","translate(" + (width-10) + ",0)")
@@ -701,6 +711,23 @@ function dv3(the_literature) {
 				})
 		}
 	}
+}
+
+function update_dv3_lang(lang) {
+	// console.log(lang)
+	let license = document.querySelectorAll('.license');
+
+	license.forEach(function(content) {
+		let license_it = content.dataset.it
+		let license_en = content.dataset.en
+
+		if (lang == 'it'){
+			content.textContent = license_it
+		}
+		else {
+			content.textContent = license_en
+		}
+	});
 }
 
 $(document).ready(function() {
