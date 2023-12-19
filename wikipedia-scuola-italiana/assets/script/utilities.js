@@ -147,21 +147,23 @@ function mobile_menu() {
 			let path = window.location.pathname;
 			
 			if (path.indexOf("autori") != -1 || path.indexOf("avvisi") != -1){
-				the_path_close = "../../assets/img/close-menu.svg"
-				the_path_open = "../../assets/img/mobile-menu.svg"
+				$("#mobile_menu_icon").css("background","url('../assets/img/close-menu.svg') center center no-repeat").css("background-size","55%");
 			}
 			else {
-				the_path_close = "assets/img/close-menu.svg";
-				the_path_open = "assets/img/mobile-menu.svg"
+				$("#mobile_menu_icon").css("background","url('assets/img/close-menu.svg') center center no-repeat").css("background-size","55%");
 			}
 			console.log(path,the_path)
 
-			$("#mobile_menu_icon").css("background","url('" + the_path_close + "') center center no-repeat").css("background-size","55%");
 			$("#mobile_menu_box").show()
 			open = true;
 		}
 		else {
-			$("#mobile_menu_icon").css("background","url('" + the_path_open + "') center center no-repeat").css("background-size","55%");			
+			if (path.indexOf("autori") != -1 || path.indexOf("avvisi") != -1){
+				$("#mobile_menu_icon").css("background","url('../assets/img/mobile-menu.svg') center center no-repeat").css("background-size","55%");			
+			}
+			else {
+				$("#mobile_menu_icon").css("background","url('assets/img/mobile-menu.svg') center center no-repeat").css("background-size","55%");							
+			}
 			$("#mobile_menu_box").hide()
 			open = false;
 		}
@@ -178,7 +180,7 @@ function mobile_filter() {
 		if (open == false) {
 
 			if (path.indexOf("avvisi") != -1 || path.indexOf("autori") != -1){ 
-				$("#mobile_filter_icon").css("background","url('../../assets/img/arrow-up.svg') center center no-repeat").css("background-size","55%");
+				$("#mobile_filter_icon").css("background","url('../assets/img/arrow-up.svg') center center no-repeat").css("background-size","55%");
 			}
 			else {
 				$("#mobile_filter_icon").css("background","url('assets/img/arrow-up.svg') center center no-repeat").css("background-size","55%");
@@ -190,7 +192,7 @@ function mobile_filter() {
 		}
 		else {
 			if (path.indexOf("avvisi") != -1 || path.indexOf("autori") != -1){ 
-				$("#mobile_filter_icon").css("background","url('../../assets/img/arrow-down.svg') center center no-repeat").css("background-size","55%");			
+				$("#mobile_filter_icon").css("background","url('../assets/img/arrow-down.svg') center center no-repeat").css("background-size","55%");			
 			}
 			else {
 				$("#mobile_filter_icon").css("background","url('assets/img/arrow-down.svg') center center no-repeat").css("background-size","55%");			
