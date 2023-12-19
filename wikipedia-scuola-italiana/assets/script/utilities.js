@@ -178,22 +178,23 @@ function mobile_filter() {
 		if (open == false) {
 
 			if (path.indexOf("avvisi") != -1 || path.indexOf("autori") != -1){ 
-				the_path_up = "../../assets/img/arrow-up.svg"	
-				the_path_down = "../../assets/img/arrow-down.svg"				
+				$("#mobile_filter_icon").css("background","url('../../assets/img/arrow-up.svg') center center no-repeat").css("background-size","55%");
 			}
 			else {
-				the_path_up = "assets/img/arrow-up.svg"	
-				the_path_down = "assets/img/arrow-down.svg"
+				$("#mobile_filter_icon").css("background","url('assets/img/arrow-up.svg') center center no-repeat").css("background-size","55%");
 			}
-			// console.log(path,the_path + "assets/img/arrow-up.svg")
 
-			$("#mobile_filter_icon").css("background","url('" + the_path_up + "') center center no-repeat").css("background-size","55%");
 			$("#select_box").show()
 			$("#select_box").css("display","flex")
 			open = true;
 		}
 		else {
-			$("#mobile_filter_icon").css("background","url('" + the_path_down + "') center center no-repeat").css("background-size","55%");			
+			if (path.indexOf("avvisi") != -1 || path.indexOf("autori") != -1){ 
+				$("#mobile_filter_icon").css("background","url('../../assets/img/arrow-down.svg') center center no-repeat").css("background-size","55%");			
+			}
+			else {
+				$("#mobile_filter_icon").css("background","url('assets/img/arrow-down.svg') center center no-repeat").css("background-size","55%");			
+			}
 			$("#select_box").hide()
 			open = false;
 		}
