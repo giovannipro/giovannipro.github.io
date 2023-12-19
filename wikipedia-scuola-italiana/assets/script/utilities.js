@@ -147,19 +147,21 @@ function mobile_menu() {
 			let path = window.location.pathname;
 			
 			if (path.indexOf("autori") != -1 || path.indexOf("avvisi") != -1){
-				the_path = "../../";
+				the_path_close = "../../assets/img/close-menu.svg"
+				the_path_open = "../../assets/img/mobile-menu.svg"
 			}
 			else {
-				the_path = "";
+				the_path_close = "assets/img/close-menu.svg";
+				the_path_open = "assets/img/mobile-menu.svg"
 			}
 			console.log(path,the_path)
 
-			$("#mobile_menu_icon").css("background","url(\'" + the_path + "assets/img/close-menu.svg\') center center no-repeat").css("background-size","55%");
+			$("#mobile_menu_icon").css("background","url('" + the_path_close + "') center center no-repeat").css("background-size","55%");
 			$("#mobile_menu_box").show()
 			open = true;
 		}
 		else {
-			$("#mobile_menu_icon").css("background","url(\'" + the_path + "assets/img/mobile-menu.svg\') center center no-repeat").css("background-size","55%");			
+			$("#mobile_menu_icon").css("background","url('" + the_path_open + "') center center no-repeat").css("background-size","55%");			
 			$("#mobile_menu_box").hide()
 			open = false;
 		}
@@ -176,21 +178,22 @@ function mobile_filter() {
 		if (open == false) {
 
 			if (path.indexOf("avvisi") != -1 || path.indexOf("autori") != -1){ 
-				the_path = "../../";
-				// console.log(1)
+				the_path_up = "../../assets/img/arrow-up.svg"	
+				the_path_down = "../../assets/img/arrow-down.svg"				
 			}
 			else {
-				the_path = "";
+				the_path_up = "assets/img/arrow-up.svg"	
+				the_path_down = "assets/img/arrow-down.svg"
 			}
 			// console.log(path,the_path + "assets/img/arrow-up.svg")
 
-			$("#mobile_filter_icon").css("background","url(\'" + the_path + "assets/img/arrow-up.svg\') center center no-repeat").css("background-size","55%");
+			$("#mobile_filter_icon").css("background","url('" + the_path_up + "') center center no-repeat").css("background-size","55%");
 			$("#select_box").show()
 			$("#select_box").css("display","flex")
 			open = true;
 		}
 		else {
-			$("#mobile_filter_icon").css("background","url(\'" + the_path + "assets/img/arrow-down.svg\') center center no-repeat").css("background-size","55%");			
+			$("#mobile_filter_icon").css("background","url('" + the_path_down + "') center center no-repeat").css("background-size","55%");			
 			$("#select_box").hide()
 			open = false;
 		}
