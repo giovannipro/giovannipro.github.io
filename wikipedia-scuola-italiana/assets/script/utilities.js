@@ -1,4 +1,7 @@
 let lang;
+let footer_it;
+let footer_en;
+let footer = document.getElementById('footer');
 
 function apply_color(subject){
 	let color;
@@ -361,6 +364,7 @@ function language() {
 				lang = 'it'
 			}
 			// console.log(lang)
+
 			switch_language()
 	  	}
 	  	else {
@@ -370,6 +374,8 @@ function language() {
 	language_onload()
 
 	function switch_language(){
+		// update_footer();
+
 		if (lang == "it") {
 
 			lang = "en";
@@ -381,7 +387,6 @@ function language() {
 			itContent.forEach(box => {
 				box.style.display = 'none';
 			});
-
 
 			// label
 			language_name.forEach(box => {
@@ -430,18 +435,70 @@ function language() {
 		if (path.indexOf('autori') != -1){
 			update_dv3_lang(lang)
 		}
+
+		update_footer(lang)
+	}
+}
+
+function load_footer(){
+	let url = '../../assets/content/footer.html'
+
+	fetch(url)
+	    .then(response => {
+	    	if (!response.ok) {
+	        	throw new Error('Network response was not ok');
+	    	}
+	      	return response.text();
+	    })
+	    .then(data => {
+	    	const tempElement = document.createElement('div');
+      		tempElement.innerHTML = data;
+
+      		// the_footer = tempElement.querySelector('#the_footer');
+      		footer_it = tempElement.querySelector('#footer_it');
+      		footer_en = tempElement.querySelector('#footer_en');
+
+      		if (lang == 'it'){
+		      	the_footer = footer_it
+      		}
+	      	else {
+      			the_footer = footer_en
+      		}
+
+		    footer.append(the_footer)
+	    })
+	    .catch(error => {
+			console.error('There was a problem fetching the HTML:', error);
+	    });
+}
+function update_footer(lang){	
+
+	let new_footer;
+	if (lang == 'it'){
+		new_footer = footer_it
+	}
+	else {
+		new_footer = footer_en
+	}
+
+	if (new_footer != undefined){
+		footer.innerHTML = ''
+		footer.append(new_footer)
+		// console.log(new_footer)
 	}
 }
 
 $(document).ready(function() {
 
-	path = window.location.pathname
-	if (path.indexOf('autori') != -1 || path.indexOf('avvisi') != -1){
-		language();
-	}
-
 	mobile_menu();
 	mobile_filter();
 
-	get_statistics();
+	path = window.location.pathname
+	if (path.indexOf('autori') != -1 || path.indexOf('avvisi') != -1){
+
+		load_footer()
+		language();
+	}
+	// get_statistics();
+	
 })
