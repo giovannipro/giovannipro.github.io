@@ -437,6 +437,7 @@ function language() {
 		}
 
 		update_footer(lang)
+		changeTitle(lang)
 	}
 }
 
@@ -493,6 +494,40 @@ function update_footer(lang){
 		footer.append(new_footer)
 		// console.log(new_footer)
 	}
+}
+
+function changeTitle(lang) {
+	const base = 'Wikipedia e scuola italiana'
+	let title = document.title
+	let page = title.split(' | ')[0];
+	let newTitle;
+
+	switch (page) {
+		case 'Autori e pubblicazioni':
+			newTitle = 'Authors and publications'
+			break;
+		case 'Authors and publications':
+			newTitle = 'Autori e pubblicazioni'
+			break;
+
+		case 'Voci con avvisi':
+			newTitle = 'Articles with issues'
+			break;
+		case 'Articles with issues':
+			newTitle = 'Voci con avvisi'
+			break;
+
+		case 'Voci più viste':
+			newTitle = 'Most viewed articles'
+			break;
+		case 'Most viewed articles':
+			newTitle = 'Voci più viste'
+			break;
+
+		default:
+			newTitle = page;
+	}
+	document.title = newTitle + ' | ' + base;
 }
 
 $(document).ready(function() {
