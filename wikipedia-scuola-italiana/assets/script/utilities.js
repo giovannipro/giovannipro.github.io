@@ -441,7 +441,7 @@ function language() {
 }
 
 function load_footer(){
-	let url = '../../assets/content/footer.html'
+	let url = '../assets/content/footer.html'
 	
 	let params = new URLSearchParams(window.location.search);
 	if (params.has('lang') == true) {
@@ -463,8 +463,7 @@ function load_footer(){
       		footer_it = tempElement.querySelector('#footer_it');
       		footer_en = tempElement.querySelector('#footer_en');
 
-
-		    console.log(lang)
+		    // console.log(lang)
       		if (lang == 'it'){
 		      	the_footer = footer_it
       		}
@@ -479,7 +478,7 @@ function load_footer(){
 	    });
 }
 function update_footer(lang){	
-	console.log(lang)
+	// console.log(lang)
 
 	let new_footer;
 	if (lang == 'it'){
