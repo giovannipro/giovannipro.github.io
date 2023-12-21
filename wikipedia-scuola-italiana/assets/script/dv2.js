@@ -65,6 +65,7 @@ function getRandomIntInclusive(min, max) {
 function dv2(year,the_subject,sort) {
 	d3.tsv("../assets/data/voci_" + year + ".tsv")
 		.then(loaded)
+		// .then(() => update_dv2_lang(lang));
 		// .then(sidebar);
 
 	function loaded(data) {
@@ -269,91 +270,57 @@ function dv2(year,the_subject,sort) {
 				return [-20,0]
 			})
 			.html(function(d) {
+
+				let params = new URLSearchParams(window.location.search);
+				if (params.has('lang') == true) {
+					lang = params.get('lang')
+				}
+
+				if (lang == 'it'){
+					creation_date = "Creato il: "
+					issues = "avvisi"
+					references = "riferimenti bibliog."
+					notes = "note"
+					images = "immagini"
+				}
+				else {
+					creation_date = "Created on: "
+					issues = "issues"
+					references = "references"
+					notes = "notes"
+					images = "images"
+				}
+
 				let content = "<p style='margin: 0 0 8px 3px;'><span style='font-weight: bold;'>" + d.article + "</span><br/>";
-                content += "<span style='font-size: 0.8em;'>Creato il: " + format_date(d.first_edit) + "</span></p><table>"
-                // 
-	            // let content = "<p style='font-weight: bold; margin: 0 0 10px 3px;'>" + d.article + "</p><table>";
+                content += "<span style='font-size: 0.8em;'>" + creation_date + format_date(d.first_edit) + "</span></p><table>"
 
 	            // issues
-                content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
+                content += "<tr><td class='label'>" + issues + "</td><td class='value'>" + d.issues.toLocaleString()
                 if(year != 2020){
 	                content += "<td class='value " + variation_perc(d.issues,d.issues_prev,"issues")[0] + "'>" + variation_perc(d.issues,d.issues_prev,"issues")[1] + "</td></tr>"
-	                // if (d.issues_prev !== "-"){
-
-		            	// let diff_issues = d.issues - d.issues_prev;
-		            	// let perc = (((d.issues/d.issues_prev)-1)*100);
-
-		            	// if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3) {
-		            	// 	content += "<td class='value' style='color: gray;'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
-		            	// }
-		            	// else {
-			            // 	if (diff_issues > 0){
-			            // 		content += "<td class='value decrease'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
-			            // 	}
-			            // 	else {
-			            // 		content += "<td class='value increase'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
-			            //     }
-		            	// }
-	                // }
-                }
+	            }
 
                 // references
-                // if (d.references !== "-"){
                 if(year != 2020){
-                	content += "<tr><td class='label'>riferimenti bibliog.</td><td class='value'>" + d.references.toLocaleString()
+                	content += "<tr><td class='label'>" + references + "</td><td class='value'>" + d.references.toLocaleString()
                 }
             	
             	// notes
-            	content += "<tr><td class='label'>note</td><td class='value'>" + d.notes.toLocaleString()
+            	content += "<tr><td class='label'>" + notes + "</td><td class='value'>" + d.notes.toLocaleString()
             	if(year != 2020){
-            		
             		content += "<td class='value " + variation_perc(d.notes,d.notes_prev,"notes")[0] + "'>" + variation_perc(d.notes,d.notes_prev,"notes")[1] + "</td></tr>"
-            		
-        			// console.log(variation_perc(d.notes,d.notes_prev,"images")[0])
-
-            		// if (d.notes_prev !== "-"){
-
-
-		            	// let diff_notes = d.notes - d.notes_prev;
-		            	// let perc = (((d.notes/d.notes_prev)-1)*100);
-
-		            	// if ( Math.abs(perc) <= 0.5 && Math.abs(perc) >3) { 
-		            	// 	content += "<td class='value' style='color: gray;'>" + variation_perc(d.notes,d.notes_prev,"notes") + "</td></tr>"
-		            	// }
-		            	// else {
-			            // 	if (diff_notes > 0){
-			            // 		content += "<td class='value increase'>" +  variation_perc(d.notes,d.notes_prev,"notes") + "</td></tr>"
-			            // 	}
-			            // 	else {
-			            // 		content += "<td class='value decrease'>" + variation_perc(d.notes,d.notes_prev,"notes") + "</td></tr>"
-			            //     }
-		            	// }
-	            	// }
-	            }
+            	}
 
                 // images
-                content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
+                content += "<tr><td class='label'>" + images + "</td><td class='value'>" + d.images.toLocaleString()
             	
             	if(year != 2020){
             		content += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
-
-            		// if (d.images_prev !== "-"){
-            			
-		            	
-
-		            	// let diff_images = d.images - d.images_prev;
-		            	// if (diff_images > 0){
-		            	// 	content += "<td class='value increase'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
-		            	// }
-		            	// else {
-		            	// 	content += "<td class='value decrease'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
-		                // }
-	            	// }
 	            }
 
 	            content += "</table>"
 	            return content;
-	        });
+	        })
        	plot.call(tooltip);
 
 		// article box
@@ -1071,6 +1038,25 @@ function dv2(year,the_subject,sort) {
 		}
 	}
 }
+
+// function update_dv2_lang(lang) {
+
+// 	// let tooltip = document.getElementById('tooltip_dv2')
+// 	let text = document.querySelectorAll('#tooltip_dv2 .lang_switch'); //  
+// 	console.log(text)
+
+// 	text.forEach(function(content) {
+// 		let license_it = content.dataset.it
+// 		let license_en = content.dataset.en
+
+// 		if (lang == 'it'){
+// 			content.textContent = license_it
+// 		}
+// 		else if (lang == 'en') {
+// 			content.textContent = license_en
+// 		}
+// 	});
+// }
 
 // function sidebar(data) {
 // 	console.log(data)
