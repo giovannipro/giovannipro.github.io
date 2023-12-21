@@ -65,8 +65,10 @@ function getRandomIntInclusive(min, max) {
 function dv2(year,the_subject,sort) {
 	d3.tsv("../assets/data/voci_" + year + ".tsv")
 		.then(loaded)
+		// .then(sidebar);
 
 	function loaded(data) {
+		// console.log(data)
 
 		// load data
 		let total = 0;
@@ -1070,9 +1072,9 @@ function dv2(year,the_subject,sort) {
 	}
 }
 
-function sidebar(argument) {
-	// body...
-}
+// function sidebar(data) {
+// 	console.log(data)
+// }
 
 $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17);

@@ -1,0 +1,17 @@
+#dv_box {
+/*	display: flex;*/
+}
+
+#dv2 {
+	width: 100%;
+}
+
+#sidebar {
+	background-color: red;
+	width: 30%;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
