@@ -380,7 +380,7 @@ function language() {
 
 			lang = "en";
 
-			// switch box
+			// box with text
 			enContent.forEach(box => {
 				box.style.display = 'block';
 			});
@@ -405,6 +405,7 @@ function language() {
 			
 			lang = "it";
 
+			// box with text
 			enContent.forEach(box => {
 				box.style.display = 'none';
 			});
@@ -434,12 +435,10 @@ function language() {
 		path = window.location.pathname
 		if (path.indexOf('autori') != -1){
 			update_dv3_lang(lang)
-			console.log(lang)
 		}
 
 		update_footer(lang)
 		changeTitle(lang)
-		// update_dv3_lang(lang)
 	}
 }
 
@@ -462,11 +461,9 @@ function load_footer(){
 	    	const tempElement = document.createElement('div');
       		tempElement.innerHTML = data;
 
-      		// the_footer = tempElement.querySelector('#the_footer');
       		footer_it = tempElement.querySelector('#footer_it');
       		footer_en = tempElement.querySelector('#footer_en');
 
-		    // console.log(lang)
       		if (lang == 'it'){
 		      	the_footer = footer_it
       		}
@@ -481,7 +478,6 @@ function load_footer(){
 	    });
 }
 function update_footer(lang){	
-	// console.log(lang)
 
 	let new_footer;
 	if (lang == 'it'){
@@ -494,7 +490,6 @@ function update_footer(lang){
 	if (new_footer != undefined){
 		footer.innerHTML = ''
 		footer.append(new_footer)
-		// console.log(new_footer)
 	}
 }
 

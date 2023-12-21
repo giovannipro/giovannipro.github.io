@@ -64,7 +64,7 @@ function dv3(the_literature) {
 	.then(() => update_dv3_lang(lang));
 
 	function loaded(data) {
-		console.log(data)
+		// console.log(data)
 		
 		let publications_authors = [];
 		let author_group = [];
@@ -719,7 +719,6 @@ function dv3(the_literature) {
 function update_dv3_lang(lang) {
 
 	let license = document.querySelectorAll('.license');
-	console.log(license)
 
 	license.forEach(function(content) {
 		let license_it = content.dataset.it
