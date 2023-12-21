@@ -436,6 +436,9 @@ function language() {
 		if (path.indexOf('autori') != -1){
 			update_dv3_lang(lang)
 		}
+		if (path.indexOf('/') != -1){
+			update_dv1_lang(lang)
+		}
 
 		update_footer(lang)
 		changeTitle(lang)
@@ -532,12 +535,12 @@ $(document).ready(function() {
 	mobile_menu();
 	mobile_filter();
 
-	path = window.location.pathname
-	if (path.indexOf('autori') != -1 || path.indexOf('avvisi') != -1){
+	// path = window.location.pathname
+	// if (path.indexOf('autori') != -1 || path.indexOf('avvisi') != -1){
 
 		language();
 		load_footer()
-	}
+	// }
 	// get_statistics();
 	
 })

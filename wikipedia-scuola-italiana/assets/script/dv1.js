@@ -68,8 +68,10 @@ let improv_col = "black"; //"#1ba51b";
 let improv_delay = 1800;
 
 function dv1(year,the_subject,sort) {
-	d3.tsv("assets/data/voci_" + year + ".tsv").then(loaded)
-	console.log(year,the_subject,sort)
+	d3.tsv("assets/data/voci_" + year + ".tsv")
+		.then(loaded)
+		.then(() => update_dv1_lang(lang));
+	// console.log(year,the_subject,sort)
 
 	function loaded(data) {
 
@@ -261,7 +263,10 @@ function dv1(year,the_subject,sort) {
 			.attr("transform","translate(7," + height + ")")
 
 		let yaxis_label = yaxis_label_box.append("text")
+			.attr("class","axis_name")
 			.text("visite giornaliere (media)")
+			.attr("data-it","visite giornaliere (media)")
+			.attr("data-en","daily visits (average)")
 			.attr("y",-6)
 			.attr("font-size",font_size)
 
@@ -274,95 +279,72 @@ function dv1(year,the_subject,sort) {
 			})
 			.offset([-10,0])
 			.html(function(d,i) {
-                let content = "<p style='margin: 0 0 8px 3px;'><span style='font-weight: bold;'>" + d.article + "</span><br/>";
-                content += "<span style='font-size: 0.8em;'>Creato il: " + format_date(d.first_edit) + "</span></p><table>"
 
-                // content += "<tr><td class='label'>pubblicazione</td><td class='value'>" + format_date(d.first_edit) + "</td><td></td></tr>"
+				let params = new URLSearchParams(window.location.search);
+				if (params.has('lang') == true) {
+					lang = params.get('lang')
+				}
+
+				if (lang == 'it'){
+					creation_date = "Creato il: "
+					visits = "visite giornaliere"
+					size = "dimensioni"
+					discussion = "discussione"
+					issues = "avvisi"
+					images = "immagini"
+
+					references = "riferimenti bibliog."
+					notes = "note"
+				}
+				else {
+					creation_date = "Created on: "
+					visits = "daily visits"
+					size = "size"
+					discussion = "discussion"
+					issues = "issues"
+					images = "images"
+
+					references = "references"
+					notes = "notes"
+				}
+
+				let content = "<p style='margin: 0 0 8px 3px;'><span style='font-weight: bold;'>" + d.article + "</span><br/>";
+                content += "<span style='font-size: 0.8em;'>" + creation_date + format_date(d.first_edit) + "</span></p><table>"
 
                 // avg daily visits
-                content += "<tr><td class='label'>visite giornaliere</td><td class='value'>" + d.avg_pv.toLocaleString()
+                content += "<tr><td class='label'>" + visits + "</td><td class='value'>" + d.avg_pv.toLocaleString()
             	if (d.avg_pv_prev !== "-"){
             		content += "<td class='value " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[0] + "'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[1] + "</td></tr>"
-
-
-	            	// let diff_pv = d.avg_pv - d.avg_pv_prev
-	            	// if (diff_pv > 0){
-	            	// 	content += "<td class='value increase'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[1] + "</td></tr>"
-	            	// }
-	            	// else {
-	            	// 	let diff_pv_perc = Math.floor(100-(d.avg_pv*100)/d.avg_pv_prev).toLocaleString();
-	            	// 	content += "<td class='value decrease'>" +  variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[1] + "</td></tr>"
-	                // }
            		}
 
                 //size
-                content += "<tr><td class='label'>dimensioni</td><td class='value'>" + d.size.toLocaleString()
+                content += "<tr><td class='label'>" + size + "</td><td class='value'>" + d.size.toLocaleString()
         		if(year != 2020){
         			content += "<td class='value " + variation_perc(d.size,d.size_prev,"visits")[0] + "'>" + variation_perc(d.size,d.size_prev,"visits")[1] + "</td></tr>"
-
-        			// let diff_size = d.size - d.size_prev
-	            	// if (diff_size > 0){
-	            	// 	content += "<td class='value increase'>" + variation_perc(d.size,d.size_prev,"visits") + "</td></tr>"
-	            	// }
-	            	// else {
-	            	// 	content += "<td class='value decrease'>" + variation_perc(d.size,d.size_prev,"visits") + "</td></tr>"
-	            	// }
 	            }
 
             	// discussion
-            	content += "<tr><td class='label'>discussione</td><td class='value'>" + d.discussion_size.toLocaleString()
+            	content += "<tr><td class='label'>" + discussion + "</td><td class='value'>" + d.discussion_size.toLocaleString()
             	if(year != 2020){
             		content += "<td class='value " + variation_perc(d.discussion_size,d.discussion_prev,"discussion")[0] + "'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion")[1] + "</td></tr>"
-
-            		// let diff_discussion = d.discussion_size - d.discussion_prev
-	            	// if (diff_discussion > 0){
-	            	// 	content += "<td class='value increase'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion") + "</td></tr>"
-	            	// }
-	            	// else {
-	            	// 	content += "<td class='value decrease'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion") + "</td></tr>"
-	            	// }
             	}
 
             	// incipit
             	content += "<tr><td class='label'>incipit</td><td class='value'>" + d.incipit_size.toLocaleString()
             	if(year != 2020){
             		content += "<td class='value " + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[0] + "'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[1] + "</td></tr>"
-
-            		// let diff_incipit = d.incipit_size - d.incipit_prev
-	            	// if (diff_incipit > 0){
-	            	// 	content += "<td class='value increase'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit") + "</td></tr>"
-	            	// }
-	            	// else {
-	            	// 	content += "<td class='value decrease'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit") + "</td></tr>"
-	            	// }
             	}
 
             	// issues
-            	content += "<tr><td class='label'>avvisi</td><td class='value'>" + d.issues.toLocaleString()
+            	content += "<tr><td class='label'>" + issues + "</td><td class='value'>" + d.issues.toLocaleString()
             	if(year != 2020){
             		content += "<td class='value " + variation_perc(d.issues,d.issues_prev,"issues")[0] + "'>" + variation_perc(d.issues,d.issues_prev,"issues")[1] + "</td></tr>"
-
-            		// let diff_issues = d.issues - d.issues_prev
-	            	// if (diff_issues > 0){
-	            	// 	content += "<td class='value decrease'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
-	            	// }
-	            	// else {
-	            	// 	content += "<td class='value increase'>" + variation_perc(d.issues,d.issues_prev,"issues") + "</td></tr>"
-	            	// }
             	}
 
 				// images
-				content += "<tr><td class='label'>immagini</td><td class='value'>" + d.images.toLocaleString()
+				content += "<tr><td class='label'>" + images + "</td><td class='value'>" + d.images.toLocaleString()
             	if(year != 2020){
             		content += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
-
-            		// let diff_images = d.images - d.images_prev
-	            	// if (diff_images > 0){
-	            	// 	content += "<td class='value increase'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
-	            	// }
-	            	// else {
-	            	// 	content += "<td class='value decrease'>" + variation_perc(d.images,d.images_prev,"images") + "</td></tr>"
-	            	// }
             	}
 
 	            content += "</table>"
@@ -1223,6 +1205,23 @@ function dv1(year,the_subject,sort) {
 		}
 	}
 }
+
+function update_dv1_lang(lang){
+	let text = document.querySelectorAll('.axis_name');
+
+	text.forEach(function(content) {
+		let it = content.dataset.it
+		let en = content.dataset.en
+
+		if (lang == 'it'){
+			content.textContent = it
+		}
+		else if (lang == 'en') {
+			content.textContent = en
+		}
+	});
+}
+
 
 function get_year(){
 	$("#year").change(function() {
