@@ -41,9 +41,30 @@ const features_height = height/2.1;
 
 const ticksAmount = 10;
 
+function get_year(){
+	$("#year").change(function() {
+		let year = parseInt(this.value);
+		let subject = String($("#subjects option:selected").val());
+		let sort =  parseInt($("#sort option:selected").val());
+
+		$("#d3_plot").remove();
+		$("#tooltip_dv2").remove();
+		$("#axis_grid").remove();
+
+		dv2(year,subject,sort);
+	});
+}
+
+function getRandomIntInclusive(min, max) {
+  	min = Math.ceil(min);
+  	max = Math.floor(max);
+  	return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+
 function dv2(year,the_subject,sort) {
-	d3.tsv("../assets/data/voci_" + year + ".tsv").then(loaded)
-	// console.log(year)
+	d3.tsv("../assets/data/voci_" + year + ".tsv")
+		.then(loaded)
 
 	function loaded(data) {
 
@@ -51,7 +72,6 @@ function dv2(year,the_subject,sort) {
 		let total = 0;
 		let subject_articles = [];
 		let filtered_data;
-		// let visit_sort;
 
 		let subject_group = d3.nest()
 			.key(d => d.subject)
@@ -144,10 +164,12 @@ function dv2(year,the_subject,sort) {
 		// console.log(filtered_data);
 
 		// scale
-		let issues_max = d3.max(filtered_data, function(d) { 
-				return d.issues
-			})
+		let issues_max = 10;
+		// let issues_max = d3.max(filtered_data, function(d) { 
+		// 		return d.issues
+		// 	})
 
+		// max_features = 370
 		let max_features = d3.max(filtered_data, function(d) {
 				return +d.features
 			})
@@ -678,10 +700,12 @@ function dv2(year,the_subject,sort) {
 			// console.log(filtered_data);
 
 			// scale
-			issues_max = d3.max(filtered_data, function(d) { 
-				return d.issues
-			})
+			// issues_max = 10
+			// issues_max = d3.max(filtered_data, function(d) { 
+			// 	return d.issues
+			// })
 
+			// max_features = 380
 			max_features = d3.max(filtered_data, function(d) {
 				return +d.features
 			})
@@ -1046,24 +1070,8 @@ function dv2(year,the_subject,sort) {
 	}
 }
 
-function get_year(){
-	$("#year").change(function() {
-		let year = parseInt(this.value);
-		let subject = String($("#subjects option:selected").val());
-		let sort =  parseInt($("#sort option:selected").val());
-
-		$("#d3_plot").remove();
-		$("#tooltip_dv2").remove();
-		$("#axis_grid").remove();
-
-		dv2(year,subject,sort);
-	});
-}
-
-function getRandomIntInclusive(min, max) {
-  	min = Math.ceil(min);
-  	max = Math.floor(max);
-  	return Math.floor(Math.random() * (max - min + 1) + min);
+function sidebar(argument) {
+	// body...
 }
 
 $(document).ready(function() {
