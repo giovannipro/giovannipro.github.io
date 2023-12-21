@@ -434,10 +434,12 @@ function language() {
 		path = window.location.pathname
 		if (path.indexOf('autori') != -1){
 			update_dv3_lang(lang)
+			console.log(lang)
 		}
 
 		update_footer(lang)
 		changeTitle(lang)
+		// update_dv3_lang(lang)
 	}
 }
 

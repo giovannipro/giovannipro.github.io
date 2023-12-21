@@ -60,18 +60,12 @@ function dv3(the_literature) {
 		d3.tsv("../assets/data/publications.tsv"),
 		d3.tsv("../assets/data/authors.tsv"),
 	])
-	.then(loaded);
-
-	// lang = new Proxy({ value: 'it' }, {
-	// 	set: function(target, key, value) {
-	// 		target[key] = value;
-	// 		console.log(value);
-	// 		return true;
-	// 	}
-	// });
+	.then(loaded)
+	.then(() => update_dv3_lang(lang));
 
 	function loaded(data) {
-
+		console.log(data)
+		
 		let publications_authors = [];
 		let author_group = [];
 		let merged_data = [];
@@ -233,6 +227,7 @@ function dv3(the_literature) {
 	        });
        	plot.call(tooltip_wikis_it);
 
+       	// console.log(merged_data)
        	let tooltip_wikis_la = d3.tip()
 			.attr('class', 'tooltip')
 			.attr('id', 'tooltip_wikis_la')
@@ -282,8 +277,16 @@ function dv3(the_literature) {
 				}
 			})
 			.attr("class","license")
-			.attr("data-it","Opere protette da copyright")
-			.attr("data-en","Copyrighted works")
+			.attr("data-it", function(d,i){
+				if(d.values[0].author_ws_it == "©") {
+					return "Opere protette da copyright"
+				}
+			})
+			.attr("data-en", function(d,i){
+				if(d.values[0].author_ws_it == "©") {
+					return "Copyrighted works"
+				}
+			})
 			.attr("font-size",font_size)
 			.attr("text-anchor","end")
 			.attr("transform","translate(" + (width-10) + ",0)")
@@ -714,8 +717,9 @@ function dv3(the_literature) {
 }
 
 function update_dv3_lang(lang) {
-	// console.log(lang)
+
 	let license = document.querySelectorAll('.license');
+	console.log(license)
 
 	license.forEach(function(content) {
 		let license_it = content.dataset.it
@@ -724,7 +728,7 @@ function update_dv3_lang(lang) {
 		if (lang == 'it'){
 			content.textContent = license_it
 		}
-		else {
+		else if (lang == 'en') {
 			content.textContent = license_en
 		}
 	});

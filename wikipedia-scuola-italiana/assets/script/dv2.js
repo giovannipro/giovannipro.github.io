@@ -43,7 +43,7 @@ const ticksAmount = 10;
 
 function dv2(year,the_subject,sort) {
 	d3.tsv("../assets/data/voci_" + year + ".tsv").then(loaded)
-	console.log(year)
+	// console.log(year)
 
 	function loaded(data) {
 
