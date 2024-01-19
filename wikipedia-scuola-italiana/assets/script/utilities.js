@@ -433,13 +433,15 @@ function language() {
 		window.history.replaceState({}, '', newURL);
 
 		path = window.location.pathname
-		if (path.indexOf('autori') != -1){
-			update_dv3_lang(lang)
-		}
-		if (path.indexOf('/') != -1){
+		// console.log(path)
+
+		if (path == '/'){ // homepage
 			update_dv1_lang(lang)
 		}
-
+		else if (path.indexOf('autori') != -1){
+			update_dv3_lang(lang)
+		}
+		
 		update_footer(lang)
 		changeTitle(lang)
 	}
