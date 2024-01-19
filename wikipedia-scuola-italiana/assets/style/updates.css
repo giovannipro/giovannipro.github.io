@@ -50,3 +50,42 @@
 .en {
 	display: none;
 }
+
+
+#dv_box {
+	position: relative;
+	border-bottom: 1px solid #d6d5d5;
+}
+
+#dv2 {
+	width: 100%;
+}
+
+#sidebar {
+	display: none;
+	background-color: #f6f6f6;
+	border-left: 1px solid #d6d5d5;
+	width: 28%;
+	height: 100%;
+	position: absolute;
+	overflow-y: scroll;
+	right: 0;
+	top: 0;
+}
+
+#sidebar_content {
+	height: auto;
+}
+
+#sidebar_content li {
+	border-bottom: 1px solid #d6d5d5;
+	padding: 0.5rem;
+}
+
+#sidebar_content li div:first-child {
+	float: left;
+	width: 1.5rem;
+	text-align: right;
+	margin-right: 0.5rem;
+}
+

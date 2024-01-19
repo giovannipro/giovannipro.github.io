@@ -113,7 +113,9 @@ function dv2(year,the_subject,sort) {
 		filter_data = filtered_data.filter(function(x,y){ 
 			return y < filter_item 
 		})
-	
+		
+		sidebar(filtered_data,1);
+
 		filtered_data.forEach(function (d,i) {
 			total += 1
 			d.average_daily_visit = +d.average_daily_visit
@@ -589,6 +591,8 @@ function dv2(year,the_subject,sort) {
 				return y < filter_item 
 			})
 
+			sidebar(filtered_data,the_sort);
+
 			if (the_sort == 1){
 				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.issues, +b.issues);
@@ -941,7 +945,7 @@ function dv2(year,the_subject,sort) {
 			filtered_data = filtered_data_.filter(function(x,y){ 
 				return y < filter_item 
 			})
-		
+
 			filtered_data.forEach(function (d,i) {
 				total += 1
 				d.average_daily_visit = +d.average_daily_visit
@@ -1021,6 +1025,8 @@ function dv2(year,the_subject,sort) {
 					return d3.descending(+a.images, +b.images);
 				})
 			}
+
+			sidebar(filtered_data,the_sort);
 
 			filtered_data.forEach(function(d,i){
 				new_id = i;

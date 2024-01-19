@@ -441,7 +441,7 @@ function language() {
 		else if (path.indexOf('autori') != -1){
 			update_dv3_lang(lang)
 		}
-		
+
 		update_footer(lang)
 		changeTitle(lang)
 	}
@@ -532,17 +532,85 @@ function changeTitle(lang) {
 	document.title = newTitle + ' | ' + base;
 }
 
+function sidebar(data,the_sort){
+	console.log(data[0])
+	console.log(the_sort)
+
+	const the_sidebar = document.getElementById('sidebar')
+	const container = document.getElementById('sidebar_content')
+	let output = ''
+	detail = ''
+
+	function load_sidebar(){
+		container.innerHTML = ''
+
+		output += '<ul>'
+
+		data.forEach(function (d,i) {
+			// console.log(data[0])
+
+			if (the_sort == 1){
+				detail = d.issues
+			}
+			else if (the_sort == 2){
+				detail = ''
+			}
+			else if (the_sort == 3){
+				detail = d.references
+			}
+			else if (the_sort == 4){
+				detail = d.notes
+			}
+			else if (the_sort == 5){
+				detail = d.images
+			}
+
+			output += '<li>'
+			output += '<div>' + detail + '</div><div>' + d.article+ '</div>'
+			output += '</li>'
+		})
+
+		output += '</ul>'
+
+		container.innerHTML = output
+
+	}
+
+	let open = false
+	document.addEventListener('keypress', (event) => {
+
+		let key = event.key;
+
+		if (key == 's') {
+			if (open == false){
+				the_sidebar.style.display = 'block'
+				load_sidebar()
+				open = true
+			}
+			else {
+				the_sidebar.style.display = 'none'
+				open = false
+			}
+
+		}
+	})
+
+}
+
+
 $(document).ready(function() {
 
 	mobile_menu();
 	mobile_filter();
 
-	// path = window.location.pathname
-	// if (path.indexOf('autori') != -1 || path.indexOf('avvisi') != -1){
-
-		language();
-		load_footer()
+	language();
+	load_footer()
+		
+	// if (path.indexOf('autori') != -1){
+	// 	sidebar();
 	// }
+	
+
 	// get_statistics();
 	
 })
