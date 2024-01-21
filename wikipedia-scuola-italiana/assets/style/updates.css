@@ -54,23 +54,80 @@
 
 #dv_box {
 	position: relative;
-	border-bottom: 1px solid #d6d5d5;
+	border-bottom: 1px solid #979797;
 }
 
 #dv2 {
 	width: 100%;
 }
 
+/*#sidebar_all {
+	width: 33%;
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	display: flex;
+}*/
+
+#sidebar_button_open {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0.3rem;
+	text-align: center;
+	margin: 1rem 1.5rem;
+	background-color: white;
+	border: 1px solid #727272;
+	border-radius: 2.5rem;
+	line-height: 2.5rem;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	position: absolute;
+}
+
+#sidebar_button_close {
+	border-bottom: 1px solid #d6d5d5;
+	padding: 0 0 0.75rem;
+	height: 4.5rem;
+	background-color: white;
+	cursor: pointer;
+}
+
+#sidebar_close_icon {
+	background: url(../../assets/img/close-menu.svg) center center / 55% no-repeat;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0.3rem;
+	margin: 1rem 1.5rem;
+	float: right;
+	border-radius: 2.5rem;
+	border: 1px solid #727272;
+}
+
+#sidebar_open_icon {
+	float: right;
+
+}
+
+#sidebar_open_icon {
+	background: url(../../assets/img/list.svg) center center / 55% no-repeat;
+	width: 40px;
+	height: 40px;
+}
+
 #sidebar {
 	display: none;
+	right: 0;
+	top: 0;
+	position: absolute;
 	background-color: #f6f6f6;
 	border-left: 1px solid #d6d5d5;
 	width: 28%;
 	height: 100%;
-	position: absolute;
 	overflow-y: scroll;
-	right: 0;
-	top: 0;
+/*	margin: */
+/*	margin: 1% 0.75rem 1% 0;*/
 }
 
 #sidebar_content {
@@ -79,13 +136,44 @@
 
 #sidebar_content li {
 	border-bottom: 1px solid #d6d5d5;
-	padding: 0.5rem;
+	padding: 0.5rem 1rem 0.75rem;
 }
 
-#sidebar_content li div:first-child {
-	float: left;
-	width: 1.5rem;
+/*#sidebar_content li:nth-child(even) {
+    background-color: white;
+}
+*/
+#sidebar #data {
+	display: flex;
+	width: 100%;
+}
+
+#sidebar #data a {
+	text-decoration: none;
+	width: 95%;
+}
+
+#sidebar #data .value {
+	width: 5%;
 	text-align: right;
-	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	color: #9d9b9b;
 }
 
+/*#sidebar #data .article {
+}
+*/
+#sidebar #bar {
+	height: 0.2rem; 
+	background-color: #d1cfcf;
+	margin-top: 0.2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	#sidebar {
+		width: 80%;
+	}
+
+}

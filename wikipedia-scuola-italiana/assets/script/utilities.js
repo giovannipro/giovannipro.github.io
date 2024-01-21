@@ -533,21 +533,48 @@ function changeTitle(lang) {
 }
 
 function sidebar(data,the_sort){
-	console.log(data[0])
-	console.log(the_sort)
+	// console.log(data[0])
+	// console.log(the_sort)
 
-	const the_sidebar = document.getElementById('sidebar')
-	const container = document.getElementById('sidebar_content')
+	const button_open = document.getElementById('sidebar_button_open');
+	const button_close = document.getElementById('sidebar_button_close');
+	const the_sidebar = document.getElementById('sidebar');
+	const container = document.getElementById('sidebar_content');
 	let output = ''
 	detail = ''
 
 	function load_sidebar(){
 		container.innerHTML = ''
+		max = -Infinity;
 
+		output = ''
 		output += '<ul>'
-
+		
+		// get max	
 		data.forEach(function (d,i) {
-			// console.log(data[0])
+			if (the_sort == 1){
+				detail = d.issues
+			}
+			else if (the_sort == 2){
+				detail = ''
+			}
+			else if (the_sort == 3){
+				detail = d.references
+			}
+			else if (the_sort == 4){
+				detail = d.notes
+			}
+			else if (the_sort == 5){
+				detail = d.images
+			}
+
+			if (detail > max){
+				max = detail
+			}
+		})				
+
+		// add item in the sidebar
+		data.forEach(function (d,i) {
 
 			if (the_sort == 1){
 				detail = d.issues
@@ -565,35 +592,55 @@ function sidebar(data,the_sort){
 				detail = d.images
 			}
 
+			if (max != 0) {
+				size = detail * 100 / max
+			}
+			else {
+				size = 0
+			}
+
 			output += '<li>'
-			output += '<div>' + detail + '</div><div>' + d.article+ '</div>'
+			output += '<div id="data">'
+			output += '<a href=" ' + wiki_link + d.article + '" target="_blank"><div class="article">' + d.article + '</div></a>'
+			output += '<div class="value">' + detail + '</div>'
+			output += '</div>'
+
+			if (the_sort != 2){
+				output += '<div id="bar" style="width: ' + size + '%;"></div>'
+			}
+
 			output += '</li>'
 		})
 
 		output += '</ul>'
 
 		container.innerHTML = output
-
 	}
+	load_sidebar()
 
-	let open = false
-	document.addEventListener('keypress', (event) => {
+	let open = false;
+	button_open.addEventListener('click', (event) => {
 
-		let key = event.key;
+		if (open == false){
+			the_sidebar.style.display = 'block'
+			open = true
 
-		if (key == 's') {
-			if (open == false){
-				the_sidebar.style.display = 'block'
-				load_sidebar()
-				open = true
-			}
-			else {
-				the_sidebar.style.display = 'none'
-				open = false
-			}
-
+			button_close.style.display = 'block'
+			button_open.style.display = 'none'
 		}
 	})
+
+	button_close.addEventListener('click', (event) => {
+
+		if (open == true){
+			the_sidebar.style.display = 'none'
+			open = false
+
+			button_close.style.display = 'none'
+			button_open.style.display = 'block'
+		}
+	})
+	// console.log(open)
 
 }
 
