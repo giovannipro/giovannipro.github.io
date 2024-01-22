@@ -117,6 +117,8 @@ function dv2(year,the_subject,sort) {
 		sidebar(filtered_data,1);
 
 		filtered_data.forEach(function (d,i) {
+			console.log(d)
+
 			total += 1
 			d.average_daily_visit = +d.average_daily_visit
 			d.article = d.article.replace(/_/g," ")
@@ -220,7 +222,7 @@ function dv2(year,the_subject,sort) {
 				.ticks(ticksAmount)
 				.tickValues(d3.range(0,issues_max,1))
           		.tickSize(-width-margin.left-margin.right-60)
-          	)
+			)
 
         let grid_features = grids.append("g")
 			.attr("id","grid_features")
@@ -236,7 +238,7 @@ function dv2(year,the_subject,sort) {
 			.attr("id","axis")
 
 		let axis_issues = axis.append("g")
-			.attr("transform", "translate(" + (margin.left*1) + "," + (margin.top) + ")") // v_shift
+			.attr("transform", "translate(" + (margin.left*1) + "," + (margin.top + (v_shift*2.1)) + ")") // v_shift
 			.call(d3.axisLeft(y_issues_text)
 				.ticks(ticksAmount)
 				.tickValues(d3.range(0,issues_max,1))
@@ -381,6 +383,42 @@ function dv2(year,the_subject,sort) {
 			.attr("y",function(d,i){
 				return y_issues(issues_max - d.issues)
 			})
+
+		let i_grid = [0,1,2,3,4,5,6,7,8,9]
+
+		let issues_tick = article.selectAll("rect")
+			.data(i_grid)
+			.enter()
+			.append("rect")
+			.attr("fill","white")
+			.attr("width",article_width + 2)
+			.attr("height",5)
+			.attr("y", (d, i) => y_issues (i) - 2)
+			.attr("x", 0)
+
+
+		// test issues in rectangles
+		// let issues_test = article.selectAll("rect")
+		// 	.enter()
+		// 	.append("rect")
+		// 	.attr("width",article_width)
+		// 	.attr("fill","blue")
+		// 	.attr("height", function(d){
+		// 		return d*10
+		// 	})
+
+		// console.log(d.issues)
+
+		// let issues_test = article
+		// 	// .selectAll("rect")
+		// 	// .data(filtered_data)
+		// 	// .enter()
+		// 	.append("rect")
+		// 	.attr("fill","blue")
+		// 	.attr("width",article_width)
+		// 	.attr("height", d => d.issues * 10)
+		// 	.attr("y", (d, i) => i * 1)
+		// 	.attr("x", 0)
 
 		// features
 		let features = article.append("g")
@@ -751,6 +789,16 @@ function dv2(year,the_subject,sort) {
 					return "iss" // + d.issues 
 				})
 
+			let issues_tick = article.selectAll("rect")
+				.data(i_grid)
+				.enter()
+				.append("rect")
+				.attr("fill","white")
+				.attr("width",article_width + 2)
+				.attr("height",5)
+				.attr("y", (d, i) => y_issues (i) - 2)
+				.attr("x", 0)
+
 			// features
 			let features = article.append("g")
 				.attr("transform", function(d,i){
@@ -886,13 +934,13 @@ function dv2(year,the_subject,sort) {
 				.attr("y", 0)
 
 			// update grids
-			d3.select("#grid_issues")
-				.transition()
-				.call(make_issue_gridlines()
-					.ticks(ticksAmount)
-					.tickValues(d3.range(0,issues_max,1))
-	          		.tickSize(-width-margin.left-margin.right-60)
-	          	)
+			// d3.select("#grid_issues")
+			// 	.transition()
+			// 	.call(make_issue_gridlines()
+			// 		.ticks(ticksAmount)
+			// 		.tickValues(d3.range(0,issues_max,1))
+	        //   		.tickSize(-width-margin.left-margin.right-60)
+	        //   	)
 
 	        d3.select("#grid_features")
 		        .transition()
