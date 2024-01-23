@@ -71,7 +71,11 @@ function dv2(year,the_subject,sort) {
 	lang_vers_sort = document.getElementById("sort_article").options[5]
 	if (year != 2022){
 		lang_vers_sort.style.display = 'none'
-		console.log(lang_vers_sort)
+
+		if (isNaN(sort) == true){
+			$("#d3_plot").remove();
+			document.getElementById("sort_article").value = 1
+		}
 	} 
 	else {
 		lang_vers_sort.style.display = 'block'
@@ -663,6 +667,11 @@ function dv2(year,the_subject,sort) {
 			else if (the_sort == 5){
 				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.images, +b.images);
+				})
+			}
+			else if (the_sort == 6){
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.linguistic_versions, +b.linguistic_versions);
 				})
 			}
 		
