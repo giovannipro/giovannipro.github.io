@@ -442,8 +442,10 @@ function language() {
 			update_dv3_lang(lang)
 		}
 
+		// update stuff
 		update_footer(lang)
 		changeTitle(lang)
+		update_sidebar_text()
 	}
 }
 
@@ -532,14 +534,25 @@ function changeTitle(lang) {
 	document.title = newTitle + ' | ' + base;
 }
 
+function update_sidebar_text(){
+	const sort_option = document.getElementById('sort_article');
+	const text_box = document.getElementById('sidebar_text');
+
+	sort = sort_option.options[sort_option.selectedIndex].text
+	text_box.innerHTML = sort
+	// console.log(sort, sort_option)
+}
+
+
 function sidebar(data,the_sort){
 	// console.log(data[0])
 	// console.log(the_sort)
 
 	const button_open = document.getElementById('sidebar_button_open');
-	const button_close = document.getElementById('sidebar_button_close');
+	const button_close = document.getElementById('sidebar_close_icon');
 	const the_sidebar = document.getElementById('sidebar');
 	const container = document.getElementById('sidebar_content');
+	
 	let output = ''
 	detail = ''
 	
@@ -550,6 +563,8 @@ function sidebar(data,the_sort){
 
 		output = ''
 		output += '<ul>'
+
+		update_sidebar_text()
 		
 		// get max	
 		data.forEach(function (d,i) {
