@@ -68,6 +68,15 @@ function dv2(year,the_subject,sort) {
 		// .then(() => update_dv2_lang(lang));
 		// .then(sidebar);
 
+	lang_vers_sort = document.getElementById("sort_article").options[5]
+	if (year != 2022){
+		lang_vers_sort.style.display = 'none'
+		console.log(lang_vers_sort)
+	} 
+	else {
+		lang_vers_sort.style.display = 'block'
+	}	
+
 	function loaded(data) {
 		// console.log(data)
 
@@ -117,7 +126,7 @@ function dv2(year,the_subject,sort) {
 		sidebar(filtered_data,1);
 
 		filtered_data.forEach(function (d,i) {
-			console.log(d)
+			// console.log(d)
 
 			total += 1
 			d.average_daily_visit = +d.average_daily_visit
@@ -1071,6 +1080,11 @@ function dv2(year,the_subject,sort) {
 			else if (new_sort == 5){
 				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.images, +b.images);
+				})
+			}
+			else if (new_sort == 6){
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.linguistic_versions, +b.linguistic_versions);
 				})
 			}
 

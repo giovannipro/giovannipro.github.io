@@ -542,9 +542,10 @@ function sidebar(data,the_sort){
 	const container = document.getElementById('sidebar_content');
 	let output = ''
 	detail = ''
+	
+	container.innerHTML = ''
 
 	function load_sidebar(){
-		container.innerHTML = ''
 		max = -Infinity;
 
 		output = ''
@@ -553,25 +554,32 @@ function sidebar(data,the_sort){
 		// get max	
 		data.forEach(function (d,i) {
 			if (the_sort == 1){
+				max = Math.max(...data.map(item => item.issues));
 				detail = d.issues
 			}
 			else if (the_sort == 2){
+				// max = Math.max(...data.map(item => item.issues));
 				detail = ''
 			}
 			else if (the_sort == 3){
+				max = Math.max(...data.map(item => item.references));
 				detail = d.references
 			}
 			else if (the_sort == 4){
+				max = Math.max(...data.map(item => item.notes));
 				detail = d.notes
 			}
 			else if (the_sort == 5){
+				max = Math.max(...data.map(item => item.images));
 				detail = d.images
 			}
-
-			if (detail > max){
-				max = detail
+			else if (the_sort == 6){
+				max = Math.max(...data.map(item => item.linguistic_versions));
+				detail = d.linguistic_versions
 			}
-		})				
+
+		})	
+		// console.log(max)			
 
 		// add item in the sidebar
 		data.forEach(function (d,i) {
@@ -591,6 +599,9 @@ function sidebar(data,the_sort){
 			else if (the_sort == 5){
 				detail = d.images
 			}
+			else if (the_sort == 6){
+				detail = d.linguistic_versions
+			}
 
 			if (max != 0) {
 				size = detail * 100 / max
@@ -602,10 +613,14 @@ function sidebar(data,the_sort){
 			output += '<li>'
 			output += '<div id="data">'
 			output += '<a href=" ' + wiki_link + d.article + '" target="_blank"><div class="article">' + d.article + '</div></a>'
-			output += '<div class="value">' + detail + '</div>'
+
+			if (isNaN(max) == false) {
+				output += '<div class="value">' + detail + '</div>'
+			}
+
 			output += '</div>'
 
-			if (the_sort != 2){
+			if (the_sort != 2 || isNaN(max) == false){
 				output += '<div id="bar" style="width: ' + size + '%;"></div>'
 			}
 

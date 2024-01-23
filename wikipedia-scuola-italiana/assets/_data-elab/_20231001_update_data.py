@@ -213,13 +213,38 @@ def update():
 
 		print('done')
 
+def add_language_version():
+
+	f_curr = folder + 'data/2022_06.tsv'
+	f_lang = folder + 'data/linguistic_versions.tsv'
+	f_temp = folder + 'data/temp.tsv'
+
+	with open(f_temp,'w+') as f1:
+
+		curr = pd.read_csv(f_curr, sep='\t', header=0)
+		lang = pd.read_csv(f_lang, sep='\t', header=0) # skiprows=0, nrows=rows 
+
+		header = 'linguistic_versions'
+
+		df = pd.DataFrame()
+
+		# join dataset
+		merged_1 = pd.merge(curr, lang, on='id_wikidata', how='left')
+
+		merged_1.to_csv(f_temp, sep='\t', index=False)
+
+
+
+
+
 
 			
 # -----------------------------------
 # Start scripts
 
 
-update()
+# update()
+add_language_version()
 
 
 

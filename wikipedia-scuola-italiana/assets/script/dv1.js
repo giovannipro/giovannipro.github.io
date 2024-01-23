@@ -711,7 +711,7 @@ function dv1(year,the_subject,sort) {
 
 				// console.log(d.article,d.subject, d.size, d.avg_pv_prev, d.avg_pv_prev,d.avg_pv - d.avg_pv_prev)
 				let diff = d.avg_pv - d.avg_pv_prev
-				console.log(d.article,d.subject, d.avg_pv_prev, d.avg_pv, diff)
+				// console.log(d.article,d.subject, d.avg_pv_prev, d.avg_pv, diff)
 
 				if (d.avg_pv_prev !== "-"){
 					d.avg_pv_prev = +d.avg_pv_prev
