@@ -1352,46 +1352,49 @@ function dv1(year,the_subject,sort) {
 			    )
 			}
 
+		function to_log(){
+			update_scale("log")
+
+			scale_icon.style.background = "url(../../assets/img/scale_linear.svg) center center / 55% no-repeat"
+			scale = "log"
+
+			tootip_linear.style.display = 'none'
+			tootip_log.style.display = 'block'
+			// switch_scale.style.backgroundColor = "#dddddd"
+		}
+
+		function to_linear(){
+			update_scale("linear")
+			scale_icon.style.background = "url(../../assets/img/scale_log.svg) center center / 55% no-repeat"
+			scale = "linear"
+
+			tootip_log.style.display = 'none'
+			tootip_linear.style.display = 'block'
+			// switch_scale.style.backgroundColor = "white"
+		}
+
+		let scale = "linear"
 		const switch_scale = document.getElementById("scale_button")
 		const scale_icon = document.getElementById("scale_button_icon")
-
-		// const tooltips = document.getElementById("#scale_button_icon").getElementsByClassName("tooltips")[0]
 		const tootip_linear = document.getElementById("scale_tooltip_linear")
 		const tootip_log = document.getElementById("scale_tooltip_logarithmic")
 
-		let scale = "linear"
 		switch_scale.addEventListener('click', (event) => {
-
 			if (scale == "linear"){
-				update_scale("log")
-				scale_icon.style.background = "url(../../assets/img/scale_linear.svg) center center / 55% no-repeat"
-				scale = "log"
-
-				// tooltips.style.display = 'block'
-				tootip_linear.style.display = 'none'
-				tootip_log.style.display = 'block'
-				// switch_scale.style.backgroundColor = "#dddddd"
+				to_log()
 			}
 			else if (scale == "log") {
-				update_scale("linear")
-		    	scale_icon.style.background = "url(../../assets/img/scale_log.svg) center center / 55% no-repeat"
-		    	scale = "linear"
-
-		    	// tooltips.style.display = 'block'
-		    	tootip_log.style.display = 'none'
-		    	tootip_linear.style.display = 'block'
-				// switch_scale.style.backgroundColor = "white"
+				to_linear()
 		    }
-
 		})
 
 		document.onkeydown = function (e) {
 		    var key = e.key;
 		    if(key == 1) { // s
-				update_scale("linear")
+				to_linear()
 		    }
 		    else if (key == 2){
-		    	update_scale("log")
+		    	to_log()
 		    }
 		};
 	}
