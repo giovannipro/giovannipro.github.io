@@ -1284,8 +1284,8 @@ function dv1(year,the_subject,sort) {
 				// yAxisScale = d3.axisLeft(y);
 			}
 			else if (scale == "log"){
-				y = d3.scalePow().exponent(log_exponent)
-				// y = d3.scaleSymlog()
+				// y = d3.scalePow().exponent(log_exponent)
+				y = d3.scaleSymlog(10)
 					.domain([0,y_max+(y_max/100*10)]) 
 					.range([height-margin.top,0])
 
@@ -1351,6 +1351,39 @@ function dv1(year,the_subject,sort) {
 			    	.tickSize(-width-margin.left-margin.right-60)
 			    )
 			}
+
+		const switch_scale = document.getElementById("scale_button")
+		const scale_icon = document.getElementById("scale_button_icon")
+
+		// const tooltips = document.getElementById("#scale_button_icon").getElementsByClassName("tooltips")[0]
+		const tootip_linear = document.getElementById("scale_tooltip_linear")
+		const tootip_log = document.getElementById("scale_tooltip_logarithmic")
+
+		let scale = "linear"
+		switch_scale.addEventListener('click', (event) => {
+
+			if (scale == "linear"){
+				update_scale("log")
+				scale_icon.style.background = "url(../../assets/img/scale_linear.svg) center center / 55% no-repeat"
+				scale = "log"
+
+				// tooltips.style.display = 'block'
+				tootip_linear.style.display = 'none'
+				tootip_log.style.display = 'block'
+				// switch_scale.style.backgroundColor = "#dddddd"
+			}
+			else if (scale == "log") {
+				update_scale("linear")
+		    	scale_icon.style.background = "url(../../assets/img/scale_log.svg) center center / 55% no-repeat"
+		    	scale = "linear"
+
+		    	// tooltips.style.display = 'block'
+		    	tootip_log.style.display = 'none'
+		    	tootip_linear.style.display = 'block'
+				// switch_scale.style.backgroundColor = "white"
+		    }
+
+		})
 
 		document.onkeydown = function (e) {
 		    var key = e.key;
