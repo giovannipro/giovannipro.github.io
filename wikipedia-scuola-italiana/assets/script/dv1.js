@@ -7,6 +7,8 @@ const variation_line_opacity = 0.7;
 
 const stroke_dash = "3,3";
 
+const log_exponent = 0.5; 
+
 // let multiply = 1;
 let window_w = $(container).outerWidth();
 	window_h = $(container).outerHeight();
@@ -175,19 +177,6 @@ function dv1(year,the_subject,sort) {
 			// }
 		})
 		// console.log(filtered_data);
-		
-		// scale
-		let y_max = d3.max(filtered_data, function(d) { 
-			return +d.avg_pv;
-		})
-
-		let r_max = d3.max(filtered_data, function(d) { 
-			return Math.sqrt(+d.size/3.14);
-		})
-
-		let y = d3.scaleLinear()
-			.domain([0,y_max+(y_max/100*10)]) 
-			.range([height-margin.top,0])
 
 		if (sort == 1) {
 			max = total	
@@ -247,23 +236,36 @@ function dv1(year,the_subject,sort) {
 				return d.linguistic_versions;
 			})
 		}
-       	
-       	x = d3.scaleLinear()
-			.domain([min,max])
-			.range([0,width-100])
-		// console.log(min,max)
+
+		// scale
+		let y_max = d3.max(filtered_data, function(d) { 
+			return +d.avg_pv;
+		})
+
+		let r_max = d3.max(filtered_data, function(d) { 
+			return Math.sqrt(+d.size/3.14);
+		})
 
 		let r = d3.scaleLinear()
 			.range([0, 20])
 			.domain([0,r_max])
 
+		let x = d3.scaleLinear()
+			.domain([min,max])
+			.range([0,width-100])
+
+		// let y = d3.scalePow().exponent(log_exponent)  
+		let y = d3.scaleLinear() // scaleSymlog() > it works
+			.domain([0,y_max+(y_max/100*10)]) 
+			.range([height-margin.top,0])
+       	
 		// axis and grid
 		let grid = svg.append("g")
 			.attr("id","grid")
 			.attr("transform", "translate(-1," + margin.top*2 + ")")
 			.call(make_y_gridlines()
-          		.tickSize(-width-margin.left-margin.right-60)
-          	)
+				.tickSize(-width-margin.left-margin.right-60)
+			)
 
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
@@ -1269,6 +1271,96 @@ function dv1(year,the_subject,sort) {
 
 			sidebar(1,filtered_data,the_sort);
 		}
+
+		function update_scale(scale){
+			y = d3.scaleLinear()
+			// let yAxisScale = ''
+
+			if (scale == "linear"){
+				y = d3.scaleLinear()
+					.domain([0,y_max+(y_max/100*10)]) 
+					.range([height-margin.top,0])
+
+				// yAxisScale = d3.axisLeft(y);
+			}
+			else if (scale == "log"){
+				y = d3.scalePow().exponent(log_exponent)
+				// y = d3.scaleSymlog()
+					.domain([0,y_max+(y_max/100*10)]) 
+					.range([height-margin.top,0])
+
+				// yAxisScale = d3.axisLeft(y);
+			}
+
+
+			// articles
+			svg.selectAll(".article_circles")
+				.transition()
+				.duration(200)
+				.attr("transform",function (d,i) {
+					return "translate(" + 0 + "," + y(+d.avg_pv) + ")"
+				})	
+
+			// variation line and circle
+			svg.selectAll(".variation")
+				.transition()
+				.duration(200)
+				.attr("transform",function (d,i) {
+					if (d.avg_pv_prev !== "-"){
+						return "translate(" + 0 + "," + y(d.avg_pv_prev) + ")"
+					}
+					else {
+						return "translate(0,0)" 
+					}
+				})
+
+			svg.selectAll(".line_prev")
+				.transition()
+				.duration(200)
+				.attr("y2", function(d,i){
+					if (d.avg_pv_prev !== "-"){
+						return y(d.avg_pv)-y(d.avg_pv_prev)
+					}
+					else {
+						return 0
+					}
+				})
+
+			svg.selectAll(".circle_prev")
+				.transition()
+				.duration(200)
+				.attr("cy", function(d,i){
+					if (d.avg_pv_prev !== "-"){
+						return y(d.avg_pv)-y(d.avg_pv_prev)
+					}
+					else {
+						return 0
+					}
+				})
+
+			// y axis ticks text
+			svg.select("#yAxis")
+			    .transition()
+			    .duration(200)
+			    .call(d3.axisLeft(y)) // it works
+
+			d3.select('#grid')
+				.transition()
+			    .duration(200)
+			    .call(d3.axisLeft(y)
+			    	.tickSize(-width-margin.left-margin.right-60)
+			    )
+			}
+
+		document.onkeydown = function (e) {
+		    var key = e.key;
+		    if(key == 1) { // s
+				update_scale("linear")
+		    }
+		    else if (key == 2){
+		    	update_scale("log")
+		    }
+		};
 	}
 }
 
