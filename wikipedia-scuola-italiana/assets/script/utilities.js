@@ -3,6 +3,10 @@ let footer_it;
 let footer_en;
 let footer = document.getElementById('footer');
 
+function formatNumber(num) {
+	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+}
+
 function apply_color(subject){
 	let color;
 
@@ -442,10 +446,13 @@ function language() {
 			update_dv3_lang(lang)
 		}
 
+		if (path.indexOf('autori') == -1){
+			update_sidebar_text()
+		}
+
 		// update stuff
 		update_footer(lang)
 		changeTitle(lang)
-		update_sidebar_text()
 	}
 }
 
@@ -534,159 +541,13 @@ function changeTitle(lang) {
 	document.title = newTitle + ' | ' + base;
 }
 
-function update_sidebar_text(){
-	const sort_option = document.getElementById('sort_article');
-	const text_box = document.getElementById('sidebar_text');
-
-	sort = sort_option.options[sort_option.selectedIndex].text
-	text_box.innerHTML = sort
-	// console.log(sort, sort_option)
-}
-
-
-function sidebar(data,the_sort){
-	// console.log(data[0])
-	// console.log(the_sort)
-
-	const button_open = document.getElementById('sidebar_button_open');
-	const button_close = document.getElementById('sidebar_close_icon');
-	const the_sidebar = document.getElementById('sidebar');
-	const container = document.getElementById('sidebar_content');
-	
-	let output = ''
-	detail = ''
-	
-	container.innerHTML = ''
-
-	function load_sidebar(){
-		max = -Infinity;
-
-		output = ''
-		output += '<ul>'
-
-		update_sidebar_text()
-		
-		// get max	
-		data.forEach(function (d,i) {
-			if (the_sort == 1){
-				max = Math.max(...data.map(item => item.issues));
-				detail = d.issues
-			}
-			else if (the_sort == 2){
-				// max = Math.max(...data.map(item => item.issues));
-				detail = ''
-			}
-			else if (the_sort == 3){
-				max = Math.max(...data.map(item => item.references));
-				detail = d.references
-			}
-			else if (the_sort == 4){
-				max = Math.max(...data.map(item => item.notes));
-				detail = d.notes
-			}
-			else if (the_sort == 5){
-				max = Math.max(...data.map(item => item.images));
-				detail = d.images
-			}
-			else if (the_sort == 6){
-				max = Math.max(...data.map(item => item.linguistic_versions));
-				detail = d.linguistic_versions
-			}
-
-		})	
-		// console.log(max)			
-
-		// add item in the sidebar
-		data.forEach(function (d,i) {
-
-			if (the_sort == 1){
-				detail = d.issues
-			}
-			else if (the_sort == 2){
-				detail = ''
-			}
-			else if (the_sort == 3){
-				detail = d.references
-			}
-			else if (the_sort == 4){
-				detail = d.notes
-			}
-			else if (the_sort == 5){
-				detail = d.images
-			}
-			else if (the_sort == 6){
-				detail = d.linguistic_versions
-			}
-
-			if (max != 0) {
-				size = detail * 100 / max
-			}
-			else {
-				size = 0
-			}
-
-			output += '<li>'
-			output += '<div id="data">'
-			output += '<a href=" ' + wiki_link + d.article + '" target="_blank"><div class="article">' + d.article + '</div></a>'
-
-			if (isNaN(max) == false) {
-				output += '<div class="value">' + detail + '</div>'
-			}
-
-			output += '</div>'
-
-			if (the_sort != 2 || isNaN(max) == false){
-				output += '<div id="bar" style="width: ' + size + '%;"></div>'
-			}
-
-			output += '</li>'
-		})
-
-		output += '</ul>'
-
-		container.innerHTML = output
-	}
-	load_sidebar()
-
-	let open = false;
-	button_open.addEventListener('click', (event) => {
-
-		if (open == false){
-			the_sidebar.style.display = 'block'
-			open = true
-
-			button_close.style.display = 'block'
-			button_open.style.display = 'none'
-		}
-	})
-
-	button_close.addEventListener('click', (event) => {
-
-		if (open == true){
-			the_sidebar.style.display = 'none'
-			open = false
-
-			button_close.style.display = 'none'
-			button_open.style.display = 'block'
-		}
-	})
-	// console.log(open)
-
-}
-
-
 $(document).ready(function() {
 
 	mobile_menu();
 	mobile_filter();
 
 	language();
-	load_footer()
-		
-	// if (path.indexOf('autori') != -1){
-	// 	sidebar();
-	// }
-	
+	load_footer()	
 
 	// get_statistics();
 	

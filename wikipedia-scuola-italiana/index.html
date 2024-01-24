@@ -160,7 +160,7 @@
 						</div>
 						<div class="selector">
 							<p class="key noselect lang_switch" data-it="Ordina per" data-en="Sort by">Ordina per</p>
-							<select name="sort" id="sort" class="select value noselect">
+							<select name="sort" id="sort_article" class="select value noselect">
 								<option name="article" value="1" class="lang_switch" data-it="titolo" data-en="title">
 									titolo
 								</option>
@@ -182,12 +182,29 @@
 								<option name="images" value="7" class="lang_switch" data-it="numero di immagini" data-en="number of images">
 									numero di immagini
 								</option>
+								<option name="linguistic_version" value="8" class="lang_switch" data-it="numero di versioni linguistiche" data-en="number of linguistic versions">
+									numero di versioni linguistiche
+								</option>
 							</select>
 						</div>
 					</div>
 				</div>
 
-				<div id="dv1" class="dataviz"></div>
+				<div id="dv_box">
+					<div id="dv1" class="dataviz"></div>
+					<div id="sidebar_button_open">
+						<div id="sidebar_open_icon"></div>
+					</div>
+					
+					<div id="sidebar">
+						<div id="sidebar_button_close">
+							<div id="sidebar_text"></div>
+							<div id="sidebar_close_icon"></div>
+						</div>
+						<div id="sidebar_content"></div>
+					</div>
+				</div>
+
 			</section>
 			<section id="legend" class="container">
 				<div id="dv_infobox" class="row">
@@ -248,6 +265,7 @@
 		<script src="assets/lib/5.16.0.min.js"></script>
 		<script src="assets/lib/d3-tip.js"></script>
 		<script src="assets/script/utilities.js"></script>
+		<script src="../assets/script/sidebar.js"></script>
 		<script src="assets/script/dv1.js"></script>
 	</body>
 </html>

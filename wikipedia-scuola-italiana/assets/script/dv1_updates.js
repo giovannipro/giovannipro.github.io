@@ -87,7 +87,6 @@ function dv1(year,the_subject,sort) {
 	}
 
 	function loaded(data) {
-		// console.log(data[0].article,data[0].linguistic_versions)
 
 		// load data
 		let total = 0;
@@ -131,8 +130,6 @@ function dv1(year,the_subject,sort) {
 		filtered_data = filter_data.sort(function(a, b){
 			return d3.ascending(a.article, b.article);
 		})
-
-		sidebar(1,filtered_data,sort);
 	
 		filtered_data.forEach(function (d,i) {
 			total += 1
@@ -149,7 +146,6 @@ function dv1(year,the_subject,sort) {
 			d.issues_prev = +d.issues_prev
 			d.images_prev = +d.images_prev
 			d.incipit_prev = +d.incipit_prev
-
 			d.linguistic_versions = +d.linguistic_versions
 
 			if (d.avg_pv_prev !== "-"){
@@ -175,6 +171,8 @@ function dv1(year,the_subject,sort) {
 			// }
 		})
 		// console.log(filtered_data);
+
+		sidebar(1,filtered_data,1);
 		
 		// scale
 		let y_max = d3.max(filtered_data, function(d) { 
@@ -247,6 +245,7 @@ function dv1(year,the_subject,sort) {
 				return d.linguistic_versions;
 			})
 		}
+
        	
        	x = d3.scaleLinear()
 			.domain([min,max])
@@ -420,7 +419,7 @@ function dv1(year,the_subject,sort) {
 					return "translate(" + (x(d.images)+50) + ",0)";
 				}
 				else if (sort == 8) {
-					return "translate(" + (x(+d.linguistic_versions)+50) + ",0)";
+					return "translate(" + (x(d.linguistic_versions)+50) + ",0)";
 				}
 			})
 			.on("mouseover", tooltip.show) 
@@ -600,45 +599,25 @@ function dv1(year,the_subject,sort) {
 			.delay(improv_delay)
 			.attr("opacity",1)
 
-		// let improvement_debug = improvements_box.append("circle")
-		// 	.attr("cx",0)
-		// 	.attr("cy",0)
-		// 	.attr("r",30)
-  //           .attr("fill", "none")
-  //           .attr("stroke", function (d,i) {
-  //           	if (d.improvements > 0) {
-  //           		return improv_col
-  //           	}
-  //           	else {
-  //           		return "none"
-  //           	}
-  //           })
-
 		const duration = 0
 	    function handleMouseOver(){
-
-	    	// d3.select(this)
-	    	// 	.attr('class','selected')
 	
-			// hide circles
-			d3.selectAll(".article_circles,.line_prev,.circle_prev")
-				// .filter(function() {
-      			// 	return !this.classList.contains('selected')
-    			// })
-				.transition()
-				.duration(duration)
-				.attr("opacity",0.2)
+		// hide circles
+		d3.selectAll(".article_circles,.line_prev,.circle_prev")
+			.transition()
+			.duration(duration)
+			.attr("opacity",0.2)
 
-			// highlight
-			d3.select(this)
-				.transition()
-				.duration(duration)
-				.attr("opacity",1)
+		// highlight
+		d3.select(this)
+			.transition()
+			.duration(duration)
+			.attr("opacity",1)
 
-			d3.select(this.previousSibling).select(".circle_prev,.line_prev")
-				.transition()
-				.duration(duration)
-				.attr("opacity",1)
+		d3.select(this.previousSibling).select(".circle_prev,.line_prev")
+			.transition()
+			.duration(duration)
+			.attr("opacity",1)
 		}
 
 	    function handleMouseOut(){
@@ -673,10 +652,6 @@ function dv1(year,the_subject,sort) {
 		});
 
 		function update_subject(the_subject,the_sort){
-			console.log(the_subject,the_sort)
-
-			console.log(data[0].article,data[0].linguistic_versions)
-
 			d3.select("#articles").remove();
 
 			d3.selectAll("circle")
@@ -723,9 +698,7 @@ function dv1(year,the_subject,sort) {
 			filtered_data = filter_data.sort(function(a, b){
 				return d3.ascending(a.article, b.article);
 			})
-			
-			sidebar(1,filtered_data,the_sort);
-
+		
 			filtered_data.forEach(function (d,i) {
 				total += 1
 				d.article = d.article.replace(/_/g," ")
@@ -741,10 +714,9 @@ function dv1(year,the_subject,sort) {
 				d.issues_prev = +d.issues_prev
 				d.images_prev = +d.images_prev
 				d.incipit_prev = +d.incipit_prev
+				d.linguistic_versions = +d.linguistic_versions
 
 				d.avg_pv_prev = +d.avg_pv_prev
-
-				d.linguistic_versions = +d.linguistic_versions
 
 				// console.log(d.article,d.subject, d.size, d.avg_pv_prev, d.avg_pv_prev,d.avg_pv - d.avg_pv_prev)
 				let diff = d.avg_pv - d.avg_pv_prev
@@ -765,10 +737,6 @@ function dv1(year,the_subject,sort) {
 	        	if (d.incipit_size > d.incipit_prev) {
 	        		d.improvements += 1
 	        	}
-
-	        	// if (d.improvements > 0) {
-				// 	console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
-				// }
 			})
 
 			// scale
@@ -783,6 +751,10 @@ function dv1(year,the_subject,sort) {
 			if (the_sort == 1) {
 				max = total	
 				min = 0
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.article, +b.article);
+				// })
 			}
 			else if (the_sort == 2){
 				min = d3.max(filtered_data, function(d) { 
@@ -791,6 +763,10 @@ function dv1(year,the_subject,sort) {
 				max = d3.min(filtered_data, function(d) { 
 					return d.days;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.days, +b.days);
+				// })
 			}
 			else if (the_sort == 3){
 				min = d3.min(filtered_data, function(d) { 
@@ -799,6 +775,10 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.size;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.size, +b.size);
+				// })
 			}
 			else if (the_sort == 4){
 				min = d3.min(filtered_data, function(d) { 
@@ -807,6 +787,10 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.discussion_size;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.discussion_size, +b.discussion_size);
+				// })
 			}
 			else if (the_sort == 5){
 				min = d3.min(filtered_data, function(d) { 
@@ -815,12 +799,20 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.incipit_size;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.incipit_size, +b.incipit_size);
+				// })
 			}
 			else if (the_sort == 6){
 				min = 0;
 				max = d3.max(filtered_data, function(d) { 
 					return d.issues;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.issues, +b.issues);
+				// })
 			}
 			else if (the_sort == 7){
 				min = d3.min(filtered_data, function(d) { 
@@ -829,6 +821,10 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.images;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.images, +b.images);
+				// })
 			}
 			else if (the_sort == 8){
 				min = d3.min(filtered_data, function(d) { 
@@ -837,11 +833,22 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.linguistic_versions;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.linguistic_versions, +b.linguistic_versions);
+				// })
+			}	
+			else {
+				max = total	
+				min = 0
 			}
+
+			sidebar(1,filtered_data,the_sort);
 
 			x = d3.scaleLinear()
 				.domain([min,max])
 				.range([0,width-100])
+			console.log(the_sort,min,max)
 	       	
 			function make_y_gridlines() {		
 		    	return d3.axisLeft(y)
@@ -885,6 +892,7 @@ function dv1(year,the_subject,sort) {
 						return "translate(" + (x(i)+50) + "," + 0 + ")"
 					}
 					else if (the_sort == 2){ // "publication"
+						console.log(the_sort)
 						return "translate(" + (x(+d.days)+50) + "," + 0 + ")"
 					}
 					else if (the_sort == 3){ // "size"
@@ -902,12 +910,23 @@ function dv1(year,the_subject,sort) {
 					else if (the_sort == 7){ // "images"
 						return "translate(" + (x(+d.images)+50) + "," + 0 + ")"
 					}
-					else if (the_sort == 8){ 
+					else if (the_sort == 8){
 						return "translate(" + (x(+d.linguistic_versions)+50) + "," + 0 + ")"
 					}
 				})
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
+
+			let test = article.append("g")
+				.append("text")
+				.attr("transform", function(d,i){
+					if (the_sort == 1) { // "article"
+						return "translate(" + (x(i)+50) + "," + 0 + ")"
+					}
+				})
+				.text(function (d,i){
+					return (x(i)+50) //(x(i)+50)
+				})
 
 			// variations
 			let variation = article.append("g")
@@ -1082,27 +1101,12 @@ function dv1(year,the_subject,sort) {
 				.transition()
 				.delay(improv_delay)
 				.attr("opacity",1)
-
-			// let improvement_debug = improvements_box.append("circle")
-			// 	.attr("cx",0)
-			// 	.attr("cy",0)
-			// 	.attr("r",30)
-	  //           .attr("fill", "none")
-	  //           .attr("stroke", function (d,i) {
-	  //           	if (d.improvements > 0) {
-	  //           		return improv_col
-	  //           	}
-	  //           	else {
-	  //           		return "none"
-	  //           	}
-	  //           })
 		}
 
 		function update_sort(the_subject,the_sort){
-			// console.log(the_subject,the_sort)
-			// console.log(data[0].article,data[0].linguistic_versions)
-
+			// console.log(the_subject)
 			//load data
+
 			total = 0;
 
 			let subject_articles = [];
@@ -1150,13 +1154,11 @@ function dv1(year,the_subject,sort) {
 				d.avg_pv = +d.avg_pv
 				d.avg_pv_prev = +d.avg_pv_prev
 				d.issues = +d.issues
-
-				d.linguistic_versions = +d.linguistic_versions
 				// console.log(d.article,d.issues)
 			})
-
-			sidebar(1,filtered_data,the_sort);
 			
+			sidebar(1,filtered_data,the_sort);
+
 			let max;
 			let min;
 			let sort = [
@@ -1172,14 +1174,22 @@ function dv1(year,the_subject,sort) {
 			if (the_sort == 1) {
 				max = total	
 				min = 0
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.article, +b.article);
+				// })
 			}
 			else if (the_sort == 2){
-				max = d3.min(filtered_data, function(d) { 
-					return d.days;
-				})
 				min = d3.max(filtered_data, function(d) { 
 					return d.days;
 				})
+				max = d3.min(filtered_data, function(d) { 
+					return d.days;
+				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.days, +b.days);
+				// })
 			}
 			else if (the_sort == 3){
 				min = d3.min(filtered_data, function(d) { 
@@ -1188,6 +1198,10 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.size;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.size, +b.size);
+				// })
 			}
 			else if (the_sort == 4){
 				min = d3.min(filtered_data, function(d) { 
@@ -1196,6 +1210,10 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.discussion_size;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.discussion_size, +b.discussion_size);
+				// })
 			}
 			else if (the_sort == 5){
 				min = d3.min(filtered_data, function(d) { 
@@ -1204,12 +1222,20 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.incipit_size;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.incipit_size, +b.incipit_size);
+				// })
 			}
 			else if (the_sort == 6){
 				min = 0;
 				max = d3.max(filtered_data, function(d) { 
 					return d.issues;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.issues, +b.issues);
+				// })
 			}
 			else if (the_sort == 7){
 				min = d3.min(filtered_data, function(d) { 
@@ -1218,6 +1244,10 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.images;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.images, +b.images);
+				// })
 			}
 			else if (the_sort == 8){
 				min = d3.min(filtered_data, function(d) { 
@@ -1226,7 +1256,13 @@ function dv1(year,the_subject,sort) {
 				max = d3.max(filtered_data, function(d) { 
 					return d.linguistic_versions;
 				})
+
+				// filtered_data = filtered_data.sort(function(a, b){
+				// 	return d3.descending(+a.linguistic_versions, +b.linguistic_versions);
+				// })
 			}
+
+			// console.log(filtered_data,the_sort)
 
 			x = d3.scaleLinear()
 				.domain([min,max])
@@ -1266,8 +1302,6 @@ function dv1(year,the_subject,sort) {
 						return "translate(" + (x(d.linguistic_versions)+50) + "," + 0 + ")"
 					}
 				})
-
-			sidebar(1,filtered_data,the_sort);
 		}
 	}
 }

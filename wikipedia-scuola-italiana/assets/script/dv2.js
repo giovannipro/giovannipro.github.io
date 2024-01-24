@@ -61,12 +61,9 @@ function getRandomIntInclusive(min, max) {
   	return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-
 function dv2(year,the_subject,sort) {
 	d3.tsv("../assets/data/voci_" + year + ".tsv")
 		.then(loaded)
-		// .then(() => update_dv2_lang(lang));
-		// .then(sidebar);
 
 	lang_vers_sort = document.getElementById("sort_article").options[5]
 	if (year != 2022){
@@ -127,7 +124,7 @@ function dv2(year,the_subject,sort) {
 			return y < filter_item 
 		})
 		
-		sidebar(filtered_data,1);
+		sidebar(2,filtered_data,sort);
 
 		filtered_data.forEach(function (d,i) {
 			// console.log(d)
@@ -137,6 +134,7 @@ function dv2(year,the_subject,sort) {
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
 			d.discussion_size = +d.discussion_size
+			d.linguistic_versions = +d.linguistic_versions
 
 			if (d.references !== "-"){
 				d.references = +d.references
@@ -642,8 +640,6 @@ function dv2(year,the_subject,sort) {
 				return y < filter_item 
 			})
 
-			sidebar(filtered_data,the_sort);
-
 			if (the_sort == 1){
 				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.issues, +b.issues);
@@ -674,7 +670,7 @@ function dv2(year,the_subject,sort) {
 					return d3.descending(+a.linguistic_versions, +b.linguistic_versions);
 				})
 			}
-		
+
 			filtered_data.forEach(function (d,i) {
 				total += 1
 				d.average_daily_visit = +d.average_daily_visit
@@ -728,13 +724,8 @@ function dv2(year,the_subject,sort) {
 			})
 			// console.log(filtered_data);
 
-			// scale
-			// issues_max = 10
-			// issues_max = d3.max(filtered_data, function(d) { 
-			// 	return d.issues
-			// })
+			sidebar(2,filtered_data,the_sort);
 
-			// max_features = 380
 			max_features = d3.max(filtered_data, function(d) {
 				return +d.features
 			})
@@ -1097,7 +1088,7 @@ function dv2(year,the_subject,sort) {
 				})
 			}
 
-			sidebar(filtered_data,the_sort);
+			sidebar(2,filtered_data,the_sort);
 
 			filtered_data.forEach(function(d,i){
 				new_id = i;
@@ -1115,29 +1106,6 @@ function dv2(year,the_subject,sort) {
 		}
 	}
 }
-
-// function update_dv2_lang(lang) {
-
-// 	// let tooltip = document.getElementById('tooltip_dv2')
-// 	let text = document.querySelectorAll('#tooltip_dv2 .lang_switch'); //  
-// 	console.log(text)
-
-// 	text.forEach(function(content) {
-// 		let license_it = content.dataset.it
-// 		let license_en = content.dataset.en
-
-// 		if (lang == 'it'){
-// 			content.textContent = license_it
-// 		}
-// 		else if (lang == 'en') {
-// 			content.textContent = license_en
-// 		}
-// 	});
-// }
-
-// function sidebar(data) {
-// 	console.log(data)
-// }
 
 $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17);
