@@ -138,7 +138,6 @@ function sidebar(dv,data,the_sort){
 					detail = formatNumber(d.linguistic_versions) //.toLocaleString()
 					num = d.linguistic_versions
 				}
-				console.log(detail)
 			}
 			else if (dv == 2) {
 				if (the_sort == 1){
