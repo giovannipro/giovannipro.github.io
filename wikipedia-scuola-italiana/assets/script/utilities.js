@@ -458,13 +458,24 @@ function language() {
 }
 
 function load_footer(){
-	let url = 'assets/content/footer.html'
-	
+
 	let params = new URLSearchParams(window.location.search);
 	if (params.has('lang') == true) {
 		lang = params.get('lang')
 	}
 
+	let path = window.location.pathname
+	let the_path = ""
+	if (path.indexOf("avvisi") == -1 && path.indexOf("autori") == -1){ 
+		the_path = "";
+	}
+	else {
+		the_path = "../";
+	}
+	let footer_link = 'assets/content/footer.html'
+	let url = the_path + footer_link;
+	// console.log(url)
+	
 	fetch(url)
 	    .then(response => {
 	    	if (!response.ok) {
