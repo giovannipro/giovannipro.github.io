@@ -675,9 +675,8 @@ function dv1(year,the_subject,sort) {
 		});
 
 		function update_subject(the_subject,the_sort){
-			console.log(the_subject,the_sort)
-
-			console.log(data[0].article,data[0].linguistic_versions)
+			// console.log(the_subject,the_sort)
+			// console.log(data[0].article,data[0].linguistic_versions)
 
 			d3.select("#articles").remove();
 
@@ -1360,7 +1359,6 @@ function dv1(year,the_subject,sort) {
 
 			tootip_linear.style.display = 'none'
 			tootip_log.style.display = 'block'
-			// switch_scale.style.backgroundColor = "#dddddd"
 		}
 
 		function to_linear(){
@@ -1370,7 +1368,6 @@ function dv1(year,the_subject,sort) {
 
 			tootip_log.style.display = 'none'
 			tootip_linear.style.display = 'block'
-			// switch_scale.style.backgroundColor = "white"
 		}
 
 		let scale = "linear"
