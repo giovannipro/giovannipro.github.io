@@ -1355,7 +1355,8 @@ function dv1(year,the_subject,sort) {
 		function to_log(){
 			update_scale("log")
 
-			scale_icon.style.background = "url(../../assets/img/scale_linear.svg) center center / 55% no-repeat"
+			the_path = load_path() 
+			scale_icon.style.background = "url(" + the_path + "assets/img/scale_linear.svg) center center / 55% no-repeat"
 			scale = "log"
 
 			tootip_linear.style.display = 'none'
@@ -1364,7 +1365,9 @@ function dv1(year,the_subject,sort) {
 
 		function to_linear(){
 			update_scale("linear")
-			scale_icon.style.background = "url(../../assets/img/scale_log.svg) center center / 55% no-repeat"
+
+			the_path = load_path() 
+			scale_icon.style.background = "url(" + the_path + "assets/img/scale_log.svg) center center / 55% no-repeat"
 			scale = "linear"
 
 			tootip_log.style.display = 'none'
