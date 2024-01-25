@@ -355,6 +355,7 @@ function language() {
 	const url = new URL(window.location.href);
 	const base_url = location.protocol + '//' + location.host + location.pathname
 	let params = new URLSearchParams(window.location.search);
+	console.log(base_url)
 
 	function language_onload() {
 		if (params.has('lang') == true) {

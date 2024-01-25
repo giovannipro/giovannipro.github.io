@@ -19,7 +19,7 @@
 }
 
 .language_icon {
-	background: url(../../assets/img/language.svg) center center / 55% no-repeat;
+	background: url(../img/language.svg) center center / 55% no-repeat;
 	width: 25px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 #sidebar_close_icon {
-	background: url(../../assets/img/close-menu.svg) center center / 55% no-repeat;
+	background: url(../img/close-menu.svg) center center / 55% no-repeat;
 	width: 2.5rem;
 	height: 2.5rem;
 	padding: 0.3rem;
@@ -114,7 +114,7 @@
 }
 
 #sidebar_open_icon {
-	background: url(../../assets/img/list.svg) center center / 55% no-repeat;
+	background: url(../img/list.svg) center center / 55% no-repeat;
 	width: 40px;
 	height: 40px;
 }
@@ -210,7 +210,7 @@
 }
 
 #scale_button_icon {
-	background: url(../../assets/img/scale_log.svg) center center / 55% no-repeat;
+	background: url(../img/scale_log.svg) center center / 55% no-repeat;
 	width: 40px;
 	height: 40px;
 }
