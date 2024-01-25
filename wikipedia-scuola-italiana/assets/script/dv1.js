@@ -677,7 +677,8 @@ function dv1(year,the_subject,sort) {
 		function update_subject(the_subject,the_sort){
 			// console.log(the_subject,the_sort)
 			// console.log(data[0].article,data[0].linguistic_versions)
-
+			to_linear()
+			
 			d3.select("#articles").remove();
 
 			d3.selectAll("circle")
