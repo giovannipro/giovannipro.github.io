@@ -355,7 +355,7 @@ function language() {
 	const url = new URL(window.location.href);
 	const base_url = location.protocol + '//' + location.host + location.pathname
 	let params = new URLSearchParams(window.location.search);
-	console.log(base_url)
+	// console.log(base_url)
 
 	function language_onload() {
 		if (params.has('lang') == true) {
@@ -458,7 +458,7 @@ function language() {
 }
 
 function load_footer(){
-	let url = '../assets/content/footer.html'
+	let url = 'assets/content/footer.html'
 	
 	let params = new URLSearchParams(window.location.search);
 	if (params.has('lang') == true) {
