@@ -403,7 +403,7 @@ function dv2(year,the_subject,sort) {
 		let article_circle = article.append("circle")
 			.attr("class","article_c")
 			.attr("cx", article_width/2)
-			.attr("cy", height/2 - 30) // -10
+			.attr("cy", height/2 - (height*0.04)) // -10
 			.attr("r", function(d) {
 				size = r_size(d.size)
 				return size 
@@ -417,7 +417,8 @@ function dv2(year,the_subject,sort) {
 		let article_incipit = article.append("circle")
 			.attr("class","incipit_c")
 			.attr("cx", article_width/2)
-			.attr("cy", height/2 - 30) // -10
+			// .attr("cy", height/2 - 30) // -10
+			.attr("cy", height/2 - (height*0.04))
 			.attr("r", function(d) {
 				incipit = r_size(d.incipit_size)
 				// console.log(d.article, d.size, d.incipit_size)
@@ -821,7 +822,8 @@ function dv2(year,the_subject,sort) {
 
 			let article_circle = article.append("circle")
 				.attr("cx", article_width/2)
-				.attr("cy", height/2 - 30) // -10
+				// .attr("cy", height/2 - 30) // -10
+				.attr("cy", height/2 - (height*0.04))
 				.attr("r", function(d) {
 					size = r_size(d.size)
 					return size 
@@ -835,6 +837,7 @@ function dv2(year,the_subject,sort) {
 			// incipit
 			let article_incipit = article.append("circle")
 				.attr("cx", article_width/2)
+				// .attr("cy", height/2 - (height*0.04))
 				.attr("cy", height/2 - 30) // -10
 				.attr("r", function(d) {
 					incipit = r_size(d.incipit_size)
