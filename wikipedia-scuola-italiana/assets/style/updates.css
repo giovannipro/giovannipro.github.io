@@ -86,7 +86,9 @@
 	height: 65px;
 	background-color: white;
 	cursor: pointer;
-/*	position: relative;*/
+	position: sticky;
+	top: 0rem;
+	border-bottom: 1px solid #d6d5d5;
 }
 
 #sidebar_text {
@@ -141,6 +143,15 @@
 	border-top: 1px solid #d6d5d5;
 	padding: 0.5rem 1rem 0.75rem;
 }
+
+#sidebar_content li:first-child{
+	border: none;
+}
+
+#sidebar_content li:nth-child(even){
+	background-color: #efefef;
+}
+
 
 #sidebar #data {
 	display: flex;
