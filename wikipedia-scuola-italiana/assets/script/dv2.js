@@ -32,7 +32,7 @@ let margin = {
 		top: 10, 
 		left: 40-reduction, 
 		bottom: 20, 
-		right: 10-reduction
+		right: 25-reduction
 	},
 
 	width = window_w - (margin.right + margin.right),

@@ -172,8 +172,7 @@ function sidebar(dv,data,the_sort){
 					num = d.size
 				}
 			}
-
-			console.log(the_sort)
+			// console.log(the_sort)
 
 			if (max != 0) {
 				size = num * 100 / max
