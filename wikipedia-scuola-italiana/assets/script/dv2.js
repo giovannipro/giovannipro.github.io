@@ -14,6 +14,8 @@ let c_issues = '#EC4C4E',
 	c_days = '#9e9e9e',
 	c_line = '#9E9E9E';
 
+
+
 const stroke_dash = "2,2"
 
 let window_w = $(container).outerWidth();
@@ -26,7 +28,13 @@ else {
 	reduction = 0;
 }
 
-let margin = {top: 40, left: 40-reduction, bottom: 20, right: 40-reduction},
+let margin = {
+		top: 10, 
+		left: 40-reduction, 
+		bottom: 20, 
+		right: 10-reduction
+	},
+
 	width = window_w - (margin.right + margin.right),
 	height = window_h - (margin.top + margin.bottom);
 
@@ -36,10 +44,11 @@ let svg = d3.select(container)
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
 
-const issue_height = height/2.3;
-const features_height = height/2.3;
-
 const ticksAmount = 10;
+
+const issue_height = height/2.4;
+const features_height = height/2.4;
+const circle_size = 1.9;
 
 function get_year(){
 	$("#year").change(function() {
@@ -137,6 +146,7 @@ function dv2(year,the_subject,sort) {
 			d.size = +d.size
 			d.discussion_size = +d.discussion_size
 			d.linguistic_versions = +d.linguistic_versions
+			d.incipit_size = +d.incipit_size
 
 			if (d.references !== "-"){
 				d.references = +d.references
@@ -379,13 +389,21 @@ function dv2(year,the_subject,sort) {
 		// article circle
 		let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
 
+
+		// if ( (article_width/2 * circle_size) > 40){
+		// 	console.log(article_width)
+		// 	article_width = 40
+		// 	console.log(article_width/2 * circle_size)
+		// }
+
 		let r_size = d3.scaleLinear()
 			.domain([0, max_size])
-			.range([1,article_width/2])
+			.range([1,article_width/2 * circle_size])
 
 		let article_circle = article.append("circle")
+			.attr("class","article_c")
 			.attr("cx", article_width/2)
-			.attr("cy", height/2 - 20) // -10
+			.attr("cy", height/2 - 30) // -10
 			.attr("r", function(d) {
 				size = r_size(d.size)
 				return size 
@@ -394,26 +412,25 @@ function dv2(year,the_subject,sort) {
 				return apply_color(d.subject)
 			})
 			.style("opacity",0.5)
-			.attr("class","circle_article")
 
 		// incipit
 		let article_incipit = article.append("circle")
+			.attr("class","incipit_c")
 			.attr("cx", article_width/2)
-			.attr("cy", height/2 - 20) // -10
+			.attr("cy", height/2 - 30) // -10
 			.attr("r", function(d) {
-				incipit = r_size(+d.incipit_size)
-				console.log(d.article, +d.size, +d.incipit_size)
-
+				incipit = r_size(d.incipit_size)
+				// console.log(d.article, d.size, d.incipit_size)
 				return incipit 
 			})
 			.style("fill", function(d,i) {
 				return apply_color(d.subject)
 			})
 			.style("opacity",0.5)
-			.attr("class","circle_article")
 
 		//issues
 		let issues = article.append("rect")
+			.attr("class","issue_b")
 			.attr("x",0)
 			.attr("y",y_issues(issues_max))
 			.attr("height",0)
@@ -795,11 +812,11 @@ function dv2(year,the_subject,sort) {
 
 			let r_size = d3.scaleLinear()
 				.domain([0, max_size])
-				.range([1,article_width/2])
+				.range([1,article_width/2 * circle_size]) // circle_size
 
 			let article_circle = article.append("circle")
 				.attr("cx", article_width/2)
-				.attr("cy", height/2 - 20) // -10
+				.attr("cy", height/2 - 30) // -10
 				.attr("r", function(d) {
 					size = r_size(d.size)
 					return size 
@@ -813,10 +830,10 @@ function dv2(year,the_subject,sort) {
 			// incipit
 			let article_incipit = article.append("circle")
 				.attr("cx", article_width/2)
-				.attr("cy", height/2 - 20) // -10
+				.attr("cy", height/2 - 30) // -10
 				.attr("r", function(d) {
-					incipit = r_size(+d.incipit_size)
-					console.log(d.article, +d.size, +d.incipit_size)
+					incipit = r_size(d.incipit_size)
+					// console.log(d.article, +d.size, d.incipit_size)
 
 					return incipit 
 				})
