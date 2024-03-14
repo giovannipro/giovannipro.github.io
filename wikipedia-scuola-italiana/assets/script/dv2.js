@@ -48,7 +48,7 @@ const ticksAmount = 10;
 
 const issue_height = height/2.4;
 const features_height = height/2.4;
-const circle_size = 1.9;
+const circle_size = 2;
 
 function get_year(){
 	$("#year").change(function() {
@@ -217,7 +217,7 @@ function dv2(year,the_subject,sort) {
 
 		let x = d3.scaleLinear()
 			.domain([0,filtered_data.length]) 
-			.range([0,width-(margin.left*2)])
+			.range([0,width-(margin.left*1.2)])
 
 		let y_issues = d3.scaleLinear()
 			.domain([0,issues_max]) 
@@ -293,7 +293,7 @@ function dv2(year,the_subject,sort) {
 		// plot data
 		let plot = svg.append("g")
 			.attr("id", "d3_plot")
-			.attr("transform", "translate(" + (margin.left*2) + "," + margin.top + ")");
+			.attr("transform", "translate(" + 50 /*(margin.left*2)*/ + "," + margin.top + ")");
 
 		// tooltip
 		let tooltip = d3.tip()
@@ -388,12 +388,12 @@ function dv2(year,the_subject,sort) {
 
 		// article circle
 		let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
-
-
-		// if ( (article_width/2 * circle_size) > 40){
-		// 	console.log(article_width)
+		
+		// if ( (article_width) > 40){
 		// 	article_width = 40
-		// 	console.log(article_width/2 * circle_size)
+		// // 	console.log(article_width)
+		// // 	article_width = 40
+		// // 	console.log(article_width/2 * circle_size)
 		// }
 
 		let r_size = d3.scaleLinear()
