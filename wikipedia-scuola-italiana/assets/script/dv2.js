@@ -388,6 +388,13 @@ function dv2(year,the_subject,sort) {
 
 		// article circle
 		let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
+		// console.log(article_width)
+
+		let max_range = article_width/2 * circle_size
+
+		if (article_width > 100){
+			max_range = article_width / 2
+		}
 
 		// if ( (article_width) > 40){
 		// 	article_width = 40
@@ -398,7 +405,7 @@ function dv2(year,the_subject,sort) {
 
 		let r_size = d3.scaleLinear()
 			.domain([0, max_size])
-			.range([1,article_width/2 * circle_size])
+			.range([1,max_range])
 
 		let article_circle = article.append("circle")
 			.attr("class","article_c")
@@ -830,10 +837,17 @@ function dv2(year,the_subject,sort) {
 
 			// article circle
 			let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
+			// console.log(article_width)
+
+			let max_range = article_width/2 * circle_size
+
+			if (article_width > 100){
+				max_range = article_width / 2
+			}
 
 			let r_size = d3.scaleLinear()
 				.domain([0, max_size])
-				.range([1,article_width/2 * circle_size]) // circle_size
+				.range([1,max_range])
 
 			let article_circle = article.append("circle")
 				.attr("cx", article_width/2)
