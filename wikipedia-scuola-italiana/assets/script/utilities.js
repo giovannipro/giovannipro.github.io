@@ -479,7 +479,7 @@ function load_footer(){
 	let the_path = load_path()
 	let footer_link = 'assets/content/footer.html'
 	let url = the_path + footer_link;
-	console.log(url)
+	// console.log(url)
 	
 	fetch(url)
 	    .then(response => {

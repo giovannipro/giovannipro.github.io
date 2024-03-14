@@ -36,8 +36,8 @@ let svg = d3.select(container)
 	.attr("height",height + (margin.top + margin.bottom))
 	.attr("id", "svg")
 
-const issue_height = height/2.1;
-const features_height = height/2.1;
+const issue_height = height/2.3;
+const features_height = height/2.3;
 
 const ticksAmount = 10;
 
@@ -84,9 +84,7 @@ function dv2(year,the_subject,sort) {
 	}	
 
 	function loaded(data) {
-		// console.log(data)
 
-		// load data
 		let total = 0;
 		let subject_articles = [];
 		let filtered_data;
@@ -94,7 +92,6 @@ function dv2(year,the_subject,sort) {
 		let subject_group = d3.nest()
 			.key(d => d.subject)
 			.entries(data)
-		// console.log(subject_group)
 	
 		for (const [d,c] of Object.entries(subject_group)) {
 
@@ -196,6 +193,15 @@ function dv2(year,the_subject,sort) {
 		let max_features = d3.max(filtered_data, function(d) {
 				return +d.features
 			})
+
+		// min and max size
+		min_size = d3.min(filtered_data, function(d) { 
+			return d.size;
+		})
+		max_size = d3.max(filtered_data, function(d) { 
+			return d.size;
+		})
+		// console.log(min_size,max_size)
 
 		let my_max_features = max_features;
 
@@ -373,14 +379,38 @@ function dv2(year,the_subject,sort) {
 		// article circle
 		let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
 
+		let r_size = d3.scaleLinear()
+			.domain([0, max_size])
+			.range([1,article_width/2])
+
 		let article_circle = article.append("circle")
 			.attr("cx", article_width/2)
-			.attr("cy", -10)
-			.attr("r", 5)
+			.attr("cy", height/2 - 20) // -10
+			.attr("r", function(d) {
+				size = r_size(d.size)
+				return size 
+			})
 			.style("fill", function(d,i) {
 				return apply_color(d.subject)
 			})
 			.style("opacity",0.5)
+			.attr("class","circle_article")
+
+		// incipit
+		let article_incipit = article.append("circle")
+			.attr("cx", article_width/2)
+			.attr("cy", height/2 - 20) // -10
+			.attr("r", function(d) {
+				incipit = r_size(+d.incipit_size)
+				console.log(d.article, +d.size, +d.incipit_size)
+
+				return incipit 
+			})
+			.style("fill", function(d,i) {
+				return apply_color(d.subject)
+			})
+			.style("opacity",0.5)
+			.attr("class","circle_article")
 
 		//issues
 		let issues = article.append("rect")
@@ -411,30 +441,6 @@ function dv2(year,the_subject,sort) {
 			.attr("height",5)
 			.attr("y", (d, i) => y_issues (i) - 2)
 			.attr("x", 0)
-
-
-		// test issues in rectangles
-		// let issues_test = article.selectAll("rect")
-		// 	.enter()
-		// 	.append("rect")
-		// 	.attr("width",article_width)
-		// 	.attr("fill","blue")
-		// 	.attr("height", function(d){
-		// 		return d*10
-		// 	})
-
-		// console.log(d.issues)
-
-		// let issues_test = article
-		// 	// .selectAll("rect")
-		// 	// .data(filtered_data)
-		// 	// .enter()
-		// 	.append("rect")
-		// 	.attr("fill","blue")
-		// 	.attr("width",article_width)
-		// 	.attr("height", d => d.issues * 10)
-		// 	.attr("y", (d, i) => i * 1)
-		// 	.attr("x", 0)
 
 		// features
 		let features = article.append("g")
@@ -755,6 +761,14 @@ function dv2(year,the_subject,sort) {
 				.domain([my_max_features,0]) 
 				.range([features_height,0])
 
+			// min and max size
+			min_size = d3.min(filtered_data, function(d) { 
+				return d.size;
+			})
+			max_size = d3.max(filtered_data, function(d) { 
+				return d.size;
+			})
+
 			// plot data
 			let article = plot.append("g")	
 				.attr("id","articles")
@@ -777,16 +791,40 @@ function dv2(year,the_subject,sort) {
 				.on("mouseout", tooltip.hide)
 
 			// article circle
-			let article_width = (width/total)-(150/total)
+			let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
+
+			let r_size = d3.scaleLinear()
+				.domain([0, max_size])
+				.range([1,article_width/2])
 
 			let article_circle = article.append("circle")
 				.attr("cx", article_width/2)
-				.attr("cy", -10)
-				.attr("r", 5)
+				.attr("cy", height/2 - 20) // -10
+				.attr("r", function(d) {
+					size = r_size(d.size)
+					return size 
+				})
 				.style("fill", function(d,i) {
 					return apply_color(d.subject)
 				})
 				.style("opacity",0.5)
+				.attr("class","circle_article")
+
+			// incipit
+			let article_incipit = article.append("circle")
+				.attr("cx", article_width/2)
+				.attr("cy", height/2 - 20) // -10
+				.attr("r", function(d) {
+					incipit = r_size(+d.incipit_size)
+					console.log(d.article, +d.size, +d.incipit_size)
+
+					return incipit 
+				})
+				.style("fill", function(d,i) {
+					return apply_color(d.subject)
+				})
+				.style("opacity",0.5)
+				.attr("class","circle_article")
 
 			//issues
 			let issues = article.append("rect")
