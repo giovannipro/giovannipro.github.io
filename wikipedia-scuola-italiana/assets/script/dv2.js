@@ -394,7 +394,7 @@ function dv2(year,the_subject,sort) {
 		if (article_width > 50){
 			max_range = article_width / 2 * 1
 		}
-		console.log(article_width,max_range)
+		// console.log(article_width,max_range)
 
 		// if ( (article_width) > 40){
 		// 	article_width = 40
@@ -844,7 +844,7 @@ function dv2(year,the_subject,sort) {
 			if (article_width > 50){
 				max_range = article_width / 2 * 1
 			}
-			console.log(article_width,max_range)
+			// console.log(article_width,max_range)
 
 			let r_size = d3.scaleLinear()
 				.domain([0, max_size])
