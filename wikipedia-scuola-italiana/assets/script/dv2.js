@@ -388,7 +388,7 @@ function dv2(year,the_subject,sort) {
 
 		// article circle
 		let article_width = ((width-margin.left*2) - (h_space*(total-1))) / total
-		
+
 		// if ( (article_width) > 40){
 		// 	article_width = 40
 		// // 	console.log(article_width)
@@ -696,6 +696,11 @@ function dv2(year,the_subject,sort) {
 			else if (the_sort == 6){
 				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.linguistic_versions, +b.linguistic_versions);
+				})
+			}
+			else if (the_sort == 7){
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.size, +b.size);
 				})
 			}
 
@@ -1145,6 +1150,11 @@ function dv2(year,the_subject,sort) {
 			else if (new_sort == 6){
 				filtered_data = filtered_data.sort(function(a, b){
 					return d3.descending(+a.linguistic_versions, +b.linguistic_versions);
+				})
+			}
+			else if (the_sort == 7){
+				filtered_data = filtered_data.sort(function(a, b){
+					return d3.descending(+a.size, +b.size);
 				})
 			}
 

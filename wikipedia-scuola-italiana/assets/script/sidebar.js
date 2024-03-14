@@ -99,6 +99,9 @@ function sidebar(dv,data,the_sort){
 			else if (the_sort == 6){
 				max = Math.max(...data.map(item => item.linguistic_versions));
 			}
+			else if (the_sort == 7){
+				max = Math.max(...data.map(item => item.size));
+			}
 		}
 		// console.log(max,sort)		
 
@@ -164,7 +167,13 @@ function sidebar(dv,data,the_sort){
 					detail = formatNumber(d.linguistic_versions) //.toLocaleString()
 					num = d.linguistic_versions
 				}
+				else if (the_sort == 7){
+					detail = formatNumber(d.size) //.toLocaleString()
+					num = d.size
+				}
 			}
+
+			console.log(the_sort)
 
 			if (max != 0) {
 				size = num * 100 / max
