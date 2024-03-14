@@ -62,6 +62,11 @@ function getRandomIntInclusive(min, max) {
 }
 
 function dv2(year,the_subject,sort) {
+	
+	if (lang == undefined){
+		lang = 'it'
+	}
+
 	d3.tsv("../assets/data/voci_" + year + ".tsv")
 		.then(loaded)
 

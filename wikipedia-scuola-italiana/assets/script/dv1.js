@@ -70,6 +70,11 @@ let improv_col = "black"; //"#1ba51b";
 let improv_delay = 1800;
 
 function dv1(year,the_subject,sort) {
+
+	if (lang == undefined){
+		lang = 'it'
+	}
+
 	d3.tsv("assets/data/voci_" + year + ".tsv")
 		.then(loaded)
 		.then(() => update_dv1_lang(lang));
