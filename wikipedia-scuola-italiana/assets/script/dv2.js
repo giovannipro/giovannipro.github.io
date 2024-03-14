@@ -417,7 +417,6 @@ function dv2(year,the_subject,sort) {
 		let article_incipit = article.append("circle")
 			.attr("class","incipit_c")
 			.attr("cx", article_width/2)
-			// .attr("cy", height/2 - 30) // -10
 			.attr("cy", height/2 - (height*0.04))
 			.attr("r", function(d) {
 				incipit = r_size(d.incipit_size)
@@ -428,6 +427,22 @@ function dv2(year,the_subject,sort) {
 				return apply_color(d.subject)
 			})
 			.style("opacity",0.5)
+
+		// discussion
+		let article_discussion = article.append("circle")
+			.attr("class","discussion_c")
+			.attr("cx", article_width/2)
+			.attr("cy", height/2 - (height*0.04))
+			.attr("r", function(d) {
+				discussion = r_size(d.discussion_size)
+				return discussion 
+			})
+			.style("opacity",0.9)
+			.attr("stroke", function(d,i){
+				return apply_color(d.subject)
+			})
+			.attr("fill","transparent")
+			.attr("stroke-width",0.5)
 
 		//issues
 		let issues = article.append("rect")
@@ -838,7 +853,7 @@ function dv2(year,the_subject,sort) {
 			let article_incipit = article.append("circle")
 				.attr("cx", article_width/2)
 				// .attr("cy", height/2 - (height*0.04))
-				.attr("cy", height/2 - 30) // -10
+				.attr("cy", height/2 - (height*0.04)) // -10
 				.attr("r", function(d) {
 					incipit = r_size(d.incipit_size)
 					// console.log(d.article, +d.size, d.incipit_size)
@@ -850,6 +865,22 @@ function dv2(year,the_subject,sort) {
 				})
 				.style("opacity",0.5)
 				.attr("class","circle_article")
+
+			// discussion
+			let article_discussion = article.append("circle")
+				.attr("class","discussion_c")
+				.attr("cx", article_width/2)
+				.attr("cy", height/2 - (height*0.04))
+				.attr("r", function(d) {
+					discussion = r_size(d.discussion_size)
+					return discussion 
+				})
+				.style("opacity",0.9)
+				.attr("stroke", function(d,i){
+					return apply_color(d.subject)
+				})
+				.attr("fill","transparent")
+				.attr("stroke-width",0.5)
 
 			//issues
 			let issues = article.append("rect")
