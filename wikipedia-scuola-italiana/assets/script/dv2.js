@@ -217,7 +217,7 @@ function dv2(year,the_subject,sort) {
 
 		let x = d3.scaleLinear()
 			.domain([0,filtered_data.length]) 
-			.range([0,width-(margin.left*1.2)])
+			.range([0,width-(margin.left*1)])
 
 		let y_issues = d3.scaleLinear()
 			.domain([0,issues_max]) 
