@@ -373,6 +373,9 @@ function dv2(year,the_subject,sort) {
 			.attr("data-title", function(d,i){
 				return d.article
 			})
+			.attr("data-id", function(d,i){
+				return d.id_wikidata
+			})
 			.attr("transform", function(d,i){
 				return "translate(" + x(i) + "," + 0 + ")"
 			})

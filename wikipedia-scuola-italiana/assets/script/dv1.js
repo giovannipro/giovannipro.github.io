@@ -497,6 +497,9 @@ function dv1(year,the_subject,sort) {
 			.attr("transform",function (d,i) {
 				return "translate(" + 0 + "," + y(+d.avg_pv) + ")"
 			})	
+			.attr("id", function(d,i){
+				return 'id_' + d.id_wikidata
+			})
 			.on("mouseover", handleMouseOver) 
 			.on("mouseout", handleMouseOut)
 			.append("a")

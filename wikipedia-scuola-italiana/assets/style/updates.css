@@ -144,6 +144,10 @@
 	padding: 0.5rem 1rem 0.75rem;
 }
 
+#sidebar_content li a {
+	text-decoration: none;
+}
+
 #sidebar_content li:first-child{
 	border: none;
 }
@@ -153,24 +157,24 @@
 }
 
 
-#sidebar #data {
+#sidebar .data {
 	display: flex;
 	width: 100%;
 }
 
-#sidebar #data a {
+#sidebar .data a {
 	text-decoration: none;
 	width: 70%;
 }
 
-#sidebar #data .value {
+#sidebar .data .value {
 	width: 30%;
 	text-align: right;
 	margin-left: 0.5rem;
 	color: #9d9b9b;
 }
 
-#sidebar #bar {
+#sidebar .bar {
 	height: 0.2rem; 
 	background-color: #d1cfcf;
 	margin-top: 0.2rem;
@@ -188,11 +192,11 @@
 		width: 80%;
 	}
 
-	#sidebar #data .value {
+	#sidebar .data .value {
 		width: 30%;
 	}
 
-	#sidebar #data a {
+	#sidebar .data a {
 		width: 70%;
 	}
 
