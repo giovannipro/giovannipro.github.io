@@ -112,7 +112,6 @@
 
 #sidebar_open_icon {
 	float: right;
-
 }
 
 #sidebar_open_icon {
@@ -141,8 +140,13 @@
 
 #sidebar_content li {
 	border-top: 1px solid #d6d5d5;
-	padding: 0.5rem 1rem 0.75rem;
 }
+
+#sidebar_content li a {
+	padding: 0.5rem 1rem 0.75rem;
+	display: block;
+}
+
 
 #sidebar_content li a {
 	text-decoration: none;
@@ -156,18 +160,17 @@
 	background-color: #efefef;
 }
 
-
-#sidebar .data {
+#sidebar .item_list {
 	display: flex;
 	width: 100%;
 }
 
-#sidebar .data a {
+#sidebar .item_list .article_list {
 	text-decoration: none;
 	width: 70%;
 }
 
-#sidebar .data .value {
+#sidebar .item_list .value {
 	width: 30%;
 	text-align: right;
 	margin-left: 0.5rem;
@@ -199,7 +202,6 @@
 	#sidebar .data a {
 		width: 70%;
 	}
-
 
 }
 

@@ -626,15 +626,9 @@ function dv1(year,the_subject,sort) {
 
 		const duration = 0
 	    function handleMouseOver(){
-
-	    	// d3.select(this)
-	    	// 	.attr('class','selected')
 	
 			// hide circles
 			d3.selectAll(".article_circles,.line_prev,.circle_prev")
-				// .filter(function() {
-      			// 	return !this.classList.contains('selected')
-    			// })
 				.transition()
 				.duration(duration)
 				.attr("opacity",0.2)
@@ -882,7 +876,7 @@ function dv1(year,the_subject,sort) {
 				.append("g")
 				.attr("class","article")
 				.attr("id", function(d,i){
-					return i
+					return 'id_' + d.id_wikidata
 				})
 				.attr("data-article", function(d,i){
 					return d.article

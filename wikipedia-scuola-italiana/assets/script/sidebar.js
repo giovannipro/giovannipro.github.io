@@ -8,7 +8,7 @@ function update_sidebar_text(){
 }
 
 function sidebar(dv,data,the_sort){
-	console.log(data)
+	// console.log(data)
 	// console.log(the_sort)
 
 	const button_open = document.getElementById('sidebar_button_open');
@@ -182,12 +182,13 @@ function sidebar(dv,data,the_sort){
 			}
 
 			output += '<li>'
-			output += '<div class="item_list">'
 			output += '<a href=" ' + wiki_link + d.article + '" target="_blank">' 
-			output += '<div class="article_list" data-id="' + d.id_wikidata + '">' + d.article + '</div></a>'
+			output += '<div class="item_list">'
+			output += '<div class="article_list" data-id="' + d.id_wikidata + '">' + d.article + '</div>'
 
-			if (isNaN(max) == false) {
+			if (isNaN(max) == false || max < 0) {
 				output += '<div class="value">' + detail + '</div>'
+				// console.log(max)
 			}
 
 			output += '</div>'
@@ -196,7 +197,7 @@ function sidebar(dv,data,the_sort){
 				output += '<div class="bar" style="width: ' + size + '%;"></div>'
 			}
 
-			output += '</li>'
+			output += '</a></li>'
 		})
 
 		output += '</ul>'
@@ -232,79 +233,123 @@ function sidebar(dv,data,the_sort){
 
 	// mouse hover - sidebar
 
-	function remove_highligth(){
-		list_bubbles_a = document.querySelectorAll('.article_circles')
-		list_bubbles_b = document.querySelectorAll('.line_prev')
-		list_bubbles_c = document.querySelectorAll('.circle_prev')
+	function sidebar_hover(){
+		let path = window.location.pathname;
+		// console.log(path)
+
+		function remove_highligth(){
+
+			if (path == "/"){ 
+				list_bubbles_a = document.querySelectorAll('.article_circles')
+				list_bubbles_b = document.querySelectorAll('.variation')
 
 
-		for (let i = 0; i < list_bubbles_a.length; i++) {
-			list_bubbles_a[i].style.opacity = 1
+				for (let i = 0; i < list_bubbles_a.length; i++) {
+					list_bubbles_a[i].setAttribute('opacity',1)
+				}
+				for (let i = 0; i < list_bubbles_b.length; i++) {
+					list_bubbles_b[i].querySelector('.circle_prev').setAttribute('opacity',0)
+					list_bubbles_b[i].querySelector('.line_prev').setAttribute('opacity',0)
+				}
+				// console.log('stop', list_bubbles_a) 
+			}
+			else if (path.indexOf("avvisi") != -1){
+				list_bar = document.querySelectorAll('.article')
+
+				for (let i = 0; i < list_bar.length; i++) {
+					list_bar[i].setAttribute('opacity',1)
+				}
+			}
 		}
-		for (let i = 0; i < list_bubbles_b.length; i++) {
-			list_bubbles_b[i].style.opacity = 0
+
+		function add_highligth(item){
+
+			if (path == "/"){ 
+				list_bubbles_a = document.querySelectorAll('.article_circles')
+				list_bubbles_b = document.querySelectorAll('.line_prev')
+				list_bubbles_c = document.querySelectorAll('.circle_prev')
+
+
+				for (let i = 0; i < list_bubbles_a.length; i++) {
+					list_bubbles_a[i].setAttribute('opacity',0.2)
+				}
+				for (let i = 0; i < list_bubbles_b.length; i++) {
+					list_bubbles_b[i].setAttribute('opacity',0.2)
+				}
+				for (let i = 0; i < list_bubbles_c.length; i++) {
+					list_bubbles_c[i].setAttribute('opacity',0.2)
+				}
+			  	 
+			  	selected_bubble = document.getElementById('id_' + item)
+			  	selected_bubble.setAttribute('opacity',1)
+
+			  	selected_bubble.previousSibling.querySelector('.circle_prev').setAttribute('opacity',1)
+			  	selected_bubble.previousSibling.querySelector('.line_prev').setAttribute('opacity',1)
+			}
+			else if (path.indexOf("avvisi") != -1){ 
+				list_bar = document.querySelectorAll('.article')
+
+				for (let i = 0; i < list_bar.length; i++) {
+					list_bar[i].setAttribute('opacity',0.2)
+				}
+
+				selected_bar = document.getElementById('id_' + item)
+				selected_bar.setAttribute('opacity',1)
+			}
 		}
-		for (let i = 0; i < list_bubbles_c.length; i++) {
-			list_bubbles_c[i].style.opacity = 0.7
+
+		function mouseover(){
+			list_items = document.querySelectorAll('.item_list')
+
+			if (path == "/"){
+				list_bubbles = document.querySelectorAll('.article_circles')
+
+				for (let i = 0; i < list_items.length; i++) {
+
+					list_items[i].addEventListener('mouseover', (event) => {
+						item = event.target.getAttribute("data-id")
+			  	  		add_highligth(item)
+					})
+				}
+			}
+			else if (path.indexOf("avvisi") != -1){ 
+				list_bar = document.querySelectorAll('.article')
+				// console.log(list_bar)
+
+				for (let i = 0; i < list_items.length; i++) {
+					list_items[i].addEventListener('mouseover', (event) => {
+						item = event.target.getAttribute("data-id")
+				  	  	add_highligth(item)
+				  	  	// console.log(item)
+					})
+				}
+			}
 		}
-		console.log('stop')
-	}
 
-	function add_highligth(item){
-		list_bubbles_a = document.querySelectorAll('.article_circles')
-		list_bubbles_b = document.querySelectorAll('.line_prev')
-		list_bubbles_c = document.querySelectorAll('.circle_prev')
+		function mouseleave(){
+			list_items = document.querySelectorAll('.item_list')
+			
+			if (path.indexOf("/") != -1){
+				list_bubbles = document.querySelectorAll('.article_circles')
 
+				for (let i = 0; i < list_items.length; i++) {
 
-		for (let i = 0; i < list_bubbles_a.length; i++) {
-			list_bubbles_a[i].style.opacity = 0.2
+					list_items[i].addEventListener('mouseleave', (event) => {					
+						remove_highligth()
+					})
+				}
+			}
+			else if (path.indexOf("avvisi") != -1){ 
+				// console.log(121)
+			}
 		}
-		for (let i = 0; i < list_bubbles_b.length; i++) {
-			list_bubbles_b[i].style.opacity = 0.2
-		}
-		for (let i = 0; i < list_bubbles_c.length; i++) {
-			list_bubbles_c[i].style.opacity = 0.2
-		}
-	  	 
-	  	selected_bubble = document.getElementById('id_' + item)
-	  	selected_bubble.style.opacity = 1
 
-	  	console.log(selected_bubble)
-	}
+		mouseover()
+		mouseleave()
 
-	function mouseover(){
-		list_items = document.querySelectorAll('.item_list')
-		list_bubbles = document.querySelectorAll('.article_circles')
+	} 
 
-		for (let i = 0; i < list_items.length; i++) {
-
-			list_items[i].addEventListener('mouseover', (event) => {
-				item = event.target.getAttribute("data-id");
-	  	  		console.log(item)
-
-	  	  		add_highligth(item)
-
-			})
-		}
-	}
-
-	function mouseleave(){
-		list_items = document.querySelectorAll('.item_list')
-		list_bubbles = document.querySelectorAll('.article')
-
-		for (let i = 0; i < list_items.length; i++) {
-
-			list_items[i].addEventListener('mouseleave', (event) => {
-				
-				remove_highligth()
-
-			})
-		}
-	}
-
-	// mouseover()
-	// mouseleave()
-
+	sidebar_hover()
 
 
 }

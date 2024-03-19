@@ -367,14 +367,14 @@ function dv2(year,the_subject,sort) {
 			.enter()
 			.append("g")
 			.sort(function(a, b) {
-	  				return d3.descending(a.issues, b.issues);
+	  			return d3.descending(a.issues, b.issues);
 			})
 			.attr("class","article")
 			.attr("data-title", function(d,i){
 				return d.article
 			})
-			.attr("data-id", function(d,i){
-				return d.id_wikidata
+			.attr("id", function(d,i){
+				return 'id_' + d.id_wikidata
 			})
 			.attr("transform", function(d,i){
 				return "translate(" + x(i) + "," + 0 + ")"
@@ -825,6 +825,12 @@ function dv2(year,the_subject,sort) {
 				.enter()
 				.append("g")
 				.attr("class","article")
+				.attr("data-title", function(d,i){
+					return d.article
+				})
+				.attr("id", function(d,i){
+					return 'id_' + d.id_wikidata
+				})
 				.attr("transform", function(d,i){
 					return "translate(" + x(i) + "," + 0 + ")"
 				})
