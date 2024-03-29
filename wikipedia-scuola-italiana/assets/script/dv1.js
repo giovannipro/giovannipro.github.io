@@ -325,7 +325,7 @@ function dv1(year,the_subject,sort) {
 					discussion = "discussione"
 					issues = "avvisi"
 					images = "immagini"
-
+					incipit = "incipit"
 					references = "riferimenti bibliog."
 					notes = "note"
 				}
@@ -336,7 +336,7 @@ function dv1(year,the_subject,sort) {
 					discussion = "discussion"
 					issues = "issues"
 					images = "images"
-
+					incipit = "lead section"
 					references = "references"
 					notes = "notes"
 				}
@@ -363,7 +363,7 @@ function dv1(year,the_subject,sort) {
             	}
 
             	// incipit
-            	content += "<tr><td class='label'>incipit</td><td class='value'>" + d.incipit_size.toLocaleString()
+            	content += "<tr><td class='label'>" + incipit + "</td><td class='value'>" + d.incipit_size.toLocaleString()
             	if(year != 2020){
             		content += "<td class='value " + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[0] + "'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[1] + "</td></tr>"
             	}
