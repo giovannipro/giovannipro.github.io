@@ -334,7 +334,7 @@ function dv1(year,the_subject,sort) {
 					visits = "daily visits"
 					size = "size"
 					discussion = "discussion"
-					issues = "issues"
+					issues = "clean up tags"
 					images = "images"
 					incipit = "lead section"
 					references = "references"

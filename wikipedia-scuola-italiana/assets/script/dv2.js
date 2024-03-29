@@ -321,7 +321,7 @@ function dv2(year,the_subject,sort) {
 				}
 				else {
 					creation_date = "Created on: "
-					issues = "issues"
+					issues = "clean up tags"
 					references = "references"
 					notes = "notes"
 					images = "images"
