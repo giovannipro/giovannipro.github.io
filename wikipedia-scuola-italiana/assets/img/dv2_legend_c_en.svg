@@ -15,16 +15,16 @@
 		<ellipse transform="matrix(0.96 -0.2799 0.2799 0.96 167.3665 -165.7726)" class="st0" cx="-496.7" cy="-668.8" rx="17.6" ry="17.6"/>
 	<circle class="st0" cx="-496.7" cy="-668.8" r="3.4"/>
 	<circle class="st1" cx="-496.7" cy="-668.8" r="11.1"/>
-	<text transform="matrix(1 0 0 1 -472.1701 -674.2653)" class="st2 st3">article </text>
+	<text transform="matrix(1 0 0 1 -472.1701 -674.2653)" class="st2 st3">article</text>
 	<text transform="matrix(1 0 0 1 -472.1701 -668.2653)" class="st2 st3">size</text>
 	<line class="st4" x1="-480.6" y1="-675.6" x2="-473.3" y2="-675.6"/>
 	<text transform="matrix(1 0 0 1 -472.1701 -659.2584)" class="st2 st3">size of the</text>
 	<text transform="matrix(1 0 0 1 -472.1701 -653.2584)" class="st2 st3">discussion</text>
 	<text transform="matrix(1 0 0 1 -472.1701 -647.2584)" class="st2 st3">page</text>
 	<line class="st4" x1="-489.2" y1="-660.6" x2="-474.3" y2="-660.6"/>
-	<text transform="matrix(1 0 0 1 -557.3552 -667.4399)" class="st2 st3">incipit </text>
-	<text transform="matrix(1 0 0 1 -557.3552 -661.4438)" class="st2 st3">size</text>
+	<text transform="matrix(1 0 0 1 -557.3552 -667.4399)" class="st2 st3">lead section</text>
+	<text transform="matrix(1 0 0 1 -557.3552 -661.4438)" class="st2 st3"> size</text>
 </g>
 <path class="st5" d="M64.1,25.3"/>
-<line class="st4" x1="19.7" y1="25.3" x2="60.7" y2="25.3"/>
+<line class="st4" x1="35.7" y1="25.3" x2="60.7" y2="25.3"/>
 </svg>
