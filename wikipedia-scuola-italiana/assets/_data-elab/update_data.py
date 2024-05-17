@@ -13,8 +13,19 @@ from datetime import date
 from datetime import datetime
 from dateutil.parser import parse
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# import importlib
+# importlib.reload(sys)
+# # reload(sys)
+# sys.setdefaultencoding('utf-8')
+
+
+# -----------------------------------
+# Main variables
+
+
+prev_year = 2021
+new_year = '2022_06'
+
 
 
 # -----------------------------------
@@ -32,17 +43,19 @@ default_val = '???'
 
 
 def update():
-	f_prev = folder + 'data/voci_2021.tsv'
-	f_curr = folder + 'data/2022_06.tsv'
-	f_upda = folder + 'data/voci_2022_06.tsv'
+	
+	f_prev = folder + 'data/' + str(prev_year) + '.tsv'
+	f_curr = folder + 'data/' + new_year + '.tsv'
+	f_upda = folder + 'data/voci_' + str(prev_year+1) + '.tsv'
 
-	with open(f_upda,'w+') as f1:
+	with open(f_upda,'w+') as f1: # open(f_prev,'r') as f1, open(f_curr,'r') as f2: # 
 
-		rows = 100000
+		rows = 2
 
 		prev = pd.read_csv(f_prev, sep='\t', header=0)
 		curr_0 = pd.read_csv(f_curr, sep='\t', header=0) # skiprows=0, nrows=rows 
 
+		# print(f1)
 
 		header = 'id_wikidata' + '\t' + \
 			'article' + '\t' + \
@@ -76,12 +89,17 @@ def update():
 
 		df = pd.DataFrame()
 
+		# print(prev.columns.tolist()) 
+		# print(curr_0.columns.tolist()) 
+
 		# -----
 		# filter
 
-		curr_1 = curr_0[curr_0['id_wikidata'] != 'Voce inesistente']
-		curr_2 = curr_1[curr_1['first_edit'] != 'ERRORE']
-		curr = curr_2[curr_2['avg_pv'] != 'ERRORE']
+		# curr_1 = curr_0[curr_0['id_wikidata'] != 'Voce inesistente']
+		# curr_2 = curr_1[curr_1['first_edit'] != 'ERRORE']
+		# curr = curr_2[curr_2['avg_pv'] != 'ERRORE']
+
+		curr = curr_0
 
 		# -----
 		# join dataset
@@ -91,8 +109,7 @@ def update():
 		# merged.drop_duplicates(subset=['id_wikidata'], inplace=True)
 		# merged.dropna(inplace=True)
 		# merged_1 = merged #.head(rows)
-		# print merged_1
-
+		
 		# -----
 		# article main data
 
@@ -100,33 +117,66 @@ def update():
 		df['article'] = merged_1['article_x'].astype(str) #.str[:8]
 		df['subject'] = merged_1['subject'].astype(str) #.str[:8]
 
+		print(merged_1.columns)
+
 		# -----
 		# first edit
-		df['first_edit'] = merged_1['first_edit_x'].fillna(default_val)
+		df['first_edit'] = merged_1['first_edit'].fillna(default_val)
 
-		differences = []
-		specific_date_str = '2022-06-01'
-		specific_date = datetime.strptime(specific_date_str, '%Y-%m-%d').date()
+
+		# -----
+		# days
+
+		df['first_edit_converted'] = pd.to_datetime(df['first_edit'], errors='coerce')
 		
-		for date_str in df['first_edit']:
-			try:
-				date_obj = parse(date_str)
-				days_difference = (specific_date - date_obj.date()).days
-				differences.append(days_difference)
-			except (ValueError, TypeError, OverflowError):
-				differences.append(None)
+		reference_date = pd.to_datetime('2022-06-01')
 
-		df['days'] = differences
+		df['days'] = (reference_date - df['first_edit_converted']).dt.days
+
+		df.drop('first_edit_converted', axis=1, inplace=True)
+
+		# differences = []
+		# specific_date_str = '2022-06-01'
+		# specific_date = datetime.strptime(specific_date_str, '%Y-%m-%d').date()
+		
+		# # for date_str in df['first_edit']:
+		# # 	try:
+		# # 		date_obj = parse(date_str)
+		# # 		days_difference = (specific_date - date_obj.date()).days
+		# # 		differences.append(days_difference)
+
+		# # 		print(days_difference)
+		# # 		df['days'] = days_difference
+
+		# # 	except (ValueError, TypeError, OverflowError):
+		# # 		differences.append(None)
+
+		# # count = 0
+
+		# # try:
+		# df['days'] = (specific_date - parse(df['first_edit']).date()).days
+		# except:
+		# 	count += 1
+		# 	print(count)
+		# 	pass
+
+		# print merged_1['size_a']
+		# print merged_1['size_0']
+
+		# print(merged_1.columns.tolist())
 
 		# -----
 		# pv
 
+		# df['test'] = merged_1['avg_pv'].astype(str) + ' ' + merged_1['avg_pv_prev'].astype(str)
+		# print(df['test'])
+
 		df['avg_pv'] = merged_1['avg_pv'].fillna(default_val)
-		df['avg_pv_prev'] = merged_1['avg_pv_0'].fillna(default_val)
+		df['avg_pv_prev'] = merged_1['avg_pv_0'].fillna(default_val)  #  avg_pv_0 to be added in previous data
 		
 
-		# -----
-		# size
+		# # -----
+		# # size
 
 		df['size'] = merged_1['size'].fillna(default_val) 
 		df['size_prev'] = merged_1['size_0'].fillna(default_val)
@@ -179,20 +229,13 @@ def update():
 		df['galleria_su_Commons'] = merged_1['galleria_su_Commons_x'].fillna(default_str)
 		df['pagina_su_commons'] = merged_1['pagina_su_commons_x'].fillna(default_str)
 		df['pagina_su_wikisource'] = merged_1['pagina_su_wikisource_x'].fillna(default_str)
+		df['linguistic_versions'] = merged_1['linguistic_versions'].fillna(default_val) 
 
 		# --------------------------
 		# filters
 
-		# df_2 = df_1[df_1['all_visits'] != 'ERRORE']
-
-		# missing = df[df.isna().any(axis=1)]
-		# missing_subject_discussion_prev = df[df['discussion_prev'].isnull()].loc[:, ['id_wikidata','article','discussion_prev']]
-
-		# df_1 = df.dropna(axis='columns')
-
-
-		missing_subject = merged_1[merged_1['subject'].isnull()].loc[:, ['id_wikidata','article','subject','avg_pv']]
-		print(missing_subject)
+		# missing_subject = merged_1[merged_1['subject'].isnull()].loc[:, ['id_wikidata','article','subject','avg_pv']]
+		# print(missing_subject)
 
 
 		# print(df_1)
@@ -243,8 +286,8 @@ def add_language_version():
 # Start scripts
 
 
-# update()
-add_language_version()
+update()
+# add_language_version()
 
 
 
@@ -253,7 +296,7 @@ add_language_version()
 
 '''
 
-python /Applications/MAMP/htdocs/lavoro/giovannipro.github.io/wikipedia-scuola-italiana/assets/_data-elab/_20231001_update_data.py
+python3 /Applications/MAMP/htdocs/lavoro/giovannipro.github.io/wikipedia-scuola-italiana/assets/_data-elab/update_data.py
 
 
 ''' 

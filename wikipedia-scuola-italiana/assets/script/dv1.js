@@ -81,7 +81,7 @@ function dv1(year,the_subject,sort) {
 	// console.log(year,the_subject,sort)
 
 	lang_vers_sort = document.getElementById("sort_article").options[7]
-	if (year != 2022){
+	if (year < 2022){
 		lang_vers_sort.style.display = 'none'
 
 		if (isNaN(sort) == true){
@@ -142,6 +142,8 @@ function dv1(year,the_subject,sort) {
 		sidebar(1,filtered_data,sort);
 	
 		filtered_data.forEach(function (d,i) {
+			// console.log(d)
+
 			total += 1
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
@@ -158,6 +160,7 @@ function dv1(year,the_subject,sort) {
 			d.incipit_prev = +d.incipit_prev
 
 			d.linguistic_versions = +d.linguistic_versions
+			// console.log(d.linguistic_versions)
 
 			if (d.avg_pv_prev !== "-"){
 				d.avg_pv_prev = +d.avg_pv_prev
@@ -427,13 +430,14 @@ function dv1(year,the_subject,sort) {
 					return "translate(" + (x(d.images)+50) + ",0)";
 				}
 				else if (sort == 8) {
+					// console.log(linguistic_versions)
 					return "translate(" + (x(+d.linguistic_versions)+50) + ",0)";
 				}
 			})
 			.on("mouseover", tooltip.show) 
 			.on("mouseout", tooltip.hide)
 
-			// variation 2020-2021
+			// variation
 			let variation = article.append("g")
 				.attr("class","variation")
 				.attr("transform",function (d,i) {
@@ -1444,7 +1448,7 @@ $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17);
 	document.getElementById("subjects").selectedIndex = random_subject;
 
-	const starting_year = 2022;
+	const starting_year = 2023;
 
 	dv1(starting_year,subjects[random_subject],parseInt(1));
 	get_year();
