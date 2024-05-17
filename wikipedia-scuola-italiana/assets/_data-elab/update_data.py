@@ -23,8 +23,8 @@ from dateutil.parser import parse
 # Main variables
 
 
-prev_year = 2021
-new_year = '2022_06'
+prev_year = 2022
+new_year = '2023_06'
 
 
 
@@ -121,7 +121,7 @@ def update():
 
 		# -----
 		# first edit
-		df['first_edit'] = merged_1['first_edit'].fillna(default_val)
+		df['first_edit'] = merged_1['first_edit_x'].fillna(default_val)
 
 
 		# -----
@@ -229,7 +229,7 @@ def update():
 		df['galleria_su_Commons'] = merged_1['galleria_su_Commons_x'].fillna(default_str)
 		df['pagina_su_commons'] = merged_1['pagina_su_commons_x'].fillna(default_str)
 		df['pagina_su_wikisource'] = merged_1['pagina_su_wikisource_x'].fillna(default_str)
-		df['linguistic_versions'] = merged_1['linguistic_versions'].fillna(default_val) 
+		df['linguistic_versions'] = merged_1['linguistic_versions_y'].fillna(default_val) 
 
 		# --------------------------
 		# filters
