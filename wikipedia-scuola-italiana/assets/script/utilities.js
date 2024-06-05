@@ -525,37 +525,81 @@ function update_footer(lang){
 }
 
 function changeTitle(lang) {
-	const base = 'Wikipedia e scuola italiana'
+	const base_it = 'Wikipedia e scuola italiana'
+	const base_en = 'Wikipedia and the Italian syllabus'
+
 	let title = document.title
 	let page = title.split(' | ')[0];
 	let newTitle;
 
+	// if (page == base_it ){ // && lang == 'en'
+	// 	newTitle = base_en 
+	// 	console.log('-' + page + '-', 1, lang)
+	// }
+	// else if (page == base_en){ //  && lang == 'it'
+	// 	newTitle = base_it
+	// 	console.log(page, 2, lang)
+	// }
+	// console.log(page,lang)
+
+
 	switch (page) {
+		// Home
+		case base_it:
+			if (lang == 'en'){
+				newTitle = base_en
+			}
+			else {
+				newTitle = base_it
+			}
+			break;
+
+		case base_en:
+			if (lang == 'it'){
+				newTitle = base_it
+			}
+			else {
+				newTitle = base_en
+			}
+			break;
+		// 	:
+		// 	newTitle = base_en;
+		// 	console.log(page, base_it, lang)
+		// 	break;
+		// case base_en | 'it':
+		// 	newTitle = base_it;
+		// 	console.log(page, lang)
+		// 	break;
+
+		// Autori e pubblicazioni
 		case 'Autori e pubblicazioni':
-			newTitle = 'Authors and publications'
+			newTitle = 'Authors and publications | ' + base_en;
 			break;
 		case 'Authors and publications':
-			newTitle = 'Autori e pubblicazioni'
+			newTitle = 'Autori e pubblicazioni | ' + base_it;
 			break;
 
+		// Voci con avvisi
 		case 'Voci con avvisi':
-			newTitle = 'Articles with issues'
+			newTitle = 'Articles with issues | ' + base_en;
 			break;
 		case 'Articles with issues':
-			newTitle = 'Voci con avvisi'
+			newTitle = 'Voci con avvisi | ' + base_it;
 			break;
 
+		// Voci più viste
 		case 'Voci più viste':
-			newTitle = 'Most viewed articles'
+			newTitle = 'Most viewed articles | ' + base_en;
 			break;
 		case 'Most viewed articles':
-			newTitle = 'Voci più viste'
+			newTitle = 'Voci più viste | ' + base_it;
 			break;
 
 		default:
 			newTitle = page;
+
 	}
-	document.title = newTitle + ' | ' + base;
+	document.title = newTitle 
 }
 
 $(document).ready(function() {
