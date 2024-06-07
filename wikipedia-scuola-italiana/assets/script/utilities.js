@@ -526,7 +526,7 @@ function update_footer(lang){
 
 function changeTitle(lang) {
 	const base_it = 'Wikipedia e scuola italiana'
-	const base_en = 'Wikipedia and the Italian syllabus'
+	const base_en = 'Wikipedia and the Italian school'
 
 	let title = document.title
 	let page = title.split(' | ')[0];
