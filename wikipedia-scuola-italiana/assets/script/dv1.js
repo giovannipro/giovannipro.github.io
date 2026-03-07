@@ -331,6 +331,7 @@ function dv1(year,the_subject,sort) {
 					incipit = "incipit"
 					references = "riferimenti bibliog."
 					notes = "note"
+					linguistic_versions = "versioni linguistiche"
 				}
 				else {
 					creation_date = "Created on: "
@@ -342,6 +343,7 @@ function dv1(year,the_subject,sort) {
 					incipit = "lead section"
 					references = "references"
 					notes = "notes"
+					linguistic_versions = "linguistic versions"
 				}
 
 				let content = "<p style='margin: 0 0 8px 3px;'><span style='font-weight: bold;'>" + d.article + "</span><br/>";
@@ -383,6 +385,9 @@ function dv1(year,the_subject,sort) {
             		content += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
             	}
 
+				// images
+				content += "<tr><td class='label'>" + linguistic_versions + "</td><td class='value'>" + d.linguistic_versions.toLocaleString()
+            	
 	            content += "</table>"
                 return content;
             });
@@ -759,9 +764,9 @@ function dv1(year,the_subject,sort) {
 				// console.log(d.article,d.subject, d.avg_pv_prev, d.avg_pv, diff)
 
 				if (d.incipit_size > d.size){
-					console.log(d.article, d.size, d.incipit_size)
+					console.log(d.article, d.incipit_size - d.size)
 				}
-
+				
 				if (d.avg_pv_prev !== "-"){
 					d.avg_pv_prev = +d.avg_pv_prev
 				}
