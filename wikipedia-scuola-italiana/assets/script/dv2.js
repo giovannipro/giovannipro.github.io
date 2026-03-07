@@ -1239,8 +1239,6 @@ $(document).ready(function() {
 	const random_subject = getRandomIntInclusive(1,17);
 	document.getElementById("subjects").selectedIndex = random_subject;
 	
-	const starting_year = 2022;
-
 	dv2(starting_year,subjects[random_subject],parseInt(1));
 	get_year();
 })

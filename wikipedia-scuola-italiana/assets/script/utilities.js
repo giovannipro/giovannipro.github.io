@@ -3,6 +3,8 @@ let footer_it;
 let footer_en;
 let footer = document.getElementById('footer');
 
+const starting_year = 2024;
+
 function formatNumber(num) {
 	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
 }
