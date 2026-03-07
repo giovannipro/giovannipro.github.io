@@ -282,6 +282,7 @@ function sidebar(dv,data,the_sort){
 			  	 
 			  	selected_bubble = document.getElementById('id_' + item)
 			  	selected_bubble.setAttribute('opacity',1)
+				// console.log('id_' + item)
 
 			  	selected_bubble.previousSibling.querySelector('.circle_prev').setAttribute('opacity',1)
 			  	selected_bubble.previousSibling.querySelector('.line_prev').setAttribute('opacity',1)

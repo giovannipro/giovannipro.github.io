@@ -143,7 +143,7 @@ function dv1(year,the_subject,sort) {
 	
 		filtered_data.forEach(function (d,i) {
 			// console.log(d)
-
+			
 			total += 1
 			d.article = d.article.replace(/_/g," ")
 			d.size = +d.size
@@ -758,6 +758,10 @@ function dv1(year,the_subject,sort) {
 				let diff = d.avg_pv - d.avg_pv_prev
 				// console.log(d.article,d.subject, d.avg_pv_prev, d.avg_pv, diff)
 
+				if (d.incipit_size > d.size){
+					console.log(d.article, d.size, d.incipit_size)
+				}
+
 				if (d.avg_pv_prev !== "-"){
 					d.avg_pv_prev = +d.avg_pv_prev
 				}
@@ -880,7 +884,7 @@ function dv1(year,the_subject,sort) {
 				.append("g")
 				.attr("class","article")
 				.attr("id", function(d,i){
-					return 'id_' + d.id_wikidata
+					return i
 				})
 				.attr("data-article", function(d,i){
 					return d.article
@@ -977,6 +981,9 @@ function dv1(year,the_subject,sort) {
 
 			// articles
 			let article_circles = article.append("g")
+				.attr("id", function(d,i){
+					return 'id_' + d.id_wikidata
+				})
 				.attr("class","article_circles")
 				.attr("transform",function (d,i) {
 					return "translate(" + 0 + "," + y(+d.avg_pv) + ")"
@@ -1146,7 +1153,7 @@ function dv1(year,the_subject,sort) {
 			filter_data = visit_sort.filter(function(x,y){ 
 				return y < filter_item 
 			})
-		
+			
 			filtered_data.forEach(function (d,i) {
 				total += 1
 				d.discussion_size = +d.discussion_size
@@ -1161,7 +1168,10 @@ function dv1(year,the_subject,sort) {
 
 				d.linguistic_versions = +d.linguistic_versions
 				// console.log(d.article,d.issues)
+
 			})
+
+			
 
 			sidebar(1,filtered_data,the_sort);
 			

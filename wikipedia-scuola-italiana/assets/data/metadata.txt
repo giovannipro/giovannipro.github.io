@@ -1,0 +1,160 @@
+id_wikidata	
+	numero identificativo della voce su Wikidata
+
+article
+	titolo della voce
+	title of the article
+
+previous_title
+	titolo della voce nell'anno precedente
+	title of the article the previous year
+
+subject
+	materia
+
+theme
+	tematica
+
+argument
+	argomento
+
+exhisting
+	1 (voce esistente) / 0 (voce non esistente)
+	1 (exhisting article) / 0 (not exhisting article)
+
+avg_pv
+	visite medie giornaliere il 1° giugno dell'anno precedente e il 1° luglio dell'anno in corso
+	average daily visits on 1 June of the previous year and 1 July of the current year
+
+avg_pv_prev
+	visite medie giornaliere nel periodo precedente
+	average daily visits in the previous period
+
+all_visits
+	visite totali nel mese di luglio dell'anno selezionato
+	total visits in July of the year selected
+
+size
+	dimensione della voce al 1° luglio dell'anno in corso 
+	size of the item as at 1 July of the current year 
+
+size_prev
+	dimensione della voce nel mese di luglio dell'anno precedente
+	size of the item in July of the previous year
+
+incipit_size
+	dimensione dell'incipit nel mese di luglio dell'anno selezionato
+	incipit size in July of the year selected
+
+incipit_prev
+	dimensione dell'incipit nel mese di luglio dell'anno precedente
+	incipit size in July of the previous year
+
+incipit_on_size
+	proporzione dell'incipit rispetto alla dimensione totale della voce, in byte, nel mese di luglio dell'anno selezionato
+	proportion of the incipit to the total size of the entry, in bytes, in July of the year selected
+
+discussion_size
+	dimensione della pagina di discussione nel mese di luglio dell'anno selezionato
+	size of the discussion page in July of the year selected
+
+discussion_prev
+	dimensione pagina di discussione nel mese di luglio dell'anno precedente
+	discussion page size in July of the previous year
+
+references
+	numero di riferimenti bibliografici nel mese di luglio dell'anno selezionato (valori stimati)
+	number of bibliographic references in July of the selected year (estimated values)
+
+references_prev
+	numero di riferimenti bibliografici nel mese di luglio dell'anno precedente (valori stimati)
+	number of bibliographic references in July of the previous year (estimated values)
+
+notes
+	numero di note nel mese di luglio dell'anno selezionato 
+	number of notes in July of the selected year 
+
+notes_prev
+	numero di note nel mese di luglio dell'anno precedente
+	number of notes in July of the previous year
+
+
+images
+	numero di immagini nel mese di luglio dell'anno selezionato
+	number of images in July of the selected year 
+
+images_prev
+	numero di immagini nel mese di luglio dell'anno precedente
+	number of images in July of the previous year
+
+issues
+	numero di avvisi nel mese di luglio dell'anno selezionato 
+	number of notices in July of the selected year 
+
+issues_prev
+	numero di immagini nel mese di luglio dell'anno precedente
+	number of images in July of the previous year
+
+issue_sourceNeeded
+	numero di avvisi riguardanti la mancanza di riferimenti bibliografici nel mese di luglio dell'anno selezionato
+	number of notices concerning missing bibliographic references in July of the selected year 
+
+issue_clarify
+	numero di avvisi riguardanti la la necessità di chiarire delle frasi nel mese di luglio dell'anno selezionato 
+	number of notices concerning the need to clarify sentences in July of the selected year 
+
+year
+	anno in cui l'argomento è trattato a scuola
+	year in which the topic is covered at school
+
+	0	scuola elementare (in generale)
+		primary school (in general)
+	0.1	prima elementare
+		first grade
+	0.2 seconda elementare
+		second grade
+	0.3 terza elementare
+		third grade
+	0.4 quarta elementare
+		fourth grade
+	0.5 quinta elementare
+		fifth grade
+
+	1	scuola media (in generale)
+		middle school (in general)
+	1.1	prima media
+		sixth grade
+	1.2 seconda media
+		seventh grade
+	1.3 terza media
+		eighth grade
+
+	2	scuola superiore (in generale)
+		high school (in general)
+	2.1	prima superiore
+		first higher
+	2.2 seconda superiore
+		upper second
+	2.3 terza superiore
+		third grade
+	2.4 quarta superiore
+		upper fourth
+	2.5 quinta superiore
+		upper fifth
+
+
+first_edit
+	data in cui è stata creata la voce
+	date on which the entry was created
+
+days
+	giorni trascorsi dalla data di creazione della voce al 1° luglio dell'anno selezionato
+	days elapsed from the date of creation of the entry to 1 July of the selected year
+
+VdQ
+	voce di qualità nell'anno selezionato
+	quality article in the selected year
+
+vetrina
+	voce messa in vetrina anno selezionato
+	featured article in the selected year
