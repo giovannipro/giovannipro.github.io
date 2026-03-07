@@ -23,8 +23,8 @@ exhisting
 	1 (exhisting article) / 0 (not exhisting article)
 
 avg_pv
-	visite medie giornaliere il 1° giugno dell'anno precedente e il 1° luglio dell'anno in corso
-	average daily visits on 1 June of the previous year and 1 July of the current year
+	visite medie giornaliere durante l'anno in corso
+	average daily visits during the year
 
 avg_pv_prev
 	visite medie giornaliere nel periodo precedente
@@ -148,8 +148,8 @@ first_edit
 	date on which the entry was created
 
 days
-	giorni trascorsi dalla data di creazione della voce al 1° luglio dell'anno selezionato
-	days elapsed from the date of creation of the entry to 1 July of the selected year
+	giorni trascorsi dalla data di creazione della voce al 1° gennaio dell'anno selezionato
+	days elapsed from the date of creation of the entry to 1st January of the selected year
 
 VdQ
 	voce di qualità nell'anno selezionato
