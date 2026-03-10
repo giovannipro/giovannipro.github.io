@@ -236,6 +236,7 @@ function sidebar(dv,data,the_sort){
 		// console.log(path)
 
 		function remove_highligth(){
+			console.log(1)
 
 			if (path == "/"){ 
 				list_bubbles_a = document.querySelectorAll('.article_circles')
@@ -246,8 +247,8 @@ function sidebar(dv,data,the_sort){
 					list_bubbles_a[i].setAttribute('opacity',1)
 				}
 				for (let i = 0; i < list_bubbles_b.length; i++) {
-					list_bubbles_b[i].querySelector('.circle_prev').setAttribute('opacity',0)
-					list_bubbles_b[i].querySelector('.line_prev').setAttribute('opacity',0)
+					list_bubbles_b[i].querySelector('.circle_prev').setAttribute('opacity',1)
+					list_bubbles_b[i].querySelector('.line_prev').setAttribute('opacity',1)
 				}
 				// console.log('stop', list_bubbles_a) 
 			}
