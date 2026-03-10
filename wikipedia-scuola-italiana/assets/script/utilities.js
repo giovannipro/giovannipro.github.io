@@ -684,13 +684,19 @@ function get_tooltip(dv) {
 			content += '</div>'
 			content += '<hr style="border: 0.5px solid #e3e3e3"/>'
 
+			const the_year = year.value
+
 			if (dv == 'dv1') {
 	
 				avg_daily_visits = ''
 				avg_daily_visits += "<tr>"
 				avg_daily_visits += "<td class='label'>" + visits + "</td>"
 				avg_daily_visits += "<td class='value'>" + Math.floor(d.avg_pv).toLocaleString() + "</td>"
-				avg_daily_visits += "<td class='value " + variation_perc(d.avg_pv,d.avg_pv_prev,"avg_pv")[0] + "'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"avg_pv")[1] + "</td></tr>"
+
+				if (the_year != 2020){
+					avg_daily_visits += "<td class='value " + variation_perc(d.avg_pv,d.avg_pv_prev,"avg_pv")[0] + "'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"avg_pv")[1] + "</td></tr>"
+				}
+
 				avg_daily_visits += "<td></td>"
 				avg_daily_visits += "</tr>"
 
@@ -699,51 +705,74 @@ function get_tooltip(dv) {
 				the_size += "<tr>"
 				the_size += "<td class='label'>" + size + "<span style='color: #b9b9b9;'> (byte)</span></td>"
 				the_size += "<td class='value'>" + d.size.toLocaleString() + "</td>"
-				the_size += "<td class='value " + variation_perc(d.size,d.size_prev,"size")[0] + "'>" + variation_perc(d.size,d.size_prev,"size")[1] + "</td></tr>"
+
+				if (the_year != 2020){
+					the_size += "<td class='value " + variation_perc(d.size,d.size_prev,"size")[0] + "'>" + variation_perc(d.size,d.size_prev,"size")[1] + "</td></tr>"
+				}
+
 				the_size += "</tr>"
 	
 				the_incipit = ''
 				the_incipit += "<tr>"
 				the_incipit += "<td class='label'>" + incipit + "<span style='color: #b9b9b9;'> (byte)</span></td>"
 				the_incipit += "<td class='value'>" + d.incipit_size.toLocaleString() + "</td>"
-				the_incipit += "<td class='value " + variation_perc(d.incipit_size,d.incipit_prev,"incipit_size")[0] + "'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit_size")[1] + "</td></tr>"
+				
+				if (the_year != 2020){
+					the_incipit += "<td class='value " + variation_perc(d.incipit_size,d.incipit_prev,"incipit_size")[0] + "'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit_size")[1] + "</td></tr>"
+				}
 				the_incipit += "</tr>"
 	
 				the_discussion = ''
 				the_discussion += "<tr>"
 				the_discussion += "<td class='label'>" + discussion + "<span style='color: #b9b9b9;'> (byte)</span></td>"
 				the_discussion += "<td class='value'>" + d.discussion_size.toLocaleString() + "</td>"
-				the_discussion += "<td class='value " + variation_perc(d.discussion_size,d.discussion_prev,"discussion_size")[0] + "'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion_size")[1] + "</td></tr>"
+				
+				if (the_year != 2020){
+					the_discussion += "<td class='value " + variation_perc(d.discussion_size,d.discussion_prev,"discussion_size")[0] + "'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion_size")[1] + "</td></tr>"
+				}
 				the_discussion += "</tr>"
 	
 				the_issues = ''
 				the_issues += "<tr>"
 				the_issues += "<td class='label'>" + issues + "</td>"
 				the_issues += "<td class='value'>" + d.issues.toLocaleString() + "</td>"
-				the_issues += "<td class='value " + variation_perc(d.issues,d.issues_prev,"issues")[0] + "'>" + variation_perc(d.issues,d.issues_prev,"issues")[1] + "</td></tr>"
+
+				if (the_year != 2020){
+					the_issues += "<td class='value " + variation_perc(d.issues,d.issues_prev,"issues")[0] + "'>" + variation_perc(d.issues,d.issues_prev,"issues")[1] + "</td></tr>"
+				}
 				the_issues += "</tr>"
 	
 				the_images = ''
 				the_images += "<tr>"
 				the_images += "<td class='label'>" + images + "</td>"
 				the_images += "<td class='value'>" + d.images.toLocaleString() + "</td>"
-				the_images += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
+
+				if (the_year != 2020){
+					the_images += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
+				}
 				the_images += "</tr>"
 	
 				the_languages = ''
-				the_languages += "<tr>"
-				the_languages += "<td class='label'>" + languages + "</td>"
-				the_languages += "<td class='value'>" + d.linguistic_versions.toLocaleString() + "</td>"
-				the_languages += "</tr>"
+
+				if (the_year >= 2022){
+					the_languages += "<tr>"
+					the_languages += "<td class='label'>" + languages + "</td>"
+					the_languages += "<td class='value'>" + d.linguistic_versions.toLocaleString() + "</td>"
+					the_languages += "</tr>"
+				}
 			}
 
 
 			if (dv == 'dv1') {
+				console.log(the_year)
 
             	content += '<table>'
 
 				content += avg_daily_visits
-				content += the_languages
+
+				if (the_year >= 2022){
+					content += the_languages
+				}
 
 				content += '</table>'
 				content += '<hr style="border: 0.5px solid #e3e3e3"/>'
