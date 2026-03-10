@@ -236,7 +236,6 @@ function sidebar(dv,data,the_sort){
 		// console.log(path)
 
 		function remove_highligth(){
-			console.log(1)
 
 			if (path == "/"){ 
 				list_bubbles_a = document.querySelectorAll('.article_circles')

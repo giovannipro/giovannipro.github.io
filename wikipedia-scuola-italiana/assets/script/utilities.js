@@ -597,20 +597,16 @@ $(document).ready(function() {
 	
 })
 
-function tooltip_direction(data,x,x_min,x_max,y,invert){
+function tooltip_direction(the_x, x_min, x_max, y_value, y_max, invert){
 
-	let y_max = d3.max(data, function(d) { 
-		return d.avg_pv;
-	})
-
-	x = parseInt(x)
+	x = parseInt(the_x)
 	x_min = parseInt(x_min)
 	x_max = parseInt(x_max)
 
 	let n_s = ''
 	let w_e = ''
 	
-	if (y > (y_max/3*2) ){
+	if (y_value > (y_max/3*2) ){
 		n_s = 's'
 	}
 	else {
@@ -636,10 +632,10 @@ function tooltip_direction(data,x,x_min,x_max,y,invert){
 		}
 	}
 
-	const direction = n_s + w_e
 
-	// console.log(x,x_min,x_max,y,invert)
-	// console.log(direction)
+	const direction = n_s + w_e
+	// console.log(the_x, direction)
+
 	return direction
 }
 
@@ -683,7 +679,7 @@ function get_tooltip(dv) {
 			let content = ""
 			// content += "<p style='color: red; margin: 0;'>" + i + "</p>" // debug  
 			content += "<div style='overflow-wrap: anywhere; white-space: normal;'>"
-			content += "<p style='font-weight: bold; margin: 0 0 0 .2rem;'>" + d.article + '</p>';
+			content += "<p style='font-weight: bold; margin: 0;'>" + d.article + '</p>';
 			content += '<span style="font-size: 0.8em;">' + creation_date + d.first_edit.slice(0,10) + '</span>' // format_date(d.first_edit) 
 			content += '</div>'
 			content += '<hr style="border: 0.5px solid #e3e3e3"/>'

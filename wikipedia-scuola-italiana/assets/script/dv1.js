@@ -314,28 +314,32 @@ function dv1(year,the_subject,sort) {
 			.offset(function (d,i){
 				let direction = ''
 				let off = [0,0] // [top, left]
+				y_value = d.avg_pv
 
 				if (sort == 1) { // title
-					direction = tooltip_direction(filtered_data, i, min, max, d.avg_pv, false)
+					direction = tooltip_direction(i, min, max, y_value, y_max, false)
 				}
 				else if (sort == 2){ // publication date
-					direction = tooltip_direction(filtered_data, d.days, min,max,d.avg_pv, true)
+					direction = tooltip_direction(d.days, min, max, y_value, y_max, true)
 				}
 				else if (sort == 3){  // article size
-					direction = tooltip_direction(filtered_data, d.size,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.size, min, max, y_value, y_max, false)
 				}
 				else if (sort == 4){ // discussion size
-					direction = tooltip_direction(filtered_data, d.discussion_size,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.discussion_size, min, max, y_value, y_max, false)
 				}
 				else if (sort == 5){ // incipit size
-					direction = tooltip_direction(filtered_data, d.incipit_size,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.incipit_size, min, max, y_value, y_max, false)
 				}
 				else if (sort == 6){ // issues
-					direction = tooltip_direction(filtered_data,d.issues,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.issues, min, max, y_value, y_max, false)
 				}
 				else if (sort == 7){ // images
-					direction = tooltip_direction(filtered_data,d.images,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.images, min, max, y_value, y_max, false)
 				}
+				else if (the_sort == 8){
+						direction = tooltip_direction(d.linguistic_versions, min, max, y_value, y_max, false)
+					}
 				
 				if (direction == 'nw'){
 					off = [-10,-10] 
@@ -352,27 +356,33 @@ function dv1(year,the_subject,sort) {
 			.direction(function (d,i) {
 
 				let direction = ''
+				y_value = d.avg_pv
+
 				if (sort == 1) { // title
-					direction = tooltip_direction(filtered_data, i, min, max, d.avg_pv, false)
+					direction = tooltip_direction(i, min, max, y_value, y_max, false)
 				}
 				else if (sort == 2){
-					direction = tooltip_direction(filtered_data,d.days,min,max,d.avg_pv, true)
+					direction = tooltip_direction(d.days, min, max, y_value, y_max, true)
 				}
 				else if (sort == 3){
-					direction = tooltip_direction(filtered_data,d.size,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.size, min, max, y_value, y_max, false)
 				}
 				else if (sort == 4){
-					direction = tooltip_direction(filtered_data,d.discussion_size,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.discussion_size, min, max, y_value, y_max, false)
 				}
 				else if (sort == 5){
-					direction = tooltip_direction(filtered_data,d.incipit_size,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.incipit_size, min, max, y_value, y_max, false)
 				}
 				else if (sort == 6){
-					direction = tooltip_direction(filtered_data,d.issues,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.issues, min, max, y_value, y_max, false)
 				}
 				else if (sort == 7){
-					direction = tooltip_direction(filtered_data,d.images,min,max,d.avg_pv, false)
+					direction = tooltip_direction(d.images, min, max, y_value, y_max, false)
 				}
+				else if (the_sort == 8){
+					direction = tooltip_direction(d.linguistic_versions, min, max, y_value, y_max, false)
+				}
+
 				return direction 
 			})
 		
@@ -1099,7 +1109,7 @@ function dv1(year,the_subject,sort) {
 		}
 
 		function update_sort(subject,the_sort){
-
+			
 			the_sort = parseInt(the_sort)
 
 			let min = 0
@@ -1200,37 +1210,41 @@ function dv1(year,the_subject,sort) {
 					return "translate(" + (x_position + 50) + "," + 0 + ")"
 				})
 
-				tooltip = tooltip.direction(function (d,i) {
+				const y_max =  d3.max(filtered_data, (d) => d.avg_pv) 
+				// console.log(filtered_data)
+				// console.log(y_max)
 
-					let direction = ''
+				tooltip.direction(function (d,i) {
+					
+					let new_direction = ''
+					y_value = d.avg_pv
+
 					if (the_sort == 1) { // title
-						direction = tooltip_direction(i, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(i, min, max, y_value, y_max, false)
 					}
 					else if (the_sort == 2){
-						direction = tooltip_direction(d.days, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(d.days, min, max, y_value, y_max, true)
 					}
 					else if (the_sort == 3){
-						direction = tooltip_direction(d.size, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(d.size, min, max, y_value, y_max, false)
 					}
 					else if (the_sort == 4){
-						direction = tooltip_direction(d.discussion_size, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(d.discussion_size, min, max, y_value, y_max, false)
 					}
 					else if (the_sort == 5){
-						direction = tooltip_direction(d.incipit_size, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(d.incipit_size, min, max, y_value, y_max, false)
 					}
 					else if (the_sort == 6){
-						direction = tooltip_direction(d.issues, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(d.issues, min, max, y_value, y_max, false)
 					}
 					else if (the_sort == 7){
-						direction = tooltip_direction(d.images, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(d.images, min, max, y_value, y_max, false)
 					}
 					else if (the_sort == 8){
-						direction = tooltip_direction(d.edits_editors_ratio, min, max, d.avg_pv, false)
+						new_direction = tooltip_direction(d.linguistic_versions, min, max, y_value, y_max, false)
 					}
-					else if (the_sort == 9){
-						direction = tooltip_direction(d.linguistic_versions, min, max, d.avg_pv, false)
-					}
-					return direction 
+
+					return new_direction 
 				})
 
 			sidebar(1,filtered_data,the_sort);
