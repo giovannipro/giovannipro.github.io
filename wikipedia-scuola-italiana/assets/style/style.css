@@ -445,9 +445,10 @@ footer ul li {
   line-height: 1.4em;
   max-width: 10rem;
   word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .tooltip table {
-  width: 12rem;
+  min-width: 10rem;
 }
 .tooltip table td {
   font-weight: normal;
@@ -492,6 +493,61 @@ footer ul li {
 #tooltip_dv2 th:nth-child(2) {
   min-width: 50px;
   text-align: right;
+}
+
+/* ------- statistics ------- */
+#statistics {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  height: 4rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  #statistics {
+    flex-direction: column;
+    height: auto;
+  }
+}
+#statistics .value_name {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  width: 33%;
+  border-left: 1px solid gray;
+}
+@media only screen and (max-width: 768px) {
+  #statistics .value_name {
+    width: auto;
+    border-left: none;
+    border-bottom: 1px solid gray;
+  }
+  #statistics .value_name .value_name:last-child {
+    border-bottom: none;
+  }
+}
+#statistics .value_name .stat_value {
+  width: 35%;
+  text-align: right;
+  font-weight: bold;
+}
+#statistics .value_name .stat_name {
+  width: 60%;
+}
+#statistics .value_name:first-child {
+  border-left: none;
+}
+
+.increase {
+  padding: 0 0 5px;
+  color: green;
+}
+
+.decrease {
+  padding: 0 0 5px;
+  color: red;
 }
 
 /* ------- dataviz n. 2 ------- */

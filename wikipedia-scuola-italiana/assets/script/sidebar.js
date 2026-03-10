@@ -261,6 +261,7 @@ function sidebar(dv,data,the_sort){
 		}
 
 		function add_highligth(item){
+			// console.log(path)
 
 			if (path == "/"){ 
 				list_bubbles_a = document.querySelectorAll('.article_circles')
@@ -313,13 +314,11 @@ function sidebar(dv,data,the_sort){
 			}
 			else if (path.indexOf("avvisi") != -1){ 
 				list_bar = document.querySelectorAll('.article')
-				// console.log(list_bar)
 
 				for (let i = 0; i < list_items.length; i++) {
 					list_items[i].addEventListener('mouseover', (event) => {
 						item = event.target.getAttribute("data-id")
 				  	  	add_highligth(item)
-				  	  	// console.log(item)
 					})
 				}
 			}
@@ -338,9 +337,9 @@ function sidebar(dv,data,the_sort){
 					})
 				}
 			}
-			else if (path.indexOf("avvisi") != -1){ 
-				// console.log(121)
-			}
+			// else if (path.indexOf("avvisi") != -1){ 
+			// 	// console.log(121)
+			// }
 		}
 
 		mouseover()

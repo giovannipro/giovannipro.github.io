@@ -93,13 +93,9 @@ function variation_perc(now,prev,parameter){
 		style = 'stable';
 	}
 	else {
-		// console.log(perc)
 		if (perc == Infinity){
 			output = '(' + sign + variation + ')';
 		}
-		// else if (perc == -Infinity){
-		// 	output = '(' + '-' + variation + ')';
-		// }
 
 		else if (perc > limit){
 			output = '(' + sign + perc.toFixed(1) + '%)';
@@ -113,10 +109,7 @@ function variation_perc(now,prev,parameter){
 	}
 
 	return [style, output]
-    // return [style, output  + ' ' + prev + ' '  + now];
 }
-
-// console.log(variation_perc(0,8,'images'))
 
 const subjects = [
 	"Tutte le materie",
@@ -764,7 +757,6 @@ function get_tooltip(dv) {
 
 
 			if (dv == 'dv1') {
-				console.log(the_year)
 
             	content += '<table>'
 
@@ -798,4 +790,48 @@ function get_tooltip(dv) {
             return content;
         });
 	return tooltip
+}
+
+function statistics(data){
+	// const statistics_box = document.getElementById('statistics')
+	const analized_articles_box = document.getElementById('analized_articles')
+	const avg_pv_articles_box = document.getElementById('avg_pv_articles')
+	const avg_size_articles_box = document.getElementById('avg_size_articles')
+
+	const analized_articles = data.length
+
+	let sum_avg_pv = 0
+	data.forEach(obj => sum_avg_pv += obj.avg_pv);
+	const avg_pv_articles = Math.floor(sum_avg_pv / analized_articles)
+
+	let sum_avg_pv_prev = 0
+	data.forEach(obj => sum_avg_pv_prev += obj.avg_pv_prev);
+	const avg_pv_articles_prev = Math.floor(sum_avg_pv_prev / analized_articles)
+	const variation_pv = variation_perc(avg_pv_articles,avg_pv_articles_prev,"avg_pv")[0]
+	const variation_pv_per = variation_perc(avg_pv_articles,avg_pv_articles_prev,"avg_pv")[1]
+
+	let sum_size = 0
+	data.forEach(obj => sum_size += obj.size);
+	const avg_size_articles = Math.floor(sum_size / analized_articles)
+	// console.log(sum_size, avg_size_articles)
+
+	let sum_size_prev = 0
+	data.forEach(obj => sum_size_prev += obj.size_prev);
+	const avg_sum_size_prev = Math.floor(sum_size_prev / analized_articles)
+	const variation_size = variation_perc(avg_size_articles,avg_sum_size_prev,"size")[0]
+	const variation_size_per = variation_perc(avg_size_articles,avg_sum_size_prev,"size")[1]
+
+	// show statistics
+	analized_articles_box.innerHTML = formatNumber(analized_articles)
+
+	let var_pv = ''
+	let var_size = ''
+	if (year.value > 2021){
+		var_pv = variation_pv_per
+		var_size = variation_size_per
+	}
+	// console.log(var_size)
+
+	avg_pv_articles_box.innerHTML = `<span>${avg_pv_articles} </span><span class="${variation_pv}">${var_pv}</span>`
+	avg_size_articles_box.innerHTML = `<span>${formatNumber(avg_size_articles)} </span><span class="${variation_size}">${var_size}</span>`
 }

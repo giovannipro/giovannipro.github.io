@@ -188,6 +188,8 @@ function dv1(year,the_subject,sort) {
 		})
 		// console.log(filtered_data);
 
+		statistics(filtered_data)
+
 		if (sort == 1) {
 			max = total	
 			min = 0
@@ -297,7 +299,7 @@ function dv1(year,the_subject,sort) {
 
 		let yaxis_label_box = plot.append("g")
 			.attr("class","yaxis_label")
-			.attr("transform","translate(7," + height + ")")
+			.attr("transform","translate(7," + (height + 10) + ")")
 
 		let yaxis_label = yaxis_label_box.append("text")
 			.attr("class","axis_name")
@@ -762,6 +764,8 @@ function dv1(year,the_subject,sort) {
 	        	}
 
 			})
+
+			statistics(filtered_data)
 
 			// scale
 			y_max = d3.max(filtered_data, function(d) { 
