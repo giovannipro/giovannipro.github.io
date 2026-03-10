@@ -181,10 +181,10 @@ function sidebar(dv,data,the_sort){
 				size = 0
 			}
 
-			output += '<li class="article_list">'
+			output += '<li>'
 			output += '<a href=" ' + wiki_link + d.article + '" target="_blank">' 
 			output += '<div class="item_list">'
-			output += '<div data-id="' + d.id_wikidata + '">' + d.article + '</div>'
+			output += '<div class="article_list" data-id="' + d.id_wikidata + '">' + d.article + '</div>'
 
 			if (isNaN(max) == false || max < 0) {
 				output += '<div class="value">' + detail + '</div>'

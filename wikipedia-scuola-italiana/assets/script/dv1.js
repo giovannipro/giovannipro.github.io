@@ -260,14 +260,13 @@ function dv1(year,the_subject,sort) {
 			.range([0, 20])
 			.domain([0,r_max])
 
-		let x = d3.scaleLinear()
+		x = d3.scaleLinear()
 			.domain([min,max])
 			.range([0,width-100])
 
-		// let y = d3.scalePow().exponent(log_exponent)  
-		let y = d3.scaleLinear() // scaleSymlog() > it works
+		y = d3.scaleLinear()
 			.domain([0,y_max+(y_max/100*10)]) 
-			.range([height-margin.top,0])
+			.range([height - (margin.top * 1.6),0])
        	
 		// axis and grid
 		let grid = svg.append("g")
@@ -308,92 +307,75 @@ function dv1(year,the_subject,sort) {
 			.attr("y",-6)
 			.attr("font-size",font_size)
 
-		// let the_sort;
-		let tooltip = d3.tip()
-			.attr('class', 'tooltip')
-			.attr('id', 'tooltip_dv1')
-			.direction(function (d,i) {
-				return 'n'
+		let tooltip = get_tooltip('dv1')
+	    plot.call(tooltip);
+
+		tooltip
+			.offset(function (d,i){
+				let direction = ''
+				let off = [0,0] // [top, left]
+
+				if (sort == 1) { // title
+					direction = tooltip_direction(filtered_data, i, min, max, d.avg_pv, false)
+				}
+				else if (sort == 2){ // publication date
+					direction = tooltip_direction(filtered_data, d.days, min,max,d.avg_pv, true)
+				}
+				else if (sort == 3){  // article size
+					direction = tooltip_direction(filtered_data, d.size,min,max,d.avg_pv, false)
+				}
+				else if (sort == 4){ // discussion size
+					direction = tooltip_direction(filtered_data, d.discussion_size,min,max,d.avg_pv, false)
+				}
+				else if (sort == 5){ // incipit size
+					direction = tooltip_direction(filtered_data, d.incipit_size,min,max,d.avg_pv, false)
+				}
+				else if (sort == 6){ // issues
+					direction = tooltip_direction(filtered_data,d.issues,min,max,d.avg_pv, false)
+				}
+				else if (sort == 7){ // images
+					direction = tooltip_direction(filtered_data,d.images,min,max,d.avg_pv, false)
+				}
+				
+				if (direction == 'nw'){
+					off = [-10,-10] 
+				}
+				else if (direction == 'n'){
+					off = [-10,0] 
+				}
+				else if (direction == 'ne'){
+					off = [-10,-10] 
+				}
+
+				return off
 			})
-			.offset([-10,0])
-			.html(function(d,i) {
+			.direction(function (d,i) {
 
-				let params = new URLSearchParams(window.location.search);
-				if (params.has('lang') == true) {
-					lang = params.get('lang')
+				let direction = ''
+				if (sort == 1) { // title
+					direction = tooltip_direction(filtered_data, i, min, max, d.avg_pv, false)
 				}
-
-				if (lang == 'it'){
-					creation_date = "Creato il: "
-					visits = "visite giornaliere"
-					size = "dimensioni"
-					discussion = "discussione"
-					issues = "avvisi"
-					images = "immagini"
-					incipit = "incipit"
-					references = "riferimenti bibliog."
-					notes = "note"
-					linguistic_versions = "versioni linguistiche"
+				else if (sort == 2){
+					direction = tooltip_direction(filtered_data,d.days,min,max,d.avg_pv, true)
 				}
-				else {
-					creation_date = "Created on: "
-					visits = "daily visits"
-					size = "size"
-					discussion = "discussion"
-					issues = "clean up tags"
-					images = "images"
-					incipit = "lead section"
-					references = "references"
-					notes = "notes"
-					linguistic_versions = "linguistic versions"
+				else if (sort == 3){
+					direction = tooltip_direction(filtered_data,d.size,min,max,d.avg_pv, false)
 				}
-
-				let content = "<p style='margin: 0 0 8px 3px;'><span style='font-weight: bold;'>" + d.article + "</span><br/>";
-                content += "<span style='font-size: 0.8em;'>" + creation_date + format_date(d.first_edit) + "</span></p><table>"
-
-                // avg daily visits
-                content += "<tr><td class='label'>" + visits + "</td><td class='value'>" + d.avg_pv.toLocaleString()
-            	if (d.avg_pv_prev !== "-"){
-            		content += "<td class='value " + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[0] + "'>" + variation_perc(d.avg_pv,d.avg_pv_prev,"visits")[1] + "</td></tr>"
-           		}
-
-                //size
-                content += "<tr><td class='label'>" + size + "</td><td class='value'>" + d.size.toLocaleString()
-        		if(year != 2020){
-        			content += "<td class='value " + variation_perc(d.size,d.size_prev,"visits")[0] + "'>" + variation_perc(d.size,d.size_prev,"visits")[1] + "</td></tr>"
-	            }
-
-            	// discussion
-            	content += "<tr><td class='label'>" + discussion + "</td><td class='value'>" + d.discussion_size.toLocaleString()
-            	if(year != 2020){
-            		content += "<td class='value " + variation_perc(d.discussion_size,d.discussion_prev,"discussion")[0] + "'>" + variation_perc(d.discussion_size,d.discussion_prev,"discussion")[1] + "</td></tr>"
-            	}
-
-            	// incipit
-            	content += "<tr><td class='label'>" + incipit + "</td><td class='value'>" + d.incipit_size.toLocaleString()
-            	if(year != 2020){
-            		content += "<td class='value " + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[0] + "'>" + variation_perc(d.incipit_size,d.incipit_prev,"incipit")[1] + "</td></tr>"
-            	}
-
-            	// issues
-            	content += "<tr><td class='label'>" + issues + "</td><td class='value'>" + d.issues.toLocaleString()
-            	if(year != 2020){
-            		content += "<td class='value " + variation_perc(d.issues,d.issues_prev,"issues")[0] + "'>" + variation_perc(d.issues,d.issues_prev,"issues")[1] + "</td></tr>"
-            	}
-
-				// images
-				content += "<tr><td class='label'>" + images + "</td><td class='value'>" + d.images.toLocaleString()
-            	if(year != 2020){
-            		content += "<td class='value " + variation_perc(d.images,d.images_prev,"images")[0] + "'>" + variation_perc(d.images,d.images_prev,"images")[1] + "</td></tr>"
-            	}
-
-				// images
-				content += "<tr><td class='label'>" + linguistic_versions + "</td><td class='value'>" + d.linguistic_versions.toLocaleString()
-            	
-	            content += "</table>"
-                return content;
-            });
-       	plot.call(tooltip);
+				else if (sort == 4){
+					direction = tooltip_direction(filtered_data,d.discussion_size,min,max,d.avg_pv, false)
+				}
+				else if (sort == 5){
+					direction = tooltip_direction(filtered_data,d.incipit_size,min,max,d.avg_pv, false)
+				}
+				else if (sort == 6){
+					direction = tooltip_direction(filtered_data,d.issues,min,max,d.avg_pv, false)
+				}
+				else if (sort == 7){
+					direction = tooltip_direction(filtered_data,d.images,min,max,d.avg_pv, false)
+				}
+				return direction 
+			})
+		
 
 		// plot data
 		let articles = plot.append("g")	
@@ -659,6 +641,8 @@ function dv1(year,the_subject,sort) {
 				.attr("opacity",variation_line_opacity)
 	    }
 
+		plot.call(tooltip);
+
 		$("#subjects").change(function() {
 			let subject = this.value;
 			new_sort =  $("#sort_article option:selected").val();
@@ -749,14 +733,8 @@ function dv1(year,the_subject,sort) {
 
 				d.linguistic_versions = +d.linguistic_versions
 
-				// console.log(d.article,d.subject, d.size, d.avg_pv_prev, d.avg_pv_prev,d.avg_pv - d.avg_pv_prev)
 				let diff = d.avg_pv - d.avg_pv_prev
-				// console.log(d.article,d.subject, d.avg_pv_prev, d.avg_pv, diff)
 
-				if (d.size < d.incipit_size){
-					console.log(d.article, d.size, d.incipit_size, d.discussion_size)
-				}
-				
 				if (d.avg_pv_prev !== "-"){
 					d.avg_pv_prev = +d.avg_pv_prev
 				}
@@ -773,9 +751,6 @@ function dv1(year,the_subject,sort) {
 	        		d.improvements += 1
 	        	}
 
-	        	// if (d.improvements > 0) {
-				// 	console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
-				// }
 			})
 
 			// scale
@@ -849,10 +824,17 @@ function dv1(year,the_subject,sort) {
 			x = d3.scaleLinear()
 				.domain([min,max])
 				.range([0,width-100])
-	       	
+
+			y = d3.scaleLinear()
+				.domain([0,y_max+(y_max/100*10)]) 
+				.range([height - (margin.top * 1.6),0])
+			
 			function make_y_gridlines() {		
 		    	return d3.axisLeft(y)
 			}
+
+			// let tooltip = get_tooltip('dv1')
+	    	// plot.call(tooltip);
 
 			svg.select("#yAxis")
 				.transition()
@@ -888,30 +870,38 @@ function dv1(year,the_subject,sort) {
 					return d.subject
 				})
 				.attr("transform", function(d,i){
+
+					x_position = 0
+
 					if (the_sort == 1) { // "article"
-						return "translate(" + (x(i)+50) + "," + 0 + ")"
+						x_position = x(i)
 					}
 					else if (the_sort == 2){ // "publication"
-						return "translate(" + (x(+d.days)+50) + "," + 0 + ")"
+						x_position = x(d.days)
 					}
-					else if (the_sort == 3){ // "size"
-						return "translate(" + (x(+d.size)+50) + "," + 0 + ")"
+					else if (the_sort == 3){
+						x_position = x(d.size)
 					}
-					else if (the_sort == 4) { // "discussion"
-						return "translate(" + (x(+d.discussion_size)+50) + "," + 0 + ")"
+					else if (the_sort == 4) {
+						x_position = x(d.discussion_size)
 					}
 					else if (the_sort == 5){
-						return "translate(" + (x(+d.incipit_size)+50) + "," + 0 + ")"
+						x_position = x(d.incipit_size)
 					}
-					else if (the_sort == 6){ // "issue"
-						return "translate(" + (x(+d.issues)+50) + "," + 0 + ")"
+					else if (the_sort == 6){
+						x_position = x(d.issues)
 					}
-					else if (the_sort == 7){ // "images"
-						return "translate(" + (x(+d.images)+50) + "," + 0 + ")"
+					else if (the_sort == 7){
+						x_position = x(d.images)
 					}
-					else if (the_sort == 8){ 
-						return "translate(" + (x(+d.linguistic_versions)+50) + "," + 0 + ")"
+					else if (the_sort == 8){
+						x_position = x(d.linguistic_versions)
 					}
+					else {
+						x_position = x(i)
+					}
+
+					return "translate(" + (x_position + 50) + "," + 0 + ")"
 				})
 				.on("mouseover", tooltip.show)
 				.on("mouseout", tooltip.hide)
@@ -1108,174 +1098,139 @@ function dv1(year,the_subject,sort) {
 	  //           })
 		}
 
-		function update_sort(the_subject,the_sort){
-			// console.log(the_subject,the_sort)
-			// console.log(data[0].article,data[0].linguistic_versions)
+		function update_sort(subject,the_sort){
 
-			//load data
-			total = 0;
+			the_sort = parseInt(the_sort)
 
-			let subject_articles = [];
-			let visit_sort;
-			let filter_data;
-
-			let subject_group = d3.nest()
-				.key(d => d.subject)
-				.entries(data)
-		
-			for (const [d,c] of Object.entries(subject_group)) {
-				if (the_subject == "all"){
-
-					if (c.key !== "-"){
-						let values = c.values
-
-						values.forEach(function (d,i) {
-							subject_articles.push(d)
-						})
-					}
-				}
-				else {
-					if (c.key == the_subject){
-						subject_articles = c.values;
-					}
-				}
-			}
-			
-			visit_sort = subject_articles.sort(function(x, y){
-				return d3.descending(+x.avg_pv, +y.avg_pv);
-			})
-
-			filter_data = visit_sort.filter(function(x,y){ 
-				return y < filter_item 
-			})
-			
-			filtered_data.forEach(function (d,i) {
-				total += 1
-				d.discussion_size = +d.discussion_size
-				d.article = d.article.replace(/_/g," ")
-				d.size = +d.size
-				d.images = +d.images
-
-				d.days = +d.days
-				d.avg_pv = +d.avg_pv
-				d.avg_pv_prev = +d.avg_pv_prev
-				d.issues = +d.issues
-
-				d.linguistic_versions = +d.linguistic_versions
-				d.size_prev = +d.size_prev
-				d.discussion_prev = +d.discussion_prev
-			})
+			let min = 0
+			let max = 0
 
 			sidebar(1,filtered_data,the_sort);
 			
-			let max;
-			let min;
 			let sort = [
-				"article",		// 1
-				"publication",	// 2
-				"size",			// 3
-				"discussion",	// 4
-				"incipit",		// 5
-				"issue",		// 6
-				"images"		// 7
+				"article",				// 1
+				"publication",			// 2
+				"size",					// 3
+				"discussion",			// 4
+				"incipit",				// 5
+				"issue",				// 6
+				"images",				// 7
+				"linguistic_versions" 	// 8
 			]
 
 			if (the_sort == 1) {
-				max = total	
 				min = 0
+				max = filtered_data.length
 			}
 			else if (the_sort == 2){
-				max = d3.min(filtered_data, function(d) { 
-					return d.days;
-				})
-				min = d3.max(filtered_data, function(d) { 
-					return d.days;
-				})
+				min = d3.min(filtered_data, d => d.days)
+				max = d3.max(filtered_data, d => d.days)
 			}
 			else if (the_sort == 3){
-				min = d3.min(filtered_data, function(d) { 
-					return d.size;
-				})
-				max = d3.max(filtered_data, function(d) { 
-					return d.size;
-				})
+				min = d3.min(filtered_data, d => d.size)
+				max = d3.max(filtered_data, d => d.size)
 			}
 			else if (the_sort == 4){
-				min = d3.min(filtered_data, function(d) { 
-					return d.discussion_size;
-				})
-				max = d3.max(filtered_data, function(d) { 
-					return d.discussion_size;
-				})
+				min = d3.min(filtered_data, d => d.discussion_size)
+				max = d3.max(filtered_data, d => d.discussion_size)
 			}
 			else if (the_sort == 5){
-				min = d3.min(filtered_data, function(d) { 
-					return d.incipit_size;
-				})
-				max = d3.max(filtered_data, function(d) { 
-					return d.incipit_size;
-				})
+				min = d3.min(filtered_data, d => d.incipit_size)
+				max = d3.max(filtered_data, d => d.incipit_size)
 			}
 			else if (the_sort == 6){
 				min = 0;
-				max = d3.max(filtered_data, function(d) { 
-					return d.issues;
-				})
+				max = d3.max(filtered_data, d => d.issues)
 			}
 			else if (the_sort == 7){
-				min = d3.min(filtered_data, function(d) { 
-					return d.images;
-				})
-				max = d3.max(filtered_data, function(d) { 
-					return d.images;
-				})
+				min = d3.min(filtered_data, d => d.images)
+				max = d3.max(filtered_data, d => d.images)
 			}
 			else if (the_sort == 8){
-				min = d3.min(filtered_data, function(d) { 
-					return d.linguistic_versions;
-				})
-				max = d3.max(filtered_data, function(d) { 
-					return d.linguistic_versions;
-				})
+				min = d3.min(filtered_data, d => d.linguistic_versions)
+				max = d3.max(filtered_data, d => d.linguistic_versions)
 			}
 
-			x = d3.scaleLinear()
-				.domain([min,max])
-				.range([0,width-100])
-			// console.log(min,max,the_sort)
-
-	       	svg.selectAll(".article")
-	       		.data(filtered_data)
-	       		.enter()
-	       		.append("div")
+			if (the_sort == 2){
+				x = d3.scaleLinear()
+					.domain([max,min])
+					.range([0,width-100])
+			}
+			else {
+				x = d3.scaleLinear()
+					.domain([min,max])
+					.range([0,width-100])
+			}
 
 			svg.selectAll(".article")
 				.transition()
 				.attr("transform", function(d,i){
+
+					x_position = 0
+
 					if (the_sort == 1) { // "article"
-						return "translate(" + (x(i)+50) + "," + 0 + ")"
+						x_position = x(i)
 					}
 					else if (the_sort == 2){ // "publication"
-						return "translate(" + (x(d.days)+50) + "," + 0 + ")"
+						
+						x_position = x(d.days)
 					}
 					else if (the_sort == 3){
-						return "translate(" + (x(d.size)+50) + "," + 0 + ")"
+						x_position = x(d.size)
 					}
 					else if (the_sort == 4) {
-						return "translate(" + (x(d.discussion_size)+50) + "," + 0+ ")"
+						x_position = x(d.discussion_size)
 					}
 					else if (the_sort == 5){
-						return "translate(" + (x(d.incipit_size)+50) + "," + 0 + ")"
+						x_position = x(d.incipit_size)
 					}
 					else if (the_sort == 6){
-						return "translate(" + (x(d.issues)+50) + "," + 0 + ")"
+						x_position = x(d.issues)
 					}
 					else if (the_sort == 7){
-						return "translate(" + (x(d.images)+50) + "," + 0 + ")"
+						x_position = x(d.images)
 					}
 					else if (the_sort == 8){
-						return "translate(" + (x(d.linguistic_versions)+50) + "," + 0 + ")"
+						x_position = x(d.linguistic_versions)
 					}
+					else {
+						x_position = x(i)
+					}
+
+					return "translate(" + (x_position + 50) + "," + 0 + ")"
+				})
+
+				tooltip = tooltip.direction(function (d,i) {
+
+					let direction = ''
+					if (the_sort == 1) { // title
+						direction = tooltip_direction(i, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 2){
+						direction = tooltip_direction(d.days, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 3){
+						direction = tooltip_direction(d.size, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 4){
+						direction = tooltip_direction(d.discussion_size, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 5){
+						direction = tooltip_direction(d.incipit_size, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 6){
+						direction = tooltip_direction(d.issues, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 7){
+						direction = tooltip_direction(d.images, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 8){
+						direction = tooltip_direction(d.edits_editors_ratio, min, max, d.avg_pv, false)
+					}
+					else if (the_sort == 9){
+						direction = tooltip_direction(d.linguistic_versions, min, max, d.avg_pv, false)
+					}
+					return direction 
 				})
 
 			sidebar(1,filtered_data,the_sort);

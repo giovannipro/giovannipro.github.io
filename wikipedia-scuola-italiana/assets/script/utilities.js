@@ -596,3 +596,180 @@ $(document).ready(function() {
 	// get_statistics();
 	
 })
+
+function tooltip_direction(data,x,x_min,x_max,y,invert){
+
+	let y_max = d3.max(data, function(d) { 
+		return d.avg_pv;
+	})
+
+	x = parseInt(x)
+	x_min = parseInt(x_min)
+	x_max = parseInt(x_max)
+
+	let n_s = ''
+	let w_e = ''
+	
+	if (y > (y_max/3*2) ){
+		n_s = 's'
+	}
+	else {
+		n_s = 'n'
+	}		
+
+	if (invert == false){
+		let range = x_max - x_min
+		if (x < (x_min + range / 3)){
+			w_e = 'e'
+		}
+		else if ( x > (x_min + range / 3 * 2) ) {
+			w_e = 'w'
+		}
+	}
+	else {
+		let range = x_max - x_min
+		if (x > (x_min + range / 3)){
+			w_e = 'e'
+		}
+		else if ( x < (x_min + range / 3 * 2) ) {
+			w_e = 'w'
+		}
+	}
+
+	const direction = n_s + w_e
+
+	// console.log(x,x_min,x_max,y,invert)
+	// console.log(direction)
+	return direction
+}
+
+function get_tooltip(dv) {
+
+	let tooltip = d3.tip()
+		.attr('class', 'tooltip')
+		.attr('id', 'tooltip_' + dv)
+		.direction(function (d,i) {
+			return 'n'
+		})
+		.html(function(d,i) {
+			let params = new URLSearchParams(window.location.search);
+			if (params.has('lang') == true) {
+				lang = params.get('lang')
+			}
+			// console.log(lang)
+
+			// lang = 'it'
+			if (lang == 'it'){
+				creation_date = "Voce creata il: "
+				visits = "visite giornaliere"
+				size = "dimensioni"
+				discussion = "discussione"
+				issues = "avvisi"
+				images = "immagini"
+				incipit = 'incipit'
+				languages = 'versioni linguistiche'
+			}
+			else {
+				creation_date = "Created on: "
+				visits = "daily visits"
+				size = "size"
+				discussion = "discussion"
+				issues = "warning tags"
+				images = "images"
+				incipit = "lead section"
+				languages = 'linguistic versions'
+			}
+
+			let content = ""
+			// content += "<p style='color: red; margin: 0;'>" + i + "</p>" // debug  
+			content += "<div style='overflow-wrap: anywhere; white-space: normal;'>"
+			content += "<p style='font-weight: bold; margin: 0 0 0 .2rem;'>" + d.article + '</p>';
+			content += '<span style="font-size: 0.8em;">' + creation_date + d.first_edit.slice(0,10) + '</span>' // format_date(d.first_edit) 
+			content += '</div>'
+			content += '<hr style="border: 0.5px solid #e3e3e3"/>'
+
+			if (dv == 'dv1') {
+	
+				avg_daily_visits = ''
+				avg_daily_visits += "<tr>"
+				avg_daily_visits += "<td class='label'>" + visits + "</td>"
+				avg_daily_visits += "<td class='value'>" + Math.floor(d.avg_pv).toLocaleString() + "</td>"
+				avg_daily_visits += "<td></td>"
+				avg_daily_visits += "</tr>"
+	
+				the_size = ''
+				the_size += "<tr>"
+				the_size += "<td class='label'>" + size + "<span style='color: #b9b9b9;'> (byte)</span></td>"
+				the_size += "<td class='value'>" + d.size.toLocaleString() + "</td>"
+				the_size += "<td></td>"
+				the_size += "</tr>"
+	
+				the_incipit = ''
+				the_incipit += "<tr>"
+				the_incipit += "<td class='label'>" + incipit + "<span style='color: #b9b9b9;'> (byte)</span></td>"
+				the_incipit += "<td class='value'>" + d.incipit_size.toLocaleString() + "</td>"
+				the_incipit += "<td></td>"
+				the_incipit += "</tr>"
+	
+				the_discussion = ''
+				the_discussion += "<tr>"
+				the_discussion += "<td class='label'>" + discussion + "<span style='color: #b9b9b9;'> (byte)</span></td>"
+				the_discussion += "<td class='value'>" + d.discussion_size.toLocaleString() + "</td>"
+				the_discussion += "<td></td>"
+				the_discussion += "</tr>"
+	
+				the_issues = ''
+				the_issues += "<tr>"
+				the_issues += "<td class='label'>" + issues + "</td>"
+				the_issues += "<td class='value'>" + d.issues.toLocaleString() + "</td>"
+				the_issues += "<td></td>"
+				the_issues += "</tr>"
+	
+				the_images = ''
+				the_images += "<tr>"
+				the_images += "<td class='label'>" + images + "</td>"
+				the_images += "<td class='value'>" + d.images.toLocaleString() + "</td>"
+				the_images += "<td></td>"
+				the_images += "</tr>"
+	
+				the_languages = ''
+				the_languages += "<tr>"
+				the_languages += "<td class='label'>" + languages + "</td>"
+				the_languages += "<td class='value'>" + d.linguistic_versions.toLocaleString() + "</td>"
+				the_languages += "<td></td>"
+				the_languages += "</tr>"
+			}
+
+
+			if (dv == 'dv1') {
+
+            	content += '<table>'
+
+				content += avg_daily_visits
+				content += the_languages
+
+				content += '</table>'
+				content += '<hr style="border: 0.5px solid #e3e3e3"/>'
+				content += '<table>'
+
+				content += the_size
+				content += the_incipit
+				content += the_discussion
+				content += the_issues
+				content += the_images
+
+				content += "</table>"
+			}
+			else if (dv == 'dv3'){
+				content += avg_daily_visits
+				content += the_size
+				content += the_issues
+				content += the_references
+				content += the_notes
+				content += the_images
+			}
+
+            return content;
+        });
+	return tooltip
+}
