@@ -249,7 +249,6 @@ function sidebar(dv,data,the_sort){
 					list_bubbles_b[i].querySelector('.circle_prev').setAttribute('opacity',1)
 					list_bubbles_b[i].querySelector('.line_prev').setAttribute('opacity',1)
 				}
-				// console.log('stop', list_bubbles_a) 
 			}
 			else if (path.indexOf("avvisi") != -1){
 				list_bar = document.querySelectorAll('.article')
@@ -281,6 +280,7 @@ function sidebar(dv,data,the_sort){
 			  	 
 			  	selected_bubble = document.getElementById('id_' + item)
 			  	selected_bubble.setAttribute('opacity',1)
+				console.log(selected_bubble)
 
 			  	selected_bubble.previousSibling.querySelector('.circle_prev').setAttribute('opacity',1)
 			  	selected_bubble.previousSibling.querySelector('.line_prev').setAttribute('opacity',1)

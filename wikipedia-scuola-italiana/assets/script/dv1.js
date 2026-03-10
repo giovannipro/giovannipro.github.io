@@ -179,14 +179,7 @@ function dv1(year,the_subject,sort) {
         	if (d.incipit_size > d.incipit_prev) {
         		d.improvements += 1
         	}
-
-        	// if (d.improvements > 0) {
-			// 	// console.log(d.article,d.improvements,d.issues,d.issues_prev,d.images,d.images_prev,d.incipit_size,d.incipit_prev);
-			// 	// console.log(d.article)
-			// 	console.log(d.article,d.avg_pv,d.avg_pv_prev, d.avg_pv - d.avg_pv_prev)
-			// }
 		})
-		// console.log(filtered_data);
 
 		statistics(filtered_data)
 
@@ -1380,6 +1373,81 @@ function dv1(year,the_subject,sort) {
 		    	to_log()
 		    }
 		};
+
+		// make the visualization responsive
+		// ---------------------------
+		function responsive_chart(width){
+
+			if (width <= 768){
+				translate_articles = 10
+				reduction = 30
+
+			}
+			else {
+				translate_articles = shiftx_article
+				reduction = 100
+			}
+
+			svg
+				.attr("width", width + (margin.right + margin.right))
+
+			grid
+				.call(make_y_gridlines()
+					.tickSize(-width-margin.left-margin.right-60)
+				)
+
+			x = d3.scaleLinear()
+				.domain([min,max])
+				.range([0,width - reduction])
+
+			articles.attr("transform","translate(" + translate_articles + "," + margin.top + ")") 
+
+			svg.selectAll(".article")
+				.transition()
+				.attr("transform", function(d,i){
+					x_position = 0
+
+					if (sort == 1) { // "article"
+						x_position = x(i)
+					}
+					else if (sort == 2){
+						x_position = x(d.days)
+					}
+					else if (sort == 3){
+						x_position = x(d.size)
+					}
+					else if (sort == 4){
+						x_position = x(d.discussion_size)
+					}
+					else if (sort == 5){
+						x_position = x(d.incipit_size)
+					}
+					else if (sort == 6){
+						x_position = x(d.issues)
+					}
+					else if (sort == 7){
+						x_position = x(d.images)
+					}
+					else if (sort == 7){
+						x_position = x(d.images)
+					}
+					else if (sort == 8){
+						x_position = x(d.linguistic_versions)
+					}
+					else { 
+						x_position = x(i)
+					}
+					// console.log(d.article,min,max,d.size,width,x_position)
+					return "translate(" + x_position + "," + 0 + ")"
+				})
+		}
+
+		window.addEventListener("resize", (event) => {
+			window_w = document.getElementById("dv1").offsetWidth;
+			width = window_w - (margin.right + margin.right)
+
+			responsive_chart(width)
+		});
 	}
 }
 
@@ -1398,7 +1466,6 @@ function update_dv1_lang(lang){
 		}
 	});
 }
-
 
 function get_year(){
 	$("#year").change(function() {
