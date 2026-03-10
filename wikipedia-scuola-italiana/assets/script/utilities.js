@@ -534,17 +534,6 @@ function changeTitle(lang) {
 	let page = title.split(' | ')[0];
 	let newTitle;
 
-	// if (page == base_it ){ // && lang == 'en'
-	// 	newTitle = base_en 
-	// 	console.log('-' + page + '-', 1, lang)
-	// }
-	// else if (page == base_en){ //  && lang == 'it'
-	// 	newTitle = base_it
-	// 	console.log(page, 2, lang)
-	// }
-	// console.log(page,lang)
-
-
 	switch (page) {
 		// Home
 		case base_it:
@@ -564,15 +553,7 @@ function changeTitle(lang) {
 				newTitle = base_en
 			}
 			break;
-		// 	:
-		// 	newTitle = base_en;
-		// 	console.log(page, base_it, lang)
-		// 	break;
-		// case base_en | 'it':
-		// 	newTitle = base_it;
-		// 	console.log(page, lang)
-		// 	break;
-
+		
 		// Autori e pubblicazioni
 		case 'Autori e pubblicazioni':
 			newTitle = 'Authors and publications | ' + base_en;

@@ -181,10 +181,10 @@ function sidebar(dv,data,the_sort){
 				size = 0
 			}
 
-			output += '<li>'
+			output += '<li class="article_list">'
 			output += '<a href=" ' + wiki_link + d.article + '" target="_blank">' 
 			output += '<div class="item_list">'
-			output += '<div class="article_list" data-id="' + d.id_wikidata + '">' + d.article + '</div>'
+			output += '<div data-id="' + d.id_wikidata + '">' + d.article + '</div>'
 
 			if (isNaN(max) == false || max < 0) {
 				output += '<div class="value">' + detail + '</div>'
@@ -230,9 +230,7 @@ function sidebar(dv,data,the_sort){
 	})
 	// console.log(open)
 
-
 	// mouse hover - sidebar
-
 	function sidebar_hover(){
 		let path = window.location.pathname;
 		// console.log(path)

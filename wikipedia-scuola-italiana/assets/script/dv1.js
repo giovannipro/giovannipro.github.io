@@ -160,6 +160,8 @@ function dv1(year,the_subject,sort) {
 			d.incipit_prev = +d.incipit_prev
 
 			d.linguistic_versions = +d.linguistic_versions
+			d.size_prev = +d.size_prev
+			d.discussion_prev = +d.discussion_prev
 			// console.log(d.linguistic_versions)
 
 			if (d.avg_pv_prev !== "-"){
@@ -619,20 +621,6 @@ function dv1(year,the_subject,sort) {
 			.delay(improv_delay)
 			.attr("opacity",1)
 
-		// let improvement_debug = improvements_box.append("circle")
-		// 	.attr("cx",0)
-		// 	.attr("cy",0)
-		// 	.attr("r",30)
-  //           .attr("fill", "none")
-  //           .attr("stroke", function (d,i) {
-  //           	if (d.improvements > 0) {
-  //           		return improv_col
-  //           	}
-  //           	else {
-  //           		return "none"
-  //           	}
-  //           })
-
 		const duration = 0
 	    function handleMouseOver(){
 	
@@ -740,6 +728,8 @@ function dv1(year,the_subject,sort) {
 			sidebar(1,filtered_data,the_sort);
 
 			filtered_data.forEach(function (d,i) {
+				// console.log(d)
+
 				total += 1
 				d.article = d.article.replace(/_/g," ")
 				d.size = +d.size
@@ -763,8 +753,8 @@ function dv1(year,the_subject,sort) {
 				let diff = d.avg_pv - d.avg_pv_prev
 				// console.log(d.article,d.subject, d.avg_pv_prev, d.avg_pv, diff)
 
-				if (d.incipit_size > d.size){
-					console.log(d.article, d.incipit_size - d.size)
+				if (d.size < d.incipit_size){
+					console.log(d.article, d.size, d.incipit_size, d.discussion_size)
 				}
 				
 				if (d.avg_pv_prev !== "-"){
@@ -1172,11 +1162,9 @@ function dv1(year,the_subject,sort) {
 				d.issues = +d.issues
 
 				d.linguistic_versions = +d.linguistic_versions
-				// console.log(d.article,d.issues)
-
+				d.size_prev = +d.size_prev
+				d.discussion_prev = +d.discussion_prev
 			})
-
-			
 
 			sidebar(1,filtered_data,the_sort);
 			
