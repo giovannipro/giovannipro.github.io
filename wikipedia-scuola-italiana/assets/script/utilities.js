@@ -793,6 +793,8 @@ function get_tooltip(dv) {
 }
 
 function statistics(data){
+	// console.log(data)
+
 	// const statistics_box = document.getElementById('statistics')
 	const analized_articles_box = document.getElementById('analized_articles')
 	const avg_pv_articles_box = document.getElementById('avg_pv_articles')
@@ -809,6 +811,7 @@ function statistics(data){
 	const avg_pv_articles_prev = Math.floor(sum_avg_pv_prev / analized_articles)
 	const variation_pv = variation_perc(avg_pv_articles,avg_pv_articles_prev,"avg_pv")[0]
 	const variation_pv_per = variation_perc(avg_pv_articles,avg_pv_articles_prev,"avg_pv")[1]
+	// console.log(sum_avg_pv_prev)
 
 	let sum_size = 0
 	data.forEach(obj => sum_size += obj.size);
@@ -816,10 +819,11 @@ function statistics(data){
 	// console.log(sum_size, avg_size_articles)
 
 	let sum_size_prev = 0
-	data.forEach(obj => sum_size_prev += obj.size_prev);
+	data.forEach(obj => sum_size_prev += parseInt(obj.size_prev));
 	const avg_sum_size_prev = Math.floor(sum_size_prev / analized_articles)
 	const variation_size = variation_perc(avg_size_articles,avg_sum_size_prev,"size")[0]
 	const variation_size_per = variation_perc(avg_size_articles,avg_sum_size_prev,"size")[1]
+	// console.log(sum_size_prev)
 
 	// show statistics
 	analized_articles_box.innerHTML = formatNumber(analized_articles)
