@@ -32,7 +32,7 @@ set plot
 ------------------------- */
 
 function water(data,value){
-	console.log(data)
+	// console.log(data)
 
 	var svg = d3.select("#svg_container")
 		.append("svg")
@@ -79,7 +79,7 @@ function water(data,value){
 		.append("g")
 		.attr("transform",function(d,i){
 			return "translate(0," +  ( v_translation * (Math.exp(i/3))) + ")"
-		}) // i/3
+		})
 		.attr("class",function(d,i){
 			return i
 		})
@@ -92,7 +92,6 @@ function water(data,value){
 			return line(data)
 		})
 		.attr("class", "line_a")
-		//.attr("stroke-dasharray","1, 4")
 		.attr("opacity","0.6")
 		.style("stroke", "white" )
 		.attr("stroke-width","2px")
@@ -107,18 +106,18 @@ function water(data,value){
 		.attr("opacity","0.2")
 }
 
-function wave_maker(index,min,max){
+function wave_maker(index,max){
 	var data = [];
 
 	for (var i=0; i<waves; i++) { 
 		data.push({
 			x: i ,
-			y: Math.random()
+			y: Math.random() * max
 		});
 	}
 	
 	//console.log(data)
-	var value = (250/max) * index;
+	var value = max * index;
 	water(data,value);
 }
 
@@ -273,38 +272,48 @@ function get_data(param,cache){
 }
 
 function save(time){
-	$("#save").click(function () {
+	
+	const save = document.getElementById('save')
+	const svg_container = document.getElementById('svg_container')
 
-		var dataviz = $("#svg_container").html();
-		//console.log(dataviz);
+	save.addEventListener("click", (event) => {
+		console.log(1)
+		let dataviz = svg_container
+		console.log()
 		download(dataviz, "pm10_lugano_" + time +".svg", "text/plain");
-	});   
+	})
+
+	// $("#save").click(function () {
+
+	// 	var dataviz = $("#svg_container").html();
+	// 	//console.log(dataviz);
+	// 	download(dataviz, "pm10_lugano_" + time +".svg", "text/plain");
+	// });   
 }
 
 function buttons(){
 
-	$("#pm10").click(function () {
-		$(".param").addClass("param_no");
-		$(this).removeClass("param_no");
-		$("#svg_container").empty();
-		//location.reload();
-		get_data("pm10");
-	})
-	$("#no2").click(function () {
-		$(".param").addClass("param_no");
-		$(this).removeClass("param_no");
-		$("#svg_container").empty();
-		get_data("no2");
-	})
-	$("#o3").click(function () {
-		$(".param").addClass("param_no");
-		$(this).removeClass("param_no");
-		$("#svg_container").empty();
-		get_data("o3");
-	})
+	const svg_container = document.getElementById('svg_container')
+	const pm10 = document.getElementById('pm10')
+	const no2 = document.getElementById('no2')
+	const o3 = document.getElementById('o3')
 
-	//$(".param").toggleClass("param_no");
-	$("#pm10").toggleClass("param_no");
+	max_max = 10
+
+	pm10.addEventListener("click", (event) => {
+		svg_container.innerHTML = ''
+		wave_maker(1, max_max);
+	});
+
+	no2.addEventListener("click", (event) => {
+		svg_container.innerHTML = ''
+		wave_maker(1, max_max);
+	});
+
+	o3.addEventListener("click", (event) => {
+		svg_container.innerHTML = ''
+		wave_maker(1, max_max);
+	});
 }
 
 function accelerometer(){
@@ -372,6 +381,9 @@ function accelerometer(){
 	setTimeout(check_orientation, 500);
 }
 
-get_data("pm10")
+// get_data("pm10")
+// accelerometer();
+// save();
+
+wave_maker(1,10,100);
 buttons();
-accelerometer();
