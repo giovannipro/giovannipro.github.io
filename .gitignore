@@ -1,5 +1,14 @@
+# macOS
 .DS_Store
 **/.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# npm
+node_modules/
+npm-debug.log*
 
 notes.txt
 paravicini/assets/php/config.php
