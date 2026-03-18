@@ -72,18 +72,71 @@ let layer = L.featureGroup([marker1, marker2])
 layer.addTo(map);
 // console.log(layer)
 
+// map.fitBounds(layer.getBounds());
+
+
+// import GeoJSON data ----------------------
+
+let geojsonData;
+let markersGroup = L.featureGroup().addTo(map);
+
+fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson')
+// fetch('assets/data/ne_110m_populated_places.geojson')
+// fetch('assets/data/data.json')
+    .then(response => response.json())
+    .then(data => {
+        geojsonData = data;
+        console.log(geojsonData)
+    })
+    .catch(err => console.error('Errorr: ', err));
+
+
 // interactivity ----------------------
 
+let clicks = 1
 function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
+    // alert("You clicked the map at " + e.latlng);
+
+    if (clicks == 1){
+
+        markersGroup.clearLayers();
+    
+        geojsonData.features.forEach(function(feature) {
+    
+            let size = 10
+    
+            // let marker = L.marker([coords[1], coords[0]]);
+            let coords = feature.geometry.coordinates;
+    
+            if (feature.properties.mag != undefined && feature.properties.mag > 0){
+                size = Math.sqrt(feature.properties.mag) * 5
+            } 
+            // console.log(feature.properties.place, feature.properties.mag)
+    
+            let bubble = L.circleMarker([coords[1], coords[0]], {
+                color: 'blue',
+                fillColor: 'lightblue',
+                fillOpacity: 0.5,
+                radius: size
+                })
+    
+            bubble.bindPopup(feature.properties.place + ', ' + feature.properties.mag);
+            markersGroup.addLayer(bubble);
+    
+        })
+    
+        map.fitBounds(markersGroup.getBounds());
+    }
+
+    clicks += 1
 }
 
-// map.on('click', onMapClick);
+map.on('click', onMapClick);
 
-let popup = L.popup();
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent(e.latlng.toString())
-        .openOn(map);
-}
+// let popup = L.popup();
+// function onMapClick(e) {
+//     popup
+//         .setLatLng(e.latlng)
+//         .setContent(e.latlng.toString())
+//         .openOn(map);
+// }
