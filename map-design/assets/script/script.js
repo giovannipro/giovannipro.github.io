@@ -62,11 +62,10 @@ const polygon = L.polygon([
 // import GeoJSON data ----------------------
 // --------------------------------------------------------
 
-
 // fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson')
 // fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson')
-fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson')
-// fetch('assets/data/data.json')
+// fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson')
+fetch('assets/data/all_week.json')
     .then(response => response.json())
     .then(data => {
         displayData(data)
@@ -99,10 +98,27 @@ function displayData(data){
         bubble.on('click', function() {
             window.open(feature.properties.url, '_blank');
         });
-        
+
         markersGroup.addLayer(bubble);
 
     })
 
     map.fitBounds(markersGroup.getBounds());
 }
+
+
+// get user position
+// --------------------------------------------------------
+
+// map.locate({ setView: true, maxZoom: 16 });
+
+// map.on('locationfound', function(e) {
+//     L.marker(e.latlng)
+//         .addTo(map)
+//         .bindPopup("Sei qui!")
+//         .openPopup();
+// });
+
+// map.on('locationerror', function(e) {
+//     console.error(e.message);
+// });
