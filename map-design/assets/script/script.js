@@ -1,4 +1,5 @@
 // basic setup ----------------------
+// --------------------------------------------------------
 
 const map = L.map('map', {
     center: [45.870673, 8.979357],
@@ -8,25 +9,100 @@ const map = L.map('map', {
     // zoomSnap: 0.25
 });
 
+// OSM
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    // L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    // L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    // L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
-    // L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg', {
-    // L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    // L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    // L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    
-    // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; CartoDB'
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 })
 .addTo(map);
 
-console.log()
+// CartoDB Positron (minimalista/chiara) 
+// L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+//     attribution: '© CartoDB'
+// })
+
+// CartoDB Dark Matter (tema scuro)
+// L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+//     attribution: '© CartoDB'
+// })
+
+// Esri World Imagery (satellite)
+// L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+//     attribution: '© Esri'
+// })
 
 
-// markers ----------------------
+// markers and other visual elements ----------------------
+// --------------------------------------------------------
 
-let marker = L.marker([45.870, 8.979])
+const marker = L.marker([45.870, 8.979])
     .bindPopup('Questo è un popup')
     .addTo(map)
+
+const circle = L.circle([45.88, 8.95],{
+    radius: 500
+})
+.bindTooltip('Questo è un tooltip')
+// , {
+//     direction: 'top',
+//     offset: [0, -40]
+// })
+.addTo(map);
+
+const polygon = L.polygon([
+    [45.885, 8.965],
+    [45.87, 8.97],
+    [45.89, 8.98]
+], {
+    color: 'blue',
+    fillColor: 'transparent',
+    fillOpacity: 0.5
+})
+.addTo(map);
+
+// import GeoJSON data ----------------------
+// --------------------------------------------------------
+
+
+// fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson')
+// fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson')
+fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson')
+// fetch('assets/data/data.json')
+    .then(response => response.json())
+    .then(data => {
+        displayData(data)
+    })
+    .catch(err => console.error('Errorr: ', err));
+
+function displayData(data){
+    console.log(data)
+
+    const markersGroup = L.featureGroup().addTo(map);
+
+    data.features.forEach(function(feature) {
+
+        const coords = feature.geometry.coordinates;
+
+        // if (feature.properties.mag != undefined && feature.properties.mag > 0){
+        //     size = Math.sqrt(feature.properties.mag) * 2
+        // } 
+
+        size = 5
+
+        const bubble = L.circleMarker([coords[1], coords[0]], { // coords[1], coords[0]
+            color: 'red',
+            fillColor: 'red',
+            fillOpacity: 0.5,
+            radius: size
+        })
+        .bindTooltip(feature.properties.place + ', ' + feature.properties.mag)
+
+        bubble.on('click', function() {
+            window.open(feature.properties.url, '_blank');
+        });
+        
+        markersGroup.addLayer(bubble);
+
+    })
+
+    map.fitBounds(markersGroup.getBounds());
+}
