@@ -114,7 +114,7 @@ function displayDataCluster(data){
 
     const markersGroup = L.featureGroup();
     const cluster = L.markerClusterGroup({
-        showCoverageOnHover: false
+        showCoverageOnHover: false  // nasconde il poligono che copre il cluster di marker
     });
     // const cluster = L.markerClusterGroup({
     //     maxClusterRadius: 80,        // distanza in pixel per raggruppare
