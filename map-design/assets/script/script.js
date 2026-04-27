@@ -104,7 +104,23 @@ function displayData(data){
     })
 
     map.fitBounds(markersGroup.getBounds());
+
 }
+
+// tour
+// --------------------------------------------------------
+
+function tour(){
+    setTimeout(function() {
+        map.flyTo([41.90, 12.49], 12);
+    }, 3000);
+
+    setTimeout(function() {
+        map.flyTo([48.85, 2.35], 12);
+    }, 6000);
+}
+// tour()
+
 
 
 // get user position
