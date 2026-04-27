@@ -68,15 +68,17 @@ const polygon = L.polygon([
 fetch('assets/data/all_week.json')
     .then(response => response.json())
     .then(data => {
-        displayData(data)
+        // displayData(data)
+        displayDataCluster(data)
     })
     .catch(err => console.error('Errorr: ', err));
 
+    
 function displayData(data){
     console.log(data)
 
-    const markersGroup = L.featureGroup().addTo(map);
-
+    const markersGroup = L.featureGroup();
+    
     data.features.forEach(function(feature) {
 
         const coords = feature.geometry.coordinates;
@@ -94,14 +96,54 @@ function displayData(data){
             radius: size
         })
         .bindTooltip(feature.properties.place + ', ' + feature.properties.mag)
-
-        bubble.on('click', function() {
+        .on('click', function() {
             window.open(feature.properties.url, '_blank');
-        });
-
-        markersGroup.addLayer(bubble);
+        })
+        .addTo(markersGroup)
 
     })
+
+    markersGroup.addTo(map);
+
+    map.fitBounds(markersGroup.getBounds());
+
+}
+
+function displayDataCluster(data){
+    console.log(data)
+
+    const markersGroup = L.featureGroup();
+    const cluster = L.markerClusterGroup({
+        showCoverageOnHover: false
+    });
+    // const cluster = L.markerClusterGroup({
+    //     maxClusterRadius: 80,        // distanza in pixel per raggruppare
+    //     disableClusteringAtZoom: 15, // zoom oltre il quale non raggruppa
+    //     spiderfyOnMaxZoom: true,     // apre i marker a ventaglio al max zoom
+    //     showCoverageOnHover: false,  // nasconde il poligono di copertura
+    // });
+
+    data.features.forEach(function(feature) {
+
+        const coords = feature.geometry.coordinates;
+        const size = 5
+
+        const bubble = L.circleMarker([coords[1], coords[0]], {
+            color: 'red',
+            fillColor: 'red',
+            fillOpacity: 0.5,
+            radius: size
+        })
+        .bindTooltip(feature.properties.place + ', ' + feature.properties.mag)
+        .on('click', function() {
+            window.open(feature.properties.url, '_blank');
+        })
+        .addTo(cluster)
+        .addTo(markersGroup)
+
+    })
+
+    cluster.addTo(map);
 
     map.fitBounds(markersGroup.getBounds());
 
